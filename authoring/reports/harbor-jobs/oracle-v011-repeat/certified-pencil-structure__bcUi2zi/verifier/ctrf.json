@@ -1,0 +1,92 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 8,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795435759.2000456,
+            "stop": 1795435764.8715248
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_exact_batch_00",
+                "status": "passed",
+                "duration": 0.3730264299999817,
+                "start": 1795435759.2150106,
+                "stop": 1795435759.5884368,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exact_batch_01",
+                "status": "passed",
+                "duration": 0.4234223710001288,
+                "start": 1795435759.5887275,
+                "stop": 1795435760.0124114,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exact_batch_02",
+                "status": "passed",
+                "duration": 0.32017436299997826,
+                "start": 1795435760.0126538,
+                "stop": 1795435760.3330715,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exact_batch_03",
+                "status": "passed",
+                "duration": 0.421584358999894,
+                "start": 1795435760.333316,
+                "stop": 1795435760.7551785,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exact_batch_04",
+                "status": "passed",
+                "duration": 1.3312155329999769,
+                "start": 1795435760.755515,
+                "stop": 1795435762.0869584,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exact_batch_05",
+                "status": "passed",
+                "duration": 0.6758058329997993,
+                "start": 1795435762.0872083,
+                "stop": 1795435762.7632525,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exact_batch_06",
+                "status": "passed",
+                "duration": 0.9781979459999093,
+                "start": 1795435762.7635014,
+                "stop": 1795435763.7419562,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_exact_batch_07",
+                "status": "passed",
+                "duration": 1.1287228920000416,
+                "start": 1795435763.7422276,
+                "stop": 1795435764.871233,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

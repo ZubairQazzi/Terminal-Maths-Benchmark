@@ -1,0 +1,147 @@
+{
+  "updated_utc": "2026-11-23T15:13:13.931574+00:00",
+  "task_version": "0.1.3",
+  "task_digest": "28b89df5a40a09efbaa8eec4fa36e2458960b18020aff314bfcb6634ceb076f5",
+  "model": "gemini/gemini-3.5-flash-lite",
+  "agent": "terminus-2",
+  "agent_version": "2.0.0",
+  "requested_valid_trials": 8,
+  "smoke_valid_completed": 0,
+  "smoke_separate_from_calibration": true,
+  "completed_valid_trials": 0,
+  "successful_trials": 0,
+  "failed_trials": 0,
+  "success_percentage": null,
+  "failure_percentage": null,
+  "mean_duration_sec": null,
+  "median_duration_sec": null,
+  "infrastructure_interruptions": 2,
+  "status": "BLOCKED",
+  "stop_reason": "Two fresh infrastructure interruptions in the same required slot; investigate before resuming.",
+  "all_attempts": [
+    {
+      "phase": "smoke",
+      "trial_number": 0,
+      "attempt_number": 1,
+      "run_id": "g35lite-v013-smoke-01",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "task_version": "0.1.3",
+      "status": "INTERRUPTED",
+      "reward": 0.0,
+      "duration_sec": 1442.882012,
+      "agent_execution_sec": 1412.284535,
+      "steps": 37,
+      "tool_calls": 36,
+      "input_tokens": 377330,
+      "output_tokens": 9768,
+      "cached_tokens": 235620,
+      "cost_usd": 0.0740016,
+      "cost_kind": "harness_estimate_not_billing_receipt",
+      "failure_reason": "ServiceUnavailableError",
+      "result_path": "F:\\rl\\math-benchmark\\authoring\\trajectories\\calibration-v013-gemini35lite-20261123\\jobs\\g35lite-v013-smoke-01\\certified-pencil-structure__37mdCuR\\result.json",
+      "trajectory_path": "F:\\rl\\math-benchmark\\authoring\\trajectories\\calibration-v013-gemini35lite-20261123\\jobs\\g35lite-v013-smoke-01\\certified-pencil-structure__37mdCuR\\agent\\trajectory.json",
+      "process_return_code": 0,
+      "console_path": "F:\\rl\\math-benchmark\\authoring\\trajectories\\calibration-v013-gemini35lite-20261123\\g35lite-v013-smoke-01-console.log",
+      "task_checksum": "99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe",
+      "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+          "name": "gemini-3.5-flash-lite",
+          "provider": "gemini"
+        }
+      },
+      "exception_info": {
+        "exception_type": "ServiceUnavailableError",
+        "exception_message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\gemini\\vertex_and_google_ai_studio_gemini.py\", line 3826, in post\n    response: Final = await client.post(\n                      ^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\litellm_core_utils\\logging_utils.py\", line 372, in async_wrapper\n    result: Final = await func(*args, **kwargs)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\custom_httpx\\http_handler.py\", line 1017, in post\n    await _raise_masked_async_error(e, stream)\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\custom_httpx\\http_handler.py\", line 630, in _raise_masked_async_error\n    raise MaskedHTTPStatusError(e, message=_text, text=_text) from None\nlitellm.llms.custom_httpx.http_handler.MaskedHTTPStatusError: Server error '503 Service Unavailable' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\main.py\", line 944, in acompletion\n    response = await _resolve_dispatched_chat_response(init_response)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\main.py\", line 1014, in _resolve_dispatched_chat_response\n    return await pending\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\gemini\\vertex_and_google_ai_studio_gemini.py\", line 3855, in async_completion\n    _, (sent_body, first_response) = await post_with_fresh_cache_async(request_body, rebuild, accepted, log_request)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\context_caching\\rejected_cache_retry.py\", line 59, in post_with_fresh_cache_async\n    return body, await post(body)\n                 ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\gemini\\rejected_thought_signature_retry.py\", line 198, in post_with_accepted_thought_signatures_async\n    return body, await post(body)\n                 ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\gemini\\vertex_and_google_ai_studio_gemini.py\", line 3835, in post\n    raise VertexAIError(\nlitellm.llms.vertex_ai.common_utils.VertexAIError: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\single_step.py\", line 77, in _run_agent\n    await self._run_agent_phase(\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 784, in _run_agent_phase\n    await asyncio.wait_for(\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1833, in run\n    await self._run_agent_loop(\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1500, in _run_agent_loop\n    ) = await self._handle_llm_interaction(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1378, in _handle_llm_interaction\n    llm_response = await self._query_llm(\n                   ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 232, in async_wrapped\n    return await copy(fn, *args, **kwargs)  # type: ignore[type-var]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 126, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 171, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\_utils.py\", line 130, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\__init__.py\", line 482, in exc_check\n    retry_exc.reraise()\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\__init__.py\", line 216, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 130, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1369, in _query_llm\n    raise e\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1218, in _query_llm\n    llm_response = await chat.chat(\n                   ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\llms\\chat.py\", line 89, in chat\n    llm_response: LLMResponse = await self._model.call(\n                                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 232, in async_wrapped\n    return await copy(fn, *args, **kwargs)  # type: ignore[type-var]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 126, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 171, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\_utils.py\", line 130, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\__init__.py\", line 482, in exc_check\n    retry_exc.reraise()\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\__init__.py\", line 216, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 130, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\llms\\lite_llm.py\", line 425, in call\n    self._handle_litellm_error(e)\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\llms\\lite_llm.py\", line 660, in _handle_litellm_error\n    raise e\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\llms\\lite_llm.py\", line 389, in call\n    response = await litellm.acompletion(**completion_kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"F:\\rl\\math-benchmark\\authoring\\evidence\\resilient_harbor.py\", line 56, in resilient_acompletion\n    result=await _ORIGINAL(*args,**kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\chat_completions\\dispatch.py\", line 129, in acompletion\n    return await _ADISPATCH.arun(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\rust_bridge\\dispatch.py\", line 108, in arun\n    return await python(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\utils.py\", line 2721, in wrapper_async\n    raise e\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\utils.py\", line 2512, in wrapper_async\n    result = await original_function(*args, **call_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\main.py\", line 1002, in acompletion\n    raise exception_type(\n          ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\litellm_core_utils\\exception_mapping_utils.py\", line 2925, in exception_type\n    raise e  # it's already mapped\n    ^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\litellm_core_utils\\exception_mapping_utils.py\", line 2733, in exception_type\n    _map_vertex_exception(\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\litellm_core_utils\\exception_mapping_utils.py\", line 1494, in _map_vertex_exception\n    raise ServiceUnavailableError(\nlitellm.exceptions.ServiceUnavailableError: litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n",
+        "occurred_at": "2026-11-23T14:55:15.735923Z",
+        "policy": {
+          "should_retry": true,
+          "should_grade": true,
+          "has_valid_reward": false
+        }
+      },
+      "verifier_summary": {
+        "tests": 9,
+        "passed": 0,
+        "failed": 9,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795445730.2829506,
+        "stop": 1795445730.346146
+      },
+      "runtime_agent": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_name": "gemini/gemini-3.5-flash-lite",
+        "extra": {
+          "parser": "xml"
+        }
+      }
+    },
+    {
+      "phase": "smoke",
+      "trial_number": 0,
+      "attempt_number": 2,
+      "run_id": "g35lite-v013-smoke-02",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "task_version": "0.1.3",
+      "status": "INTERRUPTED",
+      "reward": 0.0,
+      "duration_sec": 995.40516,
+      "agent_execution_sec": 964.698447,
+      "steps": 11,
+      "tool_calls": 11,
+      "input_tokens": 48918,
+      "output_tokens": 2128,
+      "cached_tokens": 20193,
+      "cost_usd": 0.014543289999999999,
+      "cost_kind": "harness_estimate_not_billing_receipt",
+      "failure_reason": "ServiceUnavailableError",
+      "result_path": "F:\\rl\\math-benchmark\\authoring\\trajectories\\calibration-v013-gemini35lite-20261123\\jobs\\g35lite-v013-smoke-02\\certified-pencil-structure__9Daz9Nk\\result.json",
+      "trajectory_path": "F:\\rl\\math-benchmark\\authoring\\trajectories\\calibration-v013-gemini35lite-20261123\\jobs\\g35lite-v013-smoke-02\\certified-pencil-structure__9Daz9Nk\\agent\\trajectory.json",
+      "process_return_code": 0,
+      "console_path": "F:\\rl\\math-benchmark\\authoring\\trajectories\\calibration-v013-gemini35lite-20261123\\g35lite-v013-smoke-02-console.log",
+      "task_checksum": "99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe",
+      "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+          "name": "gemini-3.5-flash-lite",
+          "provider": "gemini"
+        }
+      },
+      "exception_info": {
+        "exception_type": "ServiceUnavailableError",
+        "exception_message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\gemini\\vertex_and_google_ai_studio_gemini.py\", line 3826, in post\n    response: Final = await client.post(\n                      ^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\litellm_core_utils\\logging_utils.py\", line 372, in async_wrapper\n    result: Final = await func(*args, **kwargs)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\custom_httpx\\http_handler.py\", line 1017, in post\n    await _raise_masked_async_error(e, stream)\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\custom_httpx\\http_handler.py\", line 630, in _raise_masked_async_error\n    raise MaskedHTTPStatusError(e, message=_text, text=_text) from None\nlitellm.llms.custom_httpx.http_handler.MaskedHTTPStatusError: Server error '503 Service Unavailable' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\main.py\", line 944, in acompletion\n    response = await _resolve_dispatched_chat_response(init_response)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\main.py\", line 1014, in _resolve_dispatched_chat_response\n    return await pending\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\gemini\\vertex_and_google_ai_studio_gemini.py\", line 3855, in async_completion\n    _, (sent_body, first_response) = await post_with_fresh_cache_async(request_body, rebuild, accepted, log_request)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\context_caching\\rejected_cache_retry.py\", line 59, in post_with_fresh_cache_async\n    return body, await post(body)\n                 ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\gemini\\rejected_thought_signature_retry.py\", line 198, in post_with_accepted_thought_signatures_async\n    return body, await post(body)\n                 ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\llms\\vertex_ai\\gemini\\vertex_and_google_ai_studio_gemini.py\", line 3835, in post\n    raise VertexAIError(\nlitellm.llms.vertex_ai.common_utils.VertexAIError: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\single_step.py\", line 77, in _run_agent\n    await self._run_agent_phase(\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 784, in _run_agent_phase\n    await asyncio.wait_for(\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1833, in run\n    await self._run_agent_loop(\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1500, in _run_agent_loop\n    ) = await self._handle_llm_interaction(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1378, in _handle_llm_interaction\n    llm_response = await self._query_llm(\n                   ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 232, in async_wrapped\n    return await copy(fn, *args, **kwargs)  # type: ignore[type-var]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 126, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 171, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\_utils.py\", line 130, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\__init__.py\", line 482, in exc_check\n    retry_exc.reraise()\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\__init__.py\", line 216, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 130, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1369, in _query_llm\n    raise e\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\agents\\terminus_2\\terminus_2.py\", line 1218, in _query_llm\n    llm_response = await chat.chat(\n                   ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\llms\\chat.py\", line 89, in chat\n    llm_response: LLMResponse = await self._model.call(\n                                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 232, in async_wrapped\n    return await copy(fn, *args, **kwargs)  # type: ignore[type-var]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 126, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 171, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\_utils.py\", line 130, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\__init__.py\", line 482, in exc_check\n    retry_exc.reraise()\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\__init__.py\", line 216, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 130, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\llms\\lite_llm.py\", line 425, in call\n    self._handle_litellm_error(e)\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\llms\\lite_llm.py\", line 660, in _handle_litellm_error\n    raise e\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\llms\\lite_llm.py\", line 389, in call\n    response = await litellm.acompletion(**completion_kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"F:\\rl\\math-benchmark\\authoring\\evidence\\resilient_harbor.py\", line 56, in resilient_acompletion\n    result=await _ORIGINAL(*args,**kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\chat_completions\\dispatch.py\", line 129, in acompletion\n    return await _ADISPATCH.arun(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\rust_bridge\\dispatch.py\", line 108, in arun\n    return await python(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\utils.py\", line 2721, in wrapper_async\n    raise e\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\utils.py\", line 2512, in wrapper_async\n    result = await original_function(*args, **call_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\main.py\", line 1002, in acompletion\n    raise exception_type(\n          ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\litellm_core_utils\\exception_mapping_utils.py\", line 2925, in exception_type\n    raise e  # it's already mapped\n    ^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\litellm_core_utils\\exception_mapping_utils.py\", line 2733, in exception_type\n    _map_vertex_exception(\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\litellm\\litellm_core_utils\\exception_mapping_utils.py\", line 1494, in _map_vertex_exception\n    raise ServiceUnavailableError(\nlitellm.exceptions.ServiceUnavailableError: litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n",
+        "occurred_at": "2026-11-23T15:12:53.976917Z",
+        "policy": {
+          "should_retry": true,
+          "should_grade": true,
+          "has_valid_reward": false
+        }
+      },
+      "verifier_summary": {
+        "tests": 9,
+        "passed": 0,
+        "failed": 9,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795446788.8882356,
+        "stop": 1795446788.9498053
+      },
+      "runtime_agent": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_name": "gemini/gemini-3.5-flash-lite",
+        "extra": {
+          "parser": "xml"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "request_body": {
+    "contents": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Reply with the single word READY."
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "maxOutputTokens": 512
+    }
+  },
+  "attempts": [
+    {
+      "utc": "2026-11-23T15:01:54.988915+00:00",
+      "path": "v1beta/models/gemini-3.1-flash-lite:generateContent",
+      "status": 503,
+      "elapsed_sec": 1.0159999999996217,
+      "response_headers": {
+        "Content-Type": "application/json; charset=UTF-8",
+        "Server": "scaffolding on HTTPServer2"
+      },
+      "response": {
+        "error": {
+          "code": 503,
+          "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+          "status": "UNAVAILABLE"
+        }
+      }
+    }
+  ],
+  "task_digest": "28b89df5a40a09efbaa8eec4fa36e2458960b18020aff314bfcb6634ceb076f5"
+}

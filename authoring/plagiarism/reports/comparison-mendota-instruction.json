@@ -1,0 +1,20 @@
+{
+  "label": "mendota-instruction",
+  "url": "https://raw.githubusercontent.com/harbor-framework/terminal-bench-science/main/tasks/earth-sciences/geosciences/mendota-ice-phenology/instruction.md",
+  "kind": "instruction",
+  "total_lines": 35,
+  "captured_lines": 35,
+  "reference_window_sha256": "605d36bba901bbd99bcb3975c8c3f589a5083a287c9df408af9512205993f74c",
+  "normalized_tokens": 899,
+  "comparisons": [
+    {
+      "candidate": "tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/instruction.md",
+      "candidate_sha256": "c6c7ac501e945634a67958942860fe744a75f725e08b34160baecefeb09744e3",
+      "exact_normalized_match": false,
+      "word_5gram_jaccard": 0.015828677839851025,
+      "normalized_line_jaccard": 0.03571428571428571,
+      "code_structure_3gram_jaccard": 0.0,
+      "weighted_similarity": 0.018425778132482043
+    }
+  ]
+}

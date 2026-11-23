@@ -1,0 +1,124 @@
+{
+  "kind": "portable-author-checks",
+  "task_sha256": "67117a1bf96fe42dd909379c45f2194562e2d35976d41e3c0782898d9a94cf73",
+  "docker_validated": false,
+  "harbor_validated": false,
+  "results": [
+    {
+      "check": "oracle-batch-0",
+      "status": "PASS",
+      "seconds": 0.625,
+      "cases": 4
+    },
+    {
+      "check": "oracle-batch-1",
+      "status": "PASS",
+      "seconds": 0.625,
+      "cases": 4
+    },
+    {
+      "check": "oracle-batch-2",
+      "status": "PASS",
+      "seconds": 0.5619999999998981,
+      "cases": 4
+    },
+    {
+      "check": "oracle-batch-3",
+      "status": "PASS",
+      "seconds": 0.5940000000009604,
+      "cases": 4
+    },
+    {
+      "check": "oracle-batch-4",
+      "status": "PASS",
+      "seconds": 1.1559999999990396,
+      "cases": 4
+    },
+    {
+      "check": "oracle-batch-5",
+      "status": "PASS",
+      "seconds": 0.8279999999995198,
+      "cases": 4
+    },
+    {
+      "check": "oracle-batch-6",
+      "status": "PASS",
+      "seconds": 1.110000000000582,
+      "cases": 4
+    },
+    {
+      "check": "oracle-batch-7",
+      "status": "PASS",
+      "seconds": 1.2810000000008586,
+      "cases": 4
+    },
+    {
+      "check": "fresh-repeat",
+      "status": "PASS",
+      "seconds": 0.5779999999995198,
+      "cases": 4
+    },
+    {
+      "check": "independent-generator-normal-rank",
+      "status": "PASS"
+    },
+    {
+      "check": "wrong-rank",
+      "status": "PASS",
+      "incorrect_submission_rejected": true
+    },
+    {
+      "check": "wrong-finite-factor",
+      "status": "PASS",
+      "incorrect_submission_rejected": true
+    },
+    {
+      "check": "wrong-infinity",
+      "status": "PASS",
+      "incorrect_submission_rejected": true
+    },
+    {
+      "check": "wrong-right-degree",
+      "status": "PASS",
+      "incorrect_submission_rejected": true
+    },
+    {
+      "check": "wrong-left-degree",
+      "status": "PASS",
+      "incorrect_submission_rejected": true
+    },
+    {
+      "check": "forged-basis",
+      "status": "PASS",
+      "incorrect_submission_rejected": true
+    },
+    {
+      "check": "float-scalar",
+      "status": "PASS",
+      "incorrect_submission_rejected": true
+    },
+    {
+      "check": "boolean-rank",
+      "status": "PASS",
+      "incorrect_submission_rejected": true
+    },
+    {
+      "check": "alternative-basis",
+      "status": "PASS"
+    },
+    {
+      "check": "broken-baseline",
+      "status": "PASS",
+      "incorrect_submission_rejected": true,
+      "reason": "case-016: incorrect normal rank"
+    },
+    {
+      "check": "partial-baseline",
+      "status": "PASS",
+      "incorrect_submission_rejected": true,
+      "reason": "case-016: infinite_sizes: incorrect degrees/sizes"
+    }
+  ],
+  "seconds": 9.57799999999952,
+  "success": true
+}

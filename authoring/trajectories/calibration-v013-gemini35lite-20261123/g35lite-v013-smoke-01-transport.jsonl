@@ -1,0 +1,155 @@
+{"utc": "2026-11-23T14:31:30.188073+00:00", "event": "transport_config", "interval_sec": 20.0, "max_attempts": 5, "sdk_retries": 0, "native_nested_attempts": 1, "request_timeout_sec": 300}
+{"utc": "2026-11-23T14:31:44.119403+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:31:48.080874+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 3.9530000000013388, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:32:04.128666+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:32:14.537382+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 10.40599999999904, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:32:24.139842+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:32:25.405773+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.2659999999996217, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:32:44.143979+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:32:45.377148+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.2190000000009604, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:33:04.170978+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:33:10.546512+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 6.375, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:33:24.170810+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:33:25.737375+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.5630000000019209, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:33:44.172763+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:33:46.847520+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 2.688000000001921, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:34:04.172470+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:34:06.095016+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.9220000000022992, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:34:06.095016+00:00", "event": "exponential_backoff", "delay_sec": 12.44892815079977, "following_attempt": 2}
+{"utc": "2026-11-23T14:34:24.186520+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:34:25.689155+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 1.5, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:34:44.188549+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:34:46.293536+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.1089999999967404, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:34:46.294536+00:00", "event": "exponential_backoff", "delay_sec": 10.210040073317892, "following_attempt": 2}
+{"utc": "2026-11-23T14:35:04.188496+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:35:05.546781+00:00", "event": "request_failed", "attempt": 2, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.3589999999967404, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:35:05.547781+00:00", "event": "exponential_backoff", "delay_sec": 20.258854726957516, "following_attempt": 3}
+{"utc": "2026-11-23T14:35:25.812845+00:00", "event": "request_started", "attempt": 3, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:35:28.048122+00:00", "event": "request_succeeded", "attempt": 3, "elapsed_sec": 2.2339999999967404, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:35:45.828415+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:35:47.472869+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.6559999999990396, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:35:47.472869+00:00", "event": "exponential_backoff", "delay_sec": 10.31109998823485, "following_attempt": 2}
+{"utc": "2026-11-23T14:36:05.843619+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:36:07.303699+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 1.4690000000009604, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:36:25.842594+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:36:27.126365+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.2819999999992433, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:36:45.844777+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:36:47.435830+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.5940000000009604, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:36:47.435830+00:00", "event": "exponential_backoff", "delay_sec": 12.512805490850022, "following_attempt": 2}
+{"utc": "2026-11-23T14:37:05.863264+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:37:07.749046+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 1.875, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:37:25.881742+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:37:28.228008+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 2.3440000000009604, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:37:45.899710+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:37:47.252609+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.3440000000009604, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:38:05.906452+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:38:07.157179+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.25, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:38:25.905306+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:38:27.270636+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.375, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:38:27.271636+00:00", "event": "exponential_backoff", "delay_sec": 11.080417204145252, "following_attempt": 2}
+{"utc": "2026-11-23T14:38:45.913675+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:38:47.893561+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 1.9690000000009604, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:39:05.922904+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:39:08.314671+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.3910000000032596, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:39:08.314671+00:00", "event": "exponential_backoff", "delay_sec": 10.688036505773399, "following_attempt": 2}
+{"utc": "2026-11-23T14:39:25.927627+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:39:28.887278+00:00", "event": "request_failed", "attempt": 2, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.952999999997701, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:39:28.888279+00:00", "event": "exponential_backoff", "delay_sec": 20.335283792188978, "following_attempt": 3}
+{"utc": "2026-11-23T14:39:49.223508+00:00", "event": "request_started", "attempt": 3, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:39:51.140724+00:00", "event": "request_succeeded", "attempt": 3, "elapsed_sec": 1.9059999999990396, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:40:09.248933+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:40:11.346567+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 2.0930000000007567, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:40:29.260831+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:40:30.932685+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.6720000000022992, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:40:49.266243+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:40:51.014724+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.75, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:41:09.274713+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:41:11.167655+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.889999999999418, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:41:11.167655+00:00", "event": "exponential_backoff", "delay_sec": 12.760373338027517, "following_attempt": 2}
+{"utc": "2026-11-23T14:41:29.289868+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:41:36.852793+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 7.563000000001921, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:41:49.293903+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:42:02.737687+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 13.454000000001543, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:42:02.737687+00:00", "event": "exponential_backoff", "delay_sec": 12.452473792675114, "following_attempt": 2}
+{"utc": "2026-11-23T14:42:15.197395+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:42:17.282751+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 2.077999999997701, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:42:35.197227+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:42:36.776370+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.5779999999977008, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:42:36.776370+00:00", "event": "exponential_backoff", "delay_sec": 11.061237615287682, "following_attempt": 2}
+{"utc": "2026-11-23T14:42:55.213309+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:42:57.268981+00:00", "event": "request_failed", "attempt": 2, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.062999999998283, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:42:57.269981+00:00", "event": "exponential_backoff", "delay_sec": 22.438838869117504, "following_attempt": 3}
+{"utc": "2026-11-23T14:43:19.714269+00:00", "event": "request_started", "attempt": 3, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:43:21.175149+00:00", "event": "request_succeeded", "attempt": 3, "elapsed_sec": 1.4690000000009604, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:43:39.717535+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:43:43.166171+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 3.452999999997701, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:43:59.718864+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:44:02.116613+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.4069999999992433, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:44:02.116613+00:00", "event": "exponential_backoff", "delay_sec": 11.037035572002397, "following_attempt": 2}
+{"utc": "2026-11-23T14:44:19.718458+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:44:22.394593+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 2.687999999998283, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:44:39.718560+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:44:41.818413+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 2.110000000000582, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:44:59.733980+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:45:01.548645+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.8119999999980791, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:45:19.732983+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:45:21.811099+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.0780000000013388, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:45:21.811099+00:00", "event": "exponential_backoff", "delay_sec": 12.375083221200383, "following_attempt": 2}
+{"utc": "2026-11-23T14:45:39.734020+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:45:41.707365+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 1.9840000000003783, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:45:59.734348+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:46:02.353318+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.625, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:46:02.353318+00:00", "event": "exponential_backoff", "delay_sec": 10.387304199325976, "following_attempt": 2}
+{"utc": "2026-11-23T14:46:19.733117+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:46:21.998506+00:00", "event": "request_failed", "attempt": 2, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.2659999999996217, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:46:21.998506+00:00", "event": "exponential_backoff", "delay_sec": 21.507458072149923, "following_attempt": 3}
+{"utc": "2026-11-23T14:46:43.514495+00:00", "event": "request_started", "attempt": 3, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:46:46.086112+00:00", "event": "request_failed", "attempt": 3, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.5780000000013388, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:46:46.086112+00:00", "event": "exponential_backoff", "delay_sec": 42.28419823032957, "following_attempt": 4}
+{"utc": "2026-11-23T14:47:28.392329+00:00", "event": "request_started", "attempt": 4, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:47:31.279196+00:00", "event": "request_succeeded", "attempt": 4, "elapsed_sec": 2.8909999999996217, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:47:48.406686+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:47:51.032410+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 2.625, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:48:08.421674+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:48:10.008453+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 1.5940000000009604, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:48:28.422077+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:48:31.922211+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 3.5, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:48:31.924904+00:00", "event": "exponential_backoff", "delay_sec": 12.157416355818956, "following_attempt": 2}
+{"utc": "2026-11-23T14:48:48.421403+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:48:51.751618+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 3.3290000000015425, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:49:08.429358+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:49:09.879761+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.4529999999977008, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:49:09.879761+00:00", "event": "exponential_backoff", "delay_sec": 12.641592058999638, "following_attempt": 2}
+{"utc": "2026-11-23T14:49:28.437575+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:49:30.735944+00:00", "event": "request_failed", "attempt": 2, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.2969999999986612, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:49:30.735944+00:00", "event": "exponential_backoff", "delay_sec": 20.30317448645006, "following_attempt": 3}
+{"utc": "2026-11-23T14:49:51.047389+00:00", "event": "request_started", "attempt": 3, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:49:55.126318+00:00", "event": "request_failed", "attempt": 3, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 4.0790000000015425, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:49:55.126318+00:00", "event": "exponential_backoff", "delay_sec": 42.015115474458305, "following_attempt": 4}
+{"utc": "2026-11-23T14:50:37.141015+00:00", "event": "request_started", "attempt": 4, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:50:40.794231+00:00", "event": "request_succeeded", "attempt": 4, "elapsed_sec": 3.6559999999990396, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:50:57.139674+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:50:59.585353+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.4530000000013388, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:50:59.585353+00:00", "event": "exponential_backoff", "delay_sec": 10.84383414208776, "following_attempt": 2}
+{"utc": "2026-11-23T14:51:17.147371+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:51:19.617810+00:00", "event": "request_succeeded", "attempt": 2, "elapsed_sec": 2.4690000000009604, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:51:37.156591+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:51:39.428457+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 2.2810000000026776, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:51:57.157635+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:51:59.779138+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 2.625, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:52:17.172639+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:52:24.000572+00:00", "event": "request_succeeded", "attempt": 1, "elapsed_sec": 6.8290000000015425, "response_model": "gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:52:37.170884+00:00", "event": "request_started", "attempt": 1, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:52:41.386027+00:00", "event": "request_failed", "attempt": 1, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 4.21900000000096, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:52:41.386027+00:00", "event": "exponential_backoff", "delay_sec": 12.895009348896489, "following_attempt": 2}
+{"utc": "2026-11-23T14:52:57.171261+00:00", "event": "request_started", "attempt": 2, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:53:02.409638+00:00", "event": "request_failed", "attempt": 2, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 5.25, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:53:02.409638+00:00", "event": "exponential_backoff", "delay_sec": 21.498854234812285, "following_attempt": 3}
+{"utc": "2026-11-23T14:53:23.921057+00:00", "event": "request_started", "attempt": 3, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:53:25.956475+00:00", "event": "request_failed", "attempt": 3, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 2.047000000002299, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:53:25.956475+00:00", "event": "exponential_backoff", "delay_sec": 41.99874113097774, "following_attempt": 4}
+{"utc": "2026-11-23T14:54:07.961934+00:00", "event": "request_started", "attempt": 4, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:54:12.771695+00:00", "event": "request_failed", "attempt": 4, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 4.812999999998283, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}
+{"utc": "2026-11-23T14:54:12.771695+00:00", "event": "exponential_backoff", "delay_sec": 61.20771602965727, "following_attempt": 5}
+{"utc": "2026-11-23T14:55:13.999765+00:00", "event": "request_started", "attempt": 5, "model": "gemini/gemini-3.5-flash-lite"}
+{"utc": "2026-11-23T14:55:15.730174+00:00", "event": "request_failed", "attempt": 5, "status": 503, "error_type": "ServiceUnavailableError", "elapsed_sec": 1.7340000000003783, "message": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n", "quota_exhausted": false}

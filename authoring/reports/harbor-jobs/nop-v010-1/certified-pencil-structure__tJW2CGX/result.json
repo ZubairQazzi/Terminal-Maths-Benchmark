@@ -1,0 +1,124 @@
+{
+    "schema_version": 1,
+    "id": "4a230335-5add-47fe-82b8-cc38b7182884",
+    "task_name": "terminal-bench-science/certified-pencil-structure",
+    "trial_name": "certified-pencil-structure__tJW2CGX",
+    "trial_uri": "file:///F:/rl/math-benchmark/authoring/reports/harbor-jobs/nop-v010-1/certified-pencil-structure__tJW2CGX",
+    "task_id": {
+        "path": "F:\\rl\\math-benchmark\\tasks\\mathematical-sciences\\applied-mathematics\\certified-pencil-structure"
+    },
+    "source": null,
+    "task_checksum": "d9fb4a2ddbebac1cca2dce995550b1fa6ceb53603baf08bf356ccc6e5fd14302",
+    "config": {
+        "schema_version": 1,
+        "task": {
+            "path": "F:\\rl\\math-benchmark\\tasks\\mathematical-sciences\\applied-mathematics\\certified-pencil-structure",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "certified-pencil-structure__tJW2CGX",
+        "trials_dir": "F:\\rl\\math-benchmark\\authoring\\reports\\harbor-jobs\\nop-v010-1",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "base_url": null,
+            "model_api_key_name": null,
+            "model_api_format": null,
+            "skip_model_parsing": false,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "override_error_policy": {},
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "bb8807e7-2961-41e6-85c5-156da3888dca",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-11-23T12:06:05.970094Z",
+    "finished_at": "2026-11-23T12:06:29.475969Z",
+    "environment_setup": {
+        "started_at": "2026-11-23T12:06:06.036370Z",
+        "finished_at": "2026-11-23T12:06:09.903784Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-23T12:06:09.903784Z",
+        "finished_at": "2026-11-23T12:06:09.903784Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-23T12:06:09.904338Z",
+        "finished_at": "2026-11-23T12:06:09.905534Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-23T12:06:14.668446Z",
+        "finished_at": "2026-11-23T12:06:29.475969Z"
+    },
+    "step_results": null,
+    "reward_valid": true
+}

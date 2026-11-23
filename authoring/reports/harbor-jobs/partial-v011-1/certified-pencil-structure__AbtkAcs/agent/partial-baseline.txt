@@ -1,0 +1,2 @@
+Uploaded exact finite Smith solver without infinite/minimal structure.
+This deterministic negative control makes no model calls.

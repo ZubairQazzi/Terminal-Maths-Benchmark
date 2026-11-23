@@ -1,0 +1,1 @@
+Exact general oracle launched through supporting executable Python source.

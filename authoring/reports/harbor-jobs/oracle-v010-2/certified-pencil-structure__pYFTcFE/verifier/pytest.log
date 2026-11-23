@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 8 items
+
+test_outputs.py ........                                                 [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_exact_structural_analysis[batch-case-000]
+PASSED test_outputs.py::test_exact_structural_analysis[batch-case-004]
+PASSED test_outputs.py::test_exact_structural_analysis[batch-case-008]
+PASSED test_outputs.py::test_exact_structural_analysis[batch-case-012]
+PASSED test_outputs.py::test_exact_structural_analysis[batch-case-016]
+PASSED test_outputs.py::test_exact_structural_analysis[batch-case-020]
+PASSED test_outputs.py::test_exact_structural_analysis[batch-case-024]
+PASSED test_outputs.py::test_exact_structural_analysis[batch-case-028]
+============================== 8 passed in 5.78s ===============================

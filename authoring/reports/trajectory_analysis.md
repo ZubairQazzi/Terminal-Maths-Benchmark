@@ -1,0 +1,20 @@
+# Calibration and trajectory analysis
+
+Final task v0.1.3; same installed Terminus-2 2.0.0 agent, requested model gemini/gemini-3.8-flash, Harbor 0.27.0. The primary batch is **INCOMPLETE due to provider unavailability**. Requested: 8 independent valid trials. Actually attempted on the final version: 1. Valid completions: 0; successes: 0; ordinary failures: 0; infrastructure interruptions: 1. Observed success/failure rates and valid-trial mean/median time are undefined. The requested 40-60% difficulty target is unmeasured.
+
+| Run | Elapsed sec | Agent steps / tool calls | Input / output tokens | Native raw reward | Classification |
+|---|---:|---:|---:|---:|---|
+| flash-v013-01 | 742.800616 | 0 / 0 | 0 / 0 | 0.0 | INTERRUPTED: ServiceUnavailableError |
+
+Google returned repeated HTTP 503 UNAVAILABLE/high-demand responses through its official generateContent endpoint. The native final exception policy explicitly records has_valid_reward=false. Therefore the raw 0.0 is excluded from mathematical success/failure statistics. No usable agent solution or graded mathematical trajectory was produced; the ATIF file, exception trace, console and native result are preserved. The runner stopped before starting trials 2-8 under its recorded infrastructure-error rule. Missing trials are not fabricated or counted as failures.
+
+Configuration is preserved in calibration_manifest.json, including all eight planned commands, per-file hashes, final author digest 28b89df5a40a09efbaa8eec4fa36e2458960b18020aff314bfcb6634ceb076f5, and native task checksum 99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe. Containers are fresh and serial; agent budget 28800 sec, 2 CPU / 4 GiB. The wrapper spaces outer LiteLLM calls by at least 16 sec without changing messages or the agent. All planned trials use request timeout 300 sec and SDK retry count zero; installed Harbor retry layers remain native. Full messages/pane logs/ATIF are enabled; terminal .cast recording is disabled. Model-catalog version 3.0 is generic alias metadata, not an immutable deployment pin. No paid fallback, billing change, or publication occurred. Cost for this primary interrupted attempt is unavailable; token zeros from the harness do not prove zero billed cost.
+
+Preliminary attempts are retained separately and never pooled into the primary sample:
+
+- Hydrogen v0.1.2, gemini-v012-01: 636.184729 sec, 8 agent steps / 3 tool calls, 14943 input / 383 output tokens. Repeated HTTP 503 followed by HTTP 429/free-tier 5 RPM led to native RateLimitError; raw reward 0.0 is invalid. Harness cost USD 0.023589825 is an estimate, not a billing receipt. Zero valid completions. The user then approved switching to Flash.
+- Flash v0.1.2, flash-v012-01: 1293.391 sec, provider-stalled with no saved usable response. The operator stopped its exact own processes/container before grading to repair an independently confirmed executable-helper fairness defect. There is no native final trial result; operator snapshots and flash_v012_operator_interruption.json preserve the event. No mathematical outcome was observed. This batch is retired after the v0.1.3 repair.
+
+The final v0.1.3 fairness repair was validated by two oracle passes, a correct executable-helper pass, no-op/partial rejection, and renewed isolation probes before primary calibration. No completed model result was available to tune against; mathematics was unchanged by this repair.
+
+There is no evidence to attribute these interruptions to mathematical reasoning, planning, exact arithmetic, or implementation failure. Such analysis requires valid completed trajectories. Resume only when the same approved free-tier provider/model is available, retain the frozen task and agent configuration, preserve existing jobs, and collect eight valid independent trials. A later resumed sample must document its dates and provider alias limitations. Then report exact observed counts, uncertainty, common mathematical failure modes, and any justified new-version retesting. Independent domain review remains outstanding.

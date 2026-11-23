@@ -1,0 +1,90 @@
+{
+  "task_version": "0.1.3",
+  "harbor_task_checksum": "99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe",
+  "audit_utc": "2026-11-23T13:48:31.914776+00:00",
+  "one_task": true,
+  "local_validation_passed": true,
+  "harbor_validation_passed": true,
+  "oracle_runs": 2,
+  "oracle_rewards": [
+    1.0,
+    1.0
+  ],
+  "nop_reward": 0.0,
+  "partial_reward": 0.0,
+  "ctrf_tests": 9,
+  "pencils": 36,
+  "isolation_probe_passed": true,
+  "leakage_probe_passed": true,
+  "scoped_similarity": 0.03818576713863783,
+  "scoped_heuristic_originality": 0.9618142328613621,
+  "calibration_completed": 0,
+  "rubric_counts": {
+    "PASS": 32,
+    "FAIL": 0,
+    "WARNING": 8,
+    "NOT TESTED": 0
+  },
+  "trials": [
+    {
+      "job": "oracle-v013-repeat",
+      "trial": "certified-pencil-structure__DeD9Mqk",
+      "task_checksum": "99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe",
+      "reward": 1.0,
+      "tests": 9,
+      "passed": 9,
+      "failed": 0,
+      "result_path": "F:\\rl\\math-benchmark\\authoring\\reports\\harbor-jobs\\oracle-v013-repeat\\certified-pencil-structure__DeD9Mqk\\result.json",
+      "started_at": "2026-11-23T13:10:14.581778Z",
+      "finished_at": "2026-11-23T13:11:04.899426Z"
+    },
+    {
+      "job": "oracle-v013-repeat",
+      "trial": "certified-pencil-structure__PQc7sRF",
+      "task_checksum": "99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe",
+      "reward": 1.0,
+      "tests": 9,
+      "passed": 9,
+      "failed": 0,
+      "result_path": "F:\\rl\\math-benchmark\\authoring\\reports\\harbor-jobs\\oracle-v013-repeat\\certified-pencil-structure__PQc7sRF\\result.json",
+      "started_at": "2026-11-23T13:11:04.953702Z",
+      "finished_at": "2026-11-23T13:11:54.565279Z"
+    },
+    {
+      "job": "nop-v013-1",
+      "trial": "certified-pencil-structure__7rqEo6w",
+      "task_checksum": "99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe",
+      "reward": 0.0,
+      "tests": 9,
+      "passed": 0,
+      "failed": 9,
+      "result_path": "F:\\rl\\math-benchmark\\authoring\\reports\\harbor-jobs\\nop-v013-1\\certified-pencil-structure__7rqEo6w\\result.json",
+      "started_at": "2026-11-23T13:10:12.502559Z",
+      "finished_at": "2026-11-23T13:10:35.228184Z"
+    },
+    {
+      "job": "partial-v013-1",
+      "trial": "certified-pencil-structure__iKebXYx",
+      "task_checksum": "99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe",
+      "reward": 0.0,
+      "tests": 9,
+      "passed": 1,
+      "failed": 8,
+      "result_path": "F:\\rl\\math-benchmark\\authoring\\reports\\harbor-jobs\\partial-v013-1\\certified-pencil-structure__iKebXYx\\result.json",
+      "started_at": "2026-11-23T13:10:42.906024Z",
+      "finished_at": "2026-11-23T13:11:15.846874Z"
+    },
+    {
+      "job": "helper-v013-1",
+      "trial": "certified-pencil-structure__gMNakHj",
+      "task_checksum": "99a8da66bc504372c791300e6504ce522f6453cd90ad40dc9ce0ab971ae02cbe",
+      "reward": 1.0,
+      "tests": 9,
+      "passed": 9,
+      "failed": 0,
+      "result_path": "F:\\rl\\math-benchmark\\authoring\\reports\\harbor-jobs\\helper-v013-1\\certified-pencil-structure__gMNakHj\\result.json",
+      "started_at": "2026-11-23T13:11:29.624599Z",
+      "finished_at": "2026-11-23T13:12:20.314678Z"
+    }
+  ]
+}

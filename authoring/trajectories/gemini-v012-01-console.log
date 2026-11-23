@@ -1,0 +1,184 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 47: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\zubai\.local\bin\harbor.exe\__main__.py", line 10, in <module>
+    sys.exit(app())
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\typer\main.py", line 1126, in __call__
+    return get_command(self)(*args, **kwargs)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\typer\_click\core.py", line 809, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\typer\core.py", line 1305, in main
+    return _main(
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\typer\core.py", line 332, in _main
+    rv = self.invoke(ctx)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\typer\core.py", line 1227, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\typer\_click\core.py", line 748, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\typer\_click\core.py", line 490, in invoke
+    return callback(*args, **kwargs)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\typer\main.py", line 1445, in wrapper
+    return callback(**use_params)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\cli\jobs.py", line 2083, in start
+    return _execute_job(
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\cli\jobs.py", line 2437, in _execute_job
+    job, job_result = run_async(_run_job())
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\cli\utils.py", line 130, in run_async
+    return asyncio.run(
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 678, in run_until_complete
+    self.run_forever()
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 322, in run_forever
+    super().run_forever()
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 645, in run_forever
+    self._run_once()
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1999, in _run_once
+    handle._run()
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\cli\utils.py", line 118, in _with_command_cleanup
+    return await with_async_cleanup(coro)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\utils\async_cleanup.py", line 19, in with_async_cleanup
+    return await coro
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\cli\jobs.py", line 2394, in _run_job
+    job_result = await job.run()
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\job.py", line 1139, in run
+    self._report_model_connections()
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\job.py", line 1091, in _report_model_connections
+    self._logger.debug(
+Message: '%s / %s (%s trials): %s%s; base URL=%s (%s); API format=%s (%s)'
+Arguments: ('terminus-2', 'gemini', 1, 'GEMINI_API_KEY', ' \u2192 GEMINI_API_KEY', 'https://generativelanguage.googleapis.com/v1beta', 'best guess; not injected', 'google_generate_content', 'agent_default')
+Unknown Error in LLM interaction: litellm.ServiceUnavailableError: GeminiException - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Unknown Error in LLM interaction: litellm.ServiceUnavailableError: GeminiException - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Unknown Error in LLM interaction: litellm.ServiceUnavailableError: GeminiException - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Unknown Error in LLM interaction: litellm.RateLimitError: litellm.RateLimitError: geminiException - {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-4-hydrogen, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\nPlease retry in 19h18m50.709299998s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://aistudio.google.com/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "description": "Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.",
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-4-hydrogen",
+              "location": "global"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "69530s"
+      }
+    ]
+  }
+}
+
+Unknown Error in LLM interaction: litellm.RateLimitError: litellm.RateLimitError: geminiException - {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-4-hydrogen, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\nPlease retry in 41.507614361s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://aistudio.google.com/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "description": "Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.",
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-4-hydrogen",
+              "location": "global"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "41s"
+      }
+    ]
+  }
+}
+
+  1/1 Running trials... --------------------------------------- 0:10:36 0:00:00
+adhoc • terminus-2 • gemini-4-hydrogen
++---------------------+
+| Trials | Exceptions |
+|--------+------------|
+|      0 |          1 |
++---------------------+
+
++------------------------+
+| Exception      | Count |
+|----------------+-------|
+| RateLimitError |     1 |
++------------------------+
+
+Job Info
+Total runtime: 10m 36s
+Results written to 
+F:\rl\math-benchmark\authoring\trajectories\jobs\gemini-v012-01\result.json
+Inspect results by running `harbor view 
+F:\rl\math-benchmark\authoring\trajectories\jobs`
+Share results by running `harbor upload 
+F:\rl\math-benchmark\authoring\trajectories\jobs\gemini-v012-01`
+

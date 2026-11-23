@@ -1,0 +1,21 @@
+Skipping image OS validation for hb__6845fd8306734738d04d6d10057609e0: docker inspect returned 1
+Unknown Error in LLM interaction: litellm.ServiceUnavailableError: GeminiException - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Unknown Error in LLM interaction: litellm.Timeout: Read timed out. Timeout passed=300.0, time taken=300.341 seconds
+Unknown Error in LLM interaction: litellm.ServiceUnavailableError: GeminiException - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+Trajectory dumped to F:\rl\math-benchmark\authoring\trajectories\jobs\flash-v013-01\certified-pencil-structure__nqWHnUv\agent\trajectory.json
+Collecting main service artifacts
+Skipping image OS validation for hb__52c07e1532d1d2b95851289a9301b0fb: docker inspect returned 1

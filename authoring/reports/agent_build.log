@@ -1,0 +1,49 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 525B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 61B done
+#3 DONE 0.0s
+
+#4 [1/7] FROM docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de
+#4 resolve docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 4.08kB done
+#5 DONE 0.0s
+
+#6 [2/7] COPY requirements.txt /tmp/requirements.txt
+#6 CACHED
+
+#7 [3/7] RUN pip install --no-cache-dir -r /tmp/requirements.txt
+#7 CACHED
+
+#8 [4/7] RUN useradd --create-home --uid 1000 agent && mkdir -p /app/submission && chown -R agent:agent /app
+#8 CACHED
+
+#9 [5/7] COPY spec.md /app/spec.md
+#9 DONE 0.0s
+
+#10 [6/7] COPY data/ /app/data/
+#10 DONE 0.0s
+
+#11 [7/7] WORKDIR /app
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers 0.1s done
+#12 exporting manifest sha256:9ccf79fb2beceee0eeadbba3cbd3bfc137268328589af7c26ac337f6e2dd2947 0.0s done
+#12 exporting config sha256:62804c3d90f8d6cb944cc34f0261f17afb30366a3cebc04096b53406d6bfae4e 0.0s done
+#12 exporting attestation manifest sha256:647b2c7e9326bc33f2c0e908200c87cd4fbf0aea7f8e13417a191823aee82d6c 0.0s done
+#12 exporting manifest list sha256:00c746141d0133f30d11f71ec4e3bbeb3b167fd029d451858f2372b3fb073b74 0.0s done
+#12 naming to docker.io/library/local-pencil-agent:0.1.1 done
+#12 unpacking to docker.io/library/local-pencil-agent:0.1.1
+#12 unpacking to docker.io/library/local-pencil-agent:0.1.1 2.3s done
+#12 DONE 2.5s

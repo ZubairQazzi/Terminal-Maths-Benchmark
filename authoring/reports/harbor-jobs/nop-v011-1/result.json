@@ -1,0 +1,40 @@
+{
+    "schema_version": 1,
+    "id": "35782346-af38-4731-a68f-197a6bf62314",
+    "started_at": "2026-11-23T17:09:41.557496",
+    "updated_at": "2026-11-23T17:10:01.242484",
+    "finished_at": "2026-11-23T17:10:01.242484",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "certified-pencil-structure__jaHoxPh"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

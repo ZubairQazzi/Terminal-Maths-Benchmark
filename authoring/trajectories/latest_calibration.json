@@ -1,0 +1,11 @@
+{
+  "batch_directory": "authoring/trajectories/calibration-v013-gemini35lite-high-r2-20261123",
+  "manifest": "authoring/trajectories/calibration-v013-gemini35lite-high-r2-20261123/manifest.json",
+  "live_summary": "authoring/trajectories/calibration-v013-gemini35lite-high-r2-20261123/summary.json",
+  "connection_diagnosis": "authoring/reports/connection_recovery.md",
+  "model": "gemini/gemini-3.5-flash-lite",
+  "agent": "terminus-2 2.0.0",
+  "task_version": "0.1.3",
+  "smoke_separate_from_eight_calibration_trials": true,
+  "note": "Read the live summary for actual status. Earlier 3.8 Flash summaries are historical and must not be pooled."
+}

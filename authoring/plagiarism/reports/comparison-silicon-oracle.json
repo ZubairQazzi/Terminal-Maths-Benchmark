@@ -1,0 +1,56 @@
+{
+  "label": "silicon-oracle",
+  "url": "https://raw.githubusercontent.com/harbor-framework/terminal-bench-science/main/tasks/physical-sciences/materials-science/si-fracture-fbc/solution/oracle/oracle_emit_prod.py",
+  "kind": "code",
+  "total_lines": 338,
+  "captured_lines": 294,
+  "reference_window_sha256": "f5ce2b033aca6db52efcfd5ed1fcb4fb599985104c921d80956881c496830f35",
+  "normalized_tokens": 2511,
+  "comparisons": [
+    {
+      "candidate": "tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/solution/solve.py",
+      "candidate_sha256": "1b4608ed5b8655d095178fd7fcc6b321074d1a74893bc63de505d185dae07020",
+      "exact_normalized_match": false,
+      "word_5gram_jaccard": 0.00034071550255536625,
+      "normalized_line_jaccard": 0.0,
+      "code_structure_3gram_jaccard": 0.17589348283111422,
+      "weighted_similarity": 0.026588451726200352
+    },
+    {
+      "candidate": "tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/tests/cases.py",
+      "candidate_sha256": "421c6bf52ca68dbea2852efec5cc3fea5c0d963b73e8885b3b163c21946ee98c",
+      "exact_normalized_match": false,
+      "word_5gram_jaccard": 0.0008949880668257757,
+      "normalized_line_jaccard": 0.0,
+      "code_structure_3gram_jaccard": 0.20104780615586115,
+      "weighted_similarity": 0.030694163763474638
+    },
+    {
+      "candidate": "tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/tests/certificates.py",
+      "candidate_sha256": "462f03963265396064daae5022f756f8ca2e42712644c0e6d87c959c65046196",
+      "exact_normalized_match": false,
+      "word_5gram_jaccard": 0.0,
+      "normalized_line_jaccard": 0.003389830508474576,
+      "code_structure_3gram_jaccard": 0.13819985825655565,
+      "weighted_similarity": 0.02157743636560199
+    },
+    {
+      "candidate": "tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/tests/harness.py",
+      "candidate_sha256": "1a0b65737015b11137c9b67cce6eb0321d437676a2af0b97f54f042c88635647",
+      "exact_normalized_match": false,
+      "word_5gram_jaccard": 0.0,
+      "normalized_line_jaccard": 0.006389776357827476,
+      "code_structure_3gram_jaccard": 0.14552736982643524,
+      "weighted_similarity": 0.023426549563422154
+    },
+    {
+      "candidate": "tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/tests/test_outputs.py",
+      "candidate_sha256": "e96876c81fe0d42fa4a602f616d7a661b7e7345d5e3d627d1bc34340d17584a2",
+      "exact_normalized_match": false,
+      "word_5gram_jaccard": 0.0,
+      "normalized_line_jaccard": 0.0,
+      "code_structure_3gram_jaccard": 0.07318952234206472,
+      "weighted_similarity": 0.010978428351309707
+    }
+  ]
+}

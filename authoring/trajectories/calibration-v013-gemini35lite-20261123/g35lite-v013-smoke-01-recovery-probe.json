@@ -1,0 +1,41 @@
+{
+  "utc": "2026-11-23T14:56:31.143858+00:00",
+  "path": "v1beta/models/gemini-3.5-flash-lite:generateContent",
+  "status": 200,
+  "elapsed_sec": 10.9529999999977,
+  "response_headers": {
+    "Content-Type": "application/json; charset=UTF-8",
+    "Server": "scaffolding on HTTPServer2"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "READY.",
+              "thoughtSignature": "Eo4BCosBAWkUfROMqmv3f56d4F7MlX2iMWukwm1eOvxUbLqEy3D5/t/6NjY0YIh5+H5sPzZzEtZtauaKysWl4ES+ti+gA0trIMMry+aUyvWTlLhmjlvwMhIGkNBky+NSX7afG8UxA3X+C/cv2nrUubJcfLb7GY17SEWEG9EFDCEtwieft7/I39hE+bze7BzEmQ=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 3,
+      "candidatesTokenCount": 2,
+      "totalTokenCount": 5,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "FVQEa7iuOYa9vdIP3tjC8QI"
+  }
+}
