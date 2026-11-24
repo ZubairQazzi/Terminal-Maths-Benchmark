@@ -1,9 +1,0 @@
-Skipping image OS validation for hb__461ff6cb7624e88792b5f70682779be4: docker inspect returned 1
-Unknown Error in LLM interaction: litellm.ServiceUnavailableError: GeminiException - {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-

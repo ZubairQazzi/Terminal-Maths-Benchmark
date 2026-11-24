@@ -1,9 +1,0 @@
-{
-  "decision": "Continue with Gemini only",
-  "source": "Direct user reply during connection recovery",
-  "free_tier_only": true,
-  "paid_api_approved": false,
-  "alternate_provider_trials_authorized": false,
-  "active_model": "gemini/gemini-3.5-flash-lite",
-  "task_version_unchanged": "0.1.3"
-}

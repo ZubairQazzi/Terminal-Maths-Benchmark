@@ -1,2 +1,0 @@
-run_id,agent,agent_version,model,model_version,task_version,task_sha256,seed,duration_sec,steps,tool_calls,input_tokens,output_tokens,cost_usd,cost_kind,reward,status,failure_reason,trajectory_path
-gemini-v012-01,terminus-2,2.0.0,gemini/gemini-4-hydrogen,,0.1.2,4de551a4a6ebc5157d3851274e1aa97ac617186c904c87b7c9ed519de17c401f,,636.184729,8,3,14943,383,0.023589825000000002,harness_estimate_not_billing_receipt,0.0,INTERRUPTED,RateLimitError,F:\rl\math-benchmark\authoring\trajectories\jobs\gemini-v012-01\certified-pencil-structure__XLwfMNc\agent\trajectory.json
