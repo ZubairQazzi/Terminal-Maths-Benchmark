@@ -1,0 +1,31 @@
+{
+  "status": "AUTHORIZED INITIAL TRAJECTORIES COMPLETED",
+  "client_date": "2026-11-26",
+  "authorization_record": "F:\\rl\\bio\\authoring\\final_audit_20261126\\authorization.json",
+  "audit_gate": "F:\\rl\\bio\\authoring\\final_audit_20261126\\pre_model_gate.json",
+  "latest_report": "F:\\rl\\bio\\FINAL_AUDIT_AND_INITIAL_GEMINI_RESULTS.md",
+  "model": "gemini/gemini-3.5-flash-lite",
+  "completed_diagnostic_trajectories_per_task": {
+    "1": 1,
+    "2": 1
+  },
+  "preserved_attempts": 3,
+  "instrumented_generate_content_requests": 87,
+  "successful_generate_content_requests": 55,
+  "instrumented_provider_failures": 32,
+  "catalog_get_requests": 1,
+  "empirical_success_rate": "NOT CALIBRATED; one completed diagnostic trajectory per task is insufficient",
+  "frozen_scientific_requirements_unchanged": true,
+  "public_redistribution_status": "NOT FULLY CLEARED",
+  "task2_conditional_seed_shortcut_warning": true,
+  "actual_billing_invoice": "UNVERIFIED; SDK estimates are not receipts",
+  "historical_pre_authorization_record": {
+    "status": "PENDING EXPLICIT USER APPROVAL",
+    "request_location": "Final handoff in this chat, after completion of both tasks' available non-Gemini validation",
+    "source_requirement": "Attached project brief, Phase15: separate approval before any Gemini/provider usage",
+    "provider_api_calls_made": 0,
+    "valid_model_trials_per_task": 0,
+    "empirical_success_rate": "NOT MEASURED",
+    "note": "Deterministic oracle and negative-control Harbor trials are not model-agent calibration. No existing credential was treated as authorization."
+  }
+}

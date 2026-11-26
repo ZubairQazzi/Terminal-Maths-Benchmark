@@ -1,0 +1,123 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 7,
+            "failed": 4,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795634890.0265007,
+            "stop": 1795634896.286746
+        },
+        "tests": [
+            {
+                "name": "task/tests/test_outputs.py::test_01_complete_handoff",
+                "status": "passed",
+                "duration": 0.0007733999991614837,
+                "start": 1795634893.204558,
+                "stop": 1795634893.2063017,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_02_fractional_representation_audit",
+                "status": "passed",
+                "duration": 2.1550607000008313,
+                "start": 1795634893.2063017,
+                "stop": 1795634895.3613596,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "passed",
+                "duration": 0.04921909999939089,
+                "start": 1795634895.3620424,
+                "stop": 1795634895.4106297,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_04_matched_factorial_effects",
+                "status": "failed",
+                "duration": 0.015350399999078945,
+                "start": 1795634895.4106297,
+                "stop": 1795634895.5627916,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    @pytest.fixture(scope='session')\n>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n..\\..\\..\\task\\tests\\test_outputs.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'matched.tsv', keys = ['gene_id', 'treatment', 'time_h']\nreference =                                      dmr_effect  ...  certified\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\nENSG00000283696.1  Tg        24        0.271597  ...      False\n\n[249636 rows x 15 columns]\n\n    def load_frame(name,keys,reference):\n        frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n        assert set(keys).issubset(frame.columns)\n        assert not frame[keys].duplicated().any(),f'Duplicate scientific identifiers in {name}'\n        frame=frame.set_index(keys)\n>       assert len(frame)==len(reference),f'Incomplete analysis universe in {name}'\nE       AssertionError: Incomplete analysis universe in matched.tsv\nE       assert 0 == 249636\nE        +  where 0 = len(Empty DataFrame\\nColumns: [dmr_effect, parent_effect, interaction, se_dmr, df_dmr, se_parent, df_parent, se_interaction, df_interaction, p_interaction, p_parent_equivalence, p_dmr_minimum, p_joint, q_joint, certified]\\nIndex: [])\nE        +  and   249636 = len(                                     dmr_effect  ...  certified\\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\\nENSG00000283696.1  Tg        24        0.271597  ...      False\\n\\n[249636 rows x 15 columns])\n\n..\\..\\..\\task\\tests\\test_outputs.py:93: AssertionError"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "failed",
+                "duration": 0.0003167000013490906,
+                "start": 1795634895.5627916,
+                "stop": 1795634895.58454,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    @pytest.fixture(scope='session')\n>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n..\\..\\..\\task\\tests\\test_outputs.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'matched.tsv', keys = ['gene_id', 'treatment', 'time_h']\nreference =                                      dmr_effect  ...  certified\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\nENSG00000283696.1  Tg        24        0.271597  ...      False\n\n[249636 rows x 15 columns]\n\n    def load_frame(name,keys,reference):\n        frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n        assert set(keys).issubset(frame.columns)\n        assert not frame[keys].duplicated().any(),f'Duplicate scientific identifiers in {name}'\n        frame=frame.set_index(keys)\n>       assert len(frame)==len(reference),f'Incomplete analysis universe in {name}'\nE       AssertionError: Incomplete analysis universe in matched.tsv\nE       assert 0 == 249636\nE        +  where 0 = len(Empty DataFrame\\nColumns: [dmr_effect, parent_effect, interaction, se_dmr, df_dmr, se_parent, df_parent, se_interaction, df_interaction, p_interaction, p_parent_equivalence, p_dmr_minimum, p_joint, q_joint, certified]\\nIndex: [])\nE        +  and   249636 = len(                                     dmr_effect  ...  certified\\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\\nENSG00000283696.1  Tg        24        0.271597  ...      False\\n\\n[249636 rows x 15 columns])\n\n..\\..\\..\\task\\tests\\test_outputs.py:93: AssertionError"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "failed",
+                "duration": 0.00031060000037541613,
+                "start": 1795634895.586543,
+                "stop": 1795634895.6085367,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    @pytest.fixture(scope='session')\n>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n..\\..\\..\\task\\tests\\test_outputs.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'matched.tsv', keys = ['gene_id', 'treatment', 'time_h']\nreference =                                      dmr_effect  ...  certified\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\nENSG00000283696.1  Tg        24        0.271597  ...      False\n\n[249636 rows x 15 columns]\n\n    def load_frame(name,keys,reference):\n        frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n        assert set(keys).issubset(frame.columns)\n        assert not frame[keys].duplicated().any(),f'Duplicate scientific identifiers in {name}'\n        frame=frame.set_index(keys)\n>       assert len(frame)==len(reference),f'Incomplete analysis universe in {name}'\nE       AssertionError: Incomplete analysis universe in matched.tsv\nE       assert 0 == 249636\nE        +  where 0 = len(Empty DataFrame\\nColumns: [dmr_effect, parent_effect, interaction, se_dmr, df_dmr, se_parent, df_parent, se_interaction, df_interaction, p_interaction, p_parent_equivalence, p_dmr_minimum, p_joint, q_joint, certified]\\nIndex: [])\nE        +  and   249636 = len(                                     dmr_effect  ...  certified\\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\\nENSG00000283696.1  Tg        24        0.271597  ...      False\\n\\n[249636 rows x 15 columns])\n\n..\\..\\..\\task\\tests\\test_outputs.py:93: AssertionError"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "failed",
+                "duration": 0.0003119000011793105,
+                "start": 1795634895.6085367,
+                "stop": 1795634895.63153,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    @pytest.fixture(scope='session')\n>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n..\\..\\..\\task\\tests\\test_outputs.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'matched.tsv', keys = ['gene_id', 'treatment', 'time_h']\nreference =                                      dmr_effect  ...  certified\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\nENSG00000283696.1  Tg        24        0.271597  ...      False\n\n[249636 rows x 15 columns]\n\n    def load_frame(name,keys,reference):\n        frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n        assert set(keys).issubset(frame.columns)\n        assert not frame[keys].duplicated().any(),f'Duplicate scientific identifiers in {name}'\n        frame=frame.set_index(keys)\n>       assert len(frame)==len(reference),f'Incomplete analysis universe in {name}'\nE       AssertionError: Incomplete analysis universe in matched.tsv\nE       assert 0 == 249636\nE        +  where 0 = len(Empty DataFrame\\nColumns: [dmr_effect, parent_effect, interaction, se_dmr, df_dmr, se_parent, df_parent, se_interaction, df_interaction, p_interaction, p_parent_equivalence, p_dmr_minimum, p_joint, q_joint, certified]\\nIndex: [])\nE        +  and   249636 = len(                                     dmr_effect  ...  certified\\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\\nENSG00000283696.1  Tg        24        0.271597  ...      False\\n\\n[249636 rows x 15 columns])\n\n..\\..\\..\\task\\tests\\test_outputs.py:93: AssertionError"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_08_early_partial_identification",
+                "status": "passed",
+                "duration": 0.33167909999974654,
+                "start": 1795634895.63153,
+                "stop": 1795634895.9635935,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "passed",
+                "duration": 0.31326939999962633,
+                "start": 1795634895.9635935,
+                "stop": 1795634896.2769902,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_10_interpretation_limits",
+                "status": "passed",
+                "duration": 0.0009478000010858523,
+                "start": 1795634896.2769902,
+                "stop": 1795634896.2769902,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "task/tests/test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "passed",
+                "duration": 0.00905130000137433,
+                "start": 1795634896.2769902,
+                "stop": 1795634896.286746,
+                "retries": 0,
+                "file_path": "task\\tests\\test_outputs.py"
+            }
+        ]
+    }
+}

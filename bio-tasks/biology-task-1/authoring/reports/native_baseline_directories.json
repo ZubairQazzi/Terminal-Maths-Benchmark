@@ -1,0 +1,13 @@
+{
+  "alternative": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\alternative_output",
+  "nop": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\nop",
+  "constant": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\constant",
+  "hardcoded": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\hardcoded",
+  "label_shift": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\label_shift",
+  "wrong_contrast": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\wrong_contrast",
+  "omitted_adjustment": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\omitted_adjustment",
+  "saturated_shortcut": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\saturated_shortcut",
+  "incomplete": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\incomplete",
+  "invalid_interpretation": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\baselines\\invalid_interpretation",
+  "wrong_sample_alignment": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\wrong_sample_alignment_output"
+}

@@ -1,0 +1,144 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 0,
+            "failed": 11,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795628401.6065018,
+            "stop": 1795628410.0009103
+        },
+        "tests": [
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_01_complete_handoff",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0017284999998992134,
+                "start": 1795628405.1218414,
+                "stop": 1795628405.4960196,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "def test_01_complete_handoff():\n>       for name in NAMES:artifact(name)\n                          ^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:105: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'audit.json'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: audit.json\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/audit.json').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_02_fractional_representation_audit",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 4.150720100000399,
+                "start": 1795628405.4960196,
+                "stop": 1795628409.6873488,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    def test_02_fractional_representation_audit(expected):\n>       audit=json.loads(artifact('audit.json').read_text())\n                         ^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:108: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'audit.json'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: audit.json\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/audit.json').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.000912399999833724,
+                "start": 1795628409.6873488,
+                "stop": 1795628409.7126272,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    def test_03_unselected_complete_gene_universe(expected):\n>       genes=pd.read_csv(artifact('eligible_genes.tsv'),sep='\\t',dtype=str)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:120: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'eligible_genes.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: eligible_genes.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/eligible_genes.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_04_matched_factorial_effects",
+                "status": "failed",
+                "duration": 0.0008073000003605557,
+                "start": 1795628409.7126272,
+                "stop": 1795628409.7489543,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    @pytest.fixture(scope='session')\n>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'matched.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: matched.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/matched.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "failed",
+                "duration": 0.0007040999998935149,
+                "start": 1795628409.7489543,
+                "stop": 1795628409.7895255,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    @pytest.fixture(scope='session')\n>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'matched.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: matched.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/matched.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "failed",
+                "duration": 0.0006238000000848842,
+                "start": 1795628409.7915332,
+                "stop": 1795628409.8291814,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    @pytest.fixture(scope='session')\n>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'matched.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: matched.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/matched.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "failed",
+                "duration": 0.0005293999997775245,
+                "start": 1795628409.83119,
+                "stop": 1795628409.8607342,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    @pytest.fixture(scope='session')\n>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'matched.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: matched.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/matched.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_08_early_partial_identification",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0010244000000056985,
+                "start": 1795628409.8607342,
+                "stop": 1795628409.8883038,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    def test_08_early_partial_identification(expected):\n>       early=load_frame('early_bounds.tsv',['gene_id','treatment','expansion'],expected['early'])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:144: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'early_bounds.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: early_bounds.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/early_bounds.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0012457000002541463,
+                "start": 1795628409.8883038,
+                "stop": 1795628409.9299326,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    def test_09_envelope_expansion_invariants(expected):\n>       early=load_frame('early_bounds.tsv',['gene_id','treatment','expansion'],expected['early'])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:149: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'early_bounds.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: early_bounds.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/early_bounds.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_10_interpretation_limits",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0011055000004489557,
+                "start": 1795628409.9299326,
+                "stop": 1795628409.9659312,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    def test_10_interpretation_limits(expected):\n>       report=json.loads(artifact('interpretation.json').read_text())\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:156: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'interpretation.json'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: interpretation.json\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/interpretation.json').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00790850000021237,
+                "start": 1795628409.9659312,
+                "stop": 1795628410.0009103,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "def test_11_synthetic_positive_and_degenerate_controls():\n        cases=json.loads((DATA/'calibration_cases.json').read_text())['cases']\n        rows=[]\n        for case in cases:\n            groups=[np.array(case['groups'][key],dtype=float) for key in ['dmr_treated','dmr_control','parent_treated','parent_control']]\n            means=[sum(values)/3 for values in groups]\n            vm=np.array([sum((values-means[k])**2)/6 for k,values in enumerate(groups)])\n            d=means[0]-means[1];a=means[2]-means[3];i=d-a\n            row=dict(case_id=case['case_id'],dmr_effect=d,parent_effect=a,interaction=i)\n            params={}\n            for label,select in [('dmr',[0,1]),('parent',[2,3]),('interaction',[0,1,2,3])]:\n                variance=sum(vm[select]);denominator=sum(vm[select]**2)/2\n                params[label]=(variance**.5,variance**2/denominator if denominator else 1e12)\n                row['se_'+label],row['df_'+label]=params[label]\n            sd,fd=params['dmr'];sa,fa=params['parent'];si,fi=params['interaction']\n            row['p_interaction']=2*stats.t.sf(abs(i)/si,fi) if si else float(i==0)\n            row['p_parent_equivalence']=max(stats.t.sf((a+.3)/sa,fa),stats.t.sf((.3-a)/sa,fa)) if sa else float(abs(a)>=.3)\n            row['p_dmr_minimum']=min(1.,2*stats.t.sf((abs(d)-.5)/sd,fd)) if sd else float(abs(d)<=.5)\n            row['p_joint']=max(row['p_interaction'],row['p_parent_equivalence'],row['p_dmr_minimum'])\n            rows.append(row)\n        ref=pd.DataFrame(rows).set_index('case_id');ref['q_joint']=stats.false_discovery_control(ref.p_joint,method='by');ref['certified']=ref.q_joint<=.05\n>       result=load_frame('calibration.tsv',['case_id'],ref)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:182: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'calibration.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: calibration.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_nop/calibration.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

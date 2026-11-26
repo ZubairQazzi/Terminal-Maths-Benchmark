@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795628480.173944,
+            "stop": 1795628485.8079305
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_scientific_requirement",
+                "status": "passed",
+                "duration": 4.009294377999993,
+                "start": 1795628480.731574,
+                "stop": 1795628484.7418075,
+                "retries": 10,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::name::['schema', 'physical_audit', 'biological_limits', 'sample_identity', 'discovery_alignment_scores', 'heldout_identity_certificates', 'pure_aliquots', 'two_source_aliquots', 'open_set_rejection', 'residual_certificates', 'support_optimality']"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,537 @@
+{
+  "seed": 273600,
+  "mapping": {
+    "A000": "Parental_Tg_8h_rep2",
+    "A001": "Parental_Ars_16h_rep2",
+    "A002": "Parental_UT_8h_rep1",
+    "A003": "DmrPERK_Ars_16h_rep2",
+    "A004": "Parental_Dim_4h_rep2",
+    "A005": "Parental_Tg_16h_rep1",
+    "A006": "Parental_Tg_16h_rep3",
+    "A007": "Parental_Tg_24h_rep2",
+    "A008": "Parental_UT_16h_rep3",
+    "A009": "Parental_Ars_24h_rep2",
+    "A010": "DmrPERK_Dim_2h_rep2",
+    "A011": "Parental_Dim_2h_rep2",
+    "A012": "DmrPERK_Dim_16h_rep1",
+    "A013": "DmrPERK_Tg_16h_rep2",
+    "A014": "DmrPERK_Ars_8h_rep2",
+    "A015": "DmrPERK_Tg_4h_rep3",
+    "A016": "DmrPERK_Tg_8h_rep2",
+    "A017": "DmrPERK_Ars_4h_rep2",
+    "A018": "Parental_Ars_2h_rep1",
+    "A019": "Parental_UT_24h_rep2",
+    "A020": "Parental_Ars_4h_rep2",
+    "A021": "Parental_Tg_4h_rep2",
+    "A022": "Parental_UT_8h_rep2",
+    "A023": "DmrPERK_Tg_16h_rep3",
+    "A024": "DmrPERK_Ars_8h_rep3",
+    "A025": "Parental_Ars_16h_rep3",
+    "A026": "DmrPERK_Dim_8h_rep1",
+    "A027": "Parental_Dim_2h_rep1",
+    "A028": "DmrPERK_UT_0h_rep1",
+    "A029": "DmrPERK_Dim_24h_rep1",
+    "A030": "DmrPERK_UT_16h_rep2",
+    "A031": "Parental_Tg_2h_rep3",
+    "A032": "DmrPERK_Dim_4h_rep3",
+    "A033": "DmrPERK_Ars_24h_rep2",
+    "A034": "Parental_Dim_8h_rep2",
+    "A035": "DmrPERK_Ars_4h_rep1",
+    "A036": "DmrPERK_UT_0h_rep3",
+    "A037": "Parental_Ars_8h_rep3",
+    "A038": "DmrPERK_Tg_8h_rep3",
+    "A039": "Parental_Ars_8h_rep2",
+    "A040": "DmrPERK_Ars_2h_rep1",
+    "A041": "Parental_Dim_16h_rep2",
+    "A042": "DmrPERK_UT_24h_rep2",
+    "A043": "Parental_Tg_24h_rep3",
+    "A044": "Parental_Dim_16h_rep3",
+    "A045": "Parental_UT_16h_rep2",
+    "A046": "DmrPERK_Ars_8h_rep1",
+    "A047": "DmrPERK_Dim_2h_rep1",
+    "A048": "Parental_Dim_4h_rep1",
+    "A049": "DmrPERK_UT_4h_rep3",
+    "A050": "DmrPERK_UT_8h_rep1",
+    "A051": "Parental_Tg_8h_rep1",
+    "A052": "DmrPERK_Ars_2h_rep2",
+    "A053": "Parental_Ars_4h_rep1",
+    "A054": "DmrPERK_Dim_16h_rep3",
+    "A055": "Parental_Tg_2h_rep1",
+    "A056": "DmrPERK_UT_16h_rep1",
+    "A057": "Parental_Ars_24h_rep3",
+    "A058": "DmrPERK_Dim_8h_rep2",
+    "A059": "DmrPERK_UT_24h_rep1",
+    "A060": "DmrPERK_Tg_8h_rep1",
+    "A061": "Parental_Tg_8h_rep3",
+    "A062": "Parental_Ars_4h_rep3",
+    "A063": "DmrPERK_UT_4h_rep2",
+    "A064": "Parental_UT_4h_rep3",
+    "A065": "DmrPERK_Dim_8h_rep3",
+    "A066": "Parental_UT_0h_rep1",
+    "A067": "DmrPERK_Dim_16h_rep2",
+    "A068": "DmrPERK_Dim_24h_rep2",
+    "A069": "Parental_Ars_24h_rep1",
+    "A070": "DmrPERK_Tg_2h_rep1",
+    "A071": "DmrPERK_UT_16h_rep3",
+    "A072": "Parental_Tg_16h_rep2",
+    "A073": "Parental_Dim_4h_rep3",
+    "A074": "Parental_Dim_24h_rep2",
+    "A075": "Parental_Ars_16h_rep1",
+    "A076": "Parental_Ars_2h_rep2",
+    "A077": "DmrPERK_Ars_2h_rep3",
+    "A078": "DmrPERK_UT_0h_rep2",
+    "A079": "DmrPERK_Ars_16h_rep1",
+    "A080": "Parental_UT_16h_rep1",
+    "A081": "DmrPERK_Tg_16h_rep1",
+    "A082": "Parental_Tg_2h_rep2",
+    "A083": "Parental_Dim_8h_rep3",
+    "A084": "Parental_Dim_8h_rep1",
+    "A085": "Parental_UT_0h_rep2",
+    "A086": "DmrPERK_Tg_2h_rep3",
+    "A087": "DmrPERK_Dim_4h_rep1",
+    "A088": "Parental_Tg_4h_rep3",
+    "A089": "Parental_UT_24h_rep3",
+    "A090": "Parental_UT_8h_rep3",
+    "A091": "Parental_UT_4h_rep2",
+    "A092": "DmrPERK_UT_8h_rep2",
+    "A093": "DmrPERK_Ars_24h_rep1",
+    "A094": "Parental_Tg_4h_rep1",
+    "A095": "Parental_Dim_2h_rep3",
+    "A096": "Parental_Dim_16h_rep1",
+    "A097": "Parental_Ars_2h_rep3",
+    "A098": "DmrPERK_Tg_2h_rep2",
+    "A099": "Parental_Dim_24h_rep3",
+    "A100": "Parental_UT_0h_rep3",
+    "A101": "DmrPERK_Ars_24h_rep3",
+    "A102": "DmrPERK_Tg_24h_rep3",
+    "A103": "DmrPERK_Tg_24h_rep2",
+    "A104": "DmrPERK_Dim_4h_rep2",
+    "A105": "Parental_UT_24h_rep1",
+    "A106": "DmrPERK_Tg_4h_rep2",
+    "A107": "Parental_Tg_24h_rep1",
+    "A108": "DmrPERK_Tg_24h_rep1",
+    "A109": "Parental_UT_4h_rep1",
+    "A110": "Parental_Ars_8h_rep1",
+    "A111": "DmrPERK_Ars_4h_rep3",
+    "A112": "DmrPERK_UT_24h_rep3",
+    "A113": "DmrPERK_Ars_16h_rep3",
+    "A114": "DmrPERK_UT_8h_rep3",
+    "A115": "DmrPERK_Dim_24h_rep3",
+    "A116": "DmrPERK_UT_4h_rep1",
+    "A117": "DmrPERK_Dim_2h_rep3",
+    "A118": "Parental_Dim_24h_rep1",
+    "A119": "DmrPERK_Tg_4h_rep1"
+  },
+  "queries": [
+    {
+      "query_id": "Q000",
+      "class": "pure",
+      "donors": [
+        "DmrPERK_Ars_24h_rep1"
+      ],
+      "weights": [
+        1.0
+      ]
+    },
+    {
+      "query_id": "Q001",
+      "class": "pure",
+      "donors": [
+        "DmrPERK_Tg_2h_rep3"
+      ],
+      "weights": [
+        1.0
+      ]
+    },
+    {
+      "query_id": "Q002",
+      "class": "pair",
+      "donors": [
+        "DmrPERK_Dim_24h_rep3",
+        "Parental_Tg_2h_rep3"
+      ],
+      "weights": [
+        0.7488746048526536,
+        0.25112539514734644
+      ]
+    },
+    {
+      "query_id": "Q003",
+      "class": "pair",
+      "donors": [
+        "Parental_Dim_2h_rep2",
+        "DmrPERK_UT_16h_rep3"
+      ],
+      "weights": [
+        0.5836055957085382,
+        0.4163944042914618
+      ]
+    },
+    {
+      "query_id": "Q004",
+      "class": "pair",
+      "donors": [
+        "DmrPERK_Ars_2h_rep3",
+        "Parental_UT_24h_rep2"
+      ],
+      "weights": [
+        0.49472122779384375,
+        0.5052787722061562
+      ]
+    },
+    {
+      "query_id": "Q005",
+      "class": "pair",
+      "donors": [
+        "DmrPERK_Tg_8h_rep3",
+        "Parental_Ars_24h_rep3"
+      ],
+      "weights": [
+        0.6360420141546033,
+        0.36395798584539674
+      ]
+    },
+    {
+      "query_id": "Q006",
+      "class": "pair",
+      "donors": [
+        "DmrPERK_Ars_24h_rep1",
+        "Parental_Dim_8h_rep3"
+      ],
+      "weights": [
+        0.6623745970226073,
+        0.33762540297739274
+      ]
+    },
+    {
+      "query_id": "Q007",
+      "class": "pair",
+      "donors": [
+        "Parental_UT_4h_rep2",
+        "DmrPERK_Tg_24h_rep1"
+      ],
+      "weights": [
+        0.4945554359995965,
+        0.5054445640004035
+      ]
+    },
+    {
+      "query_id": "Q008",
+      "class": "pair",
+      "donors": [
+        "Parental_Dim_4h_rep2",
+        "DmrPERK_Tg_24h_rep2"
+      ],
+      "weights": [
+        0.48464633737455587,
+        0.5153536626254441
+      ]
+    },
+    {
+      "query_id": "Q009",
+      "class": "pure",
+      "donors": [
+        "Parental_UT_24h_rep1"
+      ],
+      "weights": [
+        1.0
+      ]
+    },
+    {
+      "query_id": "Q010",
+      "class": "unsupported",
+      "donors": [
+        "DmrPERK_Dim_24h_rep3",
+        "Parental_UT_8h_rep1",
+        "DmrPERK_Ars_4h_rep1"
+      ],
+      "weights": [
+        0.38,
+        0.33,
+        0.29
+      ]
+    },
+    {
+      "query_id": "Q011",
+      "class": "pair",
+      "donors": [
+        "DmrPERK_Dim_4h_rep3",
+        "Parental_Tg_8h_rep1"
+      ],
+      "weights": [
+        0.6850316764075728,
+        0.3149683235924272
+      ]
+    },
+    {
+      "query_id": "Q012",
+      "class": "unsupported",
+      "donors": [
+        "DmrPERK_Dim_24h_rep1",
+        "Parental_Ars_2h_rep2",
+        "Parental_Tg_16h_rep2"
+      ],
+      "weights": [
+        0.38,
+        0.33,
+        0.29
+      ]
+    },
+    {
+      "query_id": "Q013",
+      "class": "pair",
+      "donors": [
+        "Parental_Dim_16h_rep2",
+        "DmrPERK_Ars_8h_rep2"
+      ],
+      "weights": [
+        0.35256681489188846,
+        0.6474331851081115
+      ]
+    },
+    {
+      "query_id": "Q014",
+      "class": "unsupported",
+      "donors": [
+        "Parental_UT_8h_rep3",
+        "DmrPERK_Dim_24h_rep1",
+        "Parental_Tg_8h_rep1"
+      ],
+      "weights": [
+        0.38,
+        0.33,
+        0.29
+      ]
+    },
+    {
+      "query_id": "Q015",
+      "class": "pair",
+      "donors": [
+        "Parental_Tg_2h_rep3",
+        "DmrPERK_UT_16h_rep2"
+      ],
+      "weights": [
+        0.526098398025888,
+        0.473901601974112
+      ]
+    },
+    {
+      "query_id": "Q016",
+      "class": "unsupported",
+      "donors": [
+        "Parental_UT_8h_rep2",
+        "DmrPERK_Ars_16h_rep2",
+        "DmrPERK_Tg_2h_rep3"
+      ],
+      "weights": [
+        0.38,
+        0.33,
+        0.29
+      ]
+    },
+    {
+      "query_id": "Q017",
+      "class": "unsupported",
+      "donors": [
+        "Parental_Tg_8h_rep2",
+        "DmrPERK_Dim_2h_rep1",
+        "DmrPERK_UT_16h_rep3"
+      ],
+      "weights": [
+        0.38,
+        0.33,
+        0.29
+      ]
+    },
+    {
+      "query_id": "Q018",
+      "class": "pure",
+      "donors": [
+        "Parental_Ars_4h_rep2"
+      ],
+      "weights": [
+        1.0
+      ]
+    },
+    {
+      "query_id": "Q019",
+      "class": "pair",
+      "donors": [
+        "Parental_Tg_24h_rep1",
+        "DmrPERK_Ars_24h_rep1"
+      ],
+      "weights": [
+        0.5935886102585758,
+        0.4064113897414242
+      ]
+    },
+    {
+      "query_id": "Q020",
+      "class": "pure",
+      "donors": [
+        "Parental_UT_0h_rep3"
+      ],
+      "weights": [
+        1.0
+      ]
+    },
+    {
+      "query_id": "Q021",
+      "class": "unsupported",
+      "donors": [
+        "Parental_Dim_16h_rep3",
+        "DmrPERK_Tg_8h_rep1",
+        "Parental_UT_16h_rep1"
+      ],
+      "weights": [
+        0.38,
+        0.33,
+        0.29
+      ]
+    },
+    {
+      "query_id": "Q022",
+      "class": "pure",
+      "donors": [
+        "Parental_UT_0h_rep1"
+      ],
+      "weights": [
+        1.0
+      ]
+    },
+    {
+      "query_id": "Q023",
+      "class": "pair",
+      "donors": [
+        "DmrPERK_Dim_8h_rep1",
+        "Parental_Tg_24h_rep1"
+      ],
+      "weights": [
+        0.48614453021322757,
+        0.5138554697867724
+      ]
+    }
+  ],
+  "atlas_scales": {
+    "A000": 0.8019668785739315,
+    "A001": 1.08853843812986,
+    "A002": 2.653810264616054,
+    "A003": 0.3786679388430687,
+    "A004": 2.415632478106964,
+    "A005": 2.8086827379292205,
+    "A006": 1.215555383536968,
+    "A007": 2.3270755150991063,
+    "A008": 0.7635689215813889,
+    "A009": 0.6931139050149946,
+    "A010": 2.64586489689572,
+    "A011": 2.385427547086091,
+    "A012": 0.8547402959591162,
+    "A013": 0.4828261608814535,
+    "A014": 0.7080706321045616,
+    "A015": 1.8486947582437785,
+    "A016": 0.8481513184781065,
+    "A017": 0.5254516162350235,
+    "A018": 0.4166304755808954,
+    "A019": 0.575854677928457,
+    "A020": 1.0976777391664796,
+    "A021": 0.613304725236383,
+    "A022": 0.6833632969641105,
+    "A023": 2.2635805601075782,
+    "A024": 1.5016149719510583,
+    "A025": 0.3916520490386639,
+    "A026": 0.3551821012146643,
+    "A027": 0.8296904377030028,
+    "A028": 0.4198711295510194,
+    "A029": 0.41322082703097185,
+    "A030": 0.5268254416833567,
+    "A031": 1.0774202100347656,
+    "A032": 2.879706554320786,
+    "A033": 0.3411022652989362,
+    "A034": 0.860969330164949,
+    "A035": 1.5737163213269605,
+    "A036": 2.151713416075298,
+    "A037": 0.765327371501646,
+    "A038": 0.9982465386928157,
+    "A039": 0.4978765152869463,
+    "A040": 1.0381490396479092,
+    "A041": 1.3730221815285732,
+    "A042": 0.35421858658513794,
+    "A043": 0.6306732377542075,
+    "A044": 0.4972362766627251,
+    "A045": 0.4440444440986771,
+    "A046": 0.5741909401786888,
+    "A047": 0.36607513710957823,
+    "A048": 0.3335069726665612,
+    "A049": 1.0895037381909252,
+    "A050": 2.3676344636781534,
+    "A051": 0.3349161658766971,
+    "A052": 1.4462609814044844,
+    "A053": 0.35443156333509235,
+    "A054": 2.463747161327262,
+    "A055": 2.7022701164208582,
+    "A056": 0.35285934336216157,
+    "A057": 1.6615192716638587,
+    "A058": 0.536129387256966,
+    "A059": 0.4168063709440454,
+    "A060": 0.6138612883123841,
+    "A061": 0.4049412404965763,
+    "A062": 1.7155569550838663,
+    "A063": 0.8591354547698796,
+    "A064": 1.4337983128949467,
+    "A065": 0.4132786585347952,
+    "A066": 0.5232479469432597,
+    "A067": 0.3451280173206149,
+    "A068": 0.6810501535241975,
+    "A069": 2.2010550569873635,
+    "A070": 2.486016572492704,
+    "A071": 1.4504302440782562,
+    "A072": 2.2898899350611157,
+    "A073": 0.5882622707967564,
+    "A074": 1.5467601505309196,
+    "A075": 2.3954344520100994,
+    "A076": 1.0132736301092267,
+    "A077": 1.581565930782213,
+    "A078": 0.8711508616770856,
+    "A079": 1.5467830180257829,
+    "A080": 0.39368285724914126,
+    "A081": 0.9505101261884481,
+    "A082": 1.3444833991593437,
+    "A083": 1.3691931492135192,
+    "A084": 2.0108752662143767,
+    "A085": 0.7725372474884322,
+    "A086": 1.5463018481034518,
+    "A087": 0.4493207275136853,
+    "A088": 0.8031966545467168,
+    "A089": 0.6770385023909509,
+    "A090": 0.9356699910729633,
+    "A091": 0.9043198131294984,
+    "A092": 0.7255732333955859,
+    "A093": 0.7978545375082975,
+    "A094": 1.0592400972604818,
+    "A095": 0.5260178295869021,
+    "A096": 1.0627216000528725,
+    "A097": 1.0564205687912562,
+    "A098": 0.9125421066813354,
+    "A099": 1.3325128239895747,
+    "A100": 0.3393475863774917,
+    "A101": 0.4038722285325217,
+    "A102": 1.1347160858508154,
+    "A103": 1.5055489428088014,
+    "A104": 0.7698011785120138,
+    "A105": 1.7478973804794697,
+    "A106": 0.6252255131185118,
+    "A107": 1.7054930179761383,
+    "A108": 0.3861978808991192,
+    "A109": 0.546078544104265,
+    "A110": 2.315472316957141,
+    "A111": 1.8850902251380688,
+    "A112": 0.7311132095504056,
+    "A113": 1.9475333511199462,
+    "A114": 0.3957013508511744,
+    "A115": 1.6249063301618787,
+    "A116": 1.2558338064062136,
+    "A117": 1.7270419662737835,
+    "A118": 0.3892969326619593,
+    "A119": 2.653896195522185
+  }
+}

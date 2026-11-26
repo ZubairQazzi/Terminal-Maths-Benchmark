@@ -1,0 +1,39 @@
+C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\site-packages\harbor\cli\tasks.py:111: SyntaxWarning: invalid escape sequence '\['
+  Option("--no-package", help="Do not include \[task] section in task.toml."),
+Tip: There are many benchmarks available in Harbor's registry.
+Run `harbor datasets list` to see all available datasets.
+
+Unknown Error in LLM interaction: litellm.ServiceUnavailableError: GeminiException - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+  1/1 Running trials... --------------------------------------- 0:09:27 0:00:00
+
+adhoc • terminus-2 • gemini-3.5-flash-lite
+┌────────┬────────────┐
+│ Trials │ Exceptions │
+├────────┼────────────┤
+│      0 │          1 │
+└────────┴────────────┘
+
+┌─────────────────────────┬───────┐
+│ Exception               │ Count │
+├─────────────────────────┼───────┤
+│ ServiceUnavailableError │     1 │
+└─────────────────────────┴───────┘
+
+Job Info
+Total runtime: 9m 28s
+Results written to 
+F:\rl\bio\authoring\trajectories\initial-gemini35lite-high-20261126\jobs\bio1-i
+nitial-01\result.json
+Inspect results by running `harbor view 
+F:\rl\bio\authoring\trajectories\initial-gemini35lite-high-20261126\jobs`
+Share results by running `harbor upload 
+F:\rl\bio\authoring\trajectories\initial-gemini35lite-high-20261126\jobs\bio1-i
+nitial-01`
+

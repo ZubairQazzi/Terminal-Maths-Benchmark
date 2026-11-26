@@ -1,0 +1,1 @@
+Deterministic artifact control wrong-contrast; no API calls.

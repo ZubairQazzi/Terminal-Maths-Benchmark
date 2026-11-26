@@ -1,0 +1,1023 @@
+{
+  "task": 2,
+  "final_job_prefix_filter": "v011",
+  "valid_final_trials": 12,
+  "infrastructure_errors": 0,
+  "preflight_failures": [],
+  "native_oracle_repeats": 2,
+  "native_oracle_artifacts_byte_identical": true,
+  "trials": [
+    {
+      "job": "bio2-alternative-v011",
+      "trial": "transcript-provenance-audit__cALXCDD",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 1.0,
+      "binary_reward_text": "1",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633340.332174,
+        "stop": 1795633343.7043562
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d",
+        "app/submission/audit.json": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e",
+        "app/submission/queries.tsv": "bcca64121d6f3db9b0a1a9f38a6da745c68582e53fd94df39008c1fbc8e87d1d"
+      },
+      "started_at": "2026-11-25T19:02:02.782754Z",
+      "finished_at": "2026-11-25T19:02:27.844523Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-alternative-v011\\transcript-provenance-audit__cALXCDD"
+    },
+    {
+      "job": "bio2-constant-v011",
+      "trial": "transcript-provenance-audit__poiFRV8",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 3,
+        "failed": 8,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633043.856831,
+        "stop": 1795633049.1395552
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "af5ef682d7dfb59a5089738509bc27990dfccadca742dd614a420b6766a358cd",
+        "app/submission/audit.json": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e",
+        "app/submission/queries.tsv": "b95acb748ded4d6ab25e89f2960ef29eddb4f4cd5183c8e5ebfe6e33f72d3bb2"
+      },
+      "started_at": "2026-11-25T18:57:01.550605Z",
+      "finished_at": "2026-11-25T18:57:33.851011Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-constant-v011\\transcript-provenance-audit__poiFRV8"
+    },
+    {
+      "job": "bio2-hardcoded-v011",
+      "trial": "transcript-provenance-audit__7Y7Es5B",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 0,
+        "failed": 11,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633088.4764564,
+        "stop": 1795633093.0077665
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "failed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/genes.txt": "1d40d444b46d5f181e22c9b219d0f9eeeed140420e26167eb0e19aa62704c3d8"
+      },
+      "started_at": "2026-11-25T18:57:44.398720Z",
+      "finished_at": "2026-11-25T18:58:17.669095Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-hardcoded-v011\\transcript-provenance-audit__7Y7Es5B"
+    },
+    {
+      "job": "bio2-incomplete-v011",
+      "trial": "transcript-provenance-audit__zstgRki",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 5,
+        "failed": 6,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633245.2040315,
+        "stop": 1795633247.6419756
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "failed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d",
+        "app/submission/audit.json": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e"
+      },
+      "started_at": "2026-11-25T19:00:28.019281Z",
+      "finished_at": "2026-11-25T19:00:51.803283Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-incomplete-v011\\transcript-provenance-audit__zstgRki"
+    },
+    {
+      "job": "bio2-invalid_claims-v011",
+      "trial": "transcript-provenance-audit__GVZgEEv",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 10,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633308.4556186,
+        "stop": 1795633311.5036063
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d",
+        "app/submission/audit.json": "3bbc885072e36c6b8d934dc210c62f510123126d18772be025fb10d7e1246ff7",
+        "app/submission/queries.tsv": "dd0a3ebd9c53ef6a24860e75cc65a4236b5cf377c528f5da7141a96716cd0c58"
+      },
+      "started_at": "2026-11-25T19:01:30.977818Z",
+      "finished_at": "2026-11-25T19:01:55.634581Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-invalid_claims-v011\\transcript-provenance-audit__GVZgEEv"
+    },
+    {
+      "job": "bio2-nop-v010",
+      "trial": "transcript-provenance-audit__KRt4BZM",
+      "version_scope_final": false,
+      "task_checksum": "9fc949569ecd317a3c5905784cd9d32e009c56e80e9b096c14358a3e218188e8",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795628574.8254201,
+        "stop": 1795628580.0696278
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_scientific_requirement",
+          "status": "failed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca"
+      },
+      "started_at": "2026-11-25T17:42:29.274416Z",
+      "finished_at": "2026-11-25T17:43:05.035755Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-nop-v010\\transcript-provenance-audit__KRt4BZM"
+    },
+    {
+      "job": "bio2-nop-v011",
+      "trial": "transcript-provenance-audit__xdeXMsZ",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 0,
+        "failed": 11,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633002.387393,
+        "stop": 1795633006.7672412
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "failed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca"
+      },
+      "started_at": "2026-11-25T18:56:20.578726Z",
+      "finished_at": "2026-11-25T18:56:51.217236Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-nop-v011\\transcript-provenance-audit__xdeXMsZ"
+    },
+    {
+      "job": "bio2-oracle-v010",
+      "trial": "transcript-provenance-audit__43Zqv2D",
+      "version_scope_final": false,
+      "task_checksum": "9fc949569ecd317a3c5905784cd9d32e009c56e80e9b096c14358a3e218188e8",
+      "reward": 1.0,
+      "binary_reward_text": "1",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 1,
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795628480.173944,
+        "stop": 1795628485.8079305
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_scientific_requirement",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "4d5309d035b4f9e134160b66c219cac1065773ab376220ea8bb94f124b48fa75",
+        "app/submission/audit.json": "5579060138e461fe00bde0815436c96ef212371ca800bc32cd21be580d3888e4",
+        "app/submission/queries.tsv": "ce4929a0b8a12d46067ffa4c8ce0530821532f4ff1fc99c7e32359bbf1424ce0"
+      },
+      "started_at": "2026-11-25T17:40:44.629726Z",
+      "finished_at": "2026-11-25T17:41:31.009768Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-oracle-v010\\transcript-provenance-audit__43Zqv2D"
+    },
+    {
+      "job": "bio2-oracle-v010",
+      "trial": "transcript-provenance-audit__XA39ENa",
+      "version_scope_final": false,
+      "task_checksum": "9fc949569ecd317a3c5905784cd9d32e009c56e80e9b096c14358a3e218188e8",
+      "reward": 1.0,
+      "binary_reward_text": "1",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 1,
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795628523.9179041,
+        "stop": 1795628529.8823297
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_scientific_requirement",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "4d5309d035b4f9e134160b66c219cac1065773ab376220ea8bb94f124b48fa75",
+        "app/submission/audit.json": "5579060138e461fe00bde0815436c96ef212371ca800bc32cd21be580d3888e4",
+        "app/submission/queries.tsv": "ce4929a0b8a12d46067ffa4c8ce0530821532f4ff1fc99c7e32359bbf1424ce0"
+      },
+      "started_at": "2026-11-25T17:41:31.935267Z",
+      "finished_at": "2026-11-25T17:42:14.742397Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-oracle-v010\\transcript-provenance-audit__XA39ENa"
+    },
+    {
+      "job": "bio2-oracle-v011",
+      "trial": "transcript-provenance-audit__dybfyBZ",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 1.0,
+      "binary_reward_text": "1",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632921.9135919,
+        "stop": 1795632927.24906
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "4d5309d035b4f9e134160b66c219cac1065773ab376220ea8bb94f124b48fa75",
+        "app/submission/audit.json": "5579060138e461fe00bde0815436c96ef212371ca800bc32cd21be580d3888e4",
+        "app/submission/queries.tsv": "ce4929a0b8a12d46067ffa4c8ce0530821532f4ff1fc99c7e32359bbf1424ce0"
+      },
+      "started_at": "2026-11-25T18:54:52.172596Z",
+      "finished_at": "2026-11-25T18:55:31.910132Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-oracle-v011\\transcript-provenance-audit__dybfyBZ"
+    },
+    {
+      "job": "bio2-oracle-v011",
+      "trial": "transcript-provenance-audit__yd6KNzd",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 1.0,
+      "binary_reward_text": "1",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632960.2224817,
+        "stop": 1795632965.295341
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "4d5309d035b4f9e134160b66c219cac1065773ab376220ea8bb94f124b48fa75",
+        "app/submission/audit.json": "5579060138e461fe00bde0815436c96ef212371ca800bc32cd21be580d3888e4",
+        "app/submission/queries.tsv": "ce4929a0b8a12d46067ffa4c8ce0530821532f4ff1fc99c7e32359bbf1424ce0"
+      },
+      "started_at": "2026-11-25T18:55:32.626634Z",
+      "finished_at": "2026-11-25T18:56:09.902870Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-oracle-v011\\transcript-provenance-audit__yd6KNzd"
+    },
+    {
+      "job": "bio2-unsupported_forced_pair-v011",
+      "trial": "transcript-provenance-audit__us3aHZx",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 9,
+        "failed": 2,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633276.7043188,
+        "stop": 1795633279.5535145
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d",
+        "app/submission/audit.json": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e",
+        "app/submission/queries.tsv": "5c52b43159cc08f30045cc4e263ba1a52174d6e2b33f2b171bb5729b2a5a5e5f"
+      },
+      "started_at": "2026-11-25T19:00:59.479739Z",
+      "finished_at": "2026-11-25T19:01:23.704991Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-unsupported_forced_pair-v011\\transcript-provenance-audit__us3aHZx"
+    },
+    {
+      "job": "bio2-wrong_alignment-v011",
+      "trial": "transcript-provenance-audit__5Uty76D",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 8,
+        "failed": 3,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633129.0726519,
+        "stop": 1795633134.5948095
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "8cf62d994bbbe8a26695e27ab3783b01b2713ec6059f041a49b58eb8893bcf40",
+        "app/submission/audit.json": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e",
+        "app/submission/queries.tsv": "dd0a3ebd9c53ef6a24860e75cc65a4236b5cf377c528f5da7141a96716cd0c58"
+      },
+      "started_at": "2026-11-25T18:58:27.752525Z",
+      "finished_at": "2026-11-25T18:58:59.313227Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-wrong_alignment-v011\\transcript-provenance-audit__5Uty76D"
+    },
+    {
+      "job": "bio2-wrong_contrast-v011",
+      "trial": "transcript-provenance-audit__Ee9iX68",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 8,
+        "failed": 3,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633172.7252069,
+        "stop": 1795633177.905855
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d",
+        "app/submission/audit.json": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e",
+        "app/submission/queries.tsv": "e25de9a8f967e1d73fb154155f98b98490ee671ea94b28e71fe8c2ed4d075b7e"
+      },
+      "started_at": "2026-11-25T18:59:09.622124Z",
+      "finished_at": "2026-11-25T18:59:42.573853Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-wrong_contrast-v011\\transcript-provenance-audit__Ee9iX68"
+    },
+    {
+      "job": "bio2-wrong_statistics-v011",
+      "trial": "transcript-provenance-audit__mrJ2teX",
+      "version_scope_final": true,
+      "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 9,
+        "failed": 2,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795633213.195227,
+        "stop": 1795633216.5468512
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/alignment.tsv": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d",
+        "app/submission/audit.json": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e",
+        "app/submission/queries.tsv": "ca145e7d62df33841434a735c7ca708f0b010b2e96edc7fe18d271b05048865e"
+      },
+      "started_at": "2026-11-25T18:59:53.209748Z",
+      "finished_at": "2026-11-25T19:00:20.678065Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-wrong_statistics-v011\\transcript-provenance-audit__mrJ2teX"
+    }
+  ],
+  "scope": "Only completed exception-free trials with binary reward files count as graded. Infrastructure failures and superseded versions are retained and excluded. Deterministic controls are not empirical AI-model trials."
+}

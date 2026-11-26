@@ -1,0 +1,86 @@
+{
+  "all": {
+    "correct": 120,
+    "minimum_margin": 0.006833343409078707,
+    "minimum_self_correlation": 0.9506613586135446,
+    "median_self_correlation": 0.9686412554401976,
+    "weak_samples": [
+      [
+        "DmrPERK_Ars_24h_rep3",
+        0.006833343409078707
+      ],
+      [
+        "DmrPERK_Ars_16h_rep1",
+        0.007168614430616005
+      ],
+      [
+        "Parental_Ars_24h_rep2",
+        0.008596724889580853
+      ],
+      [
+        "DmrPERK_Ars_16h_rep2",
+        0.008677686143168883
+      ],
+      [
+        "Parental_Ars_24h_rep1",
+        0.009058516176672748
+      ]
+    ]
+  },
+  "train": {
+    "correct": 120,
+    "minimum_margin": 0.0062295272529536705,
+    "minimum_self_correlation": 0.9520394155722809,
+    "median_self_correlation": 0.9687111163487312,
+    "weak_samples": [
+      [
+        "DmrPERK_Ars_16h_rep1",
+        0.0062295272529536705
+      ],
+      [
+        "DmrPERK_Ars_24h_rep3",
+        0.007212990217114856
+      ],
+      [
+        "Parental_Ars_24h_rep2",
+        0.008496412901272676
+      ],
+      [
+        "DmrPERK_Ars_16h_rep3",
+        0.008503757762854502
+      ],
+      [
+        "DmrPERK_Ars_16h_rep2",
+        0.008761048504790203
+      ]
+    ]
+  },
+  "validate": {
+    "correct": 120,
+    "minimum_margin": 0.0064432896135011575,
+    "minimum_self_correlation": 0.9489195704049265,
+    "median_self_correlation": 0.9686222134058047,
+    "weak_samples": [
+      [
+        "DmrPERK_Ars_24h_rep3",
+        0.0064432896135011575
+      ],
+      [
+        "DmrPERK_Ars_16h_rep1",
+        0.008170507099960811
+      ],
+      [
+        "DmrPERK_Ars_16h_rep2",
+        0.008598155924340434
+      ],
+      [
+        "Parental_Ars_24h_rep2",
+        0.008711661320137565
+      ],
+      [
+        "Parental_Ars_16h_rep2",
+        0.008873646519592993
+      ]
+    ]
+  }
+}

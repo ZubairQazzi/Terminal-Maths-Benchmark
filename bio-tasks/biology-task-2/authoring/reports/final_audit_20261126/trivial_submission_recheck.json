@@ -1,0 +1,106 @@
+{
+  "reviewer": "/root/qc_b",
+  "date": "2026-11-26",
+  "checker": "Current unchanged task/tests/checks.py; direct trusted evaluator execution; no submitted code executed",
+  "cases": {
+    "empty_files": {
+      "passed": 0,
+      "total": 11,
+      "binary_reward": 0,
+      "per_family": {
+        "schema": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        },
+        "physical_audit": {
+          "passed": false,
+          "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        },
+        "biological_limits": {
+          "passed": false,
+          "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+        },
+        "sample_identity": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        },
+        "discovery_alignment_scores": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        },
+        "heldout_identity_certificates": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        },
+        "pure_aliquots": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        },
+        "two_source_aliquots": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        },
+        "open_set_rejection": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        },
+        "residual_certificates": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        },
+        "support_optimality": {
+          "passed": false,
+          "error": "EmptyDataError: No columns to parse from file"
+        }
+      }
+    },
+    "header_only": {
+      "passed": 5,
+      "total": 11,
+      "binary_reward": 0,
+      "per_family": {
+        "schema": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": false,
+          "error": "AssertionError: Sample provenance mismatched"
+        },
+        "discovery_alignment_scores": {
+          "passed": true
+        },
+        "heldout_identity_certificates": {
+          "passed": true
+        },
+        "pure_aliquots": {
+          "passed": false,
+          "error": "KeyError: 'Q000'"
+        },
+        "two_source_aliquots": {
+          "passed": false,
+          "error": "KeyError: 'Q002'"
+        },
+        "open_set_rejection": {
+          "passed": false,
+          "error": "KeyError: 'Q010'"
+        },
+        "residual_certificates": {
+          "passed": true
+        },
+        "support_optimality": {
+          "passed": false,
+          "error": "KeyError: 'Q002'"
+        }
+      }
+    }
+  },
+  "constant_and_noop_native_evidence": "Actual version0.1.1 native constant3/11,reward0 and no-op0/11,reward0; see final native trial directories.",
+  "vacuous_checks_note": "Empty tables may satisfy individual loop-only families vacuously. Mandatory schema/source-truth/completeness checks fail, so conjunctive binary reward remains0; no claim every family individually discriminates."
+}

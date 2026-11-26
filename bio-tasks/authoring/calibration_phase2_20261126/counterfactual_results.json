@@ -1,0 +1,286 @@
+{
+  "utc": "2026-11-25T20:33:04.800638+00:00",
+  "scope": "Researcher-created counterfactual copies using original unchanged native verifier images; not independent model trajectories, not official rescoring, not task edits.",
+  "cases": [
+    {
+      "task": 1,
+      "original_run": "bio1-initial-02",
+      "official_original_reward": 0,
+      "official_original_checks_passed": 10,
+      "diagnostic_change": "Correct only the zero-SE minimum-effect boundary p_dmr_minimum/p_joint and recalculate its prescribed eight-case BY q values/certified labels. All real-data artifacts copied unchanged.",
+      "unchanged_verifier_image": "local-bio1-verifier:v010",
+      "diagnostic_reward": 1.0,
+      "diagnostic_summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795638772.1541886,
+        "stop": 1795638777.46063
+      },
+      "individual_results": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed",
+          "duration": 0.012436197000000426,
+          "start": 1795638773.3261356,
+          "stop": 1795638773.339539,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed",
+          "duration": 1.9165359690000008,
+          "start": 1795638773.3398738,
+          "stop": 1795638775.2573614,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed",
+          "duration": 0.02255347200000024,
+          "start": 1795638775.2575634,
+          "stop": 1795638775.2811968,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "passed",
+          "duration": 1.1377318690000005,
+          "start": 1795638775.2813885,
+          "stop": 1795638776.420476,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed",
+          "duration": 0.008423542999999256,
+          "start": 1795638776.4208226,
+          "stop": 1795638776.4304109,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed",
+          "duration": 0.005118019999997614,
+          "start": 1795638776.4306173,
+          "stop": 1795638776.4368415,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed",
+          "duration": 0.08925224600000092,
+          "start": 1795638776.437048,
+          "stop": 1795638776.527665,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed",
+          "duration": 0.44136599600000004,
+          "start": 1795638776.5279672,
+          "stop": 1795638776.9704034,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed",
+          "duration": 0.4505583489999996,
+          "start": 1795638776.9706547,
+          "stop": 1795638777.4222558,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed",
+          "duration": 0.0060553480000002935,
+          "start": 1795638777.4225905,
+          "stop": 1795638777.429423,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed",
+          "duration": 0.029125343000002246,
+          "start": 1795638777.4296973,
+          "stop": 1795638777.4595277,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        }
+      ],
+      "seconds": 11.96900000000096,
+      "source_model_artifacts_untouched": true,
+      "command": [
+        "C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+        "run",
+        "--rm",
+        "--network",
+        "none",
+        "--cpus",
+        "2",
+        "--memory",
+        "8g",
+        "--mount",
+        "type=bind,source=F:/rl/bio/authoring/calibration_phase2_20261126/counterfactual_task1/submission,target=/app/submission,readonly",
+        "--mount",
+        "type=bind,source=F:/rl/bio/authoring/calibration_phase2_20261126/counterfactual_task1/verifier,target=/logs/verifier",
+        "local-bio1-verifier:v010",
+        "bash",
+        "/tests/test.sh"
+      ]
+    },
+    {
+      "task": 2,
+      "original_run": "bio2-initial-01",
+      "official_original_reward": 0,
+      "official_original_checks_passed": 10,
+      "diagnostic_change": "Replace only atlas_minimum_by_column with measured minima of the supplied scaled atlas. Alignment, queries, all other audit fields and scientific inference unchanged.",
+      "unchanged_verifier_image": "local-bio2-verifier:v011",
+      "diagnostic_reward": 1.0,
+      "diagnostic_summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795638781.5130823,
+        "stop": 1795638784.6048586
+      },
+      "individual_results": [
+        {
+          "name": "test_outputs.py::test_schema",
+          "status": "passed",
+          "duration": 2.0662900250000007,
+          "start": 1795638781.9633381,
+          "stop": 1795638784.0303848,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_physical_audit",
+          "status": "passed",
+          "duration": 0.06835390099999827,
+          "start": 1795638784.030601,
+          "stop": 1795638784.1000285,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_biological_limits",
+          "status": "passed",
+          "duration": 0.005593932000000024,
+          "start": 1795638784.1002512,
+          "stop": 1795638784.1067042,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_sample_identity",
+          "status": "passed",
+          "duration": 0.005722856999998527,
+          "start": 1795638784.1069767,
+          "stop": 1795638784.113312,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_discovery_alignment_scores",
+          "status": "passed",
+          "duration": 0.044784978999999225,
+          "start": 1795638784.1134996,
+          "stop": 1795638784.1591556,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_heldout_identity_certificates",
+          "status": "passed",
+          "duration": 0.047048775000000376,
+          "start": 1795638784.1594062,
+          "stop": 1795638784.2073977,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_pure_aliquots",
+          "status": "passed",
+          "duration": 0.006003905000000032,
+          "start": 1795638784.2076313,
+          "stop": 1795638784.214209,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_two_source_aliquots",
+          "status": "passed",
+          "duration": 0.005931951000004432,
+          "start": 1795638784.214389,
+          "stop": 1795638784.220966,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_open_set_rejection",
+          "status": "passed",
+          "duration": 0.005038085000006021,
+          "start": 1795638784.221153,
+          "stop": 1795638784.2267292,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_residual_certificates",
+          "status": "passed",
+          "duration": 0.042329757999993944,
+          "start": 1795638784.226915,
+          "stop": 1795638784.2701807,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        },
+        {
+          "name": "test_outputs.py::test_support_optimality",
+          "status": "passed",
+          "duration": 0.33213717100000295,
+          "start": 1795638784.2704341,
+          "stop": 1795638784.603669,
+          "retries": 0,
+          "file_path": "test_outputs.py"
+        }
+      ],
+      "seconds": 4.468999999999141,
+      "source_model_artifacts_untouched": true,
+      "command": [
+        "C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+        "run",
+        "--rm",
+        "--network",
+        "none",
+        "--cpus",
+        "2",
+        "--memory",
+        "4g",
+        "--mount",
+        "type=bind,source=F:/rl/bio/authoring/calibration_phase2_20261126/counterfactual_task2/submission,target=/app/submission,readonly",
+        "--mount",
+        "type=bind,source=F:/rl/bio/authoring/calibration_phase2_20261126/counterfactual_task2/verifier,target=/logs/verifier",
+        "local-bio2-verifier:v011",
+        "bash",
+        "/tests/test.sh"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+case_id	actual_p	expected_p	actual_joint	expected_joint	actual_q	expected_q	actual_cert	expected_cert
+positive_specific	5.266449381970236e-09	5.26644938197023e-09	1.6379931929767612e-06	1.63799319297676e-06	8.903662998966536e-06	1.18715506652887e-05	True	True
+negative_specific	5.266449381970236e-09	5.26644938197023e-09	1.6379931929767612e-06	1.63799319297676e-06	8.903662998966536e-06	1.18715506652887e-05	True	True
+parent_not_equivalent	1.77697287438216e-10	1.77697287438215e-10	0.9999999984038406	0.999999998403841	1.0	1.0	False	False
+small_dmr_effect	1.0	1.0	1.0	1.0	1.0	1.0	False	False
+uncertain_parent	5.266449381970236e-09	5.26644938197023e-09	0.4315882441503991	0.431588244150399	1.0	1.0	False	False
+zero_variance_specific	0.0	0.0	0.0	0.0	0.0	0.0	True	True
+zero_variance_null	1.0	1.0	1.0	1.0	1.0	1.0	False	False
+minimum_effect_boundary	0.0	1.0	0.0	1.0	0.0	1.0	True	False

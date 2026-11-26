@@ -1,0 +1,114 @@
+{
+  "reviewer": "/root/qc_a",
+  "creator": "/root/creator_a",
+  "context_separation": "Dedicated reviewer context; initial source inspection and findings preceded creator explanations",
+  "external_qc_claimed": false,
+  "initial_verdict": "INCOMPLETE",
+  "final_verdict": "PASS_WITH_LIMITATIONS",
+  "findings": [
+    {
+      "id": "A1",
+      "severity": "material_evidence_gap",
+      "initial_status": "OPEN",
+      "status": "RESOLVED_NATIVE_RESULTS_DIRECTLY_RECHECKED",
+      "finding": "Native separate-image Harbor, reset, transfer, resource and complete local control/CTRF evidence not yet available",
+      "evidence": [
+        "authoring/reports/native_summary.json",
+        "authoring/reports/harbor_validation.md",
+        "actual13trialresult/reward/CTRFfiles",
+        "81nativeartifacthashes",
+        "authoring/reports/isolation_v010.json",
+        "authoring/reports/static_qc.json"
+      ],
+      "correction": "Provide actual executable logs and static results; reviewer must inspect",
+      "post_correction_result": "PASS:13validseparateverifiertrials,oracle2passes,alternativepass,10negativeszero,onefrozenchecksum,nohashmismatches"
+    },
+    {
+      "id": "A2",
+      "severity": "material_coverage_gap",
+      "initial_status": "OPEN",
+      "status": "RESOLVED_SOURCE_AND_LOCAL_CONTROLS_RECHECKED",
+      "finding": "All 249636 real-data q_joint are 1 and certificate labels false; these fields alone do not discriminate inference or correction",
+      "evidence": [
+        "task/README.md:14",
+        "task/tests/test_outputs.py:137-141",
+        "reviewer streaming distribution audit"
+      ],
+      "correction": "Show nonsaturated outputs and measured error controls; add clearly labeled known positive/null/boundary calibration for saturated branches"
+    },
+    {
+      "id": "A3",
+      "severity": "warning",
+      "initial_status": "OPEN",
+      "status": "RESOLVED_SOURCE_RECHECKED",
+      "finding": "Initial alternative uses same calculate and Welch helpers; it establishes equivalent summation/order acceptance, not independent model construction",
+      "evidence": [
+        "task/solution/solve.py:19",
+        "task/solution/solve.py:37-42",
+        "task/solution/solve.py:65"
+      ],
+      "correction": "Report exact scope or provide independently constructed equivalent route"
+    },
+    {
+      "id": "A4",
+      "severity": "limitation",
+      "initial_status": "DOCUMENTED",
+      "status": "DOCUMENTED_RECHECKED",
+      "finding": "Fixed interpretation booleans are nondiscriminating context checks",
+      "evidence": [
+        "task/tests/test_outputs.py:155-159"
+      ],
+      "correction": "Do not count them as proof of scientific reasoning"
+    },
+    {
+      "id": "A5",
+      "severity": "minor_contract",
+      "initial_status": "OPEN",
+      "status": "RESOLVED_SOURCE_RECHECKED",
+      "finding": "Only-five-file prose is stricter than checker behavior, which ignores extra directory entries",
+      "evidence": [
+        "task/instruction.md:34",
+        "task/tests/test_outputs.py:104-105"
+      ],
+      "correction": "Clarify collection-only meaning or enforce exact file set"
+    },
+    {
+      "id": "A6",
+      "severity": "required_validation_coverage",
+      "initial_status": "OPEN",
+      "status": "RESOLVED_TRUE_SAMPLE_ALIGNMENT_CONTROL_RECHECKED",
+      "finding": "Existing label_shift mutates matched output gene rows and does not test actual sample-label/metadata misalignment required by project brief.",
+      "evidence": [
+        "authoring/evidence/wrong_sample_alignment.py:13-63",
+        "authoring/reports/wrong_sample_alignment_provenance.json",
+        "authoring/reports/wrong_sample_alignment_calculation.log",
+        "authoring/reports/wrong_sample_alignment_ctrf.json"
+      ],
+      "correction": "Keep existing gene-row shift accurately named and add true sample-metadata swap/permutation output with measured evaluator rejection.",
+      "post_correction_result": "PASS: independently verified24sampleassignments/unchangedmatrices/n3groups, fullrecomputation and7of11 rejection with failures04/05/06/08"
+    }
+  ],
+  "limitations": [
+    "No provider APIs used",
+    "Native heavy runs coordinated by parent; reviewer will inspect rather than duplicate",
+    "No empirical agent difficulty calibration available"
+  ],
+  "recheck_phase": "Final native and regression evidence directly inspected; all material findings resolved",
+  "remaining_material_findings": 0,
+  "final_evidence": {
+    "static_passes": 29,
+    "rubric_passes": 37,
+    "rubric_warning": 1,
+    "valid_native_trials": 13,
+    "native_oracle_passes": 2,
+    "native_alternative_passes": 1,
+    "native_negative_rejections": 10,
+    "native_artifact_hashes_independently_checked": 81,
+    "native_hash_errors": 0,
+    "unique_task_checksums": 1,
+    "permuted_valid_passes": 11,
+    "external_qc": "NOT RUN",
+    "gemini": "NOT RUN",
+    "empirical_difficulty": "NOT MEASURED"
+  }
+}

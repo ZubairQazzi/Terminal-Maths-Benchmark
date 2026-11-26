@@ -1,0 +1,14 @@
+{
+  "coordinator": "/root",
+  "creators": [
+    {"agent": "/root/creator_a", "owned_directory": "biology-task-1", "started_with": "full project context", "overlapped_with_other_creator": true},
+    {"agent": "/root/creator_b", "owned_directory": "biology-task-2", "started_with": "full project context", "overlapped_with_other_creator": true}
+  ],
+  "independent_reviewers": [
+    {"agent": "/root/qc_a", "task": "biology-task-1", "fork_turns": "none", "creator_explanations_consulted_before_initial_findings": false},
+    {"agent": "/root/qc_b", "task": "biology-task-2", "fork_turns": "none", "creator_explanations_consulted_before_initial_findings": false}
+  ],
+  "separation": "Creators wrote separate scientific source trees. Reviewers wrote their own findings and independently rechecked corrections. Coordinator serialized heavy Docker/Harbor runs. Shared original matrices were read/copied only.",
+  "evidence_scope": "Agent identities and role assignments are actual collaboration-tool participants. Scientific commands, outputs, reviewer findings and native trajectories are preserved. Full internal subagent conversation transcripts are not exported by the available collaboration tools; no invented transcript is provided.",
+  "provider_evaluation": "No Gemini or other model-provider API evaluation was invoked. Deterministic Harbor controls are not calibrated AI-agent trials."
+}

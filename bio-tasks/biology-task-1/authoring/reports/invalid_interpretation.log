@@ -1,0 +1,41 @@
+COMMAND ["C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "-m", "pytest", "-p", "ctrf.main", "-p", "no:cacheprovider", "--ctrf", "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\invalid_interpretation_ctrf.json", "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py", "-rA"]
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.4.1, pluggy-1.6.0
+rootdir: F:\rl
+collected 11 items
+
+bio\biology-task-1\task\tests\test_outputs.py .........F.                [100%]
+
+================================== FAILURES ===================================
+________________________ test_10_interpretation_limits ________________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    def test_10_interpretation_limits(expected):
+        report=json.loads(artifact('interpretation.json').read_text())
+        required={'matched_times':[4,8,16,24],'missing_control_times':[2],'early_result_type':'assumption_dependent_sensitivity_region','early_envelope_verified':False,'replicates_paired':False,'effective_length_offsets_available':False,'independent_expression_datasets':1,'certificate_count':int(expected['matched'].certified.sum())}
+        for key,value in required.items():
+>           assert type(report[key]) is type(value) and report[key]==value,f'Unsupported interpretation: {key}'
+E           AssertionError: Unsupported interpretation: early_envelope_verified
+E           assert (<class 'bool'> is <class 'bool'> and True == False)
+E            +  where <class 'bool'> = type(True)
+E            +  and   <class 'bool'> = type(False)
+
+bio\biology-task-1\task\tests\test_outputs.py:159: AssertionError
+=================================== PASSES ====================================
+=========================== short test summary info ===========================
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_01_complete_handoff
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_02_fractional_representation_audit
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_03_unselected_complete_gene_universe
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_04_matched_factorial_effects
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_05_heteroscedastic_uncertainty
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_07_joint_family_multiplicity
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_08_early_partial_identification
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_09_envelope_expansion_invariants
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_11_synthetic_positive_and_degenerate_controls
+FAILED bio/biology-task-1/task/tests/test_outputs.py::test_10_interpretation_limits
+======================== 1 failed, 10 passed in 9.77s =========================

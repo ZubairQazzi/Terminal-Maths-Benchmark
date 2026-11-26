@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-26",
+  "status": "AUTHORIZED AFTER FINAL PRE-MODEL AUDIT",
+  "user_instruction": "After completing these checks, run initial Gemini trajectories using Harbor. Record rewards, individual verifier results, execution time, steps, token consumption, errors and scientific failure reasons.",
+  "scope": "One initial diagnostic valid trajectory per Biology task, same Gemini model/scaffold/settings, serial execution; bounded infrastructure retries do not count as scientific failures.",
+  "task_requirements": "Preserve scientifically valid requirements and frozen validated task versions. No changes merely to force model failure.",
+  "storage": "New task files, trajectories, reports, tmp and configurable host caches on F wherever practical. Existing installed tools and Docker Desktop storage may remain on C.",
+  "provider_policy": "Select Gemini model with documented public free tier; do not upgrade billing or switch to a paid-only provider/model. Project invoice/tier is not inferred from a configured key.",
+  "no_public_distribution": true
+}

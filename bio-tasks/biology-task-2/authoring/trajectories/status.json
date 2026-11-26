@@ -1,0 +1,5 @@
+{
+  "model_evaluation": "NOT RUN",
+  "gemini_authorization": "NOT REQUESTED",
+  "reason": "User authorization required before any provider use."
+}

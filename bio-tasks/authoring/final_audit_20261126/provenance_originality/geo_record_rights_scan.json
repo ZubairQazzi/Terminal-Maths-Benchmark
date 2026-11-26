@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-26",
+  "source": "Official cached GEO family SOFT retrieved25November2026",
+  "file": "F:\\rl\\bio\\authoring\\sources\\GSE273600_family.soft.gz",
+  "sha256": "2f7bdac5887dba810af327d89b0229f1af4216da3401818e2a7a2013fe73bdca",
+  "series_fields": [
+    "!Series_title = Transcriptomics of specific activation of the Integrated Stress Response compared to Arsenite and Thapsigargin treatment",
+    "!Series_status = Public on Aug 28 2024",
+    "!Series_submission_date = Jul 31 2024",
+    "!Series_last_update_date = Oct 15 2024",
+    "!Series_pubmed_id = 39333061",
+    "!Series_supplementary_file = ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273600/suppl/GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+    "!Series_supplementary_file = ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273600/suppl/GSE273600_Control_Conditions_TPMs.txt.gz"
+  ],
+  "explicit_license_rights_field_matches": 0,
+  "scope": "Absence of an explicit rights/license field in this record does not prove no third-party rights exist. Current GEO web viewer returned a challenge page; current primary NCBI policy and publisher record were separately read."
+}

@@ -1,0 +1,35 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 0,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795628574.8254201,
+            "stop": 1795628580.0696278
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_scientific_requirement",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 4.295231323999985,
+                "start": 1795628575.4212766,
+                "stop": 1795628579.782132,
+                "retries": 10,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::name::['schema', 'physical_audit', 'biological_limits', 'sample_identity', 'discovery_alignment_scores', 'heldout_identity_certificates', 'pure_aliquots', 'two_source_aliquots', 'open_set_rejection', 'residual_certificates', 'support_optimality']"
+                ],
+                "trace": "name = 'support_optimality'\n\n    @pytest.mark.parametrize('name',list(CHECKS))\n    def test_scientific_requirement(name):\n>       CHECKS[name]()\n\ntest_outputs.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:136: in optimality\n    r=read('queries.tsv').set_index('query_id')\n      ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'queries.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe queries.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

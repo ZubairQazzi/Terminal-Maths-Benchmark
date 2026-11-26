@@ -1,0 +1,51 @@
+{
+  "reviewer": "/root/qc_b",
+  "date": "2026-11-26",
+  "provenance_keys": [
+    "dataset",
+    "synthetic_provenance_challenge",
+    "counts_source_sha256",
+    "tpm_source_sha256",
+    "source_rows",
+    "source_samples",
+    "atlas_columns",
+    "query_columns",
+    "source_tpm_floor",
+    "source_tpm_column_sums_are_not_exactly_one_million",
+    "data_transform"
+  ],
+  "metadata_columns": [
+    "sample_id",
+    "gsm",
+    "cell_line",
+    "treatment",
+    "time_h",
+    "replicate",
+    "dose",
+    "dose_unit",
+    "geo_title"
+  ],
+  "metadata_rows": 120,
+  "explicit_seed_map_weights_fields_absent": true,
+  "metadata_no_anonymous_atlas_query_join_keys": true,
+  "build_context_private_paths_absent": true,
+  "image_observation_evidence": "authoring/reports/isolation_v011.json: actual UID1000 image probe found /tests and /solution absent, inputs not writable; Docker COPY is restricted to recorded context.",
+  "predictable_seed_shortcut": {
+    "status": "WARNING: predictable authoring seed / conditional shortcut",
+    "assumption": "Attacker knows or correctly guesses non-public generator NumPy default_rng and draw/order conventions and seed equals accession digits273600.",
+    "uses_expression_values": false,
+    "visible_information_used": [
+      "GSE273600 accession",
+      "120 count sample column labels and order",
+      "57665 gene rows and24 queries from provenance",
+      "sample labels encode line/treatment/time groups"
+    ],
+    "reconstructed_map_matches": true,
+    "reconstructed_120_map_entries": 120,
+    "reconstructed_query_labels_donors_weights_match": true,
+    "reconstructed_query_records": 24,
+    "reconstructed_atlas_scales_match": true,
+    "limit": "Generation code/seed/map are absent from solver context. Accession alone does not specify RNG/order. This test demonstrates predictable-label weakness if conventions are known/guessed, not a literal answer field and not a complete passing answer: measured audit and numerical correlation/margin/residual certificates still require expression computations.",
+    "action": "Preserve current validated task for authorized private trials; report shortcut limitation honestly. Any future anti-predictability redesign must be independently justified, versioned and revalidated, not tuned merely to force model failure."
+  }
+}

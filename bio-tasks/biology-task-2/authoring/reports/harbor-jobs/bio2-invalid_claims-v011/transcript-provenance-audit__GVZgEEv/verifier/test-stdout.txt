@@ -1,0 +1,40 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py ..F........                                              [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_biological_limits ____________________________
+
+    def test_biological_limits():
+>       CHECKS['biological_limits']()
+
+test_outputs.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def claims():
+        report=read('audit.json')['biological_claims']
+        keys=['representations_are_independent_experiments','mixture_fraction_represents_cell_fraction','untreated_2h_control_exists','atf4_dependence_identified','original_series_contains_planted_contamination']
+        assert set(report)==set(keys)
+>       for k in keys:assert report[k] is False,k
+                             ^^^^^^^^^^^^^^^^^^
+E       AssertionError: mixture_fraction_represents_cell_fraction
+
+checks.py:73: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_physical_audit
+PASSED test_outputs.py::test_sample_identity
+PASSED test_outputs.py::test_discovery_alignment_scores
+PASSED test_outputs.py::test_heldout_identity_certificates
+PASSED test_outputs.py::test_pure_aliquots
+PASSED test_outputs.py::test_two_source_aliquots
+PASSED test_outputs.py::test_open_set_rejection
+PASSED test_outputs.py::test_residual_certificates
+PASSED test_outputs.py::test_support_optimality
+FAILED test_outputs.py::test_biological_limits - AssertionError: mixture_frac...
+========================= 1 failed, 10 passed in 3.05s =========================

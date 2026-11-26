@@ -1,0 +1,84 @@
+{
+  "variation": "Independently permute every gene/column order, replace anonymous atlas/query IDs, and swap discovery/validation genes.",
+  "oracle": {
+    "schema": {
+      "passed": true
+    },
+    "physical_audit": {
+      "passed": true
+    },
+    "biological_limits": {
+      "passed": true
+    },
+    "sample_identity": {
+      "passed": true
+    },
+    "discovery_alignment_scores": {
+      "passed": true
+    },
+    "heldout_identity_certificates": {
+      "passed": true
+    },
+    "pure_aliquots": {
+      "passed": true
+    },
+    "two_source_aliquots": {
+      "passed": true
+    },
+    "open_set_rejection": {
+      "passed": true
+    },
+    "residual_certificates": {
+      "passed": true
+    },
+    "support_optimality": {
+      "passed": true
+    }
+  },
+  "frozen_original_output_on_changed_input": {
+    "schema": {
+      "passed": false,
+      "error": "AssertionError: "
+    },
+    "physical_audit": {
+      "passed": false,
+      "error": "AssertionError: ('eligible_discovery_genes', 5670, 5659)"
+    },
+    "biological_limits": {
+      "passed": true
+    },
+    "sample_identity": {
+      "passed": false,
+      "error": "AssertionError: Sample provenance mismatched"
+    },
+    "discovery_alignment_scores": {
+      "passed": false,
+      "error": "KeyError: 'A000'"
+    },
+    "heldout_identity_certificates": {
+      "passed": false,
+      "error": "KeyError: 'A000'"
+    },
+    "pure_aliquots": {
+      "passed": false,
+      "error": "KeyError: 'Y009'"
+    },
+    "two_source_aliquots": {
+      "passed": false,
+      "error": "KeyError: 'Y021'"
+    },
+    "open_set_rejection": {
+      "passed": false,
+      "error": "KeyError: 'Y013'"
+    },
+    "residual_certificates": {
+      "passed": false,
+      "error": "KeyError: 'Q000'"
+    },
+    "support_optimality": {
+      "passed": false,
+      "error": "KeyError: 'Y021'"
+    }
+  },
+  "seconds": 141.012
+}

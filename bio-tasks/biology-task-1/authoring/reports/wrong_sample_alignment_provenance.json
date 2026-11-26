@@ -1,0 +1,108 @@
+{
+  "operation": "Swap actual sample_id assignments between DmrPERK Dim and UT groups at every matched time, preserving all120 distinct matrix columns and triplicate group sizes",
+  "altered_assignments": [
+    {
+      "factor_label": "DmrPERK_Dim_4h_rep1",
+      "matrix_sample_assigned": "DmrPERK_UT_4h_rep1"
+    },
+    {
+      "factor_label": "DmrPERK_UT_4h_rep1",
+      "matrix_sample_assigned": "DmrPERK_Dim_4h_rep1"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_4h_rep2",
+      "matrix_sample_assigned": "DmrPERK_UT_4h_rep2"
+    },
+    {
+      "factor_label": "DmrPERK_UT_4h_rep2",
+      "matrix_sample_assigned": "DmrPERK_Dim_4h_rep2"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_4h_rep3",
+      "matrix_sample_assigned": "DmrPERK_UT_4h_rep3"
+    },
+    {
+      "factor_label": "DmrPERK_UT_4h_rep3",
+      "matrix_sample_assigned": "DmrPERK_Dim_4h_rep3"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_8h_rep1",
+      "matrix_sample_assigned": "DmrPERK_UT_8h_rep1"
+    },
+    {
+      "factor_label": "DmrPERK_UT_8h_rep1",
+      "matrix_sample_assigned": "DmrPERK_Dim_8h_rep1"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_8h_rep2",
+      "matrix_sample_assigned": "DmrPERK_UT_8h_rep2"
+    },
+    {
+      "factor_label": "DmrPERK_UT_8h_rep2",
+      "matrix_sample_assigned": "DmrPERK_Dim_8h_rep2"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_8h_rep3",
+      "matrix_sample_assigned": "DmrPERK_UT_8h_rep3"
+    },
+    {
+      "factor_label": "DmrPERK_UT_8h_rep3",
+      "matrix_sample_assigned": "DmrPERK_Dim_8h_rep3"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_16h_rep1",
+      "matrix_sample_assigned": "DmrPERK_UT_16h_rep1"
+    },
+    {
+      "factor_label": "DmrPERK_UT_16h_rep1",
+      "matrix_sample_assigned": "DmrPERK_Dim_16h_rep1"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_16h_rep2",
+      "matrix_sample_assigned": "DmrPERK_UT_16h_rep2"
+    },
+    {
+      "factor_label": "DmrPERK_UT_16h_rep2",
+      "matrix_sample_assigned": "DmrPERK_Dim_16h_rep2"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_16h_rep3",
+      "matrix_sample_assigned": "DmrPERK_UT_16h_rep3"
+    },
+    {
+      "factor_label": "DmrPERK_UT_16h_rep3",
+      "matrix_sample_assigned": "DmrPERK_Dim_16h_rep3"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_24h_rep1",
+      "matrix_sample_assigned": "DmrPERK_UT_24h_rep1"
+    },
+    {
+      "factor_label": "DmrPERK_UT_24h_rep1",
+      "matrix_sample_assigned": "DmrPERK_Dim_24h_rep1"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_24h_rep2",
+      "matrix_sample_assigned": "DmrPERK_UT_24h_rep2"
+    },
+    {
+      "factor_label": "DmrPERK_UT_24h_rep2",
+      "matrix_sample_assigned": "DmrPERK_Dim_24h_rep2"
+    },
+    {
+      "factor_label": "DmrPERK_Dim_24h_rep3",
+      "matrix_sample_assigned": "DmrPERK_UT_24h_rep3"
+    },
+    {
+      "factor_label": "DmrPERK_UT_24h_rep3",
+      "matrix_sample_assigned": "DmrPERK_Dim_24h_rep3"
+    }
+  ],
+  "original_metadata_sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+  "permuted_metadata_sha256": "593cbee6148dc7f13da4eb350ce83d9369f308145a57db793c47160aeed35aaf",
+  "unchanged_matrix_sha256": {
+    "GSE273600_Control_Conditions_Raw_Counts.txt.gz": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+    "GSE273600_Control_Conditions_TPMs.txt.gz": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f"
+  },
+  "not_biological_evidence": true
+}

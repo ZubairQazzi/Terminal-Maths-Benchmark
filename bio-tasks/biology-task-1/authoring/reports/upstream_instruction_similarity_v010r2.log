@@ -1,0 +1,9 @@
+COMMAND ["C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "F:\\rl\\bio\\biology-task-1\\authoring\\package\\ci_checks\\check-similarity.py", "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope", "F:\\rl\\bio\\authoring\\sources\\terminal-bench\\tasks", "F:\\rl\\bio\\authoring\\sources\\terminal-bench\\lite", "F:\\rl\\bio\\biology-task-2\\task"]
+Warning: Failed to read F:\rl\bio\authoring\sources\terminal-bench\tasks\life-sciences\neuroscience\qsm-reconstruction\instruction.md: 'charmap' codec can't decode byte 0x9d in position 2006: character maps to <undefined>
+Warning: Failed to read F:\rl\bio\authoring\sources\terminal-bench\tasks\mathematical-sciences\formal-mathematics\finite-free-stam\instruction.md: 'charmap' codec can't decode byte 0x9d in position 1372: character maps to <undefined>
+Warning: Failed to read F:\rl\bio\authoring\sources\terminal-bench\tasks\physical-sciences\materials-science\exafs-shell-recovery\instruction.md: 'charmap' codec can't decode byte 0x81 in position 1111: character maps to <undefined>
+Warning: Failed to read F:\rl\bio\authoring\sources\terminal-bench\tasks\physical-sciences\materials-science\stacking-disorder-diffraction\instruction.md: 'charmap' codec can't decode byte 0x81 in position 2813: character maps to <undefined>
+Max similarity: 35% with 'local/task/.' (threshold: 80%)
+Similarity check passed
+
+EXIT 0

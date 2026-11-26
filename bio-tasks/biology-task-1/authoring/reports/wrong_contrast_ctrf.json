@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 10,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795628516.6533332,
+            "stop": 1795628527.017697
+        },
+        "tests": [
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_01_complete_handoff",
+                "status": "passed",
+                "duration": 0.0014537999995809514,
+                "start": 1795628519.359783,
+                "stop": 1795628519.3617914,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_02_fractional_representation_audit",
+                "status": "passed",
+                "duration": 3.910757700000431,
+                "start": 1795628519.3617914,
+                "stop": 1795628523.27333,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "passed",
+                "duration": 0.09489339999981894,
+                "start": 1795628523.2753384,
+                "stop": 1795628523.3700294,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_04_matched_factorial_effects",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 1.369431000000077,
+                "start": 1795628523.3700294,
+                "stop": 1795628525.0483124,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\nmatched =                                      dmr_effect  ...  certified\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\nENSG00000283696.1  Tg        24        0.271597  ...      False\n\n[249636 rows x 15 columns]\n\n    def test_04_matched_factorial_effects(expected,matched):\n>       for name in ['dmr_effect','parent_effect','interaction']:close(matched[name],expected['matched'][name])\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:129: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nactual = gene_id             treatment  time_h\nENSG00000000003.14  Dim        4        -0.342972\nENSG00000000419.12  Dim       ... 24       -0.127359\nENSG00000283696.1   Tg         24        0.271597\nName: interaction, Length: 249636, dtype: float64\nexpected = gene_id             treatment  time_h\nENSG00000000003.14  Dim        4        -0.259322\nENSG00000000419.12  Dim       ... 24       -0.121706\nENSG00000283696.1   Tg         24       -0.089128\nName: interaction, Length: 249636, dtype: float64\nprobability = False\n\n    def close(actual,expected,probability=False):\n        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)\n        assert np.isfinite(a).all(),'Nonfinite numerical submission'\n        tolerance=2e-7+2e-5*np.abs(e)\n        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)\n>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'\nE       AssertionError: Numerical certificate mismatch; maximum absolute error=12.865201163637753\nE       assert np.False_\nE        +  where np.False_ = <function all at 0x000002B416CACA30>(array([0.08364928, 0.03223352, 0.14375035, ..., 0.13456771, 0.00565261,\\n       0.36072448], shape=(249636,)) <= array([5.38644727e-06, 7.94719026e-07, 8.80909748e-06, ...,\\n       1.67845582e-06, 2.63412603e-06, 1.98255608e-06], shape=(249636,)))\nE        +    where <function all at 0x000002B416CACA30> = np.all\nE        +    and   array([0.08364928, 0.03223352, 0.14375035, ..., 0.13456771, 0.00565261,\\n       0.36072448], shape=(249636,)) = <ufunc 'absolute'>((array([-0.34297165, -0.00249757,  0.28670452, ...,  0.2084905 ,\\n       -0.12735891,  0.27159668], shape=(249636,)) - array([-0.25932236,  0.02973595,  0.43045487, ...,  0.07392279,\\n       -0.1217063 , -0.0891278 ], shape=(249636,))))\nE        +      where <ufunc 'absolute'> = np.abs\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:102: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "passed",
+                "duration": 0.030587500000365253,
+                "start": 1795628525.0483124,
+                "stop": 1795628525.080926,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "passed",
+                "duration": 0.027823000000353204,
+                "start": 1795628525.080926,
+                "stop": 1795628525.1096005,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "passed",
+                "duration": 0.5282306999997672,
+                "start": 1795628525.1096005,
+                "stop": 1795628525.6379905,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_08_early_partial_identification",
+                "status": "passed",
+                "duration": 0.7929304999997839,
+                "start": 1795628525.6379905,
+                "stop": 1795628526.430372,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "passed",
+                "duration": 0.5654374000000644,
+                "start": 1795628526.4323814,
+                "stop": 1795628526.9983892,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_10_interpretation_limits",
+                "status": "passed",
+                "duration": 0.0018879999997807317,
+                "start": 1795628526.9983892,
+                "stop": 1795628527.0010593,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "passed",
+                "duration": 0.015656400000352733,
+                "start": 1795628527.0010593,
+                "stop": 1795628527.0171597,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            }
+        ]
+    }
+}

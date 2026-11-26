@@ -1,0 +1,38 @@
+{
+  "dataset": "GSE273600",
+  "client_date": "2026-11-26",
+  "mode": "PROPOSED SOURCE-ONLY RELEASE / OPERATOR LOCAL ACQUISITION",
+  "files": [
+    {
+      "filename": "GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "official_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273600/suppl/GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "bytes": 13507950,
+      "local_source": "F:\\rl\\bio\\shared-inputs\\original-read-only-data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "license_for_unrestricted_redistribution": "NOT ESTABLISHED",
+      "required_before_use": "Operator verifies applicable source rights/terms and exact file integrity. Local acquisition is not a rights grant."
+    },
+    {
+      "filename": "GSE273600_Control_Conditions_TPMs.txt.gz",
+      "official_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273600/suppl/GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "bytes": 17851551,
+      "local_source": "F:\\rl\\bio\\shared-inputs\\original-read-only-data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "license_for_unrestricted_redistribution": "NOT ESTABLISHED",
+      "required_before_use": "Operator verifies applicable source rights/terms and exact file integrity. Local acquisition is not a rights grant."
+    }
+  ],
+  "article_license": "CC BY-NC-ND 4.0; not automatically a matrix license",
+  "public_distribution_authorized": false,
+  "derivatives_requiring_review": [
+    "anonymous scaled atlas",
+    "synthetic query mixtures",
+    "gene metadata",
+    "model trajectories containing expression excerpts"
+  ],
+  "rights_sources": [
+    "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+    "https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html",
+    "https://www.nature.com/articles/s41467-024-52538-5"
+  ]
+}

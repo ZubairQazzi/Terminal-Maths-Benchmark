@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py ...........                                              [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_01_complete_handoff
+PASSED test_outputs.py::test_02_fractional_representation_audit
+PASSED test_outputs.py::test_03_unselected_complete_gene_universe
+PASSED test_outputs.py::test_04_matched_factorial_effects
+PASSED test_outputs.py::test_05_heteroscedastic_uncertainty
+PASSED test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect
+PASSED test_outputs.py::test_07_joint_family_multiplicity
+PASSED test_outputs.py::test_08_early_partial_identification
+PASSED test_outputs.py::test_09_envelope_expansion_invariants
+PASSED test_outputs.py::test_10_interpretation_limits
+PASSED test_outputs.py::test_11_synthetic_positive_and_degenerate_controls
+============================= 11 passed in 10.06s ==============================

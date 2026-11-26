@@ -1,0 +1,28 @@
+COMMAND ["C:\\Users\\zubai\\.local\\bin\\harbor.exe", "run", "--path", "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit", "--agent", "authoring.native_agents:FixtureAgent", "-k", "1", "--n-concurrent", "1", "--job-name", "bio2-constant-v011", "--jobs-dir", "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs", "--quiet"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:00:32 0:00:00
+
+adhoc • local-biology-fixture
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 33s
+Results written to 
+F:\rl\bio\biology-task-2\authoring\reports\harbor-jobs\bio2-constant-v011\resul
+t.json
+Inspect results by running `harbor view 
+F:\rl\bio\biology-task-2\authoring\reports\harbor-jobs`
+Share results by running `harbor upload 
+F:\rl\bio\biology-task-2\authoring\reports\harbor-jobs\bio2-constant-v011`
+
+
+EXIT 0 ELAPSED_SECONDS 42.812

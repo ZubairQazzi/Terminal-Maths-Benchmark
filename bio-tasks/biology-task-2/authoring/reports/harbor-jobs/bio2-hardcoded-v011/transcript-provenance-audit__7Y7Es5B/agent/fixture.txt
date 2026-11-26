@@ -1,0 +1,2 @@
+Local deterministic control: hardcoded
+No model or provider API invoked.

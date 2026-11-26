@@ -1,0 +1,30 @@
+COMMAND ["C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe", "run", "--rm", "--network", "none", "--mount", "type=bind,source=F:/rl/bio,target=/work", "-w", "/work/biology-task-2/authoring/package", "local-bio2-verifier:v011", "python3", "/work/authoring/static_checks.py", "--task", "2", "--suffix", "v011r1"]
+task-fields 0
+task-path 0
+task-structure 0
+task-slug 0
+task-readme 0
+canary 0
+task-absolute-path 0
+instruction-suffix 0
+test-file-references 0
+dockerfile-references 0
+dockerfile-sanity 0
+dockerfile-platform 0
+allow-internet 0
+separate-verifier 0
+compose-host-binds 0
+task-timeout 0
+gpu-types 0
+task-resources 0
+verifier-resources 0
+nproc 0
+verifier-tooling-baked 0
+trial-network-fetch 0
+pip-pinning 0
+pytest-version 0
+test-sh-sanity 0
+binary-reward 0
+passed 26 / 26
+
+EXIT 0 ELAPSED_SECONDS 2.984

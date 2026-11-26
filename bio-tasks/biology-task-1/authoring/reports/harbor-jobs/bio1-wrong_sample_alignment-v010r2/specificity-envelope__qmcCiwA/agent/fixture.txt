@@ -1,0 +1,2 @@
+Local deterministic control: wrong_sample_alignment
+No model or provider API invoked.

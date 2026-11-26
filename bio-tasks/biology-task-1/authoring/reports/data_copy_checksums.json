@@ -1,0 +1,10 @@
+{
+  "environment/data/calibration_cases.json": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+  "environment/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+  "environment/data/GSE273600_Control_Conditions_TPMs.txt.gz": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+  "environment/data/sample_metadata.csv": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+  "tests/data/calibration_cases.json": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+  "tests/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+  "tests/data/GSE273600_Control_Conditions_TPMs.txt.gz": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+  "tests/data/sample_metadata.csv": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65"
+}

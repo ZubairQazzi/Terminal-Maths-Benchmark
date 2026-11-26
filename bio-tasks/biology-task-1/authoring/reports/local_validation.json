@@ -1,0 +1,84 @@
+{
+  "oracle": {
+    "exit_code": 0,
+    "seconds": 11.146640539169312,
+    "log": "authoring\\reports\\oracle.log",
+    "reused_completed_evidence": true
+  },
+  "alternative": {
+    "exit_code": 0,
+    "seconds": 9.841332197189331,
+    "log": "authoring\\reports\\alternative.log",
+    "reused_completed_evidence": true
+  },
+  "nop": {
+    "exit_code": 1,
+    "seconds": 8.394408464431763,
+    "log": "authoring\\reports\\nop.log",
+    "reused_completed_evidence": true
+  },
+  "constant": {
+    "exit_code": 1,
+    "seconds": 10.20639443397522,
+    "log": "authoring\\reports\\constant.log",
+    "reused_completed_evidence": true
+  },
+  "hardcoded": {
+    "exit_code": 1,
+    "seconds": 7.433612585067749,
+    "log": "authoring\\reports\\hardcoded.log",
+    "reused_completed_evidence": true
+  },
+  "label_shift": {
+    "exit_code": 1,
+    "seconds": 11.888294700000188,
+    "log": "authoring\\reports\\label_shift.log"
+  },
+  "wrong_contrast": {
+    "exit_code": 1,
+    "seconds": 11.364176199999747,
+    "log": "authoring\\reports\\wrong_contrast.log"
+  },
+  "omitted_adjustment": {
+    "exit_code": 1,
+    "seconds": 10.592252599999938,
+    "log": "authoring\\reports\\omitted_adjustment.log"
+  },
+  "saturated_shortcut": {
+    "exit_code": 1,
+    "seconds": 11.16266429999996,
+    "log": "authoring\\reports\\saturated_shortcut.log"
+  },
+  "incomplete": {
+    "exit_code": 1,
+    "seconds": 10.309541699999954,
+    "log": "authoring\\reports\\incomplete.log"
+  },
+  "invalid_interpretation": {
+    "exit_code": 1,
+    "seconds": 10.587681299999986,
+    "log": "authoring\\reports\\invalid_interpretation.log"
+  },
+  "repeat_calculation": {
+    "exit_code": 0,
+    "seconds": 18.224248499999703,
+    "log": "authoring\\reports\\repeat_calculation.log"
+  },
+  "reproducible": true,
+  "output_sha256": {
+    "audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+    "calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+    "early_bounds.tsv": "62f0c7dfa7bc7e8943678d7fded8458a6958d899d0a99717874411b861bc95bb",
+    "eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+    "interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+    "matched.tsv": "33605d24c74ad809ae1fa4984fc021079b53ca1f4981105e51cc0dc52baa68fa"
+  },
+  "wrong_sample_alignment": {
+    "exit_code": 1,
+    "seconds": 24.308202000000165,
+    "log": "authoring/reports/wrong_sample_alignment.log",
+    "calculation_log": "authoring/reports/wrong_sample_alignment_calculation.log",
+    "permutation_provenance": "authoring/reports/wrong_sample_alignment_provenance.json",
+    "method": "Full reference recomputation from genuinely permuted metadata; scientific output values not manually mutated"
+  }
+}

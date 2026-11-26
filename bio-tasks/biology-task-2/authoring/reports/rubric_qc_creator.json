@@ -1,0 +1,344 @@
+[
+  {
+    "id": "well_specified",
+    "requirement": "Clear deliverable: An independent expert can identify the goal, output path, format, grading metrics, and any convention or execution limit that changes the answer.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/instruction.md:46",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "test_instruction_alignment",
+    "requirement": "Instructions and tests agree: Each scored requirement appears in the instructions, and the grader checks each promised requirement.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/instruction.md:36",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "instruction_clarity",
+    "requirement": "Clear, outcome-focused wording: The instructions make the task easy to understand, give the necessary context, and state what the submission must achieve without giving away the method.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/instruction.md:5",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "structured_data_schema",
+    "requirement": "Structured output contract: For structured submissions, the specified fields, types, and layout agree with what the grader reads.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/instruction.md:50",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "typos",
+    "requirement": "Correct references: Names, paths, commands, and symbols point to the intended files or concepts.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/instruction.md:9",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "hint_discoverability",
+    "requirement": "Discoverable hints: When a hint exists, its information can be traced to solver-visible evidence or established domain knowledge.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/instruction.md:22",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "scientifically_grounded",
+    "requirement": "Scientific grounding: The work reflects a real research workflow and produces a result useful for a scientific question or decision.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "authoring/research/proposal.md:4",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "scope",
+    "requirement": "Scientific scope: The problem and deliverable fit the assigned domain and field.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/task.toml:12",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "essential_difficulty",
+    "requirement": "Essential difficulty: The challenge comes from the science or reasoning the solver must do. Formatting, repetition, and precision demands have a scientific purpose when required.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "authoring/research/complexity_layers.md:7",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "novel",
+    "requirement": "Novelty: The instance requires new reasoning or computation. The judge can use similarity findings to assess whether an earlier answer can be copied.",
+    "status": "NOT TESTED",
+    "evidence": "Conceptual creator distinction documented; quantitative external and independent originality review pending.",
+    "file_line": "authoring/research/candidates.md:8",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "agentic",
+    "requirement": "Meaningful tool use: Reaching a correct answer requires work such as exploring data, testing a hypothesis, or running a computation.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/solution/solve.py:16",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "verifiable",
+    "requirement": "Verifiability: The grader can observe the required outcome and distinguish correct work from meaningful errors.",
+    "status": "PASS",
+    "evidence": "All numeric results are independently recomputable from inputs and synthetic provenance.",
+    "file_line": "task/tests/checks.py:129",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "solvable",
+    "requirement": "Solvability: A correct approach can finish and pass using the data, tools, and resources available to the solver.",
+    "status": "PASS",
+    "evidence": "Oracle11/11 and valid alternate11/11 from actual input matrices.",
+    "file_line": "authoring/reports/local_validation.json:1",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "outcome_verified",
+    "requirement": "Alternative valid methods: A scientifically valid alternative can earn full credit by meeting the same result requirements.",
+    "status": "PASS",
+    "evidence": "Alternative local assignment/scalar pair-projection approach passes11/11; arbitrary output row order accepted.",
+    "file_line": "authoring/reports/local_validation.json:1",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "functional_verification",
+    "requirement": "Functional verification: The grader checks the actual behavior or scientific output and catches answers that only look correct.",
+    "status": "PASS",
+    "evidence": "Independent arithmetic, all supports, planted truth and held-out certificates checked; no solution import.",
+    "file_line": "task/tests/checks.py:151",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "ground_truth_provenance",
+    "requirement": "Ground truth provenance: The expected values or scoring objective can be traced to their source, such as a generator, published data, or an independent calculation.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "authoring/build_inputs.py:59",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "graded_instances_discriminate",
+    "requirement": "Discriminating test cases: Check per-case results from plausible trivial guesses when available, and account for any intentionally easy cases described in the documentation.",
+    "status": "PASS",
+    "evidence": "All9 negative controls binary0 with per-family failures preserved; easy controls explicitly identified.",
+    "file_line": "authoring/reports/local_validation.json:1",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "solution_quality",
+    "requirement": "Reference solution quality: The reference derives its answer from the supplied inputs, and reviewers can inspect the implementation that actually produces it.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/solution/solve.py:16",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "do_not_modify_enforced",
+    "requirement": "Protected files: When the instructions protect a file, the verifier or execution boundary enforces that requirement.",
+    "status": "PASS",
+    "evidence": "Root-owned data permissions remove writes; verifier uses separate copy.",
+    "file_line": "task/environment/Dockerfile:8",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "deterministic_reproducible",
+    "requirement": "Reproducibility: Builds and runs reproduce the expected data and score within the task\u2019s stated rules for variation.",
+    "status": "PASS",
+    "evidence": "Oracle repeat produces identical SHA256 for every artifact; fixed input seed, hash split, one-thread settings.",
+    "file_line": "authoring/reports/local_validation.json:1",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "separate_verifier_configured",
+    "requirement": "Separate verifier setup: The verifier has the intended inputs and tools, including matching copies of any shared data required by both environments.",
+    "status": "NOT TESTED",
+    "evidence": "Configuration and immutable data copies exist; actual native transfer/isolation pending.",
+    "file_line": "task/task.toml:27",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "verifier_execution_isolation",
+    "requirement": "Submitted code isolation: When the verifier runs submitted code, the code cannot write the score, modify grading files, or read private answers.",
+    "status": "PASS",
+    "evidence": "Static artifact parsing only; no submitted code executes in privileged verifier.",
+    "file_line": "task/tests/checks.py:26",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "anti_cheat_robustness",
+    "requirement": "Resistance to shortcuts: The grading setup and available controls show whether shortcuts can earn credit without solving the scientific problem.",
+    "status": "WARNING",
+    "evidence": "Negative controls fail; changed-input regression pending. Finite static outputs cannot make hardcoding mathematically impossible.",
+    "file_line": "authoring/reports/test_discrimination_audit.md:20",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "task_security",
+    "requirement": "Task security: Build and runtime files avoid unsafe access to credentials, the host, and unrelated networks. Sensitive operations have a clear task purpose.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/tests/checks.py:26",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "resource_configuration",
+    "requirement": "Resource suitability: Time, CPU, memory, storage, and other requested resources are reasonable and give valid approaches enough room to finish.",
+    "status": "PASS",
+    "evidence": "27.597second local oracle/alternate/baseline suite; native resource limits still require integration test.",
+    "file_line": "authoring/reports/local_validation.json:1",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "task_toml_schema",
+    "requirement": "Manifest schema: The manifest uses supported settings and supplies the naming, publisher, and metadata required by the active profile.",
+    "status": "NOT TESTED",
+    "evidence": "Manifest parses; authoritative installed Harbor schema check pending.",
+    "file_line": "task/task.toml:2",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "environment_hygiene",
+    "requirement": "Solver image contents: The solver image contains the needed tools and data. Reference solutions, private answers, and grading materials stay outside the solver\u2019s view.",
+    "status": "PASS",
+    "evidence": "Solver COPY includes data and wheel dependencies, no private truth/tests/solution.",
+    "file_line": "task/environment/Dockerfile:7",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "artifact_efficiency",
+    "requirement": "Artifact transfer: The verifier receives the files it needs, and collection handles failures without reusing stale outputs.",
+    "status": "NOT TESTED",
+    "evidence": "Only three small outputs declared, no source code; native transfer pending.",
+    "file_line": "task/task.toml:3",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "ctrf_reporting",
+    "requirement": "Individual test results: When the grader runs discrete tests, the review evidence shows the outcome of each applicable check.",
+    "status": "NOT TESTED",
+    "evidence": "11 uniquely named pytest tests and pinned CTRF configured after native v0.1.0 collapsed parametrized names; native recheck of v0.1.1 pending.",
+    "file_line": "task/tests/test_outputs.py:4",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "task_authoring_dir",
+    "requirement": "Authoring material: Review-only material belongs in `authoring/`. Runtime files contain the material needed to build, solve, and grade the task.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "authoring/REPRODUCING.md:2",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "no_extraneous_files",
+    "requirement": "Necessary files: Every shipped file has a required purpose or is covered by an exception in the rubric.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "authoring/REPRODUCING.md:15",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "reviewable",
+    "requirement": "Reviewability: Another reviewer can trace the assumptions, inputs, and calculations through to an expected result.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "authoring/research/proposal.md:20",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "difficulty_explanation_quality",
+    "requirement": "Difficulty explanation: The documentation explains the specific scientific decisions that make the task challenging and where plausible simpler approaches fall short.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "authoring/research/complexity_layers.md:2",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "solution_explanation_quality",
+    "requirement": "Reference explanation: The documentation explains the reference approach and connects it to the implemented solution.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/README.md:35",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "verification_explanation_quality",
+    "requirement": "Verification explanation: The documentation describes what the grader measures and why the checks suffice. Where the rubric requires it, calibration evidence shows how alternative correct methods and flawed methods scored.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "authoring/reports/test_discrimination_audit.md:6",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "category_and_tags",
+    "requirement": "Category and tags: The labels describe the actual science and methods clearly enough to find and group the task.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/task.toml:9",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "task_name",
+    "requirement": "Published task name: The name is descriptive and follows the active naming rules.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/task.toml:5",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "task_readme",
+    "requirement": "Reviewer README: When included, the README provides accurate, useful context and reflects the task as packaged.",
+    "status": "PASS",
+    "evidence": "Creator inspected source and measured local evidence; independent review still required.",
+    "file_line": "task/README.md:39",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  }
+]

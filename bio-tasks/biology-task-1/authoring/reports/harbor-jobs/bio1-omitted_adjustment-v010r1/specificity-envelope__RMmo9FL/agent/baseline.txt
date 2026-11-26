@@ -1,0 +1,1 @@
+Deterministic artifact control no-adjustment; no API calls.

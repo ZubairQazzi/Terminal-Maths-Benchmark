@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 10,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795628537.1551695,
+            "stop": 1795628546.8829062
+        },
+        "tests": [
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_01_complete_handoff",
+                "status": "passed",
+                "duration": 0.0011316999998598476,
+                "start": 1795628539.5605047,
+                "stop": 1795628539.5625138,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_02_fractional_representation_audit",
+                "status": "passed",
+                "duration": 3.637203600000248,
+                "start": 1795628539.5625138,
+                "stop": 1795628543.200182,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "passed",
+                "duration": 0.09944969999969544,
+                "start": 1795628543.200182,
+                "stop": 1795628543.3001492,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_04_matched_factorial_effects",
+                "status": "passed",
+                "duration": 1.4460236000004443,
+                "start": 1795628543.3001492,
+                "stop": 1795628544.7475846,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "passed",
+                "duration": 0.03740160000006654,
+                "start": 1795628544.7475846,
+                "stop": 1795628544.7852995,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "passed",
+                "duration": 0.03101379999998244,
+                "start": 1795628544.7852995,
+                "stop": 1795628544.8177645,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.012089699999705772,
+                "start": 1795628544.8177645,
+                "stop": 1795628545.307514,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\nmatched =                                      dmr_effect  ...  certified\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\nENSG00000283696.1  Tg        24        0.271597  ...      False\n\n[249636 rows x 15 columns]\n\n    def test_07_joint_family_multiplicity(expected,matched):\n>       close(matched.q_joint,expected['matched'].q_joint,True)\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:138: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nactual = gene_id             treatment  time_h\nENSG00000000003.14  Dim        4         1.0\nENSG00000000419.12  Dim        4   ...1   Tg         24        1.0\nENSG00000283696.1   Tg         24        1.0\nName: q_joint, Length: 249636, dtype: float64\nexpected = gene_id             treatment  time_h\nENSG00000000003.14  Dim        4         1.0\nENSG00000000419.12  Dim        4   ...1   Tg         24        1.0\nENSG00000283696.1   Tg         24        1.0\nName: q_joint, Length: 249636, dtype: float64\nprobability = True\n\n    def close(actual,expected,probability=False):\n        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)\n        assert np.isfinite(a).all(),'Nonfinite numerical submission'\n        tolerance=2e-7+2e-5*np.abs(e)\n        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)\n>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'\nE       AssertionError: Numerical certificate mismatch; maximum absolute error=0.9999952280223964\nE       assert np.False_\nE        +  where np.False_ = <function all at 0x0000020E182ECFF0>(array([0., 0., 0., ..., 0., 0., 0.], shape=(249636,)) <= array([2.02e-05, 2.02e-05, 2.02e-05, ..., 2.02e-05, 2.02e-05, 2.02e-05],\\n      shape=(249636,)))\nE        +    where <function all at 0x0000020E182ECFF0> = np.all\nE        +    and   array([0., 0., 0., ..., 0., 0., 0.], shape=(249636,)) = <ufunc 'absolute'>((array([1., 1., 1., ..., 1., 1., 1.], shape=(249636,)) - array([1., 1., 1., ..., 1., 1., 1.], shape=(249636,))))\nE        +      where <ufunc 'absolute'> = np.abs\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:102: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_08_early_partial_identification",
+                "status": "passed",
+                "duration": 0.8162545999998656,
+                "start": 1795628545.309524,
+                "stop": 1795628546.1261353,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "passed",
+                "duration": 0.7328408000003037,
+                "start": 1795628546.1261353,
+                "stop": 1795628546.8592548,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_10_interpretation_limits",
+                "status": "passed",
+                "duration": 0.0022082000000409607,
+                "start": 1795628546.8592548,
+                "stop": 1795628546.8610091,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "passed",
+                "duration": 0.020816699999613775,
+                "start": 1795628546.8630235,
+                "stop": 1795628546.8829062,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            }
+        ]
+    }
+}

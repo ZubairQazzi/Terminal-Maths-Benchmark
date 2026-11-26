@@ -1,0 +1,28 @@
+COMMAND ["C:\\Users\\zubai\\.local\\bin\\harbor.exe", "run", "--path", "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope", "--agent", "authoring.evidence.baseline_agent:AlternativeAgent", "-k", "1", "--n-concurrent", "1", "--job-name", "bio1-alternative-v010r1", "--jobs-dir", "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs", "--quiet"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:00:40 0:00:00
+
+adhoc • bio1-alternative
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 40s
+Results written to 
+F:\rl\bio\biology-task-1\authoring\reports\harbor-jobs\bio1-alternative-v010r1\
+result.json
+Inspect results by running `harbor view 
+F:\rl\bio\biology-task-1\authoring\reports\harbor-jobs`
+Share results by running `harbor upload 
+F:\rl\bio\biology-task-1\authoring\reports\harbor-jobs\bio1-alternative-v010r1`
+
+
+EXIT 0 ELAPSED_SECONDS 49.687

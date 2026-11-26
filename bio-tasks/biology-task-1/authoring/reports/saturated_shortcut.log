@@ -1,0 +1,88 @@
+COMMAND ["C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "-m", "pytest", "-p", "ctrf.main", "-p", "no:cacheprovider", "--ctrf", "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\saturated_shortcut_ctrf.json", "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py", "-rA"]
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.4.1, pluggy-1.6.0
+rootdir: F:\rl
+collected 11 items
+
+bio\biology-task-1\task\tests\test_outputs.py ..........F                [100%]
+
+================================== FAILURES ===================================
+_____________ test_11_synthetic_positive_and_degenerate_controls ______________
+
+    def test_11_synthetic_positive_and_degenerate_controls():
+        cases=json.loads((DATA/'calibration_cases.json').read_text())['cases']
+        rows=[]
+        for case in cases:
+            groups=[np.array(case['groups'][key],dtype=float) for key in ['dmr_treated','dmr_control','parent_treated','parent_control']]
+            means=[sum(values)/3 for values in groups]
+            vm=np.array([sum((values-means[k])**2)/6 for k,values in enumerate(groups)])
+            d=means[0]-means[1];a=means[2]-means[3];i=d-a
+            row=dict(case_id=case['case_id'],dmr_effect=d,parent_effect=a,interaction=i)
+            params={}
+            for label,select in [('dmr',[0,1]),('parent',[2,3]),('interaction',[0,1,2,3])]:
+                variance=sum(vm[select]);denominator=sum(vm[select]**2)/2
+                params[label]=(variance**.5,variance**2/denominator if denominator else 1e12)
+                row['se_'+label],row['df_'+label]=params[label]
+            sd,fd=params['dmr'];sa,fa=params['parent'];si,fi=params['interaction']
+            row['p_interaction']=2*stats.t.sf(abs(i)/si,fi) if si else float(i==0)
+            row['p_parent_equivalence']=max(stats.t.sf((a+.3)/sa,fa),stats.t.sf((.3-a)/sa,fa)) if sa else float(abs(a)>=.3)
+            row['p_dmr_minimum']=min(1.,2*stats.t.sf((abs(d)-.5)/sd,fd)) if sd else float(abs(d)<=.5)
+            row['p_joint']=max(row['p_interaction'],row['p_parent_equivalence'],row['p_dmr_minimum'])
+            rows.append(row)
+        ref=pd.DataFrame(rows).set_index('case_id');ref['q_joint']=stats.false_discovery_control(ref.p_joint,method='by');ref['certified']=ref.q_joint<=.05
+        result=load_frame('calibration.tsv',['case_id'],ref)
+        for name in ref.columns:
+            if name=='certified':
+                assert np.array_equal(result[name].astype(str).str.lower().to_numpy(),np.where(ref[name],'true','false'))
+>           else:close(result[name],ref[name],name.startswith('p_') or name.startswith('q_'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+bio\biology-task-1\task\tests\test_outputs.py:186: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+actual = case_id
+positive_specific          1.0
+negative_specific          1.0
+parent_not_equivalent      1.0
+small_dmr_effect ...o_variance_specific     1.0
+zero_variance_null         1.0
+minimum_effect_boundary    1.0
+Name: q_joint, dtype: float64
+expected = case_id
+positive_specific          0.000012
+negative_specific          0.000012
+parent_not_equivalent      1.000000
+sm...ific     0.000000
+zero_variance_null         1.000000
+minimum_effect_boundary    1.000000
+Name: q_joint, dtype: float64
+probability = True
+
+    def close(actual,expected,probability=False):
+        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)
+        assert np.isfinite(a).all(),'Nonfinite numerical submission'
+        tolerance=2e-7+2e-5*np.abs(e)
+        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)
+>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'
+E       AssertionError: Numerical certificate mismatch; maximum absolute error=1.0
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x0000028AFFCECEF0>(array([0.99998813, 0.99998813, 0.        , 0.        , 0.        ,\n       1.        , 0.        , 0.        ]) <= array([2.00237431e-07, 2.00237431e-07, 2.02000000e-05, 2.02000000e-05,\n       2.02000000e-05, 1.00000000e-10, 2.02000000e-05, 2.02000000e-05]))
+E        +    where <function all at 0x0000028AFFCECEF0> = np.all
+E        +    and   array([0.99998813, 0.99998813, 0.        , 0.        , 0.        ,\n       1.        , 0.        , 0.        ]) = <ufunc 'absolute'>((array([1., 1., 1., 1., 1., 1., 1., 1.]) - array([1.18715507e-05, 1.18715507e-05, 1.00000000e+00, 1.00000000e+00,\n       1.00000000e+00, 0.00000000e+00, 1.00000000e+00, 1.00000000e+00])))
+E        +      where <ufunc 'absolute'> = np.abs
+
+bio\biology-task-1\task\tests\test_outputs.py:102: AssertionError
+=================================== PASSES ====================================
+=========================== short test summary info ===========================
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_01_complete_handoff
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_02_fractional_representation_audit
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_03_unselected_complete_gene_universe
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_04_matched_factorial_effects
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_05_heteroscedastic_uncertainty
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_07_joint_family_multiplicity
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_08_early_partial_identification
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_09_envelope_expansion_invariants
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_10_interpretation_limits
+FAILED bio/biology-task-1/task/tests/test_outputs.py::test_11_synthetic_positive_and_degenerate_controls
+======================== 1 failed, 10 passed in 10.23s ========================

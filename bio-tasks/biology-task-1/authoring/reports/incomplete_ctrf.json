@@ -1,0 +1,131 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 7,
+            "failed": 4,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795628577.1571786,
+            "stop": 1795628586.5472598
+        },
+        "tests": [
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_01_complete_handoff",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0017503000003671332,
+                "start": 1795628579.9565413,
+                "stop": 1795628580.290042,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "def test_01_complete_handoff():\n>       for name in NAMES:artifact(name)\n                          ^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:105: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'early_bounds.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: early_bounds.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_incomplete/early_bounds.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_02_fractional_representation_audit",
+                "status": "passed",
+                "duration": 3.9739432000005763,
+                "start": 1795628580.2911205,
+                "stop": 1795628584.2648659,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "passed",
+                "duration": 0.07406710000032035,
+                "start": 1795628584.2648659,
+                "stop": 1795628584.3403237,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_04_matched_factorial_effects",
+                "status": "passed",
+                "duration": 1.308674500000052,
+                "start": 1795628584.3403237,
+                "stop": 1795628585.6490412,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "passed",
+                "duration": 0.03105310000046302,
+                "start": 1795628585.6490412,
+                "stop": 1795628585.6813333,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00844169999982114,
+                "start": 1795628585.6813333,
+                "stop": 1795628586.117161,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "self = Index(['dmr_effect', 'parent_effect', 'interaction', 'se_dmr', 'df_dmr',\n       'se_parent', 'df_parent', 'se_interaction', 'df_interaction',\n       'p_interaction', 'p_joint', 'q_joint', 'certified'],\n      dtype='str')\nkey = 'p_parent_equivalence'\n\n    def get_loc(self, key):\n        \"\"\"\n        Get integer location, slice or boolean mask for requested label.\n    \n        Parameters\n        ----------\n        key : label\n            The key to check its location if it is present in the index.\n    \n        Returns\n        -------\n        int if unique index, slice if monotonic index, else mask\n            Integer location, slice or boolean mask.\n    \n        See Also\n        --------\n        Index.get_slice_bound : Calculate slice bound that corresponds to\n            given label.\n        Index.get_indexer : Computes indexer and mask for new index given\n            the current index.\n        Index.get_non_unique : Returns indexer and masks for new index given\n            the current index.\n        Index.get_indexer_for : Returns an indexer even when non-unique.\n    \n        Examples\n        --------\n        >>> unique_index = pd.Index(list(\"abc\"))\n        >>> unique_index.get_loc(\"b\")\n        1\n    \n        >>> monotonic_index = pd.Index(list(\"abbc\"))\n        >>> monotonic_index.get_loc(\"b\")\n        slice(1, 3, None)\n    \n        >>> non_monotonic_index = pd.Index(list(\"abcb\"))\n        >>> non_monotonic_index.get_loc(\"b\")\n        array([False,  True, False,  True])\n        \"\"\"\n        casted_key = self._maybe_cast_indexer(key)\n        try:\n>           return self._engine.get_loc(casted_key)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nC:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pandas\\core\\indexes\\base.py:3641: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npandas/_libs/index.pyx:168: in pandas._libs.index.IndexEngine.get_loc\n    ???\npandas/_libs/index.pyx:197: in pandas._libs.index.IndexEngine.get_loc\n    ???\npandas/_libs/hashtable_class_helper.pxi:7668: in pandas._libs.hashtable.PyObjectHashTable.get_item\n    ???\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\n>   ???\nE   KeyError: 'p_parent_equivalence'\n\npandas/_libs/hashtable_class_helper.pxi:7676: KeyError\n\nThe above exception was the direct cause of the following exception:\n\nexpected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\nmatched =                                      dmr_effect  ...  certified\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\nENSG00000283696.1  Tg        24        0.271597  ...      False\n\n[249636 rows x 13 columns]\n\n    def test_06_affirmative_equivalence_and_minimum_effect(expected,matched):\n>       for name in ['p_interaction','p_parent_equivalence','p_dmr_minimum','p_joint']:close(matched[name],expected['matched'][name],True)\n                                                                                             ^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:135: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nC:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pandas\\core\\frame.py:4378: in __getitem__\n    indexer = self.columns.get_loc(key)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = Index(['dmr_effect', 'parent_effect', 'interaction', 'se_dmr', 'df_dmr',\n       'se_parent', 'df_parent', 'se_interaction', 'df_interaction',\n       'p_interaction', 'p_joint', 'q_joint', 'certified'],\n      dtype='str')\nkey = 'p_parent_equivalence'\n\n    def get_loc(self, key):\n        \"\"\"\n        Get integer location, slice or boolean mask for requested label.\n    \n        Parameters\n        ----------\n        key : label\n            The key to check its location if it is present in the index.\n    \n        Returns\n        -------\n        int if unique index, slice if monotonic index, else mask\n            Integer location, slice or boolean mask.\n    \n        See Also\n        --------\n        Index.get_slice_bound : Calculate slice bound that corresponds to\n            given label.\n        Index.get_indexer : Computes indexer and mask for new index given\n            the current index.\n        Index.get_non_unique : Returns indexer and masks for new index given\n            the current index.\n        Index.get_indexer_for : Returns an indexer even when non-unique.\n    \n        Examples\n        --------\n        >>> unique_index = pd.Index(list(\"abc\"))\n        >>> unique_index.get_loc(\"b\")\n        1\n    \n        >>> monotonic_index = pd.Index(list(\"abbc\"))\n        >>> monotonic_index.get_loc(\"b\")\n        slice(1, 3, None)\n    \n        >>> non_monotonic_index = pd.Index(list(\"abcb\"))\n        >>> non_monotonic_index.get_loc(\"b\")\n        array([False,  True, False,  True])\n        \"\"\"\n        casted_key = self._maybe_cast_indexer(key)\n        try:\n            return self._engine.get_loc(casted_key)\n        except KeyError as err:\n            if isinstance(casted_key, slice) or (\n                isinstance(casted_key, abc.Iterable)\n                and any(isinstance(x, slice) for x in casted_key)\n            ):\n                raise InvalidIndexError(key) from err\n>           raise KeyError(key) from err\nE           KeyError: 'p_parent_equivalence'\n\nC:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pandas\\core\\indexes\\base.py:3648: KeyError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "passed",
+                "duration": 0.3303787999998349,
+                "start": 1795628586.117161,
+                "stop": 1795628586.44876,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_08_early_partial_identification",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0009537000000818807,
+                "start": 1795628586.44876,
+                "stop": 1795628586.4802635,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    def test_08_early_partial_identification(expected):\n>       early=load_frame('early_bounds.tsv',['gene_id','treatment','expansion'],expected['early'])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:144: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'early_bounds.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: early_bounds.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_incomplete/early_bounds.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0013245000000097207,
+                "start": 1795628586.4822757,
+                "stop": 1795628586.5276399,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    def test_09_envelope_expansion_invariants(expected):\n>       early=load_frame('early_bounds.tsv',['gene_id','treatment','expansion'],expected['early'])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:149: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbio\\biology-task-1\\task\\tests\\test_outputs.py:89: in load_frame\n    frame=pd.read_csv(artifact(name),sep='\\t',dtype={'gene_id':str,'treatment':str})\n                      ^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'early_bounds.tsv'\n\n    def artifact(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'\nE       AssertionError: Missing or unsafe artifact: early_bounds.tsv\nE       assert (False)\nE        +  where False = is_file()\nE        +    where is_file = WindowsPath('F:/rl/bio/biology-task-1/authoring/reports/baseline_incomplete/early_bounds.tsv').is_file\n\nbio\\biology-task-1\\task\\tests\\test_outputs.py:84: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_10_interpretation_limits",
+                "status": "passed",
+                "duration": 0.002286899999489833,
+                "start": 1795628586.5276399,
+                "stop": 1795628586.529655,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            },
+            {
+                "name": "bio/biology-task-1/task/tests/test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "passed",
+                "duration": 0.01670140000032916,
+                "start": 1795628586.5314121,
+                "stop": 1795628586.5472598,
+                "retries": 0,
+                "file_path": "bio\\biology-task-1\\task\\tests\\test_outputs.py"
+            }
+        ]
+    }
+}

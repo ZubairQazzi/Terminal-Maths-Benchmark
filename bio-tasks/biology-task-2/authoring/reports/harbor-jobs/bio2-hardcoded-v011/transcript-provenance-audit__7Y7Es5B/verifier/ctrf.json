@@ -1,0 +1,152 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 0,
+            "failed": 11,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795633088.4764564,
+            "stop": 1795633093.0077665
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 3.7369988400000693,
+                "start": 1795633088.9796364,
+                "stop": 1795633092.774918,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_schema():\n>       CHECKS['schema']()\n\ntest_outputs.py:5: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:48: in schema\n    m=read('alignment.tsv');r=read('queries.tsv');audit=read('audit.json')\n      ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'alignment.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe alignment.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_physical_audit",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0011065529998859347,
+                "start": 1795633092.7753801,
+                "stop": 1795633092.7953203,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_physical_audit():\n>       CHECKS['physical_audit']()\n\ntest_outputs.py:8: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:62: in audit\n    c,a,q,g,_,_,_,tr,va=data();report=read('audit.json')\n                                      ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'audit.json'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe audit.json\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_biological_limits",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0007985329999655733,
+                "start": 1795633092.7957315,
+                "stop": 1795633092.8134105,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_biological_limits():\n>       CHECKS['biological_limits']()\n\ntest_outputs.py:11: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:70: in claims\n    report=read('audit.json')['biological_claims']\n           ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'audit.json'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe audit.json\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_sample_identity",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0007950809999783814,
+                "start": 1795633092.8137836,
+                "stop": 1795633092.8313396,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_sample_identity():\n>       CHECKS['sample_identity']()\n\ntest_outputs.py:14: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:76: in alignment\n    m=read('alignment.tsv');truth=data()[4]['mapping']\n      ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'alignment.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe alignment.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_discovery_alignment_scores",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0008497690000695002,
+                "start": 1795633092.831724,
+                "stop": 1795633092.8545375,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_discovery_alignment_scores():\n>       CHECKS['discovery_alignment_scores']()\n\ntest_outputs.py:17: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^\nchecks.py:80: in alignment_scores\n    c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')\n                                 ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'alignment.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe alignment.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_heldout_identity_certificates",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.000787666999940484,
+                "start": 1795633092.8549225,
+                "stop": 1795633092.8774107,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_heldout_identity_certificates():\n>       CHECKS['heldout_identity_certificates']()\n\ntest_outputs.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^\nchecks.py:80: in alignment_scores\n    c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')\n                                 ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'alignment.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe alignment.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_pure_aliquots",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0008375930000283915,
+                "start": 1795633092.8778853,
+                "stop": 1795633092.9011068,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_pure_aliquots():\n>       CHECKS['pure_aliquots']()\n\ntest_outputs.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^\nchecks.py:92: in query_truth\n    r=read('queries.tsv').set_index('query_id')\n      ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'queries.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe queries.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_two_source_aliquots",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0007341259999975591,
+                "start": 1795633092.9014926,
+                "stop": 1795633092.924237,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_two_source_aliquots():\n>       CHECKS['two_source_aliquots']()\n\ntest_outputs.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^\nchecks.py:92: in query_truth\n    r=read('queries.tsv').set_index('query_id')\n      ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'queries.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe queries.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_open_set_rejection",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0008158169999887832,
+                "start": 1795633092.9246006,
+                "stop": 1795633092.9479344,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_open_set_rejection():\n>       CHECKS['open_set_rejection']()\n\ntest_outputs.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^\nchecks.py:92: in query_truth\n    r=read('queries.tsv').set_index('query_id')\n      ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'queries.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe queries.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_residual_certificates",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.007316787000036129,
+                "start": 1795633092.9483202,
+                "stop": 1795633092.9730287,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_residual_certificates():\n>       CHECKS['residual_certificates']()\n\ntest_outputs.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:110: in mixture_certificates\n    r=read('queries.tsv')\n      ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'queries.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe queries.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_support_optimality",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.016490224000108356,
+                "start": 1795633092.9734435,
+                "stop": 1795633093.0073988,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_support_optimality():\n>       CHECKS['support_optimality']()\n\ntest_outputs.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:136: in optimality\n    r=read('queries.tsv').set_index('query_id')\n      ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'queries.tsv'\n\n    def read(name):\n        path=SUB/name\n>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Missing or unsafe queries.tsv\n\nchecks.py:28: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

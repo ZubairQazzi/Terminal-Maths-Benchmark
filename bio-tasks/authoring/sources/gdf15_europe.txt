@@ -1,0 +1,1819 @@
+pmc
+Commun Biol
+Commun Biol
+3495
+commbiol
+101719179
+Communications Biology
+2399-3642
+Nature Publishing Group
+PMC13493765
+PMC13493765.1
+13493765
+13493765
+42203840
+10.1038/s42003-026-10312-x
+10312
+1
+Article
+Mapping the GDF15 arm of the integrated stress response in human cells and tissues
+http://orcid.org/0000-0002-9488-2467
+Smith
+Janell L. M.
+1
+http://orcid.org/0000-0001-6613-7833
+Tanner
+Kamaryn T.
+2
+Devine
+Jack
+1
+http://orcid.org/0000-0001-8687-6019
+Monzel
+Anna S.
+1
+Batjargal
+Taivan
+3
+http://orcid.org/0000-0003-0768-7004
+Wilson
+Maxwell Z.
+3
+http://orcid.org/0000-0003-4113-3988
+Cohen
+Alan A.
+2
+4
+http://orcid.org/0000-0003-2835-0478
+Picard
+Martin
+martin.picard@columbia.edu
+1
+2
+5
+6
+1
+https://ror.org/01esghr10
+grid.239585.0
+0000 0001 2285 2675
+Department of Psychiatry, Division of Behavioral Medicine,
+Columbia University Irving Medical Center,
+New York, NY USA
+2
+https://ror.org/00hj8s172
+grid.21729.3f
+0000000419368729
+Robert N Butler Columbia Aging Center,
+Mailman School of Public Health,
+New York, NY USA
+3
+https://ror.org/02t274463
+grid.133342.4
+0000 0004 1936 9676
+Biomolecular Science and Engineering Program,
+University of California Santa Barbara,
+Santa Barbara, CA USA
+4
+https://ror.org/00hj8s172
+grid.21729.3f
+0000000419368729
+Department of Environmental Health Sciences,
+Mailman School of Public Health,
+New York, NY USA
+5
+https://ror.org/01esghr10
+grid.239585.0
+0000 0001 2285 2675
+Department of Neurology, H. Houston Merritt Center for Neurological and Mitochondrial Disorders,
+Columbia University Irving Medical Center,
+New York, NY USA
+6
+https://ror.org/04aqjf708
+0000 0001 0690 8560
+New York State Psychiatric Institute,
+New York, NY USA
+27
+5
+2026
+2026
+9
+503856
+1126
+21
+7
+2025
+11
+5
+2026
+27
+05
+2026
+22
+08
+2026
+26
+08
+2026
+© The Author(s) 2026
+2026
+https://creativecommons.org/licenses/by-nc-nd/4.0/
+Open Access
+This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+.
+Mapping the GDF15 Arm of the Integrated Stress Response in Human Cells and Tissues
+1
+7
+2025
+2025.01.31.635929
+bioRxiv
+10.1101/2025.01.31.635929
+PMC11838536
+39975214
+Mitochondrial stress activates the integrated stress response (ISR) and triggers cell–cell communication through the secretion of the metabokine growth differentiation factor 15 (GDF15). However, the gene network underlying the ISR remains poorly defined across metabolically diverse cellular states and tissues. Using RNAseq data from fibroblasts subjected to eleven metabolic perturbations, including genetic and pharmacological mitochondrial OxPhos defects, we show that the ISR has multiple arms. To quantify the GDF15 arm of ISR activation in human cells, we developed an
+ISR
+GDF15
+index. We validate the
+ISR
+GDF15
+index in datasets from optogenetic and small molecule activation of ISR kinases, demonstrating its rapid kinetics preceding to
+GDF15
+gene expression. We then deploy the
+ISR
+GDF15
+index across 44 postmortem human tissues, confirm its correlation with age, and report that the
+ISR
+GDF15
+is upregulated in the heart of individuals with acute causes of death in the emergency room, whereas it was upregulated in the brain of individuals who died after protracted hospital inpatient stays. These data highlight distinct arms of the ISR and clarify genes related to the GDF15 ISR arm, yielding an
+ISR
+GDF15
+index that can be used to investigate tissue-specific and age-related ISR activation in both in vitro cultures and human tissues.
+Authors identify and validate an arm of the integrated stress response (ISR) linked to GDF15 gene expression in metabolically altered fibroblast and multi-organ human clinical data, yielding the ISRGDF15 index quantifiable in any RNAseq dataset.
+Subject terms
+Stress signalling
+Gene expression profiling
+Bioinformatics
+Mitochondria
+https://doi.org/10.13039/100012680
+Nathaniel Wharton Fund (Wharton Fund)
+https://doi.org/10.13039/100000002
+U.S. Department of Health & Human Services | National Institutes of Health (NIH)
+R01AG066828
+R01AG086764
+Picard
+Martin
+https://doi.org/10.13039/100000057
+U.S. Department of Health & Human Services | NIH | National Institute of General Medical Sciences (NIGMS)
+R35GM119793
+Picard
+Martin
+Baszucki Group
+pmc-status-qastatus
+0
+pmc-status-live
+yes
+pmc-status-embargo
+no
+pmc-status-released
+yes
+pmc-prop-open-access
+yes
+pmc-prop-olf
+no
+pmc-prop-manuscript
+no
+pmc-prop-legally-suppressed
+no
+pmc-prop-has-pdf
+yes
+pmc-prop-has-supplement
+yes
+pmc-prop-pdf-only
+no
+pmc-prop-suppress-copyright
+no
+pmc-prop-is-real-version
+no
+pmc-prop-is-scanned-article
+no
+pmc-prop-preprint
+no
+pmc-prop-in-epmc
+yes
+pmc-license-ref
+CC BY-NC-ND
+issue-copyright-statement
+© Springer Nature Limited 2026
+Background
+Cells sense reductive stress via the integrated stress response (ISR)
+1
+. Among many targets, the ISR activates the gene
+GDF15
+, which encodes a secreted cytokine/metabokine known to be elevated with aging
+2
+and in several chronic diseases
+3
+,
+4
+. This elevation is particularly strong in primary mitochondrial diseases caused by defects in the oxidative phosphorylation (OxPhos) system
+5
+,
+6
+. However, the ISR is pleiotropic and triggers multiple cellular processes
+7
+. As a result, there is no consensus on the gene network that constitutes the ISR in human cells, or whether the same set of genes operate in metabolically diverse organs or tissues.
+Here, we seek to understand the dimensionality of the ISR, with a particular focus on the pathway or “arm” leading to GDF15 signaling, given its status as an ISR biomarker
+8
+and its role in mediating the ISR
+9
+.
+Results
+Generating the ISR
+GDF15
+index
+To identify ISR-related genes linked to inter-cellular GDF15 signaling, we queried multiple ISR gene lists (119 genes in total)
+10
+–
+12
+(Fig.
+1A
+), and examined their co-expression in a cellular-lifespan-system dataset generated in fibroblasts
+13
+. Sensitivity analyses were performed on each gene list separately, as well as a random selection of 119 selected genes out of all mapped genes in the RNAseq dataset. This process demonstrated the superiority of including all 119 genes from the combined lists, plus
+GDF15
+, in the fibroblast dataset, over using the individual ISR gene lists, equally loaded genes of the 119 combined genes, or 119 randomly chosen genes (Supplementary Fig.
+1
+).
+Fig. 1
+Development of an ISR index using primary human fibroblasts.
+A
+ISR related genes from three reference ISR pathway lists revealing minimal overlap. We use all 119 genes plus
+GDF15
+(
+n
+= 120) to compile an unbiased ISR gene list.
+B
+Bulk RNA seq data in primary human fibroblasts from three healthy donors and three individuals with mitochondrial disease (SURF1 gene mutations) were cultured across their replicative lifespans (up to 260 days) and treated with pharmacological and metabolic perturbations, including the OxPhos inhibitor oligomycin (1 nM).
+C
+Overview of the analytical strategy to generate an ISR index using
+GDF15
+as a bait.
+D
+Principal component analysis (PCA) of data from the lifespan study depicted in panel B including 339 samples 120 genes. The red arrow denotes the loading vector of
+GDF15
+; all other genes shown in Supplementary Fig.
+2
+.
+E
+Factor analysis revealed one factor where
+GDF15
+had the strongest positive loading (Factor 1,
+left
+), yielding weights that reflect the co-regulation of all other genes with
+GDF15
+(
+right
+).
+F
+Correlation of Factor 1 with standardized
+GDF15
+expression, where shaded grey area reflects 95% confidence interval around the linear fit.
+G
+Boxplots of
+ISR
+GDF15
+scores for each condition, sorted by ascending median score, where whiskers extend to 1.5 times the interquartile range and individual data points overlaid.
+P
+-values from Kruskal-Wallis test and Dunn’s test for multiple comparisons.
+Oligo
+Oligomycin, DEX dexamethasone, mitoNUITs mitochondrial nutrient uptake inhibitors, 2DG 2-Deoxy-D-glucose, BHB β-hydroxybutyrate, contact inhib contact inhibition. Sample sizes for (
+F
+,
+G
+) range from
+n
+= 6–71 per group or treatment condition. Panels (
+B
+,
+C
+) contain images generated in BioRender.com.
+We used a longitudinal transcriptomic dataset including 339 fibroblast samples collected from either healthy donors or mitochondrial-disease donors with mutations in the OxPhos complex IV assembly-factor gene
+SURF1
+(Fig.
+1B
+). To create a vast spectrum of bioenergetic conditions, each cell line was exposed to up to 11 metabolic perturbations including an inhibitor of the OxPhos system, oligomycin (Oligo), glucocorticoid agonist dexamethasone (DEX), mitochondrial-nutrient-uptake inhibitors (mitoNUITs), glucose deprivation plus β-hydroxybutyrate (BHB), low oxygen (3%), and contact inhibition
+13
+. OxPhos defects are potent triggers of the ISR in other datasets
+1
+and in this dataset
+14
+, making this model and the variety of conditions tested an ideal testbed to examine gene expression signatures of the GDF15 arm, and other dimensions of the ISR, in human cells (Fig.
+1C
+).
+To computationally isolate co-regulated ISR genes, we queried bulk gene expression RNAseq data using
+GDF15
+as a bait; we included
+GDF15
+alongside the 119 ISR genes from the three ISR gene lists and performed dimensionality-reduction analyses (the 120 genes can be found in Supplementary Data
+2
+). This allowed us to explore gene expression patterns within our samples, with a focus on patterns most strongly associated with
+GDF15
+. Using principal component analysis (PCA) to explore this gene-expression landscape across all treatments simultaneously (Fig.
+1D
+), we identified a major axis of genes co-regulated with
+GDF15
+(principal component 2, explains 15.5% of variance). Supplementary Fig.
+2A
+shows the loadings for each gene on each of the first two principal components.
+Next, we used factor analysis to more quantitatively isolate the transcriptional signature of this
+GDF15
+-related ISR axis. This approach converged on an optimal solution containing 12 factors (i.e., sets of loadings or “weights” applied to each of the 119 genes plus
+GDF15
+for a total of 120 genes), which collectively account for a maximal portion (73.1%) of the shared variance within this dataset (Fig.
+1E
+). The relationships between the principal components and each factor are quantified in Supplementary Fig.
+5A
+, with specific correlation plots depicted in Supplementary Fig.
+5B, C
+. Factor 1—our index hereafter referred to as the
+ISR
+GDF15
+score—explained 12.9% of the variance, and was more strongly correlated with
+GDF15
+expression (Spearman’s rank correlation coefficient (
+ρ
+) = 0.87,
+p
+< 1 × 10
+–15
+) than any other factor, establishing construct validity for the calculated
+ISR
+GDF15
+score (Fig.
+1F
+). The 11 remaining factors and their gene loadings, which are not explored in this work but available to readers in Supplementary Data
+3
+, may represent additional pathways indicative of other ISR dimensions.
+As a test of robustness, we repeated the factor analysis workflow using
+DDIT3
+(also known as
+CHOP
+) instead of
+GDF15
+. Similar to
+GDF15
+,
+DDIT3
+showed the strongest loading on Factor 1 relative to other factors (Supplementary Data
+3
+). The loading factor structure was also similar when either gene were used as the bait, and
+DDIT3
+expression correlated with the
+ISR
+GDF15
+score (
+ρ
+= 0.62,
+p
+< 0.001, Supplementary Fig.
+9A
+). Thus, a similar primary transcriptional program appears to be captured whether
+GDF15
+(secreted cytokine) or
+DDIT3
+(transcription factor) are used as a bait, in line with the role of the transcription factor
+DDIT3
+in the GDF15 arm of the ISR.
+Testing the ISR
+GDF15
+in human fibroblasts
+To understand the biology underlying the
+ISR
+GDF15
+index, we compared the genes most strongly associated (positively or negatively) with
+GDF15
+. The genes contributing most strongly to the
+ISR
+GDF15
+index were positively enriched for regulation of endoplasmic reticulum–unfolded protein response [top 10
+positive
+:
+DDIT3
+,
+PPP1R15A
+,
+ERN1
+,
+GADD45A
+,
+CBX4
+,
+BBC3
+,
+SLC3A2
+,
+SIAH2
+,
+CEBPB
+,
+TRIB3
+]. In contrast, negatively weighted genes for the
+ISR
+GDF15
+index were enriched for the regulation of translation and translation initiation [top 10
+negative
+:
+PPP1CA
+,
+APAF1
+,
+SLC35A4
+,
+FOS
+,
+IMPACT
+,
+NAIP
+,
+BIRC5
+,
+EIF2B1
+,
+NARS1
+,
+GCN2
+] (see Supplementary Data
+4
+annotations and known functions of each gene), a well-described consequence of ISR activation in most cell types. These results are also consistent with the notion that cellular processes operate under energy constraints: that is, while the activation of some energy-dependent processes are upregulated, other processes must be downregulated
+15
+,
+16
+. As such, cells activating the GDF15-signaling ISR arm may generally downregulate protein synthesis, as previously observed
+17
+, despite known increases in specific proteins, including GDF15
+14
+,
+18
+.
+Functionally,
+ISR
+GDF15
+was most significantly induced in oligomycin-treated cells (large effect size,
+g
+= 2.15,
+p
+< 0.001) and in SURF1-mutant cells (
+g
+= 1.91,
+p
+< 0.001, Fig.
+1G
+) relative to untreated control cells, as expected. The conditions of no glucose with β-hydroxybutyrate (
+g
+= 1.36,
+p
+< 0.001) and the glycolysis inhibitor 2-deoxyglucose (
+g
+= 1.03,
+p
+< 0.05) also resulted in a higher
+ISR
+GDF15
+, which is consistent with glucose deprivation being a known ISR activator
+19
+. The higher
+ISR
+GDF15
+observed in the contact-inhibition condition (
+g
+= 1.25,
+p
+< 0.001) was surprising at first, as it was expected to be more physiologically similar to what cells experience in vivo (i.e., a more physiological skin cell culture). However, the culture protocol used in this condition called for only one media change per week (matching the passaging of the non-contact-inhibited cells). This protocol led to a higher density of cells throughout the week, which, in turn, may have depleted nutrients at a faster rate. Thus, the ISR was likely activated in the contact-inhibition group as a result of nutrient starvation.
+To our initial surprise, the low oxygen level (3%, not anoxia) treatment was not an activator of the ISR, as would be logically expected of a hypoxic treatment. However, upon reviewing the literature, we noted that the experimental conditions previously considered hypoxic treatments for these fibroblast cells were, in fact, likely a physiological oxygenation level
+20
+. In vivo skin has oxygenation levels between 1.1% and 4.6%
+20
+, and thus is likely to be a better control than our control group, which is cultured at 21% oxygen. Together, these data demonstrate the existence of a relatively small subset of positively and negatively inducible
+GDF15
+-related ISR genes induced by mitochondrial OxPhos perturbations.
+Experimental validation of the ISR
+GDF15
+index
+To validate the
+ISR
+GDF15
+index, we then tested how targeted and time-resolved ISR activation influenced GDF15 itself, and the
+ISR
+GDF15
+index. To achieve this, we used data from a light-activatable protein kinase R (PKR) kinase in the H4 cancer line (Fig.
+2A
+)
+21
+. This optogenetic model triggers robust activation of the ISR (marked by p-eIF2α, ATF4, and CHOP induction) without other confounds including the simultaneous activation of other pathways, such as damage response pathways, for example.
+Fig. 2
+Validation of the ISR
+GDF15
+index with time-resolved ISR activation.
+A
+Optogenetic ISR activation strategy targeting an engineered light-sensitive PKR, an ISR kinase, which phosphorylates eIF2ɑ to activate the ISR, as per Batjargal et al.
+B
+Experimental and data processing scheme to compute the
+ISR
+GDF15
+scores across 8 timepoints spanning 12 h of continuous PKR activation in H4 cells (
+n
+= 8).
+C
+ISR
+GDF15
+score and
+GDF15
+RNA transcript levels for the H4 cells under increasing hours of ISR stimulation.
+D
+ISR activation strategy using dimerizable PERK (DmrPERK) and pharmacological ISR activators thapsigargin (Tg) and arsenite (Ars), as per Labbé et al.
+E
+0.01, 0.2, and 0.3 nM of the dimerizer (Dim) applied to DmrPERK over 24 h of activation showing changes in
+ISR
+GDF15
+score.
+F
+ISR activation treatments applied to DmrPERK cells with 0.2 nM Dim, 0.05 mM Ars, 100 nM Tg, or untreated (UT), depicting activation of
+ISR
+GDF15
+over 24 h.
+G
+0.2 nM of dimerizer added to the parental cell line as well as a CRISPR knock-out of ATF4 showing activation of the dimerizable PERK over 24 h.
+H
+Graphical representation of the various kinases that have been validated from either the Opto-PKR or DmrPERK datasets (solid red arrows), are suspected from the fibroblast dataset (dashed red arrow). Dashed grey arrow depicts kinase route not activated. Sample sizes for (
+E
+–
+G
+) are
+n
+= 3 per condition and timepoint, with error bars as SEM. Panel B contains images generated in BioRender.com.
+The light sensitive–PKR H4 cells were stimulated with light for up to 12 hours, and cells harvested at eight timepoints for bulk RNAseq (Fig.
+2B
+). We deployed the
+ISR
+GDF15
+index to the RNAseq data, quantifying its expression at each timepoint (See Fig.
+2C
+). The
+ISR
+GDF15
+score increased by 1 hour and peaked at 6–8 h, followed by a plateau over the remaining hours of light stimulation. The trajectories of induction for other factor scores are shown in Supplementary Fig.
+6A
+.
+Comparatively, PKR activation did not induce
+GDF15
+expression over the first 4 hours. However, between hours 4 and 6 we observed a ~ 5-fold increase in GDF15 mRNA at 6 h (Fig.
+2C
+). Together, these findings support the accuracy and sensitivity of the
+ISR
+GDF15
+index to PKR-mediated ISR activation, even in the absence of changes in
+GDF15
+expression from 0 to 4 h. This suggests that the
+ISR
+GDF15
+index captures ISR biology more broadly and sensitively than
+GDF15
+alone.
+To further validate the
+ISR
+GDF15
+index beyond the engineered light activatable PKR kinase, we utilized another external dataset publicly available from Labbé et al.
+7
+. This experiment activated the ISR using a synthetic construct of a dimerizable PERK (DmrPERK) made in a U2OS cancer line, as well as with two pharmacologic ISR activators: arsenite (Ars) and thapsigargin (Tg). The activation strategies used in this dataset are depicted in Fig.
+2D
+.
+As predicted, PERK activation increased the
+ISR
+GDF15
+score over a period of 0 to 8 h, reaching a plateau (Fig.
+2E
+). Similarly, pharmacological activation of the ISR via the kinases HRI and PERK with Ars and Tg, respectively, also increased the
+ISR
+GDF15
+scores (Fig.
+2F
+). This dataset also contained an ATF4 knock out (ATF4-KO) DmrPERK cell line. Because ATF4 translation is induced downstream of eIF2α phosphorylation, and ATF4 is known to drive ISR-associated transcription, this dataset enables to directly test whether ATF4 is required to activate the
+ISR
+GDF15
+.
+We computed the
+ISR
+GDF15
+scores across the DmrPERK and DmrPERK-ATF4-KO time courses following DmrPERK activation. In the ATF4 containing cells, the
+ISR
+GDF15
+score rose and plateaued. In the ATF4-KO cells, PERK activation initially increased the
+ISR
+GD15
+score to about 50% of normal within two hours, falling below baseline by 16 h (Fig.
+2G
+). ATF4 is then required for maximal and sustained activation of the
+ISR
+GD15
+score. Interestingly, while
+GDF15
+expression showed relatively variable responses, this validation experiment showed that ISR activation produces a monotonic rise in
+ISR
+GDF15
+score, followed by a plateau (Fig.
+2C–F
+and Supplementary Fig.
+11A–C
+), as expected from sustained transcriptional activation.
+Thus, two independent validation datasets demonstrated that activating distinct ISR kinases—PKR, PERK, and HRI—consistently increased
+ISR
+GDF15
+scores across datasets (Fig.
+2H
+). Moreover, the fibroblast dataset revealed that glucose depletion, a known activator of the GCN2 ISR kinase
+22
+, also induced the
+ISR
+GDF15
+score (dashed red arrow in Fig.
+2H
+). Together, these results indicate that
+ISR
+GDF15
+score offers a general readout of ISR activation from distinct ISR input kinases and suggests this index is likely to reflect the coordinated ISR-associated gene program, rather than a stressor-specific signal.
+Applying the ISR
+GDF15
+index in human tissues
+To examine the extent to which the
+ISR
+GDF15
+index is conserved in human tissues, we used the Genome-Tissue Expression (GTEx) project, which includes RNAseq data on up to 17 different organs from ~1000 donors
+23
+(Fig.
+3A
+left
+). We first asked whether the
+ISR
+GDF15
+score was correlated with its bait
+GDF15
+gene, when applied to individual human organs and tissues. If the internal correlation structure and loadings of the genes composing the
+ISR
+GDF15
+index were similar across datasets, we expected positive correlations between the index and the gene
+GDF15
+. Focusing on tissues with a sample size > 20, we observed significant positive correlations between the
+ISR
+GDF15
+and
+GDF15
+in 43 out of 44 (97.7%) human tissues (
+ρ
+= 0.41–0.82, all
+p
+’s < 0.05 corrected for multiple testing, Fig.
+3B
+). These findings suggest that the genetic architecture of the
+GDF15
+-related arm of the ISR is at least partially conserved between fibroblasts in vitro and human tissues in vivo.
+Fig. 3
+ISR
+GDF15
+index applied to human GTEx dataset correlated with age at death.
+A
+Schematic of human GTEx dataset containing a variety of human organ samples, and applying the fibroblast generated index to the human transcriptomic data to get the human
+ISR
+GDF15
+scores for each tissue.
+B
+ISR
+GDF15
+correlations with
+GDF15
+across all the tissue samples expressing all 120 genes in the
+ISR
+GDF15
+index (Spearman’s ρ, Bonferroni corrected for multiple comparisons).
+C
+Spearman’s rank correlations of each tissue’s
+ISR
+GDF15
+score compared to donor age (red points denoting a Bonferroni corrected
+p
+< 0.05).
+D
+Average Spearman’s correlations across all 44 tissues comparing the donor age with the chosen gene(s) or
+ISR
+GDF15
+score or factor scores (left) and fibroblasts’ age correlated with the chosen gene(s) or
+ISR
+GDF15
+score or factor score (right). Wilcoxon signed-rank test used compared against 0. Sample sizes for the tissue data in (
+B
+) through (
+D
+) range from
+n
+= 53–796, all error bars represent +/− 95% confidence intervals. (
+A
+,
+B
+,
+D
+) contain images created in BioRender.com.
+Given the well-known upregulation of GDF15 with age
+2
+, but not necessarily of the ISR per se, we examined the association of
+ISR
+GDF15
+score with age in GTEx (range 20-70, average 53 years). The correlations were positive as expected in all human tissues, and 33 of 44 tissues were significant (average
+ρ
+= 0.23,
+p
+< 0.001, Fig.
+3D
+). Seeking a generalizable test to examine how different gene expression-based indices perform across fibroblasts and human tissues, we average expression across all tissues and individuals of different health status included in the dataset.
+GDF15
+alone also was correlated with age, and in some tissues more strongly so than the
+ISR
+GDF15
+score (Fig.
+3D
+).
+To pressure test this analysis further, we confirmed that senescence-associated genes (averaged tissue expressions of
+CDKN1A
+,
+CDKN2A
+,
+CCND2
+) were upregulated, whereas proliferative or replication-related genes (averaged tissue expressions of
+TOP2A
+,
+RRM2
+,
+MKI67
+) were downregulated with advancing age, validating the use of cellular lifespan system
+13
+to probe time- or age-related changes. Other single ISR genes
+ATF4
+and
+ATF5
+were unrelated to age, whereas
+CHOP
+was mildly related to age (
+ρ
+= 0.13,
+p
+< 0.001) with about half the effect size of
+GDF15
+. In sum,
+ISR
+GDF15
+was positively associated with age (
+ρ
+= 0.19,
+p
+< 0.001), indicating that the
+GDF15
+-related arm of the ISR is upregulated with age, and more strongly than individual genes classically referenced alone (or in conjunction with others) to denote activation of the ISR (Fig.
+3D
+).
+We then systematically examined the other 11 potential arms of the ISR isolated by factor analysis, ranked from negative to positive age-related effect sizes across all GTEx tissues (Fig.
+3D
+). Four other ISR arms were significantly negatively associated with age (Factors 12, 6, 2, 4), and one was positively associated with age (Factor 11). Applying the same analysis to aging human fibroblasts similarly showed both
+GDF15
+alone (
+ρ
+= 0.51,
+p
+< 0.001) and the
+ISR
+GDF15
+score (
+ρ
+= 0.63,
+p
+< 0.001) were positively associated with age, though these effect sizes were smaller than the senescence-associated markers (
+ρ
+= 0.78,
+p
+< 0.001), as expected.
+A direct comparison of effect sizes across each gene, the
+ISR
+GDF15
+score, and the 11 factors revealed a moderate correlation between the in vivo and in vitro datasets (
+ρ
+= 0.69,
+p
+< 0.01, Supplementary Fig.
+7A
+left
+). The correlation was stronger without the 11 non-
+ISR
+GDF15
+factors (
+ρ
+= 0.93,
+p
+< 0.01, Supplementary Fig.
+7A
+right
+). Given the coherence between the two systems (in vivo and in vitro), this finding supports the notion that the
+ISR
+GDF15
+signaling arm has an age-related association similar to that of
+GDF15
+in both strength and direction. In other words, the
+ISR
+GDF15
+index accounts for most of the age-related signal of the ISR. The other factors may be important processes, but their age associations are considerably weaker than the identified
+ISR
+GDF15
+arm.
+Linking cause of death and tissue-specific ISR activation
+In the GTEx dataset, some donors died suddenly in the intensive care unit (76.4% of a cardiac arrest or related cause), while other individuals were hospital inpatients that endured more protracted death processes (involving coma, or other conditions). To test whether ISR activation was associated with organ-specific cause of death, we calculated the
+ISR
+GDF15
+score for each tissue for each place of death: emergency room (ER) and hospital inpatient (HI). We focused on these groups for two reasons: i) each group included a sufficient number of samples to allow robust comparisons of ISR activation; and ii) acute ER deaths are more likely to have been associated with acute cardiocirculatory death within hours, while HI deaths are more likely to have endured metabolic disturbances and a protracted agonal period that tends to affect brain function (e.g., coma). Because the ISR is activated in a time-dependent manner
+7
+, we hypothesized that longer hospital stays and pathology in HI would produce higher
+ISR
+GDF15
+activation compared to ER donors, who on average had less time to activate the ISR before death.
+The expected ISR activation pattern was only observed in a specific subset of tissues: brain, salivary gland, skeletal muscle, skin, tibial nerve and artery, and subcutaneous adipose tissue (no digestive tissues). We also found that donors from the ER had significantly higher
+ISR
+GDF15
+scores in a different subset of tissues: whole blood, mammary breast, prostate, thyroid, esophageal, lung, transverse colon, stomach and the atrial appendage, left ventricle, aorta, and coronary artery of the heart; not in CNS tissues (Fig.
+4C
+).
+Fig. 4
+ISR
+GDF15
+index applied to human GTEx dataset.
+A
+Select tissue correlations of
+ISR
+GDF15
+and
+GDF15
+expression, Bonferroni corrected.
+B
+ISR
+GDF15
+or
+GDF15
+expression for each place of death, in brain frontal cortex or heart left ventricle; significance determined via Wilcoxon rank-sum test.
+C
+Hedge’s g effect sizes comparing each tissue’s
+ISR
+GDF15
+activation score for each place of death, or
+GDF15
+expression comparing each place of death—Hedge’s g values of hospital inpatient scores being greater than ER seen on the right, ER greater than hospital inpatient towards the left. Circles denote
+ISR
+GDF15
+score, squares
+GDF15
+expression, red as significant, gray non-significant, with BH correction for multiple comparisons. The grey brain and heart indicate the
+ISR
+GDF15
+score and
+GDF15
+expression of the brain frontal cortex and the heart left ventricle comparisons from (
+B
+). See methods for specific tissues within each tissue grouping. Wilcoxon rank-sum test was used to compare either the
+ISR
+GDF15
+score or
+GDF15
+expression in ER or HI, with BH correction.
+D
+Spearman’s correlation of
+ISR
+GDF15
+scores with proliferation scores.
+E
+Proliferation scores of each tissue split into two groups based on whether the tissue had a higher ISR score in ER or HI from (
+C
+), line depicts median score. ER Emergency Room, HI hospital inpatient. Sample sizes for panel C range from
+n
+= 21–177 for ER and
+n
+= 42–562 for HI. Panels (
+A
+,
+D
+) depict shaded grey area, which represent +/− 95% confidence intervals around the linear fit. Panels (
+A
+–
+C
+,
+E
+) contain images created in BioRender.com.
+To investigate this unexpected pattern, we drew upon previous research by Mick et al., which demonstrated that the same stressor triggered differential ISR activation between myoblasts (actively proliferating) compared to myotubes (non-proliferative)
+1
+. To explore whether proliferation status could contribute to the differential ISR activation across human tissues, we calculated the proliferation score of each tissue
+24
+(see methods for details) and split the tissues into two groups: proliferative vs non-proliferative, using the median proliferation score. We then compared the
+ISR
+GDF15
+scores between the two groups based on their proliferation status. Proliferative tissues exhibited significantly higher ISR activation scores than the non-proliferative tissues (Supplementary Fig.
+8A
+). This was validated by the significant correlation between ISR activation scores and proliferation scores across tissues (
+ρ
+= 0.78,
+p
+< 0.001, Fig.
+4D
+). Finally, we categorized the tissues according to whether the donors had significantly higher
+ISR
+GDF15
+scores based on deathplace (either HI to ER or ER to HI), and found that the two groups had different proliferative indexes (
+g
+= 1.17,
+p
+< 0.01, Fig.
+4E
+). The tissues with higher
+ISR
+GDF15
+in the ER group were more proliferative than those that were higher in the HI group. Ultimately, these analyses support the notion that proliferation status contributes to differential ISR activation in a tissue-dependent manner, and help explain the distribution of ISR activation observed across tissues according to place of death seen in Fig.
+4C
+.
+To further explore patient-relevant context, we stratified GTEx donors based on cause-of-death annotations that specifically related to heart disease. As expected from the energetic stress that would precede a fatal cardiac event, as well as evidence implicating ISR activation in heart disease
+25
+,
+26
+, the heart tissues of the atrial appendage and left ventricle showed significantly higher
+ISR
+GDF15
+scores (medium effect sizes,
+g
+= 0.70 and 0.44 respectively) in donors who died of heart disease rather than other, non-heart disease causes-of-death (Supplementary Fig.
+10A
+).
+Interestingly, in these post-mortem tissues,
+ISR
+GDF15
+was more sensitive than
+GDF15
+expression to sudden death vs chronic illness (or vice versa), as reflected by 81.6% of tissues showing significantly different
+ISR
+GDF15
+scores under these two scenarios compared to only 52.6% of tissues showing a significant difference in
+GDF15
+expression under the same scenarios (Chi square = 5.96,
+p
+= 0.015, Fig.
+4C
+). This was exemplified in the frontal cortex of the brain, which displayed a large effect size (
+g
+= 0.91) for
+ISR
+GDF15
+when comparing sudden death to chronic illness, but only a moderate effect size for
+GDF15
+(
+g
+= 0.57, Fig.
+4B
+). These results are meaningful, particularly in the context of a robust correlation between
+ISR
+GDF15
+and
+GDF15
+expression in this tissue (
+ρ
+= 0.74, Fig.
+4A
+). This supports the use of the
+ISR
+GDF15
+score rather than
+GDF15
+alone as an indicator of ISR activation.
+Discussion
+Together, this work challenges the monolithic understanding of the ISR in humans, showing instead that the ISR—as defined by popular gene lists
+10
+–
+12
+—contains distinct sub-responses or sub-pathways. In particular, our results highlight potential tissue-specificity in ISR activation with disease and conditions leading up to death (see Fig.
+4C–E
+). These findings call for the consideration of tissue-specific regulatory mechanisms or downstream effects that have yet to be defined. We also identify a conserved set of
+GDF15
+-related canonical ISR genes upregulated by experimental mitochondrial perturbations, as well as other groups of genes (factors 2-12) that reflect the multidimensional nature of the ISR. The identified
+ISR
+GDF15
+index and
+GDF15
+expression were co-regulated across most human tissue, and some aspects of the ISR genetic architecture (
+ISR
+GDF15
+in particular) were found to be conserved across four distinct datasets, increasing our confidence in the robustness of these findings. Finally, this work illustrates that
+ISR
+GDF15
+is activated in a time-dependent manner that precedes
+GDF15
+expression, making it an indicator of early (pre-GDF15 induction) ISR detection.
+Beyond descriptive profiling, the
+ISR
+GDF15
+index provides a quantitative framework to stratify cells, tissues, or individuals by ISR activation state and to test whether this state predicts clinical phenotypes, disease trajectories, or therapeutic responsiveness in large transcriptomic cohorts. This tool could be particularly valuable in contexts where protein-based ISR measurements are infeasible, such as when there are limited samples or when using retrospective data. Because the index captures coordinated ISR-associated transcription preceding overt
+GDF15
+induction, in experimental contexts it may enable earlier detection of stress pathway engagement and help distinguish transient, adaptive ISR activation from sustained, maladaptive programs. Applied longitudinally, the
+ISR
+GDF15
+score could be used to track ISR dynamics across aging or during disease progression. Experimentally, we show that it offers a standardized readout to evaluate pharmacologic or genetic modulation of ISR signaling. In this way, the index transforms ISR activation from a qualitative concept into a measurable systems-level variable that can be integrated into mechanistic and translational studies.
+The limitations of this study include (i) the use of linear statistical methods, while genes likely interact in non-linear ways
+27
+and (ii) analyses from post-mortem human tissues, where the post-mortem period could alter gene expression profiles, at least in the brain
+28
+. We also note that the genes from the literature-based consensus lists could be missing other important genes. Further work to
+ISR
+GDF15
+index specificity could be performed with ISR inhibitors such as ISRIB, which would provide a negative control that was not available in the experiments analyzed here. While ISRIB-treated transcriptomics were not available in the datasets analyzed here, Labbé et al. performed co-treatment with ISRIB which inhibited the early, most sensitive transcriptional response induced by DmrPERK activation, consistent with ISRIB antagonizing phospho-eIF2α signaling and restoring translation initiation
+7
+. Because the early transcriptional response includes transcripts such as
+GDF15
+and is enriched for ATF4-dependent outputs, this suggests ISRIB would be expected to blunt induction of
+ISR
+GDF15
+scores; a possibility that can be explored using the easy-to-compute
+ISR
+GDF15
+scores from the code associated with this article.
+Overall, we present a general approach to develop multi-gene indices, and the
+ISR
+GDF15
+index in particular provide a foundation for future research aiming to dissect the multifaceted biology of the human ISR in relation to health, disease, and aging.
+Methods
+ISR gene list compilation
+Gene lists for the ISR were gathered by inputting the phrase “integrated stress response” into the search bars of the main websites for three sources: GO Consortium, The Jackson Laboratory, and Any Genes
+10
+–
+12
+. The genes from each lists were merged to make one combined ISR gene list. Some gene names were altered to fit the nomenclature of the specific transcriptomic dataset being used, as different gene aliases were used in each dataset for some genes (i.e., NARS1/NARS, WARS1/WARS, Igtp/IRGM). The genes found in each gene list are reported in Supplementary Data
+2
+. Information about the top 10 positively and negatively associated genes in the
+ISR
+GDF15
+index was found by searching each gene in URL:
+https://www.genecards.org/
+.
+Fibroblast Lifespan Study
+The lifespan study is explained in full detail in Sturm et al.
+13
+. RNAseq data was downloaded from the shiny app URL:
+https://columbia-picard.shinyapps.io/shinyapp-Lifespan_Study/
+. Fibroblast transcriptomic data was previously normalized via DEseq2, v1.30.1, and was log2 transformed. A total of 339 samples (excluding control line technical replicate data) was used for further analysis. Five healthy control lines and three patient-derived SURF1 mutant lines were cultured, with or without various metabolic treatments, as described in Sturm et al.
+13
+,
+14
+.
+Principal Component Analysis (PCA)
+R version 4.4.1 with R studio was used to perform PCA (and all subsequent statistical analyses). The ‘prcomp’ function was used to generate PCA, (
+stats
+package v4.4.1) using 339 fibroblast samples and the master list of ISR genes plus
+GDF15
+. Principal component biplots of components beyond PC1 vs PC2 are plotted in Supplementary Fig.
+3
+, as well as their correlations against fibroblast days in culture in Supplementary Fig.
+2B, C
+.
+Factor analysis
+The same fibroblast dataset of 339 samples and 120 genes was used in the factor analysis. The ‘factanal’ function (
+stats
+package) was used, with a varimax rotation. The scree method
+29
+was used to determine the number of factors, as no predetermined number was hypothesized given that the number of causes and outputs of the ISR have yet to be determined. Of the 119 ISR genes, the
+ISR
+GDF15
+index included 77 positive and 42 negative gene loadings, reflecting ISR genes positively and negatively related to
+GDF15
+(see Supplementary Data
+5
+for individual gene loadings). Individual genes, such as
+GDF15
+, were centered and scaled by using the scale() function in R before comparing against the
+ISR
+GDF15
+score or age. A biplot of
+ISR
+GDF15
+(Factor 1) vs Factor 2, as well as all factor scores compared to age are depicted in Supplementary Fig.
+4
+.
+Applying ISR
+GDF15
+index to gene expression data
+The step-by-step protocol to compute
+ISR
+GDF15
+scores, outlined in full in the code associated to this article, includes the following steps:
+If values are in FPKM, transform to TPM: TPM = (FPKM / Σ FPKM) × 10⁶
+Log2 transform: Expression = log₂(TPM + 1)
+To ensure comparability with the original fibroblast-derived factor scores, gene expression values in the validation datasets were standardized using the mean (μ) and standard deviation (σ) parameters calculated from the fibroblast training data:
+\documentclass[12pt]{minimal}
+                                                  \usepackage{amsmath}
+                                                  \usepackage{wasysym}
+                                                  \usepackage{amsfonts}
+                                                  \usepackage{amssymb}
+                                                  \usepackage{amsbsy}
+                                                  \usepackage{mathrsfs}
+                                                  \usepackage{upgreek}
+                                                  \setlength{\oddsidemargin}{-69pt}
+                                                  \begin{document}$${{\rm{X}}}\_{{\rm{scaled}}}=({{\rm{X}}}-{{\rm{\mu }}}{{\_fibroblast}})/{{\sigma }}{{\_fibroblast}}$$\end{document}
+X
+_
+scaled
+=
+(
+X
+−
+μ
+_
+f
+i
+b
+r
+o
+b
+l
+a
+s
+t
+)
+/
+σ
+_
+f
+i
+b
+r
+o
+b
+l
+a
+s
+t
+where X represents the log₂-transformed expression value for each gene, and μ_fibroblast and σ_fibroblast are the gene-specific mean and standard deviation from the fibroblast lifespan dataset.
+Factor scores were estimated using the regression method in R’s factanal() function with scores = “regression”. This method regresses the unobserved factor scores f on the observed data x:
+\documentclass[12pt]{minimal}
+                                                  \usepackage{amsmath}
+                                                  \usepackage{wasysym}
+                                                  \usepackage{amsfonts}
+                                                  \usepackage{amssymb}
+                                                  \usepackage{amsbsy}
+                                                  \usepackage{mathrsfs}
+                                                  \usepackage{upgreek}
+                                                  \setlength{\oddsidemargin}{-69pt}
+                                                  \begin{document}$$\hat{{{\rm{f}}}}=\Lambda ^{\prime} {\Sigma }^{-1}{{\rm{x}}}$$\end{document}
+f
+^
+=
+Λ
+′
+Σ
+−
+1
+x
+where:
+Λ′ is the transpose of the factor loadings matrix
+Σ⁻¹ is the inverse of the correlation matrix of the observed variables
+x is the vector of standardized gene expression values
+The
+ISR
+GDF15
+score (Factor 1) was calculated using the fibroblast-derived parameters: f̂₁ = Λ₁′ Σ⁻¹ x_scaled where Λ₁ is the column vector of Factor 1 loadings and Σ⁻¹ is the inverse correlation matrix, both derived from the original fibroblast factor analysis.
+Opto-PKR ISR Score
+Raw FPKM values were normalized to TPM from Batjargal et al. and were log2 transformed. The
+ISR
+GDF15
+index was subsequently applied as explained in the above methods.
+DmrPERK ISR
+GDF15
+Score
+TPM values were obtained from publicly available dataset from Labbé et al. and were log2 transformed. The
+ISR
+GDF15
+index was subsequently applied as explained in the above methods.
+The Gene Tissue Expression (GTEx) dataset
+RNA sequencing data was downloaded as gene expression read counts from GTEx Analysis V8
+30
+. RNA integrity number (RIN) values of less than 6 were filtered out of the data. Trimmed Mean of M-values (TMM) values were calculated using DGE method (BiocGenerics package, version 0.50.0). To convert the human TMM values to the
+ISR
+GDF15
+score, human data were scaled to the initial fibroblast dataset, as depicted in Fig.
+2B
+(by subtracting the human TMM values by fibroblast means and dividing by the fibroblast standard deviation), and applied to the correlation matrix of the initial fibroblast data to the human data. Tissue samples of less than 20 were excluded from the analysis. Four tissues were excluded from the application of the
+ISR
+GDF15
+index due to missing one or more genes from the ISR list: bladder, brain cerebellar hemisphere, brain cerebellum, and adrenal gland. A total of 44 tissues were included in the analyses. Three genes required changing aliases to match the fibroblast genes:
+DELE1
+was changed to
+KIAA0141
+,
+WARS1
+was changed to
+WARS
+, and
+NARS1
+was changed to
+NARS
+. When comparing either the
+ISR
+GDF15
+score of ER vs HI or
+GDF15
+of ER vs HI, tissues with less than 20 samples per group (ER or HI), were filtered out. Six tissues were filtered out: kidney cortex, pancreas, small intestines of the ileum, spleen, uterus, and vagina for having less than 20 samples in the ER group. For distinguishing cardiac-related deaths within the HI or ER groups, we included the following terms as cardiac-related under the cause of death columns either DTHCOD or DTHFUCOD: “cardiac”, “acute mi”, “myocardial”, “myocardiac”, “arrest”, “cardio”, “bradycardia”, “heart”, “aortic dissection”, “probable mi”, and “chf”. Causes of death that did not include any of those terms were deemed non-cardiac. The HI group was composed of 25.2% cardiac-related deaths. Various tissues in the GTEx dataset were noted in the pathology notes column to contain other tissues (often fat) these samples were not filtered out. To stratify between heart disease and non-heart disease, we searched “heart disease” in either the columns DTHCOD or DTHFUCOD. This yielded
+n
+= 91 heart disease positive cases, and
+n
+= 851 cases who did not contain “heart disease,” heretofore referred to as “non-heart disease”.
+Tissue groups
+As described in Devine et al.
+24
+, tissues were split into the following groups: liver into Anabolic; all brain tissues into central nervous system (CNS); skeletal muscle, heart atrial appendage and heart left ventricle into Contractile; colon tissues, esophageal tissues, and stomach into Digestive; testis, ovary, and prostate into Reproductive; salivary gland, adipose subcutaneous and visceral omentum, thyroid, and pituitary into Secretory; skin lower leg and suprapubic, artery tibial, breast mammary, whole blood, artery coronary, lung, and artery aorta into Other.
+Senescence and Proliferation Index Scores
+Genes for senescence (
+CDKN1A
+,
+CDKN2A
+,
+CCND2
+)
+31
+or proliferation (
+TOP2A
+,
+RRM2
+,
+MKI67
+)
+24
+were selected to create either a tissue senescence score or proliferation score, by averaging the three senescent or proliferative genes respectively. Selection criteria for the proliferation index genes are explained in the methods of Devine et al.
+24
+. When splitting the tissues into two groups, proliferative vs non-proliferative, the median score of 0.63 was used.
+Statistics
+All correlations performed were Spearman’s rank correlations. When comparing group differences of two groups, Wilcoxon rank-sum tests were used. When noted, Bonferroni correction for multiple comparisons was used, with a
+p
+-value threshold of 0.05. Otherwise, we used the Benjamini-Hochberg (BH) method, a less stringent form of multiple testing corrections, for more exploratory questions. Effect sizes were determined via Hedge’s g, an unbiased analog of Cohen’s d
+32
+. Hedge’s g was calculated via the R function ‘cohen.d’ from the package
+effsize
+, with the Hedge’s g correction applied. When comparing multiple independent treatment groups simultaneously, Prism version 10.2.3 (347) was used to perform a Kruskal-Wallis test followed by Dunn’s test for multiple comparisons. Wilcoxon signed-rank test was performed using Prism, when testing if a group significantly differed from 0.
+Reporting summary
+Further information on research design is available in the
+Nature Portfolio Reporting Summary
+linked to this article.
+Supplementary information
+Supplementary Information
+Supplementary Data 1
+Supplementary Data 2
+Supplementary Data 3
+Supplementary Data 4
+Supplementary Data 5
+Description of Supplementary Data 1 - 5
+Reporting Summary
+Transparent Peer Review file
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Supplementary information
+The online version contains supplementary material available at 10.1038/s42003-026-10312-x.
+Acknowledgements
+Some figure elements were generated with BioRender.com
+34
+–
+37
+, as specified in the figure legends. We are grateful to the GTEx consortium and to Gabriel Sturm for creating the valuable Cellular Lifespan Study data resources that made this work possible. We thank Labbé et al.
+7
+for their robust, time-resolved DmrPERK dataset used in our validation analyses.
+Author contributions
+J.L.M.S and M.P. conceived the project. J.L.M.S. performed the analyses with K.T. J.L.M.S. generated the figures. J.L.M.S., M.P., A.A.C., K.T., A.S.M. and J.D. interpreted the data. T.B. and M.Z.W provided data for the optogenetic ISR activation. J.L.M.S. and M.P. drafted the manuscript with A.A.C.; All authors reviewed and edited the final manuscript.
+Peer review
+Peer review information
+Communications Biology thanks Hiroyuki Kubota and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. Primary Handling Editors: Shona Mookerjee and Joao Valente. A peer review file is available.
+Funding
+This work was supported by NIH grants R35GM119793, R01AG066828, R01AG086764, the Wharton Fund, and Baszucki Group to M.P.
+Data availability
+GTEx v8 RNAseq data is available through the GTEx Portal (
+https://gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression
+). The Lifespan Study fibroblast dataset can be downloaded at
+https://columbia-picard.shinyapps.io/shinyapp-Lifespan_Study/
+(
+GSE179848
+). RNAseq datasets from Labbé et al. are deposited in the Gene Expression Omnibus (GEO: accession numbers
+GSE273599
+,
+GSE273600
+, and
+GSE273601
+). Source data behind the main figure graphs in the paper can be found in the supplementary data file (Supplementary Data
+1
+). All other data are available from the corresponding author on reasonable request.
+Code availability
+R code for the analyses is available on Github (
+www.github.com/mitopsychobio/2025_ISR_GDF15_JS_v2
+), and is archived on Zenodo (10.5281/zenodo.20057240)
+33
+.
+Competing interests
+The authors declare no competing interests.
+References
+1.
+Mick, E. et al. Distinct mitochondrial defects trigger the integrated stress response depending on the metabolic state of the cell.
+Elife
+9
+. 10.7554/eLife.49178.
+10.7554/eLife.49178
+PMC7255802
+32463360
+2.
+Conte
+M
+GDF15, an emerging key player in human aging
+Ageing Res. Rev.
+2022
+75
+101569
+10.1016/j.arr.2022.101569
+35051643
+Conte, M. et al. GDF15, an emerging key player in human aging.
+Ageing Res. Rev.
+75
+, 101569 (2022).
+35051643
+10.1016/j.arr.2022.101569
+3.
+Deng
+YT
+Atlas of the plasma proteome in health and disease in 53,026 adults
+Cell
+2025
+188
+253
+271 e257
+10.1016/j.cell.2024.10.045
+39579765
+Deng, Y. T. et al. Atlas of the plasma proteome in health and disease in 53,026 adults.
+Cell
+188
+, 253–271 e257 (2025).
+39579765
+10.1016/j.cell.2024.10.045
+4.
+You
+J
+Plasma proteomic profiles predict individual future health risk
+Nat. Commun.
+2023
+14
+7817
+10.1038/s41467-023-43575-7
+38016990
+PMC10684756
+You, J. et al. Plasma proteomic profiles predict individual future health risk.
+Nat. Commun.
+14
+, 7817 (2023).
+38016990
+10.1038/s41467-023-43575-7
+PMC10684756
+5.
+Sharma, R. et al. Circulating markers of NADH-reductive stress correlate with mitochondrial disease severity.
+J. Clin. Invest.
+131
+. 10.1172/JCI136055.
+10.1172/JCI136055
+PMC7810486
+33463549
+6.
+Hubens
+WHG
+Blood biomarkers for assessment of mitochondrial dysfunction: An expert review
+Mitochondrion
+2022
+62
+187
+204
+10.1016/j.mito.2021.10.008
+34740866
+Hubens, W. H. G. et al. Blood biomarkers for assessment of mitochondrial dysfunction: An expert review.
+Mitochondrion
+62
+, 187–204 (2022).
+34740866
+10.1016/j.mito.2021.10.008
+7.
+Labbe
+K
+Specific activation of the integrated stress response uncovers regulation of central carbon metabolism and lipid droplet biogenesis
+Nat. Commun.
+2024
+15
+8301
+10.1038/s41467-024-52538-5
+39333061
+PMC11436933
+Labbe, K. et al. Specific activation of the integrated stress response uncovers regulation of central carbon metabolism and lipid droplet biogenesis.
+Nat. Commun.
+15
+, 8301 (2024).
+39333061
+10.1038/s41467-024-52538-5
+PMC11436933
+8.
+Asundi
+J
+GDF15 is a dynamic biomarker of the integrated stress response in the central nervous system
+CNS Neurosci. Ther.
+2024
+30
+e14600
+10.1111/cns.14600
+38357857
+PMC10867791
+Asundi, J. et al. GDF15 is a dynamic biomarker of the integrated stress response in the central nervous system.
+CNS Neurosci. Ther.
+30
+, e14600 (2024).
+38357857
+10.1111/cns.14600
+PMC10867791
+9.
+Kim
+KH
+Lee
+MS
+GDF15 as a central mediator for integrated stress response and a promising therapeutic molecule for metabolic disorders and NASH
+Biochim Biophys. Acta Gen. Subj.
+2021
+1865
+129834
+10.1016/j.bbagen.2020.129834
+33358864
+Kim, K. H. & Lee, M. S. GDF15 as a central mediator for integrated stress response and a promising therapeutic molecule for metabolic disorders and NASH.
+Biochim Biophys. Acta Gen. Subj.
+1865
+, 129834 (2021).
+33358864
+10.1016/j.bbagen.2020.129834
+10.
+AnyGenes. UNDERSTANDING THE INTEGRATED STRESS RESPONSE (ISR). (2025).
+11.
+Laboratory, T. J. Gene Ontology Annotations. (2024).
+12.
+Consortium, G. O.
+“
+Gene Ontology Resource.
+”
+,
+https://geneontology.org/
+(2025).
+13.
+Sturm
+G
+A multi-omics longitudinal aging dataset in primary human fibroblasts with mitochondrial perturbations
+Sci. Data
+2022
+9
+751
+10.1038/s41597-022-01852-y
+36463290
+PMC9719499
+Sturm, G. et al. A multi-omics longitudinal aging dataset in primary human fibroblasts with mitochondrial perturbations.
+Sci. Data
+9
+, 751 (2022).
+36463290
+10.1038/s41597-022-01852-y
+PMC9719499
+14.
+Sturm
+G
+OxPhos defects cause hypermetabolism and reduce lifespan in cells and in patients with mitochondrial diseases
+Commun. Biol.
+2023
+6
+22
+10.1038/s42003-022-04303-x
+36635485
+PMC9837150
+Sturm, G. et al. OxPhos defects cause hypermetabolism and reduce lifespan in cells and in patients with mitochondrial diseases.
+Commun. Biol.
+6
+, 22 (2023).
+36635485
+10.1038/s42003-022-04303-x
+PMC9837150
+15.
+Yang, X. et al. Physical bioenergetics: Energy fluxes, budgets, and constraints in cells.
+Proc Natl Acad Sci USA
+118
+. 10.1073/pnas.2026786118 (2021).
+10.1073/pnas.2026786118
+PMC8255778
+34140336
+16.
+Wieser
+W
+Krumschnabel
+G
+Hierarchies of ATP-consuming processes: direct compared with indirect measurements, and comparative aspects
+Biochem J.
+2001
+355
+389
+395
+10.1042/bj3550389
+11284726
+PMC1221750
+Wieser, W. & Krumschnabel, G. Hierarchies of ATP-consuming processes: direct compared with indirect measurements, and comparative aspects.
+Biochem J.
+355
+, 389–395 (2001).
+11284726
+10.1042/0264-6021:3550389
+PMC1221750
+17.
+Kaspar, S. et al. Adaptation to mitochondrial stress requires CHOP-directed tuning of ISR.
+Sci. Adv.
+7
+. 10.1126/sciadv.abf0971 (2021).
+10.1126/sciadv.abf0971
+PMC8153728
+34039602
+18.
+Young
+SK
+Wek
+RC
+Upstream Open Reading Frames Differentially Regulate Gene-specific Translation in the Integrated Stress Response
+J. Biol. Chem.
+2016
+291
+16927
+16935
+10.1074/jbc.R116.733899
+27358398
+PMC5016099
+Young, S. K. & Wek, R. C. Upstream Open Reading Frames Differentially Regulate Gene-specific Translation in the Integrated Stress Response.
+J. Biol. Chem.
+291
+, 16927–16935 (2016).
+27358398
+10.1074/jbc.R116.733899
+PMC5016099
+19.
+Pakos-Zebrucka
+K
+The integrated stress response
+EMBO Rep.
+2016
+17
+1374
+1395
+10.15252/embr.201642195
+27629041
+PMC5048378
+Pakos-Zebrucka, K. et al. The integrated stress response.
+EMBO Rep.
+17
+, 1374–1395 (2016).
+27629041
+10.15252/embr.201642195
+PMC5048378
+20.
+Carreau
+A
+El Hafny-Rahbi
+B
+Matejuk
+A
+Grillon
+C
+Kieda
+C
+Why is the partial oxygen pressure of human tissues a crucial parameter? Small molecules and hypoxia
+J. Cell Mol. Med
+2011
+15
+1239
+1253
+10.1111/j.1582-4934.2011.01258.x
+21251211
+PMC4373326
+Carreau, A., El Hafny-Rahbi, B., Matejuk, A., Grillon, C. & Kieda, C. Why is the partial oxygen pressure of human tissues a crucial parameter? Small molecules and hypoxia.
+J. Cell Mol. Med
+.
+15
+, 1239–1253 (2011).
+21251211
+10.1111/j.1582-4934.2011.01258.x
+PMC4373326
+21.
+Batjargal
+T
+Optogenetic control of the integrated stress response reveals proportional encoding and the stress memory landscape
+Cell Syst.
+2023
+14
+551
+562 e555
+10.1016/j.cels.2023.06.001
+37473728
+Batjargal, T. et al. Optogenetic control of the integrated stress response reveals proportional encoding and the stress memory landscape.
+Cell Syst.
+14
+, 551–562 e555 (2023).
+37473728
+10.1016/j.cels.2023.06.001
+22.
+Ye
+J
+The GCN2-ATF4 pathway is critical for tumour cell survival and proliferation in response to nutrient deprivation
+EMBO J.
+2010
+29
+2082
+2096
+10.1038/emboj.2010.81
+20473272
+PMC2892366
+Ye, J. et al. The GCN2-ATF4 pathway is critical for tumour cell survival and proliferation in response to nutrient deprivation.
+EMBO J.
+29
+, 2082–2096 (2010).
+20473272
+10.1038/emboj.2010.81
+PMC2892366
+23.
+Consortium
+GT
+The Genotype-Tissue Expression (GTEx) project
+Nat. Genet
+2013
+45
+580
+585
+10.1038/ng.2653
+23715323
+PMC4010069
+Consortium, G. T. The Genotype-Tissue Expression (GTEx) project.
+Nat. Genet
+.
+45
+, 580–585 (2013).
+23715323
+10.1038/ng.2653
+PMC4010069
+24.
+Devine, J. et al. Brain-body mitochondrial distribution patterns lack coherence and point to tissue-specific and individualized regulatory mechanisms.
+bioRxiv
+. 10.1101/2024.09.20.614152 (2024).
+10.1093/lifemeta/loaf012
+PMC12141818
+40487563
+25.
+Papanicolaou
+KN
+Loss of O-GlcNAcylation in cardiac myocytes triggers the integrated stress response, contributing to heart failure
+J. Biol. Chem.
+2025
+301
+110818
+10.1016/j.jbc.2025.110818
+41101503
+PMC12661449
+Papanicolaou, K. N. et al. Loss of O-GlcNAcylation in cardiac myocytes triggers the integrated stress response, contributing to heart failure.
+J. Biol. Chem.
+301
+, 110818 (2025).
+41101503
+10.1016/j.jbc.2025.110818
+PMC12661449
+26.
+Takaoka
+M
+GDF15 antagonism limits severe heart failure and prevents cardiac cachexia
+Cardiovasc Res
+2024
+120
+2249
+2260
+10.1093/cvr/cvae214
+39312445
+PMC11687397
+Takaoka, M. et al. GDF15 antagonism limits severe heart failure and prevents cardiac cachexia.
+Cardiovasc Res
+.
+120
+, 2249–2260 (2024).
+39312445
+10.1093/cvr/cvae214
+PMC11687397
+27.
+Kontio
+JAJ
+Rinta-Aho
+MJ
+Sillanpaa
+MJ
+Estimating Linear and Nonlinear Gene Coexpression Networks by Semiparametric Neighborhood Selection
+Genetics
+2020
+215
+597
+607
+10.1534/genetics.120.303186
+32414870
+PMC7337083
+Kontio, J. A. J., Rinta-Aho, M. J. & Sillanpaa, M. J. Estimating Linear and Nonlinear Gene Coexpression Networks by Semiparametric Neighborhood Selection.
+Genetics
+215
+, 597–607 (2020).
+32414870
+10.1534/genetics.120.303186
+PMC7337083
+28.
+Liharska, L. E. et al. A study of gene expression in the living human brain.
+medRxiv
+. 10.1101/2023.04.21.23288916 (2023).
+29.
+Cattell
+RB
+The Scree Test For The Number Of Factors
+Multivar. Behav. Res
+1966
+1
+245
+276
+10.1207/s15327906mbr0102_10
+26828106
+Cattell, R. B. The Scree Test For The Number Of Factors.
+Multivar. Behav. Res
+.
+1
+, 245–276 (1966).
+10.1207/s15327906mbr0102_10
+26828106
+30.
+Consortium, T. G. (2019).
+31.
+Bertolo
+A
+Baur
+M
+Guerrero
+J
+Potzel
+T
+Stoyanov
+J
+Autofluorescence is a Reliable in vitro Marker of Cellular Senescence in Human Mesenchymal Stromal Cells
+Sci. Rep.
+2019
+9
+2074
+10.1038/s41598-019-38546-2
+30765770
+PMC6376004
+Bertolo, A., Baur, M., Guerrero, J., Potzel, T. & Stoyanov, J. Autofluorescence is a Reliable in vitro Marker of Cellular Senescence in Human Mesenchymal Stromal Cells.
+Sci. Rep.
+9
+, 2074 (2019).
+30765770
+10.1038/s41598-019-38546-2
+PMC6376004
+32.
+Hedges, L. V. & Olkin, I.
+Statistical methods for meta-analysis
+. (Academic Press, 1985).
+33.
+Smith, J. L. M. mitopsychobio/2025_ISR_GDF15_JS_v2: ISRGDF15 Index Code.
+Zenodo
+. 10.5281/zenodo.20057240 (2026).
+34.
+Smith, J. L. M. Figure 1
+illustrations created in Biorender.com
+,
+https://BioRender.com/9s1njbo
+(2026).
+35.
+Smith, J. L. M. Figure 2
+illustrations created in BioRender.com
+,
+https://BioRender.com/9k5mmkg
+(2026).
+36.
+Smith, J. L. M. Figure 3
+illustrations created in Biorender.com
+,
+https://BioRender.com/4xlff0l
+(2026).
+37.
+Smith, J. L. M. Figure 4
+illustrations created in Biorender.com
+,
+https://BioRender.com/9rgk75c
+(2026).

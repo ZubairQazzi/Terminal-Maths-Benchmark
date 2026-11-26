@@ -1,0 +1,33 @@
+--- frozen-v0.1.1/task/tests/checks.py
++++ proposed-v0.2.0/task/tests/checks.py
+@@ -63,7 +63,7 @@
+     expect={'n_genes':len(c),'n_count_samples':len(c.columns),'n_atlas_samples':len(a.columns),'n_queries':len(q.columns),'fractional_count_entries':int((np.abs(c.to_numpy()-np.round(c.to_numpy()))>1e-8).sum()),'eligible_discovery_genes':int(tr.sum()),'eligible_validation_genes':int(va.sum())}
+     for k,v in expect.items():assert report.get(k)==v,(k,report.get(k),v)
+     floor=report['atlas_minimum_by_column'];assert set(floor)==set(a.columns)
+-    for k in a.columns:assert abs(float(floor[k])-float(a[k].min()))<1e-7
++    for k in a.columns:assert abs(float(floor[k])-float(a[k].min()))<=1e-7,('supplied atlas minimum',k,floor[k],float(a[k].min()),'tolerance',1e-7)
+     return report
+ 
+ def claims():
+@@ -82,10 +82,10 @@
+     for row in m.itertuples():
+         i=c.columns.get_loc(row.sample_id);j=a.columns.get_loc(row.atlas_id)
+         expect=float(score[i,j]);actual=row.discovery_correlation if discovery else row.validation_correlation
+-        assert abs(float(actual)-expect)<2e-6
++        assert abs(float(actual)-expect)<=2e-6
+         if not discovery:
+             margin=expect-float(np.max(np.delete(score[:,j],i)))
+-            assert abs(float(row.validation_margin)-margin)<2e-6
++            assert abs(float(row.validation_margin)-margin)<=2e-6
+             assert expect>=.90 and margin>=.001,'Ambiguous cross-representation identity'
+ 
+ def query_truth(kind):
+@@ -121,7 +121,7 @@
+         k=q.columns.get_loc(row.query_id)
+         for mask,field in [(tr,'discovery_residual'),(va,'validation_residual')]:
+             expect=np.sqrt(np.sum(((qv[mask,k]-pred[mask])*weight[mask])**2)/np.sum((qv[mask,k]*weight[mask])**2))
+-            assert abs(float(getattr(row,field))-expect)<2e-6,(row.query_id,field)
++            assert abs(float(getattr(row,field))-expect)<=2e-6,(row.query_id,field)
+         if row.classification=='pure':assert row.discovery_residual<=.005 and row.validation_residual<=.01
+         if row.classification=='pair':assert row.discovery_residual<=.005 and row.validation_residual<=.01 and row.donor_2!=''
+         if row.classification=='unsupported':assert row.validation_residual>.01 and row.donor_2!=''

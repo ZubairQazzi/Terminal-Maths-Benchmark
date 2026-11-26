@@ -1,0 +1,398 @@
+{
+  "reviewer": "/root/qc_b",
+  "task_version": "0.1.1",
+  "date": "2026-11-26",
+  "review_kind": "Independent local assessment of all exact 38 checklist IDs; not automated external LLM QC",
+  "status": "PASS: all38 locally assessable rubric requirements; empirical model difficulty and external model QC remain unmeasured/not run",
+  "summary": {
+    "PASS": 38,
+    "NOT_TESTED": 0,
+    "FAIL": 0,
+    "total": 38
+  },
+  "external_qc": "NOT RUN",
+  "gemini": "NOT RUN; user authorization not provided",
+  "checks": [
+    {
+      "id": "well_specified",
+      "requirement": "An independent expert can identify objective, inputs, artifact paths, schema, conventions and tolerances.",
+      "evidence": "Exact dimensions, normalization, centered correlations, split residuals, support/fraction constraints and all three output schemas are explicit.",
+      "status": "PASS",
+      "file_line": "task/instruction.md:9,20,26,28,32,36,40,48,58,60,82,84",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "test_instruction_alignment",
+      "requirement": "Every scored requirement is documented and promised scientific requirements are checked.",
+      "evidence": "Eleven families cover schema/audit/claims/bijection, both score splits, pure/pair/unsupported provenance, residuals and exhaustive discovery optimality. Every numerical gate has a visible counterpart; no p-values or MTC are requested.",
+      "status": "PASS",
+      "file_line": "task/instruction.md:28,36,40,44,58,82; task/tests/checks.py:46,61,69,75,79,91,106,129,151",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "instruction_clarity",
+      "requirement": "Clear scientific context and outcome-focused submission contract.",
+      "evidence": "The objective is integrity reconstruction before treatment attribution; synthetic provenance and interpretational limits are explicit. Prescribed certificate arithmetic defines outcomes without disclosing private labels.",
+      "status": "PASS",
+      "file_line": "task/instruction.md:5,7,24,26,30,44,46",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "structured_data_schema",
+      "requirement": "Structured fields/types/layout agree with the grader.",
+      "evidence": "Ordered TSV columns, exact IDs, finite numeric fields, pure donor convention, coefficient ordering and JSON fields match parser and schema checks.",
+      "status": "PASS",
+      "file_line": "task/instruction.md:50,54,58,60,82; task/tests/checks.py:26,46,61,106",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "typos",
+      "requirement": "Paths, symbols, references and commands identify the intended objects.",
+      "evidence": "All six /app/data names match the image; three artifact paths match solution and parser. Fractions, residual units and effective-length caveat are internally consistent.",
+      "status": "PASS",
+      "file_line": "task/instruction.md:13,18,26,34,48; task/solution/solve.py:18,40,74,77; task/environment/Dockerfile:7",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "hint_discoverability",
+      "requirement": "Any hint follows visible evidence or established domain knowledge.",
+      "evidence": "No private label hint is required. Eligibility/split, complete-column composition, centering and weights are solver-visible. Unknown scales have a documented removable nuisance.",
+      "status": "PASS",
+      "file_line": "task/instruction.md:14,16,18,20,26,32",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "scientifically_grounded",
+      "requirement": "Real scientific workflow supporting a research integrity decision.",
+      "evidence": "Recovering existing library provenance before attributing responses is scientifically useful. Real source matrices retain fractional counts and a nonzero floor. Technical admixtures are clearly synthetic; fractions do not imply cells or causation. Independent direct-source/GSM checks confirm provenance.",
+      "status": "PASS",
+      "file_line": "task/instruction.md:5,7,13,15,26,44; authoring/reports/independent_qc_findings.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "scope",
+      "requirement": "Problem fits Biology and the assigned subfield.",
+      "evidence": "Computational transcriptomics and assay integrity, using actual GEO stress-response libraries with sample-level identity and technical mixture interpretation.",
+      "status": "PASS",
+      "file_line": "task/task.toml:11,13; task/instruction.md:5,7",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "essential_difficulty",
+      "requirement": "Difficulty follows connected scientific reasoning.",
+      "evidence": "Five linked layers: representation audit, nuisance-resistant replicate identity, disjoint-gene separation, sparse expression-scale reconstruction and open-set model restraint. Controls/schema/claim flags are explicitly easy. No unavailable tools or artificial precision burden; intended expert difficulty remains empirically uncalibrated.",
+      "status": "PASS",
+      "file_line": "authoring/research/complexity_layers.md:3; task/README.md:31; task/instruction.md:24,32,44",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "novel",
+      "requirement": "Requires new reasoning/computation; source answers cannot simply be copied.",
+      "evidence": "Independent sixteen-source conceptual comparison has maximum weighted overlap25%. Raw cross-task TF-IDF37.233581% is retained/investigated, not hidden; shared metadata/boilerplate differs from Task1's Welch/TOST/BY/sensitivity workflow. Counts/TPM provenance and rejected technical mixtures are not the source paper's modules or GDF15 index.",
+      "status": "PASS",
+      "file_line": "authoring/originality/conceptual_review.json:1; authoring/originality/conceptual_review.md:1; authoring/reports/upstream_similarity_v011.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "agentic",
+      "requirement": "Correct work requires inspecting data and computing scientific quantities.",
+      "evidence": "120-way mapping, two split score matrices, 24 donor fits and measured audits depend on full inputs; source-ID mapping is not solver-visible. Metamorphic relabel/order changes pass the data-driven solver and reject frozen outputs.",
+      "status": "PASS",
+      "file_line": "task/solution/solve.py:18,28,48; authoring/reports/variation_validation.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "verifiable",
+      "requirement": "Scientific correctness is observable and meaningful errors are distinguishable.",
+      "evidence": "Truth is generated from immutable source profiles; verifier recomputes actual correlations and residuals and independently exhausts all7140 donor pairs. Independent reviewer reproduced120 identities and all24 categories/supports with direct source TPM and bounded scalar optimization.",
+      "status": "PASS",
+      "file_line": "task/tests/checks.py:33,75,91,106,129; authoring/reports/independent_qc_findings.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "solvable",
+      "requirement": "A correct method can finish with available data/tools/resources.",
+      "evidence": "Current local oracle/alternative11/11; independent validation min correlation0.9494147 and margin0.00682014 exceed0.90/0.001. Maximum accepted fraction error0.00018091 is below0.02; accepted residuals<0.0011, unsupported>0.032. Fixed pure/pair separation is actual-data checked.",
+      "status": "PASS",
+      "file_line": "authoring/reports/local_validation.json:1; authoring/reports/independent_qc_findings.json:1; task/instruction.md:28,40,44",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "outcome_verified",
+      "requirement": "Scientifically valid alternative methods can earn full credit.",
+      "evidence": "Verifier parses artifacts without checking method. Alternate local assignment/scalar support enumeration passes11/11. Reviewer used np.corrcoef plus bounded scalar minimization rather than solution imports, reproducing valid supports/fractions; all continuous fits satisfying tolerance are accepted. Final native alternative transcript-provenance-audit__cALXCDD independently confirmed11/11,reward1,exceptionnull on the same frozen checksum.",
+      "status": "PASS",
+      "file_line": "task/tests/checks.py:75,106,129; task/solution/solve.py:30,52; authoring/reports/local_validation.json:1; authoring/reports/independent_qc_findings.json:1; authoring/reports/harbor-jobs/bio2-alternative-v011/transcript-provenance-audit__cALXCDD/result.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "functional_verification",
+      "requirement": "Checks actual scientific output and rejects plausible-looking errors.",
+      "evidence": "Wrong labels fail3 identity families; wrong donors fail provenance/residuals; half fractions fail pair/residual checks; forced pairs fail rejection/residuals; incomplete and constant outputs fail. Near-optimality alone can pass fabricated zero residuals, but residual recomputation independently rejects them and reward is conjunction.",
+      "status": "PASS",
+      "file_line": "task/tests/checks.py:79,91,106,129,151; authoring/reports/local_validation.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "ground_truth_provenance",
+      "requirement": "Expected labels/objectives trace to data or an independent source.",
+      "evidence": "Source checksums recorded; atlas truth follows frozen permutation; aliquot labels/weights derive directly from normalized source TPM. Reviewer matched each anonymous column directly to original named TPM independently of truth and verified all120; no oracle imports or answer cache is used by evaluator.",
+      "status": "PASS",
+      "file_line": "authoring/build_inputs.py:12,17,33,45,57,59; task/tests/checks.py:19,75,91; authoring/reports/independent_qc_findings.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "graded_instances_discriminate",
+      "requirement": "Case families reject meaningful errors; easy controls are identified.",
+      "evidence": "Nine negative controls all reward0; per-family results retain partially passing unrelated checks. Pure cases, physical audits and Boolean interpretation checks are acknowledged as controls. Original-output replay on reordered/relabelled/split-swapped data passes only1/11. Invalid MTC baseline is correctly NA for deterministic reconstruction. Final native cases directly checked:all9 incorrect controls reward0 with11 uniquely reported family results; two oracle trials and alternate reward1.",
+      "status": "PASS",
+      "file_line": "authoring/reports/local_validation.json:1; authoring/reports/variation_validation.json:1; authoring/reports/test_discrimination_audit.md:1; authoring/reports/independent_qc_findings.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "solution_quality",
+      "requirement": "Reference derives results from inputs and can be inspected.",
+      "evidence": "It aligns versioned IDs, preserves count floats, normalizes all rows, computes split-centered correlations, assigns samples and enumerates linear mixtures from actual profiles. No truth IDs/imports; separate verifier uses independent code and frozen source labels.",
+      "status": "PASS",
+      "file_line": "task/solution/solve.py:18,23,28,35,42,48,76; task/tests/checks.py:2,33,129",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "do_not_modify_enforced",
+      "requirement": "Protected inputs enforced by execution boundary.",
+      "evidence": "Actual final image probe observed UID1000, private /tests and /solution absent, root-owned input write denied, output write allowed. Verifier has immutable separate source copies; source/canonical integrity report has192 matching checks.",
+      "status": "PASS",
+      "file_line": "authoring/reports/isolation_v011.json:1; bio/authoring/data_integrity_final.json:1; task/environment/Dockerfile:6,8,11",
+      "required_correction": "None outstanding; final native evidence independently checked",
+      "post_correction_result": "PASS: independently rechecked26November2026 on version0.1.1; historical0.1.0 results excluded",
+      "initial_status": "NOT TESTED"
+    },
+    {
+      "id": "deterministic_reproducible",
+      "requirement": "Builds/runs reproduce expected data and score.",
+      "evidence": "Both clean --no-cache final image builds exit0. Two separate native0.1.1 oracle trials at one frozen checksum each pass11/11 reward1; reviewer independently byte-compared all three artifacts, identical. All12 final trials share version/checksum. Fixed seed/hash split and pinned/hash-locked dependencies inspected.",
+      "status": "PASS",
+      "file_line": "authoring/reports/clean_build_agent_v011.log:1; authoring/reports/clean_build_verifier_v011.log:1; authoring/reports/harbor-jobs/bio2-oracle-v011/transcript-provenance-audit__dybfyBZ/result.json:1; authoring/reports/harbor-jobs/bio2-oracle-v011/transcript-provenance-audit__yd6KNzd/result.json:1; authoring/reports/independent_qc_findings.json:1",
+      "required_correction": "None outstanding; final native evidence independently checked",
+      "post_correction_result": "PASS: independently rechecked26November2026 on version0.1.1; historical0.1.0 results excluded",
+      "initial_status": "NOT TESTED"
+    },
+    {
+      "id": "separate_verifier_configured",
+      "requirement": "Separate verifier has intended inputs and tools.",
+      "evidence": "Manifest separate/no-network verifier, own Dockerfile and pinned dependencies. Reviewer independently hash-compared all six runtime data files with verifier copies; all identical. It never imports or mounts the solution.",
+      "status": "PASS",
+      "file_line": "task/task.toml:27,30,31; task/tests/Dockerfile:2,5,6; task/tests/checks.py:9,19",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "verifier_execution_isolation",
+      "requirement": "Submitted code cannot change grader, score, or read private truth.",
+      "evidence": "No executable submission is run: bounded regular TSV/JSON only. Final image probe confirms UID1000 solver lacks private trees and cannot modify data; verifier private700 directories and no egress observed. Trusted pytest uses -I and writes private binary reward. Native artifact transfer/reset directly verified.",
+      "status": "PASS",
+      "file_line": "task/tests/checks.py:26; task/tests/test.sh:6,8; authoring/reports/isolation_v011.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "anti_cheat_robustness",
+      "requirement": "Shortcuts cannot earn credit without correct scientific results.",
+      "evidence": "Planted truth stays outside solver copy; independent numerical checks cover all IDs, support, fractions and certificates. No-op/constant/fixed-list/mutation controls fail, plus changed-ID replay. A public finite instance cannot mathematically exclude a complete precomputed answer, which documentation states honestly.",
+      "status": "PASS",
+      "file_line": "task/environment/Dockerfile:7; task/tests/checks.py:75,91,106,129; authoring/reports/test_discrimination_audit.md:1; authoring/reports/variation_validation.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "task_security",
+      "requirement": "No unsafe host/credential/unrelated-network operations.",
+      "evidence": "Task Dockerfiles copy local bounded-purpose data/tools only, no host binds or credentials; no runtime downloads; verifier no-network and parses data without eval/pickle/subprocess on submissions. Agent public network follows active profile, not a scientific dependency.",
+      "status": "PASS",
+      "file_line": "task/environment/Dockerfile:2,5,7; task/tests/Dockerfile:2,5,6; task/tests/checks.py:26; task/task.toml:30,37",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "resource_configuration",
+      "requirement": "Time/CPU/memory/storage suit valid approaches.",
+      "evidence": "2CPUs/4GiB solver+verifier,8-hour solver allowance,3600s verifier; matrices fit memory and local reference/evaluator are seconds-scale. Scalar alternative passes; generous limits allow alternative implementations. Static resource checks passed current package.",
+      "status": "PASS",
+      "file_line": "task/task.toml:23,26,31,32,38,39; authoring/reports/local_validation.json:1; authoring/reports/static_v011.log:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "task_toml_schema",
+      "requirement": "Manifest uses supported schema and required naming/metadata.",
+      "evidence": "Schema1.4 and required fields validated:final Harbor lintALL[] exit0; final actual26 shell checks in its own verifier image pass; entry/config/raw-similarity complete29 static checks. Raw37.23% cross-task similarity separately investigated under substantive rubric.",
+      "status": "PASS",
+      "file_line": "task/task.toml:2; authoring/reports/harbor_lint_all_v011r1.log:1; authoring/reports/static_v011r1.log:1; authoring/reports/static_qc.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "environment_hygiene",
+      "requirement": "Solver image contains needed tools/data but no private solution/tests/answers.",
+      "evidence": "Final clean agent build copies only local wheels/requirements and six data inputs. Actual UID1000 image probe finds no /tests or /solution, read-only data and writable submission. Verifier private directories are700; source/canonical bytes checked. No authoring/private truth is in solver image.",
+      "status": "PASS",
+      "file_line": "task/environment/Dockerfile:3,7; authoring/reports/clean_build_agent_v011.log:1; authoring/reports/isolation_v011.json:1; bio/authoring/data_integrity_final.json:1",
+      "required_correction": "None outstanding; final native evidence independently checked",
+      "post_correction_result": "PASS: independently rechecked26November2026 on version0.1.1; historical0.1.0 results excluded",
+      "initial_status": "NOT TESTED"
+    },
+    {
+      "id": "artifact_efficiency",
+      "requirement": "Artifacts transfer without stale outputs or unnecessary execution.",
+      "evidence": "Actual oracle manifest records /app/submission status ok; artifacts are precisely three small data files (8617,3728,2334bytes), repeated identically. Fresh no-op has no submission files,11/11 failures,reward0; incomplete case lacks queries and fails. Separate verifier reads only static artifacts.",
+      "status": "PASS",
+      "file_line": "task/task.toml:3; authoring/reports/harbor-jobs/bio2-oracle-v011/transcript-provenance-audit__dybfyBZ/artifacts/manifest.json:1; authoring/reports/harbor-jobs/bio2-nop-v011/transcript-provenance-audit__xdeXMsZ/verifier/ctrf.json:1; authoring/reports/independent_qc_findings.json:1",
+      "required_correction": "None outstanding; final native evidence independently checked",
+      "post_correction_result": "PASS: independently rechecked26November2026 on version0.1.1; historical0.1.0 results excluded",
+      "initial_status": "NOT TESTED"
+    },
+    {
+      "id": "ctrf_reporting",
+      "requirement": "Each discrete test has a separate observable result.",
+      "evidence": "Direct final native CTRF inspection:12 valid0.1.1 trials each contain11 distinct names. Both oracles and alternate summary tests11 passed11 failed0; all9 negative controls record their real per-family failures and reward0. Historical0.1.0 collapsed records are retained/excluded. Host local_pytest_v011.log is missing-pytest infrastructure evidence, not a pytest success.",
+      "status": "PASS",
+      "file_line": "task/tests/test_outputs.py:4; authoring/reports/harbor-jobs/bio2-oracle-v011/transcript-provenance-audit__dybfyBZ/verifier/ctrf.json:1; authoring/reports/harbor-jobs/bio2-alternative-v011/transcript-provenance-audit__cALXCDD/verifier/ctrf.json:1; authoring/reports/local_pytest_v011.log:3",
+      "required_correction": "None outstanding; final native evidence independently checked",
+      "post_correction_result": "PASS: independently rechecked26November2026 on version0.1.1; historical0.1.0 results excluded",
+      "initial_status": "NOT TESTED"
+    },
+    {
+      "id": "task_authoring_dir",
+      "requirement": "Reviewer-only material stays in authoring.",
+      "evidence": "Research/proposal/generator/review/reproduction/originality/evidence outside runtime task. Runtime directories contain only build data/dependencies, reference and private verifier.",
+      "status": "PASS",
+      "file_line": "authoring/research/proposal.md:1; authoring/reports/independent_qc_review.md:1; task/environment/Dockerfile:7",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "no_extraneous_files",
+      "requirement": "Shipped files have required scientific/runtime purpose.",
+      "evidence": "Full source genes needed for complete-column normalization and measured audit; eligible/split annotation needed for certificates. GEO metadata/provenance provide interpretation. Runtime wheels enable offline hashed install; no authoring corpus or run outputs in solver context.",
+      "status": "PASS",
+      "file_line": "task/instruction.md:13,18,20; task/environment/Dockerfile:3,7; task/tests/Dockerfile:3,6",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "reviewable",
+      "requirement": "Assumptions, inputs and calculations trace to expected outcomes.",
+      "evidence": "Shared audit/source/GSM records, proposal, layer map, generator, readable independent evaluator, negative evidence and fresh source-derived numeric review provide traceability. Exact source fallbacks and similarity limitations are documented.",
+      "status": "PASS",
+      "file_line": "authoring/research/proposal.md:1; authoring/build_inputs.py:12; authoring/reports/independent_qc_findings.json:1; authoring/originality/conceptual_review.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "difficulty_explanation_quality",
+      "requirement": "Documentation identifies difficult scientific choices and simple failures.",
+      "evidence": "README and layer map connect nuisance structure, replicate identity, scale-appropriate sparse fitting and model rejection. Pure controls explicitly easy; no measured frontier success rate claimed.",
+      "status": "PASS",
+      "file_line": "task/README.md:31; authoring/research/complexity_layers.md:3; authoring/reports/test_discrimination_audit.md:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "solution_explanation_quality",
+      "requirement": "Explains reference approach consistently with implementation.",
+      "evidence": "README describes centered log fingerprints, global assignment, weighted linear TPM dictionary, pairwise convex optimum and rejected support diagnostics. These match solve.py. Alternate path and interpretational limits documented.",
+      "status": "PASS",
+      "file_line": "task/README.md:35; task/solution/solve.py:28,42,48,71",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "verification_explanation_quality",
+      "requirement": "Explains checks, sufficiency and actual alternative/flawed-method evidence.",
+      "evidence": "README and discrimination audit explain independent truth/arithmetic,11 families, alternative and negative outcomes. Final native0.1.1 CTRF confirms each family distinctly and closes the aggregation defect. Easy controls and finite-instance hardcoding limits remain explicit.",
+      "status": "PASS",
+      "file_line": "task/README.md:39; authoring/reports/test_discrimination_audit.md:1; authoring/reports/qc_remediation.md:1; authoring/reports/independent_qc_findings.json:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "category_and_tags",
+      "requirement": "Labels accurately describe science/methods.",
+      "evidence": "Biology/transcriptomics/sample provenance/compositional deconvolution/held-out validation match actual content.",
+      "status": "PASS",
+      "file_line": "task/task.toml:9,11,13,21; task/README.md:12",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "task_name",
+      "requirement": "Descriptive name follows active conventions.",
+      "evidence": "transcript-provenance-audit accurately names the objective; actual current task-slug/path/name shell checks pass in canonical package.",
+      "status": "PASS",
+      "file_line": "task/task.toml:5; authoring/reports/static_v011.log:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    },
+    {
+      "id": "task_readme",
+      "requirement": "README accurate/useful and reflects packaged task.",
+      "evidence": "Managed header agrees with manifest; scientific/background/difficulty/reference/verifier/attribution accurately describe implementation and synthetic scope. No external approval or calibrated success claimed.",
+      "status": "PASS",
+      "file_line": "task/README.md:4,29,31,35,39,43; authoring/reports/harbor_lint_all_v011.log:1",
+      "required_correction": "None",
+      "post_correction_result": "PASS: directly reviewed current files and applicable measured evidence",
+      "initial_status": "PASS"
+    }
+  ],
+  "initial_review_date": "2026-11-25"
+}

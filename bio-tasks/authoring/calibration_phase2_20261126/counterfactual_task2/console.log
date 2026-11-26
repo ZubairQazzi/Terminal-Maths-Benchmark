@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py ...........                                              [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_physical_audit
+PASSED test_outputs.py::test_biological_limits
+PASSED test_outputs.py::test_sample_identity
+PASSED test_outputs.py::test_discovery_alignment_scores
+PASSED test_outputs.py::test_heldout_identity_certificates
+PASSED test_outputs.py::test_pure_aliquots
+PASSED test_outputs.py::test_two_source_aliquots
+PASSED test_outputs.py::test_open_set_rejection
+PASSED test_outputs.py::test_residual_certificates
+PASSED test_outputs.py::test_support_optimality
+============================== 11 passed in 3.10s ==============================

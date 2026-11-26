@@ -1,0 +1,25 @@
+query_id	classification	donor_1	donor_2	fraction_1	discovery_residual	validation_residual
+Q000	pure	DmrPERK_Ars_24h_rep1		1	0	0
+Q001	pure	DmrPERK_Tg_2h_rep3		1	0	0
+Q002	pair	DmrPERK_Dim_24h_rep3	Parental_Tg_2h_rep3	0.7488746048526536	0	0
+Q003	pair	Parental_Dim_2h_rep2	DmrPERK_UT_16h_rep3	0.5836055957085382	0	0
+Q004	pair	Parental_UT_24h_rep2	DmrPERK_Ars_2h_rep3	0.5052787722061562	0	0
+Q005	pair	DmrPERK_Tg_8h_rep3	Parental_Ars_24h_rep3	0.6360420141546033	0	0
+Q006	pair	DmrPERK_Ars_24h_rep1	Parental_Dim_8h_rep3	0.6623745970226073	0	0
+Q007	pair	DmrPERK_Tg_24h_rep1	Parental_UT_4h_rep2	0.5054445640004035	0	0
+Q008	pair	DmrPERK_Tg_24h_rep2	Parental_Dim_4h_rep2	0.5153536626254441	0	0
+Q009	pure	Parental_UT_24h_rep1		1	0	0
+Q010	unsupported	DmrPERK_Dim_24h_rep3	Parental_UT_8h_rep1	0.5352112676056339	0	0.1
+Q011	pair	DmrPERK_Dim_4h_rep3	Parental_Tg_8h_rep1	0.6850316764075728	0	0
+Q012	unsupported	DmrPERK_Dim_24h_rep1	Parental_Ars_2h_rep2	0.5352112676056339	0	0.1
+Q013	pair	DmrPERK_Ars_8h_rep2	Parental_Dim_16h_rep2	0.6474331851081115	0	0
+Q014	unsupported	Parental_UT_8h_rep3	DmrPERK_Dim_24h_rep1	0.5352112676056339	0	0.1
+Q015	pair	Parental_Tg_2h_rep3	DmrPERK_UT_16h_rep2	0.526098398025888	0	0
+Q016	unsupported	Parental_UT_8h_rep2	DmrPERK_Ars_16h_rep2	0.5352112676056339	0	0.1
+Q017	unsupported	Parental_Tg_8h_rep2	DmrPERK_Dim_2h_rep1	0.5352112676056339	0	0.1
+Q018	pure	Parental_Ars_4h_rep2		1	0	0
+Q019	pair	Parental_Tg_24h_rep1	DmrPERK_Ars_24h_rep1	0.5935886102585758	0	0
+Q020	pure	Parental_UT_0h_rep3		1	0	0
+Q021	unsupported	Parental_Dim_16h_rep3	DmrPERK_Tg_8h_rep1	0.5352112676056339	0	0.1
+Q022	pure	Parental_UT_0h_rep1		1	0	0
+Q023	pair	Parental_Tg_24h_rep1	DmrPERK_Dim_8h_rep1	0.5138554697867724	0	0

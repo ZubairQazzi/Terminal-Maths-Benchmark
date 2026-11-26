@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-25T20:20:52.567746+00:00",
+  "client_date": "2026-11-26",
+  "audit_completed": true,
+  "initial_trials_completed": true,
+  "source_integrity": "PASS: 192 post-trial file/evidence hashes",
+  "completed_runs": [
+    "bio1-initial-02",
+    "bio2-initial-01"
+  ],
+  "infrastructure_interruptions": [
+    "bio1-initial-01"
+  ],
+  "model_results_do_not_establish_extreme_difficulty": true,
+  "public_redistribution": "NOT FULLY CLEARED",
+  "unqualified_task2_no_shortcut_certification": false,
+  "latest_report": "F:\\rl\\bio\\FINAL_AUDIT_AND_INITIAL_GEMINI_RESULTS.md",
+  "metrics": "F:\\rl\\bio\\authoring\\trajectories\\initial-gemini35lite-high-20261126\\initial_comparison.json",
+  "individual_checks": "F:\\rl\\bio\\authoring\\trajectories\\initial-gemini35lite-high-20261126\\individual_verifier_results.csv"
+}

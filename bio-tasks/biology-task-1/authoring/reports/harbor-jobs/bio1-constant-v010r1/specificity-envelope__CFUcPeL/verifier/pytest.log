@@ -1,0 +1,202 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py ...FFFF....                                              [100%]
+
+=================================== FAILURES ===================================
+______________________ test_04_matched_factorial_effects _______________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+matched =                                      dmr_effect  ...  certified
+gene_id            treatment time_h              ...  ...          0  ...      False
+ENSG00000283696.1  Tg        24               0  ...      False
+
+[249636 rows x 15 columns]
+
+    def test_04_matched_factorial_effects(expected,matched):
+>       for name in ['dmr_effect','parent_effect','interaction']:close(matched[name],expected['matched'][name])
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:129: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4         0
+ENSG00000000419.12  Dim        4     ...89.1   Tg         24        0
+ENSG00000283696.1   Tg         24        0
+Name: dmr_effect, Length: 249636, dtype: int64
+expected = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4        -0.342972
+ENSG00000000419.12  Dim       ...  24       -0.127359
+ENSG00000283696.1   Tg         24        0.271597
+Name: dmr_effect, Length: 249636, dtype: float64
+probability = False
+
+    def close(actual,expected,probability=False):
+        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)
+        assert np.isfinite(a).all(),'Nonfinite numerical submission'
+        tolerance=2e-7+2e-5*np.abs(e)
+        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)
+>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'
+E       AssertionError: Numerical certificate mismatch; maximum absolute error=11.17017993596394
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x7549793b2130>(array([0.34297165, 0.00249757, 0.28670452, ..., 0.2084905 , 0.12735891,\n       0.27159668], shape=(249636,)) <= array([7.05943296e-06, 2.49951359e-07, 5.93409042e-06, ...,\n       4.36980993e-06, 2.74717817e-06, 5.63193359e-06], shape=(249636,)))
+E        +    where <function all at 0x7549793b2130> = np.all
+E        +    and   array([0.34297165, 0.00249757, 0.28670452, ..., 0.2084905 , 0.12735891,\n       0.27159668], shape=(249636,)) = <ufunc 'absolute'>((array([0., 0., 0., ..., 0., 0., 0.], shape=(249636,)) - array([-0.34297165, -0.00249757,  0.28670452, ...,  0.2084905 ,\n       -0.12735891,  0.27159668], shape=(249636,))))
+E        +      where <ufunc 'absolute'> = np.abs
+
+test_outputs.py:102: AssertionError
+_____________________ test_05_heteroscedastic_uncertainty ______________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+matched =                                      dmr_effect  ...  certified
+gene_id            treatment time_h              ...  ...          0  ...      False
+ENSG00000283696.1  Tg        24               0  ...      False
+
+[249636 rows x 15 columns]
+
+    def test_05_heteroscedastic_uncertainty(expected,matched):
+>       for name in ['se_dmr','df_dmr','se_parent','df_parent','se_interaction','df_interaction']:close(matched[name],expected['matched'][name])
+                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:132: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4         0
+ENSG00000000419.12  Dim        4     ...283689.1   Tg         24        0
+ENSG00000283696.1   Tg         24        0
+Name: se_dmr, Length: 249636, dtype: int64
+expected = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4         0.064361
+ENSG00000000419.12  Dim       ...      24        0.184571
+ENSG00000283696.1   Tg         24        0.117694
+Name: se_dmr, Length: 249636, dtype: float64
+probability = False
+
+    def close(actual,expected,probability=False):
+        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)
+        assert np.isfinite(a).all(),'Nonfinite numerical submission'
+        tolerance=2e-7+2e-5*np.abs(e)
+        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)
+>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'
+E       AssertionError: Numerical certificate mismatch; maximum absolute error=1.511841707238563
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x7549793b2130>(array([0.06436053, 0.0468863 , 0.07925317, ..., 0.09230821, 0.18457125,\n       0.11769446], shape=(249636,)) <= array([1.48721064e-06, 1.13772603e-06, 1.78506342e-06, ...,\n       2.04616422e-06, 3.89142509e-06, 2.55388927e-06], shape=(249636,)))
+E        +    where <function all at 0x7549793b2130> = np.all
+E        +    and   array([0.06436053, 0.0468863 , 0.07925317, ..., 0.09230821, 0.18457125,\n       0.11769446], shape=(249636,)) = <ufunc 'absolute'>((array([0., 0., 0., ..., 0., 0., 0.], shape=(249636,)) - array([0.06436053, 0.0468863 , 0.07925317, ..., 0.09230821, 0.18457125,\n       0.11769446], shape=(249636,))))
+E        +      where <ufunc 'absolute'> = np.abs
+
+test_outputs.py:102: AssertionError
+______________ test_06_affirmative_equivalence_and_minimum_effect ______________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+matched =                                      dmr_effect  ...  certified
+gene_id            treatment time_h              ...  ...          0  ...      False
+ENSG00000283696.1  Tg        24               0  ...      False
+
+[249636 rows x 15 columns]
+
+    def test_06_affirmative_equivalence_and_minimum_effect(expected,matched):
+>       for name in ['p_interaction','p_parent_equivalence','p_dmr_minimum','p_joint']:close(matched[name],expected['matched'][name],True)
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4         0
+ENSG00000000419.12  Dim        4     ...1   Tg         24        0
+ENSG00000283696.1   Tg         24        0
+Name: p_interaction, Length: 249636, dtype: int64
+expected = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4         0.038404
+ENSG00000000419.12  Dim       ...4        0.620210
+ENSG00000283696.1   Tg         24        0.700537
+Name: p_interaction, Length: 249636, dtype: float64
+probability = True
+
+    def close(actual,expected,probability=False):
+        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)
+        assert np.isfinite(a).all(),'Nonfinite numerical submission'
+        tolerance=2e-7+2e-5*np.abs(e)
+        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)
+>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'
+E       AssertionError: Numerical certificate mismatch; maximum absolute error=1.0
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x7549793b2130>(array([0.03840386, 0.59570602, 0.02012395, ..., 0.52686983, 0.62020978,\n       0.70053691], shape=(249636,)) <= array([9.68077281e-07, 1.21141205e-05, 6.02478969e-07, ...,\n       1.07373966e-05, 1.26041956e-05, 1.42107382e-05], shape=(249636,)))
+E        +    where <function all at 0x7549793b2130> = np.all
+E        +    and   array([0.03840386, 0.59570602, 0.02012395, ..., 0.52686983, 0.62020978,\n       0.70053691], shape=(249636,)) = <ufunc 'absolute'>((array([0., 0., 0., ..., 0., 0., 0.], shape=(249636,)) - array([0.03840386, 0.59570602, 0.02012395, ..., 0.52686983, 0.62020978,\n       0.70053691], shape=(249636,))))
+E        +      where <ufunc 'absolute'> = np.abs
+
+test_outputs.py:102: AssertionError
+______________________ test_07_joint_family_multiplicity _______________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+matched =                                      dmr_effect  ...  certified
+gene_id            treatment time_h              ...  ...          0  ...      False
+ENSG00000283696.1  Tg        24               0  ...      False
+
+[249636 rows x 15 columns]
+
+    def test_07_joint_family_multiplicity(expected,matched):
+>       close(matched.q_joint,expected['matched'].q_joint,True)
+
+test_outputs.py:138: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4         0
+ENSG00000000419.12  Dim        4     ...83689.1   Tg         24        0
+ENSG00000283696.1   Tg         24        0
+Name: q_joint, Length: 249636, dtype: int64
+expected = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4         1.0
+ENSG00000000419.12  Dim        4   ...1   Tg         24        1.0
+ENSG00000283696.1   Tg         24        1.0
+Name: q_joint, Length: 249636, dtype: float64
+probability = True
+
+    def close(actual,expected,probability=False):
+        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)
+        assert np.isfinite(a).all(),'Nonfinite numerical submission'
+        tolerance=2e-7+2e-5*np.abs(e)
+        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)
+>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'
+E       AssertionError: Numerical certificate mismatch; maximum absolute error=1.0
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x7549793b2130>(array([1., 1., 1., ..., 1., 1., 1.], shape=(249636,)) <= array([2.02e-05, 2.02e-05, 2.02e-05, ..., 2.02e-05, 2.02e-05, 2.02e-05],\n      shape=(249636,)))
+E        +    where <function all at 0x7549793b2130> = np.all
+E        +    and   array([1., 1., 1., ..., 1., 1., 1.], shape=(249636,)) = <ufunc 'absolute'>((array([0., 0., 0., ..., 0., 0., 0.], shape=(249636,)) - array([1., 1., 1., ..., 1., 1., 1.], shape=(249636,))))
+E        +      where <ufunc 'absolute'> = np.abs
+
+test_outputs.py:102: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_01_complete_handoff
+PASSED test_outputs.py::test_02_fractional_representation_audit
+PASSED test_outputs.py::test_03_unselected_complete_gene_universe
+PASSED test_outputs.py::test_08_early_partial_identification
+PASSED test_outputs.py::test_09_envelope_expansion_invariants
+PASSED test_outputs.py::test_10_interpretation_limits
+PASSED test_outputs.py::test_11_synthetic_positive_and_degenerate_controls
+FAILED test_outputs.py::test_04_matched_factorial_effects - AssertionError: N...
+FAILED test_outputs.py::test_05_heteroscedastic_uncertainty - AssertionError:...
+FAILED test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect - ...
+FAILED test_outputs.py::test_07_joint_family_multiplicity - AssertionError: N...
+========================= 4 failed, 7 passed in 7.35s ==========================

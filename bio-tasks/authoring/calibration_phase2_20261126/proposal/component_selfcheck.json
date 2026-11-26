@@ -1,0 +1,11 @@
+{
+  "status": "COMPONENT_CHECKS_PASS",
+  "scope": "Small public component exercise only; no RNA-seq data, no actual new task instance, no private planted answers. Not a cryptographic proof or full task QC.",
+  "exact_private_replay": true,
+  "permutation_valid": true,
+  "finite_normal_draws": true,
+  "public_numpy_python_seed_does_not_reproduce_observed_draws": true,
+  "wrong_replay_sequence_rejected": true,
+  "agent_context_record_rejected": true,
+  "next_requirement": "Approved versioned fixture generation and scientific/native isolation QC before any model trials."
+}

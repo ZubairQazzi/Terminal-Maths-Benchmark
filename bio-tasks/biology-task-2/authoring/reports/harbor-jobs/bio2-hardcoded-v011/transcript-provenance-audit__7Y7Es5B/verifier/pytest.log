@@ -1,0 +1,268 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py FFFFFFFFFFF                                              [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_schema __________________________________
+
+    def test_schema():
+>       CHECKS['schema']()
+
+test_outputs.py:5: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:48: in schema
+    m=read('alignment.tsv');r=read('queries.tsv');audit=read('audit.json')
+      ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'alignment.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe alignment.tsv
+
+checks.py:28: AssertionError
+_____________________________ test_physical_audit ______________________________
+
+    def test_physical_audit():
+>       CHECKS['physical_audit']()
+
+test_outputs.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:62: in audit
+    c,a,q,g,_,_,_,tr,va=data();report=read('audit.json')
+                                      ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'audit.json'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe audit.json
+
+checks.py:28: AssertionError
+____________________________ test_biological_limits ____________________________
+
+    def test_biological_limits():
+>       CHECKS['biological_limits']()
+
+test_outputs.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:70: in claims
+    report=read('audit.json')['biological_claims']
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'audit.json'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe audit.json
+
+checks.py:28: AssertionError
+_____________________________ test_sample_identity _____________________________
+
+    def test_sample_identity():
+>       CHECKS['sample_identity']()
+
+test_outputs.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:76: in alignment
+    m=read('alignment.tsv');truth=data()[4]['mapping']
+      ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'alignment.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe alignment.tsv
+
+checks.py:28: AssertionError
+_______________________ test_discovery_alignment_scores ________________________
+
+    def test_discovery_alignment_scores():
+>       CHECKS['discovery_alignment_scores']()
+
+test_outputs.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^
+checks.py:80: in alignment_scores
+    c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')
+                                 ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'alignment.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe alignment.tsv
+
+checks.py:28: AssertionError
+______________________ test_heldout_identity_certificates ______________________
+
+    def test_heldout_identity_certificates():
+>       CHECKS['heldout_identity_certificates']()
+
+test_outputs.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^
+checks.py:80: in alignment_scores
+    c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')
+                                 ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'alignment.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe alignment.tsv
+
+checks.py:28: AssertionError
+______________________________ test_pure_aliquots ______________________________
+
+    def test_pure_aliquots():
+>       CHECKS['pure_aliquots']()
+
+test_outputs.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^
+checks.py:92: in query_truth
+    r=read('queries.tsv').set_index('query_id')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+___________________________ test_two_source_aliquots ___________________________
+
+    def test_two_source_aliquots():
+>       CHECKS['two_source_aliquots']()
+
+test_outputs.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^
+checks.py:92: in query_truth
+    r=read('queries.tsv').set_index('query_id')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+___________________________ test_open_set_rejection ____________________________
+
+    def test_open_set_rejection():
+>       CHECKS['open_set_rejection']()
+
+test_outputs.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+checks.py:92: in query_truth
+    r=read('queries.tsv').set_index('query_id')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+__________________________ test_residual_certificates __________________________
+
+    def test_residual_certificates():
+>       CHECKS['residual_certificates']()
+
+test_outputs.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:110: in mixture_certificates
+    r=read('queries.tsv')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+___________________________ test_support_optimality ____________________________
+
+    def test_support_optimality():
+>       CHECKS['support_optimality']()
+
+test_outputs.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:136: in optimality
+    r=read('queries.tsv').set_index('query_id')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+=========================== short test summary info ============================
+FAILED test_outputs.py::test_schema - AssertionError: Missing or unsafe align...
+FAILED test_outputs.py::test_physical_audit - AssertionError: Missing or unsa...
+FAILED test_outputs.py::test_biological_limits - AssertionError: Missing or u...
+FAILED test_outputs.py::test_sample_identity - AssertionError: Missing or uns...
+FAILED test_outputs.py::test_discovery_alignment_scores - AssertionError: Mis...
+FAILED test_outputs.py::test_heldout_identity_certificates - AssertionError: ...
+FAILED test_outputs.py::test_pure_aliquots - AssertionError: Missing or unsaf...
+FAILED test_outputs.py::test_two_source_aliquots - AssertionError: Missing or...
+FAILED test_outputs.py::test_open_set_rejection - AssertionError: Missing or ...
+FAILED test_outputs.py::test_residual_certificates - AssertionError: Missing ...
+FAILED test_outputs.py::test_support_optimality - AssertionError: Missing or ...
+============================== 11 failed in 4.53s ==============================

@@ -1,0 +1,4 @@
+COMMAND ["C:\\Users\\zubai\\.local\\bin\\harbor.exe", "lint", "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit", "--select", "ALL", "--json"]
+[]
+
+EXIT 0 ELAPSED_SECONDS 3.438

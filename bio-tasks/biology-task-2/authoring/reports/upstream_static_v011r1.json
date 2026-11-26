@@ -1,0 +1,288 @@
+[
+  {
+    "id": "task-fields",
+    "command": [
+      "bash",
+      "ci_checks/check-task-fields.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit/task.toml...\nAll task.toml files contain the required fields with valid values\n",
+    "status": "PASS"
+  },
+  {
+    "id": "task-path",
+    "command": [
+      "bash",
+      "ci_checks/check-task-path.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "status": "PASS"
+  },
+  {
+    "id": "task-structure",
+    "command": [
+      "bash",
+      "ci_checks/check-task-structure.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit...\nAll task directories have a recognized structure\n",
+    "status": "PASS"
+  },
+  {
+    "id": "task-slug",
+    "command": [
+      "bash",
+      "ci_checks/check-task-slug.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "PASS tasks/life-sciences/biology/transcript-provenance-audit (3 tokens)\n",
+    "status": "PASS"
+  },
+  {
+    "id": "task-readme",
+    "command": [
+      "bash",
+      "ci_checks/check-task-readme.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "checked 1 tasks: 0 stale, 0 hand-written (ignored)\n",
+    "status": "PASS"
+  },
+  {
+    "id": "canary",
+    "command": [
+      "bash",
+      "ci_checks/check-canary.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "All files contain the required canary string\n",
+    "status": "PASS"
+  },
+  {
+    "id": "task-absolute-path",
+    "command": [
+      "bash",
+      "ci_checks/check-task-absolute-path.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "status": "PASS"
+  },
+  {
+    "id": "instruction-suffix",
+    "command": [
+      "bash",
+      "ci_checks/check-instruction-suffix.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit...\nAll instruction.md files end with the canonical timeout/anti-cheat line\n",
+    "status": "PASS"
+  },
+  {
+    "id": "test-file-references",
+    "command": [
+      "bash",
+      "ci_checks/check-test-file-references.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "status": "PASS"
+  },
+  {
+    "id": "dockerfile-references",
+    "command": [
+      "bash",
+      "ci_checks/check-dockerfile-references.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "status": "PASS"
+  },
+  {
+    "id": "dockerfile-sanity",
+    "command": [
+      "bash",
+      "ci_checks/check-dockerfile-sanity.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "status": "PASS"
+  },
+  {
+    "id": "dockerfile-platform",
+    "command": [
+      "bash",
+      "ci_checks/check-dockerfile-platform.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "status": "PASS"
+  },
+  {
+    "id": "allow-internet",
+    "command": [
+      "bash",
+      "ci_checks/check-allow-internet.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit/task.toml...\nAll task.toml files declare a valid network policy\n",
+    "status": "PASS"
+  },
+  {
+    "id": "separate-verifier",
+    "command": [
+      "bash",
+      "ci_checks/check-separate-verifier.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit...\nAll tasks are configured for separate verifier mode\n",
+    "status": "PASS"
+  },
+  {
+    "id": "compose-host-binds",
+    "command": [
+      "bash",
+      "ci_checks/check-compose-host-binds.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "PASS tasks/life-sciences/biology/transcript-provenance-audit\n",
+    "status": "PASS"
+  },
+  {
+    "id": "task-timeout",
+    "command": [
+      "bash",
+      "ci_checks/check-task-timeout.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit/task.toml...\nAll task.toml timeouts are valid (agent = 8h, verifier <= 8h)\n",
+    "status": "PASS"
+  },
+  {
+    "id": "gpu-types",
+    "command": [
+      "bash",
+      "ci_checks/check-gpu-types.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "All task.toml GPU declarations are valid\n",
+    "status": "PASS"
+  },
+  {
+    "id": "task-resources",
+    "command": [
+      "bash",
+      "ci_checks/check-task-resources.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "All task.toml resource requests are within limits\n",
+    "status": "PASS"
+  },
+  {
+    "id": "verifier-resources",
+    "command": [
+      "bash",
+      "ci_checks/check-verifier-resources.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Every [verifier.environment] declares its resources\n",
+    "status": "PASS"
+  },
+  {
+    "id": "nproc",
+    "command": [
+      "bash",
+      "ci_checks/check-nproc.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit...\nAll scripts avoid bare nproc\n",
+    "status": "PASS"
+  },
+  {
+    "id": "verifier-tooling-baked",
+    "command": [
+      "bash",
+      "ci_checks/check-verifier-tooling-baked.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit/tests/test.sh...\nAll separate-verifier tasks bake their verifier tooling into the image\n",
+    "status": "PASS"
+  },
+  {
+    "id": "trial-network-fetch",
+    "command": [
+      "bash",
+      "ci_checks/check-trial-network-fetch.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit...\nNo external trial-time fetches in tests/test.sh\n",
+    "status": "PASS"
+  },
+  {
+    "id": "pip-pinning",
+    "command": [
+      "bash",
+      "ci_checks/check-pip-pinning.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit...\nAll pip / uv pip / uvx --with installs are pinned\n",
+    "status": "PASS"
+  },
+  {
+    "id": "pytest-version",
+    "command": [
+      "bash",
+      "ci_checks/check-pytest-version.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "Checking tasks/life-sciences/biology/transcript-provenance-audit...\nPASS\n",
+    "status": "PASS"
+  },
+  {
+    "id": "test-sh-sanity",
+    "command": [
+      "bash",
+      "ci_checks/check-test-sh-sanity.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "status": "PASS"
+  },
+  {
+    "id": "binary-reward",
+    "command": [
+      "bash",
+      "ci_checks/check-binary-reward.sh",
+      "tasks/life-sciences/biology/transcript-provenance-audit"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "status": "PASS"
+  }
+]

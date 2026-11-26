@@ -1,0 +1,8 @@
+{
+  "similarity_pct": 37.2335813353091,
+  "closest": "F:\\rl\\bio\\biology-task-1\\task:.",
+  "references": 98,
+  "threshold_pct": 80.0,
+  "exit_code": 0,
+  "method": "Actual pinned check-similarity.py, raw instructions, max_features5000 unigram/bigram TF-IDF fitted on references, including other task"
+}

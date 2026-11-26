@@ -1,0 +1,74 @@
+{
+  "client_date": "2026-11-26",
+  "method": "Five times each single completed historical trajectory; only a planning scenario, not a distributional forecast. Task 2 new fixture may change runtime. Provider failures and errors with no usage receipts are not assigned invented token counts.",
+  "pricing_usd_per_million": {
+    "uncached_input": 0.3,
+    "cached_input": 0.03,
+    "output_including_reported_thinking": 2.5
+  },
+  "source": "https://aistudio.google.com/docs/pricing#gemini-3.5-flash-lite",
+  "per_task": [
+    {
+      "task": 1,
+      "trials": 5,
+      "input_tokens": 2745595,
+      "output_tokens": 120660,
+      "cache_read_tokens_subset": 2324840,
+      "agent_steps": 110,
+      "successful_provider_calls": 110,
+      "recovered_provider_errors_replay": 85,
+      "wall_seconds_replay": 4825.18017,
+      "cost_usd_with_historical_cache_fraction": 0.4976217,
+      "cost_usd_without_cache_discount": 1.1253285
+    },
+    {
+      "task": 2,
+      "trials": 5,
+      "input_tokens": 2075590,
+      "output_tokens": 86655,
+      "cache_read_tokens_subset": 1414140,
+      "agent_steps": 115,
+      "successful_provider_calls": 115,
+      "recovered_provider_errors_replay": 20,
+      "wall_seconds_replay": 2973.0318549999997,
+      "cost_usd_with_historical_cache_fraction": 0.45749670000000003,
+      "cost_usd_without_cache_discount": 0.8393145
+    }
+  ],
+  "total": {
+    "input_tokens": 4821185,
+    "output_tokens": 207315,
+    "cache_read_tokens_subset": 3738980,
+    "agent_steps": 225,
+    "successful_provider_calls": 225,
+    "recovered_provider_errors_replay": 105,
+    "wall_seconds_replay": 7798.212024999999,
+    "cost_usd_with_historical_cache_fraction": 0.9551184,
+    "cost_usd_without_cache_discount": 1.964643
+  },
+  "proposed_usage_allowance": {
+    "input_tokens": 12000000,
+    "output_tokens": 750000,
+    "instrumented_provider_request_attempts": 900,
+    "conservative_uncached_text_cost_usd": 5.475,
+    "budget_requested_usd": 6.0,
+    "billing_caveat": "Planning guard on accounted/estimated token use, not a guaranteed invoice cap; actual project tier, tax, failed-request accounting and implicit cache treatment are not verified. Do not change billing or use paid-only fallback. Pause on budget/quota limit and label interrupted runs censored, not scientific failures."
+  },
+  "resources": {
+    "serial_concurrency": 1,
+    "cpus": 2,
+    "task1_memory_mb": 8192,
+    "task2_memory_mb": 4096,
+    "per_task_storage_mb": 10240,
+    "original_agent_timeout_seconds": 28800,
+    "original_verifier_timeout_seconds": 3600,
+    "gpus": 0,
+    "expected_serial_hours_replay": 2.1661700069444443,
+    "planning_hours_including_QC_and_availability": "3\u20135, uncertain; original task limits remain unchanged",
+    "F_project_storage_reserve_gib": 10,
+    "docker_observed_memory_bytes": 16609280000,
+    "docker_observed_cpus": 20,
+    "docker_root": "/var/lib/docker",
+    "docker_host_storage": "Existing Docker Desktop virtual disk, previously on C; not relocated by this proposal. New project files/logs/trajectories/configurable host caches use F."
+  }
+}

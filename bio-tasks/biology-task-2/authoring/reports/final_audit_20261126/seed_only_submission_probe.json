@@ -1,0 +1,50 @@
+{
+  "reviewer": "/root/qc_b",
+  "date": "2026-11-26",
+  "submission_reads_expression_values": false,
+  "assumption": "Correctly guessed private generator RNG/draw conventions and accession-derived seed.",
+  "certificates": "Invented fixed correlations/margins/residuals and unknown physical audit values; explicitly an incorrect negative probe.",
+  "passed": 7,
+  "total": 11,
+  "binary_reward": 0,
+  "per_family": {
+    "schema": {
+      "passed": true
+    },
+    "physical_audit": {
+      "passed": false,
+      "error": "AssertionError: ('fractional_count_entries', 0, 2188385)"
+    },
+    "biological_limits": {
+      "passed": true
+    },
+    "sample_identity": {
+      "passed": true
+    },
+    "discovery_alignment_scores": {
+      "passed": false,
+      "error": "AssertionError: "
+    },
+    "heldout_identity_certificates": {
+      "passed": false,
+      "error": "AssertionError: "
+    },
+    "pure_aliquots": {
+      "passed": true
+    },
+    "two_source_aliquots": {
+      "passed": true
+    },
+    "open_set_rejection": {
+      "passed": true
+    },
+    "residual_certificates": {
+      "passed": false,
+      "error": "AssertionError: ('Q000', 'discovery_residual')"
+    },
+    "support_optimality": {
+      "passed": true
+    }
+  },
+  "conclusion": "Conditional seed replay reconstructs labels/weights, but full checker acceptance without expression analysis is NOT demonstrated. Scientific numerical certificates and audit checks reject these invented values."
+}

@@ -1,0 +1,23 @@
+{
+  "valid_input_variation": "Independently reordered count/TPM genes and sample columns, then metadata rows; every raw string token preserved by keyed verification",
+  "seed": 27360020261125,
+  "exit_code": 0,
+  "binary_reward": 1,
+  "tests_passed": 11,
+  "tests_total": 11,
+  "seconds": 23.85737489999974,
+  "provenance": "permuted_valid_inputs_provenance.json",
+  "calculation_log": "permuted_valid_calculation.log",
+  "grading_log": "permuted_valid.log",
+  "ctrf": "permuted_valid_ctrf.json",
+  "output_sha256": {
+    "audit.json": "abe17ecda05610f22269b1cd5acb8f36f4bb2fa8bdfe7dde96c2e31af0a93bb5",
+    "calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+    "early_bounds.tsv": "4ac519224333d554f0490e31f4f79a8a21130756b9f3988b9d7c0f8566670073",
+    "eligible_genes.tsv": "07275a54af4772a3f081039b73fdca429a9f31db9d3a9585e7faa59ce2f7d2da",
+    "interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+    "matched.tsv": "93b74afc63c3f7472b3e06ea1f51a0cc103c028b53e171ab16e6840e7ffd2dd7"
+  },
+  "runtime_and_test_sources_unchanged": true,
+  "derived_input_copies_retained": true
+}

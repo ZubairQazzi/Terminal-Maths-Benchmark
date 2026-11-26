@@ -1,0 +1,520 @@
+{
+  "runs": {
+    "oracle": {
+      "binary_reward": 1,
+      "passed": 11,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": true
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": true
+        },
+        "discovery_alignment_scores": {
+          "passed": true
+        },
+        "heldout_identity_certificates": {
+          "passed": true
+        },
+        "pure_aliquots": {
+          "passed": true
+        },
+        "two_source_aliquots": {
+          "passed": true
+        },
+        "open_set_rejection": {
+          "passed": true
+        },
+        "residual_certificates": {
+          "passed": true
+        },
+        "support_optimality": {
+          "passed": true
+        }
+      },
+      "seconds": 4.17,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\oracle-output"
+    },
+    "alternative": {
+      "binary_reward": 1,
+      "passed": 11,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": true
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": true
+        },
+        "discovery_alignment_scores": {
+          "passed": true
+        },
+        "heldout_identity_certificates": {
+          "passed": true
+        },
+        "pure_aliquots": {
+          "passed": true
+        },
+        "two_source_aliquots": {
+          "passed": true
+        },
+        "open_set_rejection": {
+          "passed": true
+        },
+        "residual_certificates": {
+          "passed": true
+        },
+        "support_optimality": {
+          "passed": true
+        }
+      },
+      "seconds": 0.924,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\alternative-output"
+    },
+    "nop": {
+      "binary_reward": 0,
+      "passed": 0,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe alignment.tsv"
+        },
+        "physical_audit": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe audit.json"
+        },
+        "biological_limits": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe audit.json"
+        },
+        "sample_identity": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe alignment.tsv"
+        },
+        "discovery_alignment_scores": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe alignment.tsv"
+        },
+        "heldout_identity_certificates": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe alignment.tsv"
+        },
+        "pure_aliquots": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "two_source_aliquots": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "open_set_rejection": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "residual_certificates": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "support_optimality": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        }
+      },
+      "seconds": 0.024,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\nop-output"
+    },
+    "constant": {
+      "binary_reward": 0,
+      "passed": 3,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": false,
+          "error": "AssertionError: Sample provenance mismatched"
+        },
+        "discovery_alignment_scores": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "heldout_identity_certificates": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "pure_aliquots": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "two_source_aliquots": {
+          "passed": false,
+          "error": "AssertionError: ('Q002', 'pair', 'pure')"
+        },
+        "open_set_rejection": {
+          "passed": false,
+          "error": "AssertionError: ('Q010', 'unsupported', 'pure')"
+        },
+        "residual_certificates": {
+          "passed": false,
+          "error": "AssertionError: ('Q000', 'discovery_residual')"
+        },
+        "support_optimality": {
+          "passed": true
+        }
+      },
+      "seconds": 0.798,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\constant-output"
+    },
+    "hardcoded": {
+      "binary_reward": 0,
+      "passed": 0,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe alignment.tsv"
+        },
+        "physical_audit": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe audit.json"
+        },
+        "biological_limits": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe audit.json"
+        },
+        "sample_identity": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe alignment.tsv"
+        },
+        "discovery_alignment_scores": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe alignment.tsv"
+        },
+        "heldout_identity_certificates": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe alignment.tsv"
+        },
+        "pure_aliquots": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "two_source_aliquots": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "open_set_rejection": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "residual_certificates": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "support_optimality": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        }
+      },
+      "seconds": 0.02,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\hardcoded-output"
+    },
+    "wrong_alignment": {
+      "binary_reward": 0,
+      "passed": 8,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": true
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": false,
+          "error": "AssertionError: Sample provenance mismatched"
+        },
+        "discovery_alignment_scores": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "heldout_identity_certificates": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "pure_aliquots": {
+          "passed": true
+        },
+        "two_source_aliquots": {
+          "passed": true
+        },
+        "open_set_rejection": {
+          "passed": true
+        },
+        "residual_certificates": {
+          "passed": true
+        },
+        "support_optimality": {
+          "passed": true
+        }
+      },
+      "seconds": 1.118,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\wrong_alignment-output"
+    },
+    "wrong_contrast": {
+      "binary_reward": 0,
+      "passed": 8,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": true
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": true
+        },
+        "discovery_alignment_scores": {
+          "passed": true
+        },
+        "heldout_identity_certificates": {
+          "passed": true
+        },
+        "pure_aliquots": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "two_source_aliquots": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "open_set_rejection": {
+          "passed": true
+        },
+        "residual_certificates": {
+          "passed": false,
+          "error": "AssertionError: ('Q000', 'discovery_residual')"
+        },
+        "support_optimality": {
+          "passed": true
+        }
+      },
+      "seconds": 0.95,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\wrong_contrast-output"
+    },
+    "wrong_statistics": {
+      "binary_reward": 0,
+      "passed": 9,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": true
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": true
+        },
+        "discovery_alignment_scores": {
+          "passed": true
+        },
+        "heldout_identity_certificates": {
+          "passed": true
+        },
+        "pure_aliquots": {
+          "passed": true
+        },
+        "two_source_aliquots": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "open_set_rejection": {
+          "passed": true
+        },
+        "residual_certificates": {
+          "passed": false,
+          "error": "AssertionError: ('Q002', 'discovery_residual')"
+        },
+        "support_optimality": {
+          "passed": true
+        }
+      },
+      "seconds": 1.226,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\wrong_statistics-output"
+    },
+    "incomplete": {
+      "binary_reward": 0,
+      "passed": 5,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": true
+        },
+        "discovery_alignment_scores": {
+          "passed": true
+        },
+        "heldout_identity_certificates": {
+          "passed": true
+        },
+        "pure_aliquots": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "two_source_aliquots": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "open_set_rejection": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "residual_certificates": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        },
+        "support_optimality": {
+          "passed": false,
+          "error": "AssertionError: Missing or unsafe queries.tsv"
+        }
+      },
+      "seconds": 0.465,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\incomplete-output"
+    },
+    "unsupported_forced_pair": {
+      "binary_reward": 0,
+      "passed": 9,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": true
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": true
+        },
+        "sample_identity": {
+          "passed": true
+        },
+        "discovery_alignment_scores": {
+          "passed": true
+        },
+        "heldout_identity_certificates": {
+          "passed": true
+        },
+        "pure_aliquots": {
+          "passed": true
+        },
+        "two_source_aliquots": {
+          "passed": true
+        },
+        "open_set_rejection": {
+          "passed": false,
+          "error": "AssertionError: ('Q010', 'unsupported', 'pair')"
+        },
+        "residual_certificates": {
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        "support_optimality": {
+          "passed": true
+        }
+      },
+      "seconds": 1.012,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\unsupported_forced_pair-output"
+    },
+    "invalid_claims": {
+      "binary_reward": 0,
+      "passed": 10,
+      "total": 11,
+      "tests": {
+        "schema": {
+          "passed": true
+        },
+        "physical_audit": {
+          "passed": true
+        },
+        "biological_limits": {
+          "passed": false,
+          "error": "AssertionError: mixture_fraction_represents_cell_fraction"
+        },
+        "sample_identity": {
+          "passed": true
+        },
+        "discovery_alignment_scores": {
+          "passed": true
+        },
+        "heldout_identity_certificates": {
+          "passed": true
+        },
+        "pure_aliquots": {
+          "passed": true
+        },
+        "two_source_aliquots": {
+          "passed": true
+        },
+        "open_set_rejection": {
+          "passed": true
+        },
+        "residual_certificates": {
+          "passed": true
+        },
+        "support_optimality": {
+          "passed": true
+        }
+      },
+      "seconds": 1.181,
+      "artifact_path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\invalid_claims-output"
+    }
+  },
+  "repeat_sha256_equal": {
+    "audit.json": true,
+    "alignment.tsv": true,
+    "queries.tsv": true
+  },
+  "total_seconds": 27.597,
+  "multiple_testing_baseline": "NOT APPLICABLE: no inferential p-values or multiplicity claims; task reconstructs deterministic provenance."
+}

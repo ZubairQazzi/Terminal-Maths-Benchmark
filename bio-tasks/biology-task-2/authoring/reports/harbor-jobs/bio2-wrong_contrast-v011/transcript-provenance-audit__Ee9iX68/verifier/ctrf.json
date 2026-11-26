@@ -1,0 +1,128 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 8,
+            "failed": 3,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795633172.7252069,
+            "stop": 1795633177.905855
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 3.631300273000079,
+                "start": 1795633173.2425754,
+                "stop": 1795633176.8743641,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_physical_audit",
+                "status": "passed",
+                "duration": 0.10668240199993306,
+                "start": 1795633176.87483,
+                "stop": 1795633176.981854,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_biological_limits",
+                "status": "passed",
+                "duration": 0.0009046979998856841,
+                "start": 1795633176.982226,
+                "stop": 1795633176.983369,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_sample_identity",
+                "status": "passed",
+                "duration": 0.002711317999910534,
+                "start": 1795633176.9836662,
+                "stop": 1795633176.9866598,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_discovery_alignment_scores",
+                "status": "passed",
+                "duration": 0.0771557699999903,
+                "start": 1795633176.9870849,
+                "stop": 1795633177.064574,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_heldout_identity_certificates",
+                "status": "passed",
+                "duration": 0.07305785799997011,
+                "start": 1795633177.0649512,
+                "stop": 1795633177.1383326,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_pure_aliquots",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.003550012000005154,
+                "start": 1795633177.1387115,
+                "stop": 1795633177.2005577,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_pure_aliquots():\n>       CHECKS['pure_aliquots']()\n\ntest_outputs.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nkind = 'pure'\n\n    def query_truth(kind):\n        r=read('queries.tsv').set_index('query_id')\n        truth=data()[4]['queries']\n        for t in truth:\n            if t['class']!=kind:continue\n            row=r.loc[t['query_id']]\n            assert row.classification==kind,(t['query_id'],kind,row.classification)\n            if kind=='unsupported':continue\n            if kind=='pure':\n>               assert row.donor_1==t['donors'][0] and row.donor_2=='' and abs(float(row.fraction_1)-1)<1e-9\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AssertionError\n\nchecks.py:100: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_two_source_aliquots",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.003937700000051336,
+                "start": 1795633177.2011554,
+                "stop": 1795633177.2231784,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_two_source_aliquots():\n>       CHECKS['two_source_aliquots']()\n\ntest_outputs.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nkind = 'pair'\n\n    def query_truth(kind):\n        r=read('queries.tsv').set_index('query_id')\n        truth=data()[4]['queries']\n        for t in truth:\n            if t['class']!=kind:continue\n            row=r.loc[t['query_id']]\n            assert row.classification==kind,(t['query_id'],kind,row.classification)\n            if kind=='unsupported':continue\n            if kind=='pure':\n                assert row.donor_1==t['donors'][0] and row.donor_2=='' and abs(float(row.fraction_1)-1)<1e-9\n            else:\n>               assert {row.donor_1,row.donor_2}==set(t['donors'])\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AssertionError\n\nchecks.py:102: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_open_set_rejection",
+                "status": "passed",
+                "duration": 0.0035948820000157866,
+                "start": 1795633177.2235909,
+                "stop": 1795633177.227512,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_residual_certificates",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.011183960999915143,
+                "start": 1795633177.2278898,
+                "stop": 1795633177.2524946,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_residual_certificates():\n>       CHECKS['residual_certificates']()\n\ntest_outputs.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def mixture_certificates():\n        c,a,q,_,truth,av,qv,tr,va=data()\n        inv={v:k for k,v in truth['mapping'].items()}\n        weight=1/np.sqrt(np.maximum(av.mean(axis=1),1))\n        r=read('queries.tsv')\n        for row in r.itertuples():\n            assert row.donor_1 in inv and (row.donor_2=='' or row.donor_2 in inv)\n            fraction=float(row.fraction_1)\n            assert .5<=fraction<=1\n            i=a.columns.get_loc(inv[row.donor_1])\n            pred=av[:,i].copy()\n            if row.donor_2:\n                assert row.donor_1!=row.donor_2\n                j=a.columns.get_loc(inv[row.donor_2]);pred=fraction*pred+(1-fraction)*av[:,j]\n            else:assert fraction==1\n            k=q.columns.get_loc(row.query_id)\n            for mask,field in [(tr,'discovery_residual'),(va,'validation_residual')]:\n                expect=np.sqrt(np.sum(((qv[mask,k]-pred[mask])*weight[mask])**2)/np.sum((qv[mask,k]*weight[mask])**2))\n>               assert abs(float(getattr(row,field))-expect)<2e-6,(row.query_id,field)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AssertionError: ('Q000', 'discovery_residual')\n\nchecks.py:124: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_support_optimality",
+                "status": "passed",
+                "duration": 0.6521233230000689,
+                "start": 1795633177.252856,
+                "stop": 1795633177.9055827,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

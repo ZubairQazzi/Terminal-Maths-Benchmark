@@ -1,0 +1,143 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 3,
+            "failed": 8,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795633043.856831,
+            "stop": 1795633049.1395552
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 3.702859935999868,
+                "start": 1795633044.3556101,
+                "stop": 1795633048.108717,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_schema():\n>       CHECKS['schema']()\n\ntest_outputs.py:5: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def schema():\n        c,a,q,_,_,_,_,_,_=data()\n        m=read('alignment.tsv');r=read('queries.tsv');audit=read('audit.json')\n        assert list(m.columns)==['atlas_id','sample_id','discovery_correlation','validation_correlation','validation_margin']\n        assert list(r.columns)==['query_id','classification','donor_1','donor_2','fraction_1','discovery_residual','validation_residual']\n        assert len(m)==len(a.columns) and set(m.atlas_id)==set(a.columns) and m.atlas_id.is_unique\n        assert len(r)==len(q.columns) and set(r.query_id)==set(q.columns) and r.query_id.is_unique\n>       assert set(m.sample_id)==set(c.columns) and m.sample_id.is_unique\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError\n\nchecks.py:53: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_physical_audit",
+                "status": "passed",
+                "duration": 0.10434842899996966,
+                "start": 1795633048.1091342,
+                "stop": 1795633048.213826,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_biological_limits",
+                "status": "passed",
+                "duration": 0.0007826590000377109,
+                "start": 1795633048.2141988,
+                "stop": 1795633048.2153187,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_sample_identity",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0026313409999829673,
+                "start": 1795633048.2156131,
+                "stop": 1795633048.2304668,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_sample_identity():\n>       CHECKS['sample_identity']()\n\ntest_outputs.py:14: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def alignment():\n        m=read('alignment.tsv');truth=data()[4]['mapping']\n>       assert dict(zip(m.atlas_id,m.sample_id))==truth,'Sample provenance mismatched'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: Sample provenance mismatched\n\nchecks.py:77: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_discovery_alignment_scores",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.07502284100007728,
+                "start": 1795633048.2308395,
+                "stop": 1795633048.3238058,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_discovery_alignment_scores():\n>       CHECKS['discovery_alignment_scores']()\n\ntest_outputs.py:17: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ndiscovery = True\n\n    def alignment_scores(discovery):\n        c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')\n        score=correlations(tr if discovery else va)\n        for row in m.itertuples():\n            i=c.columns.get_loc(row.sample_id);j=a.columns.get_loc(row.atlas_id)\n            expect=float(score[i,j]);actual=row.discovery_correlation if discovery else row.validation_correlation\n>           assert abs(float(actual)-expect)<2e-6\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AssertionError\n\nchecks.py:85: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_heldout_identity_certificates",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.07251526299990019,
+                "start": 1795633048.324182,
+                "stop": 1795633048.4146855,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_heldout_identity_certificates():\n>       CHECKS['heldout_identity_certificates']()\n\ntest_outputs.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ndiscovery = False\n\n    def alignment_scores(discovery):\n        c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')\n        score=correlations(tr if discovery else va)\n        for row in m.itertuples():\n            i=c.columns.get_loc(row.sample_id);j=a.columns.get_loc(row.atlas_id)\n            expect=float(score[i,j]);actual=row.discovery_correlation if discovery else row.validation_correlation\n>           assert abs(float(actual)-expect)<2e-6\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AssertionError\n\nchecks.py:85: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_pure_aliquots",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0033318270000108896,
+                "start": 1795633048.4151092,
+                "stop": 1795633048.4362454,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_pure_aliquots():\n>       CHECKS['pure_aliquots']()\n\ntest_outputs.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nkind = 'pure'\n\n    def query_truth(kind):\n        r=read('queries.tsv').set_index('query_id')\n        truth=data()[4]['queries']\n        for t in truth:\n            if t['class']!=kind:continue\n            row=r.loc[t['query_id']]\n            assert row.classification==kind,(t['query_id'],kind,row.classification)\n            if kind=='unsupported':continue\n            if kind=='pure':\n>               assert row.donor_1==t['donors'][0] and row.donor_2=='' and abs(float(row.fraction_1)-1)<1e-9\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AssertionError\n\nchecks.py:100: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_two_source_aliquots",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0032719360001465247,
+                "start": 1795633048.4366448,
+                "stop": 1795633048.4576979,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_two_source_aliquots():\n>       CHECKS['two_source_aliquots']()\n\ntest_outputs.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nkind = 'pair'\n\n    def query_truth(kind):\n        r=read('queries.tsv').set_index('query_id')\n        truth=data()[4]['queries']\n        for t in truth:\n            if t['class']!=kind:continue\n            row=r.loc[t['query_id']]\n>           assert row.classification==kind,(t['query_id'],kind,row.classification)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^\nE           AssertionError: ('Q002', 'pair', 'pure')\n\nchecks.py:97: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_open_set_rejection",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0032926769999903627,
+                "start": 1795633048.4580767,
+                "stop": 1795633048.4792874,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_open_set_rejection():\n>       CHECKS['open_set_rejection']()\n\ntest_outputs.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nchecks.py:151: in <lambda>\n    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}\n                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nkind = 'unsupported'\n\n    def query_truth(kind):\n        r=read('queries.tsv').set_index('query_id')\n        truth=data()[4]['queries']\n        for t in truth:\n            if t['class']!=kind:continue\n            row=r.loc[t['query_id']]\n>           assert row.classification==kind,(t['query_id'],kind,row.classification)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^\nE           AssertionError: ('Q010', 'unsupported', 'pure')\n\nchecks.py:97: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_residual_certificates",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.011075495999875784,
+                "start": 1795633048.4796817,
+                "stop": 1795633048.5043538,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_residual_certificates():\n>       CHECKS['residual_certificates']()\n\ntest_outputs.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def mixture_certificates():\n        c,a,q,_,truth,av,qv,tr,va=data()\n        inv={v:k for k,v in truth['mapping'].items()}\n        weight=1/np.sqrt(np.maximum(av.mean(axis=1),1))\n        r=read('queries.tsv')\n        for row in r.itertuples():\n            assert row.donor_1 in inv and (row.donor_2=='' or row.donor_2 in inv)\n            fraction=float(row.fraction_1)\n            assert .5<=fraction<=1\n            i=a.columns.get_loc(inv[row.donor_1])\n            pred=av[:,i].copy()\n            if row.donor_2:\n                assert row.donor_1!=row.donor_2\n                j=a.columns.get_loc(inv[row.donor_2]);pred=fraction*pred+(1-fraction)*av[:,j]\n            else:assert fraction==1\n            k=q.columns.get_loc(row.query_id)\n            for mask,field in [(tr,'discovery_residual'),(va,'validation_residual')]:\n                expect=np.sqrt(np.sum(((qv[mask,k]-pred[mask])*weight[mask])**2)/np.sum((qv[mask,k]*weight[mask])**2))\n>               assert abs(float(getattr(row,field))-expect)<2e-6,(row.query_id,field)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AssertionError: ('Q000', 'discovery_residual')\n\nchecks.py:124: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_support_optimality",
+                "status": "passed",
+                "duration": 0.6340995780000185,
+                "start": 1795633048.504799,
+                "stop": 1795633049.1392426,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

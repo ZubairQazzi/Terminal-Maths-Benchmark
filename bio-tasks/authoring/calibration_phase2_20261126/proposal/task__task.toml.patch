@@ -1,0 +1,11 @@
+--- frozen-v0.1.1/task/task.toml
++++ proposed-v0.2.0/task/task.toml
+@@ -3,7 +3,7 @@
+ artifacts = ["/app/submission"]
+ [task]
+ name = "terminal-bench-science/transcript-provenance-audit"
+-version = "0.1.1"
++version = "0.2.0"
+ description = "Recover cross-representation RNA-seq provenance and reject unsupported technical mixtures using disjoint gene validation."
+ authors = [{name = "Local AI-assisted biology project"}]
+ keywords = ["biology", "transcriptomics", "sample-provenance", "compositional-deconvolution", "held-out-validation"]

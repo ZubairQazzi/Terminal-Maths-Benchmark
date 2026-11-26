@@ -1,0 +1,13 @@
+{
+  "purpose": "Explicit synthetic transformed-expression controls, not observations from GSE273600",
+  "cases": [
+    {"case_id":"positive_specific","groups":{"dmr_treated":[2.99,3,3.01],"dmr_control":[0.99,1,1.01],"parent_treated":[1.99,2,2.01],"parent_control":[1.99,2,2.01]}},
+    {"case_id":"negative_specific","groups":{"dmr_treated":[0.99,1,1.01],"dmr_control":[2.99,3,3.01],"parent_treated":[1.99,2,2.01],"parent_control":[1.99,2,2.01]}},
+    {"case_id":"parent_not_equivalent","groups":{"dmr_treated":[4.99,5,5.01],"dmr_control":[0.99,1,1.01],"parent_treated":[2.99,3,3.01],"parent_control":[0.99,1,1.01]}},
+    {"case_id":"small_dmr_effect","groups":{"dmr_treated":[1.19,1.2,1.21],"dmr_control":[0.99,1,1.01],"parent_treated":[1.99,2,2.01],"parent_control":[1.99,2,2.01]}},
+    {"case_id":"uncertain_parent","groups":{"dmr_treated":[2.99,3,3.01],"dmr_control":[0.99,1,1.01],"parent_treated":[0,2,4],"parent_control":[0,2,4]}},
+    {"case_id":"zero_variance_specific","groups":{"dmr_treated":[3,3,3],"dmr_control":[1,1,1],"parent_treated":[2,2,2],"parent_control":[2,2,2]}},
+    {"case_id":"zero_variance_null","groups":{"dmr_treated":[1,1,1],"dmr_control":[1,1,1],"parent_treated":[2,2,2],"parent_control":[2,2,2]}},
+    {"case_id":"minimum_effect_boundary","groups":{"dmr_treated":[1.5,1.5,1.5],"dmr_control":[1,1,1],"parent_treated":[2,2,2],"parent_control":[2,2,2]}}
+  ]
+}

@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 10,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795632588.827483,
+            "stop": 1795632597.1648214
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_handoff",
+                "status": "passed",
+                "duration": 0.0011722359999453147,
+                "start": 1795632590.0899875,
+                "stop": 1795632590.0915961,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_fractional_representation_audit",
+                "status": "passed",
+                "duration": 3.619540499999971,
+                "start": 1795632590.0919735,
+                "stop": 1795632593.7119546,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "passed",
+                "duration": 0.04026729999998224,
+                "start": 1795632593.7123015,
+                "stop": 1795632593.7529452,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_04_matched_factorial_effects",
+                "status": "passed",
+                "duration": 1.6246465700000385,
+                "start": 1795632593.753304,
+                "stop": 1795632595.378359,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "passed",
+                "duration": 0.013582922000011877,
+                "start": 1795632595.3787322,
+                "stop": 1795632595.392669,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "passed",
+                "duration": 0.011188067000034607,
+                "start": 1795632595.393039,
+                "stop": 1795632595.4045553,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "passed",
+                "duration": 0.1637417009999922,
+                "start": 1795632595.4049158,
+                "stop": 1795632595.5690186,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_08_early_partial_identification",
+                "status": "passed",
+                "duration": 0.7469539759999293,
+                "start": 1795632595.569379,
+                "stop": 1795632596.3166587,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "passed",
+                "duration": 0.739175954000018,
+                "start": 1795632596.3170247,
+                "stop": 1795632597.056533,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_10_interpretation_limits",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.001706839000007676,
+                "start": 1795632597.0568917,
+                "stop": 1795632597.1500516,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\n\n    def test_10_interpretation_limits(expected):\n        report=json.loads(artifact('interpretation.json').read_text())\n        required={'matched_times':[4,8,16,24],'missing_control_times':[2],'early_result_type':'assumption_dependent_sensitivity_region','early_envelope_verified':False,'replicates_paired':False,'effective_length_offsets_available':False,'independent_expression_datasets':1,'certificate_count':int(expected['matched'].certified.sum())}\n        for key,value in required.items():\n>           assert type(report[key]) is type(value) and report[key]==value,f'Unsupported interpretation: {key}'\nE           AssertionError: Unsupported interpretation: early_envelope_verified\nE           assert (<class 'bool'> is <class 'bool'> and True == False)\nE            +  where <class 'bool'> = type(True)\nE            +  and   <class 'bool'> = type(False)\n\ntest_outputs.py:159: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "passed",
+                "duration": 0.013745178000021951,
+                "start": 1795632597.1504357,
+                "stop": 1795632597.1644752,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

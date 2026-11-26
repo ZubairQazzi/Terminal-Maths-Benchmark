@@ -1,0 +1,1031 @@
+{
+  "reviewer": "/root/qc_b",
+  "date": "2026-11-26",
+  "source_hash_checks": [
+    {
+      "path": "C:\\Users\\zubai\\Downloads\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "bytes": 13507950,
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "matches_original": true
+    },
+    {
+      "path": "F:\\rl\\bio\\shared-inputs\\original-read-only-data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "bytes": 13507950,
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "matches_original": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "bytes": 13507950,
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "matches_original": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "bytes": 13507950,
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "matches_original": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\data\\estimated_counts.tsv.gz",
+      "bytes": 13507950,
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "matches_original": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\data\\estimated_counts.tsv.gz",
+      "bytes": 13507950,
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "matches_original": true
+    },
+    {
+      "path": "C:\\Users\\zubai\\Downloads\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "bytes": 17851551,
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "matches_original": true
+    },
+    {
+      "path": "F:\\rl\\bio\\shared-inputs\\original-read-only-data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "bytes": 17851551,
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "matches_original": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "bytes": 17851551,
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "matches_original": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "bytes": 17851551,
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "matches_original": true
+    }
+  ],
+  "canonical_runtime_checks": [
+    {
+      "task": 1,
+      "relative_path": "environment/data/calibration_cases.json",
+      "sha256": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/data/GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/data/sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/Dockerfile",
+      "sha256": "40aa4db246093af793b8cbaca4e5abf156187111eb35494be534e476d9babd5c",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/requirements.txt",
+      "sha256": "387f8ace3bd07b6e01ad31ee4588365af63f7e55139e6fac2688442ed20dccfb",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/wheels/pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/wheels/pytz-2025.2-py2.py3-none-any.whl",
+      "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/wheels/scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/wheels/six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "environment/wheels/tzdata-2025.2-py2.py3-none-any.whl",
+      "sha256": "1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "instruction.md",
+      "sha256": "63c4fac3b4cbc4bbf64804bf0f86deed392eed1b70a930070af76ef746148f42",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "README.md",
+      "sha256": "7f790dc93201a4934e4958d6ce92ad5a5712ea0adc89248b78177948bf094820",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "solution/solve.py",
+      "sha256": "714f29e53d4c05d7d464e8ddcb3099cf3419f489cc83367b8c5c4f2a9fa5ead0",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "solution/solve.sh",
+      "sha256": "3fda38bba7b8c457221739c5ed9004b6fb9dfbee259485fe6096c046010363fc",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "task.toml",
+      "sha256": "01dbb8d306a2a2f13147c749727654339654ecd63a9df54045f3ffaa2f64ea93",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/data/calibration_cases.json",
+      "sha256": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/data/GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/data/sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/Dockerfile",
+      "sha256": "8a06e2a5d311bea09c2440f063925291a61e066dabc339d386e7d813ee7d8e65",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/requirements.txt",
+      "sha256": "63efbf8ae6dd099d39e05f12a72cbcbb4865ebc4b6040cfd73060c2ac77f3051",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/test.sh",
+      "sha256": "b691e721cf008ddf0715c6a730c71c29949ba1ff97e4f3c9892b6821c9aefe5f",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/test_outputs.py",
+      "sha256": "7c7a4f08f88adf89f9c421e9ae65fab328ce8d9695a919f70d4f8b631cc7f791",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/iniconfig-2.3.0-py3-none-any.whl",
+      "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/packaging-25.0-py3-none-any.whl",
+      "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/pluggy-1.6.0-py3-none-any.whl",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/pygments-2.19.2-py3-none-any.whl",
+      "sha256": "86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/pytz-2025.2-py2.py3-none-any.whl",
+      "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "canonical_matches": true
+    },
+    {
+      "task": 1,
+      "relative_path": "tests/wheels/tzdata-2025.2-py2.py3-none-any.whl",
+      "sha256": "1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/data/atlas_tpm.tsv.gz",
+      "sha256": "647f15ee54605a066706316a73e8063e688b46c8d5d1b21bd094ca487abfd8be",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/data/estimated_counts.tsv.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/data/genes.tsv",
+      "sha256": "77cba0f2d4fe61afbaa4d6befe1a6b457e95b91c4eef689c87f41f6160e34ffa",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/data/provenance.json",
+      "sha256": "6612d5bd46e7061a21bf3509a9aef733485f449d29f07331f7ce79281021bff3",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/data/query_tpm.tsv.gz",
+      "sha256": "930e8535f1e097c8c91817a117cd6fabb92cdc813d34a08ec8f9dfecfa6a45b4",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/data/sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/Dockerfile",
+      "sha256": "e80ded5c42dff40bc051f6412a6b6b5b83bf7949d4772ec9abffa5552800dbfc",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/requirements.txt",
+      "sha256": "688345679704614b7eb345e515dc49904d2f257cd838479532826ff7b75d200d",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/packaging-26.4-py3-none-any.whl",
+      "sha256": "81383611a09c1bc0b08b76e0fd5829d7c6824c65b27a6aee339da133f4233ea2",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/pluggy-1.7.0-py3-none-any.whl",
+      "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/python_dateutil-4.0.0-py3-none-any.whl",
+      "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/pytz-2026.6-py2.py3-none-any.whl",
+      "sha256": "7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "environment/wheels/tzdata-2026.6-py2.py3-none-any.whl",
+      "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "instruction.md",
+      "sha256": "c3a750338e3525cb78b18f1964f5c0b28b113d1f8ba4536c7164e4856ab88869",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "README.md",
+      "sha256": "a5b88a5a667454618052054c907a315940efe8e1b4c5d545b90fa805fff3cce9",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "solution/solve.py",
+      "sha256": "c978686a48799f08d801acfdade2c3aa857fbcd2352a6191ca922534e9e0dad5",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "solution/solve.sh",
+      "sha256": "4ac1891db3870f37b3a223ffdb3cc825af30bf860f7201d8b8a7240205530263",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "task.toml",
+      "sha256": "02ec78ea1b5220c6c5d299402beeda5a7d02a0c5b68e126762e356844f1de450",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/checks.py",
+      "sha256": "9454568fc031516b7988c1413451f8b1977f74100472e9bf8b1ff04caffe68b9",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/data/atlas_tpm.tsv.gz",
+      "sha256": "647f15ee54605a066706316a73e8063e688b46c8d5d1b21bd094ca487abfd8be",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/data/estimated_counts.tsv.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/data/genes.tsv",
+      "sha256": "77cba0f2d4fe61afbaa4d6befe1a6b457e95b91c4eef689c87f41f6160e34ffa",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/data/provenance.json",
+      "sha256": "6612d5bd46e7061a21bf3509a9aef733485f449d29f07331f7ce79281021bff3",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/data/query_tpm.tsv.gz",
+      "sha256": "930e8535f1e097c8c91817a117cd6fabb92cdc813d34a08ec8f9dfecfa6a45b4",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/data/sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/Dockerfile",
+      "sha256": "8bc8c3a226af38cf15d589c368e3bbc14f817a6fba6798c9d44ec0db946abd75",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/fixture_truth.json",
+      "sha256": "e010001b415a7201d127fbfa83572d942fc7e84ea629efa9c4ec824f18477db9",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/requirements.txt",
+      "sha256": "688345679704614b7eb345e515dc49904d2f257cd838479532826ff7b75d200d",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/test.sh",
+      "sha256": "b691e721cf008ddf0715c6a730c71c29949ba1ff97e4f3c9892b6821c9aefe5f",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/test_outputs.py",
+      "sha256": "3d57036aa3f82d81f1ace355d8cb316ec3326d91703c3e4499ae41687bc0c46e",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/packaging-26.4-py3-none-any.whl",
+      "sha256": "81383611a09c1bc0b08b76e0fd5829d7c6824c65b27a6aee339da133f4233ea2",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/pluggy-1.7.0-py3-none-any.whl",
+      "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/python_dateutil-4.0.0-py3-none-any.whl",
+      "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/pytz-2026.6-py2.py3-none-any.whl",
+      "sha256": "7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "canonical_matches": true
+    },
+    {
+      "task": 2,
+      "relative_path": "tests/wheels/tzdata-2026.6-py2.py3-none-any.whl",
+      "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+      "canonical_matches": true
+    }
+  ],
+  "build_contexts": [
+    {
+      "task": 1,
+      "context": "F:\\rl\\bio\\biology-task-1\\task\\environment",
+      "files": [
+        {
+          "path": "data/calibration_cases.json",
+          "bytes": 1386,
+          "sha256": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+          "symlink": false
+        },
+        {
+          "path": "data/GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+          "bytes": 13507950,
+          "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+          "symlink": false
+        },
+        {
+          "path": "data/GSE273600_Control_Conditions_TPMs.txt.gz",
+          "bytes": 17851551,
+          "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+          "symlink": false
+        },
+        {
+          "path": "data/sample_metadata.csv",
+          "bytes": 11951,
+          "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+          "symlink": false
+        },
+        {
+          "path": "Dockerfile",
+          "bytes": 597,
+          "sha256": "40aa4db246093af793b8cbaca4e5abf156187111eb35494be534e476d9babd5c",
+          "symlink": false
+        },
+        {
+          "path": "requirements.txt",
+          "bytes": 168,
+          "sha256": "387f8ace3bd07b6e01ad31ee4588365af63f7e55139e6fac2688442ed20dccfb",
+          "symlink": false
+        },
+        {
+          "path": "wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 16527618,
+          "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+          "symlink": false,
+          "license_metadata": [
+            "License: Copyright (c) 2005-2024, NumPy Developers.",
+            "Classifier: License :: OSI Approved :: BSD License"
+          ],
+          "embedded_license_files": [
+            "numpy/ma/LICENSE",
+            "numpy/random/LICENSE.md",
+            "numpy/_core/include/numpy/random/LICENSE.txt",
+            "numpy-2.2.6.dist-info/LICENSE.txt"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 12739445,
+          "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+          "symlink": false,
+          "license_metadata": [
+            "License: BSD 3-Clause License",
+            "Classifier: License :: OSI Approved :: BSD License"
+          ],
+          "embedded_license_files": [
+            "pandas-2.2.3.dist-info/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+          "bytes": 229892,
+          "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+          "symlink": false,
+          "license_metadata": [
+            "License: Dual License",
+            "Classifier: License :: OSI Approved :: BSD License",
+            "Classifier: License :: OSI Approved :: Apache Software License",
+            "License-File: LICENSE"
+          ],
+          "embedded_license_files": [
+            "python_dateutil-2.9.0.post0.dist-info/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/pytz-2025.2-py2.py3-none-any.whl",
+          "bytes": 509225,
+          "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+          "symlink": false,
+          "license_metadata": [
+            "License: MIT",
+            "Classifier: License :: OSI Approved :: MIT License",
+            "License-File: LICENSE.txt"
+          ],
+          "embedded_license_files": [
+            "pytz-2025.2.dist-info/LICENSE.txt"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 37309455,
+          "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+          "symlink": false,
+          "license_metadata": [
+            "License: Copyright (c) 2001-2002 Enthought, Inc. 2003-2024, SciPy Developers.",
+            "Classifier: License :: OSI Approved :: BSD License"
+          ],
+          "embedded_license_files": [
+            "scipy-1.15.3.dist-info/LICENSE.txt",
+            "scipy/_lib/_uarray/LICENSE",
+            "scipy/sparse/linalg/_eigen/arpack/COPYING",
+            "scipy/fft/_pocketfft/LICENSE.md",
+            "scipy/spatial/qhull_src/COPYING.txt"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/six-1.17.0-py2.py3-none-any.whl",
+          "bytes": 11050,
+          "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+          "symlink": false,
+          "license_metadata": [
+            "License: MIT",
+            "Classifier: License :: OSI Approved :: MIT License",
+            "License-File: LICENSE"
+          ],
+          "embedded_license_files": [
+            "six-1.17.0.dist-info/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/tzdata-2025.2-py2.py3-none-any.whl",
+          "bytes": 347839,
+          "sha256": "1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8",
+          "symlink": false,
+          "license_metadata": [
+            "License: Apache-2.0",
+            "Classifier: License :: OSI Approved :: Apache Software License",
+            "License-File: LICENSE",
+            "License-File: licenses/LICENSE_APACHE"
+          ],
+          "embedded_license_files": [
+            "tzdata-2025.2.dist-info/licenses/LICENSE",
+            "tzdata-2025.2.dist-info/licenses/licenses/LICENSE_APACHE"
+          ],
+          "suspicious_private_names": []
+        }
+      ],
+      "private_oracle_or_fixture_paths": []
+    },
+    {
+      "task": 2,
+      "context": "F:\\rl\\bio\\biology-task-2\\task\\environment",
+      "files": [
+        {
+          "path": "data/atlas_tpm.tsv.gz",
+          "bytes": 24437857,
+          "sha256": "647f15ee54605a066706316a73e8063e688b46c8d5d1b21bd094ca487abfd8be",
+          "symlink": false
+        },
+        {
+          "path": "data/estimated_counts.tsv.gz",
+          "bytes": 13507950,
+          "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+          "symlink": false
+        },
+        {
+          "path": "data/genes.tsv",
+          "bytes": 2376881,
+          "sha256": "77cba0f2d4fe61afbaa4d6befe1a6b457e95b91c4eef689c87f41f6160e34ffa",
+          "symlink": false
+        },
+        {
+          "path": "data/provenance.json",
+          "bytes": 754,
+          "sha256": "6612d5bd46e7061a21bf3509a9aef733485f449d29f07331f7ce79281021bff3",
+          "symlink": false
+        },
+        {
+          "path": "data/query_tpm.tsv.gz",
+          "bytes": 8135099,
+          "sha256": "930e8535f1e097c8c91817a117cd6fabb92cdc813d34a08ec8f9dfecfa6a45b4",
+          "symlink": false
+        },
+        {
+          "path": "data/sample_metadata.csv",
+          "bytes": 11951,
+          "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+          "symlink": false
+        },
+        {
+          "path": "Dockerfile",
+          "bytes": 614,
+          "sha256": "e80ded5c42dff40bc051f6412a6b6b5b83bf7949d4772ec9abffa5552800dbfc",
+          "symlink": false
+        },
+        {
+          "path": "requirements.txt",
+          "bytes": 1309,
+          "sha256": "688345679704614b7eb345e515dc49904d2f257cd838479532826ff7b75d200d",
+          "symlink": false
+        },
+        {
+          "path": "wheels/colorama-0.4.6-py2.py3-none-any.whl",
+          "bytes": 25335,
+          "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+          "symlink": false,
+          "license_metadata": [
+            "License-File: LICENSE.txt",
+            "Classifier: License :: OSI Approved :: BSD License"
+          ],
+          "embedded_license_files": [
+            "colorama-0.4.6.dist-info/licenses/LICENSE.txt"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/iniconfig-2.3.1-py3-none-any.whl",
+          "bytes": 7552,
+          "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+          "symlink": false,
+          "license_metadata": [
+            "License-Expression: MIT",
+            "License-File: LICENSE"
+          ],
+          "embedded_license_files": [
+            "iniconfig-2.3.1.dist-info/licenses/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 16527618,
+          "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+          "symlink": false,
+          "license_metadata": [
+            "License: Copyright (c) 2005-2024, NumPy Developers.",
+            "Classifier: License :: OSI Approved :: BSD License"
+          ],
+          "embedded_license_files": [
+            "numpy/ma/LICENSE",
+            "numpy/random/LICENSE.md",
+            "numpy/_core/include/numpy/random/LICENSE.txt",
+            "numpy-2.2.6.dist-info/LICENSE.txt"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/packaging-26.4-py3-none-any.whl",
+          "bytes": 140049,
+          "sha256": "81383611a09c1bc0b08b76e0fd5829d7c6824c65b27a6aee339da133f4233ea2",
+          "symlink": false,
+          "license_metadata": [
+            "License-Expression: Apache-2.0 OR BSD-2-Clause",
+            "License-File: LICENSE",
+            "License-File: LICENSE.APACHE",
+            "License-File: LICENSE.BSD"
+          ],
+          "embedded_license_files": [
+            "packaging/licenses/__init__.py",
+            "packaging/licenses/_spdx.py",
+            "packaging-26.4.dist-info/licenses/LICENSE",
+            "packaging-26.4.dist-info/licenses/LICENSE.APACHE",
+            "packaging-26.4.dist-info/licenses/LICENSE.BSD"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 12739445,
+          "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+          "symlink": false,
+          "license_metadata": [
+            "License: BSD 3-Clause License",
+            "Classifier: License :: OSI Approved :: BSD License"
+          ],
+          "embedded_license_files": [
+            "pandas-2.2.3.dist-info/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/pluggy-1.7.0-py3-none-any.whl",
+          "bytes": 27082,
+          "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+          "symlink": false,
+          "license_metadata": [
+            "License: MIT",
+            "Classifier: License :: OSI Approved :: MIT License",
+            "License-File: LICENSE"
+          ],
+          "embedded_license_files": [
+            "pluggy-1.7.0.dist-info/licenses/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/pygments-2.21.0-py3-none-any.whl",
+          "bytes": 1250147,
+          "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+          "symlink": false,
+          "license_metadata": [
+            "License-Expression: BSD-2-Clause",
+            "License-File: AUTHORS",
+            "License-File: LICENSE"
+          ],
+          "embedded_license_files": [
+            "pygments-2.21.0.dist-info/licenses/AUTHORS",
+            "pygments-2.21.0.dist-info/licenses/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/pytest-8.4.1-py3-none-any.whl",
+          "bytes": 365474,
+          "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+          "symlink": false,
+          "license_metadata": [
+            "License: MIT",
+            "Classifier: License :: OSI Approved :: MIT License",
+            "License-File: LICENSE",
+            "License-File: AUTHORS"
+          ],
+          "embedded_license_files": [
+            "pytest-8.4.1.dist-info/licenses/AUTHORS",
+            "pytest-8.4.1.dist-info/licenses/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/pytest_json_ctrf-0.3.5-py3-none-any.whl",
+          "bytes": 6837,
+          "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+          "symlink": false,
+          "license_metadata": [
+            "Classifier: License :: OSI Approved :: MIT License"
+          ],
+          "embedded_license_files": [],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/python_dateutil-4.0.0-py3-none-any.whl",
+          "bytes": 92853,
+          "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
+          "symlink": false,
+          "license_metadata": [
+            "License-Expression: BSD-3-Clause",
+            "License-File: AUTHORS.md",
+            "License-File: LICENSE"
+          ],
+          "embedded_license_files": [
+            "python_dateutil-4.0.0.dist-info/licenses/AUTHORS.md",
+            "python_dateutil-4.0.0.dist-info/licenses/LICENSE"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/pytz-2026.6-py2.py3-none-any.whl",
+          "bytes": 506321,
+          "sha256": "7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3",
+          "symlink": false,
+          "license_metadata": [
+            "License: MIT",
+            "Classifier: License :: OSI Approved :: MIT License",
+            "License-File: LICENSE.txt"
+          ],
+          "embedded_license_files": [
+            "pytz-2026.6.dist-info/LICENSE.txt"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 37309455,
+          "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+          "symlink": false,
+          "license_metadata": [
+            "License: Copyright (c) 2001-2002 Enthought, Inc. 2003-2024, SciPy Developers.",
+            "Classifier: License :: OSI Approved :: BSD License"
+          ],
+          "embedded_license_files": [
+            "scipy-1.15.3.dist-info/LICENSE.txt",
+            "scipy/_lib/_uarray/LICENSE",
+            "scipy/sparse/linalg/_eigen/arpack/COPYING",
+            "scipy/fft/_pocketfft/LICENSE.md",
+            "scipy/spatial/qhull_src/COPYING.txt"
+          ],
+          "suspicious_private_names": []
+        },
+        {
+          "path": "wheels/tzdata-2026.6-py2.py3-none-any.whl",
+          "bytes": 348210,
+          "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+          "symlink": false,
+          "license_metadata": [
+            "License: Apache-2.0",
+            "License-File: LICENSE",
+            "License-File: licenses/LICENSE_APACHE"
+          ],
+          "embedded_license_files": [
+            "tzdata-2026.6.dist-info/licenses/LICENSE",
+            "tzdata-2026.6.dist-info/licenses/licenses/LICENSE_APACHE"
+          ],
+          "suspicious_private_names": []
+        }
+      ],
+      "private_oracle_or_fixture_paths": []
+    }
+  ],
+  "all_checks_pass": true,
+  "scope": "Local source hashes, runtime/canonical identity and exact environment build-context inventory. Embedded software license metadata is recorded, not legal clearance."
+}

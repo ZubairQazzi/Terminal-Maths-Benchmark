@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 10,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795632386.7526321,
+            "stop": 1795632394.841979
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_handoff",
+                "status": "passed",
+                "duration": 0.0009382980000225416,
+                "start": 1795632387.99146,
+                "stop": 1795632387.9928093,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_fractional_representation_audit",
+                "status": "passed",
+                "duration": 3.514810434000026,
+                "start": 1795632387.9931307,
+                "stop": 1795632391.508568,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "passed",
+                "duration": 0.039986824999971304,
+                "start": 1795632391.5089433,
+                "stop": 1795632391.549355,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_04_matched_factorial_effects",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 1.5347083690000147,
+                "start": 1795632391.5497584,
+                "stop": 1795632393.1964626,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "expected = {'early':                                         treated_difference  ...  classification\ngene_id            treatment...solved\n\n[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}\nmatched =                                      dmr_effect  ...  certified\ngene_id            treatment time_h              ...  ...  -0.127359  ...      False\nENSG00000283696.1  Tg        24        0.271597  ...      False\n\n[249636 rows x 15 columns]\n\n    def test_04_matched_factorial_effects(expected,matched):\n>       for name in ['dmr_effect','parent_effect','interaction']:close(matched[name],expected['matched'][name])\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_outputs.py:129: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nactual = gene_id             treatment  time_h\nENSG00000000003.14  Dim        4        -0.342972\nENSG00000000419.12  Dim       ... 24       -0.127359\nENSG00000283696.1   Tg         24        0.271597\nName: interaction, Length: 249636, dtype: float64\nexpected = gene_id             treatment  time_h\nENSG00000000003.14  Dim        4        -0.259322\nENSG00000000419.12  Dim       ... 24       -0.121706\nENSG00000283696.1   Tg         24       -0.089128\nName: interaction, Length: 249636, dtype: float64\nprobability = False\n\n    def close(actual,expected,probability=False):\n        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)\n        assert np.isfinite(a).all(),'Nonfinite numerical submission'\n        tolerance=2e-7+2e-5*np.abs(e)\n        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)\n>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'\nE       AssertionError: Numerical certificate mismatch; maximum absolute error=12.865201163637755\nE       assert np.False_\nE        +  where np.False_ = <function all at 0x7a4f26d98870>(array([0.08364928, 0.03223352, 0.14375035, ..., 0.13456771, 0.00565261,\\n       0.36072448], shape=(249636,)) <= array([5.38644727e-06, 7.94719026e-07, 8.80909748e-06, ...,\\n       1.67845582e-06, 2.63412603e-06, 1.98255608e-06], shape=(249636,)))\nE        +    where <function all at 0x7a4f26d98870> = np.all\nE        +    and   array([0.08364928, 0.03223352, 0.14375035, ..., 0.13456771, 0.00565261,\\n       0.36072448], shape=(249636,)) = <ufunc 'absolute'>((array([-0.34297165, -0.00249757,  0.28670452, ...,  0.2084905 ,\\n       -0.12735891,  0.27159668], shape=(249636,)) - array([-0.25932236,  0.02973595,  0.43045487, ...,  0.07392279,\\n       -0.1217063 , -0.0891278 ], shape=(249636,))))\nE        +      where <ufunc 'absolute'> = np.abs\n\ntest_outputs.py:102: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "passed",
+                "duration": 0.011723399999993944,
+                "start": 1795632393.1967928,
+                "stop": 1795632393.208794,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "passed",
+                "duration": 0.009743850999996084,
+                "start": 1795632393.209125,
+                "stop": 1795632393.219134,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "passed",
+                "duration": 0.15192612999996413,
+                "start": 1795632393.219456,
+                "stop": 1795632393.371663,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_08_early_partial_identification",
+                "status": "passed",
+                "duration": 0.7078531189999637,
+                "start": 1795632393.3719594,
+                "stop": 1795632394.0801177,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "passed",
+                "duration": 0.7457306940000024,
+                "start": 1795632394.0805068,
+                "stop": 1795632394.8265743,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_10_interpretation_limits",
+                "status": "passed",
+                "duration": 0.001126531000011255,
+                "start": 1795632394.827015,
+                "stop": 1795632394.8283687,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "passed",
+                "duration": 0.012646020000005365,
+                "start": 1795632394.828686,
+                "stop": 1795632394.841631,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

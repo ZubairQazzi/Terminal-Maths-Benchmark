@@ -1,0 +1,68 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py ...F.......                                              [100%]
+
+=================================== FAILURES ===================================
+______________________ test_04_matched_factorial_effects _______________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+matched =                                      dmr_effect  ...  certified
+gene_id            treatment time_h              ...  ...   0.208490  ...      False
+ENSG00000283696.1  Tg        24       -0.127359  ...      False
+
+[249636 rows x 15 columns]
+
+    def test_04_matched_factorial_effects(expected,matched):
+>       for name in ['dmr_effect','parent_effect','interaction']:close(matched[name],expected['matched'][name])
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:129: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4         0.000000
+ENSG00000000419.12  Dim       ...  24        0.208490
+ENSG00000283696.1   Tg         24       -0.127359
+Name: dmr_effect, Length: 249636, dtype: float64
+expected = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4        -0.342972
+ENSG00000000419.12  Dim       ...  24       -0.127359
+ENSG00000283696.1   Tg         24        0.271597
+Name: dmr_effect, Length: 249636, dtype: float64
+probability = False
+
+    def close(actual,expected,probability=False):
+        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)
+        assert np.isfinite(a).all(),'Nonfinite numerical submission'
+        tolerance=2e-7+2e-5*np.abs(e)
+        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)
+>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'
+E       AssertionError: Numerical certificate mismatch; maximum absolute error=11.339585346296175
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x79e24a3935f0>(array([0.34297165, 0.34047408, 0.28920209, ..., 0.08909343, 0.3358494 ,\n       0.39895559], shape=(249636,)) <= array([7.05943296e-06, 2.49951359e-07, 5.93409042e-06, ...,\n       4.36980993e-06, 2.74717817e-06, 5.63193359e-06], shape=(249636,)))
+E        +    where <function all at 0x79e24a3935f0> = np.all
+E        +    and   array([0.34297165, 0.34047408, 0.28920209, ..., 0.08909343, 0.3358494 ,\n       0.39895559], shape=(249636,)) = <ufunc 'absolute'>((array([ 0.        , -0.34297165, -0.00249757, ...,  0.11939706,\n        0.2084905 , -0.12735891], shape=(249636,)) - array([-0.34297165, -0.00249757,  0.28670452, ...,  0.2084905 ,\n       -0.12735891,  0.27159668], shape=(249636,))))
+E        +      where <ufunc 'absolute'> = np.abs
+
+test_outputs.py:102: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_01_complete_handoff
+PASSED test_outputs.py::test_02_fractional_representation_audit
+PASSED test_outputs.py::test_03_unselected_complete_gene_universe
+PASSED test_outputs.py::test_05_heteroscedastic_uncertainty
+PASSED test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect
+PASSED test_outputs.py::test_07_joint_family_multiplicity
+PASSED test_outputs.py::test_08_early_partial_identification
+PASSED test_outputs.py::test_09_envelope_expansion_invariants
+PASSED test_outputs.py::test_10_interpretation_limits
+PASSED test_outputs.py::test_11_synthetic_positive_and_degenerate_controls
+FAILED test_outputs.py::test_04_matched_factorial_effects - AssertionError: N...
+========================= 1 failed, 10 passed in 8.07s =========================

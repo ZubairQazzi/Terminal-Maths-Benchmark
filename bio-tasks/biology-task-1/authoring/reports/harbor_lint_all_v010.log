@@ -1,0 +1,4 @@
+COMMAND ["C:\\Users\\zubai\\.local\\bin\\harbor.exe", "lint", "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope", "--select", "ALL", "--json"]
+[]
+
+EXIT 0 ELAPSED_SECONDS 3.265

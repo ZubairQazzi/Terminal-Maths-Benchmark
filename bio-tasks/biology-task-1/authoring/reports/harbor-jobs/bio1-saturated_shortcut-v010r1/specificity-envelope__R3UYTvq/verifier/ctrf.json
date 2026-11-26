@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 10,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795632501.145508,
+            "stop": 1795632508.9911304
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_handoff",
+                "status": "passed",
+                "duration": 0.0008903159999817944,
+                "start": 1795632502.3917305,
+                "stop": 1795632502.3929715,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_fractional_representation_audit",
+                "status": "passed",
+                "duration": 3.356134569000062,
+                "start": 1795632502.3932886,
+                "stop": 1795632505.749827,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "passed",
+                "duration": 0.03952628900003674,
+                "start": 1795632505.7501683,
+                "stop": 1795632505.790381,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_04_matched_factorial_effects",
+                "status": "passed",
+                "duration": 1.510447842000076,
+                "start": 1795632505.7907789,
+                "stop": 1795632507.301603,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "passed",
+                "duration": 0.013116496999998617,
+                "start": 1795632507.3019633,
+                "stop": 1795632507.315431,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "passed",
+                "duration": 0.011160210000014104,
+                "start": 1795632507.315774,
+                "stop": 1795632507.3272953,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "passed",
+                "duration": 0.15732243700006165,
+                "start": 1795632507.3276567,
+                "stop": 1795632507.4852817,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_08_early_partial_identification",
+                "status": "passed",
+                "duration": 0.7249662390000253,
+                "start": 1795632507.4856248,
+                "stop": 1795632508.2109253,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "passed",
+                "duration": 0.6486308689999873,
+                "start": 1795632508.2113056,
+                "stop": 1795632508.860267,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_10_interpretation_limits",
+                "status": "passed",
+                "duration": 0.0011378229999650102,
+                "start": 1795632508.8606646,
+                "stop": 1795632508.8620331,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.045765485000060835,
+                "start": 1795632508.8623173,
+                "stop": 1795632508.990669,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_11_synthetic_positive_and_degenerate_controls():\n        cases=json.loads((DATA/'calibration_cases.json').read_text())['cases']\n        rows=[]\n        for case in cases:\n            groups=[np.array(case['groups'][key],dtype=float) for key in ['dmr_treated','dmr_control','parent_treated','parent_control']]\n            means=[sum(values)/3 for values in groups]\n            vm=np.array([sum((values-means[k])**2)/6 for k,values in enumerate(groups)])\n            d=means[0]-means[1];a=means[2]-means[3];i=d-a\n            row=dict(case_id=case['case_id'],dmr_effect=d,parent_effect=a,interaction=i)\n            params={}\n            for label,select in [('dmr',[0,1]),('parent',[2,3]),('interaction',[0,1,2,3])]:\n                variance=sum(vm[select]);denominator=sum(vm[select]**2)/2\n                params[label]=(variance**.5,variance**2/denominator if denominator else 1e12)\n                row['se_'+label],row['df_'+label]=params[label]\n            sd,fd=params['dmr'];sa,fa=params['parent'];si,fi=params['interaction']\n            row['p_interaction']=2*stats.t.sf(abs(i)/si,fi) if si else float(i==0)\n            row['p_parent_equivalence']=max(stats.t.sf((a+.3)/sa,fa),stats.t.sf((.3-a)/sa,fa)) if sa else float(abs(a)>=.3)\n            row['p_dmr_minimum']=min(1.,2*stats.t.sf((abs(d)-.5)/sd,fd)) if sd else float(abs(d)<=.5)\n            row['p_joint']=max(row['p_interaction'],row['p_parent_equivalence'],row['p_dmr_minimum'])\n            rows.append(row)\n        ref=pd.DataFrame(rows).set_index('case_id');ref['q_joint']=stats.false_discovery_control(ref.p_joint,method='by');ref['certified']=ref.q_joint<=.05\n        result=load_frame('calibration.tsv',['case_id'],ref)\n        for name in ref.columns:\n            if name=='certified':\n                assert np.array_equal(result[name].astype(str).str.lower().to_numpy(),np.where(ref[name],'true','false'))\n>           else:close(result[name],ref[name],name.startswith('p_') or name.startswith('q_'))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_outputs.py:186: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nactual = case_id\npositive_specific          1\nnegative_specific          1\nparent_not_equivalent      1\nsmall_dmr_effect       ...   1\nzero_variance_specific     1\nzero_variance_null         1\nminimum_effect_boundary    1\nName: q_joint, dtype: int64\nexpected = case_id\npositive_specific          0.000012\nnegative_specific          0.000012\nparent_not_equivalent      1.000000\nsm...ific     0.000000\nzero_variance_null         1.000000\nminimum_effect_boundary    1.000000\nName: q_joint, dtype: float64\nprobability = True\n\n    def close(actual,expected,probability=False):\n        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)\n        assert np.isfinite(a).all(),'Nonfinite numerical submission'\n        tolerance=2e-7+2e-5*np.abs(e)\n        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)\n>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'\nE       AssertionError: Numerical certificate mismatch; maximum absolute error=1.0\nE       assert np.False_\nE        +  where np.False_ = <function all at 0x7aaff63b57f0>(array([0.99998813, 0.99998813, 0.        , 0.        , 0.        ,\\n       1.        , 0.        , 0.        ]) <= array([2.00237431e-07, 2.00237431e-07, 2.02000000e-05, 2.02000000e-05,\\n       2.02000000e-05, 1.00000000e-10, 2.02000000e-05, 2.02000000e-05]))\nE        +    where <function all at 0x7aaff63b57f0> = np.all\nE        +    and   array([0.99998813, 0.99998813, 0.        , 0.        , 0.        ,\\n       1.        , 0.        , 0.        ]) = <ufunc 'absolute'>((array([1., 1., 1., 1., 1., 1., 1., 1.]) - array([1.18715507e-05, 1.18715507e-05, 1.00000000e+00, 1.00000000e+00,\\n       1.00000000e+00, 0.00000000e+00, 1.00000000e+00, 1.00000000e+00])))\nE        +      where <ufunc 'absolute'> = np.abs\n\ntest_outputs.py:102: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

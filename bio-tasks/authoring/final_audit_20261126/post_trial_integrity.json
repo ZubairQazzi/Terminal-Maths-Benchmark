@@ -1,0 +1,972 @@
+{
+  "utc": "2026-11-25T20:18:19.227130+00:00",
+  "pass": true,
+  "scope": "Frozen direct and canonical runtime file hashes, original downloads/shared inputs, pre-model evidence hashes, completed initial-run coverage and recorded configurable cache paths. This is integrity verification, not a new biological or originality certification.",
+  "checks": [
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\data\\calibration_cases.json",
+      "sha256": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\data\\sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\Dockerfile",
+      "sha256": "40aa4db246093af793b8cbaca4e5abf156187111eb35494be534e476d9babd5c",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\requirements.txt",
+      "sha256": "387f8ace3bd07b6e01ad31ee4588365af63f7e55139e6fac2688442ed20dccfb",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\wheels\\numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\wheels\\pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\wheels\\python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\wheels\\pytz-2025.2-py2.py3-none-any.whl",
+      "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\wheels\\scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\wheels\\six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\environment\\wheels\\tzdata-2025.2-py2.py3-none-any.whl",
+      "sha256": "1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md",
+      "sha256": "63c4fac3b4cbc4bbf64804bf0f86deed392eed1b70a930070af76ef746148f42",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\README.md",
+      "sha256": "7f790dc93201a4934e4958d6ce92ad5a5712ea0adc89248b78177948bf094820",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\solution\\solve.py",
+      "sha256": "714f29e53d4c05d7d464e8ddcb3099cf3419f489cc83367b8c5c4f2a9fa5ead0",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\solution\\solve.sh",
+      "sha256": "3fda38bba7b8c457221739c5ed9004b6fb9dfbee259485fe6096c046010363fc",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\task.toml",
+      "sha256": "01dbb8d306a2a2f13147c749727654339654ecd63a9df54045f3ffaa2f64ea93",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\data\\calibration_cases.json",
+      "sha256": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\data\\sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\Dockerfile",
+      "sha256": "8a06e2a5d311bea09c2440f063925291a61e066dabc339d386e7d813ee7d8e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\requirements.txt",
+      "sha256": "63efbf8ae6dd099d39e05f12a72cbcbb4865ebc4b6040cfd73060c2ac77f3051",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test.sh",
+      "sha256": "b691e721cf008ddf0715c6a730c71c29949ba1ff97e4f3c9892b6821c9aefe5f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py",
+      "sha256": "7c7a4f08f88adf89f9c421e9ae65fab328ce8d9695a919f70d4f8b631cc7f791",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\iniconfig-2.3.0-py3-none-any.whl",
+      "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\packaging-25.0-py3-none-any.whl",
+      "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\pluggy-1.6.0-py3-none-any.whl",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\pygments-2.19.2-py3-none-any.whl",
+      "sha256": "86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\pytz-2025.2-py2.py3-none-any.whl",
+      "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\task\\tests\\wheels\\tzdata-2025.2-py2.py3-none-any.whl",
+      "sha256": "1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\data\\calibration_cases.json",
+      "sha256": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\data\\sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\Dockerfile",
+      "sha256": "40aa4db246093af793b8cbaca4e5abf156187111eb35494be534e476d9babd5c",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\requirements.txt",
+      "sha256": "387f8ace3bd07b6e01ad31ee4588365af63f7e55139e6fac2688442ed20dccfb",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\wheels\\numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\wheels\\pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\wheels\\python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\wheels\\pytz-2025.2-py2.py3-none-any.whl",
+      "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\wheels\\scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\wheels\\six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\environment\\wheels\\tzdata-2025.2-py2.py3-none-any.whl",
+      "sha256": "1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\instruction.md",
+      "sha256": "63c4fac3b4cbc4bbf64804bf0f86deed392eed1b70a930070af76ef746148f42",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\README.md",
+      "sha256": "7f790dc93201a4934e4958d6ce92ad5a5712ea0adc89248b78177948bf094820",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\solution\\solve.py",
+      "sha256": "714f29e53d4c05d7d464e8ddcb3099cf3419f489cc83367b8c5c4f2a9fa5ead0",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\solution\\solve.sh",
+      "sha256": "3fda38bba7b8c457221739c5ed9004b6fb9dfbee259485fe6096c046010363fc",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\task.toml",
+      "sha256": "01dbb8d306a2a2f13147c749727654339654ecd63a9df54045f3ffaa2f64ea93",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\data\\calibration_cases.json",
+      "sha256": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\data\\sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\Dockerfile",
+      "sha256": "8a06e2a5d311bea09c2440f063925291a61e066dabc339d386e7d813ee7d8e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\requirements.txt",
+      "sha256": "63efbf8ae6dd099d39e05f12a72cbcbb4865ebc4b6040cfd73060c2ac77f3051",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\test.sh",
+      "sha256": "b691e721cf008ddf0715c6a730c71c29949ba1ff97e4f3c9892b6821c9aefe5f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\test_outputs.py",
+      "sha256": "7c7a4f08f88adf89f9c421e9ae65fab328ce8d9695a919f70d4f8b631cc7f791",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\iniconfig-2.3.0-py3-none-any.whl",
+      "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\packaging-25.0-py3-none-any.whl",
+      "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\pluggy-1.6.0-py3-none-any.whl",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\pygments-2.19.2-py3-none-any.whl",
+      "sha256": "86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\pytz-2025.2-py2.py3-none-any.whl",
+      "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests\\wheels\\tzdata-2025.2-py2.py3-none-any.whl",
+      "sha256": "1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\data\\atlas_tpm.tsv.gz",
+      "sha256": "647f15ee54605a066706316a73e8063e688b46c8d5d1b21bd094ca487abfd8be",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\data\\estimated_counts.tsv.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\data\\genes.tsv",
+      "sha256": "77cba0f2d4fe61afbaa4d6befe1a6b457e95b91c4eef689c87f41f6160e34ffa",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\data\\provenance.json",
+      "sha256": "6612d5bd46e7061a21bf3509a9aef733485f449d29f07331f7ce79281021bff3",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\data\\query_tpm.tsv.gz",
+      "sha256": "930e8535f1e097c8c91817a117cd6fabb92cdc813d34a08ec8f9dfecfa6a45b4",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\data\\sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\Dockerfile",
+      "sha256": "e80ded5c42dff40bc051f6412a6b6b5b83bf7949d4772ec9abffa5552800dbfc",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\requirements.txt",
+      "sha256": "688345679704614b7eb345e515dc49904d2f257cd838479532826ff7b75d200d",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\packaging-26.4-py3-none-any.whl",
+      "sha256": "81383611a09c1bc0b08b76e0fd5829d7c6824c65b27a6aee339da133f4233ea2",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\pluggy-1.7.0-py3-none-any.whl",
+      "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\python_dateutil-4.0.0-py3-none-any.whl",
+      "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\pytz-2026.6-py2.py3-none-any.whl",
+      "sha256": "7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\environment\\wheels\\tzdata-2026.6-py2.py3-none-any.whl",
+      "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\instruction.md",
+      "sha256": "c3a750338e3525cb78b18f1964f5c0b28b113d1f8ba4536c7164e4856ab88869",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\README.md",
+      "sha256": "a5b88a5a667454618052054c907a315940efe8e1b4c5d545b90fa805fff3cce9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\solution\\solve.py",
+      "sha256": "c978686a48799f08d801acfdade2c3aa857fbcd2352a6191ca922534e9e0dad5",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\solution\\solve.sh",
+      "sha256": "4ac1891db3870f37b3a223ffdb3cc825af30bf860f7201d8b8a7240205530263",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\task.toml",
+      "sha256": "02ec78ea1b5220c6c5d299402beeda5a7d02a0c5b68e126762e356844f1de450",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\checks.py",
+      "sha256": "9454568fc031516b7988c1413451f8b1977f74100472e9bf8b1ff04caffe68b9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\data\\atlas_tpm.tsv.gz",
+      "sha256": "647f15ee54605a066706316a73e8063e688b46c8d5d1b21bd094ca487abfd8be",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\data\\estimated_counts.tsv.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\data\\genes.tsv",
+      "sha256": "77cba0f2d4fe61afbaa4d6befe1a6b457e95b91c4eef689c87f41f6160e34ffa",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\data\\provenance.json",
+      "sha256": "6612d5bd46e7061a21bf3509a9aef733485f449d29f07331f7ce79281021bff3",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\data\\query_tpm.tsv.gz",
+      "sha256": "930e8535f1e097c8c91817a117cd6fabb92cdc813d34a08ec8f9dfecfa6a45b4",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\data\\sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\Dockerfile",
+      "sha256": "8bc8c3a226af38cf15d589c368e3bbc14f817a6fba6798c9d44ec0db946abd75",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\fixture_truth.json",
+      "sha256": "e010001b415a7201d127fbfa83572d942fc7e84ea629efa9c4ec824f18477db9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\requirements.txt",
+      "sha256": "688345679704614b7eb345e515dc49904d2f257cd838479532826ff7b75d200d",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\test.sh",
+      "sha256": "b691e721cf008ddf0715c6a730c71c29949ba1ff97e4f3c9892b6821c9aefe5f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\test_outputs.py",
+      "sha256": "3d57036aa3f82d81f1ace355d8cb316ec3326d91703c3e4499ae41687bc0c46e",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\packaging-26.4-py3-none-any.whl",
+      "sha256": "81383611a09c1bc0b08b76e0fd5829d7c6824c65b27a6aee339da133f4233ea2",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\pluggy-1.7.0-py3-none-any.whl",
+      "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\python_dateutil-4.0.0-py3-none-any.whl",
+      "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\pytz-2026.6-py2.py3-none-any.whl",
+      "sha256": "7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\task\\tests\\wheels\\tzdata-2026.6-py2.py3-none-any.whl",
+      "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\data\\atlas_tpm.tsv.gz",
+      "sha256": "647f15ee54605a066706316a73e8063e688b46c8d5d1b21bd094ca487abfd8be",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\data\\estimated_counts.tsv.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\data\\genes.tsv",
+      "sha256": "77cba0f2d4fe61afbaa4d6befe1a6b457e95b91c4eef689c87f41f6160e34ffa",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\data\\provenance.json",
+      "sha256": "6612d5bd46e7061a21bf3509a9aef733485f449d29f07331f7ce79281021bff3",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\data\\query_tpm.tsv.gz",
+      "sha256": "930e8535f1e097c8c91817a117cd6fabb92cdc813d34a08ec8f9dfecfa6a45b4",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\data\\sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\Dockerfile",
+      "sha256": "e80ded5c42dff40bc051f6412a6b6b5b83bf7949d4772ec9abffa5552800dbfc",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\requirements.txt",
+      "sha256": "688345679704614b7eb345e515dc49904d2f257cd838479532826ff7b75d200d",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\packaging-26.4-py3-none-any.whl",
+      "sha256": "81383611a09c1bc0b08b76e0fd5829d7c6824c65b27a6aee339da133f4233ea2",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\pluggy-1.7.0-py3-none-any.whl",
+      "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\python_dateutil-4.0.0-py3-none-any.whl",
+      "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\pytz-2026.6-py2.py3-none-any.whl",
+      "sha256": "7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\environment\\wheels\\tzdata-2026.6-py2.py3-none-any.whl",
+      "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\instruction.md",
+      "sha256": "c3a750338e3525cb78b18f1964f5c0b28b113d1f8ba4536c7164e4856ab88869",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\README.md",
+      "sha256": "a5b88a5a667454618052054c907a315940efe8e1b4c5d545b90fa805fff3cce9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\solution\\solve.py",
+      "sha256": "c978686a48799f08d801acfdade2c3aa857fbcd2352a6191ca922534e9e0dad5",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\solution\\solve.sh",
+      "sha256": "4ac1891db3870f37b3a223ffdb3cc825af30bf860f7201d8b8a7240205530263",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\task.toml",
+      "sha256": "02ec78ea1b5220c6c5d299402beeda5a7d02a0c5b68e126762e356844f1de450",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\checks.py",
+      "sha256": "9454568fc031516b7988c1413451f8b1977f74100472e9bf8b1ff04caffe68b9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\data\\atlas_tpm.tsv.gz",
+      "sha256": "647f15ee54605a066706316a73e8063e688b46c8d5d1b21bd094ca487abfd8be",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\data\\estimated_counts.tsv.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\data\\genes.tsv",
+      "sha256": "77cba0f2d4fe61afbaa4d6befe1a6b457e95b91c4eef689c87f41f6160e34ffa",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\data\\provenance.json",
+      "sha256": "6612d5bd46e7061a21bf3509a9aef733485f449d29f07331f7ce79281021bff3",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\data\\query_tpm.tsv.gz",
+      "sha256": "930e8535f1e097c8c91817a117cd6fabb92cdc813d34a08ec8f9dfecfa6a45b4",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\data\\sample_metadata.csv",
+      "sha256": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\Dockerfile",
+      "sha256": "8bc8c3a226af38cf15d589c368e3bbc14f817a6fba6798c9d44ec0db946abd75",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\fixture_truth.json",
+      "sha256": "e010001b415a7201d127fbfa83572d942fc7e84ea629efa9c4ec824f18477db9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\requirements.txt",
+      "sha256": "688345679704614b7eb345e515dc49904d2f257cd838479532826ff7b75d200d",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\test.sh",
+      "sha256": "b691e721cf008ddf0715c6a730c71c29949ba1ff97e4f3c9892b6821c9aefe5f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\test_outputs.py",
+      "sha256": "3d57036aa3f82d81f1ace355d8cb316ec3326d91703c3e4499ae41687bc0c46e",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\packaging-26.4-py3-none-any.whl",
+      "sha256": "81383611a09c1bc0b08b76e0fd5829d7c6824c65b27a6aee339da133f4233ea2",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\pluggy-1.7.0-py3-none-any.whl",
+      "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\pytest-8.4.1-py3-none-any.whl",
+      "sha256": "539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\pytest_json_ctrf-0.3.5-py3-none-any.whl",
+      "sha256": "e82fd1d69be2f92385bc33540063e5ad7b17b36de67764c84f3ceb9815a895e9",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\python_dateutil-4.0.0-py3-none-any.whl",
+      "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\pytz-2026.6-py2.py3-none-any.whl",
+      "sha256": "7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests\\wheels\\tzdata-2026.6-py2.py3-none-any.whl",
+      "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\zubai\\Downloads\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\shared-inputs\\original-read-only-data\\GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+      "sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\zubai\\Downloads\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\shared-inputs\\original-read-only-data\\GSE273600_Control_Conditions_TPMs.txt.gz",
+      "sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+      "unchanged": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\final_audit_20261126\\independent_null_audit.json",
+      "sha256": "a34c889505604ae290639ebd473782d20dd6bc7c251b3ec145000b3f235287de",
+      "pre_model_evidence_preserved": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\final_audit_20261126\\adversarial_checker_audit.json",
+      "sha256": "2819c0ad560c0c4b8a39632b380076f9e1773a99a8d18f99f8301138235bc0de",
+      "pre_model_evidence_preserved": true
+    },
+    {
+      "path": "F:\\rl\\bio\\authoring\\final_audit_20261126\\provenance_originality\\provenance_rights_originality_audit.json",
+      "sha256": "3a17396a44eed5634d22310f41de26fe9befe6ec77a4aafe3b91b6be1501b702",
+      "pre_model_evidence_preserved": true
+    },
+    {
+      "path": "F:\\rl\\bio\\authoring\\final_audit_20261126\\runtime_isolation.json",
+      "sha256": "c4c5fd4fcc6d15b3de5a574976d85688589ba5b06cec85d178d75016f6c13c98",
+      "pre_model_evidence_preserved": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\final_audit_20261126\\seed_only_submission_probe.json",
+      "sha256": "2c66d3434aa3b650b612b99d17d4992f61f705d73918afbb8509fee9ec4d5864",
+      "pre_model_evidence_preserved": true
+    },
+    {
+      "path": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\final_audit_20261126\\trivial_submission_recheck.json",
+      "sha256": "c21b98b543847faabd89de2c6682b36a94180ec89239e3ce4a8908f9d9e40602",
+      "pre_model_evidence_preserved": true
+    }
+  ],
+  "preserved_attempts": 3,
+  "completed_diagnostic_trajectories_per_task": 1,
+  "scientific_requirements_changed": false,
+  "release_status": "NOT FULLY CLEARED",
+  "conditional_task2_seed_warning_retained": true
+}

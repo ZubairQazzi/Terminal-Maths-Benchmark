@@ -1,0 +1,294 @@
+{
+  "reviewer": "/root/qc_a",
+  "date": "2026-11-25",
+  "method": "Independent manual conceptual comparison against actual cached primary full text and task/code corpus. Predeclared dimension weights; not an embedding or plagiarism probability.",
+  "weights": {
+    "objective": 25,
+    "hypothesis": 10,
+    "statistical_formulation": 25,
+    "workflow": 20,
+    "output": 10,
+    "evaluation": 10
+  },
+  "rating_scale": {
+    "0": "distinct",
+    "0.25": "only high-level shared",
+    "0.5": "several task-specific elements shared",
+    "0.75": "mostly same",
+    "1": "equivalent"
+  },
+  "excluded": [
+    "Public GSE273600 data and metadata",
+    "standard biological terminology",
+    "established statistical formulas",
+    "Harbor boilerplate",
+    "generic parsing and table operations"
+  ],
+  "comparisons": [
+    {
+      "source": "Labbé et al. 2024, Specific activation of the integrated stress response uncovers regulation of central carbon metabolism and lipid droplet biogenesis",
+      "url": "https://doi.org/10.1038/s41467-024-52538-5",
+      "local_source": "bio/authoring/sources/labbe_bioc.txt",
+      "ratings": {
+        "objective": 0.5,
+        "hypothesis": 0.5,
+        "statistical_formulation": 0,
+        "workflow": 0.25,
+        "output": 0.25,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 25,
+      "matched_sections": [
+        "Results: Dmr-PERK provides specific and tunable control of ISR activation, lines 86-94",
+        "Fig. 1 e-g and Supplementary Fig. 1g, lines 62,94",
+        "Transcriptomics data analysis and time course analysis, lines 498-514"
+      ],
+      "rationale": {
+        "objective": "Both address whether dimerizer-associated transcription is construct-specific relative to parental controls; this is genuine task-specific overlap, not merely shared ISR vocabulary. Task 1 adds affirmative equivalence/minimum-effect certification and missing-UT2 sensitivity rather than identifying modules or sufficiency of downstream physiology.",
+        "hypothesis": "The expectation of a dimerizer response in the engineered line with little parental response is shared. The task's operational conjunction and conditional early bounds are absent from the article.",
+        "statistical_formulation": "Article uses baseline-relative time-course quadratic models and regression F tests; task uses contemporaneous independent-group Welch effects, TOST and a joint null plus sensitivity sets. Shared BY is an established method excluded from copying evidence.",
+        "workflow": "High-level expression preprocessing and time/condition contrasts overlap; task-specific uncertainty, universe and envelope sequence differ from published clustering, GO and multi-omics follow-up.",
+        "output": "Both contain gene expression effects over treatment/time at a high level; complete certificate statistics and early bound tables differ from heatmaps, modules and pathways.",
+        "evaluation": "No source benchmark evaluator or reusable numeric certificate package is present."
+      }
+    },
+    {
+      "source": "2026 ISRGDF15 published reanalysis",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13493765/fullTextXML",
+      "local_source": "bio/authoring/sources/gdf15_europe.txt",
+      "ratings": {
+        "objective": 0.25,
+        "hypothesis": 0.25,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 8.75,
+      "matched_sections": [
+        "Development of ISR index, lines 248-338",
+        "Validation with targeted/time-resolved ISR activation, lines 500-643",
+        "Limitations on specificity, lines 1027-1044",
+        "DmrPERK score methods, lines 1193-1199",
+        "gdf15-code/ISRGDF15_index/Data Processing Scripts/Figure_1G_Process_Data.R"
+      ],
+      "rationale": {
+        "objective": "Both discuss specificity of transcriptional ISR evidence, but the reanalysis validates a transferable factor score whereas Task 1 audits gene-level negative-control equivalence and unobserved controls.",
+        "hypothesis": "Only high-level overlap that targeted ISR activation elicits measurable transcriptional responses. No factor-score or GDF15-bait hypothesis is carried into Task 1.",
+        "statistical_formulation": "Factor analysis/PCA, fibroblast-derived regression scores and group comparisons differ from the task's operational conjunction and partial identification.",
+        "workflow": "No task-specific score training, standardization/loadings, cross-tissue transfer or GDF15 validation workflow is reused.",
+        "output": "Index scores and clinical/tissue analyses differ from full gene-level certificates and early ranges.",
+        "evaluation": "No equivalent task evaluator or ground-truth scheme."
+      }
+    },
+    {
+      "source": "Bioconductor tximport vignette",
+      "url": "https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html",
+      "local_source": "bio/authoring/sources/tximport.txt",
+      "ratings": {
+        "objective": 0,
+        "hypothesis": 0,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 0,
+      "matched_sections": [
+        "Estimated counts and effective lengths, lines 230-237",
+        "Original counts and offset versus bias-corrected counts, lines 880-932"
+      ],
+      "rationale": "The vignette establishes representation/length caveats that Task 1 acknowledges. Those are scientific constraints and standard preprocessing knowledge, excluded from substantive copying. Task 1 neither reproduces tximport nor claims offset-corrected molecular abundance."
+    },
+    {
+      "source": "Published RNA-seq gene workflow (rnaseqGene)",
+      "url": "https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html",
+      "local_source": "bio/authoring/sources/deseq2_workflow.txt",
+      "ratings": {
+        "objective": 0,
+        "hypothesis": 0,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 0,
+      "matched_sections": [
+        "Starting from count matrices and transcript quantification, lines 201-348",
+        "Count/abundance/effective-length assays, lines 811-879"
+      ],
+      "rationale": "Generic RNA-seq import, normalization, modeling and multiple testing are excluded. Task 1's fixed conjunction and conditional early control audit are distinct from the standard DESeq2 end-to-end tutorial."
+    },
+    {
+      "source": "Law et al. 2014 voom",
+      "url": "https://doi.org/10.1186/gb-2014-15-2-r29",
+      "local_source": "bio/authoring/sources/voom_full.txt",
+      "ratings": {
+        "objective": 0,
+        "hypothesis": 0,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 0,
+      "matched_sections": [
+        "Abstract and methods: log-count mean-variance weights and limma empirical Bayes"
+      ],
+      "rationale": "Sharing transformed counts and unequal-variance concerns is established methodology. Task 1 does not derive or evaluate voom precision weights, empirical Bayes models or gene-set methods."
+    },
+    {
+      "source": "SEQC Consortium 2014 RNA-seq accuracy/reproducibility benchmark",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4321899/",
+      "local_source": "bio/authoring/sources/seqc_benchmark_pmc.txt",
+      "ratings": {
+        "objective": 0,
+        "hypothesis": 0,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 0,
+      "matched_sections": [
+        "Abstract",
+        "Study design and Figure 1: known RNA mixtures and ERCC controls"
+      ],
+      "rationale": "SEQC benchmarks platform/pipeline accuracy using known mixtures and cross-site references. Task 1 evaluates a missing-control/specificity inferential audit. Generic known-control validation is not a duplicated scientific contribution."
+    },
+    {
+      "source": "TBScience diag-chipseq, pinned commit 48c413db15e310527d11863967db9bec5c3085f0",
+      "local_source": "bio/authoring/sources/terminal-bench/tasks/life-sciences/biology/diag-chipseq/instruction.md and solution/tests",
+      "ratings": {
+        "objective": 0.25,
+        "hypothesis": 0,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0.25,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 8.75,
+      "matched_sections": [
+        "Externally corrected global/peak-level perturbation effects",
+        "Unchanged is not proof of equality paragraph",
+        "Three result tables and hidden fixture scoring"
+      ],
+      "rationale": "Closest biology task at the high level of quantitative perturbation-effect audit and continuous per-feature effects. It uses paired blocks, external ChIP references and synthetic truth; Task 1 has unpaired RNA libraries, no external reference, affirmative equivalence and missing-time sensitivity. Standard statistical warnings and table checks are excluded."
+    },
+    {
+      "source": "TBScience genomic-model-ranking and other biology tasks, pinned commit 48c413db15e310527d11863967db9bec5c3085f0",
+      "local_source": "bio/authoring/sources/terminal-bench/tasks/life-sciences/biology",
+      "ratings": {
+        "objective": 0,
+        "hypothesis": 0,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 0,
+      "matched_sections": [
+        "genomic-model-ranking: context/homology transfer ranking, calibration and sandboxed predictor",
+        "ont-tn-qc: alias identity, contamination and batch QC",
+        "ambient-rna-correction: native-count recovery",
+        "protein-active-learning: assay rounds and variant prediction",
+        "cell-lineage-reconstruction, cilia-segmentation, nis3d-hard-volume and betalactam-multimodal-transfer task contracts"
+      ],
+      "rationale": "These objectives, scientific hypotheses and computations differ. Source solutions/tests were checked for the nearest numerical/QC patterns; no distinctive task-specific implementation or inferential workflow was found in Task 1. Boilerplate protection, file parsing and binary scoring are excluded."
+    },
+    {
+      "source": "TBScience small-area-equivalence",
+      "local_source": "bio/authoring/sources/terminal-bench/tasks/mathematical-sciences/statistics/small-area-equivalence/instruction.md",
+      "ratings": {
+        "objective": 0,
+        "hypothesis": 0,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 0,
+      "matched_sections": [
+        "Synthetic four-wave survey and joint predictive draws"
+      ],
+      "rationale": "Despite its folder name, this is survey prediction/calibration with basin sampling covariance. It is not a parental TOST or missing untreated-time certificate task."
+    },
+    {
+      "source": "Biology Task 2: Recover transcriptomic provenance across expression representations",
+      "local_source": "bio/biology-task-2/task/instruction.md",
+      "ratings": {
+        "objective": 0,
+        "hypothesis": 0,
+        "statistical_formulation": 0,
+        "workflow": 0,
+        "output": 0,
+        "evaluation": 0
+      },
+      "substantive_similarity_pct": 0,
+      "matched_sections": [
+        "lines 5-7: synthetic provenance and technical aliquots",
+        "lines 20-28: compositional normalization and residualized identity correlations",
+        "lines 32-44: sparse mixture fitting and split validation"
+      ],
+      "rationale": "Task 2 reconstructs identities and planted one/two-source technical mixtures and abstains for unsupported aliquots. Task 1 estimates observed treatment/line effects, statistical uncertainty, equivalence and assumption-dependent missing-control ranges. Shared metadata/count-TPM caveats, gene keys and artifact handoff are excluded. Neither the hypotheses, model, outputs nor evaluator objective duplicate."
+    }
+  ],
+  "maximum_substantive_similarity_pct": 25,
+  "conceptual_originality": "PASS",
+  "limitations": [
+    "Manual ratings are auditable expert judgments, not semantic-embedding measurements or evidence of absolute novelty",
+    "Only the cached manifest corpus and the other new task were assessed; unseen research may exist",
+    "Low lexical similarity cannot establish conceptual originality",
+    "Task 1 shares a real specificity motivation with the original publication, explicitly reflected in the highest score",
+    "Cross-task comparison reflects the inspected Task 2 contract and must be rechecked if its scientific objective changes"
+  ],
+  "raw_signal_investigation": {
+    "raw_upstream_tfidf": {
+      "task1_to_task2_pct": 35.6906285755137,
+      "task2_to_task1_pct": 37.2335813353091,
+      "earlier_duplicate_reference_pct": 34.11343114398942,
+      "current_reference_count": 98,
+      "earlier_reference_count": 99,
+      "checker_threshold_pct": 80,
+      "project_substantive_investigation_threshold_pct": 30,
+      "evidence": [
+        "authoring/reports/upstream_similarity_v010.json",
+        "authoring/reports/upstream_similarity_initial_duplicate_reference.json",
+        "bio/biology-task-2/authoring/reports/upstream_similarity_v011.json"
+      ],
+      "explanation": "Raw reference-fitted unigram/bigram lexical cosine exceeds30 and triggers investigation. Duplicate reference correction changed the fitted corpus, not task text. Directional fits can be asymmetric."
+    },
+    "adjusted_cross_tfidf_pct": 8.217223774566202,
+    "raw_fivegram_jaccard_pct": 0.9495036685369012,
+    "adjusted_fivegram_jaccard_pct": 0.14619883040935672,
+    "independently_enumerated_common_raw_fivegrams": 22,
+    "matched_sections": [
+      "Required closing time/anti-cheating paragraph",
+      "Public parental/engineered Dmr-PERK U2OS context",
+      "Counts/TPM are two representations of one experiment",
+      "Artifact path/format conventions"
+    ],
+    "ast_histogram": {
+      "solution_cosine_pct": 98.91493241317882,
+      "test_cosine_pct": 99.30223029763549,
+      "interpretation": "Retained high generic node-type histogram similarity; node order, names, formulas and topology are absent, so this is not a substantive copying percentage.",
+      "earlier_test_cosine_pct": 99.19364901681874
+    },
+    "code_twelve_token": {
+      "solution_jaccard_pct": 0.20348837209302326,
+      "solution_max_directional_containment_pct": 0.45841519318926,
+      "tests_jaccard_pct": 0.27808676307007785,
+      "tests_max_directional_containment_pct": 0.629987400251995,
+      "earlier_tests_jaccard_pct": 0.28307227778826194,
+      "earlier_tests_max_directional_containment_pct": 0.6561679790026247
+    },
+    "substantive_recheck": {
+      "task1": "Welch treatment/line effects, affirmative equivalence/minimum-effect conjunction, BY and missing-control sensitivity ranges",
+      "task2": "Residualized identity correlations, global assignment, compositional sparse mixture fits and held-out provenance/rejection certificates",
+      "cross_task_substantive_similarity_pct": 0,
+      "disposition": "INVESTIGATED_NO_SUBSTANTIVE_DUPLICATION_FOUND",
+      "cosmetic_rewording": "Not performed or recommended",
+      "limitations": "Low adjusted/token scores do not prove originality. Manual result excludes public data/metadata, standard methods and Harbor boilerplate under the predeclared rubric; no exact decomposition of TF-IDF score into causal token contributions was computed."
+    }
+  }
+}

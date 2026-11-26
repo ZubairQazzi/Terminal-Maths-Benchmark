@@ -1,0 +1,111 @@
+{
+  "created_utc": "2026-11-25T19:26:04.231320+00:00",
+  "passed": true,
+  "tasks": [
+    {
+      "task": 1,
+      "image": "local-bio1-agent:v010",
+      "command": [
+        "C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+        "run",
+        "--rm",
+        "--network",
+        "none",
+        "--user",
+        "agent",
+        "local-bio1-agent:v010",
+        "python3",
+        "-c",
+        "import hashlib,json,os,pathlib\nbase=pathlib.Path('/app/data')\nfiles={str(p.relative_to(base)):hashlib.sha256(p.read_bytes()).hexdigest() for p in base.rglob('*') if p.is_file()}\nprivate_paths=['/solution','/tests','/app/solution','/app/tests','/app/authoring','/app/fixture_truth.json']\nblocked={}\nfor label,path in [('append_input',next(p for p in base.iterdir() if p.is_file())),('create_input',base/'should_not_exist'),('rename_input_dir',base)]:\n try:\n  if label=='append_input':\n   with path.open('ab'):pass\n  elif label=='create_input':path.write_text('probe')\n  else:path.rename('/app/data_renamed_probe')\n  blocked[label]=False\n except PermissionError:blocked[label]=True\ncredential_names=['GEMINI_API_KEY','GOOGLE_API_KEY','OPENAI_API_KEY','ANTHROPIC_API_KEY']\nresult={'uid':os.getuid(),'input_files_sha256':files,'private_paths_absent':{p:not pathlib.Path(p).exists() for p in private_paths},'input_mutation_blocked':blocked,'provider_credentials_absent':{k:not bool(os.environ.get(k)) for k in credential_names},'initial_submission_empty':not any(pathlib.Path('/app/submission').iterdir()),'app_parent_write_protected':not os.access('/app',os.W_OK)}\nprint(json.dumps(result));assert result['uid']==1000 and all(result['private_paths_absent'].values()) and all(blocked.values()) and all(result['provider_credentials_absent'].values()) and result['initial_submission_empty'] and result['app_parent_write_protected']\n"
+      ],
+      "exit_code": 0,
+      "seconds": 6.5,
+      "stderr": "",
+      "observed": {
+        "uid": 1000,
+        "input_files_sha256": {
+          "sample_metadata.csv": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+          "GSE273600_Control_Conditions_Raw_Counts.txt.gz": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+          "calibration_cases.json": "eda72fbd3fdf39a61d624a5c9a7820fcf037ba8295ee94471a99220b85376cda",
+          "GSE273600_Control_Conditions_TPMs.txt.gz": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f"
+        },
+        "private_paths_absent": {
+          "/solution": true,
+          "/tests": true,
+          "/app/solution": true,
+          "/app/tests": true,
+          "/app/authoring": true,
+          "/app/fixture_truth.json": true
+        },
+        "input_mutation_blocked": {
+          "append_input": true,
+          "create_input": true,
+          "rename_input_dir": true
+        },
+        "provider_credentials_absent": {
+          "GEMINI_API_KEY": true,
+          "GOOGLE_API_KEY": true,
+          "OPENAI_API_KEY": true,
+          "ANTHROPIC_API_KEY": true
+        },
+        "initial_submission_empty": true,
+        "app_parent_write_protected": true
+      },
+      "matches_frozen_solver_data": true
+    },
+    {
+      "task": 2,
+      "image": "local-bio2-agent:v011",
+      "command": [
+        "C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+        "run",
+        "--rm",
+        "--network",
+        "none",
+        "--user",
+        "agent",
+        "local-bio2-agent:v011",
+        "python3",
+        "-c",
+        "import hashlib,json,os,pathlib\nbase=pathlib.Path('/app/data')\nfiles={str(p.relative_to(base)):hashlib.sha256(p.read_bytes()).hexdigest() for p in base.rglob('*') if p.is_file()}\nprivate_paths=['/solution','/tests','/app/solution','/app/tests','/app/authoring','/app/fixture_truth.json']\nblocked={}\nfor label,path in [('append_input',next(p for p in base.iterdir() if p.is_file())),('create_input',base/'should_not_exist'),('rename_input_dir',base)]:\n try:\n  if label=='append_input':\n   with path.open('ab'):pass\n  elif label=='create_input':path.write_text('probe')\n  else:path.rename('/app/data_renamed_probe')\n  blocked[label]=False\n except PermissionError:blocked[label]=True\ncredential_names=['GEMINI_API_KEY','GOOGLE_API_KEY','OPENAI_API_KEY','ANTHROPIC_API_KEY']\nresult={'uid':os.getuid(),'input_files_sha256':files,'private_paths_absent':{p:not pathlib.Path(p).exists() for p in private_paths},'input_mutation_blocked':blocked,'provider_credentials_absent':{k:not bool(os.environ.get(k)) for k in credential_names},'initial_submission_empty':not any(pathlib.Path('/app/submission').iterdir()),'app_parent_write_protected':not os.access('/app',os.W_OK)}\nprint(json.dumps(result));assert result['uid']==1000 and all(result['private_paths_absent'].values()) and all(blocked.values()) and all(result['provider_credentials_absent'].values()) and result['initial_submission_empty'] and result['app_parent_write_protected']\n"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6090000000003783,
+      "stderr": "",
+      "observed": {
+        "uid": 1000,
+        "input_files_sha256": {
+          "provenance.json": "6612d5bd46e7061a21bf3509a9aef733485f449d29f07331f7ce79281021bff3",
+          "sample_metadata.csv": "9d30a73eb7950c4ce2bd1468f5bdc4683643976c10a94bb91b5018032eef2e65",
+          "genes.tsv": "77cba0f2d4fe61afbaa4d6befe1a6b457e95b91c4eef689c87f41f6160e34ffa",
+          "estimated_counts.tsv.gz": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+          "atlas_tpm.tsv.gz": "647f15ee54605a066706316a73e8063e688b46c8d5d1b21bd094ca487abfd8be",
+          "query_tpm.tsv.gz": "930e8535f1e097c8c91817a117cd6fabb92cdc813d34a08ec8f9dfecfa6a45b4"
+        },
+        "private_paths_absent": {
+          "/solution": true,
+          "/tests": true,
+          "/app/solution": true,
+          "/app/tests": true,
+          "/app/authoring": true,
+          "/app/fixture_truth.json": true
+        },
+        "input_mutation_blocked": {
+          "append_input": true,
+          "create_input": true,
+          "rename_input_dir": true
+        },
+        "provider_credentials_absent": {
+          "GEMINI_API_KEY": true,
+          "GOOGLE_API_KEY": true,
+          "OPENAI_API_KEY": true,
+          "ANTHROPIC_API_KEY": true
+        },
+        "initial_submission_empty": true,
+        "app_parent_write_protected": true
+      },
+      "matches_frozen_solver_data": true
+    }
+  ],
+  "scope": "Fresh normal solver images only, without mounting source, oracle, private tests or user home. Private data/answer content also inspected in separate provenance/originality audit. Public calibration inputs are intentionally visible, not private biological answers."
+}

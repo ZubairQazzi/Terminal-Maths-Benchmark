@@ -1,0 +1,11 @@
+--- frozen-v0.1.1/task/instruction.md
++++ proposed-v0.2.0/task/instruction.md
+@@ -79,7 +79,7 @@
+ }
+ ```
+ 
+-Replace counts with values measured from the inputs. Fractional entries satisfy `abs(count-round(count)) > 1e-8`. Include every anonymous atlas ID in `atlas_minimum_by_column`, using the supplied scaled atlas's actual minimum (absolute tolerance `1e-7`). The five claim flags must reflect the experimental and technical interpretation above.
++Replace counts with values measured from the inputs. Fractional entries satisfy `abs(count-round(count)) > 1e-8`. Include every anonymous atlas ID in `atlas_minimum_by_column`, using each column's minimum in the **supplied scaled** `atlas_tpm.tsv.gz`, before normalization (absolute tolerance `1e-7`, inclusive). Do not use the minimum of normalized `A` for this audit field. The five claim flags must reflect the experimental and technical interpretation above.
+ 
+ The environment provides Python, NumPy, pandas, and SciPy. Two CPUs and 4 GiB RAM are available. All required data and packages are local; no runtime service or network download is needed. Only the three output artifacts transfer to a separate verifier; executable code is not a deliverable.
+ 

@@ -1,0 +1,47 @@
+{
+  "tasks": [
+    "biology-task-1",
+    "biology-task-2"
+  ],
+  "raw": {
+    "fivegram_jaccard_pct": 0.9495036685369012,
+    "task_fivegram_containment_pct": 1.824212271973466,
+    "reference_fivegram_containment_pct": 1.941747572815534,
+    "matched_fivegrams": 22,
+    "task_fivegrams": 1206,
+    "reference_fivegrams": 1133,
+    "example_matches": [
+      "and engineered dmr perk u2os",
+      "are two representations of the"
+    ]
+  },
+  "adjusted": {
+    "fivegram_jaccard_pct": 0.14619883040935672,
+    "task_fivegram_containment_pct": 0.28169014084507044,
+    "reference_fivegram_containment_pct": 0.30303030303030304,
+    "matched_fivegrams": 3,
+    "task_fivegrams": 1065,
+    "reference_fivegrams": 990,
+    "example_matches": [
+      "are two representations of the",
+      "representations of the same experiment"
+    ]
+  },
+  "adjusted_tfidf_cosine_pct": 8.217223774566202,
+  "code": {
+    "solution": {
+      "twelve_token_jaccard_pct": 0.20348837209302326,
+      "task1_token_containment_pct": 0.3645833333333333,
+      "task2_token_containment_pct": 0.45841519318926,
+      "ast_node_histogram_cosine_pct": 98.91493241317882,
+      "note": "AST histogram records generic structural similarity; it is not substantive copying."
+    },
+    "tests": {
+      "twelve_token_jaccard_pct": 0.27808676307007785,
+      "task1_token_containment_pct": 0.4953764861294584,
+      "task2_token_containment_pct": 0.629987400251995,
+      "ast_node_histogram_cosine_pct": 99.30223029763549,
+      "note": "AST histogram records generic structural similarity; it is not substantive copying."
+    }
+  }
+}

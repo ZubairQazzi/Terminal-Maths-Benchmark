@@ -1,0 +1,68 @@
+COMMAND ["C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "-m", "pytest", "-p", "ctrf.main", "-p", "no:cacheprovider", "--ctrf", "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\wrong_contrast_ctrf.json", "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py", "-rA"]
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.4.1, pluggy-1.6.0
+rootdir: F:\rl
+collected 11 items
+
+bio\biology-task-1\task\tests\test_outputs.py ...F.......                [100%]
+
+================================== FAILURES ===================================
+______________________ test_04_matched_factorial_effects ______________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+matched =                                      dmr_effect  ...  certified
+gene_id            treatment time_h              ...  ...  -0.127359  ...      False
+ENSG00000283696.1  Tg        24        0.271597  ...      False
+
+[249636 rows x 15 columns]
+
+    def test_04_matched_factorial_effects(expected,matched):
+>       for name in ['dmr_effect','parent_effect','interaction']:close(matched[name],expected['matched'][name])
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+bio\biology-task-1\task\tests\test_outputs.py:129: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+actual = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4        -0.342972
+ENSG00000000419.12  Dim       ... 24       -0.127359
+ENSG00000283696.1   Tg         24        0.271597
+Name: interaction, Length: 249636, dtype: float64
+expected = gene_id             treatment  time_h
+ENSG00000000003.14  Dim        4        -0.259322
+ENSG00000000419.12  Dim       ... 24       -0.121706
+ENSG00000283696.1   Tg         24       -0.089128
+Name: interaction, Length: 249636, dtype: float64
+probability = False
+
+    def close(actual,expected,probability=False):
+        a=np.asarray(actual,dtype=float);e=np.asarray(expected,dtype=float)
+        assert np.isfinite(a).all(),'Nonfinite numerical submission'
+        tolerance=2e-7+2e-5*np.abs(e)
+        if probability:tolerance=np.where(e<1e-10,1e-10,tolerance)
+>       assert np.all(np.abs(a-e)<=tolerance),f'Numerical certificate mismatch; maximum absolute error={np.max(np.abs(a-e))}'
+E       AssertionError: Numerical certificate mismatch; maximum absolute error=12.865201163637753
+E       assert np.False_
+E        +  where np.False_ = <function all at 0x000002B416CACA30>(array([0.08364928, 0.03223352, 0.14375035, ..., 0.13456771, 0.00565261,\n       0.36072448], shape=(249636,)) <= array([5.38644727e-06, 7.94719026e-07, 8.80909748e-06, ...,\n       1.67845582e-06, 2.63412603e-06, 1.98255608e-06], shape=(249636,)))
+E        +    where <function all at 0x000002B416CACA30> = np.all
+E        +    and   array([0.08364928, 0.03223352, 0.14375035, ..., 0.13456771, 0.00565261,\n       0.36072448], shape=(249636,)) = <ufunc 'absolute'>((array([-0.34297165, -0.00249757,  0.28670452, ...,  0.2084905 ,\n       -0.12735891,  0.27159668], shape=(249636,)) - array([-0.25932236,  0.02973595,  0.43045487, ...,  0.07392279,\n       -0.1217063 , -0.0891278 ], shape=(249636,))))
+E        +      where <ufunc 'absolute'> = np.abs
+
+bio\biology-task-1\task\tests\test_outputs.py:102: AssertionError
+=================================== PASSES ====================================
+=========================== short test summary info ===========================
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_01_complete_handoff
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_02_fractional_representation_audit
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_03_unselected_complete_gene_universe
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_05_heteroscedastic_uncertainty
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_07_joint_family_multiplicity
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_08_early_partial_identification
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_09_envelope_expansion_invariants
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_10_interpretation_limits
+PASSED bio/biology-task-1/task/tests/test_outputs.py::test_11_synthetic_positive_and_degenerate_controls
+FAILED bio/biology-task-1/task/tests/test_outputs.py::test_04_matched_factorial_effects
+======================== 1 failed, 10 passed in 10.36s ========================

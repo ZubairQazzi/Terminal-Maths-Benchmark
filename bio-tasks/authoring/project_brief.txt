@@ -1,0 +1,1314 @@
+# MASTER PROJECT: CREATE TWO ORIGINAL, EXTREMELY CHALLENGING, INDEPENDENTLY QC-VALIDATED TERMINAL-BENCH SCIENCE BIOLOGY TASKS
+
+## 1. YOUR ROLE AND PRIMARY OBJECTIVE
+
+Act as a senior computational biologist, RNA-seq bioinformatician, molecular biology researcher, statistical genomics specialist, Terminal-Bench Science benchmark engineer, Harbor specialist, and AI-agent evaluation researcher.
+
+Your mission is to **design, implement, test, independently review, and validate TWO distinct, research-level Biology benchmark tasks** based on a real-world RNA-seq experiment.
+
+These must be scientifically meaningful tasks that challenge advanced autonomous AI agents through genuine biological reasoning, statistical inference, computational analysis, and long-horizon problem solving.
+
+Do not simply create conventional RNA-seq tutorials, differential-expression notebooks, or artificial programming challenges.
+
+### PROJECT CONFIGURATION
+
+**Domain:** Biological Sciences
+
+**Primary area:** Computational Biology / Transcriptomics / Bioinformatics
+
+**Dataset:** NCBI GEO GSE273600
+
+**Dataset URL:** https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273600
+
+**Number of tasks:** Exactly TWO
+
+**Task folders:**
+- `biology-task-1`
+- `biology-task-2`
+
+**Difficulty:** Expert / Extremely High
+
+**Complexity:** 4–6 scientifically meaningful, interconnected layers per task
+
+**Framework:** Terminal-Bench Science / Harbor
+
+**QC requirements:** 29 static checks + 38 automated rubric checks
+
+**Independent QC:** Mandatory where distinct reviewer agents are supported
+
+**Target AI success rate:** Approximately 35–60%, to be measured empirically
+
+**Gemini API evaluation:** Only after both tasks pass available non-model validation and I explicitly authorize API usage
+
+**Publishing:** Local files only
+
+### MOST IMPORTANT REQUIREMENTS
+
+1. Create exactly TWO new tasks.
+2. Spawn TWO separate task-creator agents and develop both tasks concurrently.
+3. Ensure each task addresses a fundamentally different biological research question.
+4. Use the real RNA-seq data correctly.
+5. Create complete, working Harbor task packages.
+6. Independently validate every scientific result.
+7. Run all locally available QC and rubric checks.
+8. Require separate independent QC review.
+9. Identify and fix all genuine QC defects.
+10. Complete all available non-Gemini testing before requesting permission for Gemini agent evaluation.
+
+Do not stop at producing proposals. Implement both tasks after establishing scientific feasibility.
+
+---
+
+# PHASE 1 — VERIFY THE INPUT DATA AND EXPERIMENTAL DESIGN
+
+## 1.1 Dataset files
+
+I am providing two compressed expression matrices:
+
+- `GSE273600_Control_Conditions_Raw_Counts.txt.gz`
+- `GSE273600_Control_Conditions_TPMs.txt.gz`
+
+Locate the actual uploaded filenames in the workspace, including any renamed copies or numeric suffixes.
+
+These files belong to the SAME GEO series.
+
+They are two representations of the same RNA-seq experiment, not independent biological datasets.
+
+Do not treat them as independent experimental evidence or assign one file to each task without considering its scientific meaning.
+
+Both tasks may use both expression matrices if justified.
+
+## 1.2 Mandatory physical file inspection
+
+Before designing either task, inspect both compressed files.
+
+Verify:
+
+1. File integrity and successful decompression.
+2. Row and column counts.
+3. Gene identifiers.
+4. Gene-name mappings.
+5. Sample identifiers.
+6. Duplicate and missing identifiers.
+7. Missing values.
+8. Nonfinite and negative values.
+9. Count-value distributions.
+10. Fractional estimated counts.
+11. TPM distributions and low-expression behavior.
+12. Library-size variation.
+13. Sample correspondence between matrices.
+14. Gene correspondence between matrices.
+15. Data types and normalization assumptions.
+16. Potential technical artifacts.
+
+The supplied files have previously been observed to contain approximately 57,665 gene rows and 120 sample columns each. Verify these dimensions independently.
+
+The count file has fractional values; do not assume all counts are integers.
+
+Do not silently round estimated counts or treat TPM values as raw counts.
+
+Choose statistical methods that are appropriate for the actual data representation.
+
+## 1.3 Retrieve authoritative GEO metadata
+
+Read the official NCBI GEO record:
+
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273600
+
+Retrieve the sample-level GSM metadata, experiment description, available processing methods, and associated publication.
+
+Verify the experimental design rather than relying only on column-name patterns.
+
+The study involves:
+
+- Parental U2OS cells.
+- Engineered Dmr-PERK U2OS cells.
+- Untreated controls.
+- Dimerizer treatment.
+- Sodium arsenite treatment.
+- Thapsigargin treatment.
+- Multiple time points.
+- Replicate samples.
+
+Verify doses, time points, replicate definitions, cell-line labels, and sample identifiers against the official metadata.
+
+The source reports 120 samples, including triplicate measurements.
+
+Pay special attention to the fact that untreated and treated time points are not perfectly matched at every time point.
+
+In particular, untreated samples include a 0-hour baseline but not a corresponding untreated 2-hour condition.
+
+Do not invent nonexistent matched controls.
+
+## 1.4 Scientific interpretation requirements
+
+Understand the experimental purpose.
+
+The study compares selective Integrated Stress Response activation through engineered Dmr-PERK with broader cellular stress induced by arsenite or thapsigargin.
+
+Investigate:
+
+- Integrated Stress Response biology.
+- eIF2α phosphorylation signaling.
+- Dmr-PERK activation.
+- ATF4-associated transcriptional programs.
+- Oxidative stress.
+- Endoplasmic reticulum stress.
+- Time-dependent transcriptional responses.
+- Parental-cell controls.
+- Cell-line-by-treatment interactions.
+
+Distinguish observed transcriptional associations from mechanistic or causal claims that the experiment cannot establish.
+
+Do not claim ATF4 dependence or independence from RNA-seq expression patterns alone without the necessary supporting intervention or evidence.
+
+## 1.5 Data provenance report
+
+Create:
+
+`authoring/data_audit.md`
+
+`authoring/sample_metadata.csv`
+
+`authoring/experimental_design.md`
+
+`authoring/data_provenance.md`
+
+Include:
+
+- Source accession.
+- Original filenames.
+- Checksums.
+- Data dimensions.
+- Sample metadata.
+- Processing assumptions.
+- Experimental contrasts that are identifiable.
+- Comparisons that cannot be reliably estimated.
+- Technical limitations.
+- Data usage and attribution requirements.
+
+Download required metadata during task authoring, but ensure the final benchmark can run offline.
+
+---
+
+# PHASE 2 — SPAWN TWO INDEPENDENT CREATOR AGENTS
+
+This project requires **PARALLEL TASK DEVELOPMENT**.
+
+Before scientific task selection, check whether the installed Codex environment supports spawning independent sub-agents.
+
+If supported, launch:
+
+### CREATOR AGENT A — BIOLOGY TASK 1
+
+Responsible for:
+
+- Independent research.
+- Scientific question selection.
+- Task design.
+- Environment implementation.
+- Reference solution.
+- Hidden evaluator.
+- Local testing.
+- Initial QC.
+- Documentation.
+
+### CREATOR AGENT B — BIOLOGY TASK 2
+
+Responsible for the same complete workflow, but for a different biological research question.
+
+Both creators must work concurrently.
+
+### Mandatory agent separation
+
+Each agent must have:
+
+- Its own task directory.
+- Its own working context.
+- Its own source code.
+- Its own reference solution.
+- Its own hidden evaluator.
+- Its own reports.
+- Its own logs.
+- Its own validation evidence.
+
+Do not allow both agents to modify the same source file.
+
+Share the original RNA-seq data through a read-only source location or independently verified local copies.
+
+Preserve the original input files unchanged.
+
+Avoid simultaneous writes to shared reports, temporary files, Docker container names, or output directories.
+
+If heavy Docker or Harbor runs compete for limited CPU or memory, queue those specific validation runs while keeping independent development active. Record any resource-related interruptions.
+
+### Supervising coordinator
+
+Use the main Codex agent as the coordinator.
+
+The coordinator must:
+
+1. Confirm both creators are genuinely separate.
+2. Verify the two proposed tasks are scientifically distinct.
+3. Prevent duplicated objectives and implementations.
+4. Monitor task-level quality gates.
+5. Coordinate resource-intensive validation.
+6. Ensure neither agent alters the other task.
+7. Collect final reports.
+
+If true concurrent sub-agents are unsupported, disclose the limitation.
+
+Do not simulate parallel execution or falsely claim two agents were spawned.
+
+---
+
+# PHASE 3 — RESEARCH THREE CANDIDATES PER CREATOR
+
+Before implementation, each creator must investigate THREE potential research-level task ideas.
+
+This produces six initial proposals.
+
+For every candidate, evaluate:
+
+1. Biological significance.
+2. Originality relative to existing research.
+3. Relevance to GSE273600.
+4. Experimental identifiability.
+5. Statistical feasibility.
+6. Number of meaningful reasoning stages.
+7. Difficulty for advanced AI agents.
+8. Objective verification feasibility.
+9. Computational cost.
+10. Risk of duplicating published analyses.
+11. Quality of available controls.
+12. Likely QC weaknesses.
+
+## Prior scientific direction
+
+One potential direction is separating ISR-associated responses from pleiotropic stressor-associated effects while accounting for time and cell-line differences.
+
+This is a starting point, not a fixed requirement.
+
+You may propose stronger questions if the data justify them.
+
+Possible high-level research directions include:
+
+- Cell-line-adjusted perturbation-response decomposition.
+- Robust identification of treatment-specific versus shared transcriptional programs.
+- Time-dependent regulatory response analysis.
+- Statistical identifiability of overlapping perturbation effects.
+- Replicate-aware response dynamics.
+- Cross-condition validation of transcriptional response models.
+- Robustness and reproducibility of inferred biological programs.
+
+These are areas for investigation, not predefined tasks.
+
+## Critical originality condition
+
+The associated GSE273600 publication already analyzes ISR-induced transcriptional modules, ATF4-associated responses, and time-dependent programs.
+
+Do not recreate the authors' published analysis and present it as a new benchmark.
+
+The selected tasks must introduce a genuinely distinct scientific or methodological objective.
+
+## Select exactly TWO distinct ideas
+
+The coordinator must compare all six candidates and select the two strongest.
+
+The selected tasks must differ meaningfully in:
+
+- Scientific question.
+- Biological hypothesis.
+- Required reasoning.
+- Statistical formulation.
+- Main computational methods.
+- Output deliverables.
+- Verification approach.
+- Expected agent failures.
+
+Do not create two variations of the same differential-expression analysis.
+
+### Required output
+
+Create:
+
+`authoring/candidate_task_comparison.md`
+
+Include all six ideas, scientific merits, risks, and selection justification.
+
+Assign one selected idea to each creator.
+
+---
+
+# PHASE 4 — DESIGN 4–6 INTERCONNECTED DIFFICULTY LAYERS PER TASK
+
+Each Biology task must contain between four and six meaningful, interdependent scientific complexity layers.
+
+Possible layers include:
+
+1. Multi-stage biological and statistical dependencies.
+2. Reconstruction of latent perturbation-response structure.
+3. Cell-line-by-treatment interactions.
+4. Temporal dynamics and irregular control availability.
+5. Appropriate normalization and count-model selection.
+6. Replicate variability and statistical uncertainty.
+7. Batch effects or nuisance variables, only where supported by metadata.
+8. Shared versus condition-specific biological signals.
+9. Missing or imperfect experimental controls.
+10. Multiple expression representations: counts and TPM.
+11. Multiple-testing correction and effect-size uncertainty.
+12. Robustness to low expression and degenerate cases.
+13. Global statistical consistency requirements.
+14. Cross-validation or out-of-sample generalization.
+15. Biological plausibility and pathway consistency.
+16. Independent statistical certificates or verification.
+
+Select only 4–6 layers that naturally serve each task's objective.
+
+Do not attach unrelated biological analyses simply to make a task longer.
+
+## Complexity-layer requirements
+
+For each layer, document:
+
+- Scientific purpose.
+- Required biological reasoning.
+- Required statistical reasoning.
+- Dependencies on other layers.
+- Relevant inputs.
+- Expected failure modes.
+- Correctness properties.
+- Independent tests.
+- Why the layer is challenging.
+- Why it is objectively solvable.
+
+### Interconnected reasoning
+
+The task should require a coherent multi-stage workflow.
+
+For example:
+
+Validate sample metadata → identify valid experimental contrasts → model biological variation → infer response structure → assess uncertainty → verify final conclusions.
+
+This is an illustrative sequence, not a required algorithm.
+
+### No artificial difficulty
+
+Do not increase difficulty through:
+
+- Unnecessarily large data.
+- Unavailable packages.
+- Broken pipelines.
+- Ambiguous biological assumptions.
+- Arbitrary file-format restrictions.
+- Excessive parameter tuning.
+- Unreasonable runtime limits.
+- Missing scientific context.
+
+The challenge must arise from the underlying biology, statistics, and reasoning.
+
+Create a complexity dependency map for each task.
+
+---
+
+# PHASE 5 — CREATE AND VALIDATE BOTH TASK PROPOSALS
+
+Each creator must prepare a complete scientific proposal.
+
+Include:
+
+1. Task title and unique identifier.
+2. Scientific background.
+3. Research question.
+4. Biological hypothesis.
+5. Experimental factors.
+6. Available contrasts.
+7. Statistical assumptions.
+8. Exact inputs.
+9. Exact outputs.
+10. Selected complexity layers.
+11. Required computations.
+12. Biological interpretation constraints.
+13. Statistical inference requirements.
+14. Edge cases.
+15. Reference solution approach.
+16. Independent verification strategy.
+17. Negative controls.
+18. Ground-truth provenance.
+19. Originality assessment.
+20. Expected model failure points.
+21. Resource estimates.
+22. Reproducibility plan.
+23. QC risks.
+
+### Feasibility gate
+
+Before implementing either task, verify:
+
+- The scientific objective is identifiable from the available experiment.
+- Necessary metadata are available.
+- Required comparisons are statistically meaningful.
+- The task does not require nonexistent experimental measurements.
+- The reference solution is computationally feasible.
+- Outputs can be objectively checked.
+- Different scientifically valid methods can pass.
+- Complexity layers are independently verifiable.
+- The task does not duplicate the source publication's original analysis.
+
+The coordinator must review both proposals for overlap.
+
+If a proposal is weak, require the creator to select another candidate or revise its scientific question before implementation.
+
+**After both proposals pass feasibility review, continue into full implementation without waiting for unnecessary confirmation.**
+
+---
+
+# PHASE 6 — CREATE TWO COMPLETELY SEPARATE HARBOR TASK PACKAGES
+
+Create:
+
+```text
+biology-benchmark/
+│
+├── shared-inputs/
+│   └── original-read-only-data/
+│
+├── biology-task-1/
+│   ├── task/
+│   │   ├── task.toml
+│   │   ├── instruction.md
+│   │   ├── README.md
+│   │   ├── environment/
+│   │   ├── solution/
+│   │   └── tests/
+│   └── authoring/
+│       ├── research/
+│       ├── reports/
+│       ├── originality/
+│       └── trajectories/
+│
+└── biology-task-2/
+    ├── task/
+    │   ├── task.toml
+    │   ├── instruction.md
+    │   ├── README.md
+    │   ├── environment/
+    │   ├── solution/
+    │   └── tests/
+    └── authoring/
+        ├── research/
+        ├── reports/
+        ├── originality/
+        └── trajectories/
+```
+
+This is an organizational example.
+
+Adapt the actual Harbor task packaging and authoring directories to the installed framework and active QC requirements.
+
+The two top-level project folders must remain separate.
+
+## Environment requirements
+
+Each task must have:
+
+- Its own Docker environment.
+- All required input files.
+- Pinned dependencies where required.
+- Valid resource limits.
+- Reproducible configuration.
+- No runtime dependency on external services.
+- No missing data.
+- Deterministic or controlled randomized behavior.
+- A clean artifact handoff to the evaluator.
+- Proper separation of solver and verifier.
+
+### No unnecessary duplication
+
+Both tasks may originate from GSE273600, but their runnable packages must not depend on each other's files.
+
+If shared input copies are used, verify checksums and make those copies self-contained within each required build context.
+
+Do not require network downloads during grading.
+
+---
+
+# PHASE 7 — WRITE SCIENTIFICALLY PRECISE AGENT INSTRUCTIONS
+
+For each task, create a complete `instruction.md`.
+
+Clearly specify:
+
+- Biological problem.
+- Scientific assumptions.
+- Available files.
+- Sample metadata.
+- Required analyses.
+- Expected deliverables.
+- Output paths.
+- Output schemas.
+- Relevant statistical definitions.
+- Statistical contrasts.
+- Numerical tolerances.
+- Multiple-testing requirements.
+- Validation and reproducibility requirements.
+- Resource constraints.
+
+### Important statistical safeguards
+
+The instructions and implementation must distinguish:
+
+- Estimated counts from integer read counts.
+- TPM values from count-based quantities.
+- Replicates from experimental conditions.
+- Cell-line effects from treatment effects.
+- Temporal effects from treatment effects.
+- Biological signal from normalization artifacts.
+- Statistical significance from biological importance.
+- Association from causal mechanism.
+
+Do not silently substitute unmatched time-point controls.
+
+Do not claim experimental effects that the design cannot identify.
+
+### Outcome-focused wording
+
+Describe what the final results must satisfy.
+
+Avoid unnecessary explanations of:
+
+- Internal hidden-test behavior.
+- Grader implementation.
+- Reward bookkeeping.
+- Oracle algorithms.
+- Private expected answers.
+
+Every scored requirement must be documented in the agent-visible task contract.
+
+---
+
+# PHASE 8 — IMPLEMENT TWO INDEPENDENT REFERENCE SOLUTIONS
+
+Each creator must implement a complete scientifically valid oracle.
+
+The oracle must:
+
+1. Use the actual supplied data.
+2. Implement an appropriate statistical model.
+3. Handle the documented experimental design.
+4. Handle meaningful edge cases.
+5. Produce reproducible results.
+6. Support valid input variations.
+7. Avoid hardcoded biological answers.
+8. Produce the required output files.
+9. Respect resource limits.
+10. Pass every mandatory evaluator test.
+
+### Scientific validity
+
+The selected statistical approach must be defensible for the actual data.
+
+Do not silently round fractional estimated counts merely to satisfy an integer-count package.
+
+Do not use TPM values as though they were raw sequencing counts.
+
+If a particular method requires integer counts, explain and justify the required preprocessing or choose a scientifically valid alternative.
+
+Consider variance modeling, normalization, interactions, confounding, and multiple-testing correction where relevant.
+
+### Avoid circular ground truth
+
+Do not simply use the oracle's own output as the only basis for grading.
+
+Where possible, validate results using independent calculations, mathematical properties, statistical identities, simulated controls with known properties, or robust cross-method agreement.
+
+Do not treat published gene lists or previously reported pathway conclusions as the only correct answer unless that is scientifically justified by the task.
+
+Document the reference solution in author-only materials.
+
+---
+
+# PHASE 9 — BUILD ROBUST HIDDEN BIOLOGY EVALUATORS
+
+Each task requires a private independent evaluator.
+
+The evaluator must check actual biological and statistical correctness.
+
+Include tests for:
+
+- Input parsing.
+- Sample metadata alignment.
+- Gene identifier mapping.
+- Correct contrasts.
+- Temporal handling.
+- Cell-line effects.
+- Normalization behavior.
+- Statistical inference.
+- Replicate variability.
+- Multiple-testing correction.
+- Low-expression genes.
+- Missing or malformed valid inputs where applicable.
+- Output schema correctness.
+- Numerical accuracy.
+- Biological constraints.
+- Reproducibility.
+- Held-out valid cases.
+- Hardcoded solutions.
+- Trivial shortcuts.
+- Plausible incomplete analyses.
+- Alternative scientifically correct methods.
+
+### Scientific test discrimination
+
+For every test family, identify:
+
+1. What scientific reasoning it measures.
+2. Whether a trivial approach could pass.
+3. Whether it is a non-discriminating control.
+4. Which incorrect approaches it rejects.
+5. How correctness is independently verified.
+
+Separate easy controls from genuinely challenging cases.
+
+Do not exaggerate test coverage by counting simple cases as advanced biological reasoning tests.
+
+### Appropriate negative controls
+
+Test at least:
+
+- No-op solver.
+- Constant-output solver.
+- Hardcoded gene-list solver.
+- Wrong sample-label alignment.
+- Incorrect treatment contrast.
+- Incorrect or omitted multiple-testing adjustment.
+- Plausible incomplete statistical implementation.
+- Scientifically invalid interpretation where objectively testable.
+
+Verify that incorrect solutions fail.
+
+Also verify that at least one alternative scientifically valid approach or equivalent valid output can pass where feasible.
+
+### Prevent scientific overfitting
+
+Do not grade only whether the solution reproduces a specific list of differentially expressed genes from the reference implementation.
+
+Use scientifically justified numerical tolerances, independent checks, invariant properties, and carefully designed test instances.
+
+Hidden perturbations or synthetic controls may test algorithmic properties, but they must not be presented as real biological evidence.
+
+---
+
+# PHASE 10 — COMPLETE ALL 67 TERMINAL-BENCH SCIENCE QC CHECKS
+
+Use the provided `QC-CHECKLIST.md`.
+
+It defines:
+
+- **29 static checks**
+- **38 automated rubric checks**
+
+Every applicable check must be assessed separately for BOTH tasks.
+
+## Static QC
+
+Check:
+
+- Required task files.
+- Supported manifest fields.
+- Task metadata.
+- Task naming and path conventions.
+- README structure.
+- Required identification markers.
+- Absolute input/output paths.
+- Instruction suffix requirements.
+- Instruction similarity.
+- Output-file references.
+- Dockerfile validity.
+- Processor architecture settings.
+- Internet restrictions.
+- Separate verifier configuration.
+- Prohibited host mounts.
+- Timeouts.
+- CPU and memory.
+- Dependency pinning.
+- Verifier tooling.
+- Supported testing-tool versions.
+- Grading scripts.
+- Binary reward output.
+
+Follow the exact checklist IDs and active profile requirements.
+
+Where applicable, respect the specified versions:
+
+- `pytest==8.4.1`
+- `pytest-json-ctrf==0.3.5`
+
+## Automated rubric QC
+
+Check:
+
+- Scientific grounding.
+- Biological-domain relevance.
+- Essential scientific difficulty.
+- Novelty.
+- Meaningful agent tool use.
+- Clear task deliverables.
+- Complete input/output contract.
+- Instruction/test alignment.
+- Instruction clarity.
+- Correct statistical definitions.
+- Verifiability.
+- Solvability.
+- Alternative correct solutions.
+- Functional verification.
+- Ground-truth provenance.
+- Hidden-test discrimination.
+- Oracle quality.
+- Reproducibility.
+- Verifier isolation.
+- Shortcut resistance.
+- Task security.
+- Resource suitability.
+- Package hygiene.
+- Per-test reporting.
+- Reviewer documentation.
+- Difficulty explanation.
+- Reference solution explanation.
+- Verification explanation.
+- Correct scientific categorization and metadata.
+
+### Required QC reporting
+
+For each check, report:
+
+- Exact check ID.
+- Requirement.
+- Evidence.
+- PASS / FAIL / WARNING / NOT TESTED / justified NOT APPLICABLE.
+- Relevant file and line.
+- Required correction.
+- Post-correction result.
+
+Create separate static and rubric reports for each task.
+
+Do not mark untested checks as passed.
+
+Do not claim the external QC pipeline passed unless it actually returned a passing result.
+
+---
+
+# PHASE 11 — COMPLETE LOCAL DOCKER AND HARBOR VALIDATION
+
+Both creator agents must fully test their tasks.
+
+Use the actual installed Harbor version and supported CLI commands.
+
+Run for each task:
+
+1. Task discovery.
+2. Manifest validation.
+3. Clean Docker build.
+4. Reference solution.
+5. Complete hidden evaluator.
+6. No-op baseline.
+7. Constant-output baseline.
+8. Hardcoded-output baseline.
+9. Incorrect statistical method baseline.
+10. Incomplete solution baseline.
+11. Alternative valid solution test where feasible.
+12. Reward verification.
+13. Clean environment reset.
+14. Reproducibility testing.
+15. Hidden-test isolation.
+16. Artifact transfer verification.
+17. Resource and timeout verification.
+
+### Mandatory outcomes
+
+- Oracle passes every mandatory test.
+- Incorrect solutions fail relevant tests.
+- Actual Harbor grading executes successfully.
+- Results are reproducible.
+- The evaluator remains isolated.
+- Private answers do not leak.
+- Reward output is valid.
+- No required dependencies are missing.
+
+Run repeatability checks from clean resets.
+
+Preserve exact commands, logs, and measured results.
+
+Do not claim success based only on Python compilation or ordinary unit tests.
+
+### Parallel resource coordination
+
+Both creator agents may work concurrently.
+
+If concurrent heavy Docker or Harbor runs cause resource contention, the coordinator should serialize those particular runs without combining task state or results.
+
+Do not treat resource-induced failures as biological reasoning failures.
+
+---
+
+# PHASE 12 — MANDATORY INDEPENDENT QC REVIEWERS
+
+After initial implementation and local testing, obtain an independent QC review for EACH task.
+
+The QC reviewer must be distinct from the task creator and must use a fresh context where supported.
+
+The two creator agents reviewing their own tasks is not sufficient.
+
+Prefer dedicated QC reviewers separate from both creators.
+
+## Reviewer access
+
+Give each reviewer direct access to:
+
+- Complete `QC-CHECKLIST.md`.
+- Original user instructions.
+- Full task package.
+- Sample metadata.
+- Scientific proposal.
+- Complexity-layer documentation.
+- Reference solution.
+- Hidden evaluator.
+- Oracle validation evidence.
+- No-op and expected-failure evidence.
+- Alternative-solution evidence.
+- Docker/Harbor logs.
+- Originality report.
+- Available model evaluation evidence.
+
+The reviewer must read the checklist directly.
+
+Do not provide only the creator's summary.
+
+Do not instruct the reviewer to confirm that the task is correct.
+
+## Reviewer responsibilities
+
+Independently investigate:
+
+- Experimental-design correctness.
+- Biological assumptions.
+- Statistical identifiability.
+- Model selection.
+- Normalization and count handling.
+- Time-point confounding.
+- Sample alignment.
+- Replicate structure.
+- Multiple-testing correction.
+- Scientific interpretation.
+- Instruction clarity.
+- Hidden-test discrimination.
+- Oracle independence.
+- Evaluator security.
+- Reproducibility.
+- Docker and Harbor compatibility.
+- Originality.
+- All applicable static and rubric checks.
+
+## Review and remediation
+
+The reviewer must produce its own initial findings before consulting creator explanations.
+
+The creator may explain choices and fix confirmed defects.
+
+The reviewer must independently recheck affected requirements after changes.
+
+Do not close findings merely because the creator claims they were corrected.
+
+Create for each task:
+
+`authoring/reports/independent_qc_review.md`
+
+`authoring/reports/independent_qc_findings.json`
+
+`authoring/reports/qc_remediation.md`
+
+Record actual reviewer identity, context separation, initial findings, corrections, and recheck outcomes.
+
+If distinct reviewer agents are unavailable, disclose that limitation and do not falsely claim independent QC occurred.
+
+---
+
+# PHASE 13 — ORIGINALITY AND PLAGIARISM AUDIT
+
+This phase is mandatory for BOTH Biology tasks.
+
+The purpose is to prevent direct copying and superficial reproduction of existing research or benchmark tasks.
+
+Compare each task against:
+
+1. The original GSE273600 publication.
+2. Existing analyses of GSE273600.
+3. Relevant ISR and transcriptomics research.
+4. Existing Terminal-Bench Science tasks.
+5. Public Bioinformatics benchmark tasks.
+6. The other new Biology task.
+7. Supplied reference task examples.
+
+Evaluate:
+
+- Research question.
+- Biological hypothesis.
+- Statistical formulation.
+- Analysis workflow.
+- Output design.
+- Code structure.
+- Dataset handling.
+- Reference implementation.
+- Hidden tests.
+- Instructions.
+- Conceptual similarity.
+
+## Similarity methods
+
+Use applicable:
+
+- Exact text matching.
+- Normalized text comparison.
+- N-gram similarity.
+- TF-IDF similarity.
+- Code similarity.
+- Structural comparison.
+- Semantic comparison where available.
+- Manual conceptual review.
+
+A 30% similarity threshold may be used as an investigation warning, not an automatic plagiarism verdict.
+
+Distinguish standard biological terminology, established statistical formulas, and unavoidable dataset metadata from genuinely copied material.
+
+Do not alter surface wording simply to conceal duplication.
+
+### Mandatory cross-task originality
+
+Biology Task 1 and Biology Task 2 must remain scientifically distinct.
+
+Sharing GSE273600 is permitted.
+
+Copying the same objective, statistical workflow, and evaluator into two folders is not.
+
+If the independent originality audit finds excessive conceptual overlap, redesign the weaker task.
+
+Create for each task:
+
+`authoring/originality/plagiarism_report.md`
+
+`authoring/originality/plagiarism_report.json`
+
+Include source references, observed similarities, methodological limitations, and final findings.
+
+Never claim absolute originality based solely on a percentage.
+
+---
+
+# PHASE 14 — FINAL NON-GEMINI QUALITY GATE
+
+Before completing either task, verify:
+
+1. Scientific question is valid.
+2. Actual dataset supports the required analysis.
+3. Experimental contrasts are identifiable.
+4. All 4–6 complexity layers are meaningful.
+5. Reference solution passes.
+6. Hidden tests independently verify results.
+7. Incorrect solutions fail.
+8. Alternative valid methods are accepted.
+9. Easy controls are documented.
+10. Test discrimination is sufficient.
+11. Instructions and tests agree.
+12. Docker builds cleanly.
+13. Actual Harbor grading works.
+14. Results reproduce from clean resets.
+15. Private materials remain isolated.
+16. All applicable static checks pass.
+17. All applicable rubric checks are audited.
+18. Independent QC findings are resolved and rechecked where supported.
+19. Originality review is complete.
+20. No inappropriate biological conclusions are required.
+21. Final regression testing passes.
+
+Run the actual external QC pipeline if locally accessible and it does not require unapproved model-provider API usage.
+
+Do not claim external QC success without a real PASS.
+
+If a mandatory executable check fails, fix the task before marking it validated.
+
+If external QC or independent reviewers are unavailable, disclose the precise limitation and distinguish it from task correctness.
+
+### Final non-Gemini status
+
+For each task, report:
+
+- VALIDATED
+- NEEDS FURTHER WORK
+- BLOCKED BY INFRASTRUCTURE
+
+Do not mark unresolved or untested requirements PASS.
+
+---
+
+# PHASE 15 — GEMINI API EVALUATION REQUIRES MY EXPLICIT PERMISSION
+
+**THIS IS A HARD STOP.**
+
+Do not use my Gemini API key during task creation or local QC.
+
+Do not run:
+
+- Gemini connectivity tests.
+- Gemini smoke trials.
+- Gemini agent trajectories.
+- Gemini-based QC sub-agents.
+- Model-provider evaluations using unapproved credentials.
+
+An API key already configured in my environment does not constitute authorization.
+
+Complete BOTH tasks' available non-Gemini implementation, oracle tests, negative tests, Docker/Harbor validation, QC, originality assessment, and independent review first.
+
+Once both tasks are completed, present:
+
+**Biology Task 1**
+- Scientific objective.
+- Oracle result.
+- Negative baseline results.
+- Harbor status.
+- Static QC.
+- Rubric QC.
+- Independent QC.
+- Originality result.
+- Remaining blockers.
+
+**Biology Task 2**
+- Same information, evaluated separately.
+
+Then ask me:
+
+**"Both Biology tasks have completed their available non-Gemini validation. Do you authorize Gemini API evaluation for difficulty calibration now, or should we skip it?"**
+
+Wait for my explicit answer.
+
+If I decline, mark model calibration as NOT RUN BY USER CHOICE.
+
+Do not treat deferred calibration as a failure of task implementation.
+
+## Optional agent calibration after approval
+
+If approved:
+
+1. Inspect supported Gemini models and free-tier limits.
+2. Use an appropriate Harbor-compatible agent such as Terminus-2.
+3. Configure the same model and agent settings for the evaluation batch.
+4. Run one valid graded smoke attempt per task.
+5. Then run eight independent valid trials for each authorized task.
+
+Every valid trial must have:
+
+- Clean reset.
+- Same task version.
+- Same model.
+- Same reasoning configuration.
+- Same agent scaffold.
+- Same resource limits.
+- No previous trajectory access.
+- No oracle or hidden-test access.
+
+Record:
+
+- Run ID.
+- Model and version.
+- Task and version.
+- Execution time.
+- Agent steps.
+- Tokens and cost where available.
+- Reward.
+- PASS/FAIL.
+- Error and failure reason.
+- Trajectory location.
+
+### Difficulty target
+
+Target approximately 35–60% observed success.
+
+With eight trials:
+
+- 3/8 = 37.5%.
+- 4/8 = 50%.
+- 5/8 = 62.5%, above the stated range.
+
+Report actual results without manipulation.
+
+Do not deliberately change grading or task difficulty merely to obtain the target.
+
+If model results justify a genuine scientific revision, version the task and repeat necessary validation and QC before recalibrating.
+
+### Infrastructure errors
+
+If an API returns HTTP 503, rate-limit errors, or other interruptions:
+
+- Use bounded retries.
+- Preserve logs.
+- Do not count infrastructure interruptions as scientific failures.
+- Do not fabricate missing runs.
+- Keep different models' results separate.
+
+Do not use a paid provider without approval.
+
+---
+
+# PHASE 16 — FINAL DELIVERABLES
+
+Produce exactly TWO complete Biology benchmark packages.
+
+### Biology Task 1
+
+Include:
+
+1. Scientific proposal.
+2. Complexity-layer design.
+3. Complete Harbor task.
+4. Docker environment.
+5. Data and metadata.
+6. Oracle solution.
+7. Hidden evaluator.
+8. Test coverage.
+9. Negative baseline results.
+10. Harbor validation logs.
+11. All 67 QC results.
+12. Independent QC findings and rechecks.
+13. Originality report.
+14. Reproduction instructions.
+15. Optional model trajectories if approved.
+
+### Biology Task 2
+
+Provide the same complete deliverables, independently implemented and validated.
+
+## Consolidated comparison report
+
+Create:
+
+`biology-benchmark/TWO_BIOLOGY_TASKS_FINAL_REPORT.md`
+
+Compare:
+
+- Scientific objective.
+- Biological question.
+- Statistical methodology.
+- Complexity layers.
+- Originality.
+- Data usage.
+- Hidden-test discrimination.
+- Oracle performance.
+- Negative-baseline performance.
+- Harbor validation.
+- Static QC.
+- Rubric QC.
+- Independent QC.
+- External QC status.
+- Optional agent success rate.
+- Remaining limitations.
+
+Do not merge the two tasks' evaluation results.
+
+## Final report format
+
+For each task:
+
+**Task Name:** [Name]
+
+**Scientific Domain:** Biology / [Subdomain]
+
+**Research Question:** [Concise explanation]
+
+**Selected Complexity Layers:** [4–6]
+
+**Originality:** PASS / FAIL / NEEDS REVIEW
+
+**Oracle:** PASS / FAIL / NOT TESTED
+
+**Negative Baselines:** PASS / FAIL / NOT TESTED
+
+**Hidden-Test Discrimination:** PASS / FAIL / NOT TESTED
+
+**Docker/Harbor:** PASS / FAIL / NOT TESTED
+
+**Static QC:** X/29 passed, with remaining statuses
+
+**Rubric QC:** X/38 passed, with remaining statuses
+
+**Independent QC:** PASS / FAIL / NOT AVAILABLE / INCOMPLETE
+
+**External QC:** PASS / FAIL / NOT RUN
+
+**Gemini Authorization:** NOT REQUESTED / PENDING / APPROVED / DECLINED
+
+**Valid Agent Trials:** X/8, or NOT RUN
+
+**Observed Success Rate:** X%, or NOT MEASURED
+
+**Remaining Issues:** [List]
+
+**Final Verdict:** READY FOR EXTERNAL QC / NEEDS FURTHER WORK
+
+Every PASS must be supported by actual evidence.
+
+---
+
+# NON-NEGOTIABLE RULES
+
+- Create exactly TWO Biology tasks.
+- Spawn TWO separate creator agents concurrently where supported.
+- Use separate task folders and independent development contexts.
+- Use the real GSE273600 experiment correctly.
+- Understand that the two attached files represent the same biological experiment.
+- Do not fabricate experimental metadata.
+- Do not invent matched untreated time points.
+- Do not treat TPM as raw count data.
+- Do not silently round estimated counts.
+- Do not make unsupported causal claims.
+- Do not recreate the study's published analysis as a novel benchmark.
+- Select two genuinely different scientific objectives.
+- Use 4–6 meaningful interconnected complexity layers per task.
+- Avoid artificial difficulty.
+- Implement complete task packages, not just proposals.
+- Keep private evaluator and reference solutions outside solver environments.
+- Test every meaningful scientific requirement.
+- Identify non-discriminating controls.
+- Demonstrate resistance to hardcoded and trivial solutions.
+- Accept alternative scientifically correct methods.
+- Run real Oracle, negative, Docker, and Harbor validation.
+- Complete all 29 static QC checks per task.
+- Complete all 38 rubric checks per task.
+- Require independent QC reviewers where supported.
+- Require independent rechecks after corrections.
+- Perform originality and plagiarism assessment for both tasks.
+- Never fabricate independent reviewer evidence.
+- Never fabricate QC or model performance results.
+- Never claim external QC approval without a real passing result.
+- Never use Gemini without explicit permission.
+- Never use a paid model without approval.
+- Do not classify infrastructure failures as model failures.
+- Do not manipulate results to achieve a target pass rate.
+- Do not commit, push, publish, or upload project code to GitHub or another remote repository.
+- Keep all generated task packages, reports, and logs local.
+
+# START EXECUTION NOW
+
+Follow this execution order:
+
+**Coordinator:** Inspect data and GEO metadata → Read QC checklist → Launch Creator Agent A and Creator Agent B.
+
+**Agent A:** Propose 3 candidates → Choose scientifically strongest candidate → Feasibility review → Create Biology Task 1 → Oracle → Hidden tests → Negative baselines → Harbor validation → 67 QC checks → Independent QC → Remediation → Final regression.
+
+**Agent B:** In parallel, propose 3 candidates → Choose a genuinely different scientific problem → Feasibility review → Create Biology Task 2 → Oracle → Hidden tests → Negative baselines → Harbor validation → 67 QC checks → Independent QC → Remediation → Final regression.
+
+**Coordinator:** Verify both tasks are distinct → Check originality → Reconcile QC results → Ensure genuine independent review → Produce final comparison report.
+
+**After both tasks complete available non-Gemini validation:** Ask my permission for Gemini API evaluation and stop until I respond.
+
+Do not stop after writing task proposals. Continue through all feasible implementation, testing, and QC stages.
+
+**FINAL OBJECTIVE: Deliver TWO genuinely different, scientifically rigorous, extremely challenging Biology benchmark tasks based on GSE273600, with complete reproducible Harbor implementations, strong hidden evaluators, comprehensive QC evidence, independent reviews, and no unresolved mandatory local quality failures.**

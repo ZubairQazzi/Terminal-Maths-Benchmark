@@ -1,0 +1,88 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py ...FFF.....                                              [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_sample_identity _____________________________
+
+    def test_sample_identity():
+>       CHECKS['sample_identity']()
+
+test_outputs.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def alignment():
+        m=read('alignment.tsv');truth=data()[4]['mapping']
+>       assert dict(zip(m.atlas_id,m.sample_id))==truth,'Sample provenance mismatched'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Sample provenance mismatched
+
+checks.py:77: AssertionError
+_______________________ test_discovery_alignment_scores ________________________
+
+    def test_discovery_alignment_scores():
+>       CHECKS['discovery_alignment_scores']()
+
+test_outputs.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+discovery = True
+
+    def alignment_scores(discovery):
+        c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')
+        score=correlations(tr if discovery else va)
+        for row in m.itertuples():
+            i=c.columns.get_loc(row.sample_id);j=a.columns.get_loc(row.atlas_id)
+            expect=float(score[i,j]);actual=row.discovery_correlation if discovery else row.validation_correlation
+>           assert abs(float(actual)-expect)<2e-6
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError
+
+checks.py:85: AssertionError
+______________________ test_heldout_identity_certificates ______________________
+
+    def test_heldout_identity_certificates():
+>       CHECKS['heldout_identity_certificates']()
+
+test_outputs.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+discovery = False
+
+    def alignment_scores(discovery):
+        c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')
+        score=correlations(tr if discovery else va)
+        for row in m.itertuples():
+            i=c.columns.get_loc(row.sample_id);j=a.columns.get_loc(row.atlas_id)
+            expect=float(score[i,j]);actual=row.discovery_correlation if discovery else row.validation_correlation
+>           assert abs(float(actual)-expect)<2e-6
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError
+
+checks.py:85: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_physical_audit
+PASSED test_outputs.py::test_biological_limits
+PASSED test_outputs.py::test_pure_aliquots
+PASSED test_outputs.py::test_two_source_aliquots
+PASSED test_outputs.py::test_open_set_rejection
+PASSED test_outputs.py::test_residual_certificates
+PASSED test_outputs.py::test_support_optimality
+FAILED test_outputs.py::test_sample_identity - AssertionError: Sample provena...
+FAILED test_outputs.py::test_discovery_alignment_scores - AssertionError
+FAILED test_outputs.py::test_heldout_identity_certificates - AssertionError
+========================= 3 failed, 8 passed in 5.52s ==========================

@@ -1,0 +1,40 @@
+{
+    "schema_version": 1,
+    "id": "7092edd1-d2d5-4f34-9c96-90fb22c71d9d",
+    "started_at": "2026-11-25T23:47:47.183656",
+    "updated_at": "2026-11-25T23:48:33.631407",
+    "finished_at": "2026-11-25T23:48:33.631407",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "bio1-saturated__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "specificity-envelope__R3UYTvq"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

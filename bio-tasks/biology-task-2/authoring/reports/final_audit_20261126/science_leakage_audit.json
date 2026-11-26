@@ -1,0 +1,198 @@
+{
+  "reviewer": "/root/qc_b",
+  "date": "2026-11-26",
+  "timezone": "Asia/Karachi",
+  "task": "biology-task-2",
+  "version": "0.1.1",
+  "local_private_trial_verdict": "READY WITH LIMITATIONS",
+  "public_release_verdict": "REDISTRIBUTION NOT FULLY CLEARED / UNVERIFIED",
+  "runtime_changed": false,
+  "provider_calls": 0,
+  "direct_private_answer_artifacts_observed": false,
+  "build_context_and_image_evidence": {
+    "context_inventory": "F:/rl/bio/authoring/final_audit_20261126/provenance_originality/source_and_runtime_checks.json",
+    "source": "Exact environment inventory excludes oracle, fixture, generator and grader paths; wheel names/metadata inspected for private payload names.",
+    "image": "Existing actual final isolation_v011.json: UID1000, /tests absent, /solution absent, data not writable, output writable. Docker COPY scope matches the inspected context.",
+    "visible_provenance": "provenance.json has source checksums/dimensions/transformation/floor; no seed/permutation/map/donor/weight fields. Metadata has original sample/GSM labels but no anonymous atlas/query join keys. Anonymous data encode recoverable expression by design, not a literal answer table."
+  },
+  "predictable_seed_warning": {
+    "status": "GENUINE CONDITIONAL SHORTCUT WARNING; not a blanket no-leak PASS",
+    "shipped_private_artifacts": "Not observed in exact environment build-context inventory; actual prior image probe confirms /tests and /solution absent",
+    "explicit_answer_fields": "No seed/permutation/map/donor/weights fields or metadata anonymous-key joins found",
+    "predictable_seed": "Default private seed273600 equals public accession digits. With correct non-public RNG/draw/order conventions, seed replay reconstructs120 mappings and24 donor/weight/class records without expression values.",
+    "probe": {
+      "passed": 7,
+      "total": 11,
+      "binary_reward": 0,
+      "failed": [
+        "physical_audit",
+        "discovery_alignment_scores",
+        "heldout_identity_certificates",
+        "residual_certificates"
+      ]
+    },
+    "full_checker_acceptance_without_expression_analysis": "NOT DEMONSTRATED; seed-only probe rejected",
+    "handling": "Preserve frozen v0.1.1 for authorized diagnostic trials, inspect actual trajectories for seed reconstruction, report limitation. Any future anti-predictability change requires reasoned versioning/revalidation, not tuning solely to force failure."
+  },
+  "scientific_assessment": {
+    "identity": "Real count/TPM are paired representations, not experiments. Nuisance centering is an empirical fingerprint, not exact recovery of effective lengths; each exact identity is validated on disjoint real genes.",
+    "mixtures": "Technical linear combinations of full-column normalized source TPM plus small synthetic perturbation. Coefficients are representation fractions, not cells/RNA mass; unsupported three-source queries retain best-pair diagnostics without a two-source biological claim.",
+    "finite_fixture_identifiability": "Independent source-based prior review confirms120/120 mappings, all24 categories/accepted supports; validation minimum correlation0.949414690856, margin0.006820138255; accepted residuals<0.0011, unsupported>0.032. These measurements are finite-instance evidence, not out-of-study performance.",
+    "n3": "No independent-group treatment effect or causal claim is inferred here. Three source replicates do not establish independent experiments; exact same-library provenance is a technical objective.",
+    "feature_holdout": "Separate gene sets share samples and coexpression. All-source-column eligibility is frozen before query labels; it is not independent biological validation, a p-value guarantee or out-of-study generalization.",
+    "reasoning_required": [
+      "Align versioned Ensembl IDs and preserve fractional source counts.",
+      "Remove arbitrary composition scales and avoid low-expression floor artifacts.",
+      "Compute nuisance-adjusted across-gene fingerprints and a bijection, with honest split scores/margins.",
+      "Fit sparse mixtures on the linear TPM representation and compute actual discovery/validation residuals.",
+      "Reject unsupported models, preserve diagnostic supports and avoid causal/cell-fraction assertions."
+    ],
+    "likely_failure_points": [
+      "Raw abundant-gene correlation or condition-average identity",
+      "Row/order assumptions or fractional-count rounding",
+      "Log-scale/count-scale mixture fitting",
+      "Invented confidence/residual certificates",
+      "Forcing every query into one/two sources",
+      "Interpreting feature holdout as biological replication or weights as cells",
+      "Conditional accession-seed replay shortcut if private RNG conventions are guessed"
+    ]
+  },
+  "trivial_submission_results": {
+    "empty_files": {
+      "passed": 0,
+      "total": 11,
+      "binary_reward": 0
+    },
+    "header_only_with_valid_audit": {
+      "passed": 5,
+      "total": 11,
+      "binary_reward": 0
+    },
+    "seed_replay_with_invented_certificates": {
+      "passed": 7,
+      "total": 11,
+      "binary_reward": 0
+    },
+    "constant_native": {
+      "passed": 3,
+      "total": 11,
+      "binary_reward": 0
+    },
+    "no_op_native": {
+      "passed": 0,
+      "total": 11,
+      "binary_reward": 0
+    },
+    "full_checker_acceptance_from_seed_replay_alone": "NOT DEMONSTRATED"
+  },
+  "originality": {
+    "task1": {
+      "manual_comparisons": 10,
+      "maximum_substantive_rating_pct": 25,
+      "closest": "Source publication; specificity motivation overlap is explicitly acknowledged",
+      "status": "PASS within bounded reviewed corpus"
+    },
+    "task2": {
+      "manual_comparisons": 16,
+      "maximum_substantive_rating_pct": 25,
+      "closest": "SEQC and established sample integrity/QC methods; sample identity and mixtures are prior art",
+      "status": "PASS within bounded reviewed corpus"
+    },
+    "cross_task": {
+      "reviewer_ratings_pct": [
+        0,
+        2.5
+      ],
+      "conservative_maximum_pct": 2.5,
+      "shared": "Same deposited experiment, representation cautions, audit/interpretation deliverables and Harbor conventions",
+      "distinct": "Task1 Welch/TOST/intersection-union BY/missing-control sensitivity; Task2 nuisance-adjusted exact sample identity, sparse expression-scale source fitting, held-out adequacy and open-set rejection"
+    },
+    "raw_tfidf_pct": {
+      "task1_to_task2": 35.6906285755137,
+      "task2_to_task1": 37.2335813353091,
+      "initial_duplicate_reference_result": 34.11343114398942
+    },
+    "current_diagnostics": {
+      "adjusted_tfidf_pct": 8.217223774566202,
+      "adjusted_5gram_jaccard_pct": 0.14619883040935672,
+      "solution_12token_jaccard_pct": 0.20348837209302326,
+      "tests_12token_jaccard_pct": 0.27808676307007785,
+      "solution_ast_histogram_cosine_pct": 98.91493241317882,
+      "tests_ast_histogram_cosine_pct": 99.30223029763549
+    },
+    "scope": "Predeclared six-dimension manual rubric excludes common data/metadata, standard terms, established formulas and Harbor boilerplate. Current cross_task_similarity_report.json values used; earlier reviewer diagnostics remain historical rather than silently overwritten.",
+    "limitations": [
+      "Ordinal weighted ratings are not probabilities or measured copied percentages.",
+      "Raw TF-IDF over30% is retained and investigated; it is not concealed by adjusted metrics.",
+      "Generic Python AST node histograms near99% are non-discriminating for scientific algorithm copying, and low lexical overlap cannot prove originality.",
+      "Finite corpus, unequal manual depth for unrelated code, IDCheck abstract-only comparison, and unseen prior work limit assurance.",
+      "No absolute originality, new-method invention or external approval is asserted."
+    ]
+  },
+  "rights": {
+    "article_and_figures": {
+      "license": "CC BY-NC-ND 4.0",
+      "runtime_article_or_figure_copies_observed": false,
+      "limitation": "No article adaptation, article-figure reuse, or unlimited commercial/public reuse is approved."
+    },
+    "geo_numerical_data": {
+      "access": "Public deposited data; original user-supplied copies are preserved",
+      "explicit_dataset_license_established": false,
+      "license_status": "UNVERIFIED; no explicit dataset-specific CC0/CC-BY grant established",
+      "no_automatic_article_license_transfer": true,
+      "no_unrestricted_ncbi_permission_inferred": true
+    },
+    "software": {
+      "evidence": "source_and_runtime_checks.json records exact wheel license metadata and embedded license-file names; common BSD/MIT/Apache terms appear. Complete container/third-party redistribution clearance is outside this bounded audit.",
+      "specific_gap": "pytest_json_ctrf-0.3.5 wheel has an MIT classifier but no embedded license file detected; retrieve/preserve authoritative notice before any public software redistribution."
+    },
+    "attribution": "Credit Labbé K., LeBon L., King B. et al., Nature Communications15:8301(2024), DOI10.1038/s41467-024-52538-5 and GEO GSE273600. Describe Task2 as synthetic technical transformations of paired source representations, not source contamination or new biological samples."
+  },
+  "primary_sources": [
+    {
+      "url": "https://www.nature.com/articles/s41467-024-52538-5",
+      "section": "Rights and permissions",
+      "accessed": "2026-11-26",
+      "finding": "Publisher article license is CC BY-NC-ND 4.0, not unrestricted CC BY. Article/figure terms must not be silently assigned to independently deposited numerical data."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-024-52538-5",
+      "section": "Data availability",
+      "accessed": "2026-11-26",
+      "finding": "Publisher directs readers to GSE273599/GSE273600/GSE273601. A deposition/access statement is not an explicit matrix-specific license grant."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+      "section": "Molecular Data Usage",
+      "accessed": "2026-11-26",
+      "finding": "NCBI imposes no repository restriction and does not accept requested reuse restrictions, but warns that submitters may assert rights and NCBI has no rights to transfer."
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "section": "Deed and terms",
+      "accessed": "2026-11-26",
+      "finding": "Attribution, noncommercial and no-distribution-of-adaptations conditions apply to material actually covered by this license; no automatic extension to separate GEO files is asserted."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273600",
+      "accessed": "2026-11-26",
+      "status": "Current web fetch challenged; cached official full family SOFT directly inspected and checksum verified. Primary publisher and current NCBI policy fetched successfully.",
+      "cached_record": "F:/rl/bio/authoring/sources/GSE273600_family.soft.gz",
+      "finding": "Public record and two exact supplementary filenames verified. Zero explicit license/rights fields in cached SOFT; this is not proof that no rights exist."
+    }
+  ],
+  "new_evidence_paths": [
+    "task2_visible_inputs_and_shortcuts.json",
+    "trivial_submission_recheck.json",
+    "seed_only_submission_probe.json",
+    "check_visible_seed_and_trivial.py",
+    "seed_only_submission_probe.py",
+    "F:/rl/bio/authoring/final_audit_20261126/provenance_originality/provenance_rights_originality_audit.json"
+  ],
+  "trial_condition": "Preserve the frozen version for authorized diagnostic trajectories; keep authoring replay scripts/seeded fixtures outside solver/model context; audit trajectories for use of this conditional shortcut. Do not change scientific difficulty merely to force failures.",
+  "limitations": [
+    "No dataset-specific redistribution license was established; no public dissemination authorized by this audit.",
+    "Manual substantive ratings, lexical diagnostics and generic AST scores do not establish absolute originality.",
+    "No provider/model evaluation was run by this reviewer; success and intended extreme difficulty are unmeasured."
+  ]
+}

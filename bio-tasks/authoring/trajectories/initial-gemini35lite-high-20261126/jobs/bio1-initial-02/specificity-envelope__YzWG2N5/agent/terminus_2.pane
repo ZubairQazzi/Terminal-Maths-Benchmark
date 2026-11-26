@@ -1,0 +1,1207 @@
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ ls -la /app/data/
+[?2004ltotal 30652
+dr-xr-xr-x 1 root root     4096 Nov 25 17:43 [0m[01;34m.[0m
+drwxr-xr-x 1 root root     4096 Nov 25 17:43 [01;34m..[0m
+-r-xr-xr-x 1 root root 13507950 Nov 25 17:03 [01;32mGSE273600_Control_Conditions_Raw_Counts.txt.gz[0m
+-r-xr-xr-x 1 root root 17851551 Nov 25 17:04 [01;32mGSE273600_Control_Conditions_TPMs.txt.gz[0m
+-r-xr-xr-x 1 root root     1386 Nov 25 17:36 [01;32mcalibration_cases.json[0m
+-r-xr-xr-x 1 root root    11951 Nov 25 17:27 [01;32msample_metadata.csv[0m
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 -c "
+[?2004l[?2004h> import pandas as pd
+[?2004l[?2004h> import json
+[?2004l[?2004h> 
+[?2004l[?2004h> meta = pd.read_csv('/app/data/sample_metadata.csv')
+[?2004l[?2004h> print('Metadata head:')
+[?2004l[?2004h> print(meta.head())
+[?2004l[?2004h> print('Metadata shape:', meta.shape)
+[?2004l[?2004h> 
+[?2004l[?2004h> with open('/app/data/calibration_cases.json') as f:
+[?2004l[?2004h>     calib = json.load(f)
+[?2004l[?2004h> print('Calibration cases keys/len:', type(calib), len(calib) if isinstance(calib, list) else list(calib.keys()))
+[?2004l[?2004h> if isinstance(calib, list) and len(calib) > 0:
+[?2004l[?2004h>     print('Calibration sample case:', calib[0])
+[?2004l[?2004h> "
+[?2004lMetadata head:
+             sample_id         gsm cell_line treatment  time_h  replicate  dose dose_unit                      geo_title
+0  Parental_UT_0h_rep1  GSM8433606  Parental        UT       0          1   0.0      none  Parental, UT, 0h, replicate 1
+1  Parental_UT_0h_rep2  GSM8433607  Parental        UT       0          2   0.0      none  Parental, UT, 0h, replicate 2
+2  Parental_UT_0h_rep3  GSM8433608  Parental        UT       0          3   0.0      none  Parental, UT, 0h, replicate 3
+3  Parental_UT_4h_rep1  GSM8433609  Parental        UT       4          1   0.0      none  Parental, UT, 4h, replicate 1
+4  Parental_UT_4h_rep2  GSM8433610  Parental        UT       4          2   0.0      none  Parental, UT, 4h, replicate 2
+Metadata shape: (120, 9)
+Calibration cases keys/len: <class 'dict'> ['purpose', 'cases']
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 -c "
+[?2004l[?2004h> import json
+[?2004l[?2004h> import pandas as pd
+[?2004l[?2004h> 
+[?2004l[?2004h> with open('/app/data/calibration_cases.json') as f:
+[?2004l[?2004h>     calib = json.load(f)
+[?2004l[?2004h> print('Calibration purpose:', calib.get('purpose'))
+[?2004l[?2004h> print('Number of cases:', len(calib.get('cases', [])))
+[?2004l[?2004h> if len(calib.get('cases', [])) > 0:
+[?2004l[?2004h>     print('First case:', calib['cases'][0])
+[?2004l[?2004h> 
+[?2004l[?2004h> counts = pd.read_csv('/app/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz', compression='gzip', nrows=5)
+[?2004l[?2004h> print('Counts shape/columns preview:', counts.shape, list(counts.columns)[:5], list(counts.columns)[-5:])
+[?2004l[?2004h> 
+[?2004l[?2004h> tpms = pd.read_csv('/app/data/GSE273600_Control_Conditions_TPMs.txt.gz', compression='gzip', nrows=5)
+[?2004l[?2004h> print('TPMs shape/columns preview:', tpms.shape, list(tpms.columns)[:5], list(tpms.columns)[-5:])
+[?2004l[?2004h> "
+[?2004lCalibration purpose: Explicit synthetic transformed-expression controls, not observations from GSE273600
+Number of cases: 8
+First case: {'case_id': 'positive_specific', 'groups': {'dmr_treated': [2.99, 3, 3.01], 'dmr_control': [0.99, 1, 1.01], 'parent_treated': [1.99, 2, 2.01], 'parent_control': [1.99, 2, 2.01]}}
+Counts shape/columns preview: (5, 1) ['\tParental_UT_0h_rep1\tParental_UT_0h_rep2\tParental_UT_0h_rep3\tParental_UT_4h_rep1\tParental_UT_4h_rep2\tParental_UT_4h_rep3\tParental_UT_8h_rep1\tParental_UT_8h_rep2\tParental_UT_8h_rep3\tParental_UT_16h_rep1\tParental_UT_16h_rep2\tParental_UT_16h_rep3\tParental_UT_24h_rep1\tParental_UT_24h_rep2\tParental_UT_24h_rep3\tParental_Dim_2h_rep1\tParental_Dim_2h_rep2\tParental_Dim_2h_rep3\tParental_Dim_4h_rep1\tParental_Dim_4h_rep2\tParental_Dim_4h_rep3\tParental_Dim_8h_rep1\tParental_Dim_8h_rep2\tParental_Dim_8h_rep3\tParental_Dim_16h_rep1\tParental_Dim_16h_rep2\tParental_Dim_16h_rep3\tParental_Dim_24h_rep1\tParental_Dim_24h_rep2\tParental_Dim_24h_rep3\tParental_Ars_2h_rep1\tParental_Ars_2h_rep2\tParental_Ars_2h_rep3\tParental_Ars_4h_rep1\tParental_Ars_4h_rep2\tParental_Ars_4h_rep3\tParental_Ars_8h_rep1\tParental_Ars_8h_rep2\tParental_Ars_8h_rep3\tParental_Ars_16h_rep1\tParental_Ars_16h_rep2\tParental_Ars_16h_rep3\tParental_Ars_24h_rep1\tParental_Ars_24h_rep2\tParental_Ars_24h_rep3\tParental_Tg_2h_rep1\tParental_Tg_2h_rep2\tParental_Tg_2h_rep3\tParental_Tg_4h_rep1\tParental_Tg_4h_rep2\tParental_Tg_4h_rep3\tParental_Tg_8h_rep1\tParental_Tg_8h_rep2\tParental_Tg_8h_rep3\tParental_Tg_16h_rep1\tParental_Tg_16h_rep2\tParental_Tg_16h_rep3\tParental_Tg_24h_rep1\tParental_Tg_24h_rep2\tParental_Tg_24h_rep3\tDmrPERK_UT_0h_rep1\tDmrPERK_UT_0h_rep2\tDmrPERK_UT_0h_rep3\tDmrPERK_UT_4h_rep1\tDmrPERK_UT_4h_rep2\tDmrPERK_UT_4h_rep3\tDmrPERK_UT_8h_rep1\tDmrPERK_UT_8h_rep2\tDmrPERK_UT_8h_rep3\tDmrPERK_UT_16h_rep1\tDmrPERK_UT_16h_rep2\tDmrPERK_UT_16h_rep3\tDmrPERK_UT_24h_rep1\tDmrPERK_UT_24h_rep2\tDmrPERK_UT_24h_rep3\tDmrPERK_Dim_2h_rep1\tDmrPERK_Dim_2h_rep2\tDmrPERK_Dim_2h_rep3\tDmrPERK_Dim_4h_rep1\tDmrPERK_Dim_4h_rep2\tDmrPERK_Dim_4h_rep3\tDmrPERK_Dim_8h_rep1\tDmrPERK_Dim_8h_rep2\tDmrPERK_Dim_8h_rep3\tDmrPERK_Dim_16h_rep1\tDmrPERK_Dim_16h_rep2\tDmrPERK_Dim_16h_rep3\tDmrPERK_Dim_24h_rep1\tDmrPERK_Dim_24h_rep2\tDmrPERK_Dim_24h_rep3\tDmrPERK_Ars_2h_rep1\tDmrPERK_Ars_2h_rep2\tDmrPERK_Ars_2h_rep3\tDmrPERK_Ars_4h_rep1\tDmrPERK_Ars_4h_rep2\tDmrPERK_Ars_4h_rep3\tDmrPERK_Ars_8h_rep1\tDmrPERK_Ars_8h_rep2\tDmrPERK_Ars_8h_rep3\tDmrPERK_Ars_16h_rep1\tDmrPERK_Ars_16h_rep2\tDmrPERK_Ars_16h_rep3\tDmrPERK_Ars_24h_rep1\tDmrPERK_Ars_24h_rep2\tDmrPERK_Ars_24h_rep3\tDmrPERK_Tg_2h_rep1\tDmrPERK_Tg_2h_rep2\tDmrPERK_Tg_2h_rep3\tDmrPERK_Tg_4h_rep1\tDmrPERK_Tg_4h_rep2\tDmrPERK_Tg_4h_rep3\tDmrPERK_Tg_8h_rep1\tDmrPERK_Tg_8h_rep2\tDmrPERK_Tg_8h_rep3\tDmrPERK_Tg_16h_rep1\tDmrPERK_Tg_16h_rep2\tDmrPERK_Tg_16h_rep3\tDmrPERK_Tg_24h_rep1\tDmrPERK_Tg_24h_rep2\tDmrPERK_Tg_24h_rep3'] ['\tParental_UT_0h_rep1\tParental_UT_0h_rep2\tParental_UT_0h_rep3\tParental_UT_4h_rep1\tParental_UT_4h_rep2\tParental_UT_4h_rep3\tParental_UT_8h_rep1\tParental_UT_8h_rep2\tParental_UT_8h_rep3\tParental_UT_16h_rep1\tParental_UT_16h_rep2\tParental_UT_16h_rep3\tParental_UT_24h_rep1\tParental_UT_24h_rep2\tParental_UT_24h_rep3\tParental_Dim_2h_rep1\tParental_Dim_2h_rep2\tParental_Dim_2h_rep3\tParental_Dim_4h_rep1\tParental_Dim_4h_rep2\tParental_Dim_4h_rep3\tParental_Dim_8h_rep1\tParental_Dim_8h_rep2\tParental_Dim_8h_rep3\tParental_Dim_16h_rep1\tParental_Dim_16h_rep2\tParental_Dim_16h_rep3\tParental_Dim_24h_rep1\tParental_Dim_24h_rep2\tParental_Dim_24h_rep3\tParental_Ars_2h_rep1\tParental_Ars_2h_rep2\tParental_Ars_2h_rep3\tParental_Ars_4h_rep1\tParental_Ars_4h_rep2\tParental_Ars_4h_rep3\tParental_Ars_8h_rep1\tParental_Ars_8h_rep2\tParental_Ars_8h_rep3\tParental_Ars_16h_rep1\tParental_Ars_16h_rep2\tParental_Ars_16h_rep3\tParental_Ars_24h_rep1\tParental_Ars_24h_rep2\tParental_Ars_24h_rep3\tParental_Tg_2h_rep1\tParental_Tg_2h_rep2\tParental_Tg_2h_rep3\tParental_Tg_4h_rep1\tParental_Tg_4h_rep2\tParental_Tg_4h_rep3\tParental_Tg_8h_rep1\tParental_Tg_8h_rep2\tParental_Tg_8h_rep3\tParental_Tg_16h_rep1\tParental_Tg_16h_rep2\tParental_Tg_16h_rep3\tParental_Tg_24h_rep1\tParental_Tg_24h_rep2\tParental_Tg_24h_rep3\tDmrPERK_UT_0h_rep1\tDmrPERK_UT_0h_rep2\tDmrPERK_UT_0h_rep3\tDmrPERK_UT_4h_rep1\tDmrPERK_UT_4h_rep2\tDmrPERK_UT_4h_rep3\tDmrPERK_UT_8h_rep1\tDmrPERK_UT_8h_rep2\tDmrPERK_UT_8h_rep3\tDmrPERK_UT_16h_rep1\tDmrPERK_UT_16h_rep2\tDmrPERK_UT_16h_rep3\tDmrPERK_UT_24h_rep1\tDmrPERK_UT_24h_rep2\tDmrPERK_UT_24h_rep3\tDmrPERK_Dim_2h_rep1\tDmrPERK_Dim_2h_rep2\tDmrPERK_Dim_2h_rep3\tDmrPERK_Dim_4h_rep1\tDmrPERK_Dim_4h_rep2\tDmrPERK_Dim_4h_rep3\tDmrPERK_Dim_8h_rep1\tDmrPERK_Dim_8h_rep2\tDmrPERK_Dim_8h_rep3\tDmrPERK_Dim_16h_rep1\tDmrPERK_Dim_16h_rep2\tDmrPERK_Dim_16h_rep3\tDmrPERK_Dim_24h_rep1\tDmrPERK_Dim_24h_rep2\tDmrPERK_Dim_24h_rep3\tDmrPERK_Ars_2h_rep1\tDmrPERK_Ars_2h_rep2\tDmrPERK_Ars_2h_rep3\tDmrPERK_Ars_4h_rep1\tDmrPERK_Ars_4h_rep2\tDmrPERK_Ars_4h_rep3\tDmrPERK_Ars_8h_rep1\tDmrPERK_Ars_8h_rep2\tDmrPERK_Ars_8h_rep3\tDmrPERK_Ars_16h_rep1\tDmrPERK_Ars_16h_rep2\tDmrPERK_Ars_16h_rep3\tDmrPERK_Ars_24h_rep1\tDmrPERK_Ars_24h_rep2\tDmrPERK_Ars_24h_rep3\tDmrPERK_Tg_2h_rep1\tDmrPERK_Tg_2h_rep2\tDmrPERK_Tg_2h_rep3\tDmrPERK_Tg_4h_rep1\tDmrPERK_Tg_4h_rep2\tDmrPERK_Tg_4h_rep3\tDmrPERK_Tg_8h_rep1\tDmrPERK_Tg_8h_rep2\tDmrPERK_Tg_8h_rep3\tDmrPERK_Tg_16h_rep1\tDmrPERK_Tg_16h_rep2\tDmrPERK_Tg_16h_rep3\tDmrPERK_Tg_24h_rep1\tDmrPERK_Tg_24h_rep2\tDmrPERK_Tg_24h_rep3']
+TPMs shape/columns preview: (5, 1) ['ID\tgene_name\tParental_UT_0h_rep1\tParental_UT_0h_rep2\tParental_UT_0h_rep3\tParental_UT_4h_rep1\tParental_UT_4h_rep2\tParental_UT_4h_rep3\tParental_UT_8h_rep1\tParental_UT_8h_rep2\tParental_UT_8h_rep3\tParental_UT_16h_rep1\tParental_UT_16h_rep2\tParental_UT_16h_rep3\tParental_UT_24h_rep1\tParental_UT_24h_rep2\tParental_UT_24h_rep3\tParental_Dim_2h_rep1\tParental_Dim_2h_rep2\tParental_Dim_2h_rep3\tParental_Dim_4h_rep1\tParental_Dim_4h_rep2\tParental_Dim_4h_rep3\tParental_Dim_8h_rep1\tParental_Dim_8h_rep2\tParental_Dim_8h_rep3\tParental_Dim_16h_rep1\tParental_Dim_16h_rep2\tParental_Dim_16h_rep3\tParental_Dim_24h_rep1\tParental_Dim_24h_rep2\tParental_Dim_24h_rep3\tParental_Ars_2h_rep1\tParental_Ars_2h_rep2\tParental_Ars_2h_rep3\tParental_Ars_4h_rep1\tParental_Ars_4h_rep2\tParental_Ars_4h_rep3\tParental_Ars_8h_rep1\tParental_Ars_8h_rep2\tParental_Ars_8h_rep3\tParental_Ars_16h_rep1\tParental_Ars_16h_rep2\tParental_Ars_16h_rep3\tParental_Ars_24h_rep1\tParental_Ars_24h_rep2\tParental_Ars_24h_rep3\tParental_Tg_2h_rep1\tParental_Tg_2h_rep2\tParental_Tg_2h_rep3\tParental_Tg_4h_rep1\tParental_Tg_4h_rep2\tParental_Tg_4h_rep3\tParental_Tg_8h_rep1\tParental_Tg_8h_rep2\tParental_Tg_8h_rep3\tParental_Tg_16h_rep1\tParental_Tg_16h_rep2\tParental_Tg_16h_rep3\tParental_Tg_24h_rep1\tParental_Tg_24h_rep2\tParental_Tg_24h_rep3\tDmrPERK_UT_0h_rep1\tDmrPERK_UT_0h_rep2\tDmrPERK_UT_0h_rep3\tDmrPERK_UT_4h_rep1\tDmrPERK_UT_4h_rep2\tDmrPERK_UT_4h_rep3\tDmrPERK_UT_8h_rep1\tDmrPERK_UT_8h_rep2\tDmrPERK_UT_8h_rep3\tDmrPERK_UT_16h_rep1\tDmrPERK_UT_16h_rep2\tDmrPERK_UT_16h_rep3\tDmrPERK_UT_24h_rep1\tDmrPERK_UT_24h_rep2\tDmrPERK_UT_24h_rep3\tDmrPERK_Dim_2h_rep1\tDmrPERK_Dim_2h_rep2\tDmrPERK_Dim_2h_rep3\tDmrPERK_Dim_4h_rep1\tDmrPERK_Dim_4h_rep2\tDmrPERK_Dim_4h_rep3\tDmrPERK_Dim_8h_rep1\tDmrPERK_Dim_8h_rep2\tDmrPERK_Dim_8h_rep3\tDmrPERK_Dim_16h_rep1\tDmrPERK_Dim_16h_rep2\tDmrPERK_Dim_16h_rep3\tDmrPERK_Dim_24h_rep1\tDmrPERK_Dim_24h_rep2\tDmrPERK_Dim_24h_rep3\tDmrPERK_Ars_2h_rep1\tDmrPERK_Ars_2h_rep2\tDmrPERK_Ars_2h_rep3\tDmrPERK_Ars_4h_rep1\tDmrPERK_Ars_4h_rep2\tDmrPERK_Ars_4h_rep3\tDmrPERK_Ars_8h_rep1\tDmrPERK_Ars_8h_rep2\tDmrPERK_Ars_8h_rep3\tDmrPERK_Ars_16h_rep1\tDmrPERK_Ars_16h_rep2\tDmrPERK_Ars_16h_rep3\tDmrPERK_Ars_24h_rep1\tDmrPERK_Ars_24h_rep2\tDmrPERK_Ars_24h_rep3\tDmrPERK_Tg_2h_rep1\tDmrPERK_Tg_2h_rep2\tDmrPERK_Tg_2h_rep3\tDmrPERK_Tg_4h_rep1\tDmrPERK_Tg_4h_rep2\tDmrPERK_Tg_4h_rep3\tDmrPERK_Tg_8h_rep1\tDmrPERK_Tg_8h_rep2\tDmrPERK_Tg_8h_rep3\tDmrPERK_Tg_16h_rep1\tDmrPERK_Tg_16h_rep2\tDmrPERK_Tg_16h_rep3\tDmrPERK_Tg_24h_rep1\tDmrPERK_Tg_24h_rep2\tDmrPERK_Tg_24h_rep3'] ['ID\tgene_name\tParental_UT_0h_rep1\tParental_UT_0h_rep2\tParental_UT_0h_rep3\tParental_UT_4h_rep1\tParental_UT_4h_rep2\tParental_UT_4h_rep3\tParental_UT_8h_rep1\tParental_UT_8h_rep2\tParental_UT_8h_rep3\tParental_UT_16h_rep1\tParental_UT_16h_rep2\tParental_UT_16h_rep3\tParental_UT_24h_rep1\tParental_UT_24h_rep2\tParental_UT_24h_rep3\tParental_Dim_2h_rep1\tParental_Dim_2h_rep2\tParental_Dim_2h_rep3\tParental_Dim_4h_rep1\tParental_Dim_4h_rep2\tParental_Dim_4h_rep3\tParental_Dim_8h_rep1\tParental_Dim_8h_rep2\tParental_Dim_8h_rep3\tParental_Dim_16h_rep1\tParental_Dim_16h_rep2\tParental_Dim_16h_rep3\tParental_Dim_24h_rep1\tParental_Dim_24h_rep2\tParental_Dim_24h_rep3\tParental_Ars_2h_rep1\tParental_Ars_2h_rep2\tParental_Ars_2h_rep3\tParental_Ars_4h_rep1\tParental_Ars_4h_rep2\tParental_Ars_4h_rep3\tParental_Ars_8h_rep1\tParental_Ars_8h_rep2\tParental_Ars_8h_rep3\tParental_Ars_16h_rep1\tParental_Ars_16h_rep2\tParental_Ars_16h_rep3\tParental_Ars_24h_rep1\tParental_Ars_24h_rep2\tParental_Ars_24h_rep3\tParental_Tg_2h_rep1\tParental_Tg_2h_rep2\tParental_Tg_2h_rep3\tParental_Tg_4h_rep1\tParental_Tg_4h_rep2\tParental_Tg_4h_rep3\tParental_Tg_8h_rep1\tParental_Tg_8h_rep2\tParental_Tg_8h_rep3\tParental_Tg_16h_rep1\tParental_Tg_16h_rep2\tParental_Tg_16h_rep3\tParental_Tg_24h_rep1\tParental_Tg_24h_rep2\tParental_Tg_24h_rep3\tDmrPERK_UT_0h_rep1\tDmrPERK_UT_0h_rep2\tDmrPERK_UT_0h_rep3\tDmrPERK_UT_4h_rep1\tDmrPERK_UT_4h_rep2\tDmrPERK_UT_4h_rep3\tDmrPERK_UT_8h_rep1\tDmrPERK_UT_8h_rep2\tDmrPERK_UT_8h_rep3\tDmrPERK_UT_16h_rep1\tDmrPERK_UT_16h_rep2\tDmrPERK_UT_16h_rep3\tDmrPERK_UT_24h_rep1\tDmrPERK_UT_24h_rep2\tDmrPERK_UT_24h_rep3\tDmrPERK_Dim_2h_rep1\tDmrPERK_Dim_2h_rep2\tDmrPERK_Dim_2h_rep3\tDmrPERK_Dim_4h_rep1\tDmrPERK_Dim_4h_rep2\tDmrPERK_Dim_4h_rep3\tDmrPERK_Dim_8h_rep1\tDmrPERK_Dim_8h_rep2\tDmrPERK_Dim_8h_rep3\tDmrPERK_Dim_16h_rep1\tDmrPERK_Dim_16h_rep2\tDmrPERK_Dim_16h_rep3\tDmrPERK_Dim_24h_rep1\tDmrPERK_Dim_24h_rep2\tDmrPERK_Dim_24h_rep3\tDmrPERK_Ars_2h_rep1\tDmrPERK_Ars_2h_rep2\tDmrPERK_Ars_2h_rep3\tDmrPERK_Ars_4h_rep1\tDmrPERK_Ars_4h_rep2\tDmrPERK_Ars_4h_rep3\tDmrPERK_Ars_8h_rep1\tDmrPERK_Ars_8h_rep2\tDmrPERK_Ars_8h_rep3\tDmrPERK_Ars_16h_rep1\tDmrPERK_Ars_16h_rep2\tDmrPERK_Ars_16h_rep3\tDmrPERK_Ars_24h_rep1\tDmrPERK_Ars_24h_rep2\tDmrPERK_Ars_24h_rep3\tDmrPERK_Tg_2h_rep1\tDmrPERK_Tg_2h_rep2\tDmrPERK_Tg_2h_rep3\tDmrPERK_Tg_4h_rep1\tDmrPERK_Tg_4h_rep2\tDmrPERK_Tg_4h_rep3\tDmrPERK_Tg_8h_rep1\tDmrPERK_Tg_8h_rep2\tDmrPERK_Tg_8h_rep3\tDmrPERK_Tg_16h_rep1\tDmrPERK_Tg_16h_rep2\tDmrPERK_Tg_16h_rep3\tDmrPERK_Tg_24h_rep1\tDmrPERK_Tg_24h_rep2\tDmrPERK_Tg_24h_rep3']
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/inspect_data.py
+[?2004l[?2004h> import pandas as pd
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> import json
+[?2004l[?2004h> import gzip
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading metadata...")
+[?2004l[?2004h> meta = pd.read_csv('/app/data/sample_metadata.csv')
+[?2004l[?2004h> sample_ids = meta['sample_id'].tolist()
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading counts...")
+[?2004l[?2004h> # The raw counts file has ID column and sample columns
+[?2004l[?2004h> counts_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> print("Counts shape:", counts_df.shape)
+[?2004l[?2004h> print("Counts columns:", list(counts_df.columns[:5]))
+[?2004l[?2004h> 
+[?2004l[?2004h> # Check ID column name
+[?2004l[?2004h> id_col = counts_df.columns[0]
+[?2004l[?2004h> print("ID column name in counts:", id_col)
+[?2004l[?2004h> 
+[?2004l[?2004h> # Check fractional count entries (differing from nearest integer by > 1e-8)
+[?2004l[?2004h> # Exclude id_col
+[?2004l[?2004h> count_matrix = counts_df.iloc[:, 1:].to_numpy(dtype=np.float64)
+[?2004l[?2004h> frac_diff = np.abs(count_matrix - np.round(count_matrix))
+[?2004l[?2004h> fractional_count_entries = int(np.sum(frac_diff > 1e-8))
+[?2004l[?2004h> print("Fractional count entries:", fractional_count_entries)
+[?2004l[?2004h> 
+[?2004l[?2004h> # Library sizes
+[?2004l[?2004h> lib_sizes = count_matrix.sum(axis=0)
+[?2004l[?2004h> library_sizes = {sample_ids[i]: float(lib_sizes[i]) for i in range(len(sample_ids))}
+[?2004l[?2004h> print("Sample library sizes sample 0:", list(library_sizes.items())[:3])
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading TPMs...")
+[?2004l[?2004h> tpms_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_TPMs.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> print("TPMs shape:", tpms_df.shape)
+[?2004l[?2004h> print("TPMs columns:", list(tpms_df.columns[:5]))
+[?2004l[?2004h> tpm_matrix = tpms_df.iloc[:, 2:].to_numpy(dtype=np.float64)
+[?2004l[?2004h> # TPM floor: global numeric minimum
+[?2004l[?2004h> tpm_floor = float(np.min(tpm_matrix))
+[?2004l[?2004h> tpm_floor_entries = int(np.sum(tpm_matrix == tpm_floor))
+[?2004l[?2004h> print("TPM floor:", tpm_floor, "Entries:", tpm_floor_entries)
+[?2004l[?2004h> 
+[?2004l[?2004h> EOF
+[?2004lbash: /app/inspect_data.py: Permission denied
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/inspect_data.py
+[?2004lpython3: can't open file '/app/inspect_data.py': [Errno 2] No such file or directory
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ ls -ld /app
+[?2004ldrwxr-xr-x 1 root root 4096 Nov 25 17:43 [0m[01;34m/app[0m
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ whoami
+[?2004lagent
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ ls -la /app
+[?2004ltotal 16
+drwxr-xr-x 1 root  root  4096 Nov 25 17:43 [0m[01;34m.[0m
+drwxr-xr-x 1 root  root  4096 Nov 25 19:47 [01;34m..[0m
+dr-xr-xr-x 1 root  root  4096 Nov 25 17:43 [01;34mdata[0m
+drwxr-xr-x 2 agent agent 4096 Nov 25 17:43 [01;34msubmission[0m
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ mkdir -p /app/submission
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ ls -la /app/submission
+[?2004ltotal 8
+drwxr-xr-x 2 agent agent 4096 Nov 25 17:43 [0m[01;34m.[0m
+drwxr-xr-x 1 root  root  4096 Nov 25 17:43 [01;34m..[0m
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/inspect_data.py
+[?2004l[?2004h> import pandas as pd
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> import json
+[?2004l[?2004h> import gzip
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading metadata...")
+[?2004l[?2004h> meta = pd.read_csv('/app/data/sample_metadata.csv')
+[?2004l[?2004h> sample_ids = meta['sample_id'].tolist()
+[?2004l[?2004h> print("Sample IDs count:", len(sample_ids))
+[?2004l[?2004h> print("Sample IDs match columns in counts?", len(sample_ids))
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading counts...")
+[?2004l[?2004h> counts_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> print("Counts shape:", counts_df.shape)
+[?2004l[?2004h> id_col = counts_df.columns[0]
+[?2004l[?2004h> print("ID column name in counts:", id_col)
+[?2004l[?2004h> 
+[?2004l[?2004h> count_matrix = counts_df.iloc[:, 1:].to_numpy(dtype=np.float64)
+[?2004l[?2004h> frac_diff = np.abs(count_matrix - np.round(count_matrix))
+[?2004l[?2004h> fractional_count_entries = int(np.sum(frac_diff > 1e-8))
+[?2004l[?2004h> print("Fractional count entries:", fractional_count_entries)
+[?2004l[?2004h> 
+[?2004l[?2004h> lib_sizes = count_matrix.sum(axis=0)
+[?2004l[?2004h> library_sizes = {counts_df.columns[1+i]: float(lib_sizes[i]) for i in range(len(counts_df.columns)-1)}
+[?2004l[?2004h> print("Sample library sizes sample 0:", list(library_sizes.items()[:3]))
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading TPMs...")
+[?2004l[?2004h> tpms_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_TPMs.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> print("TPMs shape:", tpms_df.shape)
+[?2004l[?2004h> tpm_matrix = tpms_df.iloc[:, 2:].to_numpy(dtype=np.float64)
+[?2004l[?2004h> tpm_floor = float(np.min(tpm_matrix))
+[?2004l[?2004h> tpm_floor_entries = int(np.sum(tpm_matrix == tpm_floor))
+[?2004l[?2004h> print("TPM floor:", tpm_floor, "Entries:", tpm_floor_entries)
+[?2004l[?2004h> 
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/inspect_data.py
+[?2004lLoading metadata...
+Sample IDs count: 120
+Sample IDs match columns in counts? 120
+Loading counts...
+Counts shape: (57665, 121)
+ID column name in counts: Unnamed: 0
+Fractional count entries: 2188385
+Traceback (most recent call last):
+  File "/app/submission/inspect_data.py", line 25, in <module>
+    print("Sample library sizes sample 0:", list(library_sizes.items()[:3]))
+                                                 ~~~~~~~~~~~~~~~~~~~~~^^^^
+TypeError: 'dict_items' object is not subscriptable
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/inspect_data.py
+[?2004l[?2004h> import pandas as pd
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> import json
+[?2004l[?2004h> import gzip
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading metadata...")
+[?2004l[?2004h> meta = pd.read_csv('/app/data/sample_metadata.csv')
+[?2004l[?2004h> sample_ids = meta['sample_id'].tolist()
+[?2004l[?2004h> print("Sample IDs count:", len(sample_ids))
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading counts...")
+[?2004l[?2004h> counts_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> print("Counts shape:", counts_df.shape)
+[?2004l[?2004h> id_col = counts_df.columns[0]
+[?2004l[?2004h> print("ID column name in counts:", id_col)
+[?2004l[?2004h> 
+[?2004l[?2004h> count_matrix = counts_df.iloc[:, 1:].to_numpy(dtype=np.float64)
+[?2004l[?2004h> frac_diff = np.abs(count_matrix - np.round(count_matrix))
+[?2004l[?2004h> fractional_count_entries = int(np.sum(frac_diff > 1e-8))
+[?2004l[?2004h> print("Fractional count entries:", fractional_count_entries)
+[?2004l[?2004h> 
+[?2004l[?2004h> lib_sizes = count_matrix.sum(axis=0)
+[?2004l[?2004h> library_sizes = {counts_df.columns[1+i]: float(lib_sizes[i]) for i in range(len(counts_df.columns)-1)}
+[?2004l[?2004h> print("Sample library sizes sample 0:", list(library_sizes.items())[:3])
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading TPMs...")
+[?2004l[?2004h> tpms_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_TPMs.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> print("TPMs shape:", tpms_df.shape)
+[?2004l[?2004h> tpm_matrix = tpms_df.iloc[:, 2:].to_numpy(dtype=np.float64)
+[?2004l[?2004h> tpm_floor = float(np.min(tpm_matrix))
+[?2004l[?2004h> tpm_floor_entries = int(np.sum(tpm_matrix == tpm_floor))
+[?2004l[?2004h> print("TPM floor:", tpm_floor, "Entries:", tpm_floor_entries)
+[?2004l[?2004h> 
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/inspect_data.py
+[?2004lLoading metadata...
+Sample IDs count: 120
+Loading counts...
+Counts shape: (57665, 121)
+ID column name in counts: Unnamed: 0
+Fractional count entries: 2188385
+Sample library sizes sample 0: [('Parental_UT_0h_rep1', 27706720.000015), ('Parental_UT_0h_rep2', 16792574.000025004), ('Parental_UT_0h_rep3', 17949975.000012003)]
+Loading TPMs...
+TPMs shape: (57665, 122)
+TPM floor: 0.063122 Entries: 3190994
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/test_calibration.py
+[?2004l[?2004h> import json
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> import scipy.stats as stats
+[?2004l[?2004h> 
+[?2004l[?2004h> with open('/app/data/calibration_cases.json') as f:
+[?2004l[?2004h>     calib = json.load(f)
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Testing calibration cases...")
+[?2004l[?2004h> for case in calib['cases']:
+[?2004l[?2004h>     case_id = case['case_id']
+[?2004l[?2004h>     groups = case['groups']
+[?2004l[?2004h>     print(f"Case: {case_id}, groups keys: {list(groups.keys())}")
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/test_calibration.py
+[?2004lTesting calibration cases...
+Case: positive_specific, groups keys: ['dmr_treated', 'dmr_control', 'parent_treated', 'parent_control']
+Case: negative_specific, groups keys: ['dmr_treated', 'dmr_control', 'parent_treated', 'parent_control']
+Case: parent_not_equivalent, groups keys: ['dmr_treated', 'dmr_control', 'parent_treated', 'parent_control']
+Case: small_dmr_effect, groups keys: ['dmr_treated', 'dmr_control', 'parent_treated', 'parent_control']
+Case: uncertain_parent, groups keys: ['dmr_treated', 'dmr_control', 'parent_treated', 'parent_control']
+Case: zero_variance_specific, groups keys: ['dmr_treated', 'dmr_control', 'parent_treated', 'parent_control']
+Case: zero_variance_null, groups keys: ['dmr_treated', 'dmr_control', 'parent_treated', 'parent_control']
+Case: minimum_effect_boundary, groups keys: ['dmr_treated', 'dmr_control', 'parent_treated', 'parent_control']
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/test_calib_eval.py
+[?2004l[?2004h> import json
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> import scipy.stats as stats
+[?2004l[?2004h> 
+[?2004l[?2004h> with open('/app/data/calibration_cases.json') as f:
+[?2004l[?2004h>     calib = json.load(f)
+[?2004l[?2004h> 
+[?2004l[?2004h> def compute_metrics(dt, dc, pt, pc):
+[?2004l[?2004h>     # dt: dmr_treated, dc: dmr_control, pt: parent_treated, pc: parent_control
+[?2004l[?2004h>     dt = np.array(dt, dtype=float)
+[?2004l[?2004h>     dc = np.array(dc, dtype=float)
+[?2004l[?2004h>     pt = np.array(pt, dtype=float)
+[?2004l[?2004h>     pc = np.array(pc, dtype=float)
+[?2004l[?2004h>     
+[?2004l[?2004h>     n_dt, n_dc, n_pt, n_pc = len(dt), len(dc), len(pt), len(pc)
+[?2004l[?2004h>     
+[?2004l[?2004h>     mean_dt, mean_dc = np.mean(dt), np.mean(dc)
+[?2004l[?2004h>     mean_pt, mean_pc = np.mean(pt), np.mean(pc)
+[?2004l[?2004h>     
+[?2004l[?2004h>     var_dt = np.var(dt, ddof=1) if n_dt > 1 else 0.0
+[?2004l[?2004h>     var_dc = np.var(dc, ddof=1) if n_dc > 1 else 0.0
+[?2004l[?2004h>     var_pt = np.var(pt, ddof=1) if n_pt > 1 else 0.0
+[?2004l[?2004h>     var_pc = np.var(pc, ddof=1) if n_pc > 1 else 0.0
+[?2004l[?2004h>     
+[?2004l[?2004h>     d = mean_dt - mean_dc
+[?2004l[?2004h>     a = mean_pt - mean_pc
+[?2004l[?2004h>     i = d - a
+[?2004l[?2004h>     
+[?2004l[?2004h>     # dmr effect SE and df
+[?2004l[?2004h>     v_dt = var_dt / n_dt
+[?2004l[?2004h>     v_dc = var_dc / n_dc
+[?2004l[?2004h>     se_dmr = np.sqrt(v_dt + v_dc)
+[?2004l[?2004h>     if se_dmr == 0:
+[?2004l[?2004h>         df_dmr = 1e12
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         num = (v_dt + v_dc)**2
+[?2004l[?2004h>         den = (v_dt**2 / (n_dt - 1) if n_dt > 1 else 0) + (v_dc**2 / (n_dc - 1) if n_dc > 1 else 0)
+[?2004l[?2004h>         df_dmr = num / den if den > 0 else 1e12
+[?2004l[?2004h>         
+[?2004l[?2004h>     # parent effect SE and df
+[?2004l[?2004h>     v_pt = var_pt / n_pt
+[?2004l[?2004h>     v_pc = var_pc / n_pc
+[?2004l[?2004h>     se_parent = np.sqrt(v_pt + v_pc)
+[?2004l[?2004h>     if se_parent == 0:
+[?2004l[?2004h>         df_parent = 1e12
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         num = (v_pt + v_pc)**2
+[?2004l[?2004h>         den = (v_pt**2 / (n_pt - 1) if n_pt > 1 else 0) + (v_pc**2 / (n_pc - 1) if n_pc > 1 else 0)
+[?2004l[?2004h>         df_parent = num / den if den > 0 else 1e12
+[?2004l[?2004h> 
+[?2004l[?2004h>     # interaction SE and df (4 groups)
+[?2004l[?2004h>     v_dt_i = var_dt / n_dt
+[?2004l[?2004h>     v_dc_i = var_dc / n_dc
+[?2004l[?2004h>     v_pt_i = var_pt / n_pt
+[?2004l[?2004h>     v_pc_i = var_pc / n_pc
+[?2004l[?2004h>     se_interaction = np.sqrt(v_dt_i + v_dc_i + v_pt_i + v_pc_i)
+[?2004l[?2004h>     if se_interaction == 0:
+[?2004l[?2004h>         df_interaction = 1e12
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         num = (v_dt_i + v_dc_i + v_pt_i + v_pc_i)**2
+[?2004l[?2004h>         den = ( (v_dt_i**2 / (n_dt - 1) if n_dt > 1 else 0) +
+[?2004l[?2004h>                 (v_dc_i**2 / (n_dc - 1) if n_dc > 1 else 0) +
+[?2004l[?2004h>                 (v_pt_i**2 / (n_pt - 1) if n_pt > 1 else 0) +
+[?2004l[?2004h>                 (v_pc_i**2 / (n_pc - 1) if n_pc > 1 else 0) )
+[?2004l[?2004h>         df_interaction = num / den if den > 0 else 1e12
+[?2004l[?2004h> 
+[?2004l[?2004h>     # p_interaction
+[?2004l[?2004h>     if se_interaction == 0:
+[?2004l[?2004h>         p_interaction = 1.0 if i == 0 else 0.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         t_stat_i = abs(i) / se_interaction
+[?2004l[?2004h>         if df_interaction > 1e11:
+[?2004l[?2004h>             p_interaction = min(1.0, 2 * stats.norm.sf(t_stat_i))
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_interaction = min(1.0, 2 * stats.t.sf(t_stat_i, df=df_interaction))
+[?2004l[?2004h> 
+[?2004l[?2004h>     # p_parent_equivalence
+[?2004l[?2004h>     if se_parent == 0:
+[?2004l[?2004h>         # "parental equivalence is 0 strictly inside the equivalence margin and 1 on or outside it"
+[?2004l[?2004h>         # margin: -0.3 < a < 0.3
+[?2004l[?2004h>         if -0.3 < a < 0.3:
+[?2004l[?2004h>             p_parent_equivalence = 0.0
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_parent_equivalence = 1.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         if df_parent > 1e11:
+[?2004l[?2004h>             p1 = stats.norm.sf((a + 0.3) / se_parent)
+[?2004l[?2004h>             p2 = stats.norm.cdf((a - 0.3) / se_parent)
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p1 = stats.t.sf((a + 0.3) / se_parent, df=df_parent)
+[?2004l[?2004h>             p2 = stats.t.cdf((a - 0.3) / se_parent, df=df_parent)
+[?2004l[?2004h>         p_parent_equivalence = max(p1, p2)
+[?2004l[?2004h> 
+[?2004l[?2004h>     # p_dmr_minimum
+[?2004l[?2004h>     # "minimum absolute Dmr-PERK effect of 0.5"
+[?2004l[?2004h>     # "minimum-effect probability is 0 strictly beyond its margin and 1 on or inside it"
+[?2004l[?2004h>     # Wait! Let's check wording: "the conservative two-direction test against a minimum absolute Dmr-PERK effect of 0.5 ... minimum-effect probability is 0 strictly beyond its margin and 1 on or inside it."
+[?2004l[?2004h>     # Wait, what is margin for abs(d) >= 0.5?
+[?2004l[?2004h>     # If SE == 0: "minimum-effect probability is 0 strictly beyond its margin and 1 on or inside it."
+[?2004l[?2004h>     # Margin: abs(d) >= 0.5 is inside the minimum effect requirement (i.e. effect is at least 0.5 in magnitude).
+[?2004l[?2004h>     # Wait, "strictly beyond its margin": abs(d) < 0.5? Or abs(d) > 0.5?
+[?2004l[?2004h>     # Let's test both or check formula: p_dmr_minimum = min(1, 2*S_df_d((abs(d) - 0.5) / se_d)).
+[?2004l[?2004h>     # If se_d == 0: if abs(d) >= 0.5, is it 1 or 0?
+[?2004l[?2004h>     if se_d == 0:
+[?2004l[?2004h>         if abs(d) >= 0.5:
+[?2004l[?2004h>             p_dmr_minimum = 1.0 # wait or 0.0? Let's check zero_variance_specific and zero_variance_null cases.
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_dmr_minimum = 0.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         t_stat_d = (abs(d) - 0.5) / se_d
+[?2004l[?2004h>         if df_dmr > 1e11:
+[?2004l[?2004h>             p_dmr_minimum = min(1.0, 2 * stats.norm.sf(t_stat_d))
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_dmr_minimum = min(1.0, 2 * stats.t.sf(t_stat_d, df=df_dmr))
+[?2004l[?2004h>             
+[?2004l[?2004h>     p_joint = max(p_interaction, p_parent_equivalence, p_dmr_minimum)
+[?2004l[?2004h>     return d, a, i, se_dmr, df_dmr, se_parent, df_parent, se_interaction, df_interaction, p_interaction, p_parent_equivalence, p_dmr_minimum, p_joint
+[?2004l[?2004h> 
+[?2004l[?2004h> for case in calib['cases']:
+[?2004l[?2004h>     res = compute_metrics(case['groups']['dmr_treated'], case['groups']['dmr_control'],
+[?2004l[?2004h>                           case['groups']['parent_treated'], case['groups']['parent_control'])
+[?2004l[?2004h>     print(case['case_id'], 'p_joint:', res[-1])
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/test_calib_eval.py
+[?2004lTraceback (most recent call last):
+  File "/app/submission/test_calib_eval.py", line 120, in <module>
+    res = compute_metrics(case['groups']['dmr_treated'], case['groups']['dmr_control'],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/submission/test_calib_eval.py", line 104, in compute_metrics
+    if se_d == 0:
+       ^^^^
+NameError: name 'se_d' is not defined. Did you mean: 'se_dmr'?
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/test_calib_eval.py
+[?2004l[?2004h> import json
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> import scipy.stats as stats
+[?2004l[?2004h> 
+[?2004l[?2004h> with open('/app/data/calibration_cases.json') as f:
+[?2004l[?2004h>     calib = json.load(f)
+[?2004l[?2004h> 
+[?2004l[?2004h> def compute_metrics(dt, dc, pt, pc):
+[?2004l[?2004h>     dt = np.array(dt, dtype=float)
+[?2004l[?2004h>     dc = np.array(dc, dtype=float)
+[?2004l[?2004h>     pt = np.array(pt, dtype=float)
+[?2004l[?2004h>     pc = np.array(pc, dtype=float)
+[?2004l[?2004h>     
+[?2004l[?2004h>     n_dt, n_dc, n_pt, n_pc = len(dt), len(dc), len(pt), len(pc)
+[?2004l[?2004h>     
+[?2004l[?2004h>     mean_dt, mean_dc = np.mean(dt), np.mean(dc)
+[?2004l[?2004h>     mean_pt, mean_pc = np.mean(pt), np.mean(pc)
+[?2004l[?2004h>     
+[?2004l[?2004h>     var_dt = np.var(dt, ddof=1) if n_dt > 1 else 0.0
+[?2004l[?2004h>     var_dc = np.var(dc, ddof=1) if n_dc > 1 else 0.0
+[?2004l[?2004h>     var_pt = np.var(pt, ddof=1) if n_pt > 1 else 0.0
+[?2004l[?2004h>     var_pc = np.var(pc, ddof=1) if n_pc > 1 else 0.0
+[?2004l[?2004h>     
+[?2004l[?2004h>     d = mean_dt - mean_dc
+[?2004l[?2004h>     a = mean_pt - mean_pc
+[?2004l[?2004h>     i = d - a
+[?2004l[?2004h>     
+[?2004l[?2004h>     # dmr effect SE and df
+[?2004l[?2004h>     v_dt = var_dt / n_dt
+[?2004l[?2004h>     v_dc = var_dc / n_dc
+[?2004l[?2004h>     se_dmr = np.sqrt(v_dt + v_dc)
+[?2004l[?2004h>     if se_dmr == 0:
+[?2004l[?2004h>         df_dmr = 1e12
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         num = (v_dt + v_dc)**2
+[?2004l[?2004h>         den = (v_dt**2 / (n_dt - 1) if n_dt > 1 else 0) + (v_dc**2 / (n_dc - 1) if n_dc > 1 else 0)
+[?2004l[?2004h>         df_dmr = num / den if den > 0 else 1e12
+[?2004l[?2004h>         
+[?2004l[?2004h>     # parent effect SE and df
+[?2004l[?2004h>     v_pt = var_pt / n_pt
+[?2004l[?2004h>     v_pc = var_pc / n_pc
+[?2004l[?2004h>     se_parent = np.sqrt(v_pt + v_pc)
+[?2004l[?2004h>     if se_parent == 0:
+[?2004l[?2004h>         df_parent = 1e12
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         num = (v_pt + v_pc)**2
+[?2004l[?2004h>         den = (v_pt**2 / (n_pt - 1) if n_pt > 1 else 0) + (v_pc**2 / (n_pc - 1) if n_pc > 1 else 0)
+[?2004l[?2004h>         df_parent = num / den if den > 0 else 1e12
+[?2004l[?2004h> 
+[?2004l[?2004h>     # interaction SE and df (4 groups)
+[?2004l[?2004h>     v_dt_i = var_dt / n_dt
+[?2004l[?2004h>     v_dc_i = var_dc / n_dc
+[?2004l[?2004h>     v_pt_i = var_pt / n_pt
+[?2004l[?2004h>     v_pc_i = var_pc / n_pc
+[?2004l[?2004h>     se_interaction = np.sqrt(v_dt_i + v_dc_i + v_pt_i + v_pc_i)
+[?2004l[?2004h>     if se_interaction == 0:
+[?2004l[?2004h>         df_interaction = 1e12
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         num = (v_dt_i + v_dc_i + v_pt_i + v_pc_i)**2
+[?2004l[?2004h>         den = ( (v_dt_i**2 / (n_dt - 1) if n_dt > 1 else 0) +
+[?2004l[?2004h>                 (v_dc_i**2 / (n_dc - 1) if n_dc > 1 else 0) +
+[?2004l[?2004h>                 (v_pt_i**2 / (n_pt - 1) if n_pt > 1 else 0) +
+[?2004l[?2004h>                 (v_pc_i**2 / (n_pc - 1) if n_pc > 1 else 0) )
+[?2004l[?2004h>         df_interaction = num / den if den > 0 else 1e12
+[?2004l[?2004h> 
+[?2004l[?2004h>     # p_interaction
+[?2004l[?2004h>     if se_interaction == 0:
+[?2004l[?2004h>         p_interaction = 1.0 if i == 0 else 0.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         t_stat_i = abs(i) / se_interaction
+[?2004l[?2004h>         if df_interaction > 1e11:
+[?2004l[?2004h>             p_interaction = min(1.0, 2 * stats.norm.sf(t_stat_i))
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_interaction = min(1.0, 2 * stats.t.sf(t_stat_i, df=df_interaction))
+[?2004l[?2004h> 
+[?2004l[?2004h>     # p_parent_equivalence
+[?2004l[?2004h>     if se_parent == 0:
+[?2004l[?2004h>         if -0.3 < a < 0.3:
+[?2004l[?2004h>             p_parent_equivalence = 0.0
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_parent_equivalence = 1.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         if df_parent > 1e11:
+[?2004l[?2004h>             p1 = stats.norm.sf((a + 0.3) / se_parent)
+[?2004l[?2004h>             p2 = stats.norm.cdf((a - 0.3) / se_parent)
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p1 = stats.t.sf((a + 0.3) / se_parent, df=df_parent)
+[?2004l[?2004h>             p2 = stats.t.cdf((a - 0.3) / se_parent, df=df_parent)
+[?2004l[?2004h>         p_parent_equivalence = max(p1, p2)
+[?2004l[?2004h> 
+[?2004l[?2004h>     # p_dmr_minimum
+[?2004l[?2004h>     if se_dmr == 0:
+[?2004l[?2004h>         if abs(d) >= 0.5:
+[?2004l[?2004h>             p_dmr_minimum = 0.0 # Wait! Let's check if abs(d) >= 0.5 means p_dmr_minimum is 0 (significant minimum effect) or 1.
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_dmr_minimum = 1.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         t_stat_d = (abs(d) - 0.5) / se_dmr
+[?2004l[?2004h>         if df_dmr > 1e11:
+[?2004l[?2004h>             p_dmr_minimum = min(1.0, 2 * stats.norm.sf(t_stat_d))
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_dmr_minimum = min(1.0, 2 * stats.t.sf(t_stat_d, df=df_dmr))
+[?2004l[?2004h>             
+[?2004l[?2004h>     p_joint = max(p_interaction, p_parent_equivalence, p_dmr_minimum)
+[?2004l[?2004h>     return d, a, i, se_dmr, df_dmr, se_parent, df_parent, se_interaction, df_interaction, p_interaction, p_parent_equivalence, p_dmr_minimum, p_joint
+[?2004l[?2004h> 
+[?2004l[?2004h> for case in calib['cases']:
+[?2004l[?2004h>     res = compute_metrics(case['groups']['dmr_treated'], case['groups']['dmr_control'],
+[?2004l[?2004h>                           case['groups']['parent_treated'], case['groups']['parent_control'])
+[?2004l[?2004h>     print(case['case_id'], 'p_joint:', res[-1])
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/test_calib_eval.py
+[?2004lpositive_specific p_joint: 1.6379931929767612e-06
+negative_specific p_joint: 1.6379931929767612e-06
+parent_not_equivalent p_joint: 0.9999999984038406
+small_dmr_effect p_joint: 1.0
+uncertain_parent p_joint: 0.43158824415039915
+zero_variance_specific p_joint: 0.0
+zero_variance_null p_joint: 1.0
+minimum_effect_boundary p_joint: 0.0
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/test_by.py
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> 
+[?2004l[?2004h> def benjamini_yekutieli(p_values):
+[?2004l[?2004h>     p_values = np.asarray(p_values, dtype=float)
+[?2004l[?2004h>     M = len(p_values)
+[?2004l[?2004h>     if M == 0:
+[?2004l[?2004h>         return p_values
+[?2004l[?2004h>     H_M = np.sum(1.0 / np.arange(1, M + 1))
+[?2004l[?2004h>     
+[?2004l[?2004h>     # Sort p-values ascending, keep track of indices
+[?2004l[?2004h>     sorted_indices = np.argsort(p_values)
+[?2004l[?2004h>     sorted_p = p_values[sorted_indices]
+[?2004l[?2004h>     
+[?2004l[?2004h>     q_sorted = np.zeros(M)
+[?2004l[?2004h>     # q_(r) = min(1, min_{j >= r} (M * H_M * p_(j) / j))
+[?2004l[?2004h>     # where rank j is 1-based (from 1 to M)
+[?2004l[?2004h>     # Let's compute M * H_M * sorted_p[j-1] / j for j=1..M
+[?2004l[?2004h>     ranks = np.arange(1, M + 1)
+[?2004l[?2004h>     vals = M * H_M * sorted_p / ranks
+[?2004l[?2004h>     
+[?2004l[?2004h>     # Cumulative minimum from right to left
+[?2004l[?2004h>     # min_{j >= r} vals[j-1]
+[?2004l[?2004h>     q_sorted = np.minimum.accumulate(vals[::-1])[::-1]
+[?2004l[?2004h>     q_sorted = np.minimum(1.0, q_sorted)
+[?2004l[?2004h>     
+[?2004l[?2004h>     # Map back to original order
+[?2004l[?2004h>     q_values = np.empty_val = np.zeros(M)
+[?2004l[?2004h>     q_values[sorted_indices] = q_sorted
+[?2004l[?2004h>     return q_values
+[?2004l[?2004h> 
+[?2004l[?2004h> p_test = [0.01, 0.04, 0.03, 0.5, 0.2]
+[?2004l[?2004h> q_test = benjamini_yekutieli(p_test)
+[?2004l[?2004h> print("p:", p_test)
+[?2004l[?2004h> print("q:", q_test)
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/test_by.py
+[?2004lp: [0.01, 0.04, 0.03, 0.5, 0.2]
+q: [0.11416667 0.15222222 0.15222222 1.         0.57083333]
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/run_pipeline_test.py
+[?2004l[?2004h> import pandas as pd
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading metadata...")
+[?2004l[?2004h> meta = pd.read_csv('/app/data/sample_metadata.csv')
+[?2004l[?2004h> sample_ids = meta['sample_id'].tolist()
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Loading counts...")
+[?2004l[?2004h> counts_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> gene_ids = counts_df.iloc[:, 0].values
+[?2004l[?2004h> count_matrix = counts_df.iloc[:, 1:].to_numpy(dtype=np.float64)
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Computing library sizes...")
+[?2004l[?2004h> library_sizes = count_matrix.sum(axis=0) # shape (120,)
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Computing CPM...")
+[?2004l[?2004h> # CPM_gs = 10^6 * C_gs / L_s
+[?2004l[?2004h> # count_matrix is (G, 120), library_sizes is (120,)
+[?2004l[?2004h> cpm_matrix = 1e6 * count_matrix / library_sizes[np.newaxis, :]
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Checking eligibility (at least 6 samples have CPM >= 1)...")
+[?2004l[?2004h> eligible_mask = np.sum(cpm_matrix >= 1.0, axis=1) >= 6
+[?2004l[?2004h> eligible_count = np.sum(eligible_mask)
+[?2004l[?2004h> print("Total genes:", len(gene_ids))
+[?2004l[?2004h> print("Eligible genes:", eligible_count)
+[?2004l[?2004h> 
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/run_pipeline_test.py
+[?2004lLoading metadata...
+Loading counts...
+Computing library sizes...
+Computing CPM...
+Checking eligibility (at least 6 samples have CPM >= 1)...
+Total genes: 57665
+Eligible genes: 20803
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/check_sample_alignment.py
+[?2004l[?2004h> import pandas as pd
+[?2004l[?2004h> 
+[?2004l[?2004h> meta = pd.read_csv('/app/data/sample_metadata.csv')
+[?2004l[?2004h> sample_ids_meta = meta['sample_id'].tolist()
+[?2004l[?2004h> 
+[?2004l[?2004h> counts_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz', compression='gzip', nrows=1, sep='\t')
+[?2004l[?2004h> sample_ids_counts = list(counts_df.columns[1:])
+[?2004l[?2004h> 
+[?2004l[?2004h> tpms_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_TPMs.txt.gz', compression='gzip', nrows=1, sep='\t')
+[?2004l[?2004h> sample_ids_tpms = list(tpms_df.columns[2:])
+[?2004l[?2004h> 
+[?2004l[?2004h> print("Counts columns match metadata exactly?", sample_ids_meta == sample_ids_counts)
+[?2004l[?2004h> print("TPMs columns match metadata exactly?", sample_ids_meta == sample_ids_tpms)
+[?2004l[?2004h> 
+[?2004l[?2004h> if sample_ids_meta != sample_ids_counts:
+[?2004l[?2004h>     print("Counts mismatch:", set(sample_ids_meta) ^ set(sample_ids_counts))
+[?2004l[?2004h> if sample_ids_meta != sample_ids_tpms:
+[?2004l[?2004h>     print("TPMs mismatch:", set(sample_ids_meta) ^ set(sample_ids_tpms))
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/check_sample_alignment.py
+[?2004lCounts columns match metadata exactly? True
+TPMs columns match metadata exactly? True
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/check_metadata_groups.py
+[?2004l[?2004h> import pandas as pd
+[?2004l[?2004h> 
+[?2004l[?2004h> meta = pd.read_csv('/app/data/sample_metadata.csv')
+[?2004l[?2004h> print("Cell lines:", meta['cell_line'].unique())
+[?2004l[?2004h> print("Treatments:", meta['treatment'].unique())
+[?2004l[?2004h> print("Times:", meta['time_h'].unique())
+[?2004l[?2004h> print("Replicates:", meta['replicate'].unique())
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/check_metadata_groups.py
+[?2004lCell lines: ['Parental' 'DmrPERK']
+Treatments: ['UT' 'Dim' 'Ars' 'Tg']
+Times: [ 0  4  8 16 24  2]
+Replicates: [1 2 3]
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ cat << 'EOF' > /app/submission/generate_all.py
+[?2004ln if d[?2004h> import pandas as pd
+[?2004l[?2004h> import numpy as np
+[?2004l[?2004h> import scipy.stats as stats
+[?2004l[?2004h> import json
+[?2004lups[?2004h> 
+[?2004l:[?2004h> print("1. Loading metadata...")
+[?2004l[?2004h> meta = pd.read_csv('/app/data/sample_metadata.csv')
+[?2004l[?2004h> sample_ids = meta['sample_id'].tolist()
+[?2004l[?2004h> 
+[?2004l[?2004h> # Map sample_id to index 0..119
+[?2004l[?2004h> sample_id_to_idx = {sid: i for i, sid in enumerate(sample_ids)}
+[?2004l[?2004h> 
+[?2004l[?2004h> # Group sample indices by (cell_line, treatment, time_h)
+[?2004l[?2004h> # cell_line: Parental, DmrPERK
+[?2004l(v_[?2004h> # treatment: UT, Dim, Ars, Tg
+[?2004l[?2004h> # time_h: 0, 2, 4, 8, 16, 24
+[?2004l[?2004h> group_indices = {}
+[?2004l[?2004h> for cl in ['Parental', 'DmrPERK']:
+[?2004l[?2004h>     for tr in ['UT', 'Dim', 'Ars', 'Tg']:
+[?2004l[?2004h>         for tm in [0, 2, 4, 8, 16, 24]:
+[?2004l[?2004h>             sub = meta[(meta['cell_line'] == cl) & (meta['treatment'] == tr) & (meta['time_h'] == tm)]
+[?2004l[?2004h>             idxs = [sample_id_to_idx[sid] for sid in sub['sample_id'].tolist()]
+[?2004l[?2004h>             group_indices[(cl, tr, tm)] = idxs
+[?2004l[?2004h> 
+[?2004l[?2004h> print("2. Loading counts...")
+[?2004l[?2004h> counts_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_Raw_Counts.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> gene_ids = counts_df.iloc[:, 0].values
+[?2004l[?2004h> count_matrix = counts_df.iloc[:, 1:].to_numpy(dtype=np.float64)
+[?2004l
+      [?2004h> 
+[?2004l[?2004h> gene_count = len(gene_ids)
+[?2004l[?2004h> frac_diff = np.abs(count_matrix - np.round(count_matrix))
+[?2004l[?2004h> fractional_count_entries = int(np.sum(frac_diff > 1e-8))
+[?2004l[?2004h> 
+[?2004l[?2004h> library_sizes = count_matrix.sum(axis=0) # shape (120,)
+[?2004l[?2004h> library_sizes_dict = {sample_ids[i]: float(library_sizes[i]) for i in range(120)}
+[?2004l[?2004h> 
+[?2004l[?2004h> print("3. Loading TPMs...")
+[?2004l[?2004h> tpms_df = pd.read_csv('/app/data/GSE273600_Control_Conditions_TPMs.txt.gz', compression='gzip', sep='\t')
+[?2004l[?2004h> tpm_matrix = tpms_df.iloc[:, 2:].to_numpy(dtype=np.float64)
+[?2004l[?2004h> tpm_floor = float(np.min(tpm_matrix))
+[?2004l[?2004h> tpm_floor_entries = int(np.sum(tpm_matrix == tpm_floor))
+[?2004l[?2004h> 
+[?2004l[?2004h> print("4. Computing CPM and eligible genes...")
+[?2004l[?2004h> # CPM_gs = 10^6 * C_gs / L_s
+[?2004l[?2004h> cpm_matrix = 1e6 * count_matrix / library_sizes[np.newaxis, :]
+[?2004l[?2004h> eligible_mask = np.sum(cpm_matrix >= 1.0, axis=1) >= 6
+[?2004l[?2004h> eligible_indices = np.where(eligible_mask)[0]
+[?2004l[?2004h> eligible_count = len(eligible_indices)
+[?2004l[?2004h> print(f"Eligible count: {eligible_count}")
+[?2004l[?2004h> 
+[?2004l[?2004h> # Precompute Y_gs = log2(1 + CPM_gs)
+[?2004l[?2004h> Y_matrix = np.log2(1.0 + cpm_matrix)
+[?2004l[?2004h> 
+[?2004l[?2004h> # Helper function for statistical metrics
+[?2004l[?2004h> def compute_stats(gene_idx):
+[?2004l               else:
+        [?2004h>     # returns list of dicts for each (treatment, time_h)
+[?2004l[?2004h>     results = []
+[?2004lparent)
+         [?2004h>     
+[?2004l[?2004h>     # Get Y values for this gene across groups
+[?2004l[?2004h>     # group_indices[(cl, tr, tm)] gives sample columns
+[?2004l[?2004h>     
+[?2004l[?2004h>     # Pre-extract group means and variances
+[?2004l[?2004h>     # We need Y values for the groups
+[?2004l[?2004h>     y_row = Y_matrix[gene_idx]
+[?2004l[?2004h>     
+[?2004l[?2004h>     # Helper to get group data
+[?2004l[?2004h>     def get_group_data(cl, tr, tm):
+[?2004l[?2004h>         idxs = group_indices[(cl, tr, tm)]
+[?2004l[?2004h>         vals = y_row[idxs]
+[?2004l[?2004h>         return vals
+[?2004l[?2004h> 
+[?2004l[?2004h>     treatments = ['Dim', 'Ars', 'Tg']
+[?2004l[?2004h>     matched_times = [4, 8, 16, 24]
+[?2004l[?2004h>     
+[?2004l[?2004h>     for tr in treatments:
+[?2004l[?2004h>         for tm in matched_times:
+[?2004l[?2004h>             # dmr treated: (DmrPERK, tr, tm)
+[?2004l[?2004h>             # dmr control: (DmrPERK, UT, tm)
+[?2004l[?2004h>             # parent treated: (Parental, tr, tm)
+[?2004l[?2004h>             # parent control: (Parental, UT, tm)
+[?2004l[?2004h>             dt = get_group_data('DmrPERK', tr, tm)
+[?2004l[?2004h>             dc = get_group_data('DmrPERK', 'UT', tm)
+[?2004l[?2004h>             pt = get_group_data('Parental', tr, tm)
+[?2004l[?2004h>             pc = get_group_data('Parental', 'UT', tm)
+[?2004l[?2004h>             
+[?2004l[?2004h>             n_dt, n_dc, n_pt, n_pc = len(dt), len(dc), len(pt), len(pc)
+[?2004l[?2004h>             mean_dt, mean_dc = np.mean(dt), np.mean(dc)
+[?2004l[?2004h>             mean_pt, mean_pc = np.mean(pt), np.mean(pc)
+[?2004l[?2004h>             
+[?2004l[?2004h>             var_dt = np.var(dt, ddof=1) if n_dt > 1 else 0.0
+[?2004l[?2004h>             var_dc = np.var(dc, ddof=1) if n_dc > 1 else 0.0
+[?2004l[?2004h>             var_pt = np.var(pt, ddof=1) if n_pt > 1 else 0.0
+[?2004l[?2004h>             var_pc = np.var(pc, ddof=1) if n_pc > 1 else 0.0
+[?2004l[?2004h>             
+[?2004l[?2004h>             d = mean_dt - mean_dc
+[?2004l[?2004h>             a = mean_pt - mean_pc
+[?2004l[?2004h>             i = d - a
+[?2004l[?2004h>             
+[?2004l[?2004h>             # dmr effect SE and df (groups: dt, dc)
+[?2004l[?2004h>             v_dt = var_dt / n_dt
+[?2004l[?2004h>             v_dc = var_dc / n_dc
+[?2004lched_df = pd.DataFrame(all_matche[?2004h>             se_dmr = np.sqrt(v_dt + v_dc)
+[?2004l: {le[?2004h>             if se_dmr == 0:
+[?2004l[?2004h>                 df_dmr = 1e12
+[?2004l[?2004h>             else:
+[?2004l[?2004h>                 num = (v_dt + v_dc)**2
+[?2004l[?2004h>                 den = (v_dt**2 / (n_dt - 1) if n_dt > 1 else 0) + (v_dc**2 / (n_dc - 1) if n_dc > 1 else 0)
+[?2004l[?2004h>                 df_dmr = num / den if den > 0 else 1e12
+[?2004l[?2004h>                 
+[?2004l[?2004h>             # parent effect SE and df (groups: pt, pc)
+[?2004l[?2004h>             v_pt = var_pt / n_pt
+[?2004l[?2004h>             v_pc = var_pc / n_pc
+[?2004l[::-1]
+q_sorted = np.minimum(1.0,[?2004h>             se_parent = np.sqrt(v_pt + v_pc)
+[?2004l[?2004h>             if se_parent == 0:
+[?2004l[?2004h>                 df_parent = 1e12
+[?2004l[?2004h>             else:
+[?2004l[?2004h>                 num = (v_pt + v_pc)**2
+[?2004l[?2004h>                 den = (v_pt**2 / (n_pt - 1) if n_pt > 1 else 0) + (v_pc**2 / (n_pc - 1) if n_pc > 1 else 0)
+[?2004l[?2004h>                 df_parent = num / den if den > 0 else 1e12
+[?2004l[?2004h> 
+[?2004lr[?2004h>             # interaction SE and df (4 groups: dt, dc, pt, pc)
+[?2004l[?2004h>             v_dt_i = var_dt / n_dt
+[?2004l[?2004h>             v_dc_i = var_dc / n_dc
+[?2004l[?2004h>             v_pt_i = var_pt / n_pt
+[?2004l[?2004h>             v_pc_i = var_pc / n_pc
+[?2004l[?2004h>             se_interaction = np.sqrt(v_dt_i + v_dc_i + v_pt_i + v_pc_i)
+[?2004l[?2004h>             if se_interaction == 0:
+[?2004l[?2004h>                 df_interaction = 1e12
+[?2004l[?2004h>             else:
+[?2004l Pre-extract UT0 a[?2004h>                 num = (v_dt_i + v_dc_i + v_pt_i + v_pc_i)**2
+[?2004l[?2004h>                 den = ( (v_dt_i**2 / (n_dt - 1) if n_dt > 1 else 0) +
+[?2004l[?2004h>                         (v_dc_i**2 / (n_dc - 1) if n_dc > 1 else 0) +
+[?2004l[?2004h>                         (v_pt_i**2 / (n_pt - 1) if n_pt > 1 else 0) +
+[?2004l[?2004h>                         (v_pc_i**2 / (n_pc - 1) if n_pc > 1 else 0) )
+[?2004l[?2004h>                 df_interaction = num / den if den > 0 else 1e12
+[?2004l[?2004h> 
+[?2004l[?2004h>             # p_interaction
+[?2004l[?2004h>             if se_interaction == 0:
+[?2004l[?2004h>                 p_interaction = 1.0 if i == 0 else 0.0
+[?2004l[?2004h>             else:
+[?2004l[?2004h>                 t_stat_i = abs(i) / se_interaction
+[?2004l[?2004h>                 if df_interaction > 1e11:
+[?2004l[?2004h>                     p_interaction = min(1.0, 2 * stats.norm.sf(t_stat_i))
+[?2004l[?2004h>                 else:
+[?2004l[?2004h>                     p_interaction = min(1.0, 2 * stats.t.sf(t_stat_i, df=df_interaction))
+[?2004l[?2004h> 
+[?2004l lo_dmr =[?2004h>             # p_parent_equivalence
+[?2004l[?2004h>             if se_parent == 0:
+[?2004l[?2004h>                 if -0.3 < a < 0.3:
+[?2004l[?2004h>                     p_parent_equivalence = 0.0
+[?2004l[?2004h>                 else:
+[?2004l[?2004h>                     p_parent_equivalence = 1.0
+[?2004l[?2004h>             else:
+[?2004l[?2004h>                 if df_parent > 1e11:
+[?2004l[?2004h>                     p1 = stats.norm.sf((a + 0.3) / se_parent)
+[?2004l[?2004h>                     p2 = stats.norm.cdf((a - 0.3) / se_parent)
+[?2004l[?2004h>                 else:
+[?2004l[?2004h>                     p1 = stats.t.sf((a + 0.3) / se_parent, df=df_parent)
+[?2004l[?2004h>                     p2 = stats.t.cdf((a - 0.3) / se_parent, df=df_parent)
+[?2004l[?2004h>                 p_parent_equivalence = max(p1, p2)
+[?2004l[?2004h> 
+[?2004l [?2004h>             # p_dmr_minimum
+[?2004l[?2004h>             if se_dmr == 0:
+[?2004l[?2004h>                 if abs(d) >= 0.5:
+[?2004l[?2004h>                     p_dmr_minimum = 0.0
+[?2004l[?2004h>                 else:
+[?2004l[?2004h>                     p_dmr_minimum = 1.0
+[?2004la[?2004h>             else:
+[?2004l[?2004h>                 t_stat_d = (abs(d) - 0.5) / se_dmr
+[?2004l[?2004h>                 if df_dmr > 1e11:
+[?2004l[?2004h>                     p_dmr_minimum = min(1.0, 2 * stats.norm.sf(t_stat_d))
+[?2004l[?2004h>                 else:
+[?2004l[?2004h>                     p_dmr_minimum = min(1.0, 2 * stats.t.sf(t_stat_d, df=df_dmr))
+[?2004l[?2004h> 
+[?2004la[?2004h>             p_joint = max(p_interaction, p_parent_equivalence, p_dmr_minimum)
+[?2004l[?2004h>             
+[?2004l[?2004h>             results.append({
+[?2004l[?2004h>                 'gene_id': gene_ids[gene_idx],
+[?2004l[?2004h>                 'treatment': tr,
+[?2004l[?2004h>                 'time_h': tm,
+[?2004l[?2004h>                 'dmr_effect': d,
+[?2004l[?2004h>                 'parent_effect': a,
+[?2004l[?2004h>                 'interaction': i,
+[?2004l[?2004h>                 'se_dmr': se_dmr,
+[?2004l[?2004h>                 'df_dmr': df_dmr,
+[?2004l[?2004h>                 'se_parent': se_parent,
+[?2004l[?2004h>                 'df_parent': df_parent,
+[?2004l[?2004h>                 'se_interaction': se_interaction,
+[?2004l[?2004h>                 'df_interaction': df_interaction,
+[?2004l[?2004h>                 'p_interaction': p_interaction,
+[?2004l[?2004h>                 'p_parent_equivalence': p_parent_equivalence,
+[?2004l[?2004h>                 'p_dmr_minimum': p_dmr_minimum,
+[?2004l[?2004h>                 'p_joint': p_joint
+[?2004l[?2004h>             })
+[?2004l[?2004h>     return results
+[?2004l[?2004h> 
+[?2004l[?2004h> print("5. Computing matched table statistics for eligible genes...")
+[?2004l[?2004h> all_matched_records = []
+[?2004l[?2004h> for idx in eligible_indices:
+[?2004l[?2004h>     all_matched_records.extend(compute_stats(idx))
+[?2004l[?2004h> 
+[?2004l[?2004h> matched_df = pd.DataFrame(all_matched_records)
+[?2004l[?2004h> print(f"Matched rows count: {len(matched_df)}")
+[?2004l[?2004h> 
+[?2004l[?2004h> print("6. Applying Benjamini-Yekutieli correction to matched table...")
+[?2004l[?2004h> p_joints = matched_df['p_joint'].to_numpy(dtype=float)
+[?2004l[?2004h> M = len(p_joints)
+[?2004l[?2004h> H_M = np.sum(1.0 / np.arange(1, M + 1))
+[?2004l[?2004h> 
+[?2004l[?2004h> sorted_indices = np.argsort(p_joints)
+[?2004l[?2004h> sorted_p = p_joints[sorted_indices]
+[?2004l[?2004h> ranks = np.arange(1, M + 1)
+[?2004l[?2004h> vals = M * H_M * sorted_p / ranks
+[?2004l[?2004h> q_sorted = np.minimum.accumulate(vals[::-1])[::-1]
+[?2004l[?2004h> q_sorted = np.minimum(1.0, q_sorted)
+[?2004l[?2004h> 
+[?2004l /[?2004h> q_values = np.zeros(M)
+[?2004l[?2004h> q_values[sorted_indices] = q_sorted
+[?2004l[?2004h> 
+[?2004l [?2004h> matched_df['q_joint'] = q_values
+[?2004l[?2004h> matched_df['certified'] = matched_df['q_joint'] <= 0.05
+[?2004l    num[?2004h> # format certified as true / false lowercase
+[?2004l[?2004h> matched_df['certified'] = matched_df['certified'].astype(str).str.lower()
+[?2004l[?2004h> 
+[?2004l[?2004h> print(f"True certificates count: {sum(matched_df['certified'] == 'true')}")
+[?2004l[?2004h> 
+[?2004ln[?2004h> print("7. Computing early bounds (2h sensitivity analysis)...")
+[?2004l[?2004h> # For each eligible gene and treatment, compute D2 and bounds for expansions {0, 0.3, 0.6}
+[?2004l[?2004h> early_records = []
+[?2004l[?2004h> treatments = ['Dim', 'Ars', 'Tg']
+[?2004l[?2004h> expansions = [0, 0.3, 0.6]
+[?2004l[?2004h> 
+[?2004l[?2004h> for idx in eligible_indices:
+[?2004l[?2004h>     y_row = Y_matrix[idx]
+[?2004l[?2004h>     gid = gene_ids[idx]
+[?2004l[?2004h>     
+[?2004l     [?2004h>     # Pre-extract UT0 and UT4 for Parental and DmrPERK
+[?2004l[?2004h>     p_ut0 = y_row[group_indices[('Parental', 'UT', 0)]]
+[?2004l[?2004h>     p_ut4 = y_row[group_indices[('Parental', 'UT', 4)]]
+[?2004l[?2004h>     d_ut0 = y_row[group_indices[('DmrPERK', 'UT', 0)]]
+[?2004l[?2004h>     d_ut4 = y_row[group_indices[('DmrPERK', 'UT', 4)]]
+[?2004l[?2004h>     
+[?2004larent_equ[?2004h>     mean_p_ut0, mean_p_ut4 = np.mean(p_ut0), np.mean(p_ut4)
+[?2004l[?2004h>     mean_d_ut0, mean_d_ut4 = np.mean(d_ut0), np.mean(d_ut4)
+[?2004l[?2004h>     
+[?2004l[?2004h>     for tr in treatments:
+[?2004l[?2004h>         # D2: observed difference of treated Dmr-PERK and parental means at 2h
+[?2004l[?2004h>         d_tr2 = y_row[group_indices[('DmrPERK', tr, 2)]]
+[?2004l[?2004h>         p_tr2 = y_row[group_indices[('Parental', tr, 2)]]
+[?2004l[?2004h>         D2 = np.mean(d_tr2) - np.mean(p_tr2)
+[?2004l[?2004h>         
+[?2004l[?2004h>         for e in expansions:
+[?2004l[?2004h>             lo_parental = min(mean_p_ut0, mean_p_ut4) - e
+[?2004l[?2004h>             hi_parental = max(mean_p_ut0, mean_p_ut4) + e
+[?2004l[?2004h>             lo_dmr = min(mean_d_ut0, mean_d_ut4) - e
+[?2004l[?2004h>             hi_dmr = max(mean_d_ut0, mean_d_ut4) + e
+[?2004l[?2004h>             
+[?2004ltats.norm.sf(t_stat_d))
+        else:
+            p_dmr_minimum = [?2004h>             lower = D2 - hi_dmr + lo_parental
+[?2004l[?2004h>             upper = D2 - lo_dmr + hi_parental
+[?2004l[?2004h>             
+[?2004l[?2004h>             if lower > 0.5:
+[?2004l[?2004h>                 classification = 'positive'
+[?2004l[?2004h>             elif upper < -0.5:
+[?2004l[?2004h>                 classification = 'negative'
+[?2004l[?2004h>             else:
+[?2004l[?2004h>                 classification = 'unresolved'
+[?2004l[?2004h>                 
+[?2004l   'se_parent': se_p[?2004h>             early_records.append({
+[?2004l[?2004h>                 'gene_id': gid,
+[?2004l[?2004h>                 'treatment': tr,
+[?2004l[?2004h>                 'expansion': e,
+[?2004l[?2004h>                 'treated_difference': D2,
+[?2004l[?2004h>                 'lower': lower,
+[?2004l[?2004h>                 'upper': upper,
+[?2004l[?2004h>                 'classification': classification
+[?2004l[?2004h>             })
+[?2004l[?2004h> 
+[?2004lr[?2004h> early_df = pd.DataFrame(early_records)
+[?2004l[?2004h> 
+[?2004l[?2004h> print("8. Processing calibration cases...")
+[?2004l[?2004h> with open('/app/data/calibration_cases.json') as f:
+[?2004l[?2004h>     calib = json.load(f)
+[?2004l[?2004h> 
+[?2004l[?2004h> calib_records = []
+[?2004l len(c_p)
+c_HM = np.[?2004h> for case in calib['cases']:
+[?2004l[?2004h>     case_id = case['case_id']
+[?2004l[?2004h>     g = case['groups']
+[?2004l[?2004h>     dt = g['dmr_treated']
+[?2004l[?2004h>     dc = g['dmr_control']
+[?2004l[?2004h>     pt = g['parent_treated']
+[?2004l[?2004h>     pc = g['parent_control']
+[?2004l[?2004h>     
+[?2004l[?2004h>     # Run compute_stats logic on synthetic triplicates
+[?2004l[?2004h>     dt_arr = np.array(dt, dtype=float)
+[?2004l[?2004h>     dc_arr = np.array(dc, dtype=float)
+[?2004l[?2004h>     pt_arr = np.array(pt, dtype=float)
+[?2004l[?2004h>     pc_arr = np.array(pc, dtype=float)
+[?2004l[?2004h>     
+[?2004l[?2004h>     n_dt, n_dc, n_pt, n_pc = len(dt_arr), len(dc_arr), len(pt_arr), len(pc_arr)
+[?2004l[?2004h>     mean_dt, mean_dc = np.mean(dt_arr), np.mean(dc_arr)
+[?2004l[?2004h>     mean_pt, mean_pc = np.mean(pt_arr), np.mean(pc_arr)
+[?2004l[?2004h>     
+[?2004l[?2004h>     var_dt = np.var(dt_arr, ddof=1) if n_dt > 1 else 0.0
+[?2004l[?2004h>     var_dc = np.var(dc_arr, ddof=1) if n_dc > 1 else 0.0
+[?2004l[?2004h>     var_pt = np.var(pt_arr, ddof=1) if n_pt > 1 else 0.0
+[?2004l[?2004h>     var_pc = np.var(pc_arr, ddof=1) if n_pc > 1 else 0.0
+[?2004l[?2004h>     
+[?2004l[?2004h>     d = mean_dt - mean_dc
+[?2004l[?2004h>     a = mean_pt - mean_pc
+[?2004l[?2004h>     i = d - a
+[?2004l[?2004h>     
+[?2004l[?2004h>     v_dt = var_dt / n_dt
+[?2004l[?2004h>     v_dc = var_dc / n_dc
+[?2004l[?2004h>     se_dmr = np.sqrt(v_dt + v_dc)
+[?2004l[?2004h>     if se_dmr == 0:
+[?2004l[?2004h>         df_dmr = 1e12
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         num = (v_dt + v_dc)**2
+[?2004lns gene_id, gene_name; every el[?2004h>         den = (v_dt**2 / (n_dt - 1) if n_dt > 1 else 0) + (v_dc**2 / (n_dc - 1) if n_dc > 1 else 0)
+[?2004l[?2004h>         df_dmr = num / den if den > 0 else 1e12
+[?2004l[?2004h>         
+[?2004l[?2004h>     v_pt = var_pt / n_pt
+[?2004l[?2004h>     v_pc = var_pc / n_pc
+[?2004l[?2004h>     se_parent = np.sqrt(v_pt + v_pc)
+[?2004l[?2004h>     if se_parent == 0:
+[?2004l[?2004h>         df_parent = 1e12
+[?2004l[?2004h>     else:
+[?2004latched.tsv'[?2004h>         num = (v_pt + v_pc)**2
+[?2004l[?2004h>         den = (v_pt**2 / (n_pt - 1) if n_pt > 1 else 0) + (v_pc**2 / (n_pc - 1) if n_pc > 1 else 0)
+[?2004l[?2004h>         df_parent = num / den if den > 0 else 1e12
+[?2004l[?2004h> 
+[?2004l[?2004h>     v_dt_i = var_dt / n_dt
+[?2004l[?2004h>     v_dc_i = var_dc / n_dc
+[?2004l[?2004h>     v_pt_i = var_pt / n_pt
+[?2004l[?2004h>     v_pc_i = var_pc / n_pc
+[?2004l[?2004h>     se_interaction = np.sqrt(v_dt_i + v_dc_i + v_pt_i + v_pc_i)
+[?2004l[?2004h>     if se_interaction == 0:
+[?2004l[?2004h>         df_interaction = 1e12
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         num = (v_dt_i + v_dc_i + v_pt_i + v_pc_i)**2
+[?2004l[?2004h>         den = ( (v_dt_i**2 / (n_dt - 1) if n_dt > 1 else 0) +
+[?2004l[?2004h>                 (v_dc_i**2 / (n_dc - 1) if n_dc > 1 else 0) +
+[?2004l[?2004h>                 (v_pt_i**2 / (n_pt - 1) if n_pt > 1 else 0) +
+[?2004l[?2004h>                 (v_pc_i**2 / (n_pc - 1) if n_pc > 1 else 0) )
+[?2004l[?2004h>         df_interaction = num / den if den > 0 else 1e12
+[?2004l[?2004h> 
+[?2004l_[?2004h>     if se_interaction == 0:
+[?2004lp[?2004h>         p_interaction = 1.0 if i == 0 else 0.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         t_stat_i = abs(i) / se_interaction
+[?2004l[?2004h>         if df_interaction > 1e11:
+[?2004l[?2004h>             p_interaction = min(1.0, 2 * stats.norm.sf(t_stat_i))
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_interaction = min(1.0, 2 * stats.t.sf(t_stat_i, df=df_interaction))
+[?2004l[?2004h> 
+[?2004l[?2004h>     if se_parent == 0:
+[?2004l[?2004h>         if -0.3 < a < 0.3:
+[?2004l[?2004h>             p_parent_equivalence = 0.0
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_parent_equivalence = 1.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         if df_parent > 1e11:
+[?2004l[?2004h>             p1 = stats.norm.sf((a + 0.3) / se_parent)
+[?2004l[?2004h>             p2 = stats.norm.cdf((a - 0.3) / se_parent)
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p1 = stats.t.sf((a + 0.3) / se_parent, df=df_parent)
+[?2004l[?2004h>             p2 = stats.t.cdf((a - 0.3) / se_parent, df=df_parent)
+[?2004l[?2004h>         p_parent_equivalence = max(p1, p2)
+[?2004l[?2004h> 
+[?2004l[?2004h>     if se_dmr == 0:
+[?2004l[?2004h>         if abs(d) >= 0.5:
+[?2004l[?2004h>             p_dmr_minimum = 0.0
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_dmr_minimum = 1.0
+[?2004l[?2004h>     else:
+[?2004l[?2004h>         t_stat_d = (abs(d) - 0.5) / se_dmr
+[?2004l[?2004h>         if df_dmr > 1e11:
+[?2004l[?2004h>             p_dmr_minimum = min(1.0, 2 * stats.norm.sf(t_stat_d))
+[?2004l[?2004h>         else:
+[?2004l[?2004h>             p_dmr_minimum = min(1.0, 2 * stats.t.sf(t_stat_d, df=df_dmr))
+[?2004l[?2004h> 
+[?2004l[?2004h>     p_joint = max(p_interaction, p_parent_equivalence, p_dmr_minimum)
+[?2004l[?2004h>     
+[?2004l[?2004h>     calib_records.append({
+[?2004l[?2004h>         'case_id': case_id,
+[?2004l[?2004h>         'dmr_effect': d,
+[?2004l[?2004h>         'parent_effect': a,
+[?2004l[?2004h>         'interaction': i,
+[?2004l[?2004h>         'se_dmr': se_dmr,
+[?2004l[?2004h>         'df_dmr': df_dmr,
+[?2004l[?2004h>         'se_parent': se_parent,
+[?2004l[?2004h>         'df_parent': df_parent,
+[?2004l[?2004h>         'se_interaction': se_interaction,
+[?2004l[?2004h>         'df_interaction': df_interaction,
+[?2004l[?2004h>         'p_interaction': p_interaction,
+[?2004l[?2004h>         'p_parent_equivalence': p_parent_equivalence,
+[?2004l[?2004h>         'p_dmr_minimum': p_dmr_minimum,
+[?2004l[?2004h>         'p_joint': p_joint,
+[?2004l[?2004h>         'p_joint_raw': p_joint
+[?2004l[?2004h>     })
+[?2004l[?2004h> 
+[?2004l[?2004h> calib_df = pd.DataFrame(calib_records)
+[?2004l[?2004h> # BY correction for calibration cases (M=8)
+[?2004l[?2004h> c_p = calib_df['p_joint_raw'].to_numpy(dtype=float)
+[?2004l[?2004h> c_M = len(c_p)
+[?2004l[?2004h> c_HM = np.sum(1.0 / np.arange(1, c_M + 1))
+[?2004l[?2004h> c_sorted_idx = np.argsort(c_p)
+[?2004l[?2004h> c_sorted_p = c_p[c_sorted_idx]
+[?2004l[?2004h> c_ranks = np.arange(1, c_M + 1)
+[?2004l[?2004h> c_vals = c_M * c_HM * c_sorted_p / c_ranks
+[?2004l[?2004h> c_q_sorted = np.minimum.accumulate(c_vals[::-1])[::-1]
+[?2004l[?2004h> c_q_sorted = np.minimum(1.0, c_q_sorted)
+[?2004l[?2004h> c_q_values = np.zeros(c_M)
+[?2004l[?2004h> c_q_values[c_sorted_idx] = c_q_sorted
+[?2004l[?2004h> 
+[?2004l[?2004h> calib_df['q_joint'] = c_q_values
+[?2004l[?2004h> calib_df['certified'] = (calib_df['q_joint'] <= 0.05).astype(str).str.lower()
+[?2004l[?2004h> calib_df = calib_df.drop(columns=['p_joint_raw'])
+[?2004l[?2004h> 
+[?2004l[?2004h> print("9. Writing artifacts...")
+[?2004l[?2004h> 
+[?2004l[?2004h> # 1. audit.json
+[?2004l[?2004h> audit_data = {
+[?2004l[?2004h>     "sample_count": 120,
+[?2004l[?2004h>     "gene_count": int(gene_count),
+[?2004l[?2004h>     "eligible_count": int(eligible_count),
+[?2004l[?2004h>     "fractional_count_entries": int(fractional_count_entries),
+[?2004l[?2004h>     "tpm_floor": float(tpm_floor),
+[?2004l[?2004h>     "tpm_floor_entries": int(tpm_floor_entries),
+[?2004l[?2004h>     "library_sizes": library_sizes_dict,
+[?2004l[?2004h>     "estimand": "relative_count_abundance",
+[?2004l[?2004h>     "causal_atf4_claim": False
+[?2004l[?2004h> }
+[?2004l[?2004h> with open('/app/submission/audit.json', 'w') as f:
+[?2004l[?2004h>     json.dump(audit_data, f, indent=2)
+[?2004l[?2004h> 
+[?2004l[?2004h> # 2. eligible_genes.tsv
+[?2004l[?2004h> # columns gene_id, gene_name; every eligible Ensembl ID once with its TPM annotation.
+[?2004l[?2004h> eligible_tpms = tpms_df.iloc[eligible_indices, :2].copy()
+[?2004l[?2004h> eligible_tpms.columns = ['gene_id', 'gene_name']
+[?2004l[?2004h> eligible_tpms.to_csv('/app/submission/eligible_genes.tsv', sep='\t', index=False)
+[?2004l[?2004h> 
+[?2004l[?2004h> # 3. matched.tsv
+[?2004l[?2004h> matched_df.to_csv('/app/submission/matched.tsv', sep='\t', index=False)
+[?2004l[?2004h> 
+[?2004l[?2004h> # 4. early_bounds.tsv
+[?2004l[?2004h> early_df.to_csv('/app/submission/early_bounds.tsv', sep='\t', index=False)
+[?2004l[?2004h> 
+[?2004l[?2004h> # 5. interpretation.json
+[?2004l[?2004h> cert_count = int(sum(matched_df['certified'] == 'true'))
+[?2004l[?2004h> interp_data = {
+[?2004l[?2004h>     "matched_times": [4, 8, 16, 24],
+[?2004l[?2004h>     "missing_control_times": [2],
+[?2004l[?2004h>     "early_result_type": "assumption_dependent_sensitivity_region",
+[?2004l[?2004h>     "early_envelope_verified": False,
+[?2004l[?2004h>     "replicates_paired": False,
+[?2004l[?2004h>     "effective_length_offsets_available": False,
+[?2004l[?2004h>     "independent_expression_datasets": 1,
+[?2004l[?2004h>     "certificate_count": cert_count
+[?2004l[?2004h> }
+[?2004l[?2004h> with open('/app/submission/interpretation.json', 'w') as f:
+[?2004l[?2004h>     json.dump(interp_data, f, indent=2)
+[?2004l[?2004h> 
+[?2004l[?2004h> # 6. calibration.tsv
+[?2004l[?2004h> # columns case_id, followed by every numeric and certified column of matched table starting at dmr_effect
+[?2004l[?2004h> calib_df.to_csv('/app/submission/calibration.tsv', sep='\t', index=False)
+[?2004l[?2004h> 
+[?2004l[?2004h> print("All artifacts generated successfully!")
+[?2004l[?2004h> EOF
+[?2004l[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ python3 /app/submission/generate_all.py
+[?2004l1. Loading metadata...
+2. Loading counts...
+3. Loading TPMs...
+4. Computing CPM and eligible genes...
+Eligible count: 20803
+5. Computing matched table statistics for eligible genes...
+Matched rows count: 249636
+6. Applying Benjamini-Yekutieli correction to matched table...
+True certificates count: 0
+7. Computing early bounds (2h sensitivity analysis)...
+8. Processing calibration cases...
+9. Writing artifacts...
+ls -la /app/submission/
+head -n 5 /app/submission/audit.json
+head -n 5 /app/submission/eligible_genes.tsv
+head -n 5 /app/submission/matched.tsv
+head -n 5 /app/submission/early_bounds.tsv
+head -n 5 /app/submission/interpretation.json
+head -n 5 /app/submission/calibration.tsv
+All artifacts generated successfully!
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ ls -la /app/submission/
+[?2004ltotal 83504
+drwxr-xr-x 1 agent agent     4096 Nov 25 20:03 [0m[01;34m.[0m
+drwxr-xr-x 1 root  root      4096 Nov 25 17:43 [01;34m..[0m
+-rw-r--r-- 1 agent agent     5748 Nov 25 20:03 audit.json
+-rw-r--r-- 1 agent agent     1677 Nov 25 20:03 calibration.tsv
+-rw-r--r-- 1 agent agent      261 Nov 25 19:59 check_metadata_groups.py
+-rw-r--r-- 1 agent agent      850 Nov 25 19:58 check_sample_alignment.py
+-rw-r--r-- 1 agent agent 18039007 Nov 25 20:03 early_bounds.tsv
+-rw-r--r-- 1 agent agent   548821 Nov 25 20:03 eligible_genes.tsv
+-rw-r--r-- 1 agent agent    17172 Nov 25 20:01 generate_all.py
+-rw-r--r-- 1 agent agent     1325 Nov 25 19:53 inspect_data.py
+-rw-r--r-- 1 agent agent      342 Nov 25 20:03 interpretation.json
+-rw-r--r-- 1 agent agent 66836647 Nov 25 20:03 matched.tsv
+-rw-r--r-- 1 agent agent      912 Nov 25 19:56 run_pipeline_test.py
+-rw-r--r-- 1 agent agent     1041 Nov 25 19:54 test_by.py
+-rw-r--r-- 1 agent agent     3941 Nov 25 19:54 test_calib_eval.py
+-rw-r--r-- 1 agent agent      328 Nov 25 19:53 test_calibration.py
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/audit.json
+[?2004l{
+  "sample_count": 120,
+  "gene_count": 57665,
+  "eligible_count": 20803,
+  "fractional_count_entries": 2188385,
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/eligible_genes.tsv
+[?2004lgene_id	gene_name
+ENSG00000000003.14	TSPAN6
+ENSG00000000419.12	DPM1
+ENSG00000000457.13	SCYL3
+ENSG00000000460.16	C1orf112
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/matched.tsv
+[?2004lgene_id	treatment	time_h	dmr_effect	parent_effect	interaction	se_dmr	df_dmr	se_parent	df_parent	se_interaction	df_interaction	p_interaction	p_parent_equivalence	p_dmr_minimum	p_joint	q_joint	certified
+ENSG00000000003.14	Dim	4	-0.3429716479321483	-0.08364928446516906	-0.25932236346697923	0.06436053208716958	2.111371885792103	0.02441839424839469	3.9012188067380116	0.068837025416658	2.732320292434621	0.0384038640556872	0.0005019139618303039	1.0	1.0	1.0	false
+ENSG00000000003.14	Dim	8	-0.4588228851261773	-0.01907028562330204	-0.43975259950287526	0.057789438148556804	2.192807718789604	0.04476201306912462	2.707638237458573	0.07309758529203518	4.346310864320265	0.002933431479314885	0.005498763790613354	1.0	1.0	1.0	false
+ENSG00000000003.14	Dim	16	-0.5802096000846975	0.03522508691960802	-0.6154346870043055	0.055865572988941056	2.670451610675946	0.03910419559163308	2.5675252255864303	0.0681916443433607	4.743872292089234	0.00036529287034988003	0.0052968407774917296	0.25710775719970097	0.25710775719970097	1.0	false
+ENSG00000000003.14	Dim	24	-0.6516300117172262	0.048075497530167155	-0.6997055092473934	0.012024584121532346	3.8233566913368864	0.03913741348839047	2.3021240580693556	0.04094298179000958	2.742547848012202	0.0007238444812276658	0.008096570375531954	0.00029600215363713	0.008096570375531954	1.0	false
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/early_bounds.tsv
+[?2004lgene_id	treatment	expansion	treated_difference	lower	upper	classification
+ENSG00000000003.14	Dim	0.0	-0.1895791666579596	-0.11350253395801335	-0.03485830271581758	unresolved
+ENSG00000000003.14	Dim	0.3	-0.1895791666579596	-0.713502533958013	0.5651416972841821	unresolved
+ENSG00000000003.14	Dim	0.6	-0.1895791666579596	-1.3135025339580126	1.1651416972841817	unresolved
+ENSG00000000003.14	Ars	0.0	-0.2218344335564142	-0.14575780085646795	-0.06711356961427217	unresolved
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/interpretation.json
+[?2004l{
+  "matched_times": [
+    4,
+    8,
+    16,
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/calibration.tsv
+[?2004lcase_id	dmr_effect	parent_effect	interaction	se_dmr	df_dmr	se_parent	df_parent	se_interaction	df_interaction	p_interaction	p_parent_equivalence	p_dmr_minimum	p_joint	q_joint	certified
+positive_specific	2.0	0.0	2.0	0.008164965809277178	4.000000000000001	0.008164965809277176	4.0	0.011547005383792396	8.0	1.3813894527670502e-15	1.6379931929767612e-06	5.266449381970236e-09	1.6379931929767612e-06	8.903662998966536e-06	true
+negative_specific	-2.0	0.0	-2.0	0.008164965809277178	4.000000000000001	0.008164965809277176	4.0	0.011547005383792396	8.0	1.3813894527670502e-15	1.6379931929767612e-06	5.266449381970236e-09	1.6379931929767612e-06	8.903662998966536e-06	true
+parent_not_equivalent	4.0	2.0	2.0	0.008164965809277178	4.000000000000001	0.008164965809277178	4.000000000000001	0.011547005383792398	8.000000000000002	1.381389452767041e-15	0.9999999984038406	1.77697287438216e-10	0.9999999984038406	1.0	false
+small_dmr_effect	0.19999999999999996	0.0	0.19999999999999996	0.008164965809277268	4.0	0.008164965809277176	4.0	0.011547005383792462	8.0	1.2577024024994488e-07	1.6379931929767612e-06	1.0	1.0	1.0	false
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ ls -la /app/submission/
+[?2004ltotal 83504
+drwxr-xr-x 1 agent agent     4096 Nov 25 20:03 [0m[01;34m.[0m
+drwxr-xr-x 1 root  root      4096 Nov 25 17:43 [01;34m..[0m
+-rw-r--r-- 1 agent agent     5748 Nov 25 20:03 audit.json
+-rw-r--r-- 1 agent agent     1677 Nov 25 20:03 calibration.tsv
+-rw-r--r-- 1 agent agent      261 Nov 25 19:59 check_metadata_groups.py
+-rw-r--r-- 1 agent agent      850 Nov 25 19:58 check_sample_alignment.py
+-rw-r--r-- 1 agent agent 18039007 Nov 25 20:03 early_bounds.tsv
+-rw-r--r-- 1 agent agent   548821 Nov 25 20:03 eligible_genes.tsv
+-rw-r--r-- 1 agent agent    17172 Nov 25 20:01 generate_all.py
+-rw-r--r-- 1 agent agent     1325 Nov 25 19:53 inspect_data.py
+-rw-r--r-- 1 agent agent      342 Nov 25 20:03 interpretation.json
+-rw-r--r-- 1 agent agent 66836647 Nov 25 20:03 matched.tsv
+-rw-r--r-- 1 agent agent      912 Nov 25 19:56 run_pipeline_test.py
+-rw-r--r-- 1 agent agent     1041 Nov 25 19:54 test_by.py
+-rw-r--r-- 1 agent agent     3941 Nov 25 19:54 test_calib_eval.py
+-rw-r--r-- 1 agent agent      328 Nov 25 19:53 test_calibration.py
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/audit.json
+[?2004l{
+  "sample_count": 120,
+  "gene_count": 57665,
+  "eligible_count": 20803,
+  "fractional_count_entries": 2188385,
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/eligible_genes.tsv
+[?2004lgene_id	gene_name
+ENSG00000000003.14	TSPAN6
+ENSG00000000419.12	DPM1
+ENSG00000000457.13	SCYL3
+ENSG00000000460.16	C1orf112
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/matched.tsv
+[?2004lgene_id	treatment	time_h	dmr_effect	parent_effect	interaction	se_dmr	df_dmr	se_parent	df_parent	se_interaction	df_interaction	p_interaction	p_parent_equivalence	p_dmr_minimum	p_joint	q_joint	certified
+ENSG00000000003.14	Dim	4	-0.3429716479321483	-0.08364928446516906	-0.25932236346697923	0.06436053208716958	2.111371885792103	0.02441839424839469	3.9012188067380116	0.068837025416658	2.732320292434621	0.0384038640556872	0.0005019139618303039	1.0	1.0	1.0	false
+ENSG00000000003.14	Dim	8	-0.4588228851261773	-0.01907028562330204	-0.43975259950287526	0.057789438148556804	2.192807718789604	0.04476201306912462	2.707638237458573	0.07309758529203518	4.346310864320265	0.002933431479314885	0.005498763790613354	1.0	1.0	1.0	false
+ENSG00000000003.14	Dim	16	-0.5802096000846975	0.03522508691960802	-0.6154346870043055	0.055865572988941056	2.670451610675946	0.03910419559163308	2.5675252255864303	0.0681916443433607	4.743872292089234	0.00036529287034988003	0.0052968407774917296	0.25710775719970097	0.25710775719970097	1.0	false
+ENSG00000000003.14	Dim	24	-0.6516300117172262	0.048075497530167155	-0.6997055092473934	0.012024584121532346	3.8233566913368864	0.03913741348839047	2.3021240580693556	0.04094298179000958	2.742547848012202	0.0007238444812276658	0.008096570375531954	0.00029600215363713	0.008096570375531954	1.0	false
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/early_bounds.tsv
+[?2004lgene_id	treatment	expansion	treated_difference	lower	upper	classification
+ENSG00000000003.14	Dim	0.0	-0.1895791666579596	-0.11350253395801335	-0.03485830271581758	unresolved
+ENSG00000000003.14	Dim	0.3	-0.1895791666579596	-0.713502533958013	0.5651416972841821	unresolved
+ENSG00000000003.14	Dim	0.6	-0.1895791666579596	-1.3135025339580126	1.1651416972841817	unresolved
+ENSG00000000003.14	Ars	0.0	-0.2218344335564142	-0.14575780085646795	-0.06711356961427217	unresolved
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/interpretation.json
+[?2004l{
+  "matched_times": [
+    4,
+    8,
+    16,
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ head -n 5 /app/submission/calibration.tsv
+[?2004lcase_id	dmr_effect	parent_effect	interaction	se_dmr	df_dmr	se_parent	df_parent	se_interaction	df_interaction	p_interaction	p_parent_equivalence	p_dmr_minimum	p_joint	q_joint	certified
+positive_specific	2.0	0.0	2.0	0.008164965809277178	4.000000000000001	0.008164965809277176	4.0	0.011547005383792396	8.0	1.3813894527670502e-15	1.6379931929767612e-06	5.266449381970236e-09	1.6379931929767612e-06	8.903662998966536e-06	true
+negative_specific	-2.0	0.0	-2.0	0.008164965809277178	4.000000000000001	0.008164965809277176	4.0	0.011547005383792396	8.0	1.3813894527670502e-15	1.6379931929767612e-06	5.266449381970236e-09	1.6379931929767612e-06	8.903662998966536e-06	true
+parent_not_equivalent	4.0	2.0	2.0	0.008164965809277178	4.000000000000001	0.008164965809277178	4.000000000000001	0.011547005383792398	8.000000000000002	1.381389452767041e-15	0.9999999984038406	1.77697287438216e-10	0.9999999984038406	1.0	false
+small_dmr_effect	0.19999999999999996	0.0	0.19999999999999996	0.008164965809277268	4.0	0.008164965809277176	4.0	0.011547005383792462	8.0	1.2577024024994488e-07	1.6379931929767612e-06	1.0	1.0	1.0	false
+[?2004h[01;32magent@8cf6d290d5e9[00m:[01;34m/app[00m$ 

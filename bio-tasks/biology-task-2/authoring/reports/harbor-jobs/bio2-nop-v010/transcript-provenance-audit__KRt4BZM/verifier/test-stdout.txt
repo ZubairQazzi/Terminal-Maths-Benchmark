@@ -1,0 +1,301 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py FFFFFFFFFFF                                              [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_scientific_requirement[schema] ______________________
+
+name = 'schema'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:48: in schema
+    m=read('alignment.tsv');r=read('queries.tsv');audit=read('audit.json')
+      ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'alignment.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe alignment.tsv
+
+checks.py:28: AssertionError
+_________________ test_scientific_requirement[physical_audit] __________________
+
+name = 'physical_audit'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:62: in audit
+    c,a,q,g,_,_,_,tr,va=data();report=read('audit.json')
+                                      ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'audit.json'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe audit.json
+
+checks.py:28: AssertionError
+________________ test_scientific_requirement[biological_limits] ________________
+
+name = 'biological_limits'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:70: in claims
+    report=read('audit.json')['biological_claims']
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'audit.json'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe audit.json
+
+checks.py:28: AssertionError
+_________________ test_scientific_requirement[sample_identity] _________________
+
+name = 'sample_identity'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:76: in alignment
+    m=read('alignment.tsv');truth=data()[4]['mapping']
+      ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'alignment.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe alignment.tsv
+
+checks.py:28: AssertionError
+___________ test_scientific_requirement[discovery_alignment_scores] ____________
+
+name = 'discovery_alignment_scores'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^
+checks.py:80: in alignment_scores
+    c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')
+                                 ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'alignment.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe alignment.tsv
+
+checks.py:28: AssertionError
+__________ test_scientific_requirement[heldout_identity_certificates] __________
+
+name = 'heldout_identity_certificates'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^
+checks.py:80: in alignment_scores
+    c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')
+                                 ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'alignment.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe alignment.tsv
+
+checks.py:28: AssertionError
+__________________ test_scientific_requirement[pure_aliquots] __________________
+
+name = 'pure_aliquots'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^
+checks.py:92: in query_truth
+    r=read('queries.tsv').set_index('query_id')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+_______________ test_scientific_requirement[two_source_aliquots] _______________
+
+name = 'two_source_aliquots'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^
+checks.py:92: in query_truth
+    r=read('queries.tsv').set_index('query_id')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+_______________ test_scientific_requirement[open_set_rejection] ________________
+
+name = 'open_set_rejection'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+checks.py:92: in query_truth
+    r=read('queries.tsv').set_index('query_id')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+______________ test_scientific_requirement[residual_certificates] ______________
+
+name = 'residual_certificates'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:110: in mixture_certificates
+    r=read('queries.tsv')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+_______________ test_scientific_requirement[support_optimality] ________________
+
+name = 'support_optimality'
+
+    @pytest.mark.parametrize('name',list(CHECKS))
+    def test_scientific_requirement(name):
+>       CHECKS[name]()
+
+test_outputs.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:136: in optimality
+    r=read('queries.tsv').set_index('query_id')
+      ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'queries.tsv'
+
+    def read(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(),f'Missing or unsafe {name}'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Missing or unsafe queries.tsv
+
+checks.py:28: AssertionError
+=========================== short test summary info ============================
+FAILED test_outputs.py::test_scientific_requirement[schema] - AssertionError:...
+FAILED test_outputs.py::test_scientific_requirement[physical_audit] - Asserti...
+FAILED test_outputs.py::test_scientific_requirement[biological_limits] - Asse...
+FAILED test_outputs.py::test_scientific_requirement[sample_identity] - Assert...
+FAILED test_outputs.py::test_scientific_requirement[discovery_alignment_scores]
+FAILED test_outputs.py::test_scientific_requirement[heldout_identity_certificates]
+FAILED test_outputs.py::test_scientific_requirement[pure_aliquots] - Assertio...
+FAILED test_outputs.py::test_scientific_requirement[two_source_aliquots] - As...
+FAILED test_outputs.py::test_scientific_requirement[open_set_rejection] - Ass...
+FAILED test_outputs.py::test_scientific_requirement[residual_certificates] - ...
+FAILED test_outputs.py::test_scientific_requirement[support_optimality] - Ass...
+============================== 11 failed in 5.25s ==============================

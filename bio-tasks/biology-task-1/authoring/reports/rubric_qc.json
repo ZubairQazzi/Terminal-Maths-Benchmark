@@ -1,0 +1,612 @@
+{
+  "reviewer": "/root/qc_a",
+  "date": "2026-11-25",
+  "review_type": "Independent local audit of each exact 38 rubric IDs; no external/LLM QC execution claimed",
+  "phase": "Final independent local review: actual native results and valid-input regression inspected",
+  "count": 38,
+  "overall": "PASS_WITH_LIMITATIONS",
+  "checks": [
+    {
+      "id": "well_specified",
+      "requirement": "An independent expert can identify the goal, output path/format, scoring conventions and execution limits.",
+      "status": "PASS",
+      "evidence": [
+        "task/instruction.md:4-39"
+      ],
+      "reason": "Goal, complete universe, six artifact schemas, tolerances and limits are explicit.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 4,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "test_instruction_alignment",
+      "requirement": "Every scored requirement is public and promised scientific requirements are checked.",
+      "status": "PASS",
+      "evidence": [
+        "task/instruction.md:10-37",
+        "task/tests/test_outputs.py:104-188"
+      ],
+      "reason": "Numerical, identity, schema and context requirements map to public definitions, including separate synthetic family.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 10,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "instruction_clarity",
+      "requirement": "Instructions state the scientific result and necessary context clearly.",
+      "status": "PASS",
+      "evidence": [
+        "task/instruction.md:8-26"
+      ],
+      "reason": "Definitions are precise; observed associations, conditional early ranges and synthetic controls are separated.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 4,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "structured_data_schema",
+      "requirement": "Fields, types and layouts agree between contract and evaluator.",
+      "status": "PASS",
+      "evidence": [
+        "task/instruction.md:28-37",
+        "task/tests/test_outputs.py:82-102,119-159,181-186"
+      ],
+      "reason": "Required fields and keys agree with TSV/JSON parsers; row order and extra keys are handled as specified.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 30,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "typos",
+      "requirement": "Names, paths, commands and notation refer to intended concepts and files.",
+      "status": "PASS",
+      "evidence": [
+        "task/instruction.md:6,28-35",
+        "bio/authoring/sample_metadata.csv"
+      ],
+      "reason": "Scientific identifiers, paths and notation resolve; sample-copy checksums match and every GSM title reconciles.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 6,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "hint_discoverability",
+      "requirement": "Required hints trace to visible evidence or established domain knowledge.",
+      "status": "PASS",
+      "evidence": [
+        "task/instruction.md:6-26",
+        "task/environment/Dockerfile:3-10"
+      ],
+      "reason": "No task-specific external hints are required: data, metadata, formulas and synthetic controls are solver-visible.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 6,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "scientifically_grounded",
+      "requirement": "The work reflects a valid research workflow useful for a scientific question.",
+      "status": "PASS",
+      "evidence": [
+        "task/instruction.md:4-24",
+        "bio/authoring/sources/labbe_bioc.txt:86-94,494-514",
+        "bio/authoring/sources/tximport.txt:880-932"
+      ],
+      "reason": "Operational specificity/equivalence audit uses real perturbations; fractional-count and length/composition constraints limit its interpretation appropriately.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 8,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "scope",
+      "requirement": "Problem and deliverables fit assigned biology domain and field.",
+      "status": "PASS",
+      "evidence": [
+        "task/task.toml:10-13",
+        "task/instruction.md:4-24"
+      ],
+      "reason": "Transcriptomics, experimental identifiability and statistical biology fit life-sciences/biology.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/task.toml",
+      "line": 10,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\task.toml"
+    },
+    {
+      "id": "essential_difficulty",
+      "requirement": "Difficulty arises from scientific reasoning rather than artificial formatting or missing tools.",
+      "status": "WARNING",
+      "evidence": [
+        "task/instruction.md:10-26",
+        "task/README.md:14,34-36",
+        "authoring/research/complexity.md"
+      ],
+      "reason": "Five linked scientific/statistical layers are present, but formulas are prescribed. Expert/Extremely High difficulty, 16-hour expert estimate and the 35–60% agent success target are not empirically measured. Deferred model calibration is not a task-implementation defect.",
+      "required_correction": "No implementation correction required; retain difficulty limitation until separately authorized empirical calibration.",
+      "post_correction_result": "WARNING retained: empirical difficulty NOT MEASURED",
+      "file": "task/instruction.md",
+      "line": 12,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "novel",
+      "requirement": "The instance requires new computation/reasoning rather than copying an earlier answer.",
+      "status": "PASS",
+      "evidence": [
+        "authoring/originality/conceptual_review.json:raw_signal_investigation",
+        "authoring/originality/conceptual_review.md",
+        "authoring/reports/upstream_similarity_v010.json"
+      ],
+      "reason": "Conceptualmaximum25% with originalarticle; Task2substantive0 after declaredexclusions. RawcrossTFIDF35.6906/37.2336% and AST98.9/99.2% investigated and disclosed; lowadjusted scores are not taken as originalityproof.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 4,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "agentic",
+      "requirement": "Correct results require substantive data exploration or computation.",
+      "status": "PASS",
+      "evidence": [
+        "task/tests/test_outputs.py:119-153,161-188"
+      ],
+      "reason": "Complete full-data alignment, moments, probabilities and sensitivity bounds require computation; fixed boolean claims alone cannot pass.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/instruction.md",
+      "line": 10,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\instruction.md"
+    },
+    {
+      "id": "verifiable",
+      "requirement": "Scoring can distinguish correct scientific outcomes from meaningful errors.",
+      "status": "PASS",
+      "evidence": [
+        "task/tests/test_outputs.py:15-80,97-102,128-153,161-188"
+      ],
+      "reason": "Private evaluator recomputes all continuous outputs and known synthetic cases from data and explicit definitions.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/tests/test_outputs.py",
+      "line": 16,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py"
+    },
+    {
+      "id": "solvable",
+      "requirement": "A correct approach can finish and pass with provided data, tools and resources.",
+      "status": "PASS",
+      "evidence": [
+        "task/solution/solve.py:39-95",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/isolation_v010.json"
+      ],
+      "reason": "Two clean native Harbor oracle trials pass all 11 tests with reward 1; offline reference also finishes under 2 CPUs/8 GB. No provider or runtime downloads are required.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/solution/solve.py",
+      "line": 39,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\solution\\solve.py"
+    },
+    {
+      "id": "outcome_verified",
+      "requirement": "Scientifically equivalent implementations can earn full credit.",
+      "status": "PASS",
+      "evidence": [
+        "authoring/evidence/alternative_solver.py:9-85",
+        "authoring/reports/alternative.log",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/permuted_valid_validation.json"
+      ],
+      "reason": "Separately implemented incidence-design/matrix-contrast/corner-extrema computation passes 11/11 locally, and its reordered artifacts pass native separate-verifier grading. Valid independent matrix/metadata storage-order permutations also pass the unchanged evaluator.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "authoring/evidence/alternative_solver.py",
+      "line": 9,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\authoring\\evidence\\alternative_solver.py"
+    },
+    {
+      "id": "functional_verification",
+      "requirement": "Evaluator checks scientific outputs rather than superficial appearance.",
+      "status": "PASS",
+      "evidence": [
+        "task/tests/test_outputs.py:88-188",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/permuted_valid_ctrf.json"
+      ],
+      "reason": "Actual private grading rejects meaningful numerical and identifier errors, including sample misalignment, while accepting oracle, independent equivalent computation and valid input-order regression.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/tests/test_outputs.py",
+      "line": 128,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py"
+    },
+    {
+      "id": "ground_truth_provenance",
+      "requirement": "Targets trace to public data/definitions and independent calculations.",
+      "status": "PASS",
+      "evidence": [
+        "bio/authoring/data_provenance.md",
+        "task/tests/test_outputs.py:15-80",
+        "authoring/evidence/alternative_solver.py:3-85"
+      ],
+      "reason": "Original experimental data hashes match both shipped copies; task defines operational targets; independent evaluator and alternative do not import oracle.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/tests/test_outputs.py",
+      "line": 16,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py"
+    },
+    {
+      "id": "graded_instances_discriminate",
+      "requirement": "Measured plausible shortcuts and scientifically flawed controls are rejected.",
+      "status": "PASS",
+      "evidence": [
+        "task/tests/test_outputs.py:128-188",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/test_results_summary.json",
+        "authoring/reports/wrong_sample_alignment_provenance.json"
+      ],
+      "reason": "All ten negative controls earn native reward 0, including a genuine sample-metadata swap. Wrong contrast, omitted correction and saturated shortcut fail relevant families. Saturated real labels and fixed booleans are explicitly context/easy controls.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/tests/test_outputs.py",
+      "line": 161,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py"
+    },
+    {
+      "id": "solution_quality",
+      "requirement": "Reference derives complete inspectable results from provided inputs.",
+      "status": "PASS",
+      "evidence": [
+        "task/solution/solve.py:10-96",
+        "authoring/reports/oracle.log"
+      ],
+      "reason": "Reference derives complete outputs from supplied matrices/metadata; manual BY and independent evaluator agree in 11 tests.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/solution/solve.py",
+      "line": 39,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\solution\\solve.py"
+    },
+    {
+      "id": "do_not_modify_enforced",
+      "requirement": "Protected input files cannot be modified by the solver.",
+      "status": "PASS",
+      "evidence": [
+        "task/environment/Dockerfile:6-11",
+        "authoring/reports/isolation_v010.json:unprivileged_solver_no_private_material"
+      ],
+      "reason": "Observed solver UID1000, root-owned input append denied, output writable and private tests/solution absent in solver image.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/environment/Dockerfile",
+      "line": 6,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\environment\\Dockerfile"
+    },
+    {
+      "id": "deterministic_reproducible",
+      "requirement": "Builds and runs reproduce outputs and scores within stated rules.",
+      "status": "PASS",
+      "evidence": [
+        "task/solution/solve.py:32-95",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/local_validation.json"
+      ],
+      "reason": "Both native oracle trials share one frozen task checksum and identical artifact hashes; reviewer independently checked those hashes. Six host fresh-repeat files also match byte-for-byte.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/solution/solve.py",
+      "line": 32,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\solution\\solve.py"
+    },
+    {
+      "id": "separate_verifier_configured",
+      "requirement": "Separate verifier has correct inputs/tools and artifact handoff.",
+      "status": "PASS",
+      "evidence": [
+        "task/task.toml:25-34",
+        "task/tests/Dockerfile:3-9",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/harbor_validation.md"
+      ],
+      "reason": "All 13 valid native results report separate verifier mode. Correct private data and baked tools produce complete CTRF results; artifact hashes verify actual handoff.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/task.toml",
+      "line": 27,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\task.toml"
+    },
+    {
+      "id": "verifier_execution_isolation",
+      "requirement": "Submitted code cannot execute with access to scores or private grading materials.",
+      "status": "PASS",
+      "evidence": [
+        "task/tests/test_outputs.py:2,82-102,104-188",
+        "task/tests/test.sh:8"
+      ],
+      "reason": "Verifier parses regular bounded data files only and never imports/runs submitted code; private tests execute with Python isolated mode.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/tests/test.sh",
+      "line": 8,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test.sh"
+    },
+    {
+      "id": "anti_cheat_robustness",
+      "requirement": "Available controls and boundaries resist credit without solving scientific outcomes.",
+      "status": "PASS",
+      "evidence": [
+        "task/tests/test_outputs.py:82-188",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/isolation_v010.json"
+      ],
+      "reason": "Ten local and native negative controls fail, including true sample-label error and all-q1 shortcut. Complete identifiers and numerical recomputation resist partial/canned results. Literal full correct answers are observationally equivalent in any static-output task; private material was absent from the public image.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/tests/test_outputs.py",
+      "line": 88,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test_outputs.py"
+    },
+    {
+      "id": "task_security",
+      "requirement": "Runtime/build avoid unsafe credentials, host access and unrelated privileged actions.",
+      "status": "PASS",
+      "evidence": [
+        "task/environment/Dockerfile:3-11",
+        "task/tests/Dockerfile:3-9",
+        "task/task.toml:24-30"
+      ],
+      "reason": "No host binds, credentials or privileged submitted-code execution; solver is non-root, verifier has no network, and dependencies install from bundled wheels.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/environment/Dockerfile",
+      "line": 6,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\environment\\Dockerfile"
+    },
+    {
+      "id": "resource_configuration",
+      "requirement": "Declared time, CPU, memory and storage permit valid methods.",
+      "status": "PASS",
+      "evidence": [
+        "task/task.toml:22-41",
+        "authoring/reports/isolation_v010.json",
+        "authoring/reports/clean_build_agent_v010.log",
+        "authoring/reports/clean_build_verifier_v010.log",
+        "authoring/reports/native_summary.json"
+      ],
+      "reason": "Actual offline reference completes in 19.672 seconds under 2 CPUs/8 GB; clean agent/verifier builds take 52.329/59.296 seconds within 900-second allowance. Native valid trials complete under declared limits.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/task.toml",
+      "line": 38,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\task.toml"
+    },
+    {
+      "id": "task_toml_schema",
+      "requirement": "Manifest uses supported configuration and required metadata.",
+      "status": "PASS",
+      "evidence": [
+        "task/task.toml:2-41",
+        "authoring/reports/harbor_lint_all_v010.log",
+        "authoring/reports/static_qc.json",
+        "authoring/reports/upstream_static_v010.json"
+      ],
+      "reason": "ActualHarbor0.27 lint --selectALL returns[] exit0 and exact29static audit includes schema/entry checks;26pinned shell implementations all exit0.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/task.toml",
+      "line": 2,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\task.toml"
+    },
+    {
+      "id": "environment_hygiene",
+      "requirement": "Solver has public data/tools while solutions/private tests stay outside view.",
+      "status": "PASS",
+      "evidence": [
+        "task/environment/Dockerfile:3-10",
+        "task/tests/Dockerfile:6"
+      ],
+      "reason": "Solver build context copies requirements, wheels and public data only; solutions/private tests remain outside solver image.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/environment/Dockerfile",
+      "line": 3,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\environment\\Dockerfile"
+    },
+    {
+      "id": "artifact_efficiency",
+      "requirement": "Verifier receives required artifacts with clean failure/reset handling.",
+      "status": "PASS",
+      "evidence": [
+        "task/task.toml:3",
+        "task/tests/test_outputs.py:82-105",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/harbor-jobs/bio1-nop-v010r1/specificity-envelope__x9BidC4/artifacts/manifest.json"
+      ],
+      "reason": "Native artifacts and hashes were directly verified across 13 trials. Required six data files transfer successfully; the no-op trial contains only a manifest and fails all tests, confirming no stale output reuse.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/task.toml",
+      "line": 3,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\task.toml"
+    },
+    {
+      "id": "ctrf_reporting",
+      "requirement": "Each discrete applicable test has recorded individual outcome.",
+      "status": "PASS",
+      "evidence": [
+        "task/tests/test.sh:8",
+        "authoring/reports/native_summary.json",
+        "authoring/reports/harbor_validation.md"
+      ],
+      "reason": "Each of 13 valid native trials has 11 individual CTRF outcomes, directly cross-checked with result and reward files. The earlier sidecar error and nine preflight interruptions are excluded from scientific results.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/tests/test.sh",
+      "line": 8,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\tests\\test.sh"
+    },
+    {
+      "id": "task_authoring_dir",
+      "requirement": "Review-only material remains in authoring rather than runtime package.",
+      "status": "PASS",
+      "evidence": [
+        "authoring/research",
+        "authoring/evidence",
+        "authoring/reports",
+        "authoring/originality"
+      ],
+      "reason": "Research, independent alternative, logs, originality and review reports are outside runtime task tree.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "authoring/research/proposal.md",
+      "line": 1,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\authoring\\research\\proposal.md"
+    },
+    {
+      "id": "no_extraneous_files",
+      "requirement": "Each shipped runtime file has a necessary purpose.",
+      "status": "PASS",
+      "evidence": [
+        "task/environment/Dockerfile:3-10",
+        "task/tests/Dockerfile:3-6",
+        "task/solution/solve.sh:4"
+      ],
+      "reason": "Task tree contains required instructions/metadata, solution, self-contained solver/verifier data, pinned dependency wheels and evaluator.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/environment/Dockerfile",
+      "line": 3,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\environment\\Dockerfile"
+    },
+    {
+      "id": "reviewable",
+      "requirement": "Reviewer can trace assumptions, inputs and computations to expected results.",
+      "status": "PASS",
+      "evidence": [
+        "task/instruction.md:10-26",
+        "task/README.md:40-46",
+        "authoring/reports/package_manifest.json",
+        "authoring/reports/reviewer_recheck.md"
+      ],
+      "reason": "Public definitions, original data/SOFT provenance, reference, independently written evaluator, equivalent route, baseline generators and preserved native evidence support a complete trace. All 40 runtime files match the reviewed canonical snapshot.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/README.md",
+      "line": 40,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\README.md"
+    },
+    {
+      "id": "difficulty_explanation_quality",
+      "requirement": "Documentation explains scientific decisions and simpler-method failure modes.",
+      "status": "PASS",
+      "evidence": [
+        "authoring/research/complexity.md",
+        "task/README.md:30-34"
+      ],
+      "reason": "Documentation identifies representation, contemporaneous contrast, equivalence, uncertainty and missing-control decisions; admits uncalibrated difficulty and saturated final labels.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/README.md",
+      "line": 34,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\README.md"
+    },
+    {
+      "id": "solution_explanation_quality",
+      "requirement": "Reference documentation accurately explains implemented calculations.",
+      "status": "PASS",
+      "evidence": [
+        "task/README.md:36-38",
+        "task/solution/solve.py:39-95"
+      ],
+      "reason": "Reference explanation correctly describes full library normalization, fixed universe, conjunction and early interval construction.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/README.md",
+      "line": 40,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\README.md"
+    },
+    {
+      "id": "verification_explanation_quality",
+      "requirement": "Documentation accurately explains checks and discrimination evidence.",
+      "status": "PASS",
+      "evidence": [
+        "task/README.md:42-46",
+        "authoring/reports/test_discrimination_audit.md",
+        "authoring/reports/native_summary.json"
+      ],
+      "reason": "README and discrimination audit accurately state six artifacts, eleven test families, independent alternative, true sample alignment control, synthetic calibration and easy/context limitations. Actual native results support the described checks.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/README.md",
+      "line": 44,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\README.md"
+    },
+    {
+      "id": "category_and_tags",
+      "requirement": "Metadata labels accurately identify scientific topic and methods.",
+      "status": "PASS",
+      "evidence": [
+        "task/task.toml:9-21"
+      ],
+      "reason": "Tags identify transcriptomics, equivalence, negative controls and partial identification accurately.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/task.toml",
+      "line": 21,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\task.toml"
+    },
+    {
+      "id": "task_name",
+      "requirement": "Published task name describes objective and follows active naming rules.",
+      "status": "PASS",
+      "evidence": [
+        "task/task.toml:5-7",
+        "task/instruction.md:2-4"
+      ],
+      "reason": "specificity-envelope concisely describes the specificity certificate and early sensitivity envelope.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/task.toml",
+      "line": 5,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\task.toml"
+    },
+    {
+      "id": "task_readme",
+      "requirement": "README accurately describes packaged task and reviewer context.",
+      "status": "PASS",
+      "evidence": [
+        "task/README.md:1-54"
+      ],
+      "reason": "Managed header and authored Difficulty/Reference solution/Verification sections accurately describe the final six-artifact, eleven-test package and limitations.",
+      "required_correction": "None",
+      "post_correction_result": "PASS after independent final source/evidence recheck",
+      "file": "task/README.md",
+      "line": 26,
+      "absolute_file": "F:\\rl\\bio\\biology-task-1\\task\\README.md"
+    }
+  ],
+  "counts": {
+    "PASS": 37,
+    "WARNING": 1,
+    "FAIL": 0,
+    "NOT_TESTED": 0
+  },
+  "external_qc": "NOT RUN; these are independent local evidence assessments, not an external automated LLM judge result",
+  "gemini": "NOT RUN",
+  "empirical_difficulty": "NOT MEASURED"
+}

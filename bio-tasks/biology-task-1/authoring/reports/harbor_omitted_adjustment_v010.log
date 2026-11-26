@@ -1,0 +1,4 @@
+COMMAND ["C:\\Users\\zubai\\.local\\bin\\harbor.exe", "run", "--path", "F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope", "--agent", "authoring.evidence.baseline_agent:NoAdjustmentAgent", "-k", "1", "--n-concurrent", "1", "--job-name", "bio1-omitted_adjustment-v010", "--jobs-dir", "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs", "--quiet"]
+Docker daemon is not running. Please start Docker and try again.
+
+EXIT 1 ELAPSED_SECONDS 13.016

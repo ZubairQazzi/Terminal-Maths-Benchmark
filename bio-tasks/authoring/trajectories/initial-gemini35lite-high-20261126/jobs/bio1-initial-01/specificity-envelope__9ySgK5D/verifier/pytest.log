@@ -1,0 +1,336 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py FFFEEEEFFFF                                              [100%]
+
+==================================== ERRORS ====================================
+_____________ ERROR at setup of test_04_matched_factorial_effects ______________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    @pytest.fixture(scope='session')
+>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:89: in load_frame
+    frame=pd.read_csv(artifact(name),sep='\t',dtype={'gene_id':str,'treatment':str})
+                      ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'matched.tsv'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: matched.tsv
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/matched.tsv').is_file
+
+test_outputs.py:84: AssertionError
+____________ ERROR at setup of test_05_heteroscedastic_uncertainty _____________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    @pytest.fixture(scope='session')
+>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:89: in load_frame
+    frame=pd.read_csv(artifact(name),sep='\t',dtype={'gene_id':str,'treatment':str})
+                      ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'matched.tsv'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: matched.tsv
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/matched.tsv').is_file
+
+test_outputs.py:84: AssertionError
+_____ ERROR at setup of test_06_affirmative_equivalence_and_minimum_effect _____
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    @pytest.fixture(scope='session')
+>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:89: in load_frame
+    frame=pd.read_csv(artifact(name),sep='\t',dtype={'gene_id':str,'treatment':str})
+                      ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'matched.tsv'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: matched.tsv
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/matched.tsv').is_file
+
+test_outputs.py:84: AssertionError
+_____________ ERROR at setup of test_07_joint_family_multiplicity ______________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    @pytest.fixture(scope='session')
+>   def matched(expected):return load_frame('matched.tsv',['gene_id','treatment','time_h'],expected['matched'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:89: in load_frame
+    frame=pd.read_csv(artifact(name),sep='\t',dtype={'gene_id':str,'treatment':str})
+                      ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'matched.tsv'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: matched.tsv
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/matched.tsv').is_file
+
+test_outputs.py:84: AssertionError
+=================================== FAILURES ===================================
+___________________________ test_01_complete_handoff ___________________________
+
+    def test_01_complete_handoff():
+>       for name in NAMES:artifact(name)
+                          ^^^^^^^^^^^^^^
+
+test_outputs.py:105: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'audit.json'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: audit.json
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/audit.json').is_file
+
+test_outputs.py:84: AssertionError
+___________________ test_02_fractional_representation_audit ____________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    def test_02_fractional_representation_audit(expected):
+>       audit=json.loads(artifact('audit.json').read_text())
+                         ^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:108: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'audit.json'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: audit.json
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/audit.json').is_file
+
+test_outputs.py:84: AssertionError
+__________________ test_03_unselected_complete_gene_universe ___________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    def test_03_unselected_complete_gene_universe(expected):
+>       genes=pd.read_csv(artifact('eligible_genes.tsv'),sep='\t',dtype=str)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:120: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'eligible_genes.tsv'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: eligible_genes.tsv
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/eligible_genes.tsv').is_file
+
+test_outputs.py:84: AssertionError
+_____________________ test_08_early_partial_identification _____________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    def test_08_early_partial_identification(expected):
+>       early=load_frame('early_bounds.tsv',['gene_id','treatment','expansion'],expected['early'])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:89: in load_frame
+    frame=pd.read_csv(artifact(name),sep='\t',dtype={'gene_id':str,'treatment':str})
+                      ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'early_bounds.tsv'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: early_bounds.tsv
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/early_bounds.tsv').is_file
+
+test_outputs.py:84: AssertionError
+____________________ test_09_envelope_expansion_invariants _____________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    def test_09_envelope_expansion_invariants(expected):
+>       early=load_frame('early_bounds.tsv',['gene_id','treatment','expansion'],expected['early'])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:149: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:89: in load_frame
+    frame=pd.read_csv(artifact(name),sep='\t',dtype={'gene_id':str,'treatment':str})
+                      ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'early_bounds.tsv'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: early_bounds.tsv
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/early_bounds.tsv').is_file
+
+test_outputs.py:84: AssertionError
+________________________ test_10_interpretation_limits _________________________
+
+expected = {'early':                                         treated_difference  ...  classification
+gene_id            treatment...solved
+
+[187227 rows x 4 columns], 'floor': np.float64(0.063122), 'floor_entries': 3190994, 'fractional': 2188385, ...}
+
+    def test_10_interpretation_limits(expected):
+>       report=json.loads(artifact('interpretation.json').read_text())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:156: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'interpretation.json'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: interpretation.json
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/interpretation.json').is_file
+
+test_outputs.py:84: AssertionError
+______________ test_11_synthetic_positive_and_degenerate_controls ______________
+
+    def test_11_synthetic_positive_and_degenerate_controls():
+        cases=json.loads((DATA/'calibration_cases.json').read_text())['cases']
+        rows=[]
+        for case in cases:
+            groups=[np.array(case['groups'][key],dtype=float) for key in ['dmr_treated','dmr_control','parent_treated','parent_control']]
+            means=[sum(values)/3 for values in groups]
+            vm=np.array([sum((values-means[k])**2)/6 for k,values in enumerate(groups)])
+            d=means[0]-means[1];a=means[2]-means[3];i=d-a
+            row=dict(case_id=case['case_id'],dmr_effect=d,parent_effect=a,interaction=i)
+            params={}
+            for label,select in [('dmr',[0,1]),('parent',[2,3]),('interaction',[0,1,2,3])]:
+                variance=sum(vm[select]);denominator=sum(vm[select]**2)/2
+                params[label]=(variance**.5,variance**2/denominator if denominator else 1e12)
+                row['se_'+label],row['df_'+label]=params[label]
+            sd,fd=params['dmr'];sa,fa=params['parent'];si,fi=params['interaction']
+            row['p_interaction']=2*stats.t.sf(abs(i)/si,fi) if si else float(i==0)
+            row['p_parent_equivalence']=max(stats.t.sf((a+.3)/sa,fa),stats.t.sf((.3-a)/sa,fa)) if sa else float(abs(a)>=.3)
+            row['p_dmr_minimum']=min(1.,2*stats.t.sf((abs(d)-.5)/sd,fd)) if sd else float(abs(d)<=.5)
+            row['p_joint']=max(row['p_interaction'],row['p_parent_equivalence'],row['p_dmr_minimum'])
+            rows.append(row)
+        ref=pd.DataFrame(rows).set_index('case_id');ref['q_joint']=stats.false_discovery_control(ref.p_joint,method='by');ref['certified']=ref.q_joint<=.05
+>       result=load_frame('calibration.tsv',['case_id'],ref)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:182: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:89: in load_frame
+    frame=pd.read_csv(artifact(name),sep='\t',dtype={'gene_id':str,'treatment':str})
+                      ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'calibration.tsv'
+
+    def artifact(name):
+        path=SUB/name
+>       assert path.is_file() and not path.is_symlink(), f'Missing or unsafe artifact: {name}'
+E       AssertionError: Missing or unsafe artifact: calibration.tsv
+E       assert (False)
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/app/submission/calibration.tsv').is_file
+
+test_outputs.py:84: AssertionError
+=========================== short test summary info ============================
+ERROR test_outputs.py::test_04_matched_factorial_effects - AssertionError: Mi...
+ERROR test_outputs.py::test_05_heteroscedastic_uncertainty - AssertionError: ...
+ERROR test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect - A...
+ERROR test_outputs.py::test_07_joint_family_multiplicity - AssertionError: Mi...
+FAILED test_outputs.py::test_01_complete_handoff - AssertionError: Missing or...
+FAILED test_outputs.py::test_02_fractional_representation_audit - AssertionEr...
+FAILED test_outputs.py::test_03_unselected_complete_gene_universe - Assertion...
+FAILED test_outputs.py::test_08_early_partial_identification - AssertionError...
+FAILED test_outputs.py::test_09_envelope_expansion_invariants - AssertionErro...
+FAILED test_outputs.py::test_10_interpretation_limits - AssertionError: Missi...
+FAILED test_outputs.py::test_11_synthetic_positive_and_degenerate_controls - ...
+========================= 7 failed, 4 errors in 6.03s ==========================

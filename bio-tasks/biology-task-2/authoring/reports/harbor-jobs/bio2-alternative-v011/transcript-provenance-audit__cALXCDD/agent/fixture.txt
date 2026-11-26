@@ -1,0 +1,2 @@
+Local deterministic control: alternative
+No model or provider API invoked.

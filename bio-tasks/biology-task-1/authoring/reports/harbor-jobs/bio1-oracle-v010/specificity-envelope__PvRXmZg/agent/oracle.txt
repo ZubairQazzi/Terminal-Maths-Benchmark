@@ -1,0 +1,1 @@
+{"eligible": 20803, "matched_rows": 249636, "early_rows": 187227, "certificates": 0}

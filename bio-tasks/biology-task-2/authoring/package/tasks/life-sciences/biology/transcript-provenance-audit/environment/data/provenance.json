@@ -1,0 +1,13 @@
+{
+  "dataset": "GSE273600",
+  "synthetic_provenance_challenge": true,
+  "counts_source_sha256": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+  "tpm_source_sha256": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f",
+  "source_rows": 57665,
+  "source_samples": 120,
+  "atlas_columns": 120,
+  "query_columns": 24,
+  "source_tpm_floor": 0.063122,
+  "source_tpm_column_sums_are_not_exactly_one_million": true,
+  "data_transform": "Atlas columns are source TPM compositions, each with an unknown positive scale and a permuted anonymous ID. Queries are scaled, lightly perturbed convex combinations of one, two, or three source TPM compositions. These are technical simulations, not newly observed samples."
+}

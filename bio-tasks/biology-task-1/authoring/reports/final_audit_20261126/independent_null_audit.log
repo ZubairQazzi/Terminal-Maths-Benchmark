@@ -1,0 +1,76 @@
+{
+  "eligible": 20803,
+  "M": 249636,
+  "nominal_conjunctions": 6018,
+  "multiplicity": {
+    "H_M": 13.004976803662824,
+    "M_times_H_M": 3246510.389359173,
+    "alpha": 0.05,
+    "rank1_cutoff": 1.540115200736181e-08,
+    "rankM_cutoff": 0.003844681982509773,
+    "any_rank_crosses_BY_stepup_line": false,
+    "uncapped_minimum_M_H_p_over_rank": 7.181603803734373,
+    "minimum_ratio_over_BY_significance_cutoff": 143.63207607468746,
+    "best_rank_for_uncapped_ratio": 196,
+    "p_at_best_ratio_rank": 0.0004335714896048066,
+    "BY_threshold_at_best_ratio_rank": 3.0186257934429153e-06,
+    "minimum_clipped_q": 1.0,
+    "maximum_clipped_q": 1.0,
+    "certificates": 0,
+    "diagnostic_only_BH_same_family": {
+      "note": "No grading requirement or threshold is changed. This isolates the harmonic penalty diagnostically.",
+      "minimum_uncapped_M_p_over_rank": 0.552219654994824,
+      "number_q_le_0.05": 0
+    },
+    "sampled_ranks": [
+      {
+        "rank": 1,
+        "p_sorted": 4.771977603588609e-06,
+        "BY_threshold": 1.540115200736181e-08,
+        "M_H_p_over_rank": 15.492274867839706
+      },
+      {
+        "rank": 10,
+        "p_sorted": 3.7982790642249774e-05,
+        "BY_threshold": 1.5401152007361812e-07,
+        "M_H_p_over_rank": 12.331152443691828
+      },
+      {
+        "rank": 100,
+        "p_sorted": 0.00022370305624675138,
+        "BY_threshold": 1.540115200736181e-06,
+        "M_H_p_over_rank": 7.262542962364777
+      },
+      {
+        "rank": 196,
+        "p_sorted": 0.0004335714896048066,
+        "BY_threshold": 3.0186257934429153e-06,
+        "M_H_p_over_rank": 7.181603803734373
+      },
+      {
+        "rank": 1000,
+        "p_sorted": 0.0029382514608776913,
+        "BY_threshold": 1.540115200736181e-05,
+        "M_H_p_over_rank": 9.539063894289193
+      },
+      {
+        "rank": 10000,
+        "p_sorted": 0.1618794545611359,
+        "BY_threshold": 0.0001540115200736181,
+        "M_H_p_over_rank": 52.55433310565238
+      },
+      {
+        "rank": 249636,
+        "p_sorted": 1.0,
+        "BY_threshold": 0.003844681982509773,
+        "M_H_p_over_rank": 13.004976803662824
+      }
+    ]
+  },
+  "only_component_preventing_nominal_conjunction": {
+    "p_interaction": 0,
+    "p_parent_equivalence": 23672,
+    "p_dmr_minimum": 33566
+  },
+  "reference_agreement": true
+}

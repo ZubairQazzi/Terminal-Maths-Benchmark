@@ -1,0 +1,119 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 11,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795628898.603053,
+            "stop": 1795628907.7209382
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_handoff",
+                "status": "passed",
+                "duration": 0.0010278309999876,
+                "start": 1795628900.126762,
+                "stop": 1795628900.1283586,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_fractional_representation_audit",
+                "status": "passed",
+                "duration": 4.053841028000079,
+                "start": 1795628900.1287696,
+                "stop": 1795628904.1830866,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+                "status": "passed",
+                "duration": 0.04318446899992523,
+                "start": 1795628904.183477,
+                "stop": 1795628904.2270582,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_04_matched_factorial_effects",
+                "status": "passed",
+                "duration": 1.6461095889999342,
+                "start": 1795628904.2274582,
+                "stop": 1795628905.874013,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+                "status": "passed",
+                "duration": 0.014316121999968345,
+                "start": 1795628905.8744323,
+                "stop": 1795628905.889133,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+                "status": "passed",
+                "duration": 0.011895692999928542,
+                "start": 1795628905.8895464,
+                "stop": 1795628905.9018486,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_07_joint_family_multiplicity",
+                "status": "passed",
+                "duration": 0.19008354100003544,
+                "start": 1795628905.902259,
+                "stop": 1795628906.0927093,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_08_early_partial_identification",
+                "status": "passed",
+                "duration": 0.8012258219999921,
+                "start": 1795628906.0930994,
+                "stop": 1795628906.8947353,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+                "status": "passed",
+                "duration": 0.7625464850000299,
+                "start": 1795628906.8951406,
+                "stop": 1795628907.6582406,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_10_interpretation_limits",
+                "status": "passed",
+                "duration": 0.0022919620000720897,
+                "start": 1795628907.6592417,
+                "stop": 1795628907.6623223,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+                "status": "passed",
+                "duration": 0.05721337000011317,
+                "start": 1795628907.6628926,
+                "stop": 1795628907.7204494,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "container": "specificity-envelope__9ysgk5d__env-main-1",
+    "probe": {
+      "uid": 1000,
+      "private_paths_absent": {
+        "/solution": true,
+        "/tests": true,
+        "/app/authoring": true
+      },
+      "provider_credentials_absent": {
+        "GEMINI_API_KEY": true,
+        "GOOGLE_API_KEY": true
+      }
+    }
+  }
+]

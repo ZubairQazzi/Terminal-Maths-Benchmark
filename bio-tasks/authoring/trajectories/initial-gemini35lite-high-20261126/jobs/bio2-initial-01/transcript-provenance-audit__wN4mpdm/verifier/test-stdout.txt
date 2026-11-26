@@ -1,0 +1,41 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py .F.........                                              [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_physical_audit ______________________________
+
+    def test_physical_audit():
+>       CHECKS['physical_audit']()
+
+test_outputs.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def audit():
+        c,a,q,g,_,_,_,tr,va=data();report=read('audit.json')
+        expect={'n_genes':len(c),'n_count_samples':len(c.columns),'n_atlas_samples':len(a.columns),'n_queries':len(q.columns),'fractional_count_entries':int((np.abs(c.to_numpy()-np.round(c.to_numpy()))>1e-8).sum()),'eligible_discovery_genes':int(tr.sum()),'eligible_validation_genes':int(va.sum())}
+        for k,v in expect.items():assert report.get(k)==v,(k,report.get(k),v)
+        floor=report['atlas_minimum_by_column'];assert set(floor)==set(a.columns)
+>       for k in a.columns:assert abs(float(floor[k])-float(a[k].min()))<1e-7
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError
+
+checks.py:66: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_biological_limits
+PASSED test_outputs.py::test_sample_identity
+PASSED test_outputs.py::test_discovery_alignment_scores
+PASSED test_outputs.py::test_heldout_identity_certificates
+PASSED test_outputs.py::test_pure_aliquots
+PASSED test_outputs.py::test_two_source_aliquots
+PASSED test_outputs.py::test_open_set_rejection
+PASSED test_outputs.py::test_residual_certificates
+PASSED test_outputs.py::test_support_optimality
+FAILED test_outputs.py::test_physical_audit - AssertionError
+========================= 1 failed, 10 passed in 3.31s =========================

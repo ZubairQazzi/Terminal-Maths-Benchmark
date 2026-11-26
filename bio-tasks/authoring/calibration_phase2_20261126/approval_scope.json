@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-11-25T20:42:18.354581+00:00",
+  "status": "PENDING_USER_APPROVAL",
+  "requested_actions": [
+    "Create Task 2 v0.2.0 in a separate directory; preserve v0.1.1 and all original runtime/canonical/history paths",
+    "Apply reviewed secure-draw/private-replay repair, raw-minimum clarification and inclusive published numerical tolerances",
+    "Run stated offline scientific/native/isolation QC before model trials; stop on a genuine fixture defect without selecting for model failure",
+    "Run five fresh Gemini Harbor trials on unchanged Task 1 v0.1.0 and five on newly frozen Task 2 v0.2.0",
+    "Use current account only, under the resource estimate and $6 estimated usage allowance; no billing upgrade or paid-only fallback",
+    "Keep new project data/logs/versions/caches on F; existing Docker engine scratch storage remains disclosed separately"
+  ],
+  "not_authorized": [
+    "Overwriting old tasks or historical outcomes",
+    "Publishing any task/data/image/trajectory archive",
+    "Sending rights inquiries",
+    "Relaxing valid science to alter success rates",
+    "Changing global Docker storage settings"
+  ],
+  "reviewed_artifact_sha256": {
+    "proposal\\authoring__build_inputs.py.patch": "e03c69c7544ad45d6c79201a65361014981e696fb65c55a399b609de390cb141",
+    "proposal\\task__instruction.md.patch": "bd208a997be535e51f3ad92da782ac64ab253510d08615649cfb4c314759699f",
+    "proposal\\task__task.toml.patch": "4b2c9a67fc9f5028b821ed51a30cc32fcc7cd186bfbc5acef5684d16e518dbfd",
+    "proposal\\task__tests__checks.py.patch": "09230af083ae8636940ecc1028e2d25a2d13e330c4a4338ee93774aa26057e71",
+    "proposal\\secure_fixture_rng.py": "222537840ba6bb619b62003618075e41a72f6e5759a4ee9369102b8c2f38e7a1",
+    "CALIBRATION_PROTOCOL.md": "1b9653e8188f262a5bd4f1c546f1f0cb6d258a0082dd339e1b187450b2054ef6",
+    "SEED_FIX_PROPOSAL.md": "1875f5faa972d54f7e391ac5d2ff95ea2e58314a2d068bbc2d829ccdb269fd91",
+    "DATA_ACQUISITION_AND_RIGHTS_STRATEGY.md": "df5b98c432433565c170217cf896ca0f09c320c0f4ae0da582079fa5067fe666",
+    "resource_estimate.json": "4e71a7888dd67075aff0464df5bf219feb89d4e1e65fee367ff80125bd151f10"
+  },
+  "budget_usd_estimated_allowance": 6,
+  "frozen_task_changes_applied": false,
+  "new_model_trials_started": false,
+  "approval_must_be_explicit": "A preselected UI option, elapsed time, previous initial-trial authorization or this file does not constitute approval."
+}

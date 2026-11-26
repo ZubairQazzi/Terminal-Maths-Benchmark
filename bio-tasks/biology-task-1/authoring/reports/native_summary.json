@@ -1,0 +1,1095 @@
+{
+  "task": 1,
+  "final_job_prefix_filter": "v010",
+  "valid_final_trials": 13,
+  "infrastructure_errors": 10,
+  "preflight_failures": [
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_alternative_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    },
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_constant_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    },
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_hardcoded_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    },
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_incomplete_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    },
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_invalid_interpretation_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    },
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_label_shift_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    },
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_omitted_adjustment_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    },
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_saturated_shortcut_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    },
+    {
+      "log": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor_wrong_contrast_v010.log",
+      "reason": "Docker preflight did not create a graded trial; transient infrastructure interruption, not a scientific failure."
+    }
+  ],
+  "native_oracle_repeats": 2,
+  "native_oracle_artifacts_byte_identical": true,
+  "trials": [
+    {
+      "job": "bio1-alternative-v010r1",
+      "trial": "specificity-envelope__6BqchaR",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 1.0,
+      "binary_reward_text": "1",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632638.8046973,
+        "stop": 1795632647.1539085
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "3bbb83e9b49b0c0045b91431607be3f5cc89615859e2572666024973cfeb42b1",
+        "app/submission/early_bounds.tsv": "e01de61bdb962e6b005ed43849b432386e51b871b521e793df731a4cfe4be5a2",
+        "app/submission/eligible_genes.tsv": "9ab548678cb1dc661aca1065c64242dc86c0a9b55252c0655b603bce2b082ccc",
+        "app/submission/interpretation.json": "0cd858c4bcb1ddd0b55e9d80be2ae264b7cded8d0c62ee12f7f6b9fb9ed57531",
+        "app/submission/matched.tsv": "1af9d21c1417e43f3d8d507043781a3c1e007dcf7f36d5b00d788b32e045faf3"
+      },
+      "started_at": "2026-11-25T18:50:12.242964Z",
+      "finished_at": "2026-11-25T18:50:51.834394Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-alternative-v010r1\\specificity-envelope__6BqchaR"
+    },
+    {
+      "job": "bio1-constant-v010r1",
+      "trial": "specificity-envelope__CFUcPeL",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 7,
+        "failed": 4,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632229.2434385,
+        "stop": 1795632236.5919554
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+        "app/submission/early_bounds.tsv": "62f0c7dfa7bc7e8943678d7fded8458a6958d899d0a99717874411b861bc95bb",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+        "app/submission/interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+        "app/submission/matched.tsv": "d44db1048b48c78f17200c09b4ca861b2135369bd892a13e0c511a4b14f17439"
+      },
+      "started_at": "2026-11-25T18:43:22.051376Z",
+      "finished_at": "2026-11-25T18:44:01.076052Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-constant-v010r1\\specificity-envelope__CFUcPeL"
+    },
+    {
+      "job": "bio1-hardcoded-v010r1",
+      "trial": "specificity-envelope__oMiR8K7",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 7,
+        "failed": 4,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632274.277863,
+        "stop": 1795632280.828547
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+        "app/submission/early_bounds.tsv": "62f0c7dfa7bc7e8943678d7fded8458a6958d899d0a99717874411b861bc95bb",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+        "app/submission/interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+        "app/submission/matched.tsv": "a4f2802742c1f317dea27ef0e39cde4e3acc98815424f3eb097d6852925ba6f9"
+      },
+      "started_at": "2026-11-25T18:44:10.938198Z",
+      "finished_at": "2026-11-25T18:44:45.446563Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-hardcoded-v010r1\\specificity-envelope__oMiR8K7"
+    },
+    {
+      "job": "bio1-incomplete-v010r1",
+      "trial": "specificity-envelope__VRPNNKv",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 2,
+        "failed": 9,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632543.173218,
+        "stop": 1795632548.3298233
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "failed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb"
+      },
+      "started_at": "2026-11-25T18:48:43.011015Z",
+      "finished_at": "2026-11-25T18:49:12.956811Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-incomplete-v010r1\\specificity-envelope__VRPNNKv"
+    },
+    {
+      "job": "bio1-invalid_interpretation-v010r1",
+      "trial": "specificity-envelope__aeftLa3",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 10,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632588.827483,
+        "stop": 1795632597.1648214
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+        "app/submission/early_bounds.tsv": "62f0c7dfa7bc7e8943678d7fded8458a6958d899d0a99717874411b861bc95bb",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+        "app/submission/interpretation.json": "480b320c5613867a8a78b009f09b45f74ecd9965e9c71ce33334cf780bc2ff69",
+        "app/submission/matched.tsv": "33605d24c74ad809ae1fa4984fc021079b53ca1f4981105e51cc0dc52baa68fa"
+      },
+      "started_at": "2026-11-25T18:49:22.521095Z",
+      "finished_at": "2026-11-25T18:50:01.873678Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-invalid_interpretation-v010r1\\specificity-envelope__aeftLa3"
+    },
+    {
+      "job": "bio1-label_shift-v010r1",
+      "trial": "specificity-envelope__CMGvABo",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 10,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632329.559933,
+        "stop": 1795632337.626223
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+        "app/submission/early_bounds.tsv": "62f0c7dfa7bc7e8943678d7fded8458a6958d899d0a99717874411b861bc95bb",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+        "app/submission/interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+        "app/submission/matched.tsv": "d2032bb92ced935728e47dbdb06acec03a480464f369d17328782b252d6bbcba"
+      },
+      "started_at": "2026-11-25T18:44:55.852223Z",
+      "finished_at": "2026-11-25T18:45:42.459939Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-label_shift-v010r1\\specificity-envelope__CMGvABo"
+    },
+    {
+      "job": "bio1-nop-v010",
+      "trial": "specificity-envelope__2NZQDh9",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": null,
+      "binary_reward_text": null,
+      "valid_graded_trial": false,
+      "exception": {
+        "exception_type": "RuntimeError",
+        "exception_message": "Docker compose command failed for environment specificity-envelope. Command: docker compose --project-name specificity-envelope__2nzqdh9__verifier__trial --project-directory F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests -f C:\\Users\\zubai\\AppData\\Local\\Temp\\tmpb_p5gqhp\\specificity-envelope__2NZQDh9__verifier__trial-docker-compose-resources.json -f C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\environments\\docker\\docker-compose-build.yaml -f C:\\Users\\zubai\\AppData\\Local\\Temp\\tmphzlodi84\\docker-compose-environment.json -f C:\\Users\\zubai\\AppData\\Local\\Temp\\tmpkxiakpuh\\docker-compose-mounts.json -f C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\environments\\docker\\docker-compose-egress-control.yaml -f C:\\Users\\zubai\\AppData\\Local\\Temp\\tmphlrbfvtn\\docker-compose-egress-control-services.json up --detach --wait. Return code: 1. Stdout:  Image specificity-envelope__2nzqdh9__verifier__trial-main Building \n#1 [internal] load local bake definitions\n#1 reading from stdin 737B done\n#1 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 transferring dockerfile: 565B done\n#2 DONE 0.0s\n\n#3 [internal] load metadata for docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de\n#3 DONE 0.1s\n\n#4 [internal] load .dockerignore\n#4 transferring context: 2B done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 DONE 0.0s\n\n#6 [1/7] FROM docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de\n#6 resolve docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de 0.1s done\n#6 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 1.39kB done\n#5 DONE 0.0s\n\n#7 [6/7] RUN chmod -R go-rwx /tests && mkdir -p /app/submission /logs/verifier && chmod 700 /logs/verifier\n#7 CACHED\n\n#8 [2/7] COPY requirements.txt /tmp/requirements.txt\n#8 CACHED\n\n#9 [5/7] COPY . /tests/\n#9 CACHED\n\n#10 [3/7] COPY wheels/ /tmp/wheels/\n#10 CACHED\n\n#11 [4/7] RUN pip install --no-cache-dir --no-index --find-links=/tmp/wheels -r /tmp/requirements.txt && rm -rf /tmp/wheels\n#11 CACHED\n\n#12 [7/7] WORKDIR /tests\n#12 CACHED\n\n#13 exporting to image\n#13 exporting layers done\n#13 exporting manifest sha256:6b0c88cd215e774f937c94d28d4be64859ffa5aae0e57a69d93bf1676e26c6a2 done\n#13 exporting config sha256:f83dc9b3084bec62122bafeb778d7279f5b924ea0bd5bc71d5c5d8839ddaee68 done\n#13 exporting attestation manifest sha256:8c733d542488767ad6eb23d4e97a547f91c75fd0ffe1a0a7fe87da49ef6c9b84\n#13 exporting attestation manifest sha256:8c733d542488767ad6eb23d4e97a547f91c75fd0ffe1a0a7fe87da49ef6c9b84 0.1s done\n#13 exporting manifest list sha256:e4f933a483448b2d711ec4a854ec4c5d9fcaddc348aaa2bc32c8c38450f2add2 0.0s done\n#13 naming to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest\n#13 naming to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest done\n#13 unpacking to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest 0.0s done\n#13 DONE 0.3s\n\n#14 resolving provenance for metadata file\n#14 DONE 0.0s\n Image specificity-envelope__2nzqdh9__verifier__trial-main Built \n Network specificity-envelope__2nzqdh9__verifier__trial_default Creating \n Network specificity-envelope__2nzqdh9__verifier__trial_default Creating \n Network specificity-envelope__2nzqdh9__verifier__trial_default Created \n Network specificity-envelope__2nzqdh9__verifier__trial_default Created \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Creating \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Created \n Container specificity-envelope__2nzqdh9__verifier__trial-main-1 Creating \n Container specificity-envelope__2nzqdh9__verifier__trial-main-1 Created \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Starting \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Started \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Waiting \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Error dependency harbor-docker-egress-control-sidecar failed to start\n Container specificity-envelope__2nzqdh9__verifier__trial-main-1 not started: condition \"service_healthy\" of service \"harbor-docker-egress-control-sidecar\" not met \ndependency failed to start: request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.56/containers/b46350ddb8198279879c37d861cda93e0af0f4a7cda7217a4053f912dea2e2fc/json, check if the server supports the requested API version\n. Stderr: None. ",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 616, in run\n    await self._run()\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\single_step.py\", line 52, in _run\n    await self._run_verifier()\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\single_step.py\", line 102, in _run_verifier\n    self.result.verifier_result = await self._run_separate_verifier(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 1057, in _run_separate_verifier\n    async with self._separate_verifier_env(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\contextlib.py\", line 210, in __aenter__\n    return await anext(self.gen)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 1139, in _separate_verifier_env\n    await env.start(force_build=False)\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\environments\\docker\\docker.py\", line 1134, in start\n    await self._run_docker_compose_command([\"up\", *runtime.up_args])\n  File \"C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\environments\\docker\\docker.py\", line 808, in _run_docker_compose_command\n    raise RuntimeError(\nRuntimeError: Docker compose command failed for environment specificity-envelope. Command: docker compose --project-name specificity-envelope__2nzqdh9__verifier__trial --project-directory F:\\rl\\bio\\biology-task-1\\authoring\\package\\tasks\\life-sciences\\biology\\specificity-envelope\\tests -f C:\\Users\\zubai\\AppData\\Local\\Temp\\tmpb_p5gqhp\\specificity-envelope__2NZQDh9__verifier__trial-docker-compose-resources.json -f C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\environments\\docker\\docker-compose-build.yaml -f C:\\Users\\zubai\\AppData\\Local\\Temp\\tmphzlodi84\\docker-compose-environment.json -f C:\\Users\\zubai\\AppData\\Local\\Temp\\tmpkxiakpuh\\docker-compose-mounts.json -f C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\environments\\docker\\docker-compose-egress-control.yaml -f C:\\Users\\zubai\\AppData\\Local\\Temp\\tmphlrbfvtn\\docker-compose-egress-control-services.json up --detach --wait. Return code: 1. Stdout:  Image specificity-envelope__2nzqdh9__verifier__trial-main Building \n#1 [internal] load local bake definitions\n#1 reading from stdin 737B done\n#1 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 transferring dockerfile: 565B done\n#2 DONE 0.0s\n\n#3 [internal] load metadata for docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de\n#3 DONE 0.1s\n\n#4 [internal] load .dockerignore\n#4 transferring context: 2B done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 DONE 0.0s\n\n#6 [1/7] FROM docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de\n#6 resolve docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de 0.1s done\n#6 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 1.39kB done\n#5 DONE 0.0s\n\n#7 [6/7] RUN chmod -R go-rwx /tests && mkdir -p /app/submission /logs/verifier && chmod 700 /logs/verifier\n#7 CACHED\n\n#8 [2/7] COPY requirements.txt /tmp/requirements.txt\n#8 CACHED\n\n#9 [5/7] COPY . /tests/\n#9 CACHED\n\n#10 [3/7] COPY wheels/ /tmp/wheels/\n#10 CACHED\n\n#11 [4/7] RUN pip install --no-cache-dir --no-index --find-links=/tmp/wheels -r /tmp/requirements.txt && rm -rf /tmp/wheels\n#11 CACHED\n\n#12 [7/7] WORKDIR /tests\n#12 CACHED\n\n#13 exporting to image\n#13 exporting layers done\n#13 exporting manifest sha256:6b0c88cd215e774f937c94d28d4be64859ffa5aae0e57a69d93bf1676e26c6a2 done\n#13 exporting config sha256:f83dc9b3084bec62122bafeb778d7279f5b924ea0bd5bc71d5c5d8839ddaee68 done\n#13 exporting attestation manifest sha256:8c733d542488767ad6eb23d4e97a547f91c75fd0ffe1a0a7fe87da49ef6c9b84\n#13 exporting attestation manifest sha256:8c733d542488767ad6eb23d4e97a547f91c75fd0ffe1a0a7fe87da49ef6c9b84 0.1s done\n#13 exporting manifest list sha256:e4f933a483448b2d711ec4a854ec4c5d9fcaddc348aaa2bc32c8c38450f2add2 0.0s done\n#13 naming to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest\n#13 naming to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest done\n#13 unpacking to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest 0.0s done\n#13 DONE 0.3s\n\n#14 resolving provenance for metadata file\n#14 DONE 0.0s\n Image specificity-envelope__2nzqdh9__verifier__trial-main Built \n Network specificity-envelope__2nzqdh9__verifier__trial_default Creating \n Network specificity-envelope__2nzqdh9__verifier__trial_default Creating \n Network specificity-envelope__2nzqdh9__verifier__trial_default Created \n Network specificity-envelope__2nzqdh9__verifier__trial_default Created \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Creating \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Created \n Container specificity-envelope__2nzqdh9__verifier__trial-main-1 Creating \n Container specificity-envelope__2nzqdh9__verifier__trial-main-1 Created \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Starting \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Started \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Waiting \n Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Error dependency harbor-docker-egress-control-sidecar failed to start\n Container specificity-envelope__2nzqdh9__verifier__trial-main-1 not started: condition \"service_healthy\" of service \"harbor-docker-egress-control-sidecar\" not met \ndependency failed to start: request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.56/containers/b46350ddb8198279879c37d861cda93e0af0f4a7cda7217a4053f912dea2e2fc/json, check if the server supports the requested API version\n. Stderr: None. \n",
+        "occurred_at": "2026-11-25T17:49:58.522764Z",
+        "policy": {
+          "should_retry": true,
+          "should_grade": true,
+          "has_valid_reward": true
+        }
+      },
+      "separate_verifier": true,
+      "ctrf_summary": {},
+      "per_test": [],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca"
+      },
+      "started_at": "2026-11-25T17:48:45.049292Z",
+      "finished_at": "2026-11-25T17:49:58.526945Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-nop-v010\\specificity-envelope__2NZQDh9"
+    },
+    {
+      "job": "bio1-nop-v010r1",
+      "trial": "specificity-envelope__x9BidC4",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 0,
+        "failed": 11,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632185.7289562,
+        "stop": 1795632189.5860736
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "failed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca"
+      },
+      "started_at": "2026-11-25T18:42:41.891775Z",
+      "finished_at": "2026-11-25T18:43:13.779420Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-nop-v010r1\\specificity-envelope__x9BidC4"
+    },
+    {
+      "job": "bio1-omitted_adjustment-v010r1",
+      "trial": "specificity-envelope__RMmo9FL",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 10,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632444.9040003,
+        "stop": 1795632453.1105974
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+        "app/submission/early_bounds.tsv": "62f0c7dfa7bc7e8943678d7fded8458a6958d899d0a99717874411b861bc95bb",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+        "app/submission/interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+        "app/submission/matched.tsv": "fc46cc0fc70af42fb4d3b78bda55b4fdc0388a13ba6dcb88736ee28d623ee28d"
+      },
+      "started_at": "2026-11-25T18:46:49.707558Z",
+      "finished_at": "2026-11-25T18:47:37.793989Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-omitted_adjustment-v010r1\\specificity-envelope__RMmo9FL"
+    },
+    {
+      "job": "bio1-oracle-v010",
+      "trial": "specificity-envelope__3fkcPwt",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 1.0,
+      "binary_reward_text": "1",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795628898.603053,
+        "stop": 1795628907.7209382
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "93347a7c6f03667359bf6c184cd4521ae598c667ba3954bc8872625cf518bc67",
+        "app/submission/calibration.tsv": "b9a1167b819338874d9557788984aaa7a239999e967fb0f46ef6984562c89715",
+        "app/submission/early_bounds.tsv": "a6d6abee4393e9200efc53990276f298ff3b4638cb4fb74592cb8598d6a09e48",
+        "app/submission/eligible_genes.tsv": "67fdd98d90a4de17767ad10a0a198269bdb16c378df73230d1c51bc40c346808",
+        "app/submission/interpretation.json": "1e9f1c242612f9ae21eb7ed62c77bf5bb0c442687383cc0b0ada7fb18496405b",
+        "app/submission/matched.tsv": "37fb16dec18005e9765341e908edfeeaec2080499dd839b38c31c31a416c9800"
+      },
+      "started_at": "2026-11-25T17:47:29.649987Z",
+      "finished_at": "2026-11-25T17:48:32.674268Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-oracle-v010\\specificity-envelope__3fkcPwt"
+    },
+    {
+      "job": "bio1-oracle-v010",
+      "trial": "specificity-envelope__PvRXmZg",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 1.0,
+      "binary_reward_text": "1",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795628833.4491584,
+        "stop": 1795628843.5112376
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "93347a7c6f03667359bf6c184cd4521ae598c667ba3954bc8872625cf518bc67",
+        "app/submission/calibration.tsv": "b9a1167b819338874d9557788984aaa7a239999e967fb0f46ef6984562c89715",
+        "app/submission/early_bounds.tsv": "a6d6abee4393e9200efc53990276f298ff3b4638cb4fb74592cb8598d6a09e48",
+        "app/submission/eligible_genes.tsv": "67fdd98d90a4de17767ad10a0a198269bdb16c378df73230d1c51bc40c346808",
+        "app/submission/interpretation.json": "1e9f1c242612f9ae21eb7ed62c77bf5bb0c442687383cc0b0ada7fb18496405b",
+        "app/submission/matched.tsv": "37fb16dec18005e9765341e908edfeeaec2080499dd839b38c31c31a416c9800"
+      },
+      "started_at": "2026-11-25T17:46:24.484569Z",
+      "finished_at": "2026-11-25T17:47:28.776445Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-oracle-v010\\specificity-envelope__PvRXmZg"
+    },
+    {
+      "job": "bio1-saturated_shortcut-v010r1",
+      "trial": "specificity-envelope__R3UYTvq",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 10,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632501.145508,
+        "stop": 1795632508.9911304
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "failed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "f44e83fb7b4488702a1b1ce34506167d2bda43f38e45b0856d82e341f76620d1",
+        "app/submission/early_bounds.tsv": "62f0c7dfa7bc7e8943678d7fded8458a6958d899d0a99717874411b861bc95bb",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+        "app/submission/interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+        "app/submission/matched.tsv": "5db6c9a9040a161451b79fd4a7acfb87a55046fc7900f434592b71f6b25349b4"
+      },
+      "started_at": "2026-11-25T18:47:48.203842Z",
+      "finished_at": "2026-11-25T18:48:33.622321Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-saturated_shortcut-v010r1\\specificity-envelope__R3UYTvq"
+    },
+    {
+      "job": "bio1-wrong_contrast-v010r1",
+      "trial": "specificity-envelope__qBwirMf",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 10,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632386.7526321,
+        "stop": 1795632394.841979
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+        "app/submission/early_bounds.tsv": "62f0c7dfa7bc7e8943678d7fded8458a6958d899d0a99717874411b861bc95bb",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+        "app/submission/interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+        "app/submission/matched.tsv": "b6a73ebff3129bb77240aa6c61974a429ced7aae0252039dfd921cc50ff4e3c8"
+      },
+      "started_at": "2026-11-25T18:45:52.888156Z",
+      "finished_at": "2026-11-25T18:46:39.640431Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-wrong_contrast-v010r1\\specificity-envelope__qBwirMf"
+    },
+    {
+      "job": "bio1-wrong_sample_alignment-v010r2",
+      "trial": "specificity-envelope__qmcCiwA",
+      "version_scope_final": true,
+      "task_checksum": "38e6e643672a56ff4e2d30619b0ec5ccdfa6bcfd75d80cd79c099159ea26ae36",
+      "reward": 0.0,
+      "binary_reward_text": "0",
+      "valid_graded_trial": true,
+      "exception": null,
+      "separate_verifier": true,
+      "ctrf_summary": {
+        "tests": 11,
+        "passed": 7,
+        "failed": 4,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795632767.6942046,
+        "stop": 1795632776.034934
+      },
+      "per_test": [
+        {
+          "name": "test_outputs.py::test_01_complete_handoff",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_02_fractional_representation_audit",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_03_unselected_complete_gene_universe",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_04_matched_factorial_effects",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_05_heteroscedastic_uncertainty",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_06_affirmative_equivalence_and_minimum_effect",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_07_joint_family_multiplicity",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_08_early_partial_identification",
+          "status": "failed"
+        },
+        {
+          "name": "test_outputs.py::test_09_envelope_expansion_invariants",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_10_interpretation_limits",
+          "status": "passed"
+        },
+        {
+          "name": "test_outputs.py::test_11_synthetic_positive_and_degenerate_controls",
+          "status": "passed"
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "18717bb7632d7da5f3b298512b7aa9387fbff243c5f7e3d18d7813bf580d9fca",
+        "app/submission/audit.json": "6445d907fb9b897f4fb57b132c3587a8a9954b05da1f7226cd82654cf6b8905a",
+        "app/submission/calibration.tsv": "acfd581175c5f5001e657b9ea1d400c7d8a824c5ca67e1ebd19489270b75d7c0",
+        "app/submission/early_bounds.tsv": "06e8f9bdd90b2158f95533f1599469f9795e80c53b0a9c1e2d696c305b0f95d5",
+        "app/submission/eligible_genes.tsv": "e86f9f61a61914c11a0c99fe59ebb4ba78b155cede78b3d8c6e77ba151b76fdb",
+        "app/submission/interpretation.json": "442c3f296a20ef270c00d05e1fbc8ba75f1b45419c330109d645ef5ba9a32745",
+        "app/submission/matched.tsv": "09c0bb8828256921b75c063ddacf7870587f9874730d2d29f58aed18b17d0491"
+      },
+      "started_at": "2026-11-25T18:52:19.791675Z",
+      "finished_at": "2026-11-25T18:53:00.919419Z",
+      "trial_directory": "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\harbor-jobs\\bio1-wrong_sample_alignment-v010r2\\specificity-envelope__qmcCiwA"
+    }
+  ],
+  "scope": "Only completed exception-free trials with binary reward files count as graded. Infrastructure failures and superseded versions are retained and excluded. Deterministic controls are not empirical AI-model trials."
+}

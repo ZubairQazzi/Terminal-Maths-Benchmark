@@ -1,0 +1,105 @@
+{
+  "task": "biology-task-2",
+  "name": "terminal-bench-science/transcript-provenance-audit",
+  "version": "0.1.1",
+  "domain": "Biology / transcriptomic provenance and integrity",
+  "oracle": "PASS 11/11, two native repeats",
+  "negative_baselines": "PASS: 9 controls rejected locally and in valid native trials",
+  "alternative": "PASS 11/11 independently implemented/equivalent scientific reconstruction",
+  "hidden_test_discrimination": "PASS within documented error families; easy controls identified",
+  "docker_harbor": "PASS actual clean builds and separate-verifier grading",
+  "static_qc": "29/29 PASS",
+  "rubric_qc": "38/38 PASS, 0 nonblocking difficulty WARNING; local independent assessment, external automated rubric panel NOT RUN",
+  "independent_qc": "PASS local fresh reviewer /root/qc_b",
+  "originality": "PASS within audited corpus",
+  "maximum_substantive_similarity_pct": 25,
+  "native_valid_trials": 12,
+  "native_task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+  "native_oracle_artifacts_byte_identical": true,
+  "external_qc": "NOT RUN",
+  "gemini_authorization": "PENDING explicit user approval at handoff; no API used",
+  "valid_agent_trials": "NOT RUN (0/8)",
+  "observed_success_rate": "NOT MEASURED",
+  "final_non_gemini_status": "VALIDATED for available local non-model checks",
+  "final_verdict": "READY FOR EXTERNAL QC",
+  "remaining_issues": [
+    "External automated/model judge QC has not been run; local38-check review is not external approval.",
+    "Expert/frontier-agent difficulty,35\u201360% success and completion time remain unmeasured.",
+    "Finite-corpus originality review cannot exclude unseen work."
+  ],
+  "negative_trials": {
+    "nop": [
+      {
+        "job": "bio2-nop-v011",
+        "passed": 0,
+        "total": 11,
+        "reward": 0.0
+      }
+    ],
+    "constant": [
+      {
+        "job": "bio2-constant-v011",
+        "passed": 3,
+        "total": 11,
+        "reward": 0.0
+      }
+    ],
+    "hardcoded": [
+      {
+        "job": "bio2-hardcoded-v011",
+        "passed": 0,
+        "total": 11,
+        "reward": 0.0
+      }
+    ],
+    "wrong_alignment": [
+      {
+        "job": "bio2-wrong_alignment-v011",
+        "passed": 8,
+        "total": 11,
+        "reward": 0.0
+      }
+    ],
+    "wrong_contrast": [
+      {
+        "job": "bio2-wrong_contrast-v011",
+        "passed": 8,
+        "total": 11,
+        "reward": 0.0
+      }
+    ],
+    "wrong_statistics": [
+      {
+        "job": "bio2-wrong_statistics-v011",
+        "passed": 9,
+        "total": 11,
+        "reward": 0.0
+      }
+    ],
+    "incomplete": [
+      {
+        "job": "bio2-incomplete-v011",
+        "passed": 5,
+        "total": 11,
+        "reward": 0.0
+      }
+    ],
+    "unsupported_forced_pair": [
+      {
+        "job": "bio2-unsupported_forced_pair-v011",
+        "passed": 9,
+        "total": 11,
+        "reward": 0.0
+      }
+    ],
+    "invalid_claims": [
+      {
+        "job": "bio2-invalid_claims-v011",
+        "passed": 10,
+        "total": 11,
+        "reward": 0.0
+      }
+    ]
+  },
+  "scientific_limits": "Technical aliquots and provenance disruptions are synthetic. Feature holdout is not independent biological replication; fractions describe supplied expression representations, not cell fractions."
+}

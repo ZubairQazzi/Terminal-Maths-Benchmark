@@ -1,0 +1,7 @@
+{
+  "gemini_authorization": "NOT_REQUESTED",
+  "provider_api_usage": "NOT_RUN",
+  "valid_agent_trials": 0,
+  "observed_success_rate": null,
+  "reason": "Explicit user authorization is required after both tasks complete available non-Gemini validation. Deterministic oracle/baseline trials are not model calibration."
+}

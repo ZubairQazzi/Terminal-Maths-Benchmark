@@ -1,0 +1,20 @@
+{
+  "run_id": "bio2-initial-01",
+  "source": "F:\\rl\\bio\\biology-task-2\\task\\environment\\data\\atlas_tpm.tsv.gz",
+  "submission": "F:\\rl\\bio\\authoring\\trajectories\\initial-gemini35lite-high-20261126\\jobs\\bio2-initial-01\\transcript-provenance-audit__wN4mpdm\\artifacts\\app\\submission\\audit.json",
+  "rows_read": 57665,
+  "atlas_columns": 120,
+  "columns_failing_supplied_minimum": 120,
+  "max_error_vs_normalized_minimum": 1.3135326160096383e-13,
+  "max_error_vs_required_minimum": 0.11845836733056549,
+  "example": {
+    "atlas_id": "A000",
+    "submitted_minimum": 0.06301784809336783,
+    "required_supplied_minimum": 0.05053822693,
+    "normalized_minimum": 0.06301784809330573,
+    "absolute_error_vs_required": 0.01247962116336783,
+    "absolute_error_vs_normalized": 6.21031004399697e-14,
+    "fails_required_1e_7_tolerance": true
+  },
+  "diagnosis": "The submitted source explicitly uses A[col].min() after normalizing atlas columns, while the published audit contract requires the supplied scaled atlas minimum. All identity, mixture, support and residual-certificate checks passed. This is representation bookkeeping, not evidence of failed mixture inference."
+}

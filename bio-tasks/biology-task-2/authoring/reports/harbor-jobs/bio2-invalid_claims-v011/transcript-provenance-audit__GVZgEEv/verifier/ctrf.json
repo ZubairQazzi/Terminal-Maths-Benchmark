@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 10,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795633308.4556186,
+            "stop": 1795633311.5036063
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 2.175725737999983,
+                "start": 1795633308.704793,
+                "stop": 1795633310.880829,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_physical_audit",
+                "status": "passed",
+                "duration": 0.06378426899982514,
+                "start": 1795633310.881067,
+                "stop": 1795633310.945051,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_biological_limits",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0005675420002262399,
+                "start": 1795633310.9452622,
+                "stop": 1795633310.9723392,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_biological_limits():\n>       CHECKS['biological_limits']()\n\ntest_outputs.py:11: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def claims():\n        report=read('audit.json')['biological_claims']\n        keys=['representations_are_independent_experiments','mixture_fraction_represents_cell_fraction','untreated_2h_control_exists','atf4_dependence_identified','original_series_contains_planted_contamination']\n        assert set(report)==set(keys)\n>       for k in keys:assert report[k] is False,k\n                             ^^^^^^^^^^^^^^^^^^\nE       AssertionError: mixture_fraction_represents_cell_fraction\n\nchecks.py:73: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_sample_identity",
+                "status": "passed",
+                "duration": 0.0015814749999663036,
+                "start": 1795633310.9725556,
+                "stop": 1795633310.9742928,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_discovery_alignment_scores",
+                "status": "passed",
+                "duration": 0.04734762400016734,
+                "start": 1795633310.974502,
+                "stop": 1795633311.0220432,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_heldout_identity_certificates",
+                "status": "passed",
+                "duration": 0.04458147799982726,
+                "start": 1795633311.0223007,
+                "stop": 1795633311.0670881,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_pure_aliquots",
+                "status": "passed",
+                "duration": 0.0022282910001649725,
+                "start": 1795633311.0673378,
+                "stop": 1795633311.069767,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_two_source_aliquots",
+                "status": "passed",
+                "duration": 0.0024927100000695646,
+                "start": 1795633311.070023,
+                "stop": 1795633311.0727174,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_open_set_rejection",
+                "status": "passed",
+                "duration": 0.0021989989998019155,
+                "start": 1795633311.0729504,
+                "stop": 1795633311.0753677,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_residual_certificates",
+                "status": "passed",
+                "duration": 0.06326402900003814,
+                "start": 1795633311.0756714,
+                "stop": 1795633311.1392312,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_support_optimality",
+                "status": "passed",
+                "duration": 0.3637273509998522,
+                "start": 1795633311.1394892,
+                "stop": 1795633311.5034165,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

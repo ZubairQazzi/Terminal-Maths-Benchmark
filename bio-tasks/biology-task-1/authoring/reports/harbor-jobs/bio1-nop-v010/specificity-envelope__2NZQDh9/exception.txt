@@ -1,0 +1,95 @@
+Traceback (most recent call last):
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 616, in run
+    await self._run()
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\single_step.py", line 52, in _run
+    await self._run_verifier()
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\single_step.py", line 102, in _run_verifier
+    self.result.verifier_result = await self._run_separate_verifier(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 1057, in _run_separate_verifier
+    async with self._separate_verifier_env(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zubai\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 1139, in _separate_verifier_env
+    await env.start(force_build=False)
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 1134, in start
+    await self._run_docker_compose_command(["up", *runtime.up_args])
+  File "C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 808, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment specificity-envelope. Command: docker compose --project-name specificity-envelope__2nzqdh9__verifier__trial --project-directory F:\rl\bio\biology-task-1\authoring\package\tasks\life-sciences\biology\specificity-envelope\tests -f C:\Users\zubai\AppData\Local\Temp\tmpb_p5gqhp\specificity-envelope__2NZQDh9__verifier__trial-docker-compose-resources.json -f C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\zubai\AppData\Local\Temp\tmphzlodi84\docker-compose-environment.json -f C:\Users\zubai\AppData\Local\Temp\tmpkxiakpuh\docker-compose-mounts.json -f C:\Users\zubai\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-egress-control.yaml -f C:\Users\zubai\AppData\Local\Temp\tmphlrbfvtn\docker-compose-egress-control-services.json up --detach --wait. Return code: 1. Stdout:  Image specificity-envelope__2nzqdh9__verifier__trial-main Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 737B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 565B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [1/7] FROM docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de
+#6 resolve docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de 0.1s done
+#6 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 1.39kB done
+#5 DONE 0.0s
+
+#7 [6/7] RUN chmod -R go-rwx /tests && mkdir -p /app/submission /logs/verifier && chmod 700 /logs/verifier
+#7 CACHED
+
+#8 [2/7] COPY requirements.txt /tmp/requirements.txt
+#8 CACHED
+
+#9 [5/7] COPY . /tests/
+#9 CACHED
+
+#10 [3/7] COPY wheels/ /tmp/wheels/
+#10 CACHED
+
+#11 [4/7] RUN pip install --no-cache-dir --no-index --find-links=/tmp/wheels -r /tmp/requirements.txt && rm -rf /tmp/wheels
+#11 CACHED
+
+#12 [7/7] WORKDIR /tests
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:6b0c88cd215e774f937c94d28d4be64859ffa5aae0e57a69d93bf1676e26c6a2 done
+#13 exporting config sha256:f83dc9b3084bec62122bafeb778d7279f5b924ea0bd5bc71d5c5d8839ddaee68 done
+#13 exporting attestation manifest sha256:8c733d542488767ad6eb23d4e97a547f91c75fd0ffe1a0a7fe87da49ef6c9b84
+#13 exporting attestation manifest sha256:8c733d542488767ad6eb23d4e97a547f91c75fd0ffe1a0a7fe87da49ef6c9b84 0.1s done
+#13 exporting manifest list sha256:e4f933a483448b2d711ec4a854ec4c5d9fcaddc348aaa2bc32c8c38450f2add2 0.0s done
+#13 naming to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest
+#13 naming to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest done
+#13 unpacking to docker.io/library/specificity-envelope__2nzqdh9__verifier__trial-main:latest 0.0s done
+#13 DONE 0.3s
+
+#14 resolving provenance for metadata file
+#14 DONE 0.0s
+ Image specificity-envelope__2nzqdh9__verifier__trial-main Built 
+ Network specificity-envelope__2nzqdh9__verifier__trial_default Creating 
+ Network specificity-envelope__2nzqdh9__verifier__trial_default Creating 
+ Network specificity-envelope__2nzqdh9__verifier__trial_default Created 
+ Network specificity-envelope__2nzqdh9__verifier__trial_default Created 
+ Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Creating 
+ Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Created 
+ Container specificity-envelope__2nzqdh9__verifier__trial-main-1 Creating 
+ Container specificity-envelope__2nzqdh9__verifier__trial-main-1 Created 
+ Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Starting 
+ Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Started 
+ Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Waiting 
+ Container specificity-envelope__2nzqdh9__verifier__trial-harbor-docker-egress-control-sidecar-1 Error dependency harbor-docker-egress-control-sidecar failed to start
+ Container specificity-envelope__2nzqdh9__verifier__trial-main-1 not started: condition "service_healthy" of service "harbor-docker-egress-control-sidecar" not met 
+dependency failed to start: request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.56/containers/b46350ddb8198279879c37d861cda93e0af0f4a7cda7217a4053f912dea2e2fc/json, check if the server supports the requested API version
+. Stderr: None. 

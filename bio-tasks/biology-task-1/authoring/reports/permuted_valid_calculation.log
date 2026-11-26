@@ -1,0 +1,2 @@
+COMMAND ["C:\\Users\\zubai\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "F:\\rl\\bio\\biology-task-1\\task\\solution\\solve.py", "--data", "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\permuted_valid_inputs", "--output", "F:\\rl\\bio\\biology-task-1\\authoring\\reports\\permuted_valid_output"]
+{"eligible": 20803, "matched_rows": 249636, "early_rows": 187227, "certificates": 0}

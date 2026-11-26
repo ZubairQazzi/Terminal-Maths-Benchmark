@@ -1,0 +1,18 @@
+{
+  "file": "F:\\rl\\bio\\authoring\\sources\\GSE273600_family.soft.gz",
+  "sha256": "2f7bdac5887dba810af327d89b0229f1af4216da3401818e2a7a2013fe73bdca",
+  "method": "Case-insensitive literal keyword scan of complete cached official family SOFT; absence does not establish a license.",
+  "matches": {
+    "license": [],
+    "licence": [],
+    "copyright": [],
+    "permission": [],
+    "redistribut": [],
+    "commercial": []
+  },
+  "series_links": [
+    "!Series_supplementary_file = ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273600/suppl/GSE273600_Control_Conditions_Raw_Counts.txt.gz",
+    "!Series_supplementary_file = ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273600/suppl/GSE273600_Control_Conditions_TPMs.txt.gz",
+    "!Series_relation = BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1142487"
+  ]
+}

@@ -1,0 +1,2 @@
+gene_id	treatment	time_h	p_interaction	p_parent_equivalence	p_dmr_minimum	p_joint	rank	BY_threshold_at_0.05	M_H_p_over_rank_uncapped	suffix_minimum_uncapped
+ENSG00000168003.16	Dim	8	8.932338416224207e-08	0.0004335714896048066	6.293478922086767e-05	0.0004335714896048066	196	3.018625793442915e-06	7.181603803734373	7.181603803734373

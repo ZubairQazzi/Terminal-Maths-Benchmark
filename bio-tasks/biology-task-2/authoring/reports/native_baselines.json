@@ -1,0 +1,11 @@
+{
+  "alternative": {"path": "authoring/reports/alternative-output"},
+  "constant": {"path": "authoring/reports/constant-output"},
+  "hardcoded": {"path": "authoring/reports/hardcoded-output"},
+  "wrong_alignment": {"path": "authoring/reports/wrong_alignment-output"},
+  "wrong_contrast": {"path": "authoring/reports/wrong_contrast-output"},
+  "wrong_statistics": {"path": "authoring/reports/wrong_statistics-output"},
+  "incomplete": {"path": "authoring/reports/incomplete-output"},
+  "unsupported_forced_pair": {"path": "authoring/reports/unsupported_forced_pair-output"},
+  "invalid_claims": {"path": "authoring/reports/invalid_claims-output"}
+}

@@ -1,0 +1,75 @@
+{
+  "task": 2,
+  "image_suffix": "v011",
+  "passed": true,
+  "probes": [
+    {
+      "label": "unprivileged_solver_no_private_material",
+      "command": [
+        "C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+        "run",
+        "--rm",
+        "--network",
+        "none",
+        "--cpus",
+        "2",
+        "--memory",
+        "4g",
+        "--user",
+        "agent",
+        "local-bio2-agent:v011",
+        "python3",
+        "-c",
+        "import json,os,pathlib,socket\np=pathlib.Path('/app/data');first=next(x for x in p.iterdir() if x.is_file())\nwrite_blocked=False\ntry:\n with first.open('ab'):pass\nexcept PermissionError:write_blocked=True\nout=pathlib.Path('/app/submission/probe.txt');out.write_text('probe');out.unlink()\nresult={'uid':os.getuid(),'private_tests_absent':not pathlib.Path('/tests').exists(),'private_solution_absent':not pathlib.Path('/solution').exists(),'data_not_writable':write_blocked,'output_writable':True}\nassert result['uid']!=0 and all(v for k,v in result.items() if k!='uid'),result\nprint(json.dumps(result))\n"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"uid\": 1000, \"private_tests_absent\": true, \"private_solution_absent\": true, \"data_not_writable\": true, \"output_writable\": true}\n",
+      "stderr": "",
+      "seconds": 0.375
+    },
+    {
+      "label": "verifier_private_and_no_egress",
+      "command": [
+        "C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+        "run",
+        "--rm",
+        "--network",
+        "none",
+        "local-bio2-verifier:v011",
+        "python3",
+        "-c",
+        "import json,pathlib,socket\npaths=[pathlib.Path('/tests'),pathlib.Path('/logs/verifier')]\nresult={'private_directories_mode700':all((p.stat().st_mode&0o077)==0 for p in paths),'score_absent_before_grading':not pathlib.Path('/logs/verifier/reward.txt').exists()}\ntry:socket.create_connection(('1.1.1.1',443),timeout=1);result['egress_blocked']=False\nexcept OSError:result['egress_blocked']=True\nassert all(result.values()),result\nprint(json.dumps(result))\n"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"private_directories_mode700\": true, \"score_absent_before_grading\": true, \"egress_blocked\": true}\n",
+      "stderr": "",
+      "seconds": 0.39099999999962165
+    },
+    {
+      "label": "oracle_executes_offline",
+      "command": [
+        "C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+        "run",
+        "--rm",
+        "--network",
+        "none",
+        "--cpus",
+        "2",
+        "--memory",
+        "8g",
+        "--user",
+        "agent",
+        "--mount",
+        "type=bind,source=F:/rl/bio/biology-task-2/task/solution,target=/solution,readonly",
+        "local-bio2-agent:v011",
+        "bash",
+        "/solution/solve.sh"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 3.20299999999952
+    }
+  ],
+  "scope": "Docker observed capability/file permissions and fully offline oracle. Harbor separate-verifier artifacts and clean reset assessed additionally from native trial results; no credential injection or malicious submitted-code execution is used."
+}

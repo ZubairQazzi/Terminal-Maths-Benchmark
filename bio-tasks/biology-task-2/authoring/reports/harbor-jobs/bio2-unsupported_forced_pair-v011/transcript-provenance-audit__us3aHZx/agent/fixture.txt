@@ -1,0 +1,2 @@
+Local deterministic control: unsupported_forced_pair
+No model or provider API invoked.

@@ -1,0 +1,217 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+test_outputs.py F..FFFFFFF.                                              [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_schema __________________________________
+
+    def test_schema():
+>       CHECKS['schema']()
+
+test_outputs.py:5: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def schema():
+        c,a,q,_,_,_,_,_,_=data()
+        m=read('alignment.tsv');r=read('queries.tsv');audit=read('audit.json')
+        assert list(m.columns)==['atlas_id','sample_id','discovery_correlation','validation_correlation','validation_margin']
+        assert list(r.columns)==['query_id','classification','donor_1','donor_2','fraction_1','discovery_residual','validation_residual']
+        assert len(m)==len(a.columns) and set(m.atlas_id)==set(a.columns) and m.atlas_id.is_unique
+        assert len(r)==len(q.columns) and set(r.query_id)==set(q.columns) and r.query_id.is_unique
+>       assert set(m.sample_id)==set(c.columns) and m.sample_id.is_unique
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError
+
+checks.py:53: AssertionError
+_____________________________ test_sample_identity _____________________________
+
+    def test_sample_identity():
+>       CHECKS['sample_identity']()
+
+test_outputs.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def alignment():
+        m=read('alignment.tsv');truth=data()[4]['mapping']
+>       assert dict(zip(m.atlas_id,m.sample_id))==truth,'Sample provenance mismatched'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Sample provenance mismatched
+
+checks.py:77: AssertionError
+_______________________ test_discovery_alignment_scores ________________________
+
+    def test_discovery_alignment_scores():
+>       CHECKS['discovery_alignment_scores']()
+
+test_outputs.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+discovery = True
+
+    def alignment_scores(discovery):
+        c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')
+        score=correlations(tr if discovery else va)
+        for row in m.itertuples():
+            i=c.columns.get_loc(row.sample_id);j=a.columns.get_loc(row.atlas_id)
+            expect=float(score[i,j]);actual=row.discovery_correlation if discovery else row.validation_correlation
+>           assert abs(float(actual)-expect)<2e-6
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError
+
+checks.py:85: AssertionError
+______________________ test_heldout_identity_certificates ______________________
+
+    def test_heldout_identity_certificates():
+>       CHECKS['heldout_identity_certificates']()
+
+test_outputs.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+discovery = False
+
+    def alignment_scores(discovery):
+        c,a,_,_,_,_,_,tr,va=data();m=read('alignment.tsv')
+        score=correlations(tr if discovery else va)
+        for row in m.itertuples():
+            i=c.columns.get_loc(row.sample_id);j=a.columns.get_loc(row.atlas_id)
+            expect=float(score[i,j]);actual=row.discovery_correlation if discovery else row.validation_correlation
+>           assert abs(float(actual)-expect)<2e-6
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError
+
+checks.py:85: AssertionError
+______________________________ test_pure_aliquots ______________________________
+
+    def test_pure_aliquots():
+>       CHECKS['pure_aliquots']()
+
+test_outputs.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+kind = 'pure'
+
+    def query_truth(kind):
+        r=read('queries.tsv').set_index('query_id')
+        truth=data()[4]['queries']
+        for t in truth:
+            if t['class']!=kind:continue
+            row=r.loc[t['query_id']]
+            assert row.classification==kind,(t['query_id'],kind,row.classification)
+            if kind=='unsupported':continue
+            if kind=='pure':
+>               assert row.donor_1==t['donors'][0] and row.donor_2=='' and abs(float(row.fraction_1)-1)<1e-9
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               AssertionError
+
+checks.py:100: AssertionError
+___________________________ test_two_source_aliquots ___________________________
+
+    def test_two_source_aliquots():
+>       CHECKS['two_source_aliquots']()
+
+test_outputs.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+kind = 'pair'
+
+    def query_truth(kind):
+        r=read('queries.tsv').set_index('query_id')
+        truth=data()[4]['queries']
+        for t in truth:
+            if t['class']!=kind:continue
+            row=r.loc[t['query_id']]
+>           assert row.classification==kind,(t['query_id'],kind,row.classification)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError: ('Q002', 'pair', 'pure')
+
+checks.py:97: AssertionError
+___________________________ test_open_set_rejection ____________________________
+
+    def test_open_set_rejection():
+>       CHECKS['open_set_rejection']()
+
+test_outputs.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+checks.py:151: in <lambda>
+    CHECKS={'schema':schema,'physical_audit':audit,'biological_limits':claims,'sample_identity':alignment,'discovery_alignment_scores':lambda:alignment_scores(True),'heldout_identity_certificates':lambda:alignment_scores(False),'pure_aliquots':lambda:query_truth('pure'),'two_source_aliquots':lambda:query_truth('pair'),'open_set_rejection':lambda:query_truth('unsupported'),'residual_certificates':mixture_certificates,'support_optimality':optimality}
+                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+kind = 'unsupported'
+
+    def query_truth(kind):
+        r=read('queries.tsv').set_index('query_id')
+        truth=data()[4]['queries']
+        for t in truth:
+            if t['class']!=kind:continue
+            row=r.loc[t['query_id']]
+>           assert row.classification==kind,(t['query_id'],kind,row.classification)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError: ('Q010', 'unsupported', 'pure')
+
+checks.py:97: AssertionError
+__________________________ test_residual_certificates __________________________
+
+    def test_residual_certificates():
+>       CHECKS['residual_certificates']()
+
+test_outputs.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def mixture_certificates():
+        c,a,q,_,truth,av,qv,tr,va=data()
+        inv={v:k for k,v in truth['mapping'].items()}
+        weight=1/np.sqrt(np.maximum(av.mean(axis=1),1))
+        r=read('queries.tsv')
+        for row in r.itertuples():
+            assert row.donor_1 in inv and (row.donor_2=='' or row.donor_2 in inv)
+            fraction=float(row.fraction_1)
+            assert .5<=fraction<=1
+            i=a.columns.get_loc(inv[row.donor_1])
+            pred=av[:,i].copy()
+            if row.donor_2:
+                assert row.donor_1!=row.donor_2
+                j=a.columns.get_loc(inv[row.donor_2]);pred=fraction*pred+(1-fraction)*av[:,j]
+            else:assert fraction==1
+            k=q.columns.get_loc(row.query_id)
+            for mask,field in [(tr,'discovery_residual'),(va,'validation_residual')]:
+                expect=np.sqrt(np.sum(((qv[mask,k]-pred[mask])*weight[mask])**2)/np.sum((qv[mask,k]*weight[mask])**2))
+>               assert abs(float(getattr(row,field))-expect)<2e-6,(row.query_id,field)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               AssertionError: ('Q000', 'discovery_residual')
+
+checks.py:124: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_physical_audit
+PASSED test_outputs.py::test_biological_limits
+PASSED test_outputs.py::test_support_optimality
+FAILED test_outputs.py::test_schema - AssertionError
+FAILED test_outputs.py::test_sample_identity - AssertionError: Sample provena...
+FAILED test_outputs.py::test_discovery_alignment_scores - AssertionError
+FAILED test_outputs.py::test_heldout_identity_certificates - AssertionError
+FAILED test_outputs.py::test_pure_aliquots - AssertionError
+FAILED test_outputs.py::test_two_source_aliquots - AssertionError: ('Q002', '...
+FAILED test_outputs.py::test_open_set_rejection - AssertionError: ('Q010', 'u...
+FAILED test_outputs.py::test_residual_certificates - AssertionError: ('Q000',...
+========================= 8 failed, 3 passed in 5.28s ==========================

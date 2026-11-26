@@ -1,0 +1,1403 @@
+{
+  "reviewer": "/root/qc_b",
+  "creator": "/root/creator_b",
+  "context_separation": "Fresh independent reviewer task context; no creator explanation consulted before initial findings",
+  "external_qc": "NOT RUN",
+  "initial_findings_recorded_before_creator_explanations": true,
+  "findings": [
+    {
+      "id": "B-QC-01",
+      "severity": "evidence gap",
+      "initial_status": "NOT TESTED",
+      "requirement": "Independent numerical provenance and identifiability verification",
+      "evidence": "task/tests/checks.py:75-149; task/solution/solve.py:16-77",
+      "required_correction": "Reviewer independently derive source mapping and certificates without importing solution/evaluator",
+      "post_correction_status": "PASS: independent source-derived numerical checks completed"
+    },
+    {
+      "id": "B-QC-02",
+      "severity": "evidence gap",
+      "initial_status": "NOT TESTED",
+      "requirement": "Native current-version oracle, CTRF, isolation and handoff evidence",
+      "evidence": "task/task.toml:6; task/tests/test_outputs.py:4-35; old native jobs are version 0.1.0",
+      "required_correction": "Inspect final 0.1.1 native evidence; do not reuse old collapsed CTRF result",
+      "post_correction_status": "PASS: actual final0.1.1 native12 trials,11 unique CTRF families, byte-repeat, fresh artifacts, all3 isolation probes directly rechecked26Nov2026"
+    },
+    {
+      "id": "B-QC-03",
+      "severity": "limitation",
+      "initial_status": "WARNING",
+      "requirement": "Distinguish feature holdout, frozen filtering, and independent biological evidence",
+      "evidence": "task/instruction.md:7,16,20,26,44",
+      "required_correction": "Report interpretation limits and do not count Boolean claims as scientific discrimination",
+      "post_correction_status": "DOCUMENTED"
+    },
+    {
+      "id": "B-QC-04",
+      "severity": "originality investigation",
+      "initial_status": "WARNING",
+      "requirement": "Investigate raw cross-task similarity above user substantive threshold",
+      "evidence": "reports/upstream_similarity_v011.json:1; originality/conceptual_review.json:1",
+      "required_correction": "Directly inspect source, objectives, methods, outputs and evaluation; retain raw signals and avoid cosmetic rewriting",
+      "post_correction_status": "PASS within reviewed scope: maximum weighted substantive overlap25%; raw37.233581% retained"
+    }
+  ],
+  "independent_numeric": {
+    "method": "Independent inline Python; imports neither reference solution nor evaluator; identity directly matched to named original source TPM; np.corrcoef and bounded scalar optimizer; direct official SOFT titles.",
+    "original_checksums": {
+      "GSE273600_Control_Conditions_Raw_Counts.txt.gz": "51f64fd0c058c60ab1c0f2c76a35ba00567d36baf06c9313b3b3dda8e42eab86",
+      "GSE273600_Control_Conditions_TPMs.txt.gz": "40cc660c3e565e5070bd7e9ec6858bf348cc5e77188c99112d7239a38c940a2f"
+    },
+    "counts_57665x120": [
+      57665,
+      120
+    ],
+    "fractional_count_entries": 2188385,
+    "source_tpm_floor": 0.063122,
+    "runtime_counts_byte_identical_to_source": true,
+    "direct_source_atlas_mapping_agrees_with_truth": true,
+    "maximum_source_atlas_relative_entry_error": 5.088437263564873E-10,
+    "frozen_eligibility_matches_source": true,
+    "hash_split_matches": true,
+    "eligible_discovery": 5670,
+    "eligible_validation": 5659,
+    "official_gsm_titles_all_match": true,
+    "untreated_2h_samples": 0,
+    "identity": {
+      "discovery": {
+        "recovered_true_identities": 120,
+        "minimum_true_correlation": 0.9518728104550143,
+        "minimum_margin": 0.006694325370406817
+      },
+      "validation": {
+        "recovered_true_identities": 120,
+        "minimum_true_correlation": 0.9494146908564937,
+        "minimum_margin": 0.006820138255351327
+      }
+    },
+    "queries": [
+      {
+        "query_id": "Q000",
+        "inferred_class": "pure",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.0,
+        "discovery_residual": 0.0009467064861946601,
+        "validation_residual": 0.0009121731637144027,
+        "best_single_discovery_residual": 0.0009467064861946543,
+        "second_support_discovery_residual": 0.0008633492657186735,
+        "numerical_optimizer_coefficient_error": 4.75654008368076E-11
+      },
+      {
+        "query_id": "Q001",
+        "inferred_class": "pure",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.0,
+        "discovery_residual": 0.001062517494597032,
+        "validation_residual": 0.0009573867876422861,
+        "best_single_discovery_residual": 0.0010625174945970313,
+        "second_support_discovery_residual": 0.0010519943909820058,
+        "numerical_optimizer_coefficient_error": 5.701387701794597E-11
+      },
+      {
+        "query_id": "Q002",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 1.529234010111402E-05,
+        "discovery_residual": 0.0009899178233228683,
+        "validation_residual": 0.0009864366945179768,
+        "best_single_discovery_residual": 0.13423031842510294,
+        "second_support_discovery_residual": 0.019271951725687346,
+        "numerical_optimizer_coefficient_error": 2.3314683517128287E-15
+      },
+      {
+        "query_id": "Q003",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 4.90981759515563E-05,
+        "discovery_residual": 0.0009610867286135707,
+        "validation_residual": 0.0009979157547396734,
+        "best_single_discovery_residual": 0.14288019963635062,
+        "second_support_discovery_residual": 0.02456341804898261,
+        "numerical_optimizer_coefficient_error": 3.574918139293004E-14
+      },
+      {
+        "query_id": "Q004",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.00012309139517618917,
+        "discovery_residual": 0.0009612022763351793,
+        "validation_residual": 0.0009282887339938907,
+        "best_single_discovery_residual": 0.1748837410151025,
+        "second_support_discovery_residual": 0.030914881484119108,
+        "numerical_optimizer_coefficient_error": 7.105427357601002E-15
+      },
+      {
+        "query_id": "Q005",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 8.438734284355043E-06,
+        "discovery_residual": 0.0010902940069239934,
+        "validation_residual": 0.0009741358255245858,
+        "best_single_discovery_residual": 0.4009402415843589,
+        "second_support_discovery_residual": 0.03763604236439319,
+        "numerical_optimizer_coefficient_error": 3.3861802251067274E-15
+      },
+      {
+        "query_id": "Q006",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 1.654719367499835E-05,
+        "discovery_residual": 0.0009725156329275101,
+        "validation_residual": 0.0008975461990354446,
+        "best_single_discovery_residual": 0.3111359571434023,
+        "second_support_discovery_residual": 0.01907555517610302,
+        "numerical_optimizer_coefficient_error": 3.219646771412954E-15
+      },
+      {
+        "query_id": "Q007",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 8.972062369749789E-05,
+        "discovery_residual": 0.0009824298740761545,
+        "validation_residual": 0.0010931950597798843,
+        "best_single_discovery_residual": 0.256948657292808,
+        "second_support_discovery_residual": 0.02911301108801884,
+        "numerical_optimizer_coefficient_error": 5.717648576819556E-15
+      },
+      {
+        "query_id": "Q008",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 3.114613493959695E-05,
+        "discovery_residual": 0.0009658004544970559,
+        "validation_residual": 0.0009447825157735339,
+        "best_single_discovery_residual": 0.2539798632234852,
+        "second_support_discovery_residual": 0.03136208033427243,
+        "numerical_optimizer_coefficient_error": 4.440892098500626E-16
+      },
+      {
+        "query_id": "Q009",
+        "inferred_class": "pure",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.0,
+        "discovery_residual": 0.0010274650287479385,
+        "validation_residual": 0.000963561157165183,
+        "best_single_discovery_residual": 0.00102746502874794,
+        "second_support_discovery_residual": 0.0010253544095991077,
+        "numerical_optimizer_coefficient_error": 5.551115123125783E-16
+      },
+      {
+        "query_id": "Q010",
+        "inferred_class": "unsupported",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": null,
+        "discovery_residual": 0.11538451762426448,
+        "validation_residual": 0.11929649042545327,
+        "best_single_discovery_residual": 0.2504371208662632,
+        "second_support_discovery_residual": 0.11653325645960431,
+        "numerical_optimizer_coefficient_error": 1.27675647831893E-15
+      },
+      {
+        "query_id": "Q011",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.00011028694101700154,
+        "discovery_residual": 0.0009522804472167801,
+        "validation_residual": 0.0009702777505808329,
+        "best_single_discovery_residual": 0.14674677468943573,
+        "second_support_discovery_residual": 0.02281058474756025,
+        "numerical_optimizer_coefficient_error": 6.827871601444713E-15
+      },
+      {
+        "query_id": "Q012",
+        "inferred_class": "unsupported",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": null,
+        "discovery_residual": 0.10697620015654513,
+        "validation_residual": 0.10480858489677551,
+        "best_single_discovery_residual": 0.2380224020752244,
+        "second_support_discovery_residual": 0.10907556548248869,
+        "numerical_optimizer_coefficient_error": 4.6629367034256575E-15
+      },
+      {
+        "query_id": "Q013",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 9.504045842895215E-05,
+        "discovery_residual": 0.0009701562848179363,
+        "validation_residual": 0.0009492870486385904,
+        "best_single_discovery_residual": 0.22371257508938733,
+        "second_support_discovery_residual": 0.01658917653870088,
+        "numerical_optimizer_coefficient_error": 2.4424906541753444E-15
+      },
+      {
+        "query_id": "Q014",
+        "inferred_class": "unsupported",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": null,
+        "discovery_residual": 0.09466418505401206,
+        "validation_residual": 0.08980944352590992,
+        "best_single_discovery_residual": 0.2209462243562448,
+        "second_support_discovery_residual": 0.09499995462298003,
+        "numerical_optimizer_coefficient_error": 1.1102230246251565E-15
+      },
+      {
+        "query_id": "Q015",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.0001809051413816931,
+        "discovery_residual": 0.0010099243647898283,
+        "validation_residual": 0.000925012962996529,
+        "best_single_discovery_residual": 0.18986085245177325,
+        "second_support_discovery_residual": 0.02805975288872754,
+        "numerical_optimizer_coefficient_error": 1.5543122344752192E-15
+      },
+      {
+        "query_id": "Q016",
+        "inferred_class": "unsupported",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": null,
+        "discovery_residual": 0.12785709540900553,
+        "validation_residual": 0.11654419726073606,
+        "best_single_discovery_residual": 0.2845148715479154,
+        "second_support_discovery_residual": 0.1286453337118151,
+        "numerical_optimizer_coefficient_error": 1.6653345369377348E-15
+      },
+      {
+        "query_id": "Q017",
+        "inferred_class": "unsupported",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": null,
+        "discovery_residual": 0.073477917876433,
+        "validation_residual": 0.07136581042048135,
+        "best_single_discovery_residual": 0.21620134285339668,
+        "second_support_discovery_residual": 0.07410544160702237,
+        "numerical_optimizer_coefficient_error": 1.3877787807814457E-15
+      },
+      {
+        "query_id": "Q018",
+        "inferred_class": "pure",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.0,
+        "discovery_residual": 0.001130723730688564,
+        "validation_residual": 0.0009231784185212471,
+        "best_single_discovery_residual": 0.0011307237306885497,
+        "second_support_discovery_residual": 0.0011145886301243287,
+        "numerical_optimizer_coefficient_error": 1.7763568394002505E-15
+      },
+      {
+        "query_id": "Q019",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.00014727781996370926,
+        "discovery_residual": 0.0010072799217577873,
+        "validation_residual": 0.000955065868632912,
+        "best_single_discovery_residual": 0.44072699353218964,
+        "second_support_discovery_residual": 0.024535985921029096,
+        "numerical_optimizer_coefficient_error": 1.9984014443252818E-15
+      },
+      {
+        "query_id": "Q020",
+        "inferred_class": "pure",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.0,
+        "discovery_residual": 0.000955616389874093,
+        "validation_residual": 0.0010558226391370036,
+        "best_single_discovery_residual": 0.000955616389874096,
+        "second_support_discovery_residual": 0.0009535147284807789,
+        "numerical_optimizer_coefficient_error": 5.551115123125783E-16
+      },
+      {
+        "query_id": "Q021",
+        "inferred_class": "unsupported",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": null,
+        "discovery_residual": 0.03444367701686681,
+        "validation_residual": 0.03226784706941485,
+        "best_single_discovery_residual": 0.19209586257342257,
+        "second_support_discovery_residual": 0.035427230248339936,
+        "numerical_optimizer_coefficient_error": 7.327471962526033E-15
+      },
+      {
+        "query_id": "Q022",
+        "inferred_class": "pure",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.0,
+        "discovery_residual": 0.0009518220835519883,
+        "validation_residual": 0.001093617763474585,
+        "best_single_discovery_residual": 0.0009518220835519885,
+        "second_support_discovery_residual": 0.0009512248329807609,
+        "numerical_optimizer_coefficient_error": 6.417089082333405E-14
+      },
+      {
+        "query_id": "Q023",
+        "inferred_class": "pair",
+        "class_and_accepted_support_correct": true,
+        "fraction_error": 0.00013975936211363393,
+        "discovery_residual": 0.0010152293457076336,
+        "validation_residual": 0.0009790573200440813,
+        "best_single_discovery_residual": 0.23760249247641713,
+        "second_support_discovery_residual": 0.035021404299995264,
+        "numerical_optimizer_coefficient_error": 1.2212453270876722E-15
+      }
+    ],
+    "all_24_categories_and_accepted_supports_correct": true,
+    "maximum_accepted_fraction_error": 0.0001809051413816931
+  },
+  "current_rubric_summary": {
+    "PASS": 38,
+    "NOT_TESTED": 0,
+    "FAIL": 0,
+    "total": 38
+  },
+  "native_recheck": {
+    "review_date": "2026-11-26",
+    "timezone": "Asia/Karachi",
+    "reviewer": "/root/qc_b",
+    "method": "Directly parsed actual final result.json, lock.json, reward.txt, ctrf.json and artifact manifest for every trial, independently hashed and byte-compared artifacts; summary not sole evidence.",
+    "valid_final_trials": 12,
+    "oracle_trials": 2,
+    "alternative_trials": 1,
+    "incorrect_controls": 9,
+    "infrastructure_errors": 0,
+    "frozen_task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+    "frozen_lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+    "all_unique_ctrf_test_names": 11,
+    "oracle_byte_repeat": [
+      {
+        "name": "alignment.tsv",
+        "byte_identical": true,
+        "sha256": "4d5309d035b4f9e134160b66c219cac1065773ab376220ea8bb94f124b48fa75"
+      },
+      {
+        "name": "audit.json",
+        "byte_identical": true,
+        "sha256": "5579060138e461fe00bde0815436c96ef212371ca800bc32cd21be580d3888e4"
+      },
+      {
+        "name": "queries.tsv",
+        "byte_identical": true,
+        "sha256": "ce4929a0b8a12d46067ffa4c8ce0530821532f4ff1fc99c7e32359bbf1424ce0"
+      }
+    ],
+    "nop_no_stale_artifacts": true,
+    "trials": [
+      {
+        "job": "bio2-alternative-v011",
+        "trial": "transcript-provenance-audit__cALXCDD",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "1",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 11,
+          "failed": 0,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633340.332174,
+          "stop": 1795633343.7043562
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8738,
+            "sha256": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3865,
+            "sha256": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 2361,
+            "sha256": "bcca64121d6f3db9b0a1a9f38a6da745c68582e53fd94df39008c1fbc8e87d1d"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-alternative-v011\\transcript-provenance-audit__cALXCDD"
+      },
+      {
+        "job": "bio2-constant-v011",
+        "trial": "transcript-provenance-audit__poiFRV8",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 3,
+          "failed": 8,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633043.856831,
+          "stop": 1795633049.1395552
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 3923,
+            "sha256": "af5ef682d7dfb59a5089738509bc27990dfccadca742dd614a420b6766a358cd"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3865,
+            "sha256": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 1003,
+            "sha256": "b95acb748ded4d6ab25e89f2960ef29eddb4f4cd5183c8e5ebfe6e33f72d3bb2"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-constant-v011\\transcript-provenance-audit__poiFRV8"
+      },
+      {
+        "job": "bio2-hardcoded-v011",
+        "trial": "transcript-provenance-audit__7Y7Es5B",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 0,
+          "failed": 11,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633088.4764564,
+          "stop": 1795633093.0077665
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "failed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "genes.txt",
+            "bytes": 19,
+            "sha256": "1d40d444b46d5f181e22c9b219d0f9eeeed140420e26167eb0e19aa62704c3d8"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-hardcoded-v011\\transcript-provenance-audit__7Y7Es5B"
+      },
+      {
+        "job": "bio2-incomplete-v011",
+        "trial": "transcript-provenance-audit__zstgRki",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 5,
+          "failed": 6,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633245.2040315,
+          "stop": 1795633247.6419756
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "failed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8738,
+            "sha256": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3865,
+            "sha256": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-incomplete-v011\\transcript-provenance-audit__zstgRki"
+      },
+      {
+        "job": "bio2-invalid_claims-v011",
+        "trial": "transcript-provenance-audit__GVZgEEv",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 10,
+          "failed": 1,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633308.4556186,
+          "stop": 1795633311.5036063
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8738,
+            "sha256": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3199,
+            "sha256": "3bbc885072e36c6b8d934dc210c62f510123126d18772be025fb10d7e1246ff7"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 2373,
+            "sha256": "dd0a3ebd9c53ef6a24860e75cc65a4236b5cf377c528f5da7141a96716cd0c58"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-invalid_claims-v011\\transcript-provenance-audit__GVZgEEv"
+      },
+      {
+        "job": "bio2-nop-v011",
+        "trial": "transcript-provenance-audit__xdeXMsZ",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 0,
+          "failed": 11,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633002.387393,
+          "stop": 1795633006.7672412
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "failed"
+          }
+        ],
+        "artifacts": [],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-nop-v011\\transcript-provenance-audit__xdeXMsZ"
+      },
+      {
+        "job": "bio2-oracle-v011",
+        "trial": "transcript-provenance-audit__dybfyBZ",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "1",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 11,
+          "failed": 0,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795632921.9135919,
+          "stop": 1795632927.24906
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8617,
+            "sha256": "4d5309d035b4f9e134160b66c219cac1065773ab376220ea8bb94f124b48fa75"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3728,
+            "sha256": "5579060138e461fe00bde0815436c96ef212371ca800bc32cd21be580d3888e4"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 2334,
+            "sha256": "ce4929a0b8a12d46067ffa4c8ce0530821532f4ff1fc99c7e32359bbf1424ce0"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-oracle-v011\\transcript-provenance-audit__dybfyBZ"
+      },
+      {
+        "job": "bio2-oracle-v011",
+        "trial": "transcript-provenance-audit__yd6KNzd",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "1",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 11,
+          "failed": 0,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795632960.2224817,
+          "stop": 1795632965.295341
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8617,
+            "sha256": "4d5309d035b4f9e134160b66c219cac1065773ab376220ea8bb94f124b48fa75"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3728,
+            "sha256": "5579060138e461fe00bde0815436c96ef212371ca800bc32cd21be580d3888e4"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 2334,
+            "sha256": "ce4929a0b8a12d46067ffa4c8ce0530821532f4ff1fc99c7e32359bbf1424ce0"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-oracle-v011\\transcript-provenance-audit__yd6KNzd"
+      },
+      {
+        "job": "bio2-unsupported_forced_pair-v011",
+        "trial": "transcript-provenance-audit__us3aHZx",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 9,
+          "failed": 2,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633276.7043188,
+          "stop": 1795633279.5535145
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8738,
+            "sha256": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3865,
+            "sha256": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 2331,
+            "sha256": "5c52b43159cc08f30045cc4e263ba1a52174d6e2b33f2b171bb5729b2a5a5e5f"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-unsupported_forced_pair-v011\\transcript-provenance-audit__us3aHZx"
+      },
+      {
+        "job": "bio2-wrong_alignment-v011",
+        "trial": "transcript-provenance-audit__5Uty76D",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 8,
+          "failed": 3,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633129.0726519,
+          "stop": 1795633134.5948095
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8738,
+            "sha256": "8cf62d994bbbe8a26695e27ab3783b01b2713ec6059f041a49b58eb8893bcf40"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3865,
+            "sha256": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 2373,
+            "sha256": "dd0a3ebd9c53ef6a24860e75cc65a4236b5cf377c528f5da7141a96716cd0c58"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-wrong_alignment-v011\\transcript-provenance-audit__5Uty76D"
+      },
+      {
+        "job": "bio2-wrong_contrast-v011",
+        "trial": "transcript-provenance-audit__Ee9iX68",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 8,
+          "failed": 3,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633172.7252069,
+          "stop": 1795633177.905855
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8738,
+            "sha256": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3865,
+            "sha256": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 2355,
+            "sha256": "e25de9a8f967e1d73fb154155f98b98490ee671ea94b28e71fe8c2ed4d075b7e"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-wrong_contrast-v011\\transcript-provenance-audit__Ee9iX68"
+      },
+      {
+        "job": "bio2-wrong_statistics-v011",
+        "trial": "transcript-provenance-audit__mrJ2teX",
+        "version": "0.1.1",
+        "task_checksum": "ba9ef45871ac057453dcdd1d4529f1eb2969a111763094d168c79c4a50c919ff",
+        "lock_digest": "sha256:09b2629bb64d3bee4b962428d189900df9229c8b8573b008de93bc39b182908a",
+        "exception": null,
+        "reward_text": "0",
+        "reward_matches_result": true,
+        "ctrf_summary": {
+          "tests": 11,
+          "passed": 9,
+          "failed": 2,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1795633213.195227,
+          "stop": 1795633216.5468512
+        },
+        "unique_test_names": 11,
+        "per_family": [
+          {
+            "name": "test_outputs.py::test_schema",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_physical_audit",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_biological_limits",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_sample_identity",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_discovery_alignment_scores",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_heldout_identity_certificates",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_pure_aliquots",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_two_source_aliquots",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_open_set_rejection",
+            "status": "passed"
+          },
+          {
+            "name": "test_outputs.py::test_residual_certificates",
+            "status": "failed"
+          },
+          {
+            "name": "test_outputs.py::test_support_optimality",
+            "status": "passed"
+          }
+        ],
+        "artifacts": [
+          {
+            "name": "alignment.tsv",
+            "bytes": 8738,
+            "sha256": "ad5093510b1b536a1a35211f78f9d3c42ab6ab026d1610eb56e0d8613c680d8d"
+          },
+          {
+            "name": "audit.json",
+            "bytes": 3865,
+            "sha256": "bb37cae4c3c8b3c90efaa7fb8d6dc1a0630b83af7a96e1103f042c299022d97e"
+          },
+          {
+            "name": "queries.tsv",
+            "bytes": 2178,
+            "sha256": "ca145e7d62df33841434a735c7ca708f0b010b2e96edc7fe18d271b05048865e"
+          }
+        ],
+        "source_directory": "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs\\bio2-wrong_statistics-v011\\transcript-provenance-audit__mrJ2teX"
+      }
+    ],
+    "isolation_file": "authoring/reports/isolation_v011.json",
+    "isolation_probes": [
+      {
+        "label": "unprivileged_solver_no_private_material",
+        "exit_code": 0,
+        "stdout": "{\"uid\": 1000, \"private_tests_absent\": true, \"private_solution_absent\": true, \"data_not_writable\": true, \"output_writable\": true}\n",
+        "seconds": 0.375
+      },
+      {
+        "label": "verifier_private_and_no_egress",
+        "exit_code": 0,
+        "stdout": "{\"private_directories_mode700\": true, \"score_absent_before_grading\": true, \"egress_blocked\": true}\n",
+        "seconds": 0.39099999999962165
+      },
+      {
+        "label": "oracle_executes_offline",
+        "exit_code": 0,
+        "stdout": "",
+        "seconds": 3.20299999999952
+      }
+    ],
+    "clean_builds": "Both final --no-cache image logs inspected: exit0, agent50.000s, verifier50.407s",
+    "static_final": "29PASS; actual26 shell checks in own final verifier image static_v011r1.log exit0, plus entry/config/similarity",
+    "limitations": "Deterministic controls are not model-agent trials. External model QC and Gemini NOT RUN; expert difficulty and target success rate NOT MEASURED."
+  },
+  "completed_date": "2026-11-26 Asia/Karachi",
+  "final_verdict": "PASS for available local non-model implementation/science/QC; no unresolved mandatory local defect. Difficulty calibration and external model QC not performed.",
+  "reviewer_evidence_correction": "Provisional reviewer text incorrectly described local_pytest_v011.log as11/11 success. Direct reread shows missing pytest. It was a host infrastructure failure. Local checker11/11 and final native pytest/CTRF11/11 are distinct actual successes; no host pytest success is claimed."
+}

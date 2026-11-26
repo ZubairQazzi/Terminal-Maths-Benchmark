@@ -1,0 +1,62 @@
+{
+  "zero_SE_and_df": {
+    "dmr": {
+      "rows_zero_SE": 1218,
+      "nominal_conjunction_rows_zero_SE": 0,
+      "nonzero_SE_df_quantiles": {
+        "0": 2.0,
+        "0.05": 2.0657884576522876,
+        "0.5": 3.119870409791792,
+        "0.95": 3.9887439841290306,
+        "1": 3.999999999957353
+      }
+    },
+    "parent": {
+      "rows_zero_SE": 1250,
+      "nominal_conjunction_rows_zero_SE": 3,
+      "nonzero_SE_df_quantiles": {
+        "0": 2.0,
+        "0.05": 2.051685215474408,
+        "0.5": 3.086454963695491,
+        "0.95": 3.9883398771125997,
+        "1": 3.999999999991024
+      }
+    },
+    "interaction": {
+      "rows_zero_SE": 608,
+      "nominal_conjunction_rows_zero_SE": 0,
+      "nonzero_SE_df_quantiles": {
+        "0": 2.0,
+        "0.05": 2.750653089397162,
+        "0.5": 5.090990506207481,
+        "0.95": 7.181455816216577,
+        "1": 7.998043620142031
+      }
+    }
+  },
+  "equivalence_p_exact_zero": 1250,
+  "nominal_conjunction_with_equivalence_p_zero": 3,
+  "tail_exact_max_counts_including_ties": {
+    "lowest_100_joint_p": {
+      "p_interaction": 0,
+      "p_parent_equivalence": 60,
+      "p_dmr_minimum": 40
+    },
+    "lowest_1000_joint_p": {
+      "p_interaction": 0,
+      "p_parent_equivalence": 619,
+      "p_dmr_minimum": 381
+    },
+    "all_nominal_conjunctions": {
+      "p_interaction": 0,
+      "p_parent_equivalence": 3407,
+      "p_dmr_minimum": 2611
+    }
+  },
+  "nominal_conjunctions_by_treatment": {
+    "Ars": 350,
+    "Dim": 5491,
+    "Tg": 177
+  },
+  "note": "Zero-SE handling is a contract convention, not empirical validation of p-value calibration for zero-inflated count-derived measurements. No requirements are changed."
+}

@@ -1,0 +1,263 @@
+[
+  {
+    "id": "entry-files",
+    "requirement": "Required files: Check for `instruction.md`, `task.toml`, `environment/Dockerfile`, `solution/solve.sh`, and `tests/test.sh`.",
+    "status": "PASS",
+    "evidence": "All five required entries exist; inspected locally.",
+    "file_line": "task/task.toml:2",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "config-fields",
+    "requirement": "Recognized settings: Parse the manifest and check its field names and table structure against the supported configuration.",
+    "status": "NOT TESTED",
+    "evidence": "Parsed with tomllib; authoritative Harbor schema validation delegated to coordinator native run.",
+    "file_line": "task/task.toml:2",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "task-fields",
+    "requirement": "Publication information: Check the publisher, task name, description, authors, keywords, and required metadata.",
+    "status": "WARNING",
+    "evidence": "Fields are present and truthful; exact local publisher/profile check pending native upstream script.",
+    "file_line": "task/task.toml:4",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "task-path",
+    "requirement": "Folder matches the field: Check that the task\u2019s directory agrees with the domain and field in its manifest.",
+    "status": "NOT TESTED",
+    "evidence": "User-facing task/ folder is not the upstream canonical path; coordinator stages exact files under tasks/life-sciences/biology/transcript-provenance-audit.",
+    "file_line": "task/task.toml:11",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "task-structure",
+    "requirement": "Folder layout: Check that instructions and configuration are at the root and that environment, solution, grading, and authoring files are in their expected locations.",
+    "status": "PASS",
+    "evidence": "Runtime root contains only expected task files and directories; authoring remains sibling as user requested.",
+    "file_line": "task/README.md:39",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "task-slug",
+    "requirement": "Short task name: Check the folder name against the allowed format and length.",
+    "status": "NOT TESTED",
+    "evidence": "Manifest slug is concise; canonical folder/check executed by coordinator.",
+    "file_line": "task/task.toml:5",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "task-readme",
+    "requirement": "Reviewer guide: If a README is included, check its expected sections and whether its managed header matches the manifest.",
+    "status": "NOT TESTED",
+    "evidence": "Three required sections exist; managed header regeneration and exact comparison delegated to coordinator.",
+    "file_line": "task/README.md:31",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "canary",
+    "requirement": "Identification marker: Check that eligible source files carry the marker required by the active profile.",
+    "status": "PASS",
+    "evidence": "All authored runtime text/source files use the active local marker; binaries and comment-free data are excluded.",
+    "file_line": "task/task.toml:1",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "task-absolute-path",
+    "requirement": "Instruction paths: Flag relative locations where the solver needs an absolute path to an input or deliverable.",
+    "status": "PASS",
+    "evidence": "Solver input/output references are absolute under /app/data and /app/submission.",
+    "file_line": "task/instruction.md:11",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "instruction-suffix",
+    "requirement": "Closing instructions: Check the standard closing paragraph and compare its stated time allowance with `agent.timeout_sec`.",
+    "status": "PASS",
+    "evidence": "Closing allowance28800 equals agent timeout28800.",
+    "file_line": "task/instruction.md:86",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "instruction-similarity",
+    "requirement": "Similar wording: Compare instruction text against the pinned main and lite task collections and flag close matches.",
+    "status": "NOT TESTED",
+    "evidence": "Coordinator corpus/quantitative originality audit pending; no percentage invented.",
+    "file_line": "authoring/research/candidates.md:8",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "test-file-references",
+    "requirement": "Files expected by the grader: Look for submission paths shared by the tests and reference solution that are missing from the instructions or manifest.",
+    "status": "PASS",
+    "evidence": "All three graded artifacts and schemas appear in instruction.",
+    "file_line": "task/instruction.md:46",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "dockerfile-references",
+    "requirement": "Files copied into images: Check that local sources referenced by supported `COPY` and `ADD` instructions exist in the build context.",
+    "status": "PASS",
+    "evidence": "requirements.txt, wheels/, and data/ COPY sources exist in each self-contained context.",
+    "file_line": "task/environment/Dockerfile:7",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "dockerfile-sanity",
+    "requirement": "Container build instructions: Flag prohibited Dockerfile patterns that can make the image invalid or break packaging rules.",
+    "status": "NOT TESTED",
+    "evidence": "Dockerfile inspected; actual clean native build pending.",
+    "file_line": "task/environment/Dockerfile:2",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "dockerfile-platform",
+    "requirement": "Processor settings: Flag `FROM --platform` settings that hardcode a processor architecture.",
+    "status": "PASS",
+    "evidence": "No architecture-hardcoded FROM flag.",
+    "file_line": "task/environment/Dockerfile:2",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "allow-internet",
+    "requirement": "Network settings: Check the solver and verifier network declarations against the active rules.",
+    "status": "PASS",
+    "evidence": "Explicit public solver follows active benchmark profile; separate verifier no-network; runtime needs neither.",
+    "file_line": "task/task.toml:30",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "separate-verifier",
+    "requirement": "Separate grader setup: Check the verifier environment declaration and how the expected artifacts are handed over.",
+    "status": "PASS",
+    "evidence": "Separate verifier mode and /app/submission-only artifact transfer declared.",
+    "file_line": "task/task.toml:27",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "compose-host-binds",
+    "requirement": "Host folder access: Flag prohibited host-directory mounts in Docker Compose volumes.",
+    "status": "NOT APPLICABLE",
+    "evidence": "No Compose file or task-defined host mount.",
+    "file_line": "task/task.toml:35",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "NOT APPLICABLE"
+  },
+  {
+    "id": "task-timeout",
+    "requirement": "Time limits: Check the configured timeouts against the standard rules and any additional local grader or build limit.",
+    "status": "PASS",
+    "evidence": "Agent28800 verifier3600 build900 declared; runtime measured in local_validation.json.",
+    "file_line": "task/task.toml:23",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "gpu-types",
+    "requirement": "GPU requests: Check GPU requests against the supported hardware types.",
+    "status": "NOT APPLICABLE",
+    "evidence": "No GPU requested.",
+    "file_line": "task/task.toml:34",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "NOT APPLICABLE"
+  },
+  {
+    "id": "task-resources",
+    "requirement": "Solver resources: Check CPU, memory, storage, and GPU declarations against the package rules and any local caps.",
+    "status": "PASS",
+    "evidence": "2CPU4GiB10GiB declared; actual local regression completes in27.597seconds on available host.",
+    "file_line": "task/task.toml:32",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "verifier-resources",
+    "requirement": "Grader resources: Check that a separate verifier declares the resources it needs and flag suspicious differences from the solver\u2019s allocation.",
+    "status": "PASS",
+    "evidence": "Separate verifier has2CPU4GiB10GiB, enough for read-only57k\u00d7matrices.",
+    "file_line": "task/task.toml:29",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "nproc",
+    "requirement": "CPU usage: Flag bare `nproc` calls that may count host processors and create too many workers.",
+    "status": "PASS",
+    "evidence": "No nproc invocation; one-thread numerical environment.",
+    "file_line": "task/environment/Dockerfile:9",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "verifier-tooling-baked",
+    "requirement": "Grader tools installed ahead of time: Check for dependencies that the verifier tries to install during grading.",
+    "status": "PASS",
+    "evidence": "Verifier installs hashed local wheels only at build time; test.sh never installs.",
+    "file_line": "task/tests/Dockerfile:5",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "trial-network-fetch",
+    "requirement": "Downloads during trials: Flag prohibited live network fetches in the inspected trial scripts.",
+    "status": "PASS",
+    "evidence": "Trial scripts make no network fetches.",
+    "file_line": "task/tests/test.sh:8",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "pip-pinning",
+    "requirement": "Fixed Python package versions: Check that Python dependencies are pinned where repeatable installs require it.",
+    "status": "PASS",
+    "evidence": "Every direct/transitive wheel version pinned with SHA256 hashes.",
+    "file_line": "task/tests/requirements.txt:4",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "pytest-version",
+    "requirement": "Supported test tools: When the task pins either test tool, check against the required versions `pytest==8.4.1` and `pytest-json-ctrf==0.3.5`.",
+    "status": "PASS",
+    "evidence": "pytest8.4.1 and pytest-json-ctrf0.3.5 pinned.",
+    "file_line": "task/tests/requirements.txt:9",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  },
+  {
+    "id": "test-sh-sanity",
+    "requirement": "Grading startup script: Check `tests/test.sh` for shell patterns and setup that conflict with grading conventions.",
+    "status": "NOT TESTED",
+    "evidence": "Script initializes binary reward and captures pytest; exact upstream shell checker pending.",
+    "file_line": "task/tests/test.sh:6",
+    "required_correction": "Complete indicated native or independent audit",
+    "post_correction_result": "PENDING"
+  },
+  {
+    "id": "binary-reward",
+    "requirement": "Binary reward: Check score-writing code for patterns that can produce an invalid value in `/logs/verifier/reward.txt`. The grading contract uses `0` or `1`.",
+    "status": "PASS",
+    "evidence": "Reward initialized0 and set1 only on full pytest success.",
+    "file_line": "task/tests/test.sh:6",
+    "required_correction": "None identified by creator",
+    "post_correction_result": "PASS"
+  }
+]

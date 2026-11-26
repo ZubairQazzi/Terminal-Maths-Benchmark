@@ -1,0 +1,75 @@
+COMMAND ["C:\\Users\\zubai\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe", "build", "--no-cache", "-t", "local-bio2-verifier:v010", "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit\\tests"]
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 582B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [1/7] FROM docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de
+#5 resolve docker.io/library/python:3.12-slim@sha256:57cd7c3a7a273101a6485ba99423ee568157882804b1124b4dd04266317710de 0.1s done
+#5 CACHED
+
+#4 [internal] load build context
+#4 transferring context: 111.07MB 4.9s
+#4 transferring context: 117.87MB 5.2s done
+#4 DONE 5.3s
+
+#6 [2/7] COPY requirements.txt /tmp/requirements.txt
+#6 DONE 0.6s
+
+#7 [3/7] COPY wheels/ /tmp/wheels/
+#7 DONE 0.2s
+
+#8 [4/7] RUN pip install --no-cache-dir --no-index --find-links=/tmp/wheels --require-hashes -r /tmp/requirements.txt && rm -rf /tmp/wheels
+#8 2.815 Looking in links: /tmp/wheels
+#8 2.829 Processing /tmp/wheels/colorama-0.4.6-py2.py3-none-any.whl (from -r /tmp/requirements.txt (line 2))
+#8 2.839 Processing /tmp/wheels/iniconfig-2.3.1-py3-none-any.whl (from -r /tmp/requirements.txt (line 3))
+#8 2.843 Processing /tmp/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 4))
+#8 2.901 Processing /tmp/wheels/packaging-26.4-py3-none-any.whl (from -r /tmp/requirements.txt (line 5))
+#8 2.905 Processing /tmp/wheels/pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 6))
+#8 3.003 Processing /tmp/wheels/pluggy-1.7.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 7))
+#8 3.008 Processing /tmp/wheels/pygments-2.21.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 8))
+#8 3.021 Processing /tmp/wheels/pytest-8.4.1-py3-none-any.whl (from -r /tmp/requirements.txt (line 9))
+#8 3.029 Processing /tmp/wheels/pytest_json_ctrf-0.3.5-py3-none-any.whl (from -r /tmp/requirements.txt (line 10))
+#8 3.034 Processing /tmp/wheels/python_dateutil-4.0.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 11))
+#8 3.040 Processing /tmp/wheels/pytz-2026.6-py2.py3-none-any.whl (from -r /tmp/requirements.txt (line 12))
+#8 3.053 Processing /tmp/wheels/scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 13))
+#8 3.179 Processing /tmp/wheels/tzdata-2026.6-py2.py3-none-any.whl (from -r /tmp/requirements.txt (line 14))
+#8 3.329 Installing collected packages: pytz, tzdata, pygments, pluggy, packaging, numpy, iniconfig, colorama, scipy, python-dateutil, pytest, pytest-json-ctrf, pandas
+#8 23.44 Successfully installed colorama-0.4.6 iniconfig-2.3.1 numpy-2.2.6 packaging-26.4 pandas-2.2.3 pluggy-1.7.0 pygments-2.21.0 pytest-8.4.1 pytest-json-ctrf-0.3.5 python-dateutil-4.0.0 pytz-2026.6 scipy-1.15.3 tzdata-2026.6
+#8 23.44 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#8 DONE 23.7s
+
+#9 [5/7] COPY . /tests/
+#9 DONE 0.4s
+
+#10 [6/7] RUN chmod -R go-rwx /tests && mkdir -p /app/submission /logs/verifier && chmod 700 /logs/verifier
+#10 DONE 0.7s
+
+#11 [7/7] WORKDIR /tests
+#11 DONE 0.1s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 19.2s done
+#12 exporting manifest sha256:d0dea1651a4ec0019ee2d523b1929a619a874612e9d2f717dd3fb7a0ebb6c513 0.0s done
+#12 exporting config sha256:61c3ef8264b4a5aa83ac83623b1b698fac8bd529870343a1cfab7f9d87292b1c 0.1s done
+#12 exporting attestation manifest sha256:5365d8c3f1610e21d0da65be326810c717b52dbcd294c82b10720200f6563b9a 0.1s done
+#12 exporting manifest list sha256:0ac8a219c632c4cc8bded67ecb49f4d0e0437df1e7a5935f101bad21fe4b790e
+#12 exporting manifest list sha256:0ac8a219c632c4cc8bded67ecb49f4d0e0437df1e7a5935f101bad21fe4b790e 0.1s done
+#12 naming to docker.io/library/local-bio2-verifier:v010 done
+#12 unpacking to docker.io/library/local-bio2-verifier:v010
+#12 unpacking to docker.io/library/local-bio2-verifier:v010 6.6s done
+#12 DONE 26.1s
+
+EXIT 0 ELAPSED_SECONDS 58.328

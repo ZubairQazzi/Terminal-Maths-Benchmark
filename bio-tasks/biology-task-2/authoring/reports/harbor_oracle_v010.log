@@ -1,0 +1,28 @@
+COMMAND ["C:\\Users\\zubai\\.local\\bin\\harbor.exe", "run", "--path", "F:\\rl\\bio\\biology-task-2\\authoring\\package\\tasks\\life-sciences\\biology\\transcript-provenance-audit", "--agent", "oracle", "-k", "2", "--n-concurrent", "1", "--job-name", "bio2-oracle-v010", "--jobs-dir", "F:\\rl\\bio\\biology-task-2\\authoring\\reports\\harbor-jobs", "--quiet"]
+  2/2 Mean: 1.000 ---------------------------------------- 0:01:30 0:00:00
+
+adhoc • oracle
+┌────────┬────────────┬───────┬────────┐
+│ Trials │ Exceptions │  Mean │ Pass@2 │
+├────────┼────────────┼───────┼────────┤
+│      2 │          0 │ 1.000 │  1.000 │
+└────────┴────────────┴───────┴────────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     2 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 31s
+Results written to 
+F:\rl\bio\biology-task-2\authoring\reports\harbor-jobs\bio2-oracle-v010\result.
+json
+Inspect results by running `harbor view 
+F:\rl\bio\biology-task-2\authoring\reports\harbor-jobs`
+Share results by running `harbor upload 
+F:\rl\bio\biology-task-2\authoring\reports\harbor-jobs\bio2-oracle-v010`
+
+
+EXIT 0 ELAPSED_SECONDS 105.235

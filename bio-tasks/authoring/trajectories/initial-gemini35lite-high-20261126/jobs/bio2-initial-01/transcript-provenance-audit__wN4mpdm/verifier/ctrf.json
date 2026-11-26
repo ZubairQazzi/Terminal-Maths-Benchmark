@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 10,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1795637636.6113307,
+            "stop": 1795637639.9218156
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 2.156905141000152,
+                "start": 1795637637.1697567,
+                "stop": 1795637639.3269272,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_physical_audit",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.05033990800029642,
+                "start": 1795637639.3271832,
+                "stop": 1795637639.4040048,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_physical_audit():\n>       CHECKS['physical_audit']()\n\ntest_outputs.py:8: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def audit():\n        c,a,q,g,_,_,_,tr,va=data();report=read('audit.json')\n        expect={'n_genes':len(c),'n_count_samples':len(c.columns),'n_atlas_samples':len(a.columns),'n_queries':len(q.columns),'fractional_count_entries':int((np.abs(c.to_numpy()-np.round(c.to_numpy()))>1e-8).sum()),'eligible_discovery_genes':int(tr.sum()),'eligible_validation_genes':int(va.sum())}\n        for k,v in expect.items():assert report.get(k)==v,(k,report.get(k),v)\n        floor=report['atlas_minimum_by_column'];assert set(floor)==set(a.columns)\n>       for k in a.columns:assert abs(float(floor[k])-float(a[k].min()))<1e-7\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError\n\nchecks.py:66: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_biological_limits",
+                "status": "passed",
+                "duration": 0.00043528799960768083,
+                "start": 1795637639.4042284,
+                "stop": 1795637639.4047773,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_sample_identity",
+                "status": "passed",
+                "duration": 0.0014765379996788397,
+                "start": 1795637639.4049332,
+                "stop": 1795637639.4065378,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_discovery_alignment_scores",
+                "status": "passed",
+                "duration": 0.043193767000047956,
+                "start": 1795637639.4067037,
+                "stop": 1795637639.4500637,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_heldout_identity_certificates",
+                "status": "passed",
+                "duration": 0.04250995999973384,
+                "start": 1795637639.4502618,
+                "stop": 1795637639.4929507,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_pure_aliquots",
+                "status": "passed",
+                "duration": 0.0018887900000663649,
+                "start": 1795637639.4931514,
+                "stop": 1795637639.4951887,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_two_source_aliquots",
+                "status": "passed",
+                "duration": 0.0018800679999912973,
+                "start": 1795637639.4953547,
+                "stop": 1795637639.4973652,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_open_set_rejection",
+                "status": "passed",
+                "duration": 0.0023012160004327598,
+                "start": 1795637639.4975219,
+                "stop": 1795637639.500107,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_residual_certificates",
+                "status": "passed",
+                "duration": 0.042751572000270244,
+                "start": 1795637639.500395,
+                "stop": 1795637639.543403,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_support_optimality",
+                "status": "passed",
+                "duration": 0.3774866420003491,
+                "start": 1795637639.5436215,
+                "stop": 1795637639.921478,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}
