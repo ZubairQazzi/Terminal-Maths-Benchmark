@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "task": 2,
+      "version": "0.2.0",
+      "directory": "task-2",
+      "archive": "task-2-v0.2.0.zip",
+      "sha256": "401762c082a1dbcc351526890fd1812279a934f7e6e5b5268cbb9613e3f8874d",
+      "bytes": 15214511,
+      "files": 48,
+      "validated_runtime_files": 30,
+      "license": "MIT for original task material; third-party licenses retained",
+      "integrity": "PASS"
+    },
+    {
+      "task": 3,
+      "version": "0.2.0",
+      "directory": "task-3",
+      "archive": "task-3-v0.2.0.zip",
+      "sha256": "30b1e17b7450b41164dd5aebf8a1438c49392ae2584af231987d094ceedffbf9",
+      "bytes": 15220157,
+      "files": 48,
+      "validated_runtime_files": 30,
+      "license": "MIT for original task material; third-party licenses retained",
+      "integrity": "PASS"
+    }
+  ],
+  "host_harbor_version": "0.27.0",
+  "mathematics_oracle_grading_changes": false,
+  "model_api_trials_during_publication": 0,
+  "existing_task1_changed": false,
+  "project_license": "MIT for Task 2 and Task 3 only, explicitly selected by owner",
+  "third_party_licenses": "Complete dependency notices included in both packages",
+  "license_scope_excludes": [
+    "Task 1",
+    "biology archive",
+    "earlier versions",
+    "other existing repository material"
+  ]
+}

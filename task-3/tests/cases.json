@@ -1,0 +1,7913 @@
+{
+  "cases": [
+    {
+      "p": 2,
+      "precision": 40,
+      "f": [
+        11858,
+        -5544,
+        956,
+        -72,
+        2
+      ],
+      "g": [
+        94500,
+        -32400,
+        3960,
+        -208,
+        4
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 13
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 1024
+        }
+      ],
+      "id": "singular-powers-01"
+    },
+    {
+      "p": 3,
+      "precision": 44,
+      "f": [
+        "-003249000",
+        "+1316700",
+        "-209070",
+        "+0016209",
+        "-612",
+        "+9"
+      ],
+      "g": [
+        "-002034641700",
+        "+474004440",
+        "-34498737",
+        "+00820881",
+        "-7911",
+        "+27"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 14
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 177147
+        }
+      ],
+      "id": "singular-powers-02"
+    },
+    {
+      "p": 5,
+      "precision": 48,
+      "f": [
+        69194232018000,
+        -4616036451000,
+        127950258125,
+        -1885967500,
+        15588750,
+        -68500,
+        125
+      ],
+      "g": [
+        68504827942400,
+        -889422491200,
+        791814600,
+        -242675,
+        25
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 16
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 244140625
+        }
+      ],
+      "id": "singular-powers-03"
+    },
+    {
+      "p": 7,
+      "precision": 52,
+      "f": [
+        "+0030824637376036",
+        "-367264403100",
+        "+1638051037",
+        "-003241350",
+        "+2401"
+      ],
+      "g": [
+        "-0055158084629974533637976",
+        "+353850601038566379748",
+        "-571991011280767442",
+        "+0014394588711391",
+        "-121597616",
+        "+343"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 17
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 96889010407
+        }
+      ],
+      "id": "singular-powers-04"
+    },
+    {
+      "p": 2,
+      "precision": 44,
+      "f": [
+        17485109510400,
+        -7381687434240,
+        1056533829376,
+        -61710493952,
+        1772767328,
+        -26713664,
+        207728,
+        -752,
+        1
+      ],
+      "g": [
+        -339663456,
+        77918544,
+        -3975792,
+        73576,
+        -478,
+        1
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 14
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 2048
+        }
+      ],
+      "id": "colliding-clusters-01"
+    },
+    {
+      "p": 3,
+      "precision": 48,
+      "f": [
+        "+00152874648267847071230016",
+        "-17618041671180843445344",
+        "+543015905015934563508",
+        "-002058033492401390892",
+        "+3040898569171209",
+        "-2032677121032",
+        "+00572036418",
+        "-43884",
+        "+1"
+      ],
+      "g": [
+        "-001946358787085334",
+        "+113826527944371",
+        "-321230750292",
+        "+00268446474",
+        "-52758",
+        "+3"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 16
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 531441
+        }
+      ],
+      "id": "colliding-clusters-02"
+    },
+    {
+      "p": 5,
+      "precision": 52,
+      "f": [
+        37035258373761649632494686711439179776,
+        -1453792038986228119807068574941047808,
+        14294911515774485130658290498870928,
+        -550174903924042405093615164056,
+        7690703746688284640360945,
+        -46290935711568053456,
+        104609190854078,
+        -20000408,
+        1
+      ],
+      "g": [
+        -34672540544626213471334400,
+        680773648058981703072000,
+        -18044010190826131500,
+        127890965494000,
+        -109381375,
+        25
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 17
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 1220703125
+        }
+      ],
+      "id": "colliding-clusters-03"
+    },
+    {
+      "p": 7,
+      "precision": 56,
+      "f": [
+        "+00201477298517365569234949127423427232750919167694400",
+        "-3731166134506457750119294640068896257542637102880",
+        "+17275376348795357697063571129152707311895252404",
+        "-009006784145965492611279373050099402154676",
+        "+1698322567151298260850755734374473",
+        "-136949484623161797998430488",
+        "+004047042834772369922",
+        "-3989243156",
+        "+1"
+      ],
+      "g": [
+        "-00106417266598803058796954086836892884",
+        "+985382703990139603249564824496527",
+        "-348548733227741885479007472",
+        "+0031985388727532956282",
+        "-205642166492",
+        "+343"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 18
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              18,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              18,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              55
+            ],
+            [
+              0,
+              55
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 678223072849
+        }
+      ],
+      "id": "colliding-clusters-04"
+    },
+    {
+      "p": 2,
+      "precision": 40,
+      "f": [
+        -41472,
+        24768,
+        -5912,
+        705,
+        -42,
+        1
+      ],
+      "g": [
+        471900672,
+        -133718208,
+        13408024,
+        -557761,
+        8234,
+        -1
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 13
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 1024
+        }
+      ],
+      "id": "cancellation-layer-01"
+    },
+    {
+      "p": 3,
+      "precision": 44,
+      "f": [
+        "-001600",
+        "+1840",
+        "-844",
+        "+00193",
+        "-22",
+        "+1"
+      ],
+      "g": [
+        "+003732150712300",
+        "-1331865549580",
+        "+133459184851",
+        "-002611501267",
+        "+14348929",
+        "-1"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 14
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 177147
+        }
+      ],
+      "id": "cancellation-layer-02"
+    },
+    {
+      "p": 5,
+      "precision": 48,
+      "f": [
+        -48147400,
+        6999580,
+        -407014,
+        11833,
+        -172,
+        1
+      ],
+      "g": [
+        2147019104004002544800,
+        -125794830322279624160,
+        2023593902588704653,
+        -5302429199242416,
+        3814697265969,
+        -2
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 16
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 244140625
+        }
+      ],
+      "id": "cancellation-layer-03"
+    },
+    {
+      "p": 7,
+      "precision": 52,
+      "f": [
+        "-00225020479464",
+        "+6035998716",
+        "-64764270",
+        "+00347449",
+        "-932",
+        "+1"
+      ],
+      "g": [
+        "+0018874234920474922083382988056",
+        "-215381333444299702268869380",
+        "+692065215592931503738687",
+        "-00442847077951748342795",
+        "+79792266297616661",
+        "-5"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 17
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 96889010407
+        }
+      ],
+      "id": "cancellation-layer-04"
+    },
+    {
+      "p": 2,
+      "precision": 36,
+      "f": [
+        612,
+        -564,
+        173,
+        -22,
+        1
+      ],
+      "g": [
+        -8829,
+        8037,
+        -2674,
+        426,
+        -33,
+        1
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 12
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              12,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              12,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              35
+            ],
+            [
+              0,
+              35
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 512
+        }
+      ],
+      "id": "dead-branches-01"
+    },
+    {
+      "p": 3,
+      "precision": 40,
+      "f": [
+        "+00258232",
+        "-53664",
+        "+3658",
+        "-00102",
+        "+1"
+      ],
+      "g": [
+        "-0017219776",
+        "+3180428",
+        "-229096",
+        "+008131",
+        "-143",
+        "+1"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 13
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 59049
+        }
+      ],
+      "id": "dead-branches-02"
+    },
+    {
+      "p": 5,
+      "precision": 44,
+      "f": [
+        -428957221,
+        10240538,
+        -43012,
+        -306,
+        1
+      ],
+      "g": [
+        -493228551,
+        186529830,
+        -5874435,
+        73585,
+        -430,
+        1
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 14
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 48828125
+        }
+      ],
+      "id": "dead-branches-03"
+    },
+    {
+      "p": 7,
+      "precision": 48,
+      "f": [
+        "-002538380032107",
+        "+20194635214",
+        "-39977106",
+        "-001002",
+        "+1"
+      ],
+      "g": [
+        "+0023856679110849",
+        "-142813761402",
+        "+87674499",
+        "+00725401",
+        "-1348",
+        "+1"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 16
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 13841287201
+        }
+      ],
+      "id": "dead-branches-04"
+    },
+    {
+      "p": 2,
+      "precision": 32,
+      "f": [
+        144,
+        -96,
+        17,
+        -2,
+        1
+      ],
+      "g": [
+        -2048,
+        1536,
+        -383,
+        30,
+        1
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 10
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              10,
+              32
+            ],
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              32
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              32
+            ],
+            [
+              10,
+              32
+            ],
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              32
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              31
+            ],
+            [
+              0,
+              31
+            ],
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              32
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 256
+        }
+      ],
+      "id": "functional-null-01"
+    },
+    {
+      "p": 3,
+      "precision": 36,
+      "f": [
+        "+0011907",
+        "-3402",
+        "+247",
+        "-0012",
+        "+13",
+        "-6",
+        "+001"
+      ],
+      "g": [
+        "-00373248",
+        "+139968",
+        "-17492",
+        "+00717",
+        "+13",
+        "-6",
+        "+001"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 12
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              12,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              12,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              35
+            ],
+            [
+              0,
+              35
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              36
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 19683
+        }
+      ],
+      "id": "functional-null-02"
+    },
+    {
+      "p": 5,
+      "precision": 40,
+      "f": [
+        1890625,
+        -343750,
+        16201,
+        -2400,
+        4180,
+        -3980,
+        2273,
+        -800,
+        170,
+        -20,
+        1
+      ],
+      "g": [
+        -135000000,
+        33750000,
+        -2811924,
+        75725,
+        4180,
+        -3980,
+        2273,
+        -800,
+        170,
+        -20,
+        1
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 13
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 9765625
+        }
+      ],
+      "id": "functional-null-03"
+    },
+    {
+      "p": 7,
+      "precision": 44,
+      "f": [
+        "+001667674575",
+        "-74118150",
+        "+821779",
+        "+001624",
+        "-735",
+        "+175",
+        "-0021",
+        "+1"
+      ],
+      "g": [
+        "-00561122670136",
+        "+36594957468",
+        "-795544302",
+        "+005766425",
+        "-735",
+        "+175",
+        "-0021",
+        "+1"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 14
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 1977326743
+        }
+      ],
+      "id": "functional-null-04"
+    },
+    {
+      "p": 2,
+      "precision": 40,
+      "f": [
+        4,
+        -12,
+        -3,
+        26,
+        -3,
+        -12,
+        4
+      ],
+      "g": [
+        23409,
+        -13464,
+        -8162,
+        4128,
+        737,
+        -264,
+        16
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 13
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 1024
+        }
+      ],
+      "id": "nonmonic-01"
+    },
+    {
+      "p": 3,
+      "precision": 44,
+      "f": [
+        "+00108",
+        "-180",
+        "-213",
+        "+00348",
+        "+102",
+        "-144",
+        "+0027"
+      ],
+      "g": [
+        "+005793649",
+        "-957986",
+        "-1197597",
+        "+00145612",
+        "+62467",
+        "-4626",
+        "+0081"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 14
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 177147
+        }
+      ],
+      "id": "nonmonic-02"
+    },
+    {
+      "p": 5,
+      "precision": 48,
+      "f": [
+        3600,
+        -4200,
+        -10175,
+        9650,
+        7275,
+        -4750,
+        625
+      ],
+      "g": [
+        6461587456,
+        -224432128,
+        -511544176,
+        12936848,
+        10131836,
+        -159700,
+        625
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 16
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 244140625
+        }
+      ],
+      "id": "nonmonic-03"
+    },
+    {
+      "p": 7,
+      "precision": 52,
+      "f": [
+        "+00137200",
+        "-123480",
+        "-438697",
+        "+00305956",
+        "+353290",
+        "-163268",
+        "+0016807"
+      ],
+      "g": [
+        "+00696448666225",
+        "-8647451670",
+        "-28339001889",
+        "+00257886620",
+        "+288322287",
+        "-1665510",
+        "+002401"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 17
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 96889010407
+        }
+      ],
+      "id": "nonmonic-04"
+    },
+    {
+      "p": 2,
+      "precision": 48,
+      "f": [
+        -163527524352,
+        180740947968,
+        -72175583232,
+        12247367680,
+        -788529152,
+        16777216
+      ],
+      "g": [
+        11885614792704,
+        -8633332137984,
+        1809569480704,
+        -89592168448,
+        1871118336,
+        -17956864,
+        65536
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 16
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 4096
+        }
+      ],
+      "id": "saturated-content-01"
+    },
+    {
+      "p": 3,
+      "precision": 52,
+      "f": [
+        "-001162214262447874675200",
+        "+167414197328800994880",
+        "-8925792358567223448",
+        "+00212548278699042651",
+        "-2150418490766334",
+        "+7625597484987"
+      ],
+      "g": [
+        "-001162214262447874675200",
+        "+167414197328800994880",
+        "-8925792358567223448",
+        "+00212548278699042651",
+        "-2150418490766334",
+        "+7625597484987"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 17
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 1594323
+        }
+      ],
+      "id": "saturated-content-02"
+    },
+    {
+      "p": 5,
+      "precision": 56,
+      "f": [
+        -669657695107161998748779296875000,
+        20085589494556188583374023437500,
+        -216966727748513221740722656250,
+        988715328276157379150390625,
+        -1676380634307861328125000,
+        931322574615478515625
+      ],
+      "g": [
+        2829517845680856943130493164062500,
+        -52165071759930753707885742187500,
+        246991069387114048004150390625,
+        -60695302705764770507812500,
+        5719758033752441406250,
+        -240936279296875000,
+        3814697265625
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 18
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              18,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              18,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              55
+            ],
+            [
+              0,
+              55
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 6103515625
+        }
+      ],
+      "id": "saturated-content-03"
+    },
+    {
+      "p": 7,
+      "precision": 64,
+      "f": [
+        "-00575088199028761036384528642248509341910016",
+        "+27851944704044433309748546256083109361984",
+        "-457007888235124110463298925399896108841",
+        "+002657259704673270849267682645351638085",
+        "-1938415248323406687870466091950331",
+        "+378818692265664781682717625943"
+      ],
+      "g": [
+        "+004996138957356382452679399512296896193286357996252210580480",
+        "-156129342417386941765792750363627083308172501565689153344",
+        "+1219760487635835243130685627438861357456689894235129560",
+        "+002657259704673270849267682645351638085",
+        "-1938415248323406687870466091950331",
+        "+378818692265664781682717625943"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 21
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              21,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              21,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              63
+            ],
+            [
+              0,
+              63
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 33232930569601
+        }
+      ],
+      "id": "saturated-content-04"
+    },
+    {
+      "p": 2,
+      "precision": 40,
+      "f": [
+        1188,
+        -444,
+        69,
+        -10,
+        1
+      ],
+      "g": [
+        -828,
+        2388,
+        -395,
+        86,
+        1
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 13
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 1024
+        }
+      ],
+      "id": "inseparable-01"
+    },
+    {
+      "p": 3,
+      "precision": 44,
+      "f": [
+        "+00106704",
+        "-20520",
+        "+2925",
+        "-00847",
+        "+183",
+        "-21",
+        "+001"
+      ],
+      "g": [
+        "+00168056640",
+        "+43068240",
+        "+4545972",
+        "+00261674",
+        "+8283",
+        "+141",
+        "+001"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 14
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 177147
+        }
+      ],
+      "id": "inseparable-02"
+    },
+    {
+      "p": 5,
+      "precision": 48,
+      "f": [
+        85961968366629929157,
+        -8727328266352578510,
+        398719560787810925,
+        -10794654532486440,
+        191786496910470,
+        -2336518689317,
+        19767727985,
+        -114679610,
+        436600,
+        -985,
+        1
+      ],
+      "g": [
+        170105736209157,
+        64368267887115,
+        10931853677175,
+        1100377514185,
+        72683665470,
+        3291986933,
+        103537985,
+        2232890,
+        31600,
+        265,
+        1
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 16
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 244140625
+        }
+      ],
+      "id": "inseparable-03"
+    },
+    {
+      "p": 7,
+      "precision": 52,
+      "f": [
+        "-00383790328191",
+        "+65224766082",
+        "-4319457695",
+        "+00156710960",
+        "-3406760",
+        "+44436",
+        "-00322",
+        "+1"
+      ],
+      "g": [
+        "+00203838501954719152",
+        "+4804640625746892",
+        "+48523332387810",
+        "+00272369322442",
+        "+916932555",
+        "+1852389",
+        "+002079",
+        "+1"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 17
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 96889010407
+        }
+      ],
+      "id": "inseparable-04"
+    },
+    {
+      "p": 2,
+      "precision": 52,
+      "f": [
+        1000000000000000000000000000000000000000000000000000001574851000000000000000000000000000000000000000000000001136737929299000000000000000000000000000000000000000000497275719524971105000000000000000000000000000000000000146837809522568935843280000000000000000000000000000000030833013370847425514813916160000000000000000000000000004720856713247430201182872587878400000000000000000000000531045892700472252769324121635717775360000000000000000043558213887322400936791780856272192924549120000000000002540653876141983617333800753283179342550301409280000000100028713471929907830766690362549726330754686880055296002386821193480971275762018039108830030331187863836034072602103365113116446179432195742477759160811556676457531487289344,
+        -12000000000000000000000000000000000000000000000000000017323361000000000000000000000000000000000000000000000011367379292990000000000000000000000000000000000000000004475481475724739945000000000000000000000000000000000001174702476180551486746240000000000000000000000000000000215831093595931978603697413120000000000000000000000000028325140279484581207097235527270400000000000000000000002655229463502361263846620608178588876800000000000000000174232855549289603747167123425088771698196480000000000007621961628425950852001402259849538027650904227840000000200057426943859815661533380725099452661509373760110592002386821193480971275762018039108830030331187863836034072576,
+        66000000000000000000000000000000000000000000000000000086616805000000000000000000000000000000000000000000000051153206818455000000000000000000000000000000000000000017901925902898959780000000000000000000000000000000000004111458666631930203611840000000000000000000000000000000647493280787795935811092239360000000000000000000000000070812850698711453017743088818176000000000000000000000005310458927004722527693241216357177753600000000000000000261349283323934405620750685137633157547294720000000000007621961628425950852001402259849538027650904227840000000100028713471929907830766690362549726330754686880055296,
+        -220000000000000000000000000000000000000000000000000000259850415000000000000000000000000000000000000000000000136408551515880000000000000000000000000000000000000000041771160440097572820000000000000000000000000000000000008222917333263860407223680000000000000000000000000000001079155467979659893018487065600000000000000000000000000094417134264948604023657451757568000000000000000000000005310458927004722527693241216357177753600000000000000000174232855549289603747167123425088771698196480000000000002540653876141983617333800753283179342550301409280,
+        495000000000000000000000000000000000000000000000000000519700830000000000000000000000000000000000000000000000238714965152790000000000000000000000000000000000000000062656740660146359230000000000000000000000000000000000010278646666579825509029600000000000000000000000000000001079155467979659893018487065600000000000000000000000000070812850698711453017743088818176000000000000000000000002655229463502361263846620608178588876800000000000000000043558213887322400936791780856272192924549120,
+        -792000000000000000000000000000000000000000000000000000727581162000000000000000000000000000000000000000000000286457958183348000000000000000000000000000000000000000062656740660146359230000000000000000000000000000000000008222917333263860407223680000000000000000000000000000000647493280787795935811092239360000000000000000000000000028325140279484581207097235527270400000000000000000000000531045892700472252769324121635717775360,
+        924000000000000000000000000000000000000000000000000000727581162000000000000000000000000000000000000000000000238714965152790000000000000000000000000000000000000000041771160440097572820000000000000000000000000000000000004111458666631930203611840000000000000000000000000000000215831093595931978603697413120000000000000000000000000004720856713247430201182872587878400,
+        -792000000000000000000000000000000000000000000000000000519700830000000000000000000000000000000000000000000000136408551515880000000000000000000000000000000000000000017901925902898959780000000000000000000000000000000000001174702476180551486746240000000000000000000000000000000030833013370847425514813916160,
+        495000000000000000000000000000000000000000000000000000259850415000000000000000000000000000000000000000000000051153206818455000000000000000000000000000000000000000004475481475724739945000000000000000000000000000000000000146837809522568935843280,
+        -220000000000000000000000000000000000000000000000000000086616805000000000000000000000000000000000000000000000011367379292990000000000000000000000000000000000000000000497275719524971105,
+        66000000000000000000000000000000000000000000000000000017323361000000000000000000000000000000000000000000000001136737929299,
+        -12000000000000000000000000000000000000000000000000000001574851,
+        1
+      ],
+      "g": [
+        -4000000000000000000000000000000000000000000000000000002819656000000000000000000000000000000000000000000000000794401829380000000000000000000000000000000000000000000111813954333324224000000000000000000000000000000000000007862446951384543603712000000000000000000000000000000000220958373110119591135625216,
+        20000000000000000000000000000000000000000000000000000011278624000000000000000000000000000000000000000000000002383205488140000000000000000000000000000000000000000000223627908666648448000000000000000000000000000000000000007862446951384543603712,
+        -40000000000000000000000000000000000000000000000000000016917936000000000000000000000000000000000000000000000002383205488140000000000000000000000000000000000000000000111813954333324224,
+        40000000000000000000000000000000000000000000000000000011278624000000000000000000000000000000000000000000000000794401829380,
+        -20000000000000000000000000000000000000000000000000000002819656,
+        4
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 17
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 8192
+        }
+      ],
+      "id": "large-skew-01"
+    },
+    {
+      "p": 3,
+      "precision": 56,
+      "f": [
+        "+001000000000000000000000000000000000000000000000000000000000464907263100000000000000000000000000000000000000000000000099063599837528560890000000000000000000000000000000000000012793163075768165644661400155000000000000000000000000000001115181455970747984670182337026116305500000000000000000000069127461139095951852351914132525083683929336850000000000003124514046334509468325157337433279158590926564055669475000103757805267742313706560233034422263288780775935597702382224530883191163161830187409233989440480897391537902398723199932410929813236203264239066926021247633839936705665150233165696862981424614233671245708643701380110374325753050450241086808430381781541260787342367311731852799574523889630069515352888551239854176132168515382604700828232729135116132376082581617471118844654958347119451620992836035584",
+        "-1200000000000000000000000000000000000000000000000000000000511397989410000000000000000000000000000000000000000000000099063599837528560890000000000000000000000000000000000000011513846768191349080195260139500000000000000000000000000000892145164776598387736145869620893044400000000000000000000048389222797367166296646339892767558578750535795000000000001874708427800705680995094402459967495154555938433401685000051878902633871156853280116517211131644390387967798851191112014203276465264732074963693595776192358956615160959489279968638352691190860979271720077806374290151981011699545069949658778950373878965662249141728740276022074865150610090048217007511664577791606906577189691173185279957452388963006951534145395009891599284765776657635200256",
+        "+660000000000000000000000000000000000000000000000000000000255698994705000000000000000000000000000000000000000000000044578619926887852400500000000000000000000000000000000000004605538707276539632078104055800000000000000000000000000000312250807671809435707651054367312565540000000000000000000014516766839210149888993901967830267573625160738500000000000468677106950176420248773600614991873788638984608350421250010375780526774231370656023303442226328878077593559770238222352592991469789709811244554039366428853843492274143923391994646850018563086097927172007780637429015198101169954506994960849900632037366122312457086437013801103743257530504502410832666862639963748082784295296",
+        "-00220000000000000000000000000000000000000000000000000000000076709698411500000000000000000000000000000000000000000000011887631980503427306800000000000000000000000000000000000001074625698364525914151557613020000000000000000000000000000062450161534361887141530210873462513108000000000000000000002419461139868358314832316994638377928937526789750000000000062490280926690189366503146748665583171818531281113389500001037578052677423137065602330344222632887807759355977023822230234532764652647320749636935957761923589566151609594892799599863142229836203264239066926021247633839936705665150233165194063540889561189280",
+        "+49500000000000000000000000000000000000000000000000000000015341939682300000000000000000000000000000000000000000000002080335596588099778690000000000000000000000000000000000000161193854754678887122733641953000000000000000000000000000007806270191795235892691276359182814138500000000000000000000241946113986835831483231699463837792893752678975000000000004686771069501764202487736006149918737886389846083504212500051878902633871156853280116517211131644390387967798851191111260488319116316183018740923398944048089739153790239872319988915073747220",
+        "-7920000000000000000000000000000000000000000000000000000002147871555522000000000000000000000000000000000000000000000249640271590571973442800000000000000000000000000000000000016119385475467888712273364195300000000000000000000000000000624501615343618871415302108734625131080000000000000000000014516766839210149888993901967830267573625160738500000000000187470842780070568099509440245996749515455593843340168500001037578052677423137065602330344222632887807759355977023822220185",
+        "+00924000000000000000000000000000000000000000000000000000000214787155552200000000000000000000000000000000000000000000020803355965880997786900000000000000000000000000000000000001074625698364525914151557613020000000000000000000000000000031225080767180943570765105436731256554000000000000000000000483892227973671662966463398927675585787505357950000000000003124514046334509468325157337433279158590926564055669475",
+        "-79200000000000000000000000000000000000000000000000000000015341939682300000000000000000000000000000000000000000000001188763198050342730680000000000000000000000000000000000000046055387072765396320781040558000000000000000000000000000000892145164776598387736145869620893044400000000000000000000006912746113909595185235191413252508368392933685",
+        "+4950000000000000000000000000000000000000000000000000000000767096984115000000000000000000000000000000000000000000000044578619926887852400500000000000000000000000000000000000001151384676819134908019526013950000000000000000000000000000011151814559707479846701823370261163055",
+        "-00220000000000000000000000000000000000000000000000000000000025569899470500000000000000000000000000000000000000000000000990635998375285608900000000000000000000000000000000000000012793163075768165644661400155",
+        "+6600000000000000000000000000000000000000000000000000000000511397989410000000000000000000000000000000000000000000000009906359983752856089",
+        "-120000000000000000000000000000000000000000000000000000000004649072631",
+        "+001"
+      ],
+      "g": [
+        "-002700000000000000000000000000000000000000000000000000000000534640333410000000000000000000000000000000000000000000000042343373617274002698000000000000000000000000000000000000001676659278264661724913731223000000000000000000000000000000033192474614895903897311486191885075470000000000000000000000262820797371983392791240759895264499993552157",
+        "+1350000000000000000000000000000000000000000000000000000000213856133364000000000000000000000000000000000000000000000012703012085182200809400000000000000000000000000000000000000335331855652932344982746244600000000000000000000000000000003319247461489590389731148619188507547",
+        "-270000000000000000000000000000000000000000000000000000000032078420004600000000000000000000000000000000000000000000001270301208518220080940000000000000000000000000000000000000016766592782646617249137312230",
+        "+0027000000000000000000000000000000000000000000000000000000002138561333640000000000000000000000000000000000000000000000042343373617274002698",
+        "-1350000000000000000000000000000000000000000000000000000000053464033341",
+        "+27"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 18
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              18,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              18,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              55
+            ],
+            [
+              0,
+              55
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ],
+            [
+              0,
+              56
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 4782969
+        }
+      ],
+      "id": "large-skew-02"
+    },
+    {
+      "p": 5,
+      "precision": 60,
+      "f": [
+        1000000000000000000000000000000000000000000000000000000000011444091812506270000000000000000000000000000000000000000000060026650480991811843961932080800000000000000000000000000000190819583139359429843300194259645773178647106000000000000000409454405450813012649416606862378954762237797757488786695130624777841201902912306545225398331708326174086479957370391515309489511877442741134206491001138614677966679448245443639673241691706899419481272529612953763601274899889070441959270219706468421159113655323219740543545429360657964749459436315477683937450059080970022945948872055287680145514202229851112133697175830378026867921272028588828267551151638933155556380615831139817155325658282373572980649875817063975990865647731244442952983983930803407114603816151354681872134210041375113356841358771875652306424605971452709281396106345219334072989916779461871477689866740976266187116576024917583895424,
+        -120000000000000000000000000000000000000000000000000000000001258850099375689700000000000000000000000000000000000000000006002665048099181184396193208080000000000000000000000000000017173762482542348685897017483368119586078239540000000000000032756352436065041011953328548990316380979023820599102935610443734448884133203861458165777883219582832186053597015927406064712862381429564468052389460068316880678000766894726618380388819181034859830821267388547688180063744994453522097963510981936493580317727775952675915504408534005118589978377452619105921931001756237561181761773476058462423590244699640325364010504555897392036878317647297703833127049775153427737174654425034571743943304716815365893292321129404756032547140293251677665804627685282293111070330288579386729710950042241804339749325481312905093183135721857221319232,
+        6600000000000000000000000000000000000000000000000000000000062942504968784485000000000000000000000000000000000000000000270119927164463153297828694363600000000000000000000000000000686950499301693947435880699334724783443129581600000000000001146472335262276435418366499214661073334265833720968602746365312033466523996115843744973336496587484965581607910477822181732843767943144111701309736501707922016950019172368165459509578421491393862319154575007953763601274899889070441959270219570991322053595455714887296076630911999546778849675661789286567295460017238544821685283881048581264620398819651299093640100938368834432677189971337377428182275650011388608076578903752061657323900481339916301634858223712341162726384838159392332419345873630083193632,
+        -220000000000000000000000000000000000000000000000000000000001888275149063534550000000000000000000000000000000000000000007203198057719017421275431849696000000000000000000000000000016028844983706192106837216317810244947006356904000000000000022929446705245528708367329984293221466685316674419372054927301867224442066601930729082888941609791416093026798507963703025405027740723354822684129820022772293559333588964908872793459151512758883051570366204029537636012748998890704419592702195032527725008363559107210738431736533189911858997837745261910305079700054223508170960941066375237285912959792053288712133656103928983149951989220672592726777602674237476462604704210848299216,
+        4950000000000000000000000000000000000000000000000000000000037765502981270691000000000000000000000000000000000000000000126055966010082804872320057369680000000000000000000000000000240432674755592881602558244767153674205095353560000000000000286618083815569108854591624803665268333566458430242150686591218672244420666019307290828889416097914160930267985079637030219293260157276411170130973650170792201695001917236816545950929430542243859541640035559647688180063744994453522097963510971775711147403862805327742580485819731921779647494594363154775403807499983808460493383307314399832019224818632744792,
+        -79200000000000000000000000000000000000000000000000000000000528717041737789674000000000000000000000000000000000000000001512671592120993658467840688436160000000000000000000000000002404326747555928816025582447671536742050953535600000000000002292944670524552870836732998429322146668531667441937205492729312033466523996115843744973336496587484965581607910477822181107217457443915644680523894600683168806780007668947266183803660898955184384786009298356295376360127489988907044195927021936777567339531815630238862937625913595788,
+        924000000000000000000000000000000000000000000000000000000005287170417377896740000000000000000000000000000000000000000012605596601008280487232005736968000000000000000000000000000016028844983706192106837216317810244947006356904000000000000011464723352622764354183664992146610733342658337209686027463644373444888413320386145816577788321958283218605359701592740602995584513147242741134206491001138614677966679448245443639672673459568988885675764090790,
+        -7920000000000000000000000000000000000000000000000000000000037765502981270691000000000000000000000000000000000000000000072031980577190174212754318496960000000000000000000000000000068695049930169394743588069933472478344312958160000000000000032756352436065041011953328548990316380979023820599102935610406247778412019029123065452253983317083261740864799573703915146143491668783,
+        49500000000000000000000000000000000000000000000000000000000188827514906353455000000000000000000000000000000000000000000270119927164463153297828694363600000000000000000000000000000171737624825423486858970174833681195860782395400000000000000040945440545081301264941660686237895476223779775748878669513,
+        -220000000000000000000000000000000000000000000000000000000000629425049687844850000000000000000000000000000000000000000000600266504809918118439619320808000000000000000000000000000000190819583139359429843300194259645773178647106,
+        660000000000000000000000000000000000000000000000000000000001258850099375689700000000000000000000000000000000000000000000600266504809918118439619320808,
+        -1200000000000000000000000000000000000000000000000000000000001144409181250627,
+        1
+      ],
+      "g": [
+        -6250000000000000000000000000000000000000000000000000000000029830932617203875000000000000000000000000000000000000000000056952601880828977108001726145000000000000000000000000000000054366358659497394979407594323383331307819900000000000000000025948774972205309416208021406088792736113941955568761941000004954084370319841177875202997065533922360959705898924321804809817167420000,
+        312500000000000000000000000000000000000000000000000000000001193237304688155000000000000000000000000000000000000000000001708578056424869313240051784350000000000000000000000000000001087327173189947899588151886467666626156398000000000000000000259487749722053094162080214060887927361139419555687619410000,
+        -6250000000000000000000000000000000000000000000000000000000017898559570322325000000000000000000000000000000000000000000017085780564248693132400517843500000000000000000000000000000005436635865949739497940759432338333130781990000,
+        62500000000000000000000000000000000000000000000000000000000119323730468815500000000000000000000000000000000000000000000056952601880828977108001726145000,
+        -312500000000000000000000000000000000000000000000000000000000298309326172038750,
+        625
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 20
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              20,
+              60
+            ],
+            [
+              0,
+              60
+            ],
+            [
+              0,
+              60
+            ],
+            [
+              0,
+              60
+            ],
+            [
+              0,
+              60
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              60
+            ],
+            [
+              0,
+              60
+            ],
+            [
+              20,
+              60
+            ],
+            [
+              0,
+              60
+            ],
+            [
+              0,
+              60
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              59
+            ],
+            [
+              0,
+              59
+            ],
+            [
+              0,
+              60
+            ],
+            [
+              0,
+              60
+            ],
+            [
+              0,
+              60
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 30517578125
+        }
+      ],
+      "id": "large-skew-03"
+    },
+    {
+      "p": 7,
+      "precision": 64,
+      "f": [
+        "+001000000000000000000000000000000000000000000000000000000000000006702550369022467351000000000000000000000000000000000000000000020590249830921472746216064356867944049000000000000000000000000038335329611807642537583981917457488786426824033714974155000000048177089556791106478760837169757883155543823398772844848687519402833250639973158502181976057599404897202490705519448354839411607077677037892669775467503926309685482034560016844091111758675618814067399888386273108103817081947387728228457076221739398785806272742065807798803742871911155716126245240746076862500650400223755206667986669751001107749013613289902991318445982874647878935106741936072246287494410204510522031177912125043919528660939370225305852387141167949834560249456836876762573737146841648264592773773421568597470584677712338454839479037670952534567302930417506884169207174086870383565633369034605098542976357766477733493037809624907568711971062989403149003265689164935770644017553502142292500924263897539615744",
+        "-12000000000000000000000000000000000000000000000000000000000000073728054059247140861000000000000000000000000000000000000000000205902498309214727462160643568679440490000000000000000000000000345017966506268782838255837257117399077841416303434767395000000385416716454328851830086697358063065244350587190182758789500155179611422534812109515273832403195834280417434938636138483875881221487787060371730392843210042858112892207360101064546670552053699452516341896406095378047677998434609137419160381108696993929026674756878204507771264397415330569459728135799992963941759252678856828646679276873679498120828169168900760344194038292154331687506618853357081646871290528039717569755766502611010921845937060584108581047525873773473220498595814032019661912547683416769961599246573901936759688200048202539762487300287243093425819131007400680472841410584691019134752429262922472796778634806716173538884869376",
+        "+66000000000000000000000000000000000000000000000000000000000000368640270296235704305000000000000000000000000000000000000000000926561242391466273579722896059057482205000000000000000000000001380071866025075131353023349028469596311365665213739069580000001348958507590150981405303440753220728355227055165639655763250542977948939824436328545821497209587502841252304815908415451627643580295504566484317072241677804645282230518400252661366676380134215051570711156236380268681133762962229763668945762217393987858043971606854740043047628870549765116576460135739203230760533008479039245932117812115031847868402827767284333121906217628575721452074448828482703451259350442547869045977796630090263257709056010512107051332764652685374072228555457155257088175400841768505368826395099605366542438203265535784940553622461318816896",
+        "-00220000000000000000000000000000000000000000000000000000000000001105920810888707112915000000000000000000000000000000000000000002470829979710576729545927722824153285880000000000000000000000003220167687391841973157054481066429058059853218832057829020000002697917015180301962810606881506441456710454110331279311526501085654515801554060547576369162015979171402087174693180692419379405826879413253089071609922875801193709640691200336881822235173512241962467423428610029456324096706450582245053320762217393987858034593699953071070552728946268869094233463999878420533637547511601528832596144472613029632370375601187478350485014251879279963582056008841183147111882470119018673507399942252523171864524058320153304322672379946861735411979416480",
+        "+495000000000000000000000000000000000000000000000000000000000002211841621777414225830000000000000000000000000000000000000000004323952464493509276705373514942268250290000000000000000000000004830251531087762959735581721599643587089779828248086743530000003372396268975377453513258601883051820888067637914099139408126356691417154324060547576369162015979171402087174693180692419379405686599652228704281432776288594645282230518400252661366676380134147892130423986678663915805011296713643603911035381108696993929012607896525701049028914510993986535945233932008818918257281007362591208642719267620676174873787329299191786388856089668210694882381436929985279020",
+        "-792000000000000000000000000000000000000000000000000000000000003096578270488379916162000000000000000000000000000000000000000005188742957392211132046448217930721900348000000000000000000000004830251531087762959735581721599643587089779828248086743530000002697917015180301962810606881506441456710454110331279311526501085051751645364436328545821497209587502841252304815908415451627643327791934722591694753377820832858112892207360101064546670552053645724964112160759922295746780025435740209612832076221739398785801583788614973312556292909770707704954747172815685513939157651785",
+        "+00924000000000000000000000000000000000000000000000000000000000003096578270488379916162000000000000000000000000000000000000000004323952464493509276705373514942268250290000000000000000000000003220167687391841973157054481066429058059853218832057829020000001348958507590150981405303440753220728355227055165639655763250542375184783634812109515273832403195834280417434938636138483875881081208026035986940215696622836309685482034560016844091111758675605382179342454474729837528592588697670496276875",
+        "-792000000000000000000000000000000000000000000000000000000000002211841621777414225830000000000000000000000000000000000000000002470829979710576729545927722824153285880000000000000000000000001380071866025075131353023349028469596311365665213739069580000000385416716454328851830086697358063065244350587190182758789500154921283927024973158502181976057599404897202490705519448354839411579021724833015711740038186485",
+        "+495000000000000000000000000000000000000000000000000000000000001105920810888707112915000000000000000000000000000000000000000000926561242391466273579722896059057482205000000000000000000000000345017966506268782838255837257117399077841416303434767395000000048177089556791106478760837169757883155543823398772844848687519359778668055",
+        "-00220000000000000000000000000000000000000000000000000000000000000368640270296235704305000000000000000000000000000000000000000000205902498309214727462160643568679440490000000000000000000000000038335329611807642537583981917457488786426824033714974155",
+        "+66000000000000000000000000000000000000000000000000000000000000073728054059247140861000000000000000000000000000000000000000000020590249830921472746216064356867944049",
+        "-12000000000000000000000000000000000000000000000000000000000000006702550369022467351",
+        "+001"
+      ],
+      "g": [
+        "-0016807000000000000000000000000000000000000000000000000000000000046949131151384520946181000000000000000000000000000000000000000052459591668705979307493246051431567323138000000000000000000000029308409569322195323195615008689854470543624623593686610150000008187090627496614720692422272827053257731235206382085897849434031047850395682603623365342241539637021494716640590785132020696039534562724792020244589374195797",
+        "+84035000000000000000000000000000000000000000000000000000000000187796524605538083784724000000000000000000000000000000000000000157378775006117937922479738154294701969414000000000000000000000058616819138644390646391230017379708941087249247187373220300000008187090627496614720692422272827053257731235206382085897849434030133048763927",
+        "-168070000000000000000000000000000000000000000000000000000000000281694786908307125677086000000000000000000000000000000000000000157378775006117937922479738154294701969414000000000000000000000029308409569322195323195615008689854470543624623593686610150",
+        "+00168070000000000000000000000000000000000000000000000000000000000187796524605538083784724000000000000000000000000000000000000000052459591668705979307493246051431567323138",
+        "-84035000000000000000000000000000000000000000000000000000000000046949131151384520946181",
+        "+16807"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 21
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              21,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              21,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              63
+            ],
+            [
+              0,
+              63
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ],
+            [
+              0,
+              64
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 33232930569601
+        }
+      ],
+      "id": "large-skew-04"
+    },
+    {
+      "p": 2,
+      "precision": 40,
+      "f": [
+        288,
+        -1152,
+        1584,
+        -864,
+        162
+      ],
+      "g": [
+        8000,
+        -19200,
+        12960,
+        -3456,
+        324
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 13
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              13,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              39
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 733007751851
+        },
+        {
+          "id": "negative-step",
+          "shift": 366503875925
+        },
+        {
+          "id": "cluster-step",
+          "shift": 733007752192
+        }
+      ],
+      "id": "affine-regression-01"
+    },
+    {
+      "p": 3,
+      "precision": 44,
+      "f": [
+        "+00576",
+        "+3168",
+        "+5220",
+        "+001368",
+        "-1872",
+        "+288"
+      ],
+      "g": [
+        "-0013824000",
+        "-54259200",
+        "-51174720",
+        "+004043736",
+        "-102816",
+        "+864"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 14
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              14,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 492385451091805616441
+        },
+        {
+          "id": "negative-step",
+          "shift": 492385451091805616440
+        },
+        {
+          "id": "cluster-step",
+          "shift": 492385451091805705014
+        }
+      ],
+      "id": "affine-regression-02"
+    },
+    {
+      "p": 5,
+      "precision": 48,
+      "f": [
+        7320500000000,
+        -1430825000000,
+        115895312500,
+        -4977500000,
+        119500000,
+        -1520000,
+        8000
+      ],
+      "g": [
+        44216469000000,
+        -1691298900000,
+        3086190000,
+        -1919000,
+        400
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 16
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              16,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              48
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1776356839400250464677810668945313
+        },
+        {
+          "id": "negative-step",
+          "shift": 1776356839400250464677810668945312
+        },
+        {
+          "id": "cluster-step",
+          "shift": 1776356839400250464677810791015625
+        }
+      ],
+      "id": "affine-regression-03"
+    },
+    {
+      "p": 7,
+      "precision": 52,
+      "f": [
+        "+0015497291955600",
+        "-439032069840",
+        "+4652571364",
+        "-0021858704",
+        "+38416"
+      ],
+      "g": [
+        "-0038008583461754843137200",
+        "+586681569286109977680",
+        "-2278817282284912908",
+        "+00114950557213352",
+        "-1944107536",
+        "+10976"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 17
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              17,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              51
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 44062393544861597592196868343956409056655601
+        },
+        {
+          "id": "negative-step",
+          "shift": 44062393544861597592196868343956409056655600
+        },
+        {
+          "id": "cluster-step",
+          "shift": 44062393544861597592196868343956457501160804
+        }
+      ],
+      "id": "affine-regression-04"
+    },
+    {
+      "p": 2,
+      "precision": 12,
+      "f": [
+        0
+      ],
+      "g": [
+        0
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 4
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              4,
+              12
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              12
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              12
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              12
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 8
+        }
+      ],
+      "id": "control-01"
+    },
+    {
+      "p": 5,
+      "precision": 10,
+      "f": [
+        "+001"
+      ],
+      "g": [
+        "+002"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 3
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              3,
+              10
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 25
+        }
+      ],
+      "id": "control-02"
+    },
+    {
+      "p": 3,
+      "precision": 1,
+      "f": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "g": [
+        0
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 1
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 3
+        }
+      ],
+      "id": "diagnostic-01"
+    },
+    {
+      "p": 2,
+      "precision": 4,
+      "f": [
+        "+000",
+        "+1"
+      ],
+      "g": [
+        "-001",
+        "+1"
+      ],
+      "pencil": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "events": [
+        {
+          "id": "common-roots",
+          "kind": "roots",
+          "precision": 1
+        },
+        {
+          "id": "first-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "cancellation-root-fiber",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": []
+        },
+        {
+          "id": "angular-agreement",
+          "kind": "signature",
+          "ranges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "units": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "relations": [
+            [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "translations": [
+        {
+          "id": "zero",
+          "shift": 0
+        },
+        {
+          "id": "unit-step",
+          "shift": 1
+        },
+        {
+          "id": "negative-step",
+          "shift": -1
+        },
+        {
+          "id": "cluster-step",
+          "shift": 2
+        }
+      ],
+      "id": "diagnostic-02"
+    }
+  ]
+}
