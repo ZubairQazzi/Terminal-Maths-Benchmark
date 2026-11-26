@@ -1,0 +1,245 @@
+{
+  "results": [
+    {
+      "seed": 20261124,
+      "index": 20,
+      "status": "PASS",
+      "seconds": 0.23399999999855936
+    },
+    {
+      "seed": 20261124,
+      "index": 21,
+      "status": "PASS",
+      "seconds": 0.28100000000085856
+    },
+    {
+      "seed": 20261124,
+      "index": 22,
+      "status": "PASS",
+      "seconds": 0.09399999999914144
+    },
+    {
+      "seed": 20261124,
+      "index": 23,
+      "status": "PASS",
+      "seconds": 0.4220000000004802
+    },
+    {
+      "seed": 20261124,
+      "index": 24,
+      "status": "PASS",
+      "seconds": 0.18800000000010186
+    },
+    {
+      "seed": 20261124,
+      "index": 25,
+      "status": "PASS",
+      "seconds": 0.4680000000007567
+    },
+    {
+      "seed": 20261124,
+      "index": 26,
+      "status": "PASS",
+      "seconds": 0.5630000000001019
+    },
+    {
+      "seed": 20261124,
+      "index": 27,
+      "status": "PASS",
+      "seconds": 0.046999999998661224
+    },
+    {
+      "seed": 20261124,
+      "index": 28,
+      "status": "PASS",
+      "seconds": 11.375
+    },
+    {
+      "seed": 20261124,
+      "index": 29,
+      "status": "PASS",
+      "seconds": 3.5
+    },
+    {
+      "seed": 20261124,
+      "index": 38,
+      "status": "PASS",
+      "seconds": 0.375
+    },
+    {
+      "seed": 20261124,
+      "index": 39,
+      "status": "PASS",
+      "seconds": 1.2810000000008586
+    },
+    {
+      "seed": 20261124,
+      "index": 40,
+      "status": "PASS",
+      "seconds": 2.0939999999991414
+    },
+    {
+      "seed": 20261124,
+      "index": 41,
+      "status": "PASS",
+      "seconds": 4.453000000001339
+    },
+    {
+      "seed": 20261124,
+      "index": 42,
+      "status": "PASS",
+      "seconds": 3.061999999999898
+    },
+    {
+      "seed": 20261124,
+      "index": 43,
+      "status": "PASS",
+      "seconds": 1.1880000000001019
+    },
+    {
+      "seed": 20261124,
+      "index": 44,
+      "status": "PASS",
+      "seconds": 3.4839999999985594
+    },
+    {
+      "seed": 20261124,
+      "index": 45,
+      "status": "PASS",
+      "seconds": 6.485000000000582
+    },
+    {
+      "seed": 20261124,
+      "index": 46,
+      "status": "PASS",
+      "seconds": 4.311999999999898
+    },
+    {
+      "seed": 20261124,
+      "index": 47,
+      "status": "PASS",
+      "seconds": 3.9060000000008586
+    },
+    {
+      "seed": 20261125,
+      "index": 20,
+      "status": "PASS",
+      "seconds": 0.09399999999914144
+    },
+    {
+      "seed": 20261125,
+      "index": 21,
+      "status": "PASS",
+      "seconds": 0.10900000000037835
+    },
+    {
+      "seed": 20261125,
+      "index": 22,
+      "status": "PASS",
+      "seconds": 0.18800000000010186
+    },
+    {
+      "seed": 20261125,
+      "index": 23,
+      "status": "PASS",
+      "seconds": 0.10900000000037835
+    },
+    {
+      "seed": 20261125,
+      "index": 24,
+      "status": "PASS",
+      "seconds": 0.1720000000004802
+    },
+    {
+      "seed": 20261125,
+      "index": 25,
+      "status": "PASS",
+      "seconds": 0.8279999999995198
+    },
+    {
+      "seed": 20261125,
+      "index": 26,
+      "status": "PASS",
+      "seconds": 0.5159999999996217
+    },
+    {
+      "seed": 20261125,
+      "index": 27,
+      "status": "PASS",
+      "seconds": 0.2960000000002765
+    },
+    {
+      "seed": 20261125,
+      "index": 28,
+      "status": "PASS",
+      "seconds": 33.375
+    },
+    {
+      "seed": 20261125,
+      "index": 29,
+      "status": "PASS",
+      "seconds": 3.5939999999991414
+    },
+    {
+      "seed": 20261125,
+      "index": 38,
+      "status": "PASS",
+      "seconds": 0.7970000000004802
+    },
+    {
+      "seed": 20261125,
+      "index": 39,
+      "status": "PASS",
+      "seconds": 2.4840000000003783
+    },
+    {
+      "seed": 20261125,
+      "index": 40,
+      "status": "PASS",
+      "seconds": 7.7039999999997235
+    },
+    {
+      "seed": 20261125,
+      "index": 41,
+      "status": "PASS",
+      "seconds": 2.7340000000003783
+    },
+    {
+      "seed": 20261125,
+      "index": 42,
+      "status": "PASS",
+      "seconds": 1.9369999999998981
+    },
+    {
+      "seed": 20261125,
+      "index": 43,
+      "status": "PASS",
+      "seconds": 1.5630000000001019
+    },
+    {
+      "seed": 20261125,
+      "index": 44,
+      "status": "PASS",
+      "seconds": 2.82799999999952
+    },
+    {
+      "seed": 20261125,
+      "index": 45,
+      "status": "PASS",
+      "seconds": 2.79700000000048
+    },
+    {
+      "seed": 20261125,
+      "index": 46,
+      "status": "PASS",
+      "seconds": 1.2340000000003783
+    },
+    {
+      "seed": 20261125,
+      "index": 47,
+      "status": "PASS",
+      "seconds": 2.95299999999952
+    }
+  ],
+  "scope": "40 unseen seeded matrix pairs/forcings with opaque ids, in addition to 48 shipped cases"
+}

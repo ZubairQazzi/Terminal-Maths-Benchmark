@@ -1,0 +1,3396 @@
+{
+  "scope": "Author-side output mutants isolate semantic requirements; they are not independent AI attempts. numerical/generic ranks are independently computed values within otherwise-correct certificates.",
+  "pencils": 48,
+  "structural_cases": 42,
+  "easy_controls": 6,
+  "results": [
+    {
+      "id": "case-000",
+      "easy_control": true,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": true
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: N P N != D N"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": true
+        }
+      }
+    },
+    {
+      "id": "case-001",
+      "easy_control": true,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": true
+        }
+      }
+    },
+    {
+      "id": "case-002",
+      "easy_control": true,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": true
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": true
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": true
+        }
+      }
+    },
+    {
+      "id": "case-003",
+      "easy_control": true,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": true
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": true
+        }
+      }
+    },
+    {
+      "id": "case-004",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": true
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-005",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-006",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-007",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-008",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-009",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": true
+        }
+      }
+    },
+    {
+      "id": "case-010",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-011",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": true
+        }
+      }
+    },
+    {
+      "id": "case-012",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": true
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-013",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": true
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-014",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": true
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-015",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-016",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "12-minimum-denominator-solution: P y != delta f"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-017",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-018",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-019",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "12-minimum-denominator-solution: P y != delta f"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-020",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-021",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-022",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-023",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-024",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-025",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        }
+      }
+    },
+    {
+      "id": "case-026",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-027",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-028",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-029",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "12-minimum-denominator-solution: P y != delta f"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-030",
+      "easy_control": true,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": true
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: N P N != D N"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": true
+        }
+      }
+    },
+    {
+      "id": "case-031",
+      "easy_control": true,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": true
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: N P N != D N"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": true
+        }
+      }
+    },
+    {
+      "id": "case-032",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "12-minimum-denominator-solution: P y != delta f"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-033",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "12-minimum-denominator-solution: P y != delta f"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-034",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-035",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": true
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": true
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": true
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "12-minimum-denominator-solution: P y != delta f"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-036",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-037",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": true
+        },
+        "missing-pole-proof": {
+          "accepted": true
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-038",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-039",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-040",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-041",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "12-minimum-denominator-solution: P y != delta f"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-042",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": true
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-043",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": true
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-044",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-045",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": true
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-046",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": true
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    },
+    {
+      "id": "case-047",
+      "easy_control": false,
+      "mutants": {
+        "generic-full-rank": {
+          "accepted": false,
+          "reason": "01-rank: incorrect normal rank"
+        },
+        "no-infinity": {
+          "accepted": false,
+          "reason": "04-infinity: infinite sizes: incorrect degrees/sizes"
+        },
+        "split-primary-powers": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        },
+        "ignore-right-indices": {
+          "accepted": false,
+          "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+        },
+        "ignore-left-indices": {
+          "accepted": false,
+          "reason": "06-left-filtration: left indices: incorrect degrees/sizes"
+        },
+        "nonminimal-basis": {
+          "accepted": false,
+          "reason": "08-saturated-bases: wrong polynomial vector degree"
+        },
+        "numerical-rank": {
+          "accepted": true
+        },
+        "invalid-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: singular equivalence frame"
+        },
+        "early-stages-only": {
+          "accepted": false,
+          "reason": "07-equivalence: 'U'"
+        },
+        "noninvariant-frame": {
+          "accepted": false,
+          "reason": "07-equivalence: strict-equivalence identities failed"
+        },
+        "invalid-resolvent": {
+          "accepted": false,
+          "reason": "09-resolvent: P N P != D P"
+        },
+        "inconsistent-projector": {
+          "accepted": false,
+          "reason": "10-projector-factorization: kernel projector factorization"
+        },
+        "wrong-forcing-class": {
+          "accepted": false,
+          "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+        },
+        "inflated-pole-denominator": {
+          "accepted": false,
+          "reason": "12-minimum-denominator-solution: P y != delta f"
+        },
+        "missing-pole-proof": {
+          "accepted": false,
+          "reason": "13-pole-lower-bounds: missing minimum-pole witness"
+        },
+        "numerical-spectral-blocks": {
+          "accepted": false,
+          "reason": "03-primary: incorrect primary elementary divisors"
+        }
+      }
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "case-000",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "id": "case-001",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "id": "case-002",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "id": "case-003",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "id": "case-004",
+      "status": "PASS",
+      "seconds": 0.014999999999417923
+    },
+    {
+      "id": "case-005",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "id": "case-006",
+      "status": "PASS",
+      "seconds": 0.030999999999039574
+    },
+    {
+      "id": "case-007",
+      "status": "PASS",
+      "seconds": 0.031000000000858563
+    },
+    {
+      "id": "case-008",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "id": "case-009",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "id": "case-010",
+      "status": "PASS",
+      "seconds": 0.01599999999962165
+    },
+    {
+      "id": "case-011",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "id": "case-012",
+      "status": "PASS",
+      "seconds": 0.01599999999962165
+    },
+    {
+      "id": "case-013",
+      "status": "PASS",
+      "seconds": 0.01599999999962165
+    },
+    {
+      "id": "case-014",
+      "status": "PASS",
+      "seconds": 0.01600000000144064
+    },
+    {
+      "id": "case-015",
+      "status": "PASS",
+      "seconds": 0.07799999999951979
+    },
+    {
+      "id": "case-016",
+      "status": "PASS",
+      "seconds": 0.25
+    },
+    {
+      "id": "case-017",
+      "status": "PASS",
+      "seconds": 0.09399999999914144
+    },
+    {
+      "id": "case-018",
+      "status": "PASS",
+      "seconds": 0.07800000000133878
+    },
+    {
+      "id": "case-019",
+      "status": "PASS",
+      "seconds": 0.04700000000048021
+    },
+    {
+      "id": "case-020",
+      "status": "PASS",
+      "seconds": 0.031000000000858563
+    },
+    {
+      "id": "case-021",
+      "status": "PASS",
+      "seconds": 0.04700000000048021
+    },
+    {
+      "id": "case-022",
+      "status": "PASS",
+      "seconds": 0.046000000000276486
+    },
+    {
+      "id": "case-023",
+      "status": "PASS",
+      "seconds": 0.13999999999941792
+    },
+    {
+      "id": "case-024",
+      "status": "PASS",
+      "seconds": 0.04700000000048021
+    },
+    {
+      "id": "case-025",
+      "status": "PASS",
+      "seconds": 0.04700000000048021
+    },
+    {
+      "id": "case-026",
+      "status": "PASS",
+      "seconds": 0.2029999999995198
+    },
+    {
+      "id": "case-027",
+      "status": "PASS",
+      "seconds": 0.125
+    },
+    {
+      "id": "case-028",
+      "status": "PASS",
+      "seconds": 0.8279999999995198
+    },
+    {
+      "id": "case-029",
+      "status": "PASS",
+      "seconds": 0.43699999999989814
+    },
+    {
+      "id": "case-030",
+      "status": "PASS",
+      "seconds": 0.09400000000096043
+    },
+    {
+      "id": "case-031",
+      "status": "PASS",
+      "seconds": 0.07799999999951979
+    },
+    {
+      "id": "case-032",
+      "status": "PASS",
+      "seconds": 0.21900000000096043
+    },
+    {
+      "id": "case-033",
+      "status": "PASS",
+      "seconds": 0.07799999999951979
+    },
+    {
+      "id": "case-034",
+      "status": "PASS",
+      "seconds": 0.06300000000010186
+    },
+    {
+      "id": "case-035",
+      "status": "PASS",
+      "seconds": 0.06199999999989814
+    },
+    {
+      "id": "case-036",
+      "status": "PASS",
+      "seconds": 0.1400000000012369
+    },
+    {
+      "id": "case-037",
+      "status": "PASS",
+      "seconds": 0.04700000000048021
+    },
+    {
+      "id": "case-038",
+      "status": "PASS",
+      "seconds": 0.18699999999989814
+    },
+    {
+      "id": "case-039",
+      "status": "PASS",
+      "seconds": 0.31199999999989814
+    },
+    {
+      "id": "case-040",
+      "status": "PASS",
+      "seconds": 0.4220000000004802
+    },
+    {
+      "id": "case-041",
+      "status": "PASS",
+      "seconds": 0.2809999999990396
+    },
+    {
+      "id": "case-042",
+      "status": "PASS",
+      "seconds": 0.2970000000004802
+    },
+    {
+      "id": "case-043",
+      "status": "PASS",
+      "seconds": 0.31300000000010186
+    },
+    {
+      "id": "case-044",
+      "status": "PASS",
+      "seconds": 1.2819999999992433
+    },
+    {
+      "id": "case-045",
+      "status": "PASS",
+      "seconds": 0.3279999999995198
+    },
+    {
+      "id": "case-046",
+      "status": "PASS",
+      "seconds": 0.39099999999962165
+    },
+    {
+      "id": "case-047",
+      "status": "PASS",
+      "seconds": 0.5619999999998981
+    }
+  ]
+}

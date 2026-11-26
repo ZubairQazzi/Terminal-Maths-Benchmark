@@ -1,0 +1,352 @@
+{
+  "scope": "Creator local evidence-based review of all 38 supplied criteria, not an external model-judge API verdict. Independent fresh reviewer must audit separately.",
+  "counts": {
+    "PASS": 37,
+    "N/A": 1
+  },
+  "task_framed_sha256": "c3f0390f31b44bce786267f5a6641bd41a33fd88a31356d0ad8bdc670cb4650d",
+  "checks": [
+    {
+      "id": "well_specified",
+      "label": "Clear deliverable",
+      "requirement": "An independent expert can identify the goal, output path, format, grading metrics, and any convention or execution limit that changes the answer.",
+      "status": "PASS",
+      "current_implementation": "instruction.md and spec.md define every required field, dimensions, signs, paths, empty dimensions and limits; no arbitrary basis normalization.",
+      "evidence": "instruction.md and spec.md define every required field, dimensions, signs, paths, empty dimensions and limits; no arbitrary basis normalization.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "test_instruction_alignment",
+      "label": "Instructions and tests agree",
+      "requirement": "Each scored requirement appears in the instructions, and the grader checks each promised requirement.",
+      "status": "PASS",
+      "current_implementation": "constructive.py labels all thirteen obligations; test_coverage.md and contract regressions map observable outputs. Required fields are not inferred from hidden hints.",
+      "evidence": "constructive.py labels all thirteen obligations; test_coverage.md and contract regressions map observable outputs. Required fields are not inferred from hidden hints.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "instruction_clarity",
+      "label": "Clear, outcome-focused wording",
+      "requirement": "The instructions make the task easy to understand, give the necessary context, and state what the submission must achieve without giving away the method.",
+      "status": "PASS",
+      "current_implementation": "Outcome-focused task instructions link the complete discoverable scientific specification and public examples. Algorithms are not prescribed.",
+      "evidence": "Outcome-focused task instructions link the complete discoverable scientific specification and public examples. Algorithms are not prescribed.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "structured_data_schema",
+      "label": "Structured output contract",
+      "requirement": "For structured submissions, the specified fields, types, and layout agree with what the grader reads.",
+      "status": "PASS",
+      "current_implementation": "Public encodings match strict scientific scalar, vector/matrix and forcing-response parsing; ignored extras, floats, booleans and rational syntax retested.",
+      "evidence": "Public encodings match strict scientific scalar, vector/matrix and forcing-response parsing; ignored extras, floats, booleans and rational syntax retested.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "typos",
+      "label": "Correct references",
+      "requirement": "Names, paths, commands, and symbols point to the intended files or concepts.",
+      "status": "PASS",
+      "current_implementation": "Actual Docker COPY sources, source entry point, package versions, companion signs, transpose sides and exact LF suffix were checked by pinned implementations.",
+      "evidence": "Actual Docker COPY sources, source entry point, package versions, companion signs, transpose sides and exact LF suffix were checked by pinned implementations.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "hint_discoverability",
+      "label": "Discoverable hints",
+      "requirement": "When a hint exists, its information can be traced to solver-visible evidence or established domain knowledge.",
+      "status": "N/A",
+      "current_implementation": "N/A: no hidden hint file or review-time injected hint is shipped. All mathematical conventions are visible in /app/spec.md.",
+      "evidence": "N/A: no hidden hint file or review-time injected hint is shipped. All mathematical conventions are visible in /app/spec.md.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "scientifically_grounded",
+      "label": "Scientific grounding",
+      "requirement": "The work reflects a real research workflow and produces a result useful for a scientific question or decision.",
+      "status": "PASS",
+      "current_implementation": "Pencil decomposition, polynomial kernel modules and finite-pole forced responses have primary-source grounding; mathematical_correctness.md supplies the response-minimality proof.",
+      "evidence": "Pencil decomposition, polynomial kernel modules and finite-pole forced responses have primary-source grounding; mathematical_correctness.md supplies the response-minimality proof.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "scope",
+      "label": "Scientific scope",
+      "requirement": "The problem and deliverable fit the assigned domain and field.",
+      "status": "PASS",
+      "current_implementation": "Exact computational linear algebra and polynomial module theory belong to mathematical-sciences/applied-mathematics.",
+      "evidence": "Exact computational linear algebra and polynomial module theory belong to mathematical-sciences/applied-mathematics.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "essential_difficulty",
+      "label": "Essential difficulty",
+      "requirement": "The challenge comes from the science or reasoning the solver must do. Formatting, repetition, and precision demands have a scientific purpose when required.",
+      "status": "PASS",
+      "current_implementation": "Main difficulty is constructive constant equivalence, polynomial splitting and exact local/global pole obstruction reasoning; five layers and thirteen obligations documented. Empirical AI difficulty remains unmeasured.",
+      "evidence": "Main difficulty is constructive constant equivalence, polynomial splitting and exact local/global pole obstruction reasoning; five layers and thirteen obligations documented. Empirical AI difficulty remains unmeasured.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "novel",
+      "label": "Novelty",
+      "requirement": "The instance requires new reasoning or computation. The judge can use similarity findings to assess whether an earlier answer can be copied.",
+      "status": "PASS",
+      "current_implementation": "Inputs require new exact computation and all new certificate obligations; old answers alone cannot pass. Verified pinned unrelated instruction corpus has substantive similarity below 30%; not a global novelty proof.",
+      "evidence": "Inputs require new exact computation and all new certificate obligations; old answers alone cannot pass. Verified pinned unrelated instruction corpus has substantive similarity below 30%; not a global novelty proof.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "agentic",
+      "label": "Meaningful tool use",
+      "requirement": "Reaching a correct answer requires work such as exploring data, testing a hypothesis, or running a computation.",
+      "status": "PASS",
+      "current_implementation": "Implementing and debugging a general exact solver, testing structure hypotheses and certificate identities requires terminal computation and mathematical decisions.",
+      "evidence": "Implementing and debugging a general exact solver, testing structure hypotheses and certificate identities requires terminal computation and mathematical decisions.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "verifiable",
+      "label": "Verifiability",
+      "requirement": "The grader can observe the required outcome and distinguish correct work from meaningful errors.",
+      "status": "PASS",
+      "current_implementation": "Independent integer/rational coefficient identities, constructive expected structure and dual lower bounds establish the scored properties.",
+      "evidence": "Independent integer/rational coefficient identities, constructive expected structure and dual lower bounds establish the scored properties.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "solvable",
+      "label": "Solvability",
+      "requirement": "A correct approach can finish and pass using the data, tools, and resources available to the solver.",
+      "status": "PASS",
+      "current_implementation": "Native general oracle reaches grading and passes all 48 cases in fresh Docker/Harbor trials; 40 unseen regenerated pairs also pass. No hidden-answer import.",
+      "evidence": "Native general oracle reaches grading and passes all 48 cases in fresh Docker/Harbor trials; 40 unseen regenerated pairs also pass. No hidden-answer import.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "outcome_verified",
+      "label": "Alternative valid methods",
+      "requirement": "A scientifically valid alternative can earn full credit by meeting the same result requirements.",
+      "status": "PASS",
+      "current_implementation": "All 48 mathematically different valid author certificates pass; native executable/cache-named helper and equivalent-scalar alternative earns reward 1.",
+      "evidence": "All 48 mathematically different valid author certificates pass; native executable/cache-named helper and equivalent-scalar alternative earns reward 1.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "functional_verification",
+      "label": "Functional verification",
+      "requirement": "The grader checks the actual behavior or scientific output and catches answers that only look correct.",
+      "status": "PASS",
+      "current_implementation": "The submitted program runs on hidden inputs; exact outputs and certificate identities are checked. Native partial/mutant/example/no-op controls earn zero with valid CTRF.",
+      "evidence": "The submitted program runs on hidden inputs; exact outputs and certificate identities are checked. Native partial/mutant/example/no-op controls earn zero with valid CTRF.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "ground_truth_provenance",
+      "label": "Ground truth provenance",
+      "requirement": "The expected values or scoring objective can be traced to their source, such as a generator, published data, or an independent calculation.",
+      "status": "PASS",
+      "current_implementation": "cases.py derives expected invariants from explicit canonical block data and known invertible row/column transformations, independent of reference Smith computation.",
+      "evidence": "cases.py derives expected invariants from explicit canonical block data and known invertible row/column transformations, independent of reference Smith computation.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "graded_instances_discriminate",
+      "label": "Discriminating test cases",
+      "requirement": "Check per-case results from plausible trivial guesses when available, and account for any intentionally easy cases described in the documentation.",
+      "status": "PASS",
+      "current_implementation": "48 distinct pencils: six easy controls and 42 structural cases. Per-case semantic mutants, literal constant output, zero prediction and independent spectral/rank guesses record meaningful rejected approaches and legitimate correct/unaffected cases.",
+      "evidence": "48 distinct pencils: six easy controls and 42 structural cases. Per-case semantic mutants, literal constant output, zero prediction and independent spectral/rank guesses record meaningful rejected approaches and legitimate correct/unaffected cases.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "solution_quality",
+      "label": "Reference solution quality",
+      "requirement": "The reference derives its answer from the supplied inputs, and reviewers can inspect the implementation that actually produces it.",
+      "status": "PASS",
+      "current_implementation": "solution/oracle.py and frames.py derive outputs solely from supplied A/B/forcings. Forty new-seed/opaque-id inputs pass; no expected-answer tables.",
+      "evidence": "solution/oracle.py and frames.py derive outputs solely from supplied A/B/forcings. Forty new-seed/opaque-id inputs pass; no expected-answer tables.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "do_not_modify_enforced",
+      "label": "Protected files",
+      "requirement": "When the instructions protect a file, the verifier or execution boundary enforces that requirement.",
+      "status": "PASS",
+      "current_implementation": "Transferred program is read-only to the candidate; private /tests and verifier logs are protected. Live permission probe denies writes/reads as appropriate.",
+      "evidence": "Transferred program is read-only to the candidate; private /tests and verifier logs are protected. Live permission probe denies writes/reads as appropriate.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "deterministic_reproducible",
+      "label": "Reproducibility",
+      "requirement": "Builds and runs reproduce the expected data and score within the task\u2019s stated rules for variation.",
+      "status": "PASS",
+      "current_implementation": "Seeded generator, exact arithmetic, pinned base digest and explicit Python dependency versions. Fresh oracle repeats, reset probes and two no-cache build rounds retained.",
+      "evidence": "Seeded generator, exact arithmetic, pinned base digest and explicit Python dependency versions. Fresh oracle repeats, reset probes and two no-cache build rounds retained.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "separate_verifier_configured",
+      "label": "Separate verifier setup",
+      "requirement": "The verifier has the intended inputs and tools, including matching copies of any shared data required by both environments.",
+      "status": "PASS",
+      "current_implementation": "Manifest uses separate offline verifier with source-directory artifact transfer; matching SymPy/mpmath versions verified in both images.",
+      "evidence": "Manifest uses separate offline verifier with source-directory artifact transfer; matching SymPy/mpmath versions verified in both images.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "verifier_execution_isolation",
+      "label": "Submitted code isolation",
+      "requirement": "When the verifier runs submitted code, the code cannot write the score, modify grading files, or read private answers.",
+      "status": "PASS",
+      "current_implementation": "Live Linux probe: UID/GID 65534, empty supplementary groups, /tests read denied, reward/source writes denied, no oracle or provider keys, bounded resources.",
+      "evidence": "Live Linux probe: UID/GID 65534, empty supplementary groups, /tests read denied, reward/source writes denied, no oracle or provider keys, bounded resources.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "anti_cheat_robustness",
+      "label": "Resistance to shortcuts",
+      "requirement": "The grading setup and available controls show whether shortcuts can earn credit without solving the scientific problem.",
+      "status": "PASS",
+      "current_implementation": "Source-only handoff, opaque ids, hidden generator/expected data, exact certificates and independent partial/no-op/public-example controls. No reward credit for early stages alone.",
+      "evidence": "Source-only handoff, opaque ids, hidden generator/expected data, exact certificates and independent partial/no-op/public-example controls. No reward credit for early stages alone.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "task_security",
+      "label": "Task security",
+      "requirement": "Build and runtime files avoid unsafe access to credentials, the host, and unrelated networks. Sensitive operations have a clear task purpose.",
+      "status": "PASS",
+      "current_implementation": "No host binds in task config, offline verifier, no credential inheritance in child, and no private materials in the agent image. Root/descendant symlink submissions rejected.",
+      "evidence": "No host binds in task config, offline verifier, no credential inheritance in child, and no private materials in the agent image. Root/descendant symlink submissions rejected.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "resource_configuration",
+      "label": "Resource suitability",
+      "requirement": "Time, CPU, memory, storage, and other requested resources are reasonable and give valid approaches enough room to finish.",
+      "status": "PASS",
+      "current_implementation": "2 CPUs/4 GiB per environment, 180-second per-call wall/CPU and 2 GiB child address space; actual oracle fits with large margin.",
+      "evidence": "2 CPUs/4 GiB per environment, 180-second per-call wall/CPU and 2 GiB child address space; actual oracle fits with large margin.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "task_toml_schema",
+      "label": "Manifest schema",
+      "requirement": "The manifest uses supported settings and supplies the naming, publisher, and metadata required by the active profile.",
+      "status": "PASS",
+      "current_implementation": "Native supported-schema validation, all-rule lint, canonical namespace/path, accurate user-supplied identity and explicitly limited experience disclosures.",
+      "evidence": "Native supported-schema validation, all-rule lint, canonical namespace/path, accurate user-supplied identity and explicitly limited experience disclosures.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "environment_hygiene",
+      "label": "Solver image contents",
+      "requirement": "The solver image contains the needed tools and data. Reference solutions, private answers, and grading materials stay outside the solver\u2019s view.",
+      "status": "PASS",
+      "current_implementation": "Two clean builds and image probe show only public spec/examples and empty submission directory in the agent; reference/tests are absent.",
+      "evidence": "Two clean builds and image probe show only public spec/examples and empty submission directory in the agent; reference/tests are absent.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "artifact_efficiency",
+      "label": "Artifact transfer",
+      "requirement": "The verifier receives the files it needs, and collection handles failures without reusing stale outputs.",
+      "status": "PASS",
+      "current_implementation": "Only /app/submission transfers. Regular helper files including __pycache__ source survive; fresh writable work per invocation, invalid/missing output denied.",
+      "evidence": "Only /app/submission transfers. Regular helper files including __pycache__ source survive; fresh writable work per invocation, invalid/missing output denied.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "ctrf_reporting",
+      "label": "Individual test results",
+      "requirement": "When the grader runs discrete tests, the review evidence shows the outcome of each applicable check.",
+      "status": "PASS",
+      "current_implementation": "Twelve distinct pytest batch names and native CTRF summaries retained; each represents four pencils. Author per-case reports complement the batch records.",
+      "evidence": "Twelve distinct pytest batch names and native CTRF summaries retained; each represents four pencils. Author per-case reports complement the batch records.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "task_authoring_dir",
+      "label": "Authoring material",
+      "requirement": "Review-only material belongs in `authoring/`. Runtime files contain the material needed to build, solve, and grade the task.",
+      "status": "PASS",
+      "current_implementation": "All references, histories, prototypes, controls and reports are under workspace authoring/, outside agent/verifier build contexts.",
+      "evidence": "All references, histories, prototypes, controls and reports are under workspace authoring/, outside agent/verifier build contexts.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "no_extraneous_files",
+      "label": "Necessary files",
+      "requirement": "Every shipped file has a required purpose or is covered by an exception in the rubric.",
+      "status": "PASS",
+      "current_implementation": "Runtime file manifest contains only instructions, metadata, reviewer README, public environment, reference code and active grader modules; no author output caches or editor debris.",
+      "evidence": "Runtime file manifest contains only instructions, metadata, reviewer README, public environment, reference code and active grader modules; no author output caches or editor debris.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "reviewable",
+      "label": "Reviewability",
+      "requirement": "Another reviewer can trace the assumptions, inputs, and calculations through to an expected result.",
+      "status": "PASS",
+      "current_implementation": "Stage design, genuine dependency DAG, proofs, seeds, exact data construction, checksum manifests and native logs are locally available for traceable review.",
+      "evidence": "Stage design, genuine dependency DAG, proofs, seeds, exact data construction, checksum manifests and native logs are locally available for traceable review.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "difficulty_explanation_quality",
+      "label": "Difficulty explanation",
+      "requirement": "The documentation explains the specific scientific decisions that make the task challenging and where plausible simpler approaches fall short.",
+      "status": "PASS",
+      "current_implementation": "README and difficulty_gap_analysis.md identify scientific decisions and simpler approaches that fail, while disclaiming an unmeasured frontier failure rate.",
+      "evidence": "README and difficulty_gap_analysis.md identify scientific decisions and simpler approaches that fail, while disclaiming an unmeasured frontier failure rate.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "solution_explanation_quality",
+      "label": "Reference explanation",
+      "requirement": "The documentation explains the reference approach and connects it to the implemented solution.",
+      "status": "PASS",
+      "current_implementation": "README and mathematical_correctness.md connect Smith/convolution, rank-normalized isomorphism, block inverses, gcd cancellation and dual witnesses to actual reference functions.",
+      "evidence": "README and mathematical_correctness.md connect Smith/convolution, rank-normalized isomorphism, block inverses, gcd cancellation and dual witnesses to actual reference functions.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "verification_explanation_quality",
+      "label": "Verification explanation",
+      "requirement": "The documentation describes what the grader measures and why the checks suffice. Where the rubric requires it, calibration evidence shows how alternative correct methods and flawed methods scored.",
+      "status": "PASS",
+      "current_implementation": "README and test_discrimination_audit.md explain independent expected structure, each identity, negative controls and accepted alternatives, including exact local pole sufficiency.",
+      "evidence": "README and test_discrimination_audit.md explain independent expected structure, each identity, negative controls and accepted alternatives, including exact local pole sufficiency.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "category_and_tags",
+      "label": "Category and tags",
+      "requirement": "The labels describe the actual science and methods clearly enough to find and group the task.",
+      "status": "PASS",
+      "current_implementation": "Canonical mathematical/applied-mathematics taxonomy and matrix-pencil/exact-arithmetic/minimal-basis/Smith tags describe actual work.",
+      "evidence": "Canonical mathematical/applied-mathematics taxonomy and matrix-pencil/exact-arithmetic/minimal-basis/Smith tags describe actual work.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "task_name",
+      "label": "Published task name",
+      "requirement": "The name is descriptive and follows the active naming rules.",
+      "status": "PASS",
+      "current_implementation": "Same descriptive three-token slug and standard namespace; version 0.2.0 distinguishes the expanded output contract.",
+      "evidence": "Same descriptive three-token slug and standard namespace; version 0.2.0 distinguishes the expanded output contract.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    },
+    {
+      "id": "task_readme",
+      "label": "Reviewer README",
+      "requirement": "When included, the README provides accurate, useful context and reflects the task as packaged.",
+      "status": "PASS",
+      "current_implementation": "Pinned deterministic managed header matches task.toml; authored Difficulty/Reference solution/Verification sections describe the actual version and measured limitations.",
+      "evidence": "Pinned deterministic managed header matches task.toml; authored Difficulty/Reference solution/Verification sections describe the actual version and measured limitations.",
+      "required_correction": "None identified in this local audit; independent reviewer and external service verdict remain separate."
+    }
+  ]
+}

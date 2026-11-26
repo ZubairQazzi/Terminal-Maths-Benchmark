@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "valid_scalar_variants": 4,
+  "invalid_scalar_variants": 8,
+  "scientific_float_boolean_rejected": 2,
+  "ignored_extra_float_accepted": true,
+  "missing_required_certificate_fields_rejected": 5,
+  "regenerated_pencils": 40
+}

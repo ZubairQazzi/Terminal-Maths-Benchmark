@@ -1,0 +1,2048 @@
+{
+  "checks": [
+    {
+      "name": "hand-derived-pole-order-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "reject-wrong-pole-order-1",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "13-pole-lower-bounds: incorrect pole exponent"
+    },
+    {
+      "name": "reject-missing-pole-bound-1",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "13-pole-lower-bounds: missing minimum-pole witness"
+    },
+    {
+      "name": "hand-derived-pole-order-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "reject-wrong-pole-order-2",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "13-pole-lower-bounds: incorrect pole exponent"
+    },
+    {
+      "name": "reject-missing-pole-bound-2",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "13-pole-lower-bounds: missing minimum-pole witness"
+    },
+    {
+      "name": "accept-scalar--7/+3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "accept-scalar-+4",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "accept-scalar-0002",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "accept-scalar--0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "accept-scalar-123",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "accept-scalar-+12/+4",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "accept-scalar-7/02",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "accept-scalar-99999999999999999999",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "reject-scalar-True",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "invalid exact scalar"
+    },
+    {
+      "name": "reject-scalar-False",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "invalid exact scalar"
+    },
+    {
+      "name": "reject-scalar-0.5",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "invalid exact scalar"
+    },
+    {
+      "name": "reject-scalar-1.0",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "invalid exact scalar"
+    },
+    {
+      "name": "reject-scalar-1/0",
+      "pass": true,
+      "observed": "rejected",
+      "detail": ""
+    },
+    {
+      "name": "reject-scalar-1/-2",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "invalid exact scalar"
+    },
+    {
+      "name": "reject-scalar-1/+0",
+      "pass": true,
+      "observed": "rejected",
+      "detail": ""
+    },
+    {
+      "name": "reject-scalar-1/2/3",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "invalid exact scalar"
+    },
+    {
+      "name": "reject-scalar- 1",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "invalid exact scalar"
+    },
+    {
+      "name": "reject-scalar-1e3",
+      "pass": true,
+      "observed": "rejected",
+      "detail": "invalid exact scalar"
+    },
+    {
+      "name": "case-000-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-000-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-000-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-000-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-001-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-001-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-002-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-002-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-003-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-003-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-004-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-004-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-004-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-004-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-005-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-005-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-005-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-005-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-006-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-006-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-006-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-006-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-006-right-hilbert-4",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-006-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-007-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-007-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-007-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-007-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-007-left-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-007-left-hilbert-4",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-008-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-008-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-009-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-009-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-010-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-010-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-011-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-011-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-012-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-012-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-013-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-013-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-014-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-014-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-015-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-015-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-015-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-015-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-015-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-015-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-015-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-016-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-016-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-016-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-016-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-016-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-016-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-016-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-017-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-017-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-017-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-017-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-017-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-017-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-017-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-018-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-018-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-018-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-018-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-018-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-018-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-018-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-018-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-019-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-019-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-020-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-020-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-020-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-020-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-020-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-021-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-021-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-021-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-021-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-021-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-022-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-022-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-022-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-022-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-022-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-022-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-023-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-023-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-023-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-023-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-023-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-023-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-023-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-023-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-024-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-024-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-024-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-024-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-024-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-024-left-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-025-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-025-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-025-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-025-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-025-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-025-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-026-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-026-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-026-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-026-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-026-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-026-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-026-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-026-left-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-027-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-027-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-027-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-027-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-027-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-027-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-027-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-027-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-028-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-028-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-028-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-028-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-028-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-028-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-028-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-028-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-029-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-029-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-029-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-029-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-029-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-029-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-030-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-030-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-030-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-030-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-031-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-031-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-031-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-031-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-032-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-032-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-032-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-032-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-032-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-032-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-032-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-033-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-033-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-033-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-033-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-033-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-033-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-033-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-034-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-034-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-034-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-034-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-034-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-034-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-034-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-035-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-035-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-036-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-036-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-036-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-036-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-036-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-036-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-036-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-037-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-037-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-037-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-037-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-037-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-037-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-038-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-038-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-038-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-038-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-038-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-038-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-038-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-038-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-039-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-039-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-039-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-039-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-039-right-hilbert-4",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-039-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-039-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-039-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-040-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-040-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-040-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-040-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-040-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-040-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-040-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-040-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-041-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-041-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-041-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-041-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-041-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-041-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-041-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-042-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-042-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-042-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-042-right-hilbert-7",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-042-right-hilbert-8",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-042-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-043-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-043-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-043-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-043-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-043-left-hilbert-7",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-043-left-hilbert-8",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-044-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-044-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-044-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-044-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-044-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-044-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-044-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-045-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-045-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-045-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-045-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-045-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-045-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-045-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-045-left-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-046-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-046-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-046-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-046-right-hilbert-2",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-046-right-hilbert-3",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-046-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-046-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-047-oracle-exact",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-047-independent-alternative",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-047-right-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-047-right-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-047-left-hilbert-0",
+      "pass": true,
+      "observed": "accepted"
+    },
+    {
+      "name": "case-047-left-hilbert-1",
+      "pass": true,
+      "observed": "accepted"
+    }
+  ],
+  "passed": 280,
+  "failed": 0,
+  "case_summaries": [
+    {
+      "id": "case-000",
+      "shape": [
+        2,
+        3
+      ],
+      "seconds": 0.10899999999855936,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-001",
+      "shape": [
+        1,
+        1
+      ],
+      "seconds": 0.01600000000144064,
+      "classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-002",
+      "shape": [
+        1,
+        1
+      ],
+      "seconds": 0.0,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-003",
+      "shape": [
+        1,
+        1
+      ],
+      "seconds": 0.014999999999417923,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-004",
+      "shape": [
+        1,
+        2
+      ],
+      "seconds": 0.01599999999962165,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-005",
+      "shape": [
+        2,
+        1
+      ],
+      "seconds": 0.01599999999962165,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-006",
+      "shape": [
+        5,
+        5
+      ],
+      "seconds": 0.0930000000007567,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-007",
+      "shape": [
+        5,
+        5
+      ],
+      "seconds": 0.07899999999972351,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-008",
+      "shape": [
+        2,
+        2
+      ],
+      "seconds": 0.031000000000858563,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-009",
+      "shape": [
+        2,
+        2
+      ],
+      "seconds": 0.014999999999417923,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-010",
+      "shape": [
+        4,
+        4
+      ],
+      "seconds": 0.04700000000048021,
+      "classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-011",
+      "shape": [
+        4,
+        4
+      ],
+      "seconds": 0.0319999999992433,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-012",
+      "shape": [
+        4,
+        4
+      ],
+      "seconds": 0.031000000000858563,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-013",
+      "shape": [
+        4,
+        4
+      ],
+      "seconds": 0.030999999999039574,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-014",
+      "shape": [
+        4,
+        4
+      ],
+      "seconds": 0.01599999999962165,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-015",
+      "shape": [
+        7,
+        7
+      ],
+      "seconds": 0.20300000000133878,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-016",
+      "shape": [
+        12,
+        12
+      ],
+      "seconds": 1.014999999999418,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-017",
+      "shape": [
+        8,
+        9
+      ],
+      "seconds": 0.2039999999997235,
+      "classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-018",
+      "shape": [
+        8,
+        9
+      ],
+      "seconds": 0.25,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-019",
+      "shape": [
+        8,
+        8
+      ],
+      "seconds": 0.2029999999995198,
+      "classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-020",
+      "shape": [
+        5,
+        5
+      ],
+      "seconds": 0.07800000000133878,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-021",
+      "shape": [
+        6,
+        6
+      ],
+      "seconds": 0.09399999999914144,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-022",
+      "shape": [
+        6,
+        6
+      ],
+      "seconds": 0.125,
+      "classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-023",
+      "shape": [
+        10,
+        10
+      ],
+      "seconds": 0.5930000000007567,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-024",
+      "shape": [
+        7,
+        7
+      ],
+      "seconds": 0.21899999999914144,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-025",
+      "shape": [
+        6,
+        6
+      ],
+      "seconds": 0.15600000000085856,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-026",
+      "shape": [
+        12,
+        12
+      ],
+      "seconds": 1.0,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-027",
+      "shape": [
+        10,
+        10
+      ],
+      "seconds": 0.5159999999996217,
+      "classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-028",
+      "shape": [
+        18,
+        18
+      ],
+      "seconds": 18.0,
+      "classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-029",
+      "shape": [
+        15,
+        15
+      ],
+      "seconds": 3.2189999999991414,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-030",
+      "shape": [
+        1,
+        18
+      ],
+      "seconds": 0.04700000000048021,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-031",
+      "shape": [
+        18,
+        1
+      ],
+      "seconds": 0.06199999999989814,
+      "classes": [
+        "polynomial",
+        "polynomial",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-032",
+      "shape": [
+        12,
+        12
+      ],
+      "seconds": 1.8130000000001019,
+      "classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-033",
+      "shape": [
+        9,
+        8
+      ],
+      "seconds": 0.23400000000037835,
+      "classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-034",
+      "shape": [
+        7,
+        7
+      ],
+      "seconds": 0.23400000000037835,
+      "classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-035",
+      "shape": [
+        8,
+        8
+      ],
+      "seconds": 0.2349999999987631,
+      "classes": [
+        "rational",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-036",
+      "shape": [
+        10,
+        11
+      ],
+      "seconds": 0.4530000000013388,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-037",
+      "shape": [
+        6,
+        6
+      ],
+      "seconds": 0.07799999999951979,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-038",
+      "shape": [
+        12,
+        11
+      ],
+      "seconds": 0.9689999999991414,
+      "classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-039",
+      "shape": [
+        14,
+        13
+      ],
+      "seconds": 2.875,
+      "classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-040",
+      "shape": [
+        15,
+        15
+      ],
+      "seconds": 4.311999999999898,
+      "classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-041",
+      "shape": [
+        15,
+        15
+      ],
+      "seconds": 3.188000000000102,
+      "classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-042",
+      "shape": [
+        14,
+        14
+      ],
+      "seconds": 2.125,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-043",
+      "shape": [
+        14,
+        14
+      ],
+      "seconds": 1.515000000001237,
+      "classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-044",
+      "shape": [
+        15,
+        15
+      ],
+      "seconds": 3.938000000000102,
+      "classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-045",
+      "shape": [
+        15,
+        15
+      ],
+      "seconds": 3.061999999999898,
+      "classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-046",
+      "shape": [
+        15,
+        15
+      ],
+      "seconds": 1.2659999999996217,
+      "classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-047",
+      "shape": [
+        15,
+        15
+      ],
+      "seconds": 7.265999999999622,
+      "classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ]
+    }
+  ],
+  "seconds": 60.125,
+  "independence": "Hand certificates and transformations authored by reviewer. Oracle output is used only as a base for full-family acceptance mutations; Hilbert checks use independent coefficient RREF. No creator controls imported."
+}

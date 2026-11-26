@@ -1,0 +1,5596 @@
+{
+  "distinct_pencils": 48,
+  "easy_controls": 6,
+  "structural_cases": 42,
+  "forcing_queries": 144,
+  "batch_tests": 12,
+  "cases": [
+    {
+      "id": "case-000",
+      "shape": [
+        2,
+        3
+      ],
+      "matrix_pair_sha256": "7c30a95c13bc0b70624ac7a11a225162d8ee82b90fc4e961c077014227b2cbf7",
+      "classification": "easy convention control",
+      "mathematical_family": [
+        "right singular module",
+        "repeated right index",
+        "zero right index",
+        "left singular module",
+        "repeated left index",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "right singular module",
+        "repeated right index",
+        "zero right index",
+        "left singular module",
+        "repeated left index",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 0,
+        "finite_smith": [],
+        "infinite_sizes": [],
+        "right_indices": [
+          0,
+          0,
+          0
+        ],
+        "left_indices": [
+          0,
+          0
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.0,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class"
+      ]
+    },
+    {
+      "id": "case-001",
+      "shape": [
+        1,
+        1
+      ],
+      "matrix_pair_sha256": "ba01d4efe70c05f2ae649649ead738d6254a015f7ca7f557f7c87c35525808d6",
+      "classification": "easy convention control",
+      "mathematical_family": [
+        "finite primary module",
+        "exact scaling"
+      ],
+      "features": [
+        "finite primary module",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 1,
+        "finite_smith": [
+          [
+            "-2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.0930000000007567,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof"
+      ]
+    },
+    {
+      "id": "case-002",
+      "shape": [
+        1,
+        1
+      ],
+      "matrix_pair_sha256": "90d466260151fa4166bf19e01f44263601a8781fec575904386356149ba53255",
+      "classification": "easy convention control",
+      "mathematical_family": [
+        "infinite nilpotent partition"
+      ],
+      "features": [
+        "infinite nilpotent partition"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        4,
+        7,
+        9,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2
+      ],
+      "key_invariants": {
+        "normal_rank": 1,
+        "finite_smith": [
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          1
+        ],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.01599999999962165,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "no-infinity",
+        "invalid-frame",
+        "early-stages-only",
+        "invalid-resolvent"
+      ]
+    },
+    {
+      "id": "case-003",
+      "shape": [
+        1,
+        1
+      ],
+      "matrix_pair_sha256": "4d4ddfb4d0a9accba4ef44c8ff1846bd88eafb26edf80bc547364acf8e2020ac",
+      "classification": "easy convention control",
+      "mathematical_family": [
+        "finite primary module"
+      ],
+      "features": [
+        "finite primary module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 1,
+        "finite_smith": [
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.0,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "invalid-frame",
+        "early-stages-only",
+        "invalid-resolvent",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof"
+      ]
+    },
+    {
+      "id": "case-004",
+      "shape": [
+        1,
+        2
+      ],
+      "matrix_pair_sha256": "63b11d370ca3042343e4c754c5102ec96ded1f709dff1bc4712e31e1a763b4eb",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "right singular module",
+        "rectangular side distinction",
+        "exact scaling"
+      ],
+      "features": [
+        "right singular module",
+        "rectangular side distinction",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "key_invariants": {
+        "normal_rank": 1,
+        "finite_smith": [
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          1
+        ],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.01599999999962165,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "ignore-right-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-005",
+      "shape": [
+        2,
+        1
+      ],
+      "matrix_pair_sha256": "7d79802df93cf2c3d8e1e232910d9ea6ddc48259f5cb438adab3ef66d67b16f9",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "left singular module",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "left singular module",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 1,
+        "finite_smith": [
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [],
+        "left_indices": [
+          1
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.014999999999417923,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-006",
+      "shape": [
+        5,
+        5
+      ],
+      "matrix_pair_sha256": "87011f82a7d96e2b862e518bf6d99d717f38c8cb334b04e567d897fd389bbd2f",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "right singular module",
+        "high right index",
+        "left singular module",
+        "zero left index"
+      ],
+      "features": [
+        "right singular module",
+        "high right index",
+        "left singular module",
+        "zero left index"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          4
+        ],
+        "left_indices": [
+          0
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.06300000000010186,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "ignore-right-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-007",
+      "shape": [
+        5,
+        5
+      ],
+      "matrix_pair_sha256": "e539bdc0d732f9b386d81e286942adfc9bbc9d0f22cc9c69170d67b966f90993",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "high left index",
+        "exact scaling"
+      ],
+      "features": [
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "high left index",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          0
+        ],
+        "left_indices": [
+          4
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.04700000000048021,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-008",
+      "shape": [
+        2,
+        2
+      ],
+      "matrix_pair_sha256": "6f07041999f9582c510ea1baada591e8674f6d787bda5311f855c254092018a1",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 2,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "4",
+            "-4",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.031000000000858563,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "split-primary-powers",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-009",
+      "shape": [
+        2,
+        2
+      ],
+      "matrix_pair_sha256": "05e1b81089c9b081c60d70e7b285b73841b9b629556c40362a6e99f70b9ea4c5",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module"
+      ],
+      "features": [
+        "finite primary module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 2,
+        "finite_smith": [
+          [
+            "-2",
+            "1"
+          ],
+          [
+            "-2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.014999999999417923,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof"
+      ]
+    },
+    {
+      "id": "case-010",
+      "shape": [
+        4,
+        4
+      ],
+      "matrix_pair_sha256": "f8f1b1ee4c477c259fc4aec5377bd09f104451730ffb1526ef1ba71361b3d0d0",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "exact scaling"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "2",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.0319999999992433,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "split-primary-powers",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-011",
+      "shape": [
+        4,
+        4
+      ],
+      "matrix_pair_sha256": "c534fea892cc633fac65538cc396bcdf15353faa51401f6e06b853973b667783",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "irreducible non-linear factor"
+      ],
+      "features": [
+        "finite primary module",
+        "irreducible non-linear factor"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.031000000000858563,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof"
+      ]
+    },
+    {
+      "id": "case-012",
+      "shape": [
+        4,
+        4
+      ],
+      "matrix_pair_sha256": "8bee4dccd06662a6854e78a20bd196c981aa75b6be0fdcb1d74af6ea6971d058",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "infinite nilpotent partition"
+      ],
+      "features": [
+        "infinite nilpotent partition"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        4,
+        7,
+        9,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          4
+        ],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.014999999999417923,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "no-infinity",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-013",
+      "shape": [
+        4,
+        4
+      ],
+      "matrix_pair_sha256": "0c121f7aa1fc75d40ea4c86923713dbd140a3de1416e1fef0f0bfed12dfc82e0",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "infinite nilpotent partition",
+        "exact scaling"
+      ],
+      "features": [
+        "infinite nilpotent partition",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        4,
+        7,
+        9,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          1,
+          3
+        ],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.031000000000858563,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "no-infinity",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-014",
+      "shape": [
+        4,
+        4
+      ],
+      "matrix_pair_sha256": "ab0ff16bf572730a5e954e6edf582517e7d51e4d00f2078269fe4f72c42d46b5",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "infinite nilpotent partition"
+      ],
+      "features": [
+        "infinite nilpotent partition"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        4,
+        7,
+        9,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2,
+          2
+        ],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.01599999999962165,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "no-infinity",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-015",
+      "shape": [
+        7,
+        7
+      ],
+      "matrix_pair_sha256": "c265d4a5964ccdb1e82cfebbcce153c465810dc84926716d87328c75b88c31f5",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 6,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-1/8",
+            "3/4",
+            "-3/2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          1
+        ],
+        "left_indices": [
+          2
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.1400000000012369,
+      "independent_checker_seconds": 0.01599999999962165,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-016",
+      "shape": [
+        12,
+        12
+      ],
+      "matrix_pair_sha256": "77f23770bcc53ed0aaf99701a254599d543a28ad6d001d79d23528e907dae926",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "exact scaling"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 11,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-2",
+            "1",
+            "-4",
+            "2",
+            "-2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          3
+        ],
+        "right_indices": [
+          2
+        ],
+        "left_indices": [
+          1
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.8119999999998981,
+      "independent_checker_seconds": 0.0319999999992433,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-017",
+      "shape": [
+        8,
+        9
+      ],
+      "matrix_pair_sha256": "aff04713320f5953243792e5b042916a357c47daeaf0ec69824a1b0026f60b9b",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 7,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          0,
+          2
+        ],
+        "left_indices": [
+          1
+        ]
+      },
+      "forcing_classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.10999999999876309,
+      "independent_checker_seconds": 0.015000000001236913,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-018",
+      "shape": [
+        8,
+        9
+      ],
+      "matrix_pair_sha256": "1771551e7258875cc0982e8a98de68fbeb3c5a0f55d0c108c10b630c1592f981",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 6,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          0,
+          1,
+          3
+        ],
+        "left_indices": [
+          0,
+          2
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.125,
+      "independent_checker_seconds": 0.01599999999962165,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-019",
+      "shape": [
+        8,
+        8
+      ],
+      "matrix_pair_sha256": "6a4c71792513e093e35a6e6a83788a707aae94524cc2c41ea7847422dc6d2a90",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "exact scaling"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 8,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-2",
+            "1"
+          ],
+          [
+            "-8",
+            "12",
+            "-14",
+            "13",
+            "-6",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.1720000000004802,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "no-infinity",
+        "split-primary-powers",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-020",
+      "shape": [
+        5,
+        5
+      ],
+      "matrix_pair_sha256": "b229b40905cf1ba59606e6b36ee9fc307c9c223366026f880ca67739dee948ef",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          1
+        ],
+        "right_indices": [
+          1
+        ],
+        "left_indices": [
+          0
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.046999999998661224,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-021",
+      "shape": [
+        6,
+        6
+      ],
+      "matrix_pair_sha256": "562f1934e645f44eb3010979b45b8482f57794bd6fc06cfb66783e162ece43bb",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 5,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          1
+        ],
+        "left_indices": [
+          0
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.046999999998661224,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-022",
+      "shape": [
+        6,
+        6
+      ],
+      "matrix_pair_sha256": "d03db7082acd98c50717daaf34d56746a45da34ceaa818871fb9fee5057193d1",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index",
+        "exact scaling"
+      ],
+      "features": [
+        "finite primary module",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 5,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          2
+        ],
+        "left_indices": [
+          0
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.06199999999989814,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "ignore-right-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-023",
+      "shape": [
+        10,
+        10
+      ],
+      "matrix_pair_sha256": "d19944690c44f4c039da9222defa9d3ef231eea74e43e3bd555ec00dc60d3686",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 9,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "4",
+            "-4",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          3
+        ],
+        "left_indices": [
+          2
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.34399999999914144,
+      "independent_checker_seconds": 0.031000000000858563,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-024",
+      "shape": [
+        7,
+        7
+      ],
+      "matrix_pair_sha256": "4a4628f1809e4fde29178fffc60a465107f82fab25e11b3d71ba7777452932ca",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "infinite nilpotent partition",
+        "right singular module",
+        "zero right index",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "infinite nilpotent partition",
+        "right singular module",
+        "zero right index",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 6,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          0
+        ],
+        "left_indices": [
+          3
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.07799999999951979,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-025",
+      "shape": [
+        6,
+        6
+      ],
+      "matrix_pair_sha256": "9cc6efdfebe6e2994dec7823ee3e2b891d9b84fc9f54950a1fa79693c1eb3e86",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index",
+        "exact scaling"
+      ],
+      "features": [
+        "finite primary module",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 5,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          1
+        ],
+        "right_indices": [
+          3
+        ],
+        "left_indices": [
+          0
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.06300000000010186,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "ignore-right-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-026",
+      "shape": [
+        12,
+        12
+      ],
+      "matrix_pair_sha256": "edb3c4686f60282c2b0c0e584e4ea08d4c7390b6d76ff79cd49adf6e615e7923",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 11,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "2",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          2
+        ],
+        "left_indices": [
+          3
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.5779999999995198,
+      "independent_checker_seconds": 0.031000000000858563,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-027",
+      "shape": [
+        10,
+        10
+      ],
+      "matrix_pair_sha256": "766c11d9817c88dafdd77484dfa01157fa620f61cb55f8591cd0dc6d3f6a1f8f",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 9,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "1",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          3
+        ],
+        "right_indices": [
+          2
+        ],
+        "left_indices": [
+          2
+        ]
+      },
+      "forcing_classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.2180000000007567,
+      "independent_checker_seconds": 0.01599999999962165,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-028",
+      "shape": [
+        18,
+        18
+      ],
+      "matrix_pair_sha256": "8ff2f95899b85cec690b879a8adc79f547ef867b54277681f2f211a4d2a2821b",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 17,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "-2",
+            "1",
+            "2",
+            "-2",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          6
+        ],
+        "right_indices": [
+          3
+        ],
+        "left_indices": [
+          2
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 16.686999999999898,
+      "independent_checker_seconds": 0.14099999999962165,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-029",
+      "shape": [
+        15,
+        15
+      ],
+      "matrix_pair_sha256": "87aa16edae52a4bb583da1a47af450dc9e274d1e2b83e12edf690b01fcaa6d56",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 14,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "2",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "4",
+            "0",
+            "0",
+            "0",
+            "4",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          1
+        ],
+        "left_indices": [
+          1
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 2.436999999999898,
+      "independent_checker_seconds": 0.06300000000010186,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-030",
+      "shape": [
+        1,
+        18
+      ],
+      "matrix_pair_sha256": "62ef8edda5ac5be99597cfae787dbf60cba1147c37f1c5a0e30326c74b58019a",
+      "classification": "easy convention control",
+      "mathematical_family": [
+        "right singular module",
+        "repeated right index",
+        "zero right index",
+        "left singular module",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "right singular module",
+        "repeated right index",
+        "zero right index",
+        "left singular module",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 0,
+        "finite_smith": [],
+        "infinite_sizes": [],
+        "right_indices": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "left_indices": [
+          0
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.015000000001236913,
+      "independent_checker_seconds": 0.01599999999962165,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class"
+      ]
+    },
+    {
+      "id": "case-031",
+      "shape": [
+        18,
+        1
+      ],
+      "matrix_pair_sha256": "75e234ed989829b104bf959ea46f924988a1728481ed81e5fa9ca399530b30fe",
+      "classification": "easy convention control",
+      "mathematical_family": [
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "repeated left index",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "repeated left index",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 0,
+        "finite_smith": [],
+        "infinite_sizes": [],
+        "right_indices": [
+          0
+        ],
+        "left_indices": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "inconsistent"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.01599999999962165,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class"
+      ]
+    },
+    {
+      "id": "case-032",
+      "shape": [
+        12,
+        12
+      ],
+      "matrix_pair_sha256": "09bb10cffbb9672254af538e6d7be945375989f1a69e957f249e4794fb91ece5",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "exact scaling"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 11,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-2",
+            "1",
+            "-4",
+            "2",
+            "-2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          3
+        ],
+        "right_indices": [
+          1
+        ],
+        "left_indices": [
+          2
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 1.4220000000004802,
+      "independent_checker_seconds": 0.031000000000858563,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-033",
+      "shape": [
+        9,
+        8
+      ],
+      "matrix_pair_sha256": "0e289ee8126cf53c58f50a9be4714137278105e06db232673fd2bbcdce53284a",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 7,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          1
+        ],
+        "left_indices": [
+          0,
+          2
+        ]
+      },
+      "forcing_classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.10900000000037835,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-034",
+      "shape": [
+        7,
+        7
+      ],
+      "matrix_pair_sha256": "a598d2a7ec50b06c35aa996e90dd7e692a8d92e5430c0bf00999ea72ccaa6db5",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 6,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-343/8",
+            "147/4",
+            "-21/2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          1
+        ],
+        "left_indices": [
+          2
+        ]
+      },
+      "forcing_classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.125,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-035",
+      "shape": [
+        8,
+        8
+      ],
+      "matrix_pair_sha256": "1d6d79559d01531e6817fed99662e0c4f18264d43eee9b3873672003ec1f0c0f",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "exact scaling"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "exact scaling"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 8,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-5",
+            "1"
+          ],
+          [
+            "-1250",
+            "1500",
+            "-725",
+            "175",
+            "-21",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [],
+        "left_indices": []
+      },
+      "forcing_classes": [
+        "rational",
+        "polynomial",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.18699999999989814,
+      "independent_checker_seconds": 0.0,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "no-infinity",
+        "split-primary-powers",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-036",
+      "shape": [
+        10,
+        11
+      ],
+      "matrix_pair_sha256": "87fab41a7e1712aab6b2dded25f5d683ff7503f4c66e5635e1ac8ef8c3401f89",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "repeated right index",
+        "left singular module",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "finite primary module",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "repeated right index",
+        "left singular module",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 9,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          2,
+          2
+        ],
+        "left_indices": [
+          1
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.26599999999962165,
+      "independent_checker_seconds": 0.01599999999962165,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-037",
+      "shape": [
+        6,
+        6
+      ],
+      "matrix_pair_sha256": "6046d491c2723bbfae6f9cb3d23463e96474b29b2990600adcc7f44ac0f6044d",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "right singular module",
+        "repeated right index",
+        "left singular module",
+        "repeated left index"
+      ],
+      "features": [
+        "right singular module",
+        "repeated right index",
+        "left singular module",
+        "repeated left index"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 4,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          1,
+          1
+        ],
+        "left_indices": [
+          1,
+          1
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.04700000000048021,
+      "independent_checker_seconds": 0.014999999999417923,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-038",
+      "shape": [
+        12,
+        11
+      ],
+      "matrix_pair_sha256": "093beec904ac5c38da7ac1c90ed1028fb4b4a6c5d6fc503f544b76b39d48bf3f",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "repeated left index",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module",
+        "repeated left index",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 10,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "4",
+            "-4",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          1
+        ],
+        "right_indices": [
+          3
+        ],
+        "left_indices": [
+          2,
+          2
+        ]
+      },
+      "forcing_classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.75,
+      "independent_checker_seconds": 0.01600000000144064,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-039",
+      "shape": [
+        14,
+        13
+      ],
+      "matrix_pair_sha256": "6863ba6a1a71a8e4468495698aa3165feacc5f6f7940cc11c2eb9a7bd99f140b",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "high right index",
+        "left singular module",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "features": [
+        "finite primary module",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "high right index",
+        "left singular module",
+        "zero left index",
+        "rectangular side distinction"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 12,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "-1",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          4
+        ],
+        "left_indices": [
+          0,
+          2
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 2.360000000000582,
+      "independent_checker_seconds": 0.046999999998661224,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-040",
+      "shape": [
+        15,
+        15
+      ],
+      "matrix_pair_sha256": "2533b4fa092dbb349b0123d47018570dd6479e79689c6028e7d2238d5bd13ca7",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 14,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "3",
+            "0",
+            "3",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          3
+        ],
+        "right_indices": [
+          3
+        ],
+        "left_indices": [
+          2
+        ]
+      },
+      "forcing_classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 3.936999999999898,
+      "independent_checker_seconds": 0.07800000000133878,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-041",
+      "shape": [
+        15,
+        15
+      ],
+      "matrix_pair_sha256": "64a1795da99c0cd0221871d8c40c82a93c6a8dee51f875ac8ca2b4e1fa72e891",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 14,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "4",
+            "-4",
+            "1"
+          ],
+          [
+            "-8",
+            "12",
+            "-14",
+            "13",
+            "-6",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          4
+        ],
+        "right_indices": [
+          2
+        ],
+        "left_indices": [
+          1
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 2.9689999999991414,
+      "independent_checker_seconds": 0.06199999999989814,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-042",
+      "shape": [
+        14,
+        14
+      ],
+      "matrix_pair_sha256": "ef6b89a5599c06f0a07aeb67d06369cc48582be3d1dce94a406387f22713ff51",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "high right index",
+        "left singular module",
+        "zero left index"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "high right index",
+        "left singular module",
+        "zero left index"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 13,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1/9",
+            "-2/3",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          3
+        ],
+        "right_indices": [
+          8
+        ],
+        "left_indices": [
+          0
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 1.875,
+      "independent_checker_seconds": 0.031000000000858563,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-043",
+      "shape": [
+        14,
+        14
+      ],
+      "matrix_pair_sha256": "a0492257a64e6f4fc341c16b1bdabef119dd1803453505dcc0efcba75e4e5a32",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "high left index"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "infinite nilpotent partition",
+        "right singular module",
+        "zero right index",
+        "left singular module",
+        "high left index"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 13,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          3
+        ],
+        "right_indices": [
+          0
+        ],
+        "left_indices": [
+          8
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 1.0779999999995198,
+      "independent_checker_seconds": 0.04700000000048021,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-044",
+      "shape": [
+        15,
+        15
+      ],
+      "matrix_pair_sha256": "26b27d5eeb40f07d369da5a00cad20b17404a6a29af64bed4bbd29140ff873b9",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 14,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "-3",
+            "3",
+            "2",
+            "-6",
+            "3",
+            "3",
+            "-3",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          2
+        ],
+        "left_indices": [
+          1
+        ]
+      },
+      "forcing_classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 3.063000000000102,
+      "independent_checker_seconds": 0.0930000000007567,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-045",
+      "shape": [
+        15,
+        15
+      ],
+      "matrix_pair_sha256": "242ddcc8896109b8857958ac3ae22a3d0cb19f4462d94ac721518450e791d99a",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 14,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-2",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2,
+          7
+        ],
+        "right_indices": [
+          2
+        ],
+        "left_indices": [
+          2
+        ]
+      },
+      "forcing_classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 2.6409999999996217,
+      "independent_checker_seconds": 0.046000000000276486,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-046",
+      "shape": [
+        15,
+        15
+      ],
+      "matrix_pair_sha256": "a2704b5421fea1ee432a7d533d979fd6072ecc2b4f0abd0e6e18769bf882befb",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "right singular module",
+        "repeated right index",
+        "left singular module",
+        "repeated left index"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "right singular module",
+        "repeated right index",
+        "left singular module",
+        "repeated left index"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 12,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "2",
+            "0",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [],
+        "right_indices": [
+          1,
+          1,
+          3
+        ],
+        "left_indices": [
+          1,
+          1,
+          1
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 0.8289999999997235,
+      "independent_checker_seconds": 0.06199999999989814,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    },
+    {
+      "id": "case-047",
+      "shape": [
+        15,
+        15
+      ],
+      "matrix_pair_sha256": "edc04bfc7fc1f56a413103c21ac5aefceaa101a17524388df30653f16f5d74c8",
+      "classification": "structural/discriminating",
+      "mathematical_family": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "features": [
+        "finite primary module",
+        "repeated primary power",
+        "irreducible non-linear factor",
+        "infinite nilpotent partition",
+        "right singular module",
+        "left singular module"
+      ],
+      "stage_outputs_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applicable_nonempty_stage_branches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "complexity_layers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key_invariants": {
+        "normal_rank": 14,
+        "finite_smith": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "4",
+            "-4",
+            "-7",
+            "8",
+            "10",
+            "-12",
+            "-5",
+            "8",
+            "2",
+            "-4",
+            "1"
+          ]
+        ],
+        "infinite_sizes": [
+          2
+        ],
+        "right_indices": [
+          1
+        ],
+        "left_indices": [
+          1
+        ]
+      },
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ],
+      "oracle_result": "PASS",
+      "oracle_seconds": 7.17200000000048,
+      "independent_checker_seconds": 0.09399999999914144,
+      "alternative_result": "PASS",
+      "incorrect_approaches_rejected": [
+        "generic-full-rank",
+        "no-infinity",
+        "split-primary-powers",
+        "ignore-right-indices",
+        "ignore-left-indices",
+        "nonminimal-basis",
+        "invalid-frame",
+        "early-stages-only",
+        "noninvariant-frame",
+        "invalid-resolvent",
+        "inconsistent-projector",
+        "wrong-forcing-class",
+        "inflated-pole-denominator",
+        "missing-pole-proof",
+        "numerical-spectral-blocks"
+      ]
+    }
+  ]
+}

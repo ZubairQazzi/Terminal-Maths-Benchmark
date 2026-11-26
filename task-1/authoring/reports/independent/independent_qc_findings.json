@@ -1,0 +1,66 @@
+{
+  "package_sha256": "77f1da70c5c59673b77bf0631d700e486c9f17d562daf6c384558f63dc8942e6",
+  "blockers": [],
+  "findings": [
+    {
+      "id": "W1",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "Empirical difficulty for frontier models is unmeasured. Oracle, mutated and transformed controls are deterministic author/reviewer programs, not model attempts. Historical Gemini trials were infrastructure interrupted and supply zero verified graded successes, not scientific failures.",
+      "evidence": [
+        "authoring/reports/baseline_model_evidence.json",
+        "README.md:28",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": "None for honest local package QC; obtain separately authorized valid model trials before claiming empirical frontier difficulty."
+    },
+    {
+      "id": "W2",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "Originality is supported only against the pinned 97-instruction corpus and a limited saved code reference. It is not a web-wide plagiarism or mathematical-novelty proof.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json",
+        "authoring/reports/source_provenance.md"
+      ],
+      "required_correction": "Retain this limitation in any originality claim."
+    },
+    {
+      "id": "W3",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "The reference frame search has an algebraically complete finite fallback but exponentially large worst-case search space. Measured native shipped-family solvability is strong; a universal 180-second runtime guarantee is not established.",
+      "evidence": [
+        "solution/frames.py:98",
+        "README.md:32",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": "Do not generalize observed resource margins into a worst-case complexity claim."
+    },
+    {
+      "id": "W4",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "CTRF reports 12 four-case batches. A failed batch stops at its first failing pencil; per-pencil discrimination is therefore established by separate author/reviewer computations, not native CTRF alone. Numerical rank alone is correct on all 48 and provides no discrimination evidence.",
+      "evidence": [
+        "tests/test_outputs.py:8",
+        "authoring/reports/independent/independent_probe_results.json",
+        "authoring/reports/control_audit.json",
+        "authoring/reports/additional_negative_controls.json"
+      ],
+      "required_correction": "Continue reporting batch-native and per-pencil evidence separately."
+    },
+    {
+      "id": "W5",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "This is one fresh-context AI reviewer opinion, not independent human domain review, a two-vote panel, an external QC service approval, publication readiness certification or frontier-model approval.",
+      "evidence": [
+        "task.toml:19",
+        "authoring/provenance/QC-CHECKLIST.md"
+      ],
+      "required_correction": "Describe the result as independent local QC, with its scope."
+    }
+  ],
+  "fix_recheck": "No confirmed package defect required a fix. Final file hashes match the initial independent snapshot. No post-fix recheck is pending."
+}

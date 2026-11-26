@@ -1,0 +1,1010 @@
+{
+  "reviewer": "distinct fresh-context independent QC sub-agent",
+  "completed_at_utc": "2026-11-26T16:05:10.280312+00:00",
+  "verdict": "PASS_WITH_WARNINGS_LOCAL_INDEPENDENT_OPINION",
+  "counts": {
+    "static_pass": 29,
+    "rubric_pass": 38,
+    "fail": 0,
+    "needs_review": 0,
+    "warnings": 5
+  },
+  "package_sha256": "77f1da70c5c59673b77bf0631d700e486c9f17d562daf6c384558f63dc8942e6",
+  "package_hash_algorithm": "SHA256(canonical sorted compact JSON mapping POSIX relative file paths to SHA256 bytes), includes dotfiles",
+  "file_sha256": {
+    "environment/.dockerignore": "6e1a66ba01b578bbed119a035eaaf4715d49dd17bc4729281b5f749d386688a9",
+    "environment/data/examples.json": "b1e160c870900b8c7969d21036bd3bde6f2ea75e0b7628c311c83b39a98bcda8",
+    "environment/Dockerfile": "df8fca82c821ffff29257b0e13880d850182c4d97682b5cbd9ebecc1b82d167d",
+    "environment/requirements.txt": "a6440a710723f84f4612e074d2f27f5fec930623f20faf0163d436ee2e31e7f4",
+    "environment/spec.md": "0f414435e8149301a40c07bb709af805c85fbd4751d0b1cfe24d4908009aa48f",
+    "instruction.md": "2519abad449ef66e503332058bf34a3d9500a056250f7d32e30793be5dae355e",
+    "README.md": "003789fe34708963987494e5cb701cba7a6a9238b75e64e89fe84f5df822bd37",
+    "solution/frames.py": "4360c85a4ff71bc933c61b828a4e0ec09dc3c49caf8a7c37cd1dc5bb991582fd",
+    "solution/oracle.py": "afb8cebcb2dc375552072b7e6a04110dc0b79f7269f99a3c23432a318aa604db",
+    "solution/solve.py": "16bd88e40a960e6f810bea094cf625e5e178f5496ab694ca983ea4f400e60e6a",
+    "solution/solve.sh": "5692f047dc28ae9d2247ca4dcfc0245241585df034fdea0f3a007b202fe2a050",
+    "task.toml": "336ffcef86ef523a7830a9ade34e8da99ecf9551ad6a7388f7d3a671f3b500d5",
+    "tests/.dockerignore": "6e1a66ba01b578bbed119a035eaaf4715d49dd17bc4729281b5f749d386688a9",
+    "tests/cases.py": "9a49884edf3c51d923a3a2781c828c2b9f783cbdad3ad11114ec5e2e7cb4079a",
+    "tests/certificates.py": "ed944b9970f12fa573e7303a8335dca626491064f871f52d88304e85083c272d",
+    "tests/constructive.py": "2c3173ae7bc467111d5a02a11cfc4668925e32b073028a110f4a0896bae80841",
+    "tests/Dockerfile": "20e209fa3a5fa18a80769dd2f9362405768c0c9f86ca9cc89eee36f6057ce307",
+    "tests/exact.py": "0f07b9d35fa1032e59e40e377cd36955571d5046b84af3d535b1bdd7b9e3ce2e",
+    "tests/harness.py": "416f6e4afabdc14848082e5994f5c5467557162b78658180342b72fea5cbae39",
+    "tests/requirements.txt": "e875cfc28b8ba39ed6981d356c5cc7d976534ee05f1c49a0dbd2b97c3fabce1c",
+    "tests/test.sh": "b691e721cf008ddf0715c6a730c71c29949ba1ff97e4f3c9892b6821c9aefe5f",
+    "tests/test_outputs.py": "e96876c81fe0d42fa4a602f616d7a661b7e7345d5e3d627d1bc34340d17584a2"
+  },
+  "unchanged_since_initial_findings": true,
+  "criteria": [
+    {
+      "id": "entry-files",
+      "label": "Required files",
+      "requirement": "Check for `instruction.md`, `task.toml`, `environment/Dockerfile`, `solution/solve.sh`, and `tests/test.sh`.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "All five required files exist.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=entry-files]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "config-fields",
+      "label": "Recognized settings",
+      "requirement": "Parse the manifest and check its field names and table structure against the supported configuration.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "TOML parses; independent installed Harbor ALL lint returned [].",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=config-fields]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task-fields",
+      "label": "Publication information",
+      "requirement": "Check the publisher, task name, description, authors, keywords, and required metadata.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=task-fields]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task-path",
+      "label": "Folder matches the field",
+      "requirement": "Check that the task\u2019s directory agrees with the domain and field in its manifest.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=task-path]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task-structure",
+      "label": "Folder layout",
+      "requirement": "Check that instructions and configuration are at the root and that environment, solution, grading, and authoring files are in their expected locations.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=task-structure]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task-slug",
+      "label": "Short task name",
+      "requirement": "Check the folder name against the allowed format and length.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=task-slug]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task-readme",
+      "label": "Reviewer guide",
+      "requirement": "If a README is included, check its expected sections and whether its managed header matches the manifest.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=task-readme]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "canary",
+      "label": "Identification marker",
+      "requirement": "Check that eligible source files carry the marker required by the active profile.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=canary]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task-absolute-path",
+      "label": "Instruction paths",
+      "requirement": "Flag relative locations where the solver needs an absolute path to an input or deliverable.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=task-absolute-path]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "instruction-suffix",
+      "label": "Closing instructions",
+      "requirement": "Check the standard closing paragraph and compare its stated time allowance with `agent.timeout_sec`.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=instruction-suffix]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "instruction-similarity",
+      "label": "Similar wording",
+      "requirement": "Compare instruction text against the pinned main and lite task collections and flag close matches.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "All 97 manifest hashes and saved-tree coverage verified; independently recomputed maximum instruction TF-IDF cosine 0.16791452110672503 < 0.8 (substantive 0.16450251628306747). Finite corpus only.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=instruction-similarity]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "test-file-references",
+      "label": "Files expected by the grader",
+      "requirement": "Look for submission paths shared by the tests and reference solution that are missing from the instructions or manifest.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=test-file-references]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "dockerfile-references",
+      "label": "Files copied into images",
+      "requirement": "Check that local sources referenced by supported `COPY` and `ADD` instructions exist in the build context.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=dockerfile-references]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "dockerfile-sanity",
+      "label": "Container build instructions",
+      "requirement": "Flag prohibited Dockerfile patterns that can make the image invalid or break packaging rules.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=dockerfile-sanity]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "dockerfile-platform",
+      "label": "Processor settings",
+      "requirement": "Flag `FROM --platform` settings that hardcode a processor architecture.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=dockerfile-platform]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "allow-internet",
+      "label": "Network settings",
+      "requirement": "Check the solver and verifier network declarations against the active rules.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=allow-internet]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "separate-verifier",
+      "label": "Separate grader setup",
+      "requirement": "Check the verifier environment declaration and how the expected artifacts are handed over.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=separate-verifier]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "compose-host-binds",
+      "label": "Host folder access",
+      "requirement": "Flag prohibited host-directory mounts in Docker Compose volumes.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=compose-host-binds]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task-timeout",
+      "label": "Time limits",
+      "requirement": "Check the configured timeouts against the standard rules and any additional local grader or build limit.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=task-timeout]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "gpu-types",
+      "label": "GPU requests",
+      "requirement": "Check GPU requests against the supported hardware types.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=gpu-types]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task-resources",
+      "label": "Solver resources",
+      "requirement": "Check CPU, memory, storage, and GPU declarations against the package rules and any local caps.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=task-resources]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "verifier-resources",
+      "label": "Grader resources",
+      "requirement": "Check that a separate verifier declares the resources it needs and flag suspicious differences from the solver\u2019s allocation.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=verifier-resources]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "nproc",
+      "label": "CPU usage",
+      "requirement": "Flag bare `nproc` calls that may count host processors and create too many workers.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=nproc]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "verifier-tooling-baked",
+      "label": "Grader tools installed ahead of time",
+      "requirement": "Check for dependencies that the verifier tries to install during grading.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=verifier-tooling-baked]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "trial-network-fetch",
+      "label": "Downloads during trials",
+      "requirement": "Flag prohibited live network fetches in the inspected trial scripts.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=trial-network-fetch]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "pip-pinning",
+      "label": "Fixed Python package versions",
+      "requirement": "Check that Python dependencies are pinned where repeatable installs require it.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=pip-pinning]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "pytest-version",
+      "label": "Supported test tools",
+      "requirement": "When the task pins either test tool, check against the required versions `pytest==8.4.1` and `pytest-json-ctrf==0.3.5`.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=pytest-version]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "test-sh-sanity",
+      "label": "Grading startup script",
+      "requirement": "Check `tests/test.sh` for shell patterns and setup that conflict with grading conventions.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=test-sh-sanity]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "binary-reward",
+      "label": "Binary reward",
+      "requirement": "Check score-writing code for patterns that can produce an invalid value in `/logs/verifier/reward.txt`. The grading contract uses `0` or `1`.",
+      "kind": "static",
+      "status": "PASS",
+      "rationale": "Independently reran the pinned upstream shell implementation in the existing offline Linux image; exit code 0. Source inspection found no conflicting behavior.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json#checks[id=binary-reward]"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "well_specified",
+      "label": "Clear deliverable",
+      "requirement": "An independent expert can identify the goal, output path, format, grading metrics, and any convention or execution limit that changes the answer.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The public contract gives the executable, paths, exact encodings, complete output schema, limits and all-or-nothing scoring.",
+      "evidence": [
+        "instruction.md:6",
+        "environment/spec.md:6",
+        "environment/spec.md:62"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "test_instruction_alignment",
+      "label": "Instructions and tests agree",
+      "requirement": "Each scored requirement appears in the instructions, and the grader checks each promised requirement.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "All thirteen stated scientific obligations map to named exact checker stages. No extra normalization was found; arbitrary valid alternatives passed.",
+      "evidence": [
+        "tests/constructive.py:38",
+        "tests/constructive.py:103",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "instruction_clarity",
+      "label": "Clear, outcome-focused wording",
+      "requirement": "The instructions make the task easy to understand, give the necessary context, and state what the submission must achieve without giving away the method.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The instructions state required outcomes and delegate detailed conventions to one solver-visible specification. The minimum-pole proof explains the certificate meaning without prescribing an implementation.",
+      "evidence": [
+        "instruction.md:4",
+        "environment/spec.md:66"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "structured_data_schema",
+      "label": "Structured output contract",
+      "requirement": "For structured submissions, the specified fields, types, and layout agree with what the grader reads.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Case and forcing IDs, dimensional encodings, exact scalars, empty dimensions and ignored extras match the parser; own native positive and negative grammar probes passed.",
+      "evidence": [
+        "environment/spec.md:8",
+        "environment/spec.md:10",
+        "tests/harness.py:94",
+        "authoring/reports/independent/independent_runtime_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "typos",
+      "label": "Correct references",
+      "requirement": "Names, paths, commands, and symbols point to the intended files or concepts.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Referenced runtime paths exist; subdiagonal companion, signs, transpose conventions and section cross-references agree with code and hand calculations.",
+      "evidence": [
+        "environment/spec.md:26",
+        "tests/constructive.py:15",
+        "solution/oracle.py:71"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "hint_discoverability",
+      "label": "Discoverable hints",
+      "requirement": "When a hint exists, its information can be traced to solver-visible evidence or established domain knowledge.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Conditional applicability: no separate hint mechanism is supplied. Treating the public conventions as guidance, the block definitions, finite/infinite distinction, scalar grammar and certificate identities are discoverable. No private hint is required.",
+      "evidence": [
+        "environment/spec.md:22",
+        "environment/spec.md:28",
+        "environment/Dockerfile:6"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "scientifically_grounded",
+      "label": "Scientific grounding",
+      "requirement": "The work reflects a real research workflow and produces a result useful for a scientific question or decision.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Exact Kronecker/module classification, saturation and forced descriptor-system poles form a coherent symbolic linear-algebra workflow. Own proof audit validates the intrinsic denominator claim.",
+      "evidence": [
+        "environment/spec.md:4",
+        "environment/spec.md:66",
+        "authoring/reports/mathematical_correctness.md"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "scope",
+      "label": "Scientific scope",
+      "requirement": "The problem and deliverable fit the assigned domain and field.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The work is applied mathematics, specifically exact symbolic matrix-pencil and polynomial-module computation.",
+      "evidence": [
+        "task.toml:11",
+        "task.toml:12",
+        "instruction.md:4"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "essential_difficulty",
+      "label": "Essential difficulty",
+      "requirement": "The challenge comes from the science or reasoning the solver must do. Formatting, repetition, and precision demands have a scientific purpose when required.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The hard steps are constant matrix-pair equivalence, polynomial splittings and local pole obstructions. Exact arithmetic, rather than arbitrary tolerance, is scientifically needed.",
+      "evidence": [
+        "README.md:28",
+        "environment/spec.md:36",
+        "environment/spec.md:62"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "novel",
+      "label": "Novelty",
+      "requirement": "The instance requires new reasoning or computation. The judge can use similarity findings to assess whether an earlier answer can be copied.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The instance requires input-driven constructive computations. Independent pinned-corpus comparison is below threshold; this does not prove global code or mathematical novelty.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json",
+        "solution/oracle.py:99",
+        "authoring/reports/source_provenance.md"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "agentic",
+      "label": "Meaningful tool use",
+      "requirement": "Reaching a correct answer requires work such as exploring data, testing a hypothesis, or running a computation.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "A complete solver must compute matrix/polynomial invariants, construct and verify transformations, and generate exact forcing certificates over multiple fresh invocations.",
+      "evidence": [
+        "solution/oracle.py:99",
+        "tests/harness.py:68",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "verifiable",
+      "label": "Verifiability",
+      "requirement": "The grader can observe the required outcome and distinguish correct work from meaningful errors.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Independent standard-library identity checks, expected canonical invariants and explicit lower-bound witnesses distinguish scientific mistakes from valid alternatives.",
+      "evidence": [
+        "tests/constructive.py:37",
+        "tests/exact.py:38",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "solvable",
+      "label": "Solvability",
+      "requirement": "A correct approach can finish and pass using the data, tools, and resources available to the solver.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Two native oracle runs each pass all twelve batches within process budgets. The input-driven reference imports no hidden generator, and independent transformed outputs pass all 48 pencils.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json",
+        "solution/oracle.py:10",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "outcome_verified",
+      "label": "Alternative valid methods",
+      "requirement": "A scientifically valid alternative can earn full credit by meeting the same result requirements.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Full-family independent alternatives passed with reversed block order, rational frame rescaling, nonconstant unimodular basis changes, high-degree duals/inverses/projectors/witnesses and kernel-added particular solutions.",
+      "evidence": [
+        "authoring/reports/independent/independent_probe_results.json",
+        "authoring/evidence/independent_probes.py:independent_alternative",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "functional_verification",
+      "label": "Functional verification",
+      "requirement": "The grader checks the actual behavior or scientific output and catches answers that only look correct.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The checker evaluates actual scientific identities. Native partial, resolvent mutant, example hardcoder, shape-aware universal-zero control and no-op receive reward zero; the literal constant baseline is rejected in-process on all 48.",
+      "evidence": [
+        "tests/constructive.py:68",
+        "tests/constructive.py:80",
+        "tests/constructive.py:102",
+        "authoring/reports/independent/independent_static_results.json",
+        "authoring/reports/additional_negative_controls.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "ground_truth_provenance",
+      "label": "Ground truth provenance",
+      "requirement": "The expected values or scoring objective can be traced to their source, such as a generator, published data, or an independent calculation.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Expected invariants follow known canonical blocks under explicitly tracked invertible integer shears/scalings. The reference instead computes Smith data from matrices; selected Hilbert nullities were independently recomputed.",
+      "evidence": [
+        "tests/cases.py:87",
+        "tests/cases.py:60",
+        "solution/oracle.py:38",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "graded_instances_discriminate",
+      "label": "Discriminating test cases",
+      "requirement": "Check per-case results from plausible trivial guesses when available, and account for any intentionally easy cases described in the documentation.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The suite contains 48 pencils, with six disclosed easy controls and 42 structural cases. Per-case mutant records and separate zero/constant/numerical heuristics show discrimination; numerical rank alone correctly survives all cases and is not misrepresented.",
+      "evidence": [
+        "tests/cases.py:165",
+        "authoring/reports/control_audit.json",
+        "authoring/reports/additional_negative_controls.json",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "solution_quality",
+      "label": "Reference solution quality",
+      "requirement": "The reference derives its answer from the supplied inputs, and reviewers can inspect the implementation that actually produces it.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The shipped oracle derives invariants and certificates from INPUT, never from IDs or expected data. The homomorphism-frame search checks both pair identities exactly. Its finite fallback is complete but has no practical worst-case guarantee.",
+      "evidence": [
+        "solution/oracle.py:99",
+        "solution/frames.py:59",
+        "README.md:32"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "do_not_modify_enforced",
+      "label": "Protected files",
+      "requirement": "When the instructions protect a file, the verifier or execution boundary enforces that requirement.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The candidate runs from a root-owned copied source tree and cannot write that source, tests or reward. Protected source and symlink rules are explicit; own native assertions passed.",
+      "evidence": [
+        "tests/harness.py:54",
+        "tests/harness.py:29",
+        "instruction.md:6",
+        "authoring/reports/independent/independent_runtime_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "deterministic_reproducible",
+      "label": "Reproducibility",
+      "requirement": "Builds and runs reproduce the expected data and score within the task\u2019s stated rules for variation.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Seeded matrices, forcings, opaque IDs and reproducible exact frame search produce repeated oracle successes. Both image bases and package versions are pinned.",
+      "evidence": [
+        "tests/cases.py:165",
+        "solution/frames.py:91",
+        "authoring/reports/independent/independent_static_results.json",
+        "environment/Dockerfile:2"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "separate_verifier_configured",
+      "label": "Separate verifier setup",
+      "requirement": "The verifier has the intended inputs and tools, including matching copies of any shared data required by both environments.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The manifest selects a separate no-network verifier, with its own baked dependencies and only the submission artifact handed over.",
+      "evidence": [
+        "task.toml:27",
+        "task.toml:30",
+        "tests/Dockerfile:5",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "verifier_execution_isolation",
+      "label": "Submitted code isolation",
+      "requirement": "When the verifier runs submitted code, the code cannot write the score, modify grading files, or read private answers.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "No candidate import occurs in the grader. Fresh subprocesses drop groups and UID/GID; tests/logs and source are inaccessible. Own native assertions verify the active image, whose checker file hashes match the reviewed package.",
+      "evidence": [
+        "tests/harness.py:71",
+        "tests/harness.py:27",
+        "tests/test.sh:7",
+        "authoring/reports/independent/independent_runtime_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "anti_cheat_robustness",
+      "label": "Resistance to shortcuts",
+      "requirement": "The grading setup and available controls show whether shortcuts can earn credit without solving the scientific problem.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Runtime input is private and only public spec/examples enter the agent image. Fresh offline UID-limited processes, exact certificates and failed no-op/hardcoder/constant controls prevent observed shortcuts from full reward.",
+      "evidence": [
+        "authoring/reports/independent/independent_runtime_results.json",
+        "tests/harness.py:44",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task_security",
+      "label": "Task security",
+      "requirement": "Build and runtime files avoid unsafe access to credentials, the host, and unrelated networks. Sensitive operations have a clear task purpose.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "No runtime credentials, provider integrations, host binds or unexplained external operations were found. The verifier has no network and candidate environment is rebuilt from an allowlist.",
+      "evidence": [
+        "tests/harness.py:59",
+        "task.toml:30",
+        "authoring/reports/independent/independent_runtime_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "resource_configuration",
+      "label": "Resource suitability",
+      "requirement": "Time, CPU, memory, storage, and other requested resources are reasonable and give valid approaches enough room to finish.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "The 2 CPU/4 GiB environments, 2 GiB candidate process limit, 180-second invocation budget and 3600-second verifier budget comfortably cover measured native solutions. General worst-case runtime remains unproved.",
+      "evidence": [
+        "task.toml:31",
+        "tests/harness.py:23",
+        "tests/harness.py:74",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task_toml_schema",
+      "label": "Manifest schema",
+      "requirement": "The manifest uses supported settings and supplies the naming, publisher, and metadata required by the active profile.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Independent installed-Harbor all-rule lint returns an empty issue list, TOML parses, and all required metadata/settings pass the pinned local profile checks.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json",
+        "task.toml:2",
+        "task.toml:10"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "environment_hygiene",
+      "label": "Solver image contents",
+      "requirement": "The solver image contains the needed tools and data. Reference solutions, private answers, and grading materials stay outside the solver\u2019s view.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Independent inspection of the actual agent image finds exactly spec.md and data/examples.json under /app, pinned math packages, and no oracle/test/solution exposure.",
+      "evidence": [
+        "authoring/reports/independent/independent_runtime_results.json",
+        "environment/Dockerfile:7",
+        "environment/requirements.txt:2"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "artifact_efficiency",
+      "label": "Artifact transfer",
+      "requirement": "The verifier receives the files it needs, and collection handles failures without reusing stale outputs.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Only /app/submission transfers; each invocation copies it into fresh read-only source/work locations, rejects symlinks, and requires a newly created output. Regular helpers in cache-named directories remain usable.",
+      "evidence": [
+        "task.toml:3",
+        "tests/harness.py:47",
+        "tests/harness.py:39",
+        "authoring/reports/independent/independent_runtime_results.json",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "ctrf_reporting",
+      "label": "Individual test results",
+      "requirement": "When the grader runs discrete tests, the review evidence shows the outcome of each applicable check.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "All twelve discrete tests have distinct names and raw CTRF records. Each is a four-case batch, so CTRF is not per-pencil reporting; per-pencil author and reviewer files provide that finer evidence.",
+      "evidence": [
+        "tests/test_outputs.py:14",
+        "authoring/reports/independent/independent_static_results.json",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task_authoring_dir",
+      "label": "Authoring material",
+      "requirement": "Review-only material belongs in `authoring/`. Runtime files contain the material needed to build, solve, and grade the task.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Review scripts, trajectories, reports, controls and corpus are outside the active package under authoring/. Only the reviewer README remains as intended task documentation.",
+      "evidence": [
+        "README.md:32",
+        "authoring/reports/independent/independent_static_results.json",
+        "authoring/reports/independent/initial_findings.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "no_extraneous_files",
+      "label": "Necessary files",
+      "requirement": "Every shipped file has a required purpose or is covered by an exception in the rubric.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "All 22 active files have runtime, configuration, image-build or reviewer-documentation roles. certificates.py supplies the parser/rank/basis primitives used by constructive.py; no report or cached answer is shipped.",
+      "evidence": [
+        "tests/constructive.py:4",
+        "tests/.dockerignore:1",
+        "authoring/reports/independent/initial_findings.json#file_sha256"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "reviewable",
+      "label": "Reviewability",
+      "requirement": "Another reviewer can trace the assumptions, inputs, and calculations through to an expected result.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Public definitions, canonical generator, exact checker, input-driven oracle, raw logs and reviewer-owned probes permit end-to-end tracing. Initial findings and unchanged hash establish the reviewed point in time.",
+      "evidence": [
+        "environment/spec.md:14",
+        "tests/constructive.py:37",
+        "authoring/reports/independent/independent_static_results.json",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "difficulty_explanation_quality",
+      "label": "Difficulty explanation",
+      "requirement": "The documentation explains the specific scientific decisions that make the task challenging and where plausible simpler approaches fall short.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "README identifies why Smith-only, numerical, nonsaturated-basis and nonminimal-denominator approaches are insufficient, while disclosing easy controls and unmeasured frontier difficulty.",
+      "evidence": [
+        "README.md:26",
+        "README.md:28"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "solution_explanation_quality",
+      "label": "Reference explanation",
+      "requirement": "The documentation explains the reference approach and connects it to the implemented solution.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "README correctly describes invariants, homomorphism-space frames, polynomial splitting, gcd cancellation and local pole witnesses; the implementation and own proof review support those claims.",
+      "evidence": [
+        "README.md:30",
+        "solution/oracle.py:127",
+        "solution/frames.py:98"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "verification_explanation_quality",
+      "label": "Verification explanation",
+      "requirement": "The documentation describes what the grader measures and why the checks suffice. Where the rubric requires it, calibration evidence shows how alternative correct methods and flawed methods scored.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "README identifies exact checks, independent expected data, valid alternative controls, negative mutants and process isolation, and explicitly excludes historical API interruptions from difficulty evidence.",
+      "evidence": [
+        "README.md:34",
+        "authoring/reports/independent/independent_static_results.json",
+        "authoring/reports/independent/independent_probe_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "category_and_tags",
+      "label": "Category and tags",
+      "requirement": "The labels describe the actual science and methods clearly enough to find and group the task.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "Tags accurately identify mathematics, pencils, exact arithmetic, minimal bases and Smith form; metadata matches actual work.",
+      "evidence": [
+        "task.toml:9",
+        "task.toml:21"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task_name",
+      "label": "Published task name",
+      "requirement": "The name is descriptive and follows the active naming rules.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "certified-pencil-structure is a descriptive three-token kebab-case slug and the task name uses the required terminal-bench-science namespace.",
+      "evidence": [
+        "task.toml:5",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": null
+    },
+    {
+      "id": "task_readme",
+      "label": "Reviewer README",
+      "requirement": "When included, the README provides accurate, useful context and reflects the task as packaged.",
+      "kind": "rubric",
+      "status": "PASS",
+      "rationale": "README header matches the manifest and its difficulty/reference/verification prose matches reviewed behavior. Claims of scientific difficulty are qualified by explicit calibration limits.",
+      "evidence": [
+        "README.md:2",
+        "README.md:26",
+        "README.md:30",
+        "README.md:34",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "W1",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "Empirical difficulty for frontier models is unmeasured. Oracle, mutated and transformed controls are deterministic author/reviewer programs, not model attempts. Historical Gemini trials were infrastructure interrupted and supply zero verified graded successes, not scientific failures.",
+      "evidence": [
+        "authoring/reports/baseline_model_evidence.json",
+        "README.md:28",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": "None for honest local package QC; obtain separately authorized valid model trials before claiming empirical frontier difficulty."
+    },
+    {
+      "id": "W2",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "Originality is supported only against the pinned 97-instruction corpus and a limited saved code reference. It is not a web-wide plagiarism or mathematical-novelty proof.",
+      "evidence": [
+        "authoring/reports/independent/independent_static_results.json",
+        "authoring/reports/source_provenance.md"
+      ],
+      "required_correction": "Retain this limitation in any originality claim."
+    },
+    {
+      "id": "W3",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "The reference frame search has an algebraically complete finite fallback but exponentially large worst-case search space. Measured native shipped-family solvability is strong; a universal 180-second runtime guarantee is not established.",
+      "evidence": [
+        "solution/frames.py:98",
+        "README.md:32",
+        "authoring/reports/independent/independent_static_results.json"
+      ],
+      "required_correction": "Do not generalize observed resource margins into a worst-case complexity claim."
+    },
+    {
+      "id": "W4",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "CTRF reports 12 four-case batches. A failed batch stops at its first failing pencil; per-pencil discrimination is therefore established by separate author/reviewer computations, not native CTRF alone. Numerical rank alone is correct on all 48 and provides no discrimination evidence.",
+      "evidence": [
+        "tests/test_outputs.py:8",
+        "authoring/reports/independent/independent_probe_results.json",
+        "authoring/reports/control_audit.json",
+        "authoring/reports/additional_negative_controls.json"
+      ],
+      "required_correction": "Continue reporting batch-native and per-pencil evidence separately."
+    },
+    {
+      "id": "W5",
+      "severity": "warning",
+      "status": "open-limitation",
+      "finding": "This is one fresh-context AI reviewer opinion, not independent human domain review, a two-vote panel, an external QC service approval, publication readiness certification or frontier-model approval.",
+      "evidence": [
+        "task.toml:19",
+        "authoring/provenance/QC-CHECKLIST.md"
+      ],
+      "required_correction": "Describe the result as independent local QC, with its scope."
+    }
+  ],
+  "own_tests": {
+    "mathematical_passed": 280,
+    "mathematical_failed": 0,
+    "native_runtime_passed": 5,
+    "native_runtime_failed": 0,
+    "static_passed": 29,
+    "static_failed": 0
+  },
+  "independence": "Initial findings were recorded before creator README or explanatory/proof/design/QC verdict reports. Subsequent reports were inspected only as secondary evidence. Active task package was never modified by reviewer.",
+  "fix_recheck": "No confirmed package defect required a fix. Final file hashes match the initial independent snapshot. No post-fix recheck is pending.",
+  "scope_limitations": [
+    "Empirical difficulty for frontier models is unmeasured. Oracle, mutated and transformed controls are deterministic author/reviewer programs, not model attempts. Historical Gemini trials were infrastructure interrupted and supply zero verified graded successes, not scientific failures.",
+    "Originality is supported only against the pinned 97-instruction corpus and a limited saved code reference. It is not a web-wide plagiarism or mathematical-novelty proof.",
+    "The reference frame search has an algebraically complete finite fallback but exponentially large worst-case search space. Measured native shipped-family solvability is strong; a universal 180-second runtime guarantee is not established.",
+    "CTRF reports 12 four-case batches. A failed batch stops at its first failing pencil; per-pencil discrimination is therefore established by separate author/reviewer computations, not native CTRF alone. Numerical rank alone is correct on all 48 and provides no discrimination evidence.",
+    "This is one fresh-context AI reviewer opinion, not independent human domain review, a two-vote panel, an external QC service approval, publication readiness certification or frontier-model approval."
+  ]
+}

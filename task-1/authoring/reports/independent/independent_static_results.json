@@ -1,0 +1,831 @@
+{
+  "checks": [
+    {
+      "id": "task-fields",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/task.toml...\nAll task.toml files contain the required fields with valid values\n",
+      "stderr": ""
+    },
+    {
+      "id": "task-path",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": "task-structure",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure...\nAll task directories have a recognized structure\n",
+      "stderr": ""
+    },
+    {
+      "id": "task-slug",
+      "exit_code": 0,
+      "stdout": "PASS tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure (3 tokens)\n",
+      "stderr": ""
+    },
+    {
+      "id": "task-readme",
+      "exit_code": 0,
+      "stdout": "checked 1 tasks: 0 stale, 0 hand-written (ignored)\n",
+      "stderr": ""
+    },
+    {
+      "id": "canary",
+      "exit_code": 0,
+      "stdout": "All files contain the required canary string\n",
+      "stderr": ""
+    },
+    {
+      "id": "task-absolute-path",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": "instruction-suffix",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure...\nAll instruction.md files end with the canonical timeout/anti-cheat line\n",
+      "stderr": ""
+    },
+    {
+      "id": "test-file-references",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": "dockerfile-references",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": "dockerfile-sanity",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": "dockerfile-platform",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": "allow-internet",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/task.toml...\nAll task.toml files declare a valid network policy\n",
+      "stderr": ""
+    },
+    {
+      "id": "separate-verifier",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure...\nAll tasks are configured for separate verifier mode\n",
+      "stderr": ""
+    },
+    {
+      "id": "compose-host-binds",
+      "exit_code": 0,
+      "stdout": "PASS tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure\n",
+      "stderr": ""
+    },
+    {
+      "id": "task-timeout",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/task.toml...\nAll task.toml timeouts are valid (agent = 8h, verifier <= 8h)\n",
+      "stderr": ""
+    },
+    {
+      "id": "gpu-types",
+      "exit_code": 0,
+      "stdout": "All task.toml GPU declarations are valid\n",
+      "stderr": ""
+    },
+    {
+      "id": "task-resources",
+      "exit_code": 0,
+      "stdout": "All task.toml resource requests are within limits\n",
+      "stderr": ""
+    },
+    {
+      "id": "verifier-resources",
+      "exit_code": 0,
+      "stdout": "Every [verifier.environment] declares its resources\n",
+      "stderr": ""
+    },
+    {
+      "id": "nproc",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure...\nAll scripts avoid bare nproc\n",
+      "stderr": ""
+    },
+    {
+      "id": "verifier-tooling-baked",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure/tests/test.sh...\nAll separate-verifier tasks bake their verifier tooling into the image\n",
+      "stderr": ""
+    },
+    {
+      "id": "trial-network-fetch",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure...\nNo external trial-time fetches in tests/test.sh\n",
+      "stderr": ""
+    },
+    {
+      "id": "pip-pinning",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure...\nAll pip / uv pip / uvx --with installs are pinned\n",
+      "stderr": ""
+    },
+    {
+      "id": "pytest-version",
+      "exit_code": 0,
+      "stdout": "Checking tasks/mathematical-sciences/applied-mathematics/certified-pencil-structure...\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "test-sh-sanity",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": "binary-reward",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": "instruction-similarity",
+      "exit_code": 0,
+      "corpus_commit": "e84fba709382ba3d7d4c129e24c904254991dc32",
+      "corpus_files": 97,
+      "all_manifest_hashes_match": true,
+      "complete_against_saved_tree": true,
+      "full": {
+        "maximum": 0.16791452110672503,
+        "closest": "tasks/engineering-sciences/chemical-engineering/reactor-safety-control/instruction.md"
+      },
+      "substantive": {
+        "maximum": 0.16450251628306747,
+        "closest": "tasks/engineering-sciences/chemical-engineering/reactor-safety-control/instruction.md"
+      },
+      "limitation": "Finite pinned instruction corpus only; no web-wide or code-originality conclusion."
+    },
+    {
+      "id": "entry-files",
+      "exit_code": 0,
+      "files": [
+        "instruction.md",
+        "task.toml",
+        "environment/Dockerfile",
+        "solution/solve.sh",
+        "tests/test.sh"
+      ]
+    },
+    {
+      "id": "config-fields",
+      "exit_code": 0,
+      "stdout": "[]\n",
+      "stderr": "C:\\Users\\zubai\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\cli\\tasks.py:111: SyntaxWarning: invalid escape sequence '\\['\n  Option(\"--no-package\", help=\"Do not include \\[task] section in task.toml.\"),\n",
+      "parsed_tables": [
+        "agent",
+        "artifacts",
+        "environment",
+        "metadata",
+        "schema_version",
+        "task",
+        "verifier"
+      ]
+    }
+  ],
+  "passed": 29,
+  "failed": 0,
+  "native_r3_trials": [
+    {
+      "result_path": "authoring\\reports\\harbor-jobs\\v020-r3-alternative\\certified-pencil-structure__gQLZKsd\\result.json",
+      "task_checksum": "0d9c54dfd0cb753e9dca38b78c1d9c8d89e649d4c5eea863e576898f75b7394d",
+      "exception": null,
+      "reward": "1",
+      "summary": {
+        "tests": 12,
+        "passed": 12,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795708147.0382733,
+        "stop": 1795708231.8085415
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_exact_batch_00",
+          "status": "passed",
+          "duration": 0.5276458919997822
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_01",
+          "status": "passed",
+          "duration": 0.8921888220002074
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_02",
+          "status": "passed",
+          "duration": 0.6331536849997974
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_03",
+          "status": "passed",
+          "duration": 0.8408623420004915
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_04",
+          "status": "passed",
+          "duration": 3.07984596300048
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_05",
+          "status": "passed",
+          "duration": 1.6868253149996235
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_06",
+          "status": "passed",
+          "duration": 2.407183837000048
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_07",
+          "status": "passed",
+          "duration": 28.2776247339998
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_08",
+          "status": "passed",
+          "duration": 3.2595469740003864
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_09",
+          "status": "passed",
+          "duration": 6.203060533999633
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_10",
+          "status": "passed",
+          "duration": 15.872555804000513
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_11",
+          "status": "passed",
+          "duration": 21.04078950899975
+        }
+      ]
+    },
+    {
+      "result_path": "authoring\\reports\\harbor-jobs\\v020-r3-hardcoder\\certified-pencil-structure__Lzfjnt7\\result.json",
+      "task_checksum": "0d9c54dfd0cb753e9dca38b78c1d9c8d89e649d4c5eea863e576898f75b7394d",
+      "exception": null,
+      "reward": "0",
+      "summary": {
+        "tests": 12,
+        "passed": 0,
+        "failed": 12,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795708259.2395809,
+        "stop": 1795708260.1331518
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_exact_batch_00",
+          "status": "failed",
+          "duration": 0.040392308999344095
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_01",
+          "status": "failed",
+          "duration": 0.04066038000064509
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_02",
+          "status": "failed",
+          "duration": 0.04036589500037735
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_03",
+          "status": "failed",
+          "duration": 0.03827302799982135
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_04",
+          "status": "failed",
+          "duration": 0.04107786299937288
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_05",
+          "status": "failed",
+          "duration": 0.04158305600003587
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_06",
+          "status": "failed",
+          "duration": 0.041475277999325044
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_07",
+          "status": "failed",
+          "duration": 0.038724118999653
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_08",
+          "status": "failed",
+          "duration": 0.03900201999977071
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_09",
+          "status": "failed",
+          "duration": 0.039530884999749105
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_10",
+          "status": "failed",
+          "duration": 0.03956184199978452
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_11",
+          "status": "failed",
+          "duration": 0.040408590999959415
+        }
+      ]
+    },
+    {
+      "result_path": "authoring\\reports\\harbor-jobs\\v020-r3-mutant\\certified-pencil-structure__8egCpYM\\result.json",
+      "task_checksum": "0d9c54dfd0cb753e9dca38b78c1d9c8d89e649d4c5eea863e576898f75b7394d",
+      "exception": null,
+      "reward": "0",
+      "summary": {
+        "tests": 12,
+        "passed": 0,
+        "failed": 12,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795708045.2495618,
+        "stop": 1795708121.5331328
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_exact_batch_00",
+          "status": "failed",
+          "duration": 0.4782229039997219
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_01",
+          "status": "failed",
+          "duration": 0.526854846000333
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_02",
+          "status": "failed",
+          "duration": 0.5257017290000476
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_03",
+          "status": "failed",
+          "duration": 0.9291709469994203
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_04",
+          "status": "failed",
+          "duration": 2.6735173699998995
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_05",
+          "status": "failed",
+          "duration": 1.434721059000367
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_06",
+          "status": "failed",
+          "duration": 1.8889778440006921
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_07",
+          "status": "failed",
+          "duration": 27.894500306999817
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_08",
+          "status": "failed",
+          "duration": 3.308567623000272
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_09",
+          "status": "failed",
+          "duration": 5.723217624999961
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_10",
+          "status": "failed",
+          "duration": 12.82873391900057
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_11",
+          "status": "failed",
+          "duration": 17.615365420000217
+        }
+      ]
+    },
+    {
+      "result_path": "authoring\\reports\\harbor-jobs\\v020-r3-nop\\certified-pencil-structure__V4tNL3Q\\result.json",
+      "task_checksum": "0d9c54dfd0cb753e9dca38b78c1d9c8d89e649d4c5eea863e576898f75b7394d",
+      "exception": null,
+      "reward": "0",
+      "summary": {
+        "tests": 12,
+        "passed": 0,
+        "failed": 12,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795708284.8662038,
+        "stop": 1795708284.9599946
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_exact_batch_00",
+          "status": "failed",
+          "duration": 0.0005758320003224071
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_01",
+          "status": "failed",
+          "duration": 0.0004776030000357423
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_02",
+          "status": "failed",
+          "duration": 0.0004028680000374152
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_03",
+          "status": "failed",
+          "duration": 0.0003983209999205428
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_04",
+          "status": "failed",
+          "duration": 0.0003767459993468947
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_05",
+          "status": "failed",
+          "duration": 0.0003723000004356436
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_06",
+          "status": "failed",
+          "duration": 0.0003814030001194624
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_07",
+          "status": "failed",
+          "duration": 0.00036017000002175337
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_08",
+          "status": "failed",
+          "duration": 0.0003638480002337019
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_09",
+          "status": "failed",
+          "duration": 0.0003531549996296235
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_10",
+          "status": "failed",
+          "duration": 0.0004036700001961435
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_11",
+          "status": "failed",
+          "duration": 0.00038079100022514467
+        }
+      ]
+    },
+    {
+      "result_path": "authoring\\reports\\harbor-jobs\\v020-r3-oracle\\certified-pencil-structure__6xyEy2H\\result.json",
+      "task_checksum": "0d9c54dfd0cb753e9dca38b78c1d9c8d89e649d4c5eea863e576898f75b7394d",
+      "exception": null,
+      "reward": "1",
+      "summary": {
+        "tests": 12,
+        "passed": 12,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795707891.4813876,
+        "stop": 1795707969.1019998
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_exact_batch_00",
+          "status": "passed",
+          "duration": 0.377093182000408
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_01",
+          "status": "passed",
+          "duration": 0.5830948190000527
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_02",
+          "status": "passed",
+          "duration": 0.4793171159999474
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_03",
+          "status": "passed",
+          "duration": 0.8455381180001496
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_04",
+          "status": "passed",
+          "duration": 1.9790361630002735
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_05",
+          "status": "passed",
+          "duration": 1.162115988000096
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_06",
+          "status": "passed",
+          "duration": 2.067455000999871
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_07",
+          "status": "passed",
+          "duration": 25.68814570799941
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_08",
+          "status": "passed",
+          "duration": 3.528410427000381
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_09",
+          "status": "passed",
+          "duration": 6.2155465289997665
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_10",
+          "status": "passed",
+          "duration": 14.670958319999954
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_11",
+          "status": "passed",
+          "duration": 19.956992234000154
+        }
+      ]
+    },
+    {
+      "result_path": "authoring\\reports\\harbor-jobs\\v020-r3-oracle\\certified-pencil-structure__bPnnvbc\\result.json",
+      "task_checksum": "0d9c54dfd0cb753e9dca38b78c1d9c8d89e649d4c5eea863e576898f75b7394d",
+      "exception": null,
+      "reward": "1",
+      "summary": {
+        "tests": 12,
+        "passed": 12,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795707795.8665867,
+        "stop": 1795707869.4695737
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_exact_batch_00",
+          "status": "passed",
+          "duration": 0.5798199920004663
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_01",
+          "status": "passed",
+          "duration": 0.5359888879997925
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_02",
+          "status": "passed",
+          "duration": 0.6831207119998908
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_03",
+          "status": "passed",
+          "duration": 0.8467927280003096
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_04",
+          "status": "passed",
+          "duration": 2.6011929410001358
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_05",
+          "status": "passed",
+          "duration": 1.2283279649996075
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_06",
+          "status": "passed",
+          "duration": 2.0017859989998215
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_07",
+          "status": "passed",
+          "duration": 25.99766512899987
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_08",
+          "status": "passed",
+          "duration": 3.3083407529998112
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_09",
+          "status": "passed",
+          "duration": 4.847907387000305
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_10",
+          "status": "passed",
+          "duration": 12.927256076000504
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_11",
+          "status": "passed",
+          "duration": 17.980402891999802
+        }
+      ]
+    },
+    {
+      "result_path": "authoring\\reports\\harbor-jobs\\v020-r3-partial\\certified-pencil-structure__wtUcnmk\\result.json",
+      "task_checksum": "0d9c54dfd0cb753e9dca38b78c1d9c8d89e649d4c5eea863e576898f75b7394d",
+      "exception": null,
+      "reward": "0",
+      "summary": {
+        "tests": 12,
+        "passed": 0,
+        "failed": 12,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795707995.3386693,
+        "stop": 1795708019.6744545
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_exact_batch_00",
+          "status": "failed",
+          "duration": 0.37254610199988747
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_01",
+          "status": "failed",
+          "duration": 0.3728222889999415
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_02",
+          "status": "failed",
+          "duration": 0.37320252800009257
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_03",
+          "status": "failed",
+          "duration": 0.5241422160002003
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_04",
+          "status": "failed",
+          "duration": 0.9786311590000878
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_05",
+          "status": "failed",
+          "duration": 0.6733304600002157
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_06",
+          "status": "failed",
+          "duration": 0.8744805870001073
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_07",
+          "status": "failed",
+          "duration": 8.567571494999811
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_08",
+          "status": "failed",
+          "duration": 0.7763149209999938
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_09",
+          "status": "failed",
+          "duration": 1.4291777789999287
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_10",
+          "status": "failed",
+          "duration": 4.894243586999892
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_11",
+          "status": "failed",
+          "duration": 4.092854422000073
+        }
+      ]
+    },
+    {
+      "result_path": "authoring\\reports\\harbor-jobs\\v020-r3-trivial\\certified-pencil-structure__YfmY4ra\\result.json",
+      "task_checksum": "0d9c54dfd0cb753e9dca38b78c1d9c8d89e649d4c5eea863e576898f75b7394d",
+      "exception": null,
+      "reward": "0",
+      "summary": {
+        "tests": 12,
+        "passed": 0,
+        "failed": 12,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1795708537.4568903,
+        "stop": 1795708538.207332
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_exact_batch_00",
+          "status": "failed",
+          "duration": 0.0396756560007816
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_01",
+          "status": "failed",
+          "duration": 0.037730263999947056
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_02",
+          "status": "failed",
+          "duration": 0.03692707200025325
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_03",
+          "status": "failed",
+          "duration": 0.03734979899991231
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_04",
+          "status": "failed",
+          "duration": 0.037544363000506564
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_05",
+          "status": "failed",
+          "duration": 0.038626953000402864
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_06",
+          "status": "failed",
+          "duration": 0.037000380999870686
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_07",
+          "status": "failed",
+          "duration": 0.03835174100004224
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_08",
+          "status": "failed",
+          "duration": 0.03758200199990824
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_09",
+          "status": "failed",
+          "duration": 0.03742334499975186
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_10",
+          "status": "failed",
+          "duration": 0.03753941600007238
+        },
+        {
+          "name": "test_outputs.py::test_exact_batch_11",
+          "status": "failed",
+          "duration": 0.038916700999834575
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "results": [
+    {
+      "id": "case-004",
+      "shape": [
+        1,
+        2
+      ],
+      "invariants_seconds": 0.016000000000076398,
+      "frames_seconds": 0.0,
+      "total_seconds": 0.016000000000076398,
+      "status": "PASS",
+      "frame_max_scalar_chars": 10,
+      "unknowns": 3,
+      "nullity": 1,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-006",
+      "shape": [
+        5,
+        5
+      ],
+      "invariants_seconds": 0.25,
+      "frames_seconds": 0.0,
+      "total_seconds": 0.25,
+      "status": "PASS",
+      "frame_max_scalar_chars": 5,
+      "unknowns": 26,
+      "nullity": 6,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-015",
+      "shape": [
+        7,
+        7
+      ],
+      "invariants_seconds": 0.04599999999982174,
+      "frames_seconds": 0.032000000000152795,
+      "total_seconds": 0.07799999999997453,
+      "status": "PASS",
+      "frame_max_scalar_chars": 54,
+      "unknowns": 50,
+      "nullity": 14,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-016",
+      "shape": [
+        12,
+        12
+      ],
+      "invariants_seconds": 0.45299999999997453,
+      "frames_seconds": 0.09400000000005093,
+      "total_seconds": 0.5470000000000255,
+      "status": "PASS",
+      "frame_max_scalar_chars": 181,
+      "unknowns": 145,
+      "nullity": 29,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-017",
+      "shape": [
+        8,
+        9
+      ],
+      "invariants_seconds": 0.03099999999994907,
+      "frames_seconds": 0.016000000000076398,
+      "total_seconds": 0.047000000000025466,
+      "status": "PASS",
+      "frame_max_scalar_chars": 32,
+      "unknowns": 75,
+      "nullity": 26,
+      "point": 1,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-018",
+      "shape": [
+        8,
+        9
+      ],
+      "invariants_seconds": 0.06300000000010186,
+      "frames_seconds": 0.01499999999987267,
+      "total_seconds": 0.07799999999997453,
+      "status": "PASS",
+      "frame_max_scalar_chars": 19,
+      "unknowns": 79,
+      "nullity": 31,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-019",
+      "shape": [
+        8,
+        8
+      ],
+      "invariants_seconds": 0.07799999999997453,
+      "frames_seconds": 0.016000000000076398,
+      "total_seconds": 0.11000000000012733,
+      "status": "PASS",
+      "frame_max_scalar_chars": 21,
+      "unknowns": 64,
+      "nullity": 10,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-028",
+      "shape": [
+        18,
+        18
+      ],
+      "invariants_seconds": 15.952999999999975,
+      "frames_seconds": 0.9529999999999745,
+      "total_seconds": 16.90599999999995,
+      "status": "PASS",
+      "frame_max_scalar_chars": 102,
+      "unknowns": 325,
+      "nullity": 43,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-029",
+      "shape": [
+        15,
+        15
+      ],
+      "invariants_seconds": 2.8910000000000764,
+      "frames_seconds": 0.31300000000010186,
+      "total_seconds": 3.2040000000001783,
+      "status": "PASS",
+      "frame_max_scalar_chars": 94,
+      "unknowns": 226,
+      "nullity": 48,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-036",
+      "shape": [
+        10,
+        11
+      ],
+      "invariants_seconds": 0.21900000000005093,
+      "frames_seconds": 0.047000000000025466,
+      "total_seconds": 0.2660000000000764,
+      "status": "PASS",
+      "frame_max_scalar_chars": 31,
+      "unknowns": 113,
+      "nullity": 27,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-037",
+      "shape": [
+        6,
+        6
+      ],
+      "invariants_seconds": 0.032000000000152795,
+      "frames_seconds": 0.01499999999987267,
+      "total_seconds": 0.047000000000025466,
+      "status": "PASS",
+      "frame_max_scalar_chars": 15,
+      "unknowns": 40,
+      "nullity": 16,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-038",
+      "shape": [
+        12,
+        11
+      ],
+      "invariants_seconds": 0.8440000000000509,
+      "frames_seconds": 0.1089999999999236,
+      "total_seconds": 0.9529999999999745,
+      "status": "PASS",
+      "frame_max_scalar_chars": 33,
+      "unknowns": 135,
+      "nullity": 27,
+      "point": 0,
+      "search_attempts": 1
+    },
+    {
+      "id": "case-039",
+      "shape": [
+        14,
+        13
+      ],
+      "invariants_seconds": 3.2350000000001273,
+      "frames_seconds": 0.125,
+      "total_seconds": 3.3600000000001273,
+      "status": "PASS",
+      "frame_max_scalar_chars": 36,
+      "unknowns": 185,
+      "nullity": 40,
+      "point": 0,
+      "search_attempts": 1
+    }
+  ],
+  "method": "general rank-normalized matrix-pair homomorphism space; verified exact identities"
+}

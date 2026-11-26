@@ -1,0 +1,798 @@
+{
+  "baseline_matrices_preserved": 40,
+  "total_pencils": 48,
+  "source_hashes": {
+    "instruction.md": "2519abad449ef66e503332058bf34a3d9500a056250f7d32e30793be5dae355e",
+    "README.md": "003789fe34708963987494e5cb701cba7a6a9238b75e64e89fe84f5df822bd37",
+    "task.toml": "336ffcef86ef523a7830a9ade34e8da99ecf9551ad6a7388f7d3a671f3b500d5",
+    "environment\\.dockerignore": "6e1a66ba01b578bbed119a035eaaf4715d49dd17bc4729281b5f749d386688a9",
+    "environment\\Dockerfile": "df8fca82c821ffff29257b0e13880d850182c4d97682b5cbd9ebecc1b82d167d",
+    "environment\\requirements.txt": "a6440a710723f84f4612e074d2f27f5fec930623f20faf0163d436ee2e31e7f4",
+    "environment\\spec.md": "0f414435e8149301a40c07bb709af805c85fbd4751d0b1cfe24d4908009aa48f",
+    "solution\\frames.py": "4360c85a4ff71bc933c61b828a4e0ec09dc3c49caf8a7c37cd1dc5bb991582fd",
+    "solution\\oracle.py": "afb8cebcb2dc375552072b7e6a04110dc0b79f7269f99a3c23432a318aa604db",
+    "solution\\solve.py": "16bd88e40a960e6f810bea094cf625e5e178f5496ab694ca983ea4f400e60e6a",
+    "solution\\solve.sh": "5692f047dc28ae9d2247ca4dcfc0245241585df034fdea0f3a007b202fe2a050",
+    "tests\\.dockerignore": "6e1a66ba01b578bbed119a035eaaf4715d49dd17bc4729281b5f749d386688a9",
+    "tests\\cases.py": "9a49884edf3c51d923a3a2781c828c2b9f783cbdad3ad11114ec5e2e7cb4079a",
+    "tests\\certificates.py": "ed944b9970f12fa573e7303a8335dca626491064f871f52d88304e85083c272d",
+    "tests\\constructive.py": "2c3173ae7bc467111d5a02a11cfc4668925e32b073028a110f4a0896bae80841",
+    "tests\\Dockerfile": "20e209fa3a5fa18a80769dd2f9362405768c0c9f86ca9cc89eee36f6057ce307",
+    "tests\\exact.py": "0f07b9d35fa1032e59e40e377cd36955571d5046b84af3d535b1bdd7b9e3ce2e",
+    "tests\\harness.py": "416f6e4afabdc14848082e5994f5c5467557162b78658180342b72fea5cbae39",
+    "tests\\requirements.txt": "e875cfc28b8ba39ed6981d356c5cc7d976534ee05f1c49a0dbd2b97c3fabce1c",
+    "tests\\test.sh": "b691e721cf008ddf0715c6a730c71c29949ba1ff97e4f3c9892b6821c9aefe5f",
+    "tests\\test_outputs.py": "e96876c81fe0d42fa4a602f616d7a661b7e7345d5e3d627d1bc34340d17584a2",
+    "environment\\data\\examples.json": "b1e160c870900b8c7969d21036bd3bde6f2ea75e0b7628c311c83b39a98bcda8"
+  },
+  "results": [
+    {
+      "id": "case-000",
+      "shape": [
+        2,
+        3
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.0,
+      "checker_seconds": 0.0,
+      "bytes": 1306,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-001",
+      "shape": [
+        1,
+        1
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.0930000000007567,
+      "checker_seconds": 0.0,
+      "bytes": 1033,
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-002",
+      "shape": [
+        1,
+        1
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.01599999999962165,
+      "checker_seconds": 0.0,
+      "bytes": 899,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-003",
+      "shape": [
+        1,
+        1
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.0,
+      "checker_seconds": 0.0,
+      "bytes": 985,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-004",
+      "shape": [
+        1,
+        2
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.01599999999962165,
+      "checker_seconds": 0.0,
+      "bytes": 1057,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-005",
+      "shape": [
+        2,
+        1
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.014999999999417923,
+      "checker_seconds": 0.0,
+      "bytes": 957,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-006",
+      "shape": [
+        5,
+        5
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.06300000000010186,
+      "checker_seconds": 0.0,
+      "bytes": 2565,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-007",
+      "shape": [
+        5,
+        5
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.04700000000048021,
+      "checker_seconds": 0.0,
+      "bytes": 3275,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-008",
+      "shape": [
+        2,
+        2
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.031000000000858563,
+      "checker_seconds": 0.0,
+      "bytes": 1226,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-009",
+      "shape": [
+        2,
+        2
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.014999999999417923,
+      "checker_seconds": 0.0,
+      "bytes": 1184,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-010",
+      "shape": [
+        4,
+        4
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.0319999999992433,
+      "checker_seconds": 0.0,
+      "bytes": 2485,
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-011",
+      "shape": [
+        4,
+        4
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.031000000000858563,
+      "checker_seconds": 0.0,
+      "bytes": 1891,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-012",
+      "shape": [
+        4,
+        4
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.014999999999417923,
+      "checker_seconds": 0.0,
+      "bytes": 1706,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-013",
+      "shape": [
+        4,
+        4
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.031000000000858563,
+      "checker_seconds": 0.0,
+      "bytes": 1756,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-014",
+      "shape": [
+        4,
+        4
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.01599999999962165,
+      "checker_seconds": 0.0,
+      "bytes": 1518,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-015",
+      "shape": [
+        7,
+        7
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.1400000000012369,
+      "checker_seconds": 0.01599999999962165,
+      "bytes": 12056,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-016",
+      "shape": [
+        12,
+        12
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.8119999999998981,
+      "checker_seconds": 0.0319999999992433,
+      "bytes": 94934,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-017",
+      "shape": [
+        8,
+        9
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.10999999999876309,
+      "checker_seconds": 0.015000000001236913,
+      "bytes": 10736,
+      "forcing_classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-018",
+      "shape": [
+        8,
+        9
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.125,
+      "checker_seconds": 0.01599999999962165,
+      "bytes": 9003,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-019",
+      "shape": [
+        8,
+        8
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.1720000000004802,
+      "checker_seconds": 0.0,
+      "bytes": 6418,
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-020",
+      "shape": [
+        5,
+        5
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.046999999998661224,
+      "checker_seconds": 0.0,
+      "bytes": 3294,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-021",
+      "shape": [
+        6,
+        6
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.046999999998661224,
+      "checker_seconds": 0.0,
+      "bytes": 4153,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-022",
+      "shape": [
+        6,
+        6
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.06199999999989814,
+      "checker_seconds": 0.0,
+      "bytes": 4139,
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-023",
+      "shape": [
+        10,
+        10
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.34399999999914144,
+      "checker_seconds": 0.031000000000858563,
+      "bytes": 13015,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-024",
+      "shape": [
+        7,
+        7
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.07799999999951979,
+      "checker_seconds": 0.0,
+      "bytes": 5314,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-025",
+      "shape": [
+        6,
+        6
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.06300000000010186,
+      "checker_seconds": 0.0,
+      "bytes": 4577,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-026",
+      "shape": [
+        12,
+        12
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.5779999999995198,
+      "checker_seconds": 0.031000000000858563,
+      "bytes": 28813,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-027",
+      "shape": [
+        10,
+        10
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.2180000000007567,
+      "checker_seconds": 0.01599999999962165,
+      "bytes": 11673,
+      "forcing_classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-028",
+      "shape": [
+        18,
+        18
+      ],
+      "status": "PASS",
+      "solver_seconds": 16.686999999999898,
+      "checker_seconds": 0.14099999999962165,
+      "bytes": 146395,
+      "forcing_classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-029",
+      "shape": [
+        15,
+        15
+      ],
+      "status": "PASS",
+      "solver_seconds": 2.436999999999898,
+      "checker_seconds": 0.06300000000010186,
+      "bytes": 156344,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-030",
+      "shape": [
+        1,
+        18
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.015000000001236913,
+      "checker_seconds": 0.01599999999962165,
+      "bytes": 8350,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-031",
+      "shape": [
+        18,
+        1
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.01599999999962165,
+      "checker_seconds": 0.0,
+      "bytes": 8129,
+      "forcing_classes": [
+        "polynomial",
+        "polynomial",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-032",
+      "shape": [
+        12,
+        12
+      ],
+      "status": "PASS",
+      "solver_seconds": 1.4220000000004802,
+      "checker_seconds": 0.031000000000858563,
+      "bytes": 34256,
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-033",
+      "shape": [
+        9,
+        8
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.10900000000037835,
+      "checker_seconds": 0.0,
+      "bytes": 12449,
+      "forcing_classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-034",
+      "shape": [
+        7,
+        7
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.125,
+      "checker_seconds": 0.0,
+      "bytes": 11203,
+      "forcing_classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-035",
+      "shape": [
+        8,
+        8
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.18699999999989814,
+      "checker_seconds": 0.0,
+      "bytes": 6708,
+      "forcing_classes": [
+        "rational",
+        "polynomial",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-036",
+      "shape": [
+        10,
+        11
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.26599999999962165,
+      "checker_seconds": 0.01599999999962165,
+      "bytes": 15032,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-037",
+      "shape": [
+        6,
+        6
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.04700000000048021,
+      "checker_seconds": 0.014999999999417923,
+      "bytes": 3458,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-038",
+      "shape": [
+        12,
+        11
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.75,
+      "checker_seconds": 0.01600000000144064,
+      "bytes": 20899,
+      "forcing_classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-039",
+      "shape": [
+        14,
+        13
+      ],
+      "status": "PASS",
+      "solver_seconds": 2.360000000000582,
+      "checker_seconds": 0.046999999998661224,
+      "bytes": 42542,
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-040",
+      "shape": [
+        15,
+        15
+      ],
+      "status": "PASS",
+      "solver_seconds": 3.936999999999898,
+      "checker_seconds": 0.07800000000133878,
+      "bytes": 107241,
+      "forcing_classes": [
+        "rational",
+        "polynomial",
+        "inconsistent"
+      ]
+    },
+    {
+      "id": "case-041",
+      "shape": [
+        15,
+        15
+      ],
+      "status": "PASS",
+      "solver_seconds": 2.9689999999991414,
+      "checker_seconds": 0.06199999999989814,
+      "bytes": 43671,
+      "forcing_classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-042",
+      "shape": [
+        14,
+        14
+      ],
+      "status": "PASS",
+      "solver_seconds": 1.875,
+      "checker_seconds": 0.031000000000858563,
+      "bytes": 25657,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-043",
+      "shape": [
+        14,
+        14
+      ],
+      "status": "PASS",
+      "solver_seconds": 1.0779999999995198,
+      "checker_seconds": 0.04700000000048021,
+      "bytes": 24571,
+      "forcing_classes": [
+        "inconsistent",
+        "polynomial",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-044",
+      "shape": [
+        15,
+        15
+      ],
+      "status": "PASS",
+      "solver_seconds": 3.063000000000102,
+      "checker_seconds": 0.0930000000007567,
+      "bytes": 441977,
+      "forcing_classes": [
+        "inconsistent",
+        "rational",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-045",
+      "shape": [
+        15,
+        15
+      ],
+      "status": "PASS",
+      "solver_seconds": 2.6409999999996217,
+      "checker_seconds": 0.046000000000276486,
+      "bytes": 37822,
+      "forcing_classes": [
+        "rational",
+        "inconsistent",
+        "polynomial"
+      ]
+    },
+    {
+      "id": "case-046",
+      "shape": [
+        15,
+        15
+      ],
+      "status": "PASS",
+      "solver_seconds": 0.8289999999997235,
+      "checker_seconds": 0.06199999999989814,
+      "bytes": 78574,
+      "forcing_classes": [
+        "polynomial",
+        "inconsistent",
+        "rational"
+      ]
+    },
+    {
+      "id": "case-047",
+      "shape": [
+        15,
+        15
+      ],
+      "status": "PASS",
+      "solver_seconds": 7.17200000000048,
+      "checker_seconds": 0.09399999999914144,
+      "bytes": 131232,
+      "forcing_classes": [
+        "polynomial",
+        "rational",
+        "inconsistent"
+      ]
+    }
+  ]
+}

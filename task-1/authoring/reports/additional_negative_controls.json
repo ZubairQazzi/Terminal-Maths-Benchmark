@@ -1,0 +1,717 @@
+{
+  "scope": "All independent guesses. Numerical spectral computation is inserted into an otherwise-correct certificate to isolate its mathematical error; not a complete independent solver or an AI attempt. Numerical rank alone happened to be correct on all 48 inputs; the spectral heuristic assumes semisimple approximated roots and uses a cropped square pencil for rectangles.",
+  "results": [
+    {
+      "id": "case-000",
+      "universal_zero_structure": {
+        "accepted": true
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "11-compatibility: wrong rational/polynomial compatibility class"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": true
+      }
+    },
+    {
+      "id": "case-001",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": true
+      }
+    },
+    {
+      "id": "case-002",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": true
+      }
+    },
+    {
+      "id": "case-003",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": true
+      }
+    },
+    {
+      "id": "case-004",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-005",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-006",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-007",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-008",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-009",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": true
+      }
+    },
+    {
+      "id": "case-010",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-011",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": true
+      }
+    },
+    {
+      "id": "case-012",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-013",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-014",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-015",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-016",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-017",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-018",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-019",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-020",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-021",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-022",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-023",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-024",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-025",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "07-equivalence: strict-equivalence identities failed"
+      }
+    },
+    {
+      "id": "case-026",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-027",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-028",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-029",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-030",
+      "universal_zero_structure": {
+        "accepted": true
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": true
+      }
+    },
+    {
+      "id": "case-031",
+      "universal_zero_structure": {
+        "accepted": true
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "05-right-filtration: right indices: incorrect degrees/sizes"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": true
+      }
+    },
+    {
+      "id": "case-032",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-033",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-034",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-035",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-036",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-037",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-038",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-039",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-040",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-041",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-042",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-043",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-044",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-045",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-046",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    },
+    {
+      "id": "case-047",
+      "universal_zero_structure": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "literal_constant_output": {
+        "accepted": false,
+        "reason": "01-rank: incorrect normal rank"
+      },
+      "numerical_spectral_blocks": {
+        "accepted": false,
+        "reason": "03-primary: incorrect primary elementary divisors"
+      }
+    }
+  ],
+  "universal_zero_accepted": 3,
+  "literal_constant_accepted": 0,
+  "numerical_spectral_rejected": 40
+}
