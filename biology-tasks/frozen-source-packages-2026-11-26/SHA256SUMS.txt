@@ -1,0 +1,2 @@
+4c735ea6690946fe9deab9eaf6480d58ccdf1354048892c0c89cb34a0faa13a4  biology-task-1-specificity-envelope-v0.2.1.zip
+83658d0d70497c85f9cd283a5cb9ffe5a18450cc04cb152e8b74a333e890aa73  biology-task-2-transcript-provenance-audit-v0.3.1.zip
