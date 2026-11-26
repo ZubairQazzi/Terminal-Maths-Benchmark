@@ -1,7 +1,0 @@
-# Structural difficulty gap
-
-The gap is a hypothesis from source analysis, not a reconstruction of successful model reasoning. The baseline's outputs can largely be obtained by two standard symbolic primitives: Smith forms and small convolution-kernel calculations. There is no obligation to exhibit the constant transformations producing Kronecker form, distinguish rational from polynomial forcing solvability, or certify the least possible poles across all kernel corrections.
-
-The upgrade adds those mathematical obligations while retaining exact dimensions, packages, process limits and established formatting conventions. A solver must coordinate different equivalence notions: polynomial Smith equivalence, constant strict equivalence, saturated polynomial kernel modules, and rational solution spaces. A mathematically correct early-stage result can still fail at a later module obstruction. Stage 5/6/4 filtrations are inexpensive summaries and are not marketed as three independent hard algorithms: their scientific value is detecting omitted multiplicities and connecting classification to constructive blocks. The principal added difficulty is stages 7–13.
-
-No target agent-failure percentage is asserted. Frontier testing needs a separately authorized graded smoke trial followed by eight clean independent trials. Infrastructure failures must be excluded. Structural complexity and negative controls cannot replace empirical difficulty calibration.
